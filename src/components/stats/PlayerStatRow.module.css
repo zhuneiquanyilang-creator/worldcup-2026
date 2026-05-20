@@ -1,0 +1,56 @@
+.rank {
+  font-weight: 700;
+  color: var(--color-primary);
+  text-align: center;
+  width: 3rem;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  /* 名前のドット (例: "M. Maignan") で行が折り返せるように */
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.name {
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.position {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.team {
+  width: 4.5rem;
+  text-align: center;
+}
+
+.teamCode {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  color: var(--color-text);
+  font-variant-numeric: tabular-nums;
+}
+
+.value {
+  text-align: right;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--color-primary);
+  width: 4rem;
+}
+
+.metric {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  margin-left: 0.3rem;
+  font-weight: 500;
+}

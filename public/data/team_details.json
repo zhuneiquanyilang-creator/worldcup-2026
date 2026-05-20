@@ -1,0 +1,2048 @@
+[
+  {
+    "teamId": "MEX",
+    "continent": "北中米カリブ (CONCACAF)",
+    "bestResult": "ベスト8 (1970, 1986)",
+    "firstAppearance": "1930",
+    "lastAppearance": "2022",
+    "appearanceCount": 18,
+    "pastResults": [
+      {
+        "year": 1930,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1950,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1954,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1958,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1962,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1966,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1970,
+        "result": "ベスト8"
+      },
+      {
+        "year": 1978,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1986,
+        "result": "ベスト8"
+      },
+      {
+        "year": 1994,
+        "result": "ベスト16"
+      },
+      {
+        "year": 1998,
+        "result": "ベスト16"
+      },
+      {
+        "year": 2002,
+        "result": "ベスト16"
+      },
+      {
+        "year": 2006,
+        "result": "ベスト16"
+      },
+      {
+        "year": 2010,
+        "result": "ベスト16"
+      },
+      {
+        "year": 2014,
+        "result": "ベスト16"
+      },
+      {
+        "year": 2018,
+        "result": "ベスト16"
+      },
+      {
+        "year": 2022,
+        "result": "グループステージ敗退"
+      }
+    ],
+    "coach": {
+      "name": "ハビエル・アギーレ",
+      "nationality": "メキシコ"
+    },
+    "worldRank": 15
+  },
+  {
+    "teamId": "ZAF",
+    "continent": "アフリカ (CAF)",
+    "bestResult": "グループステージ敗退",
+    "firstAppearance": "1998",
+    "lastAppearance": "2010",
+    "appearanceCount": 4,
+    "pastResults": [
+      {
+        "year": 1998,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2002,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2010,
+        "result": "グループステージ敗退"
+      }
+    ],
+    "coach": {
+      "name": "ユーゴ・ブロース",
+      "nationality": "ベルギー"
+    },
+    "worldRank": 60
+  },
+  {
+    "teamId": "KOR",
+    "continent": "アジア (AFC)",
+    "bestResult": "ベスト4 (2002)",
+    "firstAppearance": "1954",
+    "lastAppearance": "2022",
+    "appearanceCount": 12,
+    "pastResults": [
+      {
+        "year": 1954,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1986,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1990,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1994,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1998,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2002,
+        "result": "4位"
+      },
+      {
+        "year": 2006,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2010,
+        "result": "ベスト16"
+      },
+      {
+        "year": 2014,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2018,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2022,
+        "result": "ベスト16"
+      }
+    ],
+    "coach": {
+      "name": "洪明甫 (ホン・ミョンボ)",
+      "nationality": "韓国"
+    },
+    "worldRank": 25
+  },
+  {
+    "teamId": "CZE",
+    "continent": "ヨーロッパ (UEFA)",
+    "bestResult": "準優勝 (1934, 1962、チェコスロバキア時代)",
+    "firstAppearance": "1934",
+    "lastAppearance": "2006",
+    "appearanceCount": 10,
+    "pastResults": [
+      {
+        "year": 1934,
+        "result": "準優勝"
+      },
+      {
+        "year": 1938,
+        "result": "ベスト8"
+      },
+      {
+        "year": 1954,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1958,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1962,
+        "result": "準優勝"
+      },
+      {
+        "year": 1970,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1982,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1990,
+        "result": "ベスト8"
+      },
+      {
+        "year": 2006,
+        "result": "グループステージ敗退"
+      }
+    ],
+    "coach": {
+      "name": "ミロスラフ・コウベク",
+      "nationality": "チェコ"
+    },
+    "worldRank": 41
+  },
+  {
+    "teamId": "CAN",
+    "continent": "北中米カリブ (CONCACAF)",
+    "bestResult": "グループステージ敗退",
+    "firstAppearance": "1986",
+    "lastAppearance": "2022",
+    "appearanceCount": 3,
+    "pastResults": [
+      {
+        "year": 1986,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2022,
+        "result": "グループステージ敗退"
+      }
+    ],
+    "coach": {
+      "name": "ジェシー・マーシュ",
+      "nationality": "アメリカ"
+    },
+    "worldRank": 30
+  },
+  {
+    "teamId": "BIH",
+    "continent": "ヨーロッパ (UEFA)",
+    "bestResult": "グループステージ敗退",
+    "firstAppearance": "2014",
+    "lastAppearance": "2014",
+    "appearanceCount": 2,
+    "pastResults": [
+      {
+        "year": 2014,
+        "result": "グループステージ敗退"
+      }
+    ],
+    "coach": {
+      "name": "セルゲイ・バルバレス",
+      "nationality": "ボスニア・ヘルツェゴビナ"
+    },
+    "worldRank": 65
+  },
+  {
+    "teamId": "QAT",
+    "continent": "アジア (AFC)",
+    "bestResult": "グループステージ敗退",
+    "firstAppearance": "2022",
+    "lastAppearance": "2022",
+    "appearanceCount": 2,
+    "pastResults": [
+      {
+        "year": 2022,
+        "result": "グループステージ敗退"
+      }
+    ],
+    "coach": {
+      "name": "フレン・ロペテギ",
+      "nationality": "スペイン"
+    },
+    "worldRank": 55
+  },
+  {
+    "teamId": "SUI",
+    "continent": "ヨーロッパ (UEFA)",
+    "bestResult": "ベスト8 (1934, 1938, 1954)",
+    "firstAppearance": "1934",
+    "lastAppearance": "2022",
+    "appearanceCount": 13,
+    "pastResults": [
+      {
+        "year": 1934,
+        "result": "ベスト8"
+      },
+      {
+        "year": 1938,
+        "result": "ベスト8"
+      },
+      {
+        "year": 1950,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1954,
+        "result": "ベスト8"
+      },
+      {
+        "year": 1962,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1966,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1994,
+        "result": "ベスト16"
+      },
+      {
+        "year": 2006,
+        "result": "ベスト16"
+      },
+      {
+        "year": 2010,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2014,
+        "result": "ベスト16"
+      },
+      {
+        "year": 2018,
+        "result": "ベスト16"
+      },
+      {
+        "year": 2022,
+        "result": "ベスト16"
+      }
+    ],
+    "coach": {
+      "name": "ムラト・ヤキン",
+      "nationality": "スイス"
+    },
+    "worldRank": 19
+  },
+  {
+    "teamId": "BRA",
+    "continent": "南米 (CONMEBOL)",
+    "bestResult": "優勝 (1958, 1962, 1970, 1994, 2002)",
+    "firstAppearance": "1930",
+    "lastAppearance": "2022",
+    "appearanceCount": 23,
+    "pastResults": [
+      {
+        "year": 1930,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1934,
+        "result": "ベスト16"
+      },
+      {
+        "year": 1938,
+        "result": "3位"
+      },
+      {
+        "year": 1950,
+        "result": "準優勝"
+      },
+      {
+        "year": 1954,
+        "result": "準優勝"
+      },
+      {
+        "year": 1958,
+        "result": "優勝"
+      },
+      {
+        "year": 1962,
+        "result": "優勝"
+      },
+      {
+        "year": 1966,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1970,
+        "result": "優勝"
+      },
+      {
+        "year": 1974,
+        "result": "4位"
+      },
+      {
+        "year": 1978,
+        "result": "3位"
+      },
+      {
+        "year": 1982,
+        "result": "ベスト16"
+      },
+      {
+        "year": 1986,
+        "result": "ベスト8"
+      },
+      {
+        "year": 1990,
+        "result": "ベスト16"
+      },
+      {
+        "year": 1994,
+        "result": "優勝"
+      },
+      {
+        "year": 1998,
+        "result": "準優勝"
+      },
+      {
+        "year": 2002,
+        "result": "優勝"
+      },
+      {
+        "year": 2006,
+        "result": "ベスト8"
+      },
+      {
+        "year": 2010,
+        "result": "ベスト8"
+      },
+      {
+        "year": 2014,
+        "result": "4位"
+      },
+      {
+        "year": 2018,
+        "result": "ベスト8"
+      },
+      {
+        "year": 2022,
+        "result": "ベスト8"
+      }
+    ],
+    "coach": {
+      "name": "カルロ・アンチェロッティ",
+      "nationality": "イタリア"
+    },
+    "worldRank": 6
+  },
+  {
+    "teamId": "MAR",
+    "continent": "アフリカ (CAF)",
+    "bestResult": "ベスト4 (2022)",
+    "firstAppearance": "1970",
+    "lastAppearance": "2022",
+    "appearanceCount": 7,
+    "pastResults": [
+      {
+        "year": 1970,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1986,
+        "result": "ベスト16"
+      },
+      {
+        "year": 1994,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1998,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2014,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2022,
+        "result": "4位"
+      }
+    ],
+    "coach": {
+      "name": "モハメド・ワヒビ",
+      "nationality": "モロッコ"
+    },
+    "worldRank": 8
+  },
+  {
+    "teamId": "HAI",
+    "continent": "北中米カリブ (CONCACAF)",
+    "bestResult": "グループステージ敗退",
+    "firstAppearance": "1974",
+    "lastAppearance": "1974",
+    "appearanceCount": 2,
+    "pastResults": [
+      {
+        "year": 1974,
+        "result": "グループステージ敗退"
+      }
+    ],
+    "coach": {
+      "name": "セバスチャン・ミニェ",
+      "nationality": "フランス"
+    },
+    "worldRank": 83
+  },
+  {
+    "teamId": "SCO",
+    "continent": "ヨーロッパ (UEFA)",
+    "bestResult": "グループステージ敗退",
+    "firstAppearance": "1954",
+    "lastAppearance": "1998",
+    "appearanceCount": 9,
+    "pastResults": [
+      {
+        "year": 1954,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1958,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1974,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1978,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1982,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1986,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1990,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1998,
+        "result": "グループステージ敗退"
+      }
+    ],
+    "coach": {
+      "name": "スティーブ・クラーク",
+      "nationality": "スコットランド"
+    },
+    "worldRank": 43
+  },
+  {
+    "teamId": "USA",
+    "continent": "北中米カリブ (CONCACAF)",
+    "bestResult": "3位 (1930)",
+    "firstAppearance": "1930",
+    "lastAppearance": "2022",
+    "appearanceCount": 12,
+    "pastResults": [
+      {
+        "year": 1930,
+        "result": "4位"
+      },
+      {
+        "year": 1934,
+        "result": "ベスト16"
+      },
+      {
+        "year": 1950,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1990,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1994,
+        "result": "ベスト16"
+      },
+      {
+        "year": 1998,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2002,
+        "result": "ベスト8"
+      },
+      {
+        "year": 2006,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2010,
+        "result": "ベスト16"
+      },
+      {
+        "year": 2014,
+        "result": "ベスト16"
+      },
+      {
+        "year": 2022,
+        "result": "ベスト16"
+      }
+    ],
+    "coach": {
+      "name": "マウリシオ・ポチェッティーノ",
+      "nationality": "アルゼンチン"
+    },
+    "worldRank": 16
+  },
+  {
+    "teamId": "PAR",
+    "continent": "南米 (CONMEBOL)",
+    "bestResult": "ベスト8 (2010)",
+    "firstAppearance": "1930",
+    "lastAppearance": "2010",
+    "appearanceCount": 9,
+    "pastResults": [
+      {
+        "year": 1930,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1950,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1958,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1986,
+        "result": "ベスト16"
+      },
+      {
+        "year": 1998,
+        "result": "ベスト16"
+      },
+      {
+        "year": 2002,
+        "result": "ベスト16"
+      },
+      {
+        "year": 2006,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2010,
+        "result": "ベスト8"
+      }
+    ],
+    "coach": {
+      "name": "グスタボ・アルファロ",
+      "nationality": "アルゼンチン"
+    },
+    "worldRank": 40
+  },
+  {
+    "teamId": "AUS",
+    "continent": "アジア (AFC)",
+    "bestResult": "ベスト16 (2006, 2022)",
+    "firstAppearance": "1974",
+    "lastAppearance": "2022",
+    "appearanceCount": 7,
+    "pastResults": [
+      {
+        "year": 1974,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2006,
+        "result": "ベスト16"
+      },
+      {
+        "year": 2010,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2014,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2018,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2022,
+        "result": "ベスト16"
+      }
+    ],
+    "coach": {
+      "name": "トニー・ポポヴィッチ",
+      "nationality": "オーストラリア"
+    },
+    "worldRank": 27
+  },
+  {
+    "teamId": "TUR",
+    "continent": "ヨーロッパ (UEFA)",
+    "bestResult": "3位 (2002)",
+    "firstAppearance": "1954",
+    "lastAppearance": "2002",
+    "appearanceCount": 3,
+    "pastResults": [
+      {
+        "year": 1954,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2002,
+        "result": "3位"
+      }
+    ],
+    "coach": {
+      "name": "ヴィンチェンツォ・モンテッラ",
+      "nationality": "イタリア"
+    },
+    "worldRank": 22
+  },
+  {
+    "teamId": "GER",
+    "continent": "ヨーロッパ (UEFA)",
+    "bestResult": "優勝 (1954, 1974, 1990, 2014)",
+    "firstAppearance": "1934",
+    "lastAppearance": "2022",
+    "appearanceCount": 21,
+    "pastResults": [
+      {
+        "year": 1934,
+        "result": "3位"
+      },
+      {
+        "year": 1938,
+        "result": "ベスト16"
+      },
+      {
+        "year": 1954,
+        "result": "優勝"
+      },
+      {
+        "year": 1958,
+        "result": "4位"
+      },
+      {
+        "year": 1962,
+        "result": "ベスト8"
+      },
+      {
+        "year": 1966,
+        "result": "準優勝"
+      },
+      {
+        "year": 1970,
+        "result": "3位"
+      },
+      {
+        "year": 1974,
+        "result": "優勝"
+      },
+      {
+        "year": 1978,
+        "result": "ベスト16"
+      },
+      {
+        "year": 1982,
+        "result": "準優勝"
+      },
+      {
+        "year": 1986,
+        "result": "準優勝"
+      },
+      {
+        "year": 1990,
+        "result": "優勝"
+      },
+      {
+        "year": 1994,
+        "result": "ベスト8"
+      },
+      {
+        "year": 1998,
+        "result": "ベスト8"
+      },
+      {
+        "year": 2002,
+        "result": "準優勝"
+      },
+      {
+        "year": 2006,
+        "result": "3位"
+      },
+      {
+        "year": 2010,
+        "result": "3位"
+      },
+      {
+        "year": 2014,
+        "result": "優勝"
+      },
+      {
+        "year": 2018,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2022,
+        "result": "グループステージ敗退"
+      }
+    ],
+    "coach": {
+      "name": "ユリアン・ナーゲルスマン",
+      "nationality": "ドイツ"
+    },
+    "worldRank": 10
+  },
+  {
+    "teamId": "CUR",
+    "continent": "北中米カリブ (CONCACAF)",
+    "bestResult": "",
+    "firstAppearance": "2026",
+    "lastAppearance": "",
+    "appearanceCount": 1,
+    "pastResults": [],
+    "coach": {
+      "name": "ディック・アドフォカート",
+      "nationality": "オランダ"
+    },
+    "worldRank": 82
+  },
+  {
+    "teamId": "CIV",
+    "continent": "アフリカ (CAF)",
+    "bestResult": "グループステージ敗退",
+    "firstAppearance": "2006",
+    "lastAppearance": "2014",
+    "appearanceCount": 4,
+    "pastResults": [
+      {
+        "year": 2006,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2010,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2014,
+        "result": "グループステージ敗退"
+      }
+    ],
+    "coach": {
+      "name": "エメルセ・ファエ",
+      "nationality": "コートジボワール"
+    },
+    "worldRank": 34
+  },
+  {
+    "teamId": "ECU",
+    "continent": "南米 (CONMEBOL)",
+    "bestResult": "ベスト16 (2006)",
+    "firstAppearance": "2002",
+    "lastAppearance": "2022",
+    "appearanceCount": 5,
+    "pastResults": [
+      {
+        "year": 2002,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2006,
+        "result": "ベスト16"
+      },
+      {
+        "year": 2014,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2022,
+        "result": "グループステージ敗退"
+      }
+    ],
+    "coach": {
+      "name": "セバスティアン・ベッカチェチェ",
+      "nationality": "アルゼンチン"
+    },
+    "worldRank": 23
+  },
+  {
+    "teamId": "NED",
+    "continent": "ヨーロッパ (UEFA)",
+    "bestResult": "準優勝 (1974, 1978, 2010)",
+    "firstAppearance": "1934",
+    "lastAppearance": "2022",
+    "appearanceCount": 12,
+    "pastResults": [
+      {
+        "year": 1934,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1938,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1974,
+        "result": "準優勝"
+      },
+      {
+        "year": 1978,
+        "result": "準優勝"
+      },
+      {
+        "year": 1990,
+        "result": "ベスト16"
+      },
+      {
+        "year": 1994,
+        "result": "ベスト8"
+      },
+      {
+        "year": 1998,
+        "result": "4位"
+      },
+      {
+        "year": 2006,
+        "result": "ベスト16"
+      },
+      {
+        "year": 2010,
+        "result": "準優勝"
+      },
+      {
+        "year": 2014,
+        "result": "3位"
+      },
+      {
+        "year": 2022,
+        "result": "ベスト8"
+      }
+    ],
+    "coach": {
+      "name": "ロナルド・クーマン",
+      "nationality": "オランダ"
+    },
+    "worldRank": 7
+  },
+  {
+    "teamId": "JPN",
+    "continent": "アジア (AFC)",
+    "bestResult": "ベスト16 (2002, 2010, 2018, 2022)",
+    "firstAppearance": "1998",
+    "lastAppearance": "2022",
+    "appearanceCount": 8,
+    "pastResults": [
+      {
+        "year": 1998,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2002,
+        "result": "ベスト16"
+      },
+      {
+        "year": 2006,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2010,
+        "result": "ベスト16"
+      },
+      {
+        "year": 2014,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2018,
+        "result": "ベスト16"
+      },
+      {
+        "year": 2022,
+        "result": "ベスト16"
+      }
+    ],
+    "coach": {
+      "name": "森保一",
+      "nationality": "日本"
+    },
+    "worldRank": 18
+  },
+  {
+    "teamId": "SWE",
+    "continent": "ヨーロッパ (UEFA)",
+    "bestResult": "準優勝 (1958)",
+    "firstAppearance": "1934",
+    "lastAppearance": "2018",
+    "appearanceCount": 13,
+    "pastResults": [
+      {
+        "year": 1934,
+        "result": "ベスト8"
+      },
+      {
+        "year": 1938,
+        "result": "4位"
+      },
+      {
+        "year": 1950,
+        "result": "3位"
+      },
+      {
+        "year": 1958,
+        "result": "準優勝"
+      },
+      {
+        "year": 1970,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1974,
+        "result": "ベスト32"
+      },
+      {
+        "year": 1978,
+        "result": "ベスト16"
+      },
+      {
+        "year": 1990,
+        "result": "ベスト16"
+      },
+      {
+        "year": 1994,
+        "result": "3位"
+      },
+      {
+        "year": 2002,
+        "result": "ベスト16"
+      },
+      {
+        "year": 2006,
+        "result": "ベスト16"
+      },
+      {
+        "year": 2018,
+        "result": "ベスト8"
+      }
+    ],
+    "coach": {
+      "name": "グラハム・ポッター",
+      "nationality": "イングランド"
+    },
+    "worldRank": 38
+  },
+  {
+    "teamId": "TUN",
+    "continent": "アフリカ (CAF)",
+    "bestResult": "グループステージ敗退",
+    "firstAppearance": "1978",
+    "lastAppearance": "2022",
+    "appearanceCount": 7,
+    "pastResults": [
+      {
+        "year": 1978,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1998,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2002,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2006,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2018,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2022,
+        "result": "グループステージ敗退"
+      }
+    ],
+    "coach": {
+      "name": "サブリ・ラムシ",
+      "nationality": "フランス"
+    },
+    "worldRank": 44
+  },
+  {
+    "teamId": "BEL",
+    "continent": "ヨーロッパ (UEFA)",
+    "bestResult": "3位 (2018)",
+    "firstAppearance": "1930",
+    "lastAppearance": "2022",
+    "appearanceCount": 15,
+    "pastResults": [
+      {
+        "year": 1930,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1934,
+        "result": "ベスト16"
+      },
+      {
+        "year": 1938,
+        "result": "ベスト16"
+      },
+      {
+        "year": 1954,
+        "result": "ベスト32"
+      },
+      {
+        "year": 1970,
+        "result": "ベスト32"
+      },
+      {
+        "year": 1982,
+        "result": "ベスト32"
+      },
+      {
+        "year": 1986,
+        "result": "4位"
+      },
+      {
+        "year": 1990,
+        "result": "ベスト16"
+      },
+      {
+        "year": 1994,
+        "result": "ベスト16"
+      },
+      {
+        "year": 1998,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2002,
+        "result": "ベスト16"
+      },
+      {
+        "year": 2014,
+        "result": "ベスト8"
+      },
+      {
+        "year": 2018,
+        "result": "3位"
+      },
+      {
+        "year": 2022,
+        "result": "グループステージ敗退"
+      }
+    ],
+    "coach": {
+      "name": "ルディ・ガルシア",
+      "nationality": "フランス"
+    },
+    "worldRank": 9
+  },
+  {
+    "teamId": "EGY",
+    "continent": "アフリカ (CAF)",
+    "bestResult": "ベスト16 (1934)",
+    "firstAppearance": "1934",
+    "lastAppearance": "2018",
+    "appearanceCount": 4,
+    "pastResults": [
+      {
+        "year": 1934,
+        "result": "ベスト16"
+      },
+      {
+        "year": 1990,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2018,
+        "result": "グループステージ敗退"
+      }
+    ],
+    "coach": {
+      "name": "ホサム・ハッサン",
+      "nationality": "エジプト"
+    },
+    "worldRank": 29
+  },
+  {
+    "teamId": "IRN",
+    "continent": "アジア (AFC)",
+    "bestResult": "グループステージ敗退",
+    "firstAppearance": "1978",
+    "lastAppearance": "2022",
+    "appearanceCount": 7,
+    "pastResults": [
+      {
+        "year": 1978,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1998,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2006,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2014,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2018,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2022,
+        "result": "グループステージ敗退"
+      }
+    ],
+    "coach": {
+      "name": "アミル・ガレノエイ",
+      "nationality": "イラン"
+    },
+    "worldRank": 21
+  },
+  {
+    "teamId": "NZL",
+    "continent": "オセアニア (OFC)",
+    "bestResult": "グループステージ敗退",
+    "firstAppearance": "1982",
+    "lastAppearance": "2010",
+    "appearanceCount": 3,
+    "pastResults": [
+      {
+        "year": 1982,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2010,
+        "result": "グループステージ敗退"
+      }
+    ],
+    "coach": {
+      "name": "ダレン・ベイズリー",
+      "nationality": "イングランド"
+    },
+    "worldRank": 85
+  },
+  {
+    "teamId": "ESP",
+    "continent": "ヨーロッパ (UEFA)",
+    "bestResult": "優勝 (2010)",
+    "firstAppearance": "1934",
+    "lastAppearance": "2022",
+    "appearanceCount": 17,
+    "pastResults": [
+      {
+        "year": 1934,
+        "result": "ベスト8"
+      },
+      {
+        "year": 1950,
+        "result": "4位"
+      },
+      {
+        "year": 1962,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1966,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1978,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1982,
+        "result": "ベスト16"
+      },
+      {
+        "year": 1986,
+        "result": "ベスト8"
+      },
+      {
+        "year": 1990,
+        "result": "ベスト16"
+      },
+      {
+        "year": 1994,
+        "result": "ベスト8"
+      },
+      {
+        "year": 1998,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2002,
+        "result": "ベスト8"
+      },
+      {
+        "year": 2006,
+        "result": "ベスト16"
+      },
+      {
+        "year": 2010,
+        "result": "優勝"
+      },
+      {
+        "year": 2014,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2018,
+        "result": "ベスト16"
+      },
+      {
+        "year": 2022,
+        "result": "ベスト16"
+      }
+    ],
+    "coach": {
+      "name": "ルイス・デ・ラ・フエンテ",
+      "nationality": "スペイン"
+    },
+    "worldRank": 2
+  },
+  {
+    "teamId": "CPV",
+    "continent": "アフリカ (CAF)",
+    "bestResult": "",
+    "firstAppearance": "2026",
+    "lastAppearance": "",
+    "appearanceCount": 1,
+    "pastResults": [],
+    "coach": {
+      "name": "ブビスタ (ペドロ・ブリト)",
+      "nationality": "カーボベルデ"
+    },
+    "worldRank": 69
+  },
+  {
+    "teamId": "KSA",
+    "continent": "アジア (AFC)",
+    "bestResult": "ベスト16 (1994)",
+    "firstAppearance": "1994",
+    "lastAppearance": "2022",
+    "appearanceCount": 7,
+    "pastResults": [
+      {
+        "year": 1994,
+        "result": "ベスト16"
+      },
+      {
+        "year": 1998,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2002,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2006,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2018,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2022,
+        "result": "グループステージ敗退"
+      }
+    ],
+    "coach": {
+      "name": "ゲオルギオス・ドニス",
+      "nationality": "ギリシャ"
+    },
+    "worldRank": 61
+  },
+  {
+    "teamId": "URU",
+    "continent": "南米 (CONMEBOL)",
+    "bestResult": "優勝 (1930, 1950)",
+    "firstAppearance": "1930",
+    "lastAppearance": "2022",
+    "appearanceCount": 15,
+    "pastResults": [
+      {
+        "year": 1930,
+        "result": "優勝"
+      },
+      {
+        "year": 1950,
+        "result": "優勝"
+      },
+      {
+        "year": 1954,
+        "result": "4位"
+      },
+      {
+        "year": 1962,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1966,
+        "result": "ベスト8"
+      },
+      {
+        "year": 1970,
+        "result": "4位"
+      },
+      {
+        "year": 1974,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1986,
+        "result": "ベスト16"
+      },
+      {
+        "year": 1990,
+        "result": "ベスト16"
+      },
+      {
+        "year": 2002,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2010,
+        "result": "4位"
+      },
+      {
+        "year": 2014,
+        "result": "ベスト16"
+      },
+      {
+        "year": 2018,
+        "result": "ベスト8"
+      },
+      {
+        "year": 2022,
+        "result": "グループステージ敗退"
+      }
+    ],
+    "coach": {
+      "name": "マルセロ・ビエルサ",
+      "nationality": "アルゼンチン"
+    },
+    "worldRank": 17
+  },
+  {
+    "teamId": "FRA",
+    "continent": "ヨーロッパ (UEFA)",
+    "bestResult": "優勝 (1998, 2018)",
+    "firstAppearance": "1930",
+    "lastAppearance": "2022",
+    "appearanceCount": 17,
+    "pastResults": [
+      {
+        "year": 1930,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1934,
+        "result": "ベスト16"
+      },
+      {
+        "year": 1938,
+        "result": "ベスト8"
+      },
+      {
+        "year": 1954,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1958,
+        "result": "3位"
+      },
+      {
+        "year": 1966,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1978,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1982,
+        "result": "4位"
+      },
+      {
+        "year": 1986,
+        "result": "3位"
+      },
+      {
+        "year": 1998,
+        "result": "優勝"
+      },
+      {
+        "year": 2002,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2006,
+        "result": "準優勝"
+      },
+      {
+        "year": 2010,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2014,
+        "result": "ベスト8"
+      },
+      {
+        "year": 2018,
+        "result": "優勝"
+      },
+      {
+        "year": 2022,
+        "result": "準優勝"
+      }
+    ],
+    "coach": {
+      "name": "ディディエ・デシャン",
+      "nationality": "フランス"
+    },
+    "worldRank": 1
+  },
+  {
+    "teamId": "SEN",
+    "continent": "アフリカ (CAF)",
+    "bestResult": "ベスト8 (2002)",
+    "firstAppearance": "2002",
+    "lastAppearance": "2022",
+    "appearanceCount": 4,
+    "pastResults": [
+      {
+        "year": 2002,
+        "result": "ベスト8"
+      },
+      {
+        "year": 2018,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2022,
+        "result": "ベスト16"
+      }
+    ],
+    "coach": {
+      "name": "パペ・チャウ",
+      "nationality": "セネガル"
+    },
+    "worldRank": 14
+  },
+  {
+    "teamId": "IRQ",
+    "continent": "アジア (AFC)",
+    "bestResult": "グループステージ敗退",
+    "firstAppearance": "1986",
+    "lastAppearance": "1986",
+    "appearanceCount": 2,
+    "pastResults": [
+      {
+        "year": 1986,
+        "result": "グループステージ敗退"
+      }
+    ],
+    "coach": {
+      "name": "グラハム・アーノルド",
+      "nationality": "オーストラリア"
+    },
+    "worldRank": 57
+  },
+  {
+    "teamId": "NOR",
+    "continent": "ヨーロッパ (UEFA)",
+    "bestResult": "ベスト16 (1938, 1998)",
+    "firstAppearance": "1938",
+    "lastAppearance": "1998",
+    "appearanceCount": 4,
+    "pastResults": [
+      {
+        "year": 1938,
+        "result": "ベスト16"
+      },
+      {
+        "year": 1994,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1998,
+        "result": "ベスト16"
+      }
+    ],
+    "coach": {
+      "name": "ストール・ソルバッケン",
+      "nationality": "ノルウェー"
+    },
+    "worldRank": 31
+  },
+  {
+    "teamId": "ARG",
+    "continent": "南米 (CONMEBOL)",
+    "bestResult": "優勝 (1978, 1986, 2022)",
+    "firstAppearance": "1930",
+    "lastAppearance": "2022",
+    "appearanceCount": 19,
+    "pastResults": [
+      {
+        "year": 1930,
+        "result": "準優勝"
+      },
+      {
+        "year": 1934,
+        "result": "ベスト16"
+      },
+      {
+        "year": 1958,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1962,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1966,
+        "result": "ベスト8"
+      },
+      {
+        "year": 1974,
+        "result": "ベスト16"
+      },
+      {
+        "year": 1978,
+        "result": "優勝"
+      },
+      {
+        "year": 1982,
+        "result": "ベスト16"
+      },
+      {
+        "year": 1986,
+        "result": "優勝"
+      },
+      {
+        "year": 1990,
+        "result": "準優勝"
+      },
+      {
+        "year": 1994,
+        "result": "ベスト16"
+      },
+      {
+        "year": 1998,
+        "result": "ベスト8"
+      },
+      {
+        "year": 2002,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2006,
+        "result": "ベスト8"
+      },
+      {
+        "year": 2010,
+        "result": "ベスト8"
+      },
+      {
+        "year": 2014,
+        "result": "準優勝"
+      },
+      {
+        "year": 2018,
+        "result": "ベスト16"
+      },
+      {
+        "year": 2022,
+        "result": "優勝"
+      }
+    ],
+    "coach": {
+      "name": "リオネル・スカローニ",
+      "nationality": "アルゼンチン"
+    },
+    "worldRank": 3
+  },
+  {
+    "teamId": "ALG",
+    "continent": "アフリカ (CAF)",
+    "bestResult": "ベスト16 (2014)",
+    "firstAppearance": "1982",
+    "lastAppearance": "2014",
+    "appearanceCount": 5,
+    "pastResults": [],
+    "coach": {
+      "name": "ヴラディミール・ペトコビッチ",
+      "nationality": "ボスニア・ヘルツェゴビナ / スイス"
+    },
+    "worldRank": 28
+  },
+  {
+    "teamId": "AUT",
+    "continent": "ヨーロッパ (UEFA)",
+    "bestResult": "3位 (1954)",
+    "firstAppearance": "1934",
+    "lastAppearance": "1998",
+    "appearanceCount": 8,
+    "pastResults": [
+      {
+        "year": 1934,
+        "result": "4位"
+      },
+      {
+        "year": 1954,
+        "result": "3位"
+      },
+      {
+        "year": 1958,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1978,
+        "result": "ベスト32"
+      },
+      {
+        "year": 1982,
+        "result": "ベスト32"
+      },
+      {
+        "year": 1990,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1998,
+        "result": "グループステージ敗退"
+      }
+    ],
+    "coach": {
+      "name": "ラルフ・ラングニック",
+      "nationality": "ドイツ"
+    },
+    "worldRank": 24
+  },
+  {
+    "teamId": "JOR",
+    "continent": "アジア (AFC)",
+    "bestResult": "",
+    "firstAppearance": "2026",
+    "lastAppearance": "",
+    "appearanceCount": 1,
+    "pastResults": [],
+    "coach": {
+      "name": "ジャマル・セラミ",
+      "nationality": "モロッコ"
+    },
+    "worldRank": 63
+  },
+  {
+    "teamId": "POR",
+    "continent": "ヨーロッパ (UEFA)",
+    "bestResult": "3位 (1966)",
+    "firstAppearance": "1966",
+    "lastAppearance": "2022",
+    "appearanceCount": 9,
+    "pastResults": [
+      {
+        "year": 1966,
+        "result": "3位"
+      },
+      {
+        "year": 1986,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2002,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2006,
+        "result": "4位"
+      },
+      {
+        "year": 2010,
+        "result": "ベスト16"
+      },
+      {
+        "year": 2014,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2018,
+        "result": "ベスト16"
+      },
+      {
+        "year": 2022,
+        "result": "ベスト8"
+      }
+    ],
+    "coach": {
+      "name": "ロベルト・マルティネス",
+      "nationality": "スペイン"
+    },
+    "worldRank": 5
+  },
+  {
+    "teamId": "COD",
+    "continent": "アフリカ (CAF)",
+    "bestResult": "グループステージ敗退（1974年はザイール代表として）",
+    "firstAppearance": "1974",
+    "lastAppearance": "1974",
+    "appearanceCount": 2,
+    "pastResults": [],
+    "coach": {
+      "name": "セバスチャン・デザブル",
+      "nationality": "フランス"
+    },
+    "worldRank": 46
+  },
+  {
+    "teamId": "UZB",
+    "continent": "アジア (AFC)",
+    "bestResult": "",
+    "firstAppearance": "2026",
+    "lastAppearance": "",
+    "appearanceCount": 1,
+    "pastResults": [],
+    "coach": {
+      "name": "ファビオ・カンナバーロ",
+      "nationality": "イタリア"
+    },
+    "worldRank": 50
+  },
+  {
+    "teamId": "COL",
+    "continent": "南米 (CONMEBOL)",
+    "bestResult": "ベスト8 (2014)",
+    "firstAppearance": "1962",
+    "lastAppearance": "2018",
+    "appearanceCount": 7,
+    "pastResults": [
+      {
+        "year": 1962,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1990,
+        "result": "ベスト16"
+      },
+      {
+        "year": 1994,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1998,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2014,
+        "result": "ベスト8"
+      },
+      {
+        "year": 2018,
+        "result": "ベスト16"
+      }
+    ],
+    "coach": {
+      "name": "ネストル・ロレンソ",
+      "nationality": "アルゼンチン"
+    },
+    "worldRank": 13
+  },
+  {
+    "teamId": "ENG",
+    "continent": "ヨーロッパ (UEFA)",
+    "bestResult": "優勝 (1966)",
+    "firstAppearance": "1950",
+    "lastAppearance": "2022",
+    "appearanceCount": 17,
+    "pastResults": [
+      {
+        "year": 1950,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1954,
+        "result": "ベスト8"
+      },
+      {
+        "year": 1958,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 1962,
+        "result": "ベスト8"
+      },
+      {
+        "year": 1966,
+        "result": "ベスト16"
+      },
+      {
+        "year": 1970,
+        "result": "ベスト8"
+      },
+      {
+        "year": 1982,
+        "result": "ベスト16"
+      },
+      {
+        "year": 1986,
+        "result": "ベスト8"
+      },
+      {
+        "year": 1990,
+        "result": "4位"
+      },
+      {
+        "year": 1998,
+        "result": "ベスト16"
+      },
+      {
+        "year": 2002,
+        "result": "ベスト8"
+      },
+      {
+        "year": 2006,
+        "result": "ベスト8"
+      },
+      {
+        "year": 2010,
+        "result": "ベスト16"
+      },
+      {
+        "year": 2014,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2018,
+        "result": "4位"
+      },
+      {
+        "year": 2022,
+        "result": "ベスト8"
+      }
+    ],
+    "coach": {
+      "name": "トーマス・トゥヘル",
+      "nationality": "ドイツ"
+    },
+    "worldRank": 4
+  },
+  {
+    "teamId": "CRO",
+    "continent": "ヨーロッパ (UEFA)",
+    "bestResult": "準優勝 (2018)",
+    "firstAppearance": "1998",
+    "lastAppearance": "2022",
+    "appearanceCount": 7,
+    "pastResults": [
+      {
+        "year": 1998,
+        "result": "3位"
+      },
+      {
+        "year": 2002,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2006,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2014,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2018,
+        "result": "準優勝"
+      },
+      {
+        "year": 2022,
+        "result": "3位"
+      }
+    ],
+    "coach": {
+      "name": "ズラトコ・ダリッチ",
+      "nationality": "クロアチア"
+    },
+    "worldRank": 11
+  },
+  {
+    "teamId": "GHA",
+    "continent": "アフリカ (CAF)",
+    "bestResult": "ベスト8 (2010)",
+    "firstAppearance": "2006",
+    "lastAppearance": "2022",
+    "appearanceCount": 5,
+    "pastResults": [
+      {
+        "year": 2006,
+        "result": "ベスト16"
+      },
+      {
+        "year": 2010,
+        "result": "ベスト8"
+      },
+      {
+        "year": 2014,
+        "result": "グループステージ敗退"
+      },
+      {
+        "year": 2022,
+        "result": "グループステージ敗退"
+      }
+    ],
+    "coach": {
+      "name": "カルロス・ケイロス",
+      "nationality": "ポルトガル"
+    },
+    "worldRank": 74
+  },
+  {
+    "teamId": "PAN",
+    "continent": "北中米カリブ (CONCACAF)",
+    "bestResult": "グループステージ敗退",
+    "firstAppearance": "2018",
+    "lastAppearance": "2018",
+    "appearanceCount": 2,
+    "pastResults": [
+      {
+        "year": 2018,
+        "result": "グループステージ敗退"
+      }
+    ],
+    "coach": {
+      "name": "トーマス・クリスチャンセン",
+      "nationality": "スペイン"
+    },
+    "worldRank": 33
+  }
+]

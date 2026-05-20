@@ -1,0 +1,117 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.back {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  align-self: flex-start;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.flag {
+  flex-shrink: 0;
+  border-radius: 4px;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.4);
+}
+
+.name {
+  margin: 0 0 0.25rem;
+  font-size: 1.75rem;
+}
+
+.sub {
+  margin: 0;
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  font-size: 0.9rem;
+  opacity: 0.9;
+  flex-wrap: wrap;
+}
+
+.nameEn {
+  font-style: italic;
+}
+
+.groupBadge {
+  background-color: rgba(255, 255, 255, 0.22);
+  padding: 0.15rem 0.7rem;
+  border-radius: 999px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.tabs {
+  display: inline-flex;
+  align-self: flex-start;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  padding: 0.25rem;
+}
+
+.tab {
+  background-color: transparent;
+  color: var(--color-text-muted);
+  border: none;
+  border-radius: 999px;
+  padding: 0.45rem 1.25rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.tab:hover {
+  color: var(--color-primary);
+}
+
+.tabActive {
+  background-color: var(--color-primary);
+  color: #fff !important;
+}
+
+@media (max-width: 640px) {
+  .header {
+    gap: 0.85rem;
+    padding: 1.1rem;
+  }
+
+  .name {
+    font-size: 1.35rem;
+  }
+
+  .sub {
+    font-size: 0.82rem;
+    gap: 0.5rem;
+  }
+
+  .tabs {
+    align-self: stretch;
+    display: flex;
+  }
+
+  .tab {
+    flex: 1;
+    padding: 0.45rem 0.5rem;
+  }
+}

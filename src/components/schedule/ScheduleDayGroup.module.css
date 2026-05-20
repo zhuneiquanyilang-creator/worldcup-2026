@@ -1,0 +1,16 @@
+.day {
+  margin-bottom: 1.75rem;
+}
+
+.heading {
+  font-size: 1.05rem;
+  color: var(--color-primary-dark);
+  border-left: 4px solid var(--color-accent);
+  padding-left: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.list {
+  display: grid;
+  gap: 0.75rem;
+}

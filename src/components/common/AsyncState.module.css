@@ -1,0 +1,16 @@
+.loading,
+.error {
+  padding: 2rem 1rem;
+  text-align: center;
+  border-radius: var(--radius-md);
+  background-color: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.loading {
+  color: var(--color-text-muted);
+}
+
+.error {
+  color: var(--color-accent);
+}

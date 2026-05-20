@@ -1,0 +1,61 @@
+[
+  { "id": "MEX", "name": "メキシコ", "nameEn": "Mexico", "flag": "🇲🇽", "isoCode": "mx", "groupId": "A" },
+  { "id": "ZAF", "name": "南アフリカ", "nameEn": "South Africa", "flag": "🇿🇦", "isoCode": "za", "groupId": "A" },
+  { "id": "KOR", "name": "韓国", "nameEn": "South Korea", "flag": "🇰🇷", "isoCode": "kr", "groupId": "A" },
+  { "id": "CZE", "name": "チェコ", "nameEn": "Czech Republic", "flag": "🇨🇿", "isoCode": "cz", "groupId": "A" },
+
+  { "id": "CAN", "name": "カナダ", "nameEn": "Canada", "flag": "🇨🇦", "isoCode": "ca", "groupId": "B" },
+  { "id": "BIH", "name": "ボスニア・ヘルツェゴビナ", "nameEn": "Bosnia and Herzegovina", "flag": "🇧🇦", "isoCode": "ba", "groupId": "B" },
+  { "id": "QAT", "name": "カタール", "nameEn": "Qatar", "flag": "🇶🇦", "isoCode": "qa", "groupId": "B" },
+  { "id": "SUI", "name": "スイス", "nameEn": "Switzerland", "flag": "🇨🇭", "isoCode": "ch", "groupId": "B" },
+
+  { "id": "BRA", "name": "ブラジル", "nameEn": "Brazil", "flag": "🇧🇷", "isoCode": "br", "groupId": "C" },
+  { "id": "MAR", "name": "モロッコ", "nameEn": "Morocco", "flag": "🇲🇦", "isoCode": "ma", "groupId": "C" },
+  { "id": "HAI", "name": "ハイチ", "nameEn": "Haiti", "flag": "🇭🇹", "isoCode": "ht", "groupId": "C" },
+  { "id": "SCO", "name": "スコットランド", "nameEn": "Scotland", "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿", "isoCode": "gb-sct", "groupId": "C" },
+
+  { "id": "USA", "name": "アメリカ", "nameEn": "USA", "flag": "🇺🇸", "isoCode": "us", "groupId": "D" },
+  { "id": "PAR", "name": "パラグアイ", "nameEn": "Paraguay", "flag": "🇵🇾", "isoCode": "py", "groupId": "D" },
+  { "id": "AUS", "name": "オーストラリア", "nameEn": "Australia", "flag": "🇦🇺", "isoCode": "au", "groupId": "D" },
+  { "id": "TUR", "name": "トルコ", "nameEn": "Turkey", "flag": "🇹🇷", "isoCode": "tr", "groupId": "D" },
+
+  { "id": "GER", "name": "ドイツ", "nameEn": "Germany", "flag": "🇩🇪", "isoCode": "de", "groupId": "E" },
+  { "id": "CUR", "name": "キュラソー", "nameEn": "Curaçao", "flag": "🇨🇼", "isoCode": "cw", "groupId": "E" },
+  { "id": "CIV", "name": "コートジボワール", "nameEn": "Ivory Coast", "flag": "🇨🇮", "isoCode": "ci", "groupId": "E" },
+  { "id": "ECU", "name": "エクアドル", "nameEn": "Ecuador", "flag": "🇪🇨", "isoCode": "ec", "groupId": "E" },
+
+  { "id": "NED", "name": "オランダ", "nameEn": "Netherlands", "flag": "🇳🇱", "isoCode": "nl", "groupId": "F" },
+  { "id": "JPN", "name": "日本", "nameEn": "Japan", "flag": "🇯🇵", "isoCode": "jp", "groupId": "F" },
+  { "id": "SWE", "name": "スウェーデン", "nameEn": "Sweden", "flag": "🇸🇪", "isoCode": "se", "groupId": "F" },
+  { "id": "TUN", "name": "チュニジア", "nameEn": "Tunisia", "flag": "🇹🇳", "isoCode": "tn", "groupId": "F" },
+
+  { "id": "BEL", "name": "ベルギー", "nameEn": "Belgium", "flag": "🇧🇪", "isoCode": "be", "groupId": "G" },
+  { "id": "EGY", "name": "エジプト", "nameEn": "Egypt", "flag": "🇪🇬", "isoCode": "eg", "groupId": "G" },
+  { "id": "IRN", "name": "イラン", "nameEn": "Iran", "flag": "🇮🇷", "isoCode": "ir", "groupId": "G" },
+  { "id": "NZL", "name": "ニュージーランド", "nameEn": "New Zealand", "flag": "🇳🇿", "isoCode": "nz", "groupId": "G" },
+
+  { "id": "ESP", "name": "スペイン", "nameEn": "Spain", "flag": "🇪🇸", "isoCode": "es", "groupId": "H" },
+  { "id": "CPV", "name": "カーボベルデ", "nameEn": "Cape Verde", "flag": "🇨🇻", "isoCode": "cv", "groupId": "H" },
+  { "id": "KSA", "name": "サウジアラビア", "nameEn": "Saudi Arabia", "flag": "🇸🇦", "isoCode": "sa", "groupId": "H" },
+  { "id": "URU", "name": "ウルグアイ", "nameEn": "Uruguay", "flag": "🇺🇾", "isoCode": "uy", "groupId": "H" },
+
+  { "id": "FRA", "name": "フランス", "nameEn": "France", "flag": "🇫🇷", "isoCode": "fr", "groupId": "I" },
+  { "id": "SEN", "name": "セネガル", "nameEn": "Senegal", "flag": "🇸🇳", "isoCode": "sn", "groupId": "I" },
+  { "id": "IRQ", "name": "イラク", "nameEn": "Iraq", "flag": "🇮🇶", "isoCode": "iq", "groupId": "I" },
+  { "id": "NOR", "name": "ノルウェー", "nameEn": "Norway", "flag": "🇳🇴", "isoCode": "no", "groupId": "I" },
+
+  { "id": "ARG", "name": "アルゼンチン", "nameEn": "Argentina", "flag": "🇦🇷", "isoCode": "ar", "groupId": "J" },
+  { "id": "ALG", "name": "アルジェリア", "nameEn": "Algeria", "flag": "🇩🇿", "isoCode": "dz", "groupId": "J" },
+  { "id": "AUT", "name": "オーストリア", "nameEn": "Austria", "flag": "🇦🇹", "isoCode": "at", "groupId": "J" },
+  { "id": "JOR", "name": "ヨルダン", "nameEn": "Jordan", "flag": "🇯🇴", "isoCode": "jo", "groupId": "J" },
+
+  { "id": "POR", "name": "ポルトガル", "nameEn": "Portugal", "flag": "🇵🇹", "isoCode": "pt", "groupId": "K" },
+  { "id": "COD", "name": "コンゴ民主共和国", "nameEn": "DR Congo", "flag": "🇨🇩", "isoCode": "cd", "groupId": "K" },
+  { "id": "UZB", "name": "ウズベキスタン", "nameEn": "Uzbekistan", "flag": "🇺🇿", "isoCode": "uz", "groupId": "K" },
+  { "id": "COL", "name": "コロンビア", "nameEn": "Colombia", "flag": "🇨🇴", "isoCode": "co", "groupId": "K" },
+
+  { "id": "ENG", "name": "イングランド", "nameEn": "England", "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "isoCode": "gb-eng", "groupId": "L" },
+  { "id": "CRO", "name": "クロアチア", "nameEn": "Croatia", "flag": "🇭🇷", "isoCode": "hr", "groupId": "L" },
+  { "id": "GHA", "name": "ガーナ", "nameEn": "Ghana", "flag": "🇬🇭", "isoCode": "gh", "groupId": "L" },
+  { "id": "PAN", "name": "パナマ", "nameEn": "Panama", "flag": "🇵🇦", "isoCode": "pa", "groupId": "L" }
+]

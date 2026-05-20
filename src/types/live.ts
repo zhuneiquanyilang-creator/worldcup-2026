@@ -1,0 +1,29 @@
+import type {
+  Booking,
+  FormationData,
+  Goal,
+  MatchStats,
+  MatchStatus,
+  Substitution,
+} from "./match";
+
+/**
+ * 外部ソースから取得する1試合分のライブ更新。
+ * 受け取った時点で確認できているフィールドのみ含む。
+ * 適用時は既存値に対して部分上書き（マージ）する。
+ */
+export type LiveUpdate = {
+  matchId: string;
+  status?: MatchStatus;
+  score?: { home: number; away: number };
+  /** 表示用の現在進行情報（例: "45+2'" / "HT" / "FT" / "ライブ"） */
+  liveLabel?: string;
+  goals?: Goal[];
+  bookings?: Booking[];
+  substitutions?: Substitution[];
+  homeFormation?: FormationData;
+  awayFormation?: FormationData;
+  stats?: MatchStats;
+  /** ISO 8601 取得時刻（最終更新時刻表示用） */
+  fetchedAt?: string;
+};

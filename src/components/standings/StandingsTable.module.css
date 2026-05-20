@@ -1,0 +1,105 @@
+.wrapper {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  font-size: 0.95rem;
+}
+
+.table th,
+.table td {
+  padding: 0.6rem 0.5rem;
+  text-align: center;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.table th {
+  background-color: #f9fafb;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+}
+
+.team {
+  text-align: left !important;
+  display: table-cell;
+}
+
+.teamLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: inherit;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.teamLink:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+/* .flag は Flag コンポーネント (img) に置き換え。teamLink の gap で間隔調整 */
+
+.rank {
+  font-weight: 700;
+  color: var(--color-primary);
+  width: 3rem;
+}
+
+.points {
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.qualified td:first-child {
+  position: relative;
+}
+
+.qualified td:first-child::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  bottom: 4px;
+  width: 3px;
+  background-color: var(--color-success);
+  border-radius: 2px;
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin: 0.75rem 0 0;
+  padding-left: 0.25rem;
+}
+
+.legendDot {
+  width: 3px;
+  height: 16px;
+  background-color: var(--color-success);
+  border-radius: 2px;
+}
+
+@media (max-width: 640px) {
+  .wrapper {
+    padding: 0.75rem 0.6rem;
+  }
+
+  .table {
+    font-size: 0.85rem;
+  }
+
+  .table th,
+  .table td {
+    padding: 0.45rem 0.3rem;
+  }
+}
