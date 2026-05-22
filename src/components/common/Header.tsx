@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { TeamSearch } from "./TeamSearch";
 import styles from "./Header.module.css";
 
 export function Header() {
@@ -9,6 +10,7 @@ export function Header() {
           <span className={styles.logo}>FIFA</span>
           <span className={styles.title}>World Cup 2026</span>
         </Link>
+        <TeamSearch />
         <span className={styles.host}>USA · Canada · Mexico</span>
       </div>
     </header>

@@ -72,6 +72,15 @@
 
 データソース: `public/data/team_details.json`（48チーム分）。出典は Wikipedia 英語版「National team appearances in the FIFA World Cup」（2026-05-18 取得）。
 
+## 国名検索（ヘッダー）
+
+ヘッダー (`components/common/Header.tsx`) に国名検索ボックス `components/common/TeamSearch.tsx` を配置。`<Layout>` 経由で全ページ共通に表示される。
+
+- 入力をチーム名（日本語）・英語名 (`nameEn`)・FIFAコード (`id`) に部分一致でフィルタ（`teams.json` を `useTeams` で取得）。
+- 候補は最大8件。各候補に国旗・国名・英語名・所属グループを表示。
+- 候補をクリック／Enter で `/teams/:id`（`TeamDetailPage`）へ遷移。
+- キーボード操作: ↑↓ で候補移動、Enter で決定、Esc で閉じる。ボックス外クリックでも閉じる。
+
 ## 国旗の表示
 
 Windows 等で Unicode 国旗絵文字が正しく描画されないため、`components/common/Flag.tsx` が flagcdn.com の SVG を `<img>` で表示する。`Team.isoCode` (ISO 3166-1 alpha-2、英国構成国は `gb-eng` / `gb-sct`) を URL に使用。表示箇所:
