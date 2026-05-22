@@ -679,7 +679,7 @@
   { "id": "p_nor_21", "name": "サンデル・ガード・ボーリン・ベルゲ", "teamId": "NOR", "position": "MF", "birthDate": "1998-02-14", "club": "フラム（イングランド）", "goals": 0, "assists": 0 },
   { "id": "p_nor_22", "name": "オスカー・ボッブ", "teamId": "NOR", "position": "MF", "birthDate": "2003-07-12", "club": "フラム（イングランド）", "goals": 0, "assists": 0 },
   { "id": "p_nor_23", "name": "マルティン・ウーデゴール", "teamId": "NOR", "position": "MF", "birthDate": "1998-12-17", "club": "アーセナル（イングランド）", "goals": 0, "assists": 0 },
-  { "id": "p_nor_24", "name": "アーリング・ブラウト・ホーラン", "teamId": "NOR", "position": "FW", "birthDate": "2000-07-21", "club": "マンチェスター・シティ（イングランド）", "goals": 0, "assists": 0 },
+  { "id": "p_nor_24", "name": "アーリング・ブラウト・ハーランド", "teamId": "NOR", "position": "FW", "birthDate": "2000-07-21", "club": "マンチェスター・シティ（イングランド）", "goals": 0, "assists": 0 },
   { "id": "p_nor_25", "name": "ヨルゲン・ストラン・ラーセン", "teamId": "NOR", "position": "FW", "birthDate": "2000-02-06", "club": "クリスタル・パレス（イングランド）", "goals": 0, "assists": 0 },
   { "id": "p_nor_26", "name": "アレクサンデル・セルロート", "teamId": "NOR", "position": "FW", "birthDate": "1995-12-05", "club": "アトレティコ・マドリード（スペイン）", "goals": 0, "assists": 0 }
 ]
