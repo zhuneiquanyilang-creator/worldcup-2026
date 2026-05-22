@@ -29,7 +29,7 @@
 
 **CORS 対策**: `vite.config.ts` で `/sofascore-api/*` → `https://api.sofascore.com/api/v1/*` のリバースプロキシを設定（dev server のみ有効）。本番デプロイ時は別途リバースプロキシが必要。
 
-**試合ID マッピング**: `public/data/sofascore_mapping.json` にローカル試合ID (`m001` 等) と Sofascore event ID (`15186710` 等) の対応を保存。トーナメントID: `16`、シーズン: `58210` (2026)。現在は R1 の 15 試合分のみ登録。未登録試合はライブ更新スキップ (graceful)。
+**試合ID マッピング**: `public/data/sofascore_mapping.json` にローカル試合ID (`m001` 等) と Sofascore event ID (`15186710` 等) の対応を保存。トーナメントID: `16`、シーズン: `58210` (2026)。全104試合 + `test_che_tot`（テスト用）を登録済み（`scripts/build-mapping.mjs` で生成）。未登録試合があればライブ更新はスキップ (graceful)。
 
 **インシデント変換**:
 - `incidentType="goal"` → `Goal` (`incidentClass`: regular/penalty/ownGoal → normal/penalty/own)
@@ -43,7 +43,7 @@
 3. `players.json` を `(teamId + number)` でルックアップ → `playerId`
 4. `computePlayerStats` の集計ロジックは playerId ベースのまま動く
 
-**残作業**: 残り 89 試合の Sofascore ID を `/unique-tournament/16/season/58210/events/next/{0..5}` で取得して mapping に追記。本番運用前に完了させる。
+**マッピングの生成・更新**: `scripts/build-mapping.mjs` が Sofascore の大会日程（`/unique-tournament/16/season/58210/events/next/{0..}`）を取得し、グループ戦は出場2チームの組、決勝トーナメントは進出条件ラベル（「73試合勝者」「A組2位」等）で `matches.json` と照合して `sofascore_mapping.json` を再生成する。dev サーバー起動中に `node scripts/build-mapping.mjs` で実行（取得は dev プロキシ経由。Node から直接 api.sofascore.com を叩くと 403 になるため）。Sofascore 側の event ID が変わった場合も再実行で更新できる。
 
 ## 順位表・スタッツの自動導出
 
