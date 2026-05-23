@@ -90,7 +90,15 @@
   padding: 0.15rem 0.3rem;
 }
 
-.thirdBox {
-  margin-top: 1rem;
-  max-width: 12rem;
+.third {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.thirdTitle {
+  text-align: center;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
 }
