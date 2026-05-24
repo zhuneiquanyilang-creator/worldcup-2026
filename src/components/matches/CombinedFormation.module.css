@@ -201,8 +201,37 @@
   letter-spacing: 0.03em;
 }
 
+.assistBadge {
+  background-color: #0ea5e9;
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 800;
+  min-width: 0.95rem;
+  height: 0.95rem;
+  padding: 0 0.2rem;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.02em;
+}
+
 .legendBall {
   font-size: 0.85rem;
+  line-height: 1;
+}
+
+.legendAssist {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 0.85rem;
+  height: 0.85rem;
+  border-radius: 50%;
+  background-color: #0ea5e9;
+  color: #fff;
+  font-size: 0.6rem;
+  font-weight: 800;
   line-height: 1;
 }
 

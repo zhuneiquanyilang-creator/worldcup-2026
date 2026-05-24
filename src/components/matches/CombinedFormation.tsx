@@ -210,6 +210,10 @@ export function CombinedFormation({
           ゴール
         </span>
         <span className={styles.legendItem}>
+          <span className={styles.legendAssist}>A</span>
+          アシスト
+        </span>
+        <span className={styles.legendItem}>
           <span className={`${styles.legendDot} ${styles.legendOut}`} />
           ↓ 途中退出
         </span>
@@ -296,6 +300,49 @@ function VerticalPitch() {
   );
 }
 
+/** ⚽ バッジ (rect + text)。1点なら⚽、複数なら⚽×N。 */
+function GoalBadge({ count, x, y }: { count: number; x: number; y: number }) {
+  const multi = count > 1;
+  const width = multi ? 5.5 : 3.6;
+  return (
+    <g transform={`translate(${x}, ${y})`}>
+      <rect x={-width / 2} y={-1.6} width={width} height={3.2} rx={0.8} fill="#16a34a" />
+      <text
+        x={multi ? 0.4 : -0.2}
+        y={0.1}
+        textAnchor="middle"
+        dominantBaseline="central"
+        fontSize={2.4}
+        fontWeight={800}
+        fill="#fff"
+      >
+        {multi ? `⚽×${count}` : "⚽"}
+      </text>
+    </g>
+  );
+}
+
+/** Ⓐ バッジ (丸の中に A)。複数アシストなら A2 等。 */
+function AssistBadge({ count, x, y }: { count: number; x: number; y: number }) {
+  const multi = count > 1;
+  return (
+    <g transform={`translate(${x}, ${y})`}>
+      <circle r={1.55} fill="#0ea5e9" stroke="#fff" strokeWidth={0.25} />
+      <text
+        x={0}
+        y={0.1}
+        textAnchor="middle"
+        dominantBaseline="central"
+        fontSize={2.1}
+        fontWeight={800}
+        fill="#fff"
+      >
+        {multi ? `A${count}` : "A"}
+      </text>
+    </g>
+  );
+}
+
 function Spot({
   spot,
   x,
@@ -313,6 +360,16 @@ function Spot({
   const textColor = variant === "home" ? "#1a3a8a" : "#b91c1c";
   const isSubbedOut = spot.subbedOutAt !== undefined;
   const { yellow, red } = summarizeCards(spot.cards);
+  const goalCount = spot.goals?.length ?? 0;
+  const assistCount = spot.assists?.length ?? 0;
+
+  // 右側に縦積みで配置 (上から ↓N' → ⚽ → Ⓐ)。
+  // 退出済みのときは ↓N' を最上段に置き、goal/assist はその下にずらす。
+  const STACK_X = 4.2;
+  const subbedOutY = -4.2;
+  const goalY = isSubbedOut ? 0 : -1;
+  const assistY = goalCount > 0 ? goalY + 3 : goalY;
+
   return (
     <g transform={`translate(${x}, ${y})`}>
       <circle r={3.6} fill="#fff" stroke={ringColor} strokeWidth={0.7} />
@@ -369,28 +426,12 @@ function Spot({
           )}
         </g>
       )}
-      {/* 退出の分バッジ (右上) */}
+      {/* 右側に縦積み: ↓N' (上) → ⚽ → Ⓐ */}
       {isSubbedOut && (
-        <g transform="translate(4.2, -4.2)">
-          <rect x={-2} y={-1.6} width={5.5} height={3.2} rx={0.8} fill="#e30613" />
-          <text x={0.7} y={0.1} textAnchor="middle" dominantBaseline="central" fontSize={2.2} fontWeight={800} fill="#fff">
-            ↓{spot.subbedOutAt}&apos;
-          </text>
-        </g>
-      )}
-      {/* ゴール (右下) */}
-      {spot.goals && spot.goals.length > 0 && (
-        <g transform={`translate(4.2, ${isSubbedOut ? 0 : -1})`}>
-          <rect
-            x={-2}
-            y={-1.6}
-            width={spot.goals.length > 1 ? 7 : 5.5}
-            height={3.2}
-            rx={0.8}
-            fill="#16a34a"
-          />
+        <g transform={`translate(${STACK_X}, ${subbedOutY})`}>
+          <rect x={-2.75} y={-1.6} width={5.5} height={3.2} rx={0.8} fill="#e30613" />
           <text
-            x={spot.goals.length > 1 ? 1.5 : 0.7}
+            x={0}
             y={0.1}
             textAnchor="middle"
             dominantBaseline="central"
@@ -398,11 +439,13 @@ function Spot({
             fontWeight={800}
             fill="#fff"
           >
-            {spot.goals.length > 1
-              ? `⚽×${spot.goals.length}`
-              : `⚽${spot.goals[0].minute}'`}
+            ↓{spot.subbedOutAt}&apos;
           </text>
         </g>
+      )}
+      {goalCount > 0 && <GoalBadge count={goalCount} x={STACK_X} y={goalY} />}
+      {assistCount > 0 && (
+        <AssistBadge count={assistCount} x={STACK_X} y={assistY} />
       )}
     </g>
   );
@@ -423,6 +466,7 @@ function BenchList({
         {items.map((p, i) => {
           const { yellow, red } = summarizeCards(p.cards);
           const goalCount = p.goals?.length ?? 0;
+          const assistCount = p.assists?.length ?? 0;
           return (
             <li
               key={i}
@@ -430,13 +474,19 @@ function BenchList({
             >
               {p.number !== undefined && <span className={styles.benchNum}>{p.number}</span>}
               <span className={styles.benchName}>{p.name}</span>
+              {yellow && <span className={styles.cardYellow} aria-label="イエロー" />}
+              {red && <span className={styles.cardRed} aria-label="レッド" />}
+              {/* ゴール・アシストは交代時間 (↑N') の直左に並べる */}
               {goalCount > 0 && (
                 <span className={styles.goalBadge}>
                   ⚽{goalCount > 1 ? `×${goalCount}` : ""}
                 </span>
               )}
-              {yellow && <span className={styles.cardYellow} aria-label="イエロー" />}
-              {red && <span className={styles.cardRed} aria-label="レッド" />}
+              {assistCount > 0 && (
+                <span className={styles.assistBadge} aria-label="アシスト">
+                  {assistCount > 1 ? `A${assistCount}` : "A"}
+                </span>
+              )}
               {p.subbedInAt !== undefined && (
                 <span className={styles.inBadge}>↑ {p.subbedInAt}&apos;</span>
               )}

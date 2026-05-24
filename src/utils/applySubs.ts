@@ -13,6 +13,8 @@ export type SpotWithSub = FormationSpot & {
   cards?: Booking[];
   /** この選手が決めたゴール一覧 (時系列順) */
   goals?: Goal[];
+  /** この選手がアシストしたゴール一覧 (時系列順) */
+  assists?: Goal[];
 };
 
 export type BenchWithSub = {
@@ -22,6 +24,7 @@ export type BenchWithSub = {
   subbedInAt?: number;
   cards?: Booking[];
   goals?: Goal[];
+  assists?: Goal[];
 };
 
 export type ProcessedLineup = {
@@ -66,15 +69,27 @@ export function applySubsToLineup(
     goalsByName.set(g.playerName, arr);
   }
 
+  // 選手名 → アシストしたゴール一覧。自殺点はアシスト無しなので除外。
+  const assistsByName = new Map<string, Goal[]>();
+  for (const g of goals) {
+    if (g.type === "own") continue;
+    if (!g.assistPlayerName) continue;
+    const arr = assistsByName.get(g.assistPlayerName) ?? [];
+    arr.push(g);
+    assistsByName.set(g.assistPlayerName, arr);
+  }
+
   const starting: SpotWithSub[] = formation.starting.map((s) => {
     const out = subs.find((sub) => sub.outName === s.name);
     const cards = cardsByName.get(s.name);
     const playerGoals = goalsByName.get(s.name);
+    const playerAssists = assistsByName.get(s.name);
     return {
       ...s,
       ...(out ? { subbedOutAt: out.minute } : {}),
       ...(cards ? { cards } : {}),
       ...(playerGoals ? { goals: playerGoals } : {}),
+      ...(playerAssists ? { assists: playerAssists } : {}),
     };
   });
 
@@ -82,11 +97,13 @@ export function applySubsToLineup(
     const inSub = subs.find((sub) => sub.inName === b.name);
     const cards = cardsByName.get(b.name);
     const playerGoals = goalsByName.get(b.name);
+    const playerAssists = assistsByName.get(b.name);
     return {
       ...b,
       ...(inSub ? { subbedInAt: inSub.minute } : {}),
       ...(cards ? { cards } : {}),
       ...(playerGoals ? { goals: playerGoals } : {}),
+      ...(playerAssists ? { assists: playerAssists } : {}),
     };
   });
 
