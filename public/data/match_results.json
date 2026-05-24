@@ -453,6 +453,36 @@
         "teamId": "MUN",
         "inName": "Shea Lacey",
         "outName": "Patrick Dorgu"
+      },
+      {
+        "minute": 74,
+        "teamId": "BHA",
+        "inName": "Georginio Rutter",
+        "outName": "Jack Hinshelwood"
+      },
+      {
+        "minute": 74,
+        "teamId": "MUN",
+        "inName": "Leny Yoro",
+        "outName": "Noussair Mazraoui"
+      },
+      {
+        "minute": 74,
+        "teamId": "MUN",
+        "inName": "Tyler Fletcher",
+        "outName": "Mason Mount"
+      },
+      {
+        "minute": 74,
+        "teamId": "MUN",
+        "inName": "Joshua Zirkzee",
+        "outName": "Bryan Mbeumo"
+      },
+      {
+        "minute": 82,
+        "teamId": "MUN",
+        "inName": "Tyrell Malacia",
+        "outName": "Luke Shaw"
       }
     ],
     "homeFormation": {
@@ -554,6 +584,10 @@
           "number": 19
         },
         {
+          "name": "Georginio Rutter",
+          "number": 10
+        },
+        {
           "name": "Jason Steele",
           "number": 23
         },
@@ -564,10 +598,6 @@
         {
           "name": "Joël Veltman",
           "number": 34
-        },
-        {
-          "name": "Georginio Rutter",
-          "number": 10
         },
         {
           "name": "Matt O'Riley",
@@ -662,6 +692,22 @@
           "number": 61
         },
         {
+          "name": "Leny Yoro",
+          "number": 15
+        },
+        {
+          "name": "Tyler Fletcher",
+          "number": 39
+        },
+        {
+          "name": "Joshua Zirkzee",
+          "number": 11
+        },
+        {
+          "name": "Tyrell Malacia",
+          "number": 12
+        },
+        {
           "name": "Altay Bayındır",
           "number": 1
         },
@@ -670,50 +716,34 @@
           "number": 26
         },
         {
-          "name": "Tyrell Malacia",
-          "number": 12
-        },
-        {
-          "name": "Leny Yoro",
-          "number": 15
-        },
-        {
           "name": "Manuel Ugarte",
           "number": 25
         },
         {
-          "name": "Tyler Fletcher",
-          "number": 39
-        },
-        {
           "name": "Matheus Cunha",
           "number": 10
-        },
-        {
-          "name": "Joshua Zirkzee",
-          "number": 11
         }
       ]
     },
     "stats": {
       "possession": {
-        "home": 50,
-        "away": 50
+        "home": 52,
+        "away": 48
       },
       "xG": {
-        "home": 0.5,
-        "away": 1.78
+        "home": 0.57,
+        "away": 1.81
       },
       "shots": {
-        "home": 8,
-        "away": 9
+        "home": 9,
+        "away": 10
       },
       "shotsOnTarget": {
         "home": 0,
         "away": 7
       }
     },
-    "fetchedAt": "2026-05-24T16:33:48.002Z",
+    "fetchedAt": "2026-05-24T16:44:46.142Z",
     "currentPeriodStart": 1779638751000
   }
 }
