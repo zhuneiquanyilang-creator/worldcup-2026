@@ -2,11 +2,11 @@
   "test_che_tot": {
     "matchId": "test_che_tot",
     "status": "finished",
-    "liveLabel": "Ended",
     "score": {
-      "home": 2,
+      "home": 3,
       "away": 1
     },
+    "liveLabel": "Ended",
     "goals": [
       {
         "minute": 18,
@@ -124,6 +124,264 @@
         "outName": "Cole Palmer"
       }
     ],
-    "fetchedAt": "2026-05-24T01:27:54.852Z"
+    "fetchedAt": "2026-05-24T01:38:49.785Z",
+    "homeFormation": {
+      "shape": "4-2-3-1",
+      "starting": [
+        {
+          "x": 8,
+          "y": 50,
+          "number": 1,
+          "name": "Robert Sánchez",
+          "role": "GK"
+        },
+        {
+          "x": 22,
+          "y": 12.5,
+          "number": 34,
+          "name": "Josh Acheampong",
+          "role": "DF"
+        },
+        {
+          "x": 22,
+          "y": 37.5,
+          "number": 29,
+          "name": "Wesley Fofana",
+          "role": "DF"
+        },
+        {
+          "x": 22,
+          "y": 62.5,
+          "number": 21,
+          "name": "Jorrel Hato",
+          "role": "DF"
+        },
+        {
+          "x": 22,
+          "y": 87.5,
+          "number": 3,
+          "name": "Marc Cucurella",
+          "role": "DF"
+        },
+        {
+          "x": 41.33333333333333,
+          "y": 25,
+          "number": 17,
+          "name": "Andrey Santos",
+          "role": "MF"
+        },
+        {
+          "x": 41.33333333333333,
+          "y": 75,
+          "number": 25,
+          "name": "Moisés Caicedo",
+          "role": "MF"
+        },
+        {
+          "x": 60.666666666666664,
+          "y": 16.666666666666664,
+          "number": 7,
+          "name": "Pedro Neto",
+          "role": "MF"
+        },
+        {
+          "x": 60.666666666666664,
+          "y": 50,
+          "number": 10,
+          "name": "Cole Palmer",
+          "role": "MF"
+        },
+        {
+          "x": 60.666666666666664,
+          "y": 83.33333333333334,
+          "number": 8,
+          "name": "Enzo Fernández",
+          "role": "MF"
+        },
+        {
+          "x": 80,
+          "y": 50,
+          "number": 9,
+          "name": "Liam Delap",
+          "role": "FW"
+        }
+      ],
+      "bench": [
+        {
+          "name": "Trevoh Chalobah",
+          "number": 23
+        },
+        {
+          "name": "Mamadou Sarr",
+          "number": 19
+        },
+        {
+          "name": "Dário Essugo",
+          "number": 14
+        },
+        {
+          "name": "Alejandro Garnacho",
+          "number": 49
+        },
+        {
+          "name": "Shumaira Mheuka",
+          "number": 62
+        },
+        {
+          "name": "Filip Jørgensen",
+          "number": 12
+        },
+        {
+          "name": "Reece James",
+          "number": 24
+        },
+        {
+          "name": "Jesse Derry",
+          "number": 55
+        },
+        {
+          "name": "Ryan Kavuma-McQueen",
+          "number": 76
+        }
+      ]
+    },
+    "awayFormation": {
+      "shape": "4-2-3-1",
+      "starting": [
+        {
+          "x": 8,
+          "y": 50,
+          "number": 31,
+          "name": "Antonín Kinský",
+          "role": "GK"
+        },
+        {
+          "x": 22,
+          "y": 12.5,
+          "number": 23,
+          "name": "Pedro Porro",
+          "role": "DF"
+        },
+        {
+          "x": 22,
+          "y": 37.5,
+          "number": 4,
+          "name": "Kevin Danso",
+          "role": "DF"
+        },
+        {
+          "x": 22,
+          "y": 62.5,
+          "number": 37,
+          "name": "Micky van de Ven",
+          "role": "DF"
+        },
+        {
+          "x": 22,
+          "y": 87.5,
+          "number": 13,
+          "name": "Destiny Udogie",
+          "role": "DF"
+        },
+        {
+          "x": 41.33333333333333,
+          "y": 25,
+          "number": 30,
+          "name": "Rodrigo Bentancur",
+          "role": "MF"
+        },
+        {
+          "x": 41.33333333333333,
+          "y": 75,
+          "number": 6,
+          "name": "João Palhinha",
+          "role": "MF"
+        },
+        {
+          "x": 60.666666666666664,
+          "y": 16.666666666666664,
+          "number": 39,
+          "name": "Randal Kolo Muani",
+          "role": "MF"
+        },
+        {
+          "x": 60.666666666666664,
+          "y": 50,
+          "number": 22,
+          "name": "Conor Gallagher",
+          "role": "MF"
+        },
+        {
+          "x": 60.666666666666664,
+          "y": 83.33333333333334,
+          "number": 11,
+          "name": "Mathys Tel",
+          "role": "MF"
+        },
+        {
+          "x": 80,
+          "y": 50,
+          "number": 9,
+          "name": "Richarlison",
+          "role": "FW"
+        }
+      ],
+      "bench": [
+        {
+          "name": "Djed Spence",
+          "number": 24
+        },
+        {
+          "name": "Pape Matar Sarr",
+          "number": 29
+        },
+        {
+          "name": "James Maddison",
+          "number": 10
+        },
+        {
+          "name": "Guglielmo Vicario",
+          "number": 1
+        },
+        {
+          "name": "Radu Drăguşin",
+          "number": 3
+        },
+        {
+          "name": "Souza",
+          "number": 38
+        },
+        {
+          "name": "Yves Bissouma",
+          "number": 8
+        },
+        {
+          "name": "Archie Gray",
+          "number": 14
+        },
+        {
+          "name": "Lucas Bergvall",
+          "number": 15
+        }
+      ]
+    },
+    "stats": {
+      "possession": {
+        "home": 44,
+        "away": 56
+      },
+      "xG": {
+        "home": 0.63,
+        "away": 1.27
+      },
+      "shots": {
+        "home": 9,
+        "away": 9
+      },
+      "shotsOnTarget": {
+        "home": 4,
+        "away": 3
+      }
+    }
   }
 }

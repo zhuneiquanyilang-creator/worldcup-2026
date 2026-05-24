@@ -13,9 +13,13 @@ const RESULTS_PATH = path.resolve(__dirname, "public/data/match_results.json");
  * に書き戻すために使う。本番 (vite build した SPA) では存在しないので
  * クライアント側は失敗を許容してフォールバックする。
  *
- * 書き込みは "merge" モード:
- *   既存ファイルの内容に対し、POST されたエントリだけを差し替える
- *   (Sofascore polling や個別編集が他試合の確定値を消さないように)。
+ * 書き込みは "field-level merge" モード:
+ *   1) 既存ファイルの試合と POST された試合の **両方** を残す
+ *   2) 同じ試合 ID が両方にある場合は、フィールド単位で incoming が existing
+ *      を上書き (= incoming に無いフィールド bookings / substitutions / etc.
+ *      は existing から保持)
+ *   これにより /edit/matches の限定的な save (status/score のみ等) が、
+ *   既存の bookings/subs/formation 等を巻き込み消去しない。
  */
 function matchResultsWriter(): Plugin {
   return {
@@ -47,7 +51,27 @@ function matchResultsWriter(): Plugin {
           } catch {
             // ファイルが無いか壊れているなら空から始める
           }
-          const merged = { ...existing, ...incoming };
+          // field-level merge per match (cf. ヘッダコメント)
+          const merged: Record<string, unknown> = { ...existing };
+          for (const [id, val] of Object.entries(incoming)) {
+            if (val && typeof val === "object" && !Array.isArray(val)) {
+              const existingMatch = merged[id];
+              if (
+                existingMatch &&
+                typeof existingMatch === "object" &&
+                !Array.isArray(existingMatch)
+              ) {
+                merged[id] = {
+                  ...(existingMatch as Record<string, unknown>),
+                  ...(val as Record<string, unknown>),
+                };
+              } else {
+                merged[id] = val;
+              }
+            } else {
+              merged[id] = val;
+            }
+          }
           await fs.writeFile(
             RESULTS_PATH,
             JSON.stringify(merged, null, 2) + "\n",

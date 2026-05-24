@@ -22,6 +22,18 @@ type GoalDraft = {
   type: GoalType;
 };
 
+/** 編集 UI が直接扱わないフィールド。save 時にそのまま LiveUpdate に書き戻して
+ *  巻き込み消去を防ぐ。 */
+type Passthrough = Pick<
+  LiveUpdate,
+  | "liveLabel"
+  | "bookings"
+  | "substitutions"
+  | "homeFormation"
+  | "awayFormation"
+  | "stats"
+>;
+
 type Editable = {
   status: MatchStatus | "";
   scoreHome: string;
@@ -29,6 +41,7 @@ type Editable = {
   pkHome: string;
   pkAway: string;
   goals: GoalDraft[];
+  passthrough: Passthrough;
 };
 
 const EMPTY: Editable = {
@@ -38,6 +51,7 @@ const EMPTY: Editable = {
   pkHome: "",
   pkAway: "",
   goals: [],
+  passthrough: {},
 };
 
 const STAGE_ORDER: Match["stage"][] = [
@@ -98,7 +112,14 @@ function draftToGoal(
 }
 
 function fromUpdate(u: LiveUpdate | undefined): Editable {
-  if (!u) return { ...EMPTY, goals: [] };
+  if (!u) return { ...EMPTY, goals: [], passthrough: {} };
+  const passthrough: Passthrough = {};
+  if (u.liveLabel !== undefined) passthrough.liveLabel = u.liveLabel;
+  if (u.bookings) passthrough.bookings = u.bookings;
+  if (u.substitutions) passthrough.substitutions = u.substitutions;
+  if (u.homeFormation) passthrough.homeFormation = u.homeFormation;
+  if (u.awayFormation) passthrough.awayFormation = u.awayFormation;
+  if (u.stats) passthrough.stats = u.stats;
   return {
     status: u.status ?? "",
     scoreHome: u.score ? String(u.score.home) : "",
@@ -106,6 +127,7 @@ function fromUpdate(u: LiveUpdate | undefined): Editable {
     pkHome: u.penaltyScore ? String(u.penaltyScore.home) : "",
     pkAway: u.penaltyScore ? String(u.penaltyScore.away) : "",
     goals: (u.goals ?? []).map(goalToDraft),
+    passthrough,
   };
 }
 
@@ -132,7 +154,26 @@ function toUpdate(
     .filter((g): g is Goal => g !== null)
     .sort((a, b) => a.minute - b.minute);
   if (goals.length > 0) u.goals = goals;
-  if (!u.status && !u.score && !u.penaltyScore && !u.goals) return null;
+  // form が触らないフィールドはそのまま LiveUpdate に書き戻す
+  const p = e.passthrough;
+  if (p.liveLabel !== undefined) u.liveLabel = p.liveLabel;
+  if (p.bookings) u.bookings = p.bookings;
+  if (p.substitutions) u.substitutions = p.substitutions;
+  if (p.homeFormation) u.homeFormation = p.homeFormation;
+  if (p.awayFormation) u.awayFormation = p.awayFormation;
+  if (p.stats) u.stats = p.stats;
+  if (
+    !u.status &&
+    !u.score &&
+    !u.penaltyScore &&
+    !u.goals &&
+    !u.bookings &&
+    !u.substitutions &&
+    !u.homeFormation &&
+    !u.awayFormation &&
+    !u.stats
+  )
+    return null;
   return u;
 }
 
@@ -171,10 +212,14 @@ export function EditMatchesPage() {
   const [importMsg, setImportMsg] = useState("");
   const [expandedId, setExpandedId] = useState<string | null>(null);
 
-  // matchEdits (手動編集レイヤー) と file results から初期値を合成。
+  // file (公式記録) と matchEdits (手動編集レイヤー) を「file → manual」の順で
+  // 重ねて初期値とする。両方ある場合は manual のフィールドが file の同名
+  // フィールドを上書きする。bookings/subs 等は form が直接表示しないが
+  // Editable.passthrough に保持され、save 時に LiveUpdate として書き戻される
+  // ので「form save で巻き込み消去」されない。
   // matchOverrides (ライブ取得レイヤー) は seed に使わない — 編集 UI は
   // 「手動で確定した公式記録」のみを扱う。ライブから現状を引き込みたい場合は
-  // 各行の「ライブから取り込む」ボタンを使う。
+  // 各行の「↓ ライブ」ボタンを使う。
   useEffect(() => {
     if (matchesRes.status !== "ready") return;
     const fileResults =
@@ -182,8 +227,13 @@ export function EditMatchesPage() {
     const manual = loadMatchEdits();
     const seed: Record<string, Editable> = {};
     for (const m of matchesRes.data) {
-      const u = manual[m.id] ?? fileResults[m.id];
-      seed[m.id] = fromUpdate(u);
+      const fileR = fileResults[m.id];
+      const manualR = manual[m.id];
+      const combined: LiveUpdate | undefined =
+        fileR && manualR
+          ? { ...fileR, ...manualR }
+          : (manualR ?? fileR);
+      seed[m.id] = fromUpdate(combined);
     }
     setEdits(seed);
   }, [matchesRes, fileResultsRes]);
