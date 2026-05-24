@@ -2,9 +2,128 @@
   "test_che_tot": {
     "matchId": "test_che_tot",
     "status": "finished",
+    "liveLabel": "Ended",
     "score": {
       "home": 2,
       "away": 1
-    }
+    },
+    "goals": [
+      {
+        "minute": 18,
+        "teamId": "CHE",
+        "playerName": "Enzo Fernández",
+        "assistPlayerName": "Pedro Neto",
+        "type": "normal"
+      },
+      {
+        "minute": 67,
+        "teamId": "CHE",
+        "playerName": "Andrey Santos",
+        "assistPlayerName": "Enzo Fernández",
+        "type": "normal"
+      },
+      {
+        "minute": 74,
+        "teamId": "TOT",
+        "playerName": "Richarlison",
+        "assistPlayerName": "Pape Matar Sarr",
+        "type": "normal"
+      }
+    ],
+    "bookings": [
+      {
+        "minute": 28,
+        "teamId": "TOT",
+        "playerName": "Pedro Porro",
+        "type": "Y"
+      },
+      {
+        "minute": 43,
+        "teamId": "TOT",
+        "playerName": "Micky van de Ven",
+        "type": "Y"
+      },
+      {
+        "minute": 63,
+        "teamId": "TOT",
+        "playerName": "Destiny Udogie",
+        "type": "Y"
+      },
+      {
+        "minute": 79,
+        "teamId": "CHE",
+        "playerName": "Jorrel Hato",
+        "type": "Y"
+      },
+      {
+        "minute": 85,
+        "teamId": "CHE",
+        "playerName": "Marc Cucurella",
+        "type": "Y"
+      },
+      {
+        "minute": 87,
+        "teamId": "CHE",
+        "playerName": "Liam Delap",
+        "type": "Y"
+      },
+      {
+        "minute": 90,
+        "teamId": "CHE",
+        "playerName": "Dário Essugo",
+        "type": "Y"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": 68,
+        "teamId": "TOT",
+        "inName": "Djed Spence",
+        "outName": "Destiny Udogie"
+      },
+      {
+        "minute": 68,
+        "teamId": "TOT",
+        "inName": "Pape Matar Sarr",
+        "outName": "João Palhinha"
+      },
+      {
+        "minute": 69,
+        "teamId": "TOT",
+        "inName": "James Maddison",
+        "outName": "Randal Kolo Muani"
+      },
+      {
+        "minute": 74,
+        "teamId": "CHE",
+        "inName": "Trevoh Chalobah",
+        "outName": "Josh Acheampong"
+      },
+      {
+        "minute": 81,
+        "teamId": "CHE",
+        "inName": "Mamadou Sarr",
+        "outName": "Wesley Fofana"
+      },
+      {
+        "minute": 89,
+        "teamId": "CHE",
+        "inName": "Alejandro Garnacho",
+        "outName": "Pedro Neto"
+      },
+      {
+        "minute": 89,
+        "teamId": "CHE",
+        "inName": "Shumaira Mheuka",
+        "outName": "Liam Delap"
+      },
+      {
+        "minute": 89,
+        "teamId": "CHE",
+        "inName": "Dário Essugo",
+        "outName": "Cole Palmer"
+      }
+    ],
+    "fetchedAt": "2026-05-24T01:27:54.852Z"
   }
 }
