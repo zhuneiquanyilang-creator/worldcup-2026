@@ -429,6 +429,30 @@
         "teamId": "BHA",
         "inName": "Yankuba Minteh",
         "outName": "Maxim De Cuyper"
+      },
+      {
+        "minute": 59,
+        "teamId": "BHA",
+        "inName": "Carlos Baleba",
+        "outName": "James Milner"
+      },
+      {
+        "minute": 59,
+        "teamId": "BHA",
+        "inName": "Solly March",
+        "outName": "Diego Gómez"
+      },
+      {
+        "minute": 59,
+        "teamId": "BHA",
+        "inName": "Charalampos Kostoulas",
+        "outName": "Danny Welbeck"
+      },
+      {
+        "minute": 62,
+        "teamId": "MUN",
+        "inName": "Shea Lacey",
+        "outName": "Patrick Dorgu"
       }
     ],
     "homeFormation": {
@@ -518,6 +542,18 @@
           "number": 11
         },
         {
+          "name": "Solly March",
+          "number": 7
+        },
+        {
+          "name": "Carlos Baleba",
+          "number": 17
+        },
+        {
+          "name": "Charalampos Kostoulas",
+          "number": 19
+        },
+        {
           "name": "Jason Steele",
           "number": 23
         },
@@ -530,24 +566,12 @@
           "number": 34
         },
         {
-          "name": "Solly March",
-          "number": 7
-        },
-        {
           "name": "Georginio Rutter",
           "number": 10
         },
         {
-          "name": "Carlos Baleba",
-          "number": 17
-        },
-        {
           "name": "Matt O'Riley",
           "number": 33
-        },
-        {
-          "name": "Charalampos Kostoulas",
-          "number": 19
         }
       ]
     },
@@ -634,6 +658,10 @@
       ],
       "bench": [
         {
+          "name": "Shea Lacey",
+          "number": 61
+        },
+        {
           "name": "Altay Bayındır",
           "number": 1
         },
@@ -654,10 +682,6 @@
           "number": 25
         },
         {
-          "name": "Shea Lacey",
-          "number": 61
-        },
-        {
           "name": "Tyler Fletcher",
           "number": 39
         },
@@ -673,22 +697,23 @@
     },
     "stats": {
       "possession": {
-        "home": 51,
-        "away": 49
+        "home": 50,
+        "away": 50
       },
       "xG": {
-        "home": 0.21,
-        "away": 1.59
+        "home": 0.5,
+        "away": 1.78
       },
       "shots": {
-        "home": 4,
-        "away": 7
+        "home": 8,
+        "away": 9
       },
       "shotsOnTarget": {
         "home": 0,
-        "away": 5
+        "away": 7
       }
     },
-    "fetchedAt": "2026-05-24T16:17:25.100Z"
+    "fetchedAt": "2026-05-24T16:33:48.002Z",
+    "currentPeriodStart": 1779638751000
   }
 }
