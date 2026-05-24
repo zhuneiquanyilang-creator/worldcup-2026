@@ -76,7 +76,8 @@ export function ThirdPlaceRanking({ standings, teamMap }: Props) {
                     {team ? (
                       <Link to={`/teams/${team.id}`} className={styles.teamLink}>
                         <Flag isoCode={team.isoCode} size={18} alt={team.name} />
-                        <span>{team.name}</span>
+                        <span className={styles.teamFull}>{team.name}</span>
+                        <span className={styles.teamShort}>{team.id}</span>
                       </Link>
                     ) : (
                       <span>{s.teamId}</span>

@@ -119,6 +119,11 @@
   color: var(--color-text-muted);
 }
 
+/* PC: フルネームを表示、3 文字コードは非表示 */
+.teamShort {
+  display: none;
+}
+
 @media (max-width: 640px) {
   .table {
     font-size: 0.85rem;
@@ -127,5 +132,16 @@
   .table th,
   .table td {
     padding: 0.45rem 0.3rem;
+  }
+
+  /* スマホ: フルネームを隠して 3 文字コード (FIFA コード) のみ表示 */
+  .teamFull {
+    display: none;
+  }
+  .teamShort {
+    display: inline;
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-weight: 700;
+    letter-spacing: 0.05em;
   }
 }
