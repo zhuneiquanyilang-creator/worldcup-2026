@@ -85,6 +85,8 @@ export type Match = {
   /** Sofascore など外部ソース由来の進行ラベル (例: "1st half" / "Halftime" / "Full time") */
   liveLabel?: string;
   score?: { home: number; away: number };
+  /** PK決着のスコア (KO戦のみ)。`score` は90分+延長の最終、`penaltyScore` は PK の最終本数。 */
+  penaltyScore?: { home: number; away: number };
   goals?: Goal[];
   bookings?: Booking[];
   substitutions?: Substitution[];

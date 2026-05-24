@@ -53,6 +53,12 @@ export function ScoreBoard({ match, homeTeam, awayTeam }: Props) {
           {score ? (
             <span>
               {score.home} <span className={styles.dash}>-</span> {score.away}
+              {match.penaltyScore && (
+                <span className={styles.pk}>
+                  {" "}
+                  (PK {match.penaltyScore.home}-{match.penaltyScore.away})
+                </span>
+              )}
             </span>
           ) : (
             <span className={styles.vs}>VS</span>

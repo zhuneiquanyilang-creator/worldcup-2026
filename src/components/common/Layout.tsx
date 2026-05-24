@@ -4,11 +4,14 @@ import { Navigation } from "./Navigation";
 import { Footer } from "./Footer";
 import { useMatches } from "@/hooks/useMatches";
 import { useLivePolling } from "@/hooks/useLivePolling";
+import { useAutoSyncResults } from "@/hooks/useAutoSyncResults";
 import styles from "./Layout.module.css";
 
 export function Layout() {
   const matchesRes = useMatches();
   useLivePolling(matchesRes.status === "ready" ? matchesRes.data : undefined);
+  // dev サーバー実行中なら、finished 試合を `match_results.json` に自動反映する
+  useAutoSyncResults();
 
   return (
     <div className={styles.layout}>

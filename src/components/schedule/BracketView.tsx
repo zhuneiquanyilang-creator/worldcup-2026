@@ -9,33 +9,70 @@ type Props = {
   teamMap: Map<string, Team>;
 };
 
-// SF 101 に集約する左半分（R32→R16→QF→SF 101）
-const LEFT_R32 = [73, 75, 74, 77, 76, 78, 79, 80];
-const LEFT_R16 = [89, 90, 91, 92];
-const LEFT_QF = [97, 98];
-const LEFT_SF = [101];
+/**
+ * 左→右の縦長ブラケット。一番左の R32 列に 16 試合を縦に並べ、右に向かって
+ * 半分ずつにまとまり、最右列に決勝＋3位決定戦が来る。
+ *
+ * 各列ではカードを 2 枚ずつ「ペア」に括り、ペアごとに「]」型の進出線
+ * (`.pair::after`) と次列へ伸びる水平線 (`.pair::before`) を CSS で描画する。
+ *
+ * カードの位置揃え: 各 .cards に `justify-content: space-around` をかけている
+ * ため、列ごとにカード数が半分になっても親カードの中央に揃う
+ * (R32 16枚→R16 8枚で各 R16 がそのペア中央に来る)。
+ */
 
-// SF 102 に集約する右半分（R32→R16→QF→SF 102）
-const RIGHT_R32 = [83, 84, 81, 82, 86, 88, 85, 87];
-const RIGHT_R16 = [93, 94, 95, 96];
-const RIGHT_QF = [99, 100];
-const RIGHT_SF = [102];
+// R32 の縦並び順（隣接ペアが同じ R16 試合に進むようにする）
+// LEFT 側 (m089-m092 系列) → RIGHT 側 (m093-m096 系列) の順で連結
+const R32_ORDER = [73, 75, 74, 77, 76, 78, 79, 80, 83, 84, 81, 82, 86, 88, 85, 87];
+const R16_ORDER = [89, 90, 91, 92, 93, 94, 95, 96];
+const QF_ORDER = [97, 98, 99, 100];
+const SF_ORDER = [101, 102];
+const FINAL_NUM = 104;
+const THIRD_NUM = 103;
 
-function pickByOrder(matches: Match[], order: number[]): Match[] {
+function pickByOrder(matches: Match[], stage: Match["stage"], order: number[]): Match[] {
+  const stageMatches = matches.filter((m) => m.stage === stage);
   return order
-    .map((n) => matches.find((m) => matchNumber(m.id) === n))
+    .map((n) => stageMatches.find((m) => matchNumber(m.id) === n))
     .filter((m): m is Match => Boolean(m));
 }
 
-type Column = { title: string; matches: Match[] };
+function pairUp<T>(arr: T[]): T[][] {
+  const out: T[][] = [];
+  for (let i = 0; i < arr.length; i += 2) out.push(arr.slice(i, i + 2));
+  return out;
+}
 
-function Column({ col, teamMap }: { col: Column; teamMap: Map<string, Team> }) {
+const COLUMNS: { title: string; stage: Match["stage"]; order: number[] }[] = [
+  { title: "ラウンド32", stage: "round32", order: R32_ORDER },
+  { title: "ラウンド16", stage: "round16", order: R16_ORDER },
+  { title: "準々決勝", stage: "quarter", order: QF_ORDER },
+  { title: "準決勝", stage: "semi", order: SF_ORDER },
+];
+
+function BracketColumn({
+  title,
+  matches,
+  teamMap,
+}: {
+  title: string;
+  matches: Match[];
+  teamMap: Map<string, Team>;
+}) {
+  const pairs = pairUp(matches);
   return (
     <div className={styles.column}>
-      <div className={styles.columnTitle}>{col.title}</div>
+      <div className={styles.columnTitle}>{title}</div>
       <div className={styles.cards}>
-        {col.matches.map((m) => (
-          <BracketMatch key={m.id} match={m} teamMap={teamMap} />
+        {pairs.map((pair, i) => (
+          <div
+            key={i}
+            className={pair.length === 2 ? styles.pair : styles.pairSingle}
+          >
+            {pair.map((m) => (
+              <BracketMatch key={m.id} match={m} teamMap={teamMap} />
+            ))}
+          </div>
         ))}
       </div>
     </div>
@@ -43,34 +80,26 @@ function Column({ col, teamMap }: { col: Column; teamMap: Map<string, Team> }) {
 }
 
 export function BracketView({ matches, teamMap }: Props) {
-  const get = (stage: Match["stage"]) => matches.filter((m) => m.stage === stage);
-
-  const leftColumns: Column[] = [
-    { title: "ラウンド32", matches: pickByOrder(get("round32"), LEFT_R32) },
-    { title: "ラウンド16", matches: pickByOrder(get("round16"), LEFT_R16) },
-    { title: "準々決勝", matches: pickByOrder(get("quarter"), LEFT_QF) },
-    { title: "準決勝", matches: pickByOrder(get("semi"), LEFT_SF) },
-  ];
-
-  // 右側は中央に向かって SF→QF→R16→R32 の順で並べる
-  const rightColumns: Column[] = [
-    { title: "準決勝", matches: pickByOrder(get("semi"), RIGHT_SF) },
-    { title: "準々決勝", matches: pickByOrder(get("quarter"), RIGHT_QF) },
-    { title: "ラウンド16", matches: pickByOrder(get("round16"), RIGHT_R16) },
-    { title: "ラウンド32", matches: pickByOrder(get("round32"), RIGHT_R32) },
-  ];
-
-  const fin = get("final")[0];
-  const third = get("third")[0];
+  const fin = matches.find(
+    (m) => m.stage === "final" && matchNumber(m.id) === FINAL_NUM
+  );
+  const third = matches.find(
+    (m) => m.stage === "third" && matchNumber(m.id) === THIRD_NUM
+  );
 
   return (
     <div>
       <div className={styles.bracket}>
-        {leftColumns.map((col, i) => (
-          <Column key={`L${i}`} col={col} teamMap={teamMap} />
+        {COLUMNS.map((col) => (
+          <BracketColumn
+            key={col.title}
+            title={col.title}
+            matches={pickByOrder(matches, col.stage, col.order)}
+            teamMap={teamMap}
+          />
         ))}
 
-        <div className={styles.center}>
+        <div className={styles.finalColumn}>
           <div className={styles.finalTitle}>決勝</div>
           {fin && <BracketMatch match={fin} teamMap={teamMap} />}
           {third && (
@@ -80,10 +109,6 @@ export function BracketView({ matches, teamMap }: Props) {
             </div>
           )}
         </div>
-
-        {rightColumns.map((col, i) => (
-          <Column key={`R${i}`} col={col} teamMap={teamMap} />
-        ))}
       </div>
 
       <p className={styles.note}>

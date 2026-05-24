@@ -97,6 +97,13 @@
   color: rgba(255, 255, 255, 0.85);
 }
 
+.pk {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-gold);
+  margin-left: 0.25rem;
+}
+
 @media (max-width: 640px) {
   .board {
     padding: 1.25rem 0.85rem;

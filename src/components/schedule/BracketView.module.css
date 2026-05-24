@@ -7,6 +7,8 @@
   background-color: var(--color-surface);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
+  /* R32 を 16 試合縦に並べる縦長レイアウトなので最低高さを確保 */
+  min-height: 1280px;
 }
 
 .column {
@@ -30,12 +32,66 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  gap: 0.4rem;
-  padding: 0 0.5rem;
+  /* ペアごとに space-around で割り当てるため、ここでは equal-flex でいく */
+  gap: 0.75rem;
+  padding: 0 0.5rem 0 0.5rem;
 }
 
-.center {
+/* ペア (2試合) のラッパ。
+   - 内部 2 枚を space-around で縦に均等配置 → 上 25% / 下 75% の中心になる
+   - 右側に「]」型の進出線 (::after) と次列へ伸びる水平線 (::before) を描画 */
+.pair {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 0.5rem;
+  /* 右の進出線の太さ分の余白 */
+  padding-right: 0.7rem;
+}
+
+/* 「]」型の進出線
+   上端 (25%) から下端 (75%) まで縦線、上下に短い水平線を持つ枠線。
+   border-left を消すことで「]」だけが描画される */
+.pair::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 25%;
+  bottom: 25%;
+  width: 0.5rem;
+  border: 2px solid var(--color-bracket-line, var(--color-border));
+  border-left: none;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  pointer-events: none;
+}
+
+/* 次列へ伸びる水平線（ペア中央 = 50% から右へ） */
+.pair::before {
+  content: "";
+  position: absolute;
+  right: -0.75rem;
+  top: 50%;
+  width: 0.75rem;
+  border-top: 2px solid var(--color-bracket-line, var(--color-border));
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* 万一カードが 1 枚だけ残った場合 (データ不足等) のフォールバック。線は引かない */
+.pairSingle {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 0.5rem;
+  padding-right: 0.7rem;
+}
+
+.finalColumn {
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
@@ -44,6 +100,18 @@
   min-width: 240px;
   padding: 0 0.75rem;
   gap: 1.25rem;
+  position: relative;
+}
+
+/* 決勝カードへ向かって最後の水平線が伸びてくる位置 (SF ペア中央 = 50%) */
+.finalColumn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 0.75rem;
+  border-top: 2px solid var(--color-bracket-line, var(--color-border));
+  pointer-events: none;
 }
 
 .finalTitle {
@@ -88,4 +156,18 @@
   border-radius: 999px;
   font-weight: 700;
   font-size: 0.7rem;
+}
+
+@media (max-width: 640px) {
+  .bracket {
+    min-height: 1080px;
+  }
+
+  .column {
+    min-width: 170px;
+  }
+
+  .finalColumn {
+    min-width: 190px;
+  }
 }

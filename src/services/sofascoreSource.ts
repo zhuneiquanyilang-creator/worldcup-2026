@@ -36,8 +36,8 @@ type SofaEvent = {
   id: number;
   status?: { type?: string; description?: string };
   isLive?: boolean;
-  homeScore?: { current?: number };
-  awayScore?: { current?: number };
+  homeScore?: { current?: number; penalties?: number };
+  awayScore?: { current?: number; penalties?: number };
   time?: { currentPeriodStartTimestamp?: number };
   homeTeam?: { name?: string };
   awayTeam?: { name?: string };
@@ -211,9 +211,16 @@ export class SofascoreLiveSource implements LiveSource {
         ? { home: event.homeScore.current, away: event.awayScore.current }
         : undefined;
 
+    const penaltyScore =
+      typeof event.homeScore?.penalties === "number" &&
+      typeof event.awayScore?.penalties === "number"
+        ? { home: event.homeScore.penalties, away: event.awayScore.penalties }
+        : undefined;
+
     const update: LiveUpdate = { matchId: match.id };
     if (status) update.status = status;
     if (score) update.score = score;
+    if (penaltyScore) update.penaltyScore = penaltyScore;
     update.liveLabel = event.status?.description;
 
     // ラインアップ取得 (confirmed === true なら確実、false でも予想スタメンが入ることが多い)
