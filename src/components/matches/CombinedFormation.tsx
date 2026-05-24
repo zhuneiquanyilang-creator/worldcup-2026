@@ -249,8 +249,14 @@ export function CombinedFormation({
       </div>
 
       <div className={styles.benchGrid}>
-        <BenchList title={`${homeTeam?.name ?? "ホーム"} ベンチ`} items={homeProcessed?.bench} />
-        <BenchList title={`${awayTeam?.name ?? "アウェイ"} ベンチ`} items={awayProcessed?.bench} />
+        <BenchList
+          title={`${homeTeam?.name ?? homeLabel ?? "ホーム"}ベンチ`}
+          items={homeProcessed?.bench}
+        />
+        <BenchList
+          title={`${awayTeam?.name ?? awayLabel ?? "アウェイ"}ベンチ`}
+          items={awayProcessed?.bench}
+        />
       </div>
     </section>
   );
