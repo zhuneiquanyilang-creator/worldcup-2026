@@ -99,15 +99,26 @@ export function BracketView({ matches, teamMap }: Props) {
           />
         ))}
 
-        <div className={styles.finalColumn}>
-          <div className={styles.finalTitle}>決勝</div>
-          {fin && <BracketMatch match={fin} teamMap={teamMap} />}
-          {third && (
-            <div className={styles.thirdWrap}>
-              <div className={styles.thirdTitle}>3位決定戦</div>
-              <BracketMatch match={third} teamMap={teamMap} />
-            </div>
-          )}
+        {/* 他の列と同じ「columnTitle + cards」構造にして、垂直位置を揃える。
+            「決勝」は columnTitle の枠内に gold pill バッジで表示。
+            決勝カードは絶対配置で連結線の右に固定する (線とカードが被らない)。 */}
+        <div className={`${styles.column} ${styles.finalCol}`}>
+          <div className={styles.columnTitle}>
+            <span className={styles.finalTitleBadge}>決勝</span>
+          </div>
+          <div className={`${styles.cards} ${styles.finalCards}`}>
+            {fin && (
+              <div className={styles.finalCardWrap}>
+                <BracketMatch match={fin} teamMap={teamMap} />
+              </div>
+            )}
+            {third && (
+              <div className={styles.thirdWrap}>
+                <div className={styles.thirdTitle}>3位決定戦</div>
+                <BracketMatch match={third} teamMap={teamMap} />
+              </div>
+            )}
+          </div>
         </div>
       </div>
 

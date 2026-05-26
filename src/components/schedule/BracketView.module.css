@@ -91,47 +91,64 @@
   padding-right: 0.7rem;
 }
 
-.finalColumn {
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-width: 240px;
-  padding: 0 0.75rem;
-  gap: 1.25rem;
+/* 「決勝」の gold pill バッジ。columnTitle の枠内に表示してサイズは
+   他の列の columnTitle と同じになる。これにより .cards の上端が他列と
+   揃い、決勝カードの中央 (= .finalCards の 50%) と SF ペア中央が一致する */
+.finalTitleBadge {
+  display: inline-block;
+  color: var(--color-gold);
+  background-color: var(--color-primary-dark);
+  font-weight: 800;
+  font-size: 0.85rem;
+  padding: 0.1rem 0.85rem;
+  border-radius: 999px;
+  letter-spacing: 0.08em;
+  line-height: 1.3;
+}
+
+/* 決勝列は他列より幅を取って、カードを連結線の右に余裕を持って置けるようにする */
+.finalCol {
+  min-width: 260px;
+}
+
+/* 決勝列の .cards: 連結線とカードの絶対配置のためのコンテナに変更 */
+.finalCards {
+  display: block;
   position: relative;
 }
 
-/* 決勝カードへ向かって最後の水平線が伸びてくる位置 (SF ペア中央 = 50%) */
-.finalColumn::before {
+/* SF からの水平線を決勝カードまで届かせる連結線。
+   SF 列 (前列) の `.pair::before` は 0.75rem 右に伸びる (列間 gap 分)。
+   こちらは .cards 左 padding (0.5rem) を超えて gap 側からカード左端まで届く。 */
+.finalCards::before {
   content: "";
   position: absolute;
-  left: 0;
+  left: -1rem;
   top: 50%;
-  width: 0.75rem;
+  width: 3rem; /* 線の右端 = .finalCards 左から 2rem */
   border-top: 2px solid var(--color-bracket-line, var(--color-border));
   pointer-events: none;
 }
 
-.finalTitle {
-  font-size: 1rem;
-  font-weight: 800;
-  color: var(--color-gold);
-  background-color: var(--color-primary-dark);
-  padding: 0.35rem 1.25rem;
-  border-radius: 999px;
-  letter-spacing: 0.08em;
+/* 決勝カードを連結線の右端 (2rem) に揃えて絶対配置 */
+.finalCardWrap {
+  position: absolute;
+  top: 50%;
+  left: 2rem; /* 線の右端と同じ位置 */
+  right: 0.5rem;
+  transform: translateY(-50%);
 }
 
+/* 3位決定戦は決勝カードの少し下、横位置も決勝カードに揃える */
 .thirdWrap {
   display: flex;
   flex-direction: column;
   align-items: stretch;
   gap: 0.4rem;
-  width: 100%;
-  max-width: 220px;
-  margin-top: 0.5rem;
+  position: absolute;
+  top: calc(50% + 3rem);
+  left: 2rem;
+  right: 0.5rem;
 }
 
 .thirdTitle {
@@ -165,9 +182,5 @@
 
   .column {
     min-width: 170px;
-  }
-
-  .finalColumn {
-    min-width: 190px;
   }
 }

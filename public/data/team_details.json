@@ -1821,7 +1821,12 @@
     "firstAppearance": "1974",
     "lastAppearance": "1974",
     "appearanceCount": 2,
-    "pastResults": [],
+    "pastResults": [
+      {
+        "year": 1974,
+        "result": "グループステージ敗退"
+      }
+    ],
     "coach": {
       "name": "セバスチャン・デザブル",
       "nationality": "フランス"
