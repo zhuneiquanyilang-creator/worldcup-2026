@@ -9,6 +9,7 @@ import { isLive } from "@/utils/matchTiming";
 import { useLiveMinute } from "@/hooks/useLiveMinute";
 import { TeamLink } from "@/components/common/TeamLink";
 import { LiveBadge } from "@/components/common/LiveBadge";
+import { BroadcasterList } from "@/components/common/BroadcasterBadge";
 import styles from "./MatchCard.module.css";
 
 type Props = {
@@ -79,6 +80,12 @@ export function MatchCard({ match, teamMap }: Props) {
       </div>
 
       <div className={styles.venue}>{match.venue}</div>
+
+      {match.broadcasters && match.broadcasters.length > 0 && (
+        <div className={styles.broadcasters}>
+          <BroadcasterList codes={match.broadcasters} />
+        </div>
+      )}
     </div>
   );
 }

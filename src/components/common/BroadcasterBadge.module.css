@@ -1,0 +1,66 @@
+/* FIFA 公式の試合一覧と同じ位置感覚 (試合カード下部) に並べる小さなチップ。
+   形状は角丸長方形で統一し、色だけで識別できる。 */
+
+.list {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.8rem;
+  height: 1.15rem;
+  padding: 0 0.4rem;
+  border-radius: 3px;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  /* ロゴ風に見せるための内側 inset shadow */
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08);
+  user-select: none;
+}
+
+/* NHK 総合: 赤背景に白の "G" */
+.nhkG {
+  background-color: #e60012;
+  color: #fff;
+  min-width: 1.15rem;
+  padding: 0 0.35rem;
+}
+
+/* NHK BS1: 青背景に白の "BS1" */
+.nhkBs1 {
+  background-color: #0a5cb8;
+  color: #fff;
+}
+
+/* NHK BS4K: グレー背景に白の "BS4K" */
+.nhkBs4k {
+  background-color: #6b6b6b;
+  color: #fff;
+}
+
+/* 日テレ: 白背景に赤テキスト (枠線で識別) */
+.ntv {
+  background-color: #fff;
+  color: #e60019;
+  box-shadow: inset 0 0 0 1.5px #e60019;
+}
+
+/* フジ: 朱赤背景に白テキスト (NHK 総合より暖色寄りに振る) */
+.fuji {
+  background-color: #ff6a13;
+  color: #fff;
+}
+
+/* DAZN: 黒背景に白テキスト */
+.dazn {
+  background-color: #111;
+  color: #fff;
+  letter-spacing: 0.05em;
+}

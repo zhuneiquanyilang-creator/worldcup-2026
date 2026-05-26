@@ -118,3 +118,10 @@
   color: var(--color-text-muted);
   text-align: center;
 }
+
+/* 放送局バッジ列。FIFA 公式と同じく venue の下に中央寄せ */
+.broadcasters {
+  margin-top: 0.4rem;
+  display: flex;
+  justify-content: center;
+}

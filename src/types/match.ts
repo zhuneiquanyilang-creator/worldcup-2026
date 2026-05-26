@@ -98,4 +98,7 @@ export type Match = {
   awayFormation?: FormationData;
   stats?: MatchStats;
   lineup?: { home: string[]; away: string[] };
+  /** 日本国内での放送局コード。FIFA 公式 (canadamexicousa2026/scores-fixtures?country=JP) 由来。
+   *  値: "nhk-g" | "nhk-bs1" | "nhk-bs4k" | "ntv" | "fuji" */
+  broadcasters?: string[];
 };
