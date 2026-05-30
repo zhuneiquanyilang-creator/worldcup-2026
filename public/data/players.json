@@ -845,7 +845,7 @@
 
   { "id": "p_arg_1", "name": "エミリアーノ・マルティネス", "teamId": "ARG", "position": "GK", "birthDate": "1992-09-02", "club": "アストン・ヴィラ（イングランド）", "goals": 0, "assists": 0 },
   { "id": "p_arg_2", "name": "フアン・ムッソ", "teamId": "ARG", "position": "GK", "birthDate": "1994-05-06", "club": "アトレティコ・マドリード（スペイン）", "goals": 0, "assists": 0 },
-  { "id": "p_arg_3", "name": "ヘロニモ・ルジ", "teamId": "ARG", "position": "GK", "birthDate": "1992-05-20", "club": "オリンピック・マルセイユ（フランス）", "goals": 0, "assists": 0 },
+  { "id": "p_arg_3", "name": "ヘロニモ・ルッリ", "teamId": "ARG", "position": "GK", "birthDate": "1992-05-20", "club": "オリンピック・マルセイユ（フランス）", "goals": 0, "assists": 0 },
   { "id": "p_arg_4", "name": "ゴンサロ・モンティエル", "teamId": "ARG", "position": "DF", "birthDate": "1997-01-01", "club": "リーベル・プレート", "goals": 0, "assists": 0 },
   { "id": "p_arg_5", "name": "ニコラス・オタメンディ", "teamId": "ARG", "position": "DF", "birthDate": "1988-02-12", "club": "ベンフィカ（ポルトガル）", "goals": 0, "assists": 0 },
   { "id": "p_arg_6", "name": "ファクンド・メディーナ", "teamId": "ARG", "position": "DF", "birthDate": "1999-05-28", "club": "オリンピック・マルセイユ（フランス）", "goals": 0, "assists": 0 },
@@ -860,7 +860,7 @@
   { "id": "p_arg_15", "name": "エセキエル・パラシオス", "teamId": "ARG", "position": "MF", "birthDate": "1998-10-05", "club": "バイヤー・レバークーゼン（ドイツ）", "goals": 0, "assists": 0 },
   { "id": "p_arg_16", "name": "ジオバニ・ロ・チェルソ", "teamId": "ARG", "position": "MF", "birthDate": "1996-04-09", "club": "ベティス（スペイン）", "goals": 0, "assists": 0 },
   { "id": "p_arg_17", "name": "エンソ・フェルナンデス", "teamId": "ARG", "position": "MF", "birthDate": "2001-01-17", "club": "チェルシー（イングランド）", "goals": 0, "assists": 0 },
-  { "id": "p_arg_18", "name": "アレクシス・マク・アリステル", "teamId": "ARG", "position": "MF", "birthDate": "1998-12-24", "club": "リバプール（イングランド）", "goals": 0, "assists": 0 },
+  { "id": "p_arg_18", "name": "アレクシス・マク・アリスター", "teamId": "ARG", "position": "MF", "birthDate": "1998-12-24", "club": "リバプール（イングランド）", "goals": 0, "assists": 0 },
   { "id": "p_arg_19", "name": "リオネル・メッシ", "teamId": "ARG", "position": "FW", "birthDate": "1987-06-24", "club": "インテル・マイアミ（アメリカ）", "goals": 0, "assists": 0 },
   { "id": "p_arg_20", "name": "フリアン・アルバレス", "teamId": "ARG", "position": "FW", "birthDate": "2000-01-31", "club": "アトレティコ・マドリード（スペイン）", "goals": 0, "assists": 0 },
   { "id": "p_arg_21", "name": "ニコラス・ゴンサレス", "teamId": "ARG", "position": "FW", "birthDate": "1998-04-06", "club": "アトレティコ・マドリード（スペイン）", "goals": 0, "assists": 0 },
