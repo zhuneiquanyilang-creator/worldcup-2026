@@ -37,7 +37,53 @@
       "同率 4 位はフランス（1998・2018）とウルグアイ（1930・1950）の 2 回ずつ。フランスは 20 年差で 2 度頂点に立った現代サッカーの代表格、ウルグアイは人口 350 万人ながら第 1 回大会の覇者として常に強豪国の文脈で語られます。最後の 1 回優勝組はイングランド（1966 の自国開催）とスペイン（2010）です。",
       "2026 大会には優勝経験 8 か国のうちブラジル・ドイツ・アルゼンチン・フランス・イングランド・スペイン・ウルグアイの 7 か国が出場（イタリアは欧州予選敗退）。スペインとウルグアイは同じグループ H に入っており、グループステージから優勝経験国同士の直接対決が見られます。9 か国目の優勝国が誕生するかにも注目したいところです。"
     ],
-    "tags": ["歴史", "ランキング"]
+    "tags": ["歴史", "ランキング"],
+    "figures": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/FIFA_World_Cup_Trophy_%28Ank_Kumar%2C_Infosys_Limited%29_04.jpg/960px-FIFA_World_Cup_Trophy_%28Ank_Kumar%2C_Infosys_Limited%29_04.jpg",
+        "alt": "FIFA ワールドカップ・トロフィー (2018 年撮影)",
+        "caption": "1974 年から使われている現行の FIFA ワールドカップ・トロフィー。スイス・チューリッヒの FIFA ワールド・フットボール博物館にて。",
+        "credit": "Ank Kumar / Wikimedia Commons / CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:FIFA_World_Cup_Trophy_(Ank_Kumar,_Infosys_Limited)_04.jpg",
+        "after": 0,
+        "size": "sm"
+      },
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Pele_celebrating_1970.jpg/960px-Pele_celebrating_1970.jpg",
+        "alt": "1970 年 W 杯決勝後、ブラジル代表のペレが仲間に胴上げされる場面",
+        "caption": "1970 年メキシコ大会決勝、イタリアを下して 3 度目の優勝を決めた直後のペレ。ブラジルはこの大会でジュール・リメ杯を永久保持した。",
+        "credit": "Associated Press / Wikimedia Commons / Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pele_celebrating_1970.jpg",
+        "after": 1
+      },
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/7/74/Italy_2006_FIFA_World_Cup_Champion_-_Melandri%2C_Napolitano%2C_Cannavaro_and_Lippi.jpg",
+        "alt": "2006 年 W 杯優勝後、トロフィーとともに大統領府を訪れたカンナバーロ主将とリッピ監督",
+        "caption": "2006 年ドイツ大会で 4 度目の優勝を果たしたイタリア代表。キャプテンのファビオ・カンナバーロ、マルコ・メランドリ、ナポリターノ大統領、マルチェロ・リッピ監督。",
+        "credit": "Quirinale.it / Wikimedia Commons / Attribution License",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Italy_2006_FIFA_World_Cup_Champion_-_Melandri,_Napolitano,_Cannavaro_and_Lippi.jpg",
+        "after": 2
+      },
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Germany_and_Argentina_face_off_in_the_final_of_the_World_Cup_2014_-2014-07-13_%2817%29.jpg/960px-Germany_and_Argentina_face_off_in_the_final_of_the_World_Cup_2014_-2014-07-13_%2817%29.jpg",
+        "alt": "2014 年 W 杯決勝、ブラジルのマラカナ・スタジアムで対峙するドイツとアルゼンチン",
+        "caption": "2014 年ブラジル大会決勝、マラカナでアルゼンチンを 1–0 で下したドイツが 4 度目の優勝。延長後半にゲッツェの決勝点が決まった。",
+        "credit": "Danilo Borges / copa2014.gov.br / Wikimedia Commons / CC BY 3.0 BR",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0/br/deed.ja",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Germany_and_Argentina_face_off_in_the_final_of_the_World_Cup_2014_-2014-07-13_(17).jpg",
+        "after": 2
+      },
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Maradona-Mundial_86_con_la_copa.JPG/960px-Maradona-Mundial_86_con_la_copa.JPG",
+        "alt": "1986 年メキシコ大会、優勝トロフィーを掲げるディエゴ・マラドーナ",
+        "caption": "1986 年メキシコ大会、優勝トロフィーを掲げるディエゴ・マラドーナ。「マラドーナの大会」と語り継がれる、アルゼンチン 2 度目の戴冠。",
+        "credit": "Unknown (El Gráfico magazine) / Wikimedia Commons / Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Maradona-Mundial_86_con_la_copa.JPG",
+        "after": 3,
+        "size": "md"
+      }
+    ]
   },
   {
     "id": "c004",
@@ -68,7 +114,167 @@
       "【グループ C】ブラジル・モロッコ・スコットランド・ハイチ。最多 5 度の優勝を誇るブラジル、前回カタール大会で 4 位の旋風を起こしたモロッコ、欧州予選を勝ち抜いた 1998 年以来 28 年ぶりのスコットランド、そして CONCACAF 予選を勝ち上がった 1974 年西ドイツ大会以来 52 年ぶりのハイチ。ブラジルとモロッコは互いに前回大会のリベンジを意識する立場で、6 月 24 日マイアミの SCO-BRA、6 月 19 日のボストン SCO-MAR は組のヤマ場。スコットランドはアンディ・ロバートソンら欧州主要リーグの主軸でどこまで上位を狙えるか、ハイチは MLS 所属選手を多く擁し、運動量勝負を仕掛けそうです。今大会屈指の「死の組」候補と呼んで差し支えありません。",
       "【グループ D】アメリカ・パラグアイ・オーストラリア・トルコ。アメリカは 1994 年以来 32 年ぶりの自国開催で、若手スター揃いの黄金世代（プリシッチ、マッケニー、リチャーズ、デストら）でホームの後押しを受けます。トルコは 2002 年日韓大会で 3 位に入って以来 24 年ぶりの本大会復帰で、若手アタッカーが揃った世代交代後の編成。オーストラリアは堅守速攻型で前回大会ではノックアウト進出を果たしており、安定感では引けを取りません。パラグアイは 2010 年以来 16 年ぶりの出場で、伝統的なフィジカルとセットプレーで勝負しそうです。地元アメリカの力と、復活組 3 か国の意地のぶつかり合いに注目です。"
     ],
-    "tags": ["大会展望", "グループ別"]
+    "tags": ["大会展望", "グループ別"],
+    "figures": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/BFA_2023_-2_Heung-Min_Son_%28cropped%29.jpg/500px-BFA_2023_-2_Heung-Min_Son_%28cropped%29.jpg",
+        "alt": "韓国代表のソン・フンミン (トットナム時代)",
+        "caption": "韓国代表キャプテンのソン・フンミン。アジア最終予選を勝ち上がった世代の中心として、地元メキシコの 2 強を相手にどこまで粘れるかが組の鍵になる。",
+        "credit": "Alex Morton/THFC (cropped by Ujishadow) / Wikimedia Commons / CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:BFA_2023_-2_Heung-Min_Son_(cropped).jpg",
+        "after": 1,
+        "size": "sm"
+      },
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Alphonso_Davies_in_2022.jpg/480px-Alphonso_Davies_in_2022.jpg",
+        "alt": "カナダ代表のアルフォンソ・デイヴィス (バイエルン・ミュンヘン)",
+        "caption": "カナダ代表の象徴アルフォンソ・デイヴィス（バイエルン・ミュンヘン）。爆発的なスピードを誇る左サイドが、BC プレイスでの 2 連戦でホームの背中を押す。",
+        "credit": "Steffen Prößdorf / Wikimedia Commons / CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alphonso_Davies_in_2022.jpg",
+        "after": 2,
+        "size": "sm"
+      },
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/2023_05_06_Final_de_la_Copa_del_Rey_-_52879242230_%28cropped%29.jpg/500px-2023_05_06_Final_de_la_Copa_del_Rey_-_52879242230_%28cropped%29.jpg",
+        "alt": "ブラジル代表のヴィニシウス・ジュニオール (レアル・マドリード)",
+        "caption": "ブラジルの攻撃を牽引するヴィニシウス・ジュニオール（レアル・マドリード）。前回大会 4 位のモロッコや欧州予選通過のスコットランドが揃う「死の組」C で 5 度目の優勝への第一歩を踏み出す。",
+        "credit": "Junta de Andalucía / Wikimedia Commons / CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/deed.ja",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_05_06_Final_de_la_Copa_del_Rey_-_52879242230_(cropped).jpg",
+        "after": 3,
+        "size": "sm"
+      },
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Christian_Pulisic_USMNT_v_Belgium_Mar_28_2026-73_%28cropped%29.jpg/500px-Christian_Pulisic_USMNT_v_Belgium_Mar_28_2026-73_%28cropped%29.jpg",
+        "alt": "アメリカ代表のクリスチャン・プリシッチ (2026 年 3 月、対ベルギー戦)",
+        "caption": "アメリカ代表のエース、クリスチャン・プリシッチ（AC ミラン）。1994 年以来 32 年ぶりの自国開催を迎える地元の顔として、若手世代を引っ張る。",
+        "credit": "Bryan Berlin (Berlination) / Wikimedia Commons / CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Christian_Pulisic_USMNT_v_Belgium_Mar_28_2026-73_(cropped).jpg",
+        "after": 4,
+        "size": "sm"
+      },
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Edson_%C3%81lvarez.png/500px-Edson_%C3%81lvarez.png",
+        "alt": "メキシコ代表のエドソン・アルバレス",
+        "caption": "メキシコ代表の守備の要、エドソン・アルバレス（フェネルバフチェ）。",
+        "credit": "Selección Nacional de México / Wikimedia Commons / CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0/deed.ja",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Edson_Álvarez.png",
+        "after": 1,
+        "size": "xs"
+      },
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/FIFA_World_Cup_2010_South_Africa_Uruguay.jpg/640px-FIFA_World_Cup_2010_South_Africa_Uruguay.jpg",
+        "alt": "2010 年 W 杯、南アフリカ対ウルグアイ戦のウォームアップ",
+        "caption": "南アフリカ代表（2010 年自国開催 W 杯）。今大会で 16 年ぶりに本大会復帰。",
+        "credit": "Shine 2010 (Flickr) / Wikimedia Commons / CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/deed.ja",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:FIFA_World_Cup_2010_South_Africa_Uruguay.jpg",
+        "after": 1,
+        "size": "xs"
+      },
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/2020-03-10_Fu%C3%9Fball%2C_M%C3%A4nner%2C_UEFA_Champions_League_Achtelfinale%2C_RB_Leipzig_-_Tottenham_Hotspur_1DX_3672_by_Stepro.jpg/500px-2020-03-10_Fu%C3%9Fball%2C_M%C3%A4nner%2C_UEFA_Champions_League_Achtelfinale%2C_RB_Leipzig_-_Tottenham_Hotspur_1DX_3672_by_Stepro.jpg",
+        "alt": "チェコ代表のパトリック・シック",
+        "caption": "チェコ代表のエース FW、パトリック・シック（バイヤー・レバークーゼン）。",
+        "credit": "Steffen Prößdorf / Wikimedia Commons / CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2020-03-10_Fußball,_Männer,_UEFA_Champions_League_Achtelfinale,_RB_Leipzig_-_Tottenham_Hotspur_1DX_3672_by_Stepro.jpg",
+        "after": 1,
+        "size": "xs"
+      },
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/20150331_2026_AUT_BIH_2177_Edin_D%C5%BEeko_%28cropped%29.jpg/500px-20150331_2026_AUT_BIH_2177_Edin_D%C5%BEeko_%28cropped%29.jpg",
+        "alt": "ボスニア・ヘルツェゴビナ代表のエディン・ジェコ",
+        "caption": "ボスニア・ヘルツェゴビナのレジェンド FW、エディン・ジェコ。代表通算最多得点記録保持者。",
+        "credit": "Ailura / Wikimedia Commons / CC BY-SA 3.0 AT",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/at/deed.ja",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:20150331_2026_AUT_BIH_2177_Edin_Džeko_(cropped).jpg",
+        "after": 2,
+        "size": "xs"
+      },
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Qatar_v_Lebanon_%2837%29_%28cropped%29.jpg/500px-Qatar_v_Lebanon_%2837%29_%28cropped%29.jpg",
+        "alt": "カタール代表のアクラム・アフィフ",
+        "caption": "2023 アジアカップ MVP のアクラム・アフィフ。カタールの攻撃を牽引する。",
+        "credit": "Foad Ashtari (Mehr News Agency) / Wikimedia Commons / CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Qatar_v_Lebanon_(37)_(cropped).jpg",
+        "after": 2,
+        "size": "xs"
+      },
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Granit_Xhaka_%28cropped%29.jpg/500px-Granit_Xhaka_%28cropped%29.jpg",
+        "alt": "スイス代表のグラニト・ジャカ",
+        "caption": "スイス代表キャプテンのグラニト・ジャカ（バイヤー・レバークーゼン）。中盤で組織力を支える経験者。",
+        "credit": "Chelsea Debs (cfcunofficial) / Wikimedia Commons / CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/deed.ja",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Granit_Xhaka_(cropped).jpg",
+        "after": 2,
+        "size": "xs"
+      },
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Achraf_Hakimi_%28cropped2%29.jpg/500px-Achraf_Hakimi_%28cropped2%29.jpg",
+        "alt": "モロッコ代表のアクラフ・ハキミ",
+        "caption": "モロッコのスター SB、アクラフ・ハキミ（パリ・サンジェルマン）。前回大会 4 位の再現を狙う。",
+        "credit": "Abdelali Bentarki (Ali Graphy Pic) / Wikimedia Commons / CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Achraf_Hakimi_(cropped2).jpg",
+        "after": 3,
+        "size": "xs"
+      },
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/First_Minister_meets_with_Scottish_National_Football_Team_%28cropped_2%29.jpg/500px-First_Minister_meets_with_Scottish_National_Football_Team_%28cropped_2%29.jpg",
+        "alt": "スコットランド代表のアンドリュー・ロバートソン",
+        "caption": "スコットランド代表キャプテン、アンドリュー・ロバートソン（リバプール）。28 年ぶりの本大会出場を率いる。",
+        "credit": "Scottish Government / Wikimedia Commons / CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:First_Minister_meets_with_Scottish_National_Football_Team_(cropped_2).jpg",
+        "after": 3,
+        "size": "xs"
+      },
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/2025_Iran_Football_Premier_League_Esteghlal_and_Zob_Ahan_football_match_3_Mehr_%28cropped%29.jpg/500px-2025_Iran_Football_Premier_League_Esteghlal_and_Zob_Ahan_football_match_3_Mehr_%28cropped%29.jpg",
+        "alt": "ハイチ代表のデュッケンス・ナゾン",
+        "caption": "ハイチ代表 FW のデュッケンス・ナゾン。1974 年以来 52 年ぶりの本大会出場を狙う得点源。",
+        "credit": "Foad Ashtari (Mehr News Agency) / Wikimedia Commons / CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2025_Iran_Football_Premier_League_Esteghlal_and_Zob_Ahan_football_match_3_Mehr_(cropped).jpg",
+        "after": 3,
+        "size": "xs"
+      },
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Antonio_Sanabria%2C_2025_%28cropped%29.jpg/500px-Antonio_Sanabria%2C_2025_%28cropped%29.jpg",
+        "alt": "パラグアイ代表のアントニオ・サナブリア",
+        "caption": "パラグアイのエース FW、アントニオ・サナブリア（トリノ）。16 年ぶりの本大会復帰を担う。",
+        "credit": "Antonio0403 / Wikimedia Commons / CC0 (Public Domain)",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antonio_Sanabria,_2025_(cropped).jpg",
+        "after": 4,
+        "size": "xs"
+      },
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Ryan_rcl_asse_2425.png/500px-Ryan_rcl_asse_2425.png",
+        "alt": "オーストラリア代表のマット・ライアン",
+        "caption": "オーストラリア代表 GK、マット・ライアン（レバンテ）。長年代表の守護神を務めるベテラン。",
+        "credit": "Paté kroute / Wikimedia Commons / CC0 (Public Domain)",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ryan_rcl_asse_2425.png",
+        "after": 4,
+        "size": "xs"
+      },
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/AUT_vs._TUR_2016-03-29_%28342%29.jpg/500px-AUT_vs._TUR_2016-03-29_%28342%29.jpg",
+        "alt": "トルコ代表のハカン・チャルハノール",
+        "caption": "トルコ代表キャプテン、ハカン・チャルハノール（インテル）。24 年ぶりの本大会復帰を司令塔として支える。",
+        "credit": "Steindy / Wikimedia Commons / CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/deed.ja",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:AUT_vs._TUR_2016-03-29_(342).jpg",
+        "after": 4,
+        "size": "xs"
+      }
+    ]
   },
   {
     "id": "c006",
@@ -82,7 +288,49 @@
       "【グループ G】ベルギー・エジプト・イラン・ニュージーランド。ベルギーは前回大会でまさかのグループ敗退から世代交代の途中ですが、依然として欧州主要リーグの選手を多く擁する強豪。エジプトはアフリカ屈指のスター（モハメド・サラー）を軸に攻撃的なサッカーを目指し、イランはアジア最終予選を首位で勝ち上がった組織力。ニュージーランドはオセアニア予選を制しての出場で、伝統の堅守と高さで欧州・アフリカ勢に挑む構図。組の星取りはベルギーの初戦と最終戦の入りで大きく動きそうです。",
       "【グループ H】スペイン・カーボベルデ・サウジアラビア・ウルグアイ。2010 年王者スペインと、第 1 回大会王者ウルグアイという過去の優勝経験国が同じグループに入る組合せは珍しく、6 月 26 日グアダラハラの URU-ESP（メキシコ国内開催）は今大会のグループステージ屈指の好カード。スペインは EURO 2024 王者として臨み、18 歳のラミン・ヤマルを擁する若いタレントを揃えた攻撃陣、ウルグアイは新監督体制下で世代交代を進めた組合せで勝負します。カーボベルデは大西洋アフリカの島国（人口約 60 万人）として初の本大会出場、サウジアラビアも初戦から欧州勢相手に殴り合いを挑む構図で、組全体の点の取り合いが楽しみです。"
     ],
-    "tags": ["大会展望", "グループ別"]
+    "tags": ["大会展望", "グループ別"],
+    "figures": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Florian_Wirtz%2C_2022-07-31%2C_Saisoner%C3%B6ffnung_Bayer_04%2C_Leverkusen_%281%29_%28cropped%29.jpg/500px-Florian_Wirtz%2C_2022-07-31%2C_Saisoner%C3%B6ffnung_Bayer_04%2C_Leverkusen_%281%29_%28cropped%29.jpg",
+        "alt": "ドイツ代表のフロリアン・ヴィルツ (バイエル・レバークーゼン)",
+        "caption": "ドイツの新世代を象徴するフロリアン・ヴィルツ。4 度の優勝経験を持つチームの復権を担う攻撃的 MF として注目。",
+        "credit": "Pyaet / Wikimedia Commons / CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Florian_Wirtz,_2022-07-31,_Saisoneröffnung_Bayer_04,_Leverkusen_(1)_(cropped).jpg",
+        "after": 1,
+        "size": "sm"
+      },
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Takefusa_Kubo_2019.png/500px-Takefusa_Kubo_2019.png",
+        "alt": "日本代表の久保建英 (レアル・ソシエダ)",
+        "caption": "日本代表の中心、久保建英（レアル・ソシエダ）。初戦オランダ戦で世界水準のテクニックを見せられるかが組の鍵。",
+        "credit": "Real Madrid / Wikimedia Commons / CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0/deed.ja",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Takefusa_Kubo_2019.png",
+        "after": 2,
+        "size": "sm"
+      },
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Mohamed_Salah_2018.jpg/500px-Mohamed_Salah_2018.jpg",
+        "alt": "エジプト代表のモハメド・サラー (2018 年 W 杯、対サウジアラビア戦)",
+        "caption": "エジプト代表のエース、モハメド・サラー（リバプール）。アフリカ屈指のスターとしてベルギー戦・イラン戦などで勝負を仕掛ける。",
+        "credit": "Anna Nessi (soccer.ru) / Wikimedia Commons / CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/deed.ja",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mohamed_Salah_2018.jpg",
+        "after": 3,
+        "size": "sm"
+      },
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Lamine_Yamal_in_2025.jpg/500px-Lamine_Yamal_in_2025.jpg",
+        "alt": "スペイン代表のラミン・ヤマル (2025 年、対ブルガリア戦)",
+        "caption": "EURO 2024 王者スペインの 18 歳、ラミン・ヤマル（バルセロナ）。ウルグアイとの「優勝経験国対決」で世界中の視線を集める存在。",
+        "credit": "Biso / Wikimedia Commons / CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lamine_Yamal_in_2025.jpg",
+        "after": 4,
+        "size": "sm"
+      }
+    ]
   },
   {
     "id": "c007",
@@ -96,6 +344,46 @@
       "【グループ K】ポルトガル・コンゴ民主共和国・ウズベキスタン・コロンビア。ポルトガルにとっても、クリスティアーノ・ロナウド（41 歳）にとっても最後の W 杯になる可能性が極めて高い大会です。世代継承はベルナルド・シルバ、ブルーノ・フェルナンデス、若手のジョアン・ネベスらに進んでおり、ロナウド最後の輝きと次世代の力をどう融合させるかが鍵。コロンビアはハメス・ロドリゲスら欧州主要リーグ経験組で固めた、平均年齢 29.6 歳という今大会上位のベテラン編成、ウズベキスタンは初の本大会出場、コンゴ民主共和国は 1974 年大会（当時ザイール）以来 52 年ぶりの本大会復帰となります。6 月 27 日のマイアミ COL-POR はベテランの底力勝負として要注目です。",
       "【グループ L】イングランド・クロアチア・ガーナ・パナマ。イングランドは 1966 年自国開催以来 60 年ぶりの優勝を狙う立場で、ジュード・ベリンガム、フィル・フォーデン、ブカヨ・サカら欧州トップクラブの主力世代がついに優勝候補と呼ばれる本大会を迎えます。クロアチアは過去 2 大会で 2 位（2018）・3 位（2022）と堅実な強豪、ガーナはアフリカ予選通過の運動量豊富な世代、パナマは平均年齢 29.9 歳という今大会最ベテラン軍団で 2018 年ロシア大会以来 8 年ぶりの本大会復帰、初の決勝トーナメント進出を狙う構図。6 月 27 日ニューヨーク・ニュージャージーの PAN-ENG はパナマにとっての勝負所、6 月 18 日ダラスの ENG-CRO はイングランドにとって前回大会のリベンジマッチでもあります。"
     ],
-    "tags": ["大会展望", "グループ別"]
+    "tags": ["大会展望", "グループ別"],
+    "figures": [
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Erling_Haaland_June_2025.jpg/500px-Erling_Haaland_June_2025.jpg",
+        "alt": "ノルウェー代表のエルリング・ハーランド (2025 年、対イタリア戦)",
+        "caption": "1998 年以来 28 年ぶりに本大会へ戻ってきたノルウェーの絶対的なエース、エルリング・ハーランド（マンチェスター・シティ）。今大会が代表での初 W 杯本大会。",
+        "credit": "MichaelEmilio / Wikimedia Commons / CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Erling_Haaland_June_2025.jpg",
+        "after": 1,
+        "size": "sm"
+      },
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Lionel_Messi_White_House_2026_%283x4_cropped%29.jpg/500px-Lionel_Messi_White_House_2026_%283x4_cropped%29.jpg",
+        "alt": "アルゼンチン代表のリオネル・メッシ (2026 年)",
+        "caption": "前回王者アルゼンチンのキャプテン、リオネル・メッシ（38 歳）。6 度目にしておそらく最後の W 杯で、連覇という未踏のテーマに挑む。",
+        "credit": "Official White House Photo by Daniel Torok / Wikimedia Commons / Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lionel_Messi_White_House_2026_(3x4_cropped).jpg",
+        "after": 2,
+        "size": "sm"
+      },
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/President_Donald_Trump_meets_with_Cristiano_Ronaldo_in_the_Oval_Office_%2854933344262%29_%28cropped_and_rotated%29.jpg/500px-President_Donald_Trump_meets_with_Cristiano_Ronaldo_in_the_Oval_Office_%2854933344262%29_%28cropped_and_rotated%29.jpg",
+        "alt": "ポルトガル代表のクリスティアーノ・ロナウド (2025 年)",
+        "caption": "ポルトガル代表の象徴クリスティアーノ・ロナウド（41 歳）。本人にとってもポルトガルにとっても、最後の W 杯となる可能性が極めて高い大会。",
+        "credit": "Official White House Photo by Daniel Torok / Wikimedia Commons / Public Domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:President_Donald_Trump_meets_with_Cristiano_Ronaldo_in_the_Oval_Office_(54933344262)_(cropped_and_rotated).jpg",
+        "after": 3,
+        "size": "sm"
+      },
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/25th_Laureus_World_Sports_Awards_-_Red_Carpet_-_Jude_Bellingham_-_240422_190551-2_%28cropped%29.jpg/500px-25th_Laureus_World_Sports_Awards_-_Red_Carpet_-_Jude_Bellingham_-_240422_190551-2_%28cropped%29.jpg",
+        "alt": "イングランド代表のジュード・ベリンガム (2024 年、ローレウス賞)",
+        "caption": "イングランドの新世代を担うジュード・ベリンガム（レアル・マドリード）。1966 年以来 60 年ぶりの優勝を目指す優勝候補の中心。",
+        "credit": "Barcex / Wikimedia Commons / CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:25th_Laureus_World_Sports_Awards_-_Red_Carpet_-_Jude_Bellingham_-_240422_190551-2_(cropped).jpg",
+        "after": 4,
+        "size": "sm"
+      }
+    ]
   }
 ]

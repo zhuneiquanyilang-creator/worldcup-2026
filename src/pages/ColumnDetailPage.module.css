@@ -82,6 +82,36 @@
   margin-bottom: 0;
 }
 
+/* 同じ `after` を持つ figure が複数あるときの横並びコンテナ。
+   4 枚並ぶときに各 figure を 1/4 幅に絞り、画像は flex item の幅いっぱいに広げる。
+   画像本来の sizeXs/sizeSm 制限を上書きするので !important で打ち消す。 */
+.figureRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 1.5rem 0;
+}
+
+.figureRow > figure {
+  flex: 1 1 140px;
+  max-width: calc(25% - 0.45rem);
+  margin: 0;
+}
+
+.figureRow img {
+  max-width: 100% !important;
+  width: 100%;
+}
+
+@media (max-width: 640px) {
+  .figureRow > figure {
+    /* スマホでは 2 列 */
+    max-width: calc(50% - 0.3rem);
+  }
+}
+
 @media (max-width: 640px) {
   .header,
   .body {

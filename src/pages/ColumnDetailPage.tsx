@@ -5,6 +5,8 @@
 import { Link, useParams } from "react-router-dom";
 import { useColumns } from "@/hooks/useColumns";
 import { Loading, ErrorMessage } from "@/components/common/AsyncState";
+import { ColumnFigure } from "@/components/common/ColumnFigure";
+import type { ColumnFigure as Figure } from "@/types/column";
 import styles from "./ColumnDetailPage.module.css";
 
 function formatDate(iso: string): string {
@@ -51,11 +53,34 @@ export function ColumnDetailPage() {
         {column.author && <p className={styles.author}>by {column.author}</p>}
       </header>
       <div className={styles.body}>
-        {column.body.map((para, i) => (
-          <p key={i} className={styles.paragraph}>
-            {para}
-          </p>
-        ))}
+        {column.body.map((para, i) => {
+          // この段落の「後」に挿入する figure を集める
+          const after: Figure[] = (column.figures ?? []).filter(
+            (f) => (f.after ?? -1) === i
+          );
+          return (
+            <div key={i}>
+              <p className={styles.paragraph}>{para}</p>
+              {after.length >= 2 ? (
+                <div className={styles.figureRow}>
+                  {after.map((f, j) => (
+                    <ColumnFigure key={`${i}-${j}`} figure={f} />
+                  ))}
+                </div>
+              ) : (
+                after.map((f, j) => (
+                  <ColumnFigure key={`${i}-${j}`} figure={f} />
+                ))
+              )}
+            </div>
+          );
+        })}
+        {/* after 指定が無い (= 末尾配置) figure */}
+        {(column.figures ?? [])
+          .filter((f) => f.after === undefined)
+          .map((f, i) => (
+            <ColumnFigure key={`tail-${i}`} figure={f} />
+          ))}
       </div>
     </article>
   );
