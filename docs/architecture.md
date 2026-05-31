@@ -82,3 +82,6 @@ new_claude_app/
 | `/stats` | スタッツ（得点・アシスト） | `StatsPage` |
 | `/past` | 過去の大会一覧 | `PastTournamentsPage` |
 | `/past/:year` | 過去の大会詳細 | `PastTournamentDetailPage` |
+| `/columns` | コラム一覧 | `ColumnsPage` |
+| `/columns/:id` | コラム詳細 | `ColumnDetailPage` |
+| `/regulations` | 大会レギュレーション | `RegulationsPage` |

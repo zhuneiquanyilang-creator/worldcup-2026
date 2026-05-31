@@ -12,6 +12,7 @@ import { PastTournamentsPage } from "./pages/PastTournamentsPage";
 import { PastTournamentDetailPage } from "./pages/PastTournamentDetailPage";
 import { ColumnsPage } from "./pages/ColumnsPage";
 import { ColumnDetailPage } from "./pages/ColumnDetailPage";
+import { RegulationsPage } from "./pages/RegulationsPage";
 
 export const router = createHashRouter([
   {
@@ -29,6 +30,7 @@ export const router = createHashRouter([
       { path: "past/:year", element: <PastTournamentDetailPage /> },
       { path: "columns", element: <ColumnsPage /> },
       { path: "columns/:id", element: <ColumnDetailPage /> },
+      { path: "regulations", element: <RegulationsPage /> },
       { path: "edit/history", element: <EditHistoryPage /> },
       { path: "edit/matches", element: <EditMatchesPage /> },
       { path: "*", element: <Navigate to="/" replace /> },

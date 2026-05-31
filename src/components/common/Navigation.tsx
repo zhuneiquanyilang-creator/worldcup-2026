@@ -7,6 +7,7 @@ const items = [
   { to: "/stats", label: "スタッツ" },
   { to: "/past", label: "過去の大会" },
   { to: "/columns", label: "コラム" },
+  { to: "/regulations", label: "レギュレーション" },
 ];
 
 export function Navigation() {
