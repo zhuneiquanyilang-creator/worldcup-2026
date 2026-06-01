@@ -5,6 +5,9 @@ const menus = [
   { to: "/standings", label: "順位表", desc: "グループ別の順位と勝点" },
   { to: "/schedule", label: "日程・結果", desc: "全試合の日程・会場・スコア" },
   { to: "/stats", label: "スタッツ", desc: "得点・アシストランキング" },
+  { to: "/past", label: "過去の大会", desc: "1930〜2022 年の歴代 W 杯と各賞" },
+  { to: "/columns", label: "コラム", desc: "見どころや本サイトの使い方" },
+  { to: "/regulations", label: "レギュレーション", desc: "大会の公式ルールまとめ" },
 ];
 
 export function HomePage() {
