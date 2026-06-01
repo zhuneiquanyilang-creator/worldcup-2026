@@ -38,9 +38,9 @@ export function RegulationsPage() {
           <dt>会場</dt>
           <dd>16 都市（カナダ 2 / 米国 11 / メキシコ 3）</dd>
           <dt>開幕戦</dt>
-          <dd>2026 年 6 月 11 日、Estadio Azteca（メキシコシティ）</dd>
+          <dd>2026 年 6 月 11 日、エスタディオ・アステカ（メキシコシティ）</dd>
           <dt>決勝戦</dt>
-          <dd>2026 年 7 月 19 日、MetLife Stadium（NY/NJ）</dd>
+          <dd>2026 年 7 月 19 日、ニューヨーク・ニュージャージー・スタジアム（ニューヨーク）</dd>
         </dl>
       </section>
 
@@ -52,7 +52,7 @@ export function RegulationsPage() {
           8 か国もノックアウトへ進出する。
         </p>
         <div className={styles.flow}>
-          グループ (12 組 × 4) → R32 (32 チーム) → R16 → QF → SF → 3
+          グループ (12 組 × 4) → 1回戦 (ベスト32) → 2回戦(ベスト16) → 準々決勝 → 準決勝 → 3
           位決定戦 / 決勝
         </div>
         <h3 className={styles.h3}>R32 進出条件</h3>
