@@ -7,7 +7,17 @@ import { usePlayers } from "@/hooks/usePlayers";
 import { Loading, ErrorMessage } from "@/components/common/AsyncState";
 import { dataUrl } from "@/utils/dataUrl";
 import { matchNumber } from "@/utils/matchNumber";
-import type { Goal, GoalType, Match, MatchStatus } from "@/types/match";
+import { generateFormation } from "@/utils/formation";
+import type {
+  Booking,
+  BookingType,
+  FormationData,
+  Goal,
+  GoalType,
+  Match,
+  MatchStatus,
+  Substitution,
+} from "@/types/match";
 import type { LiveUpdate } from "@/types/live";
 import type { Player } from "@/types/player";
 import { loadMatchOverrides } from "@/utils/matchOverrides";
@@ -26,17 +36,42 @@ type GoalDraft = {
   type: GoalType;
 };
 
+type StarterDraft = {
+  playerId: string;
+  name?: string;
+  number?: number;
+};
+
+/** フォーメーション編集ドラフト。
+ *  - shape: "4-3-3" 等
+ *  - starters: 長さ = 1 + Σparts。
+ *    index 0 = GK / 以降 layer 0..N-1 の順に「右→左」で並ぶ
+ *    (write-m00X-formations.mjs と同じ規約)。 */
+type FormationDraft = {
+  shape: string;
+  starters: StarterDraft[];
+};
+
+type BookingDraft = {
+  minute: string;
+  teamId: string;
+  playerId: string;
+  playerName?: string;
+  type: BookingType;
+};
+
+type SubDraft = {
+  minute: string;
+  teamId: string;
+  inPlayerId: string;
+  inName?: string;
+  outPlayerId: string;
+  outName?: string;
+};
+
 /** 編集 UI が直接扱わないフィールド。save 時にそのまま LiveUpdate に書き戻して
- *  巻き込み消去を防ぐ。 */
-type Passthrough = Pick<
-  LiveUpdate,
-  | "liveLabel"
-  | "bookings"
-  | "substitutions"
-  | "homeFormation"
-  | "awayFormation"
-  | "stats"
->;
+ *  巻き込み消去を防ぐ。現状は liveLabel / stats のみ。 */
+type Passthrough = Pick<LiveUpdate, "liveLabel" | "stats">;
 
 type Editable = {
   status: MatchStatus | "";
@@ -45,18 +80,28 @@ type Editable = {
   pkHome: string;
   pkAway: string;
   goals: GoalDraft[];
+  homeFormation: FormationDraft;
+  awayFormation: FormationDraft;
+  bookings: BookingDraft[];
+  substitutions: SubDraft[];
   passthrough: Passthrough;
 };
 
-const EMPTY: Editable = {
-  status: "",
-  scoreHome: "",
-  scoreAway: "",
-  pkHome: "",
-  pkAway: "",
-  goals: [],
-  passthrough: {},
-};
+function freshEditable(): Editable {
+  return {
+    status: "",
+    scoreHome: "",
+    scoreAway: "",
+    pkHome: "",
+    pkAway: "",
+    goals: [],
+    homeFormation: { shape: "", starters: [] },
+    awayFormation: { shape: "", starters: [] },
+    bookings: [],
+    substitutions: [],
+    passthrough: {},
+  };
+}
 
 const STAGE_ORDER: Match["stage"][] = [
   "group",
@@ -85,6 +130,50 @@ const GOAL_TYPE_LABEL: Record<GoalType, string> = {
   own: "オウン",
 };
 
+const BOOKING_TYPE_LABEL: Record<BookingType, string> = {
+  Y: "🟨 イエロー",
+  Y2R: "🟨🟥 2枚目イエロー",
+  R: "🟥 一発レッド",
+  YR: "🟨→🟥 イエロー後レッド",
+};
+
+/** shape 入力フィールドのサジェスト用候補。 */
+const SHAPE_SUGGESTIONS = [
+  "4-3-3",
+  "4-2-3-1",
+  "4-4-2",
+  "4-1-4-1",
+  "4-3-2-1",
+  "3-5-2",
+  "3-4-3",
+  "3-4-2-1",
+  "3-1-4-2",
+  "5-3-2",
+  "5-4-1",
+];
+
+function parseShape(shape: string): number[] {
+  return shape
+    .split("-")
+    .map((s) => parseInt(s, 10))
+    .filter((n) => Number.isFinite(n) && n > 0);
+}
+
+function expectedStarterCount(shape: string): number {
+  const parts = parseShape(shape);
+  if (parts.length === 0) return 0;
+  return 1 + parts.reduce((a, b) => a + b, 0);
+}
+
+function syncStarters(starters: StarterDraft[], shape: string): StarterDraft[] {
+  const need = expectedStarterCount(shape);
+  if (need === 0) return [];
+  const next = starters.slice(0, need);
+  while (next.length < need)
+    next.push({ playerId: "", name: undefined, number: undefined });
+  return next;
+}
+
 function goalToDraft(g: Goal): GoalDraft {
   return {
     minute: String(g.minute ?? ""),
@@ -109,7 +198,6 @@ function draftToGoal(
     goal.playerId = player.id;
     goal.playerName = player.name;
   } else if (d.playerName) {
-    // playerId が未選択でも、元データの playerName (Sofascore の英語名等) は保持
     goal.playerName = d.playerName;
   }
   const assist = d.assistPlayerId ? playerMap.get(d.assistPlayerId) : undefined;
@@ -122,30 +210,159 @@ function draftToGoal(
   return goal;
 }
 
-function fromUpdate(u: LiveUpdate | undefined): Editable {
-  if (!u) return { ...EMPTY, goals: [], passthrough: {} };
-  const passthrough: Passthrough = {};
-  if (u.liveLabel !== undefined) passthrough.liveLabel = u.liveLabel;
-  if (u.bookings) passthrough.bookings = u.bookings;
-  if (u.substitutions) passthrough.substitutions = u.substitutions;
-  if (u.homeFormation) passthrough.homeFormation = u.homeFormation;
-  if (u.awayFormation) passthrough.awayFormation = u.awayFormation;
-  if (u.stats) passthrough.stats = u.stats;
+function formationFromData(
+  f: FormationData | undefined,
+  teamPlayers: Player[]
+): FormationDraft {
+  if (!f) return { shape: "", starters: [] };
+  const byNumber = new Map<number, Player>();
+  const byName = new Map<string, Player>();
+  for (const p of teamPlayers) {
+    if (typeof p.number === "number") byNumber.set(p.number, p);
+    byName.set(p.name, p);
+  }
+  const starters: StarterDraft[] = (f.starting ?? []).map((s) => {
+    const p =
+      (typeof s.number === "number" ? byNumber.get(s.number) : undefined) ??
+      byName.get(s.name);
+    return {
+      playerId: p?.id ?? "",
+      name: p?.name ?? s.name,
+      number: p?.number ?? s.number,
+    };
+  });
+  return { shape: f.shape, starters };
+}
+
+function formationToData(
+  d: FormationDraft,
+  teamPlayers: Player[],
+  playerMap: Map<string, Player>
+): FormationData | undefined {
+  if (!d.shape) return undefined;
+  const need = expectedStarterCount(d.shape);
+  if (need === 0) return undefined;
+  if (d.starters.length !== need) return undefined;
+  const hasAny = d.starters.some((s) => s.playerId || s.name);
+  if (!hasAny) return undefined;
+
+  const rawPlayers = d.starters.map((s) => {
+    const p = s.playerId ? playerMap.get(s.playerId) : undefined;
+    const name = p?.name ?? s.name ?? "?";
+    const number = p?.number ?? s.number;
+    return { number, name };
+  });
+
+  // ベンチは「そのチームの全選手 − スタメン11名」を背番号順で自動算出。
+  const starterIds = new Set(
+    d.starters.map((s) => s.playerId).filter(Boolean)
+  );
+  const starterNames = new Set(rawPlayers.map((p) => p.name));
+  const bench = teamPlayers
+    .filter((p) => !starterIds.has(p.id) && !starterNames.has(p.name))
+    .sort((a, b) => (a.number ?? 999) - (b.number ?? 999))
+    .map((p) => ({ number: p.number, name: p.name }));
+
+  return generateFormation(d.shape, rawPlayers, bench);
+}
+
+function bookingToDraft(
+  b: Booking,
+  playersByTeam: Map<string, Player[]>
+): BookingDraft {
+  const arr = playersByTeam.get(b.teamId) ?? [];
+  const p = arr.find((x) => x.name === b.playerName);
   return {
-    status: u.status ?? "",
-    scoreHome: u.score ? String(u.score.home) : "",
-    scoreAway: u.score ? String(u.score.away) : "",
-    pkHome: u.penaltyScore ? String(u.penaltyScore.home) : "",
-    pkAway: u.penaltyScore ? String(u.penaltyScore.away) : "",
-    goals: (u.goals ?? []).map(goalToDraft),
-    passthrough,
+    minute: String(b.minute ?? ""),
+    teamId: b.teamId,
+    playerId: p?.id ?? "",
+    playerName: b.playerName,
+    type: b.type ?? "Y",
   };
+}
+
+function draftToBooking(
+  d: BookingDraft,
+  playerMap: Map<string, Player>
+): Booking | null {
+  const min = Number(d.minute);
+  if (!Number.isFinite(min) || !d.teamId) return null;
+  const p = d.playerId ? playerMap.get(d.playerId) : undefined;
+  const name = p?.name ?? d.playerName ?? "";
+  if (!name) return null;
+  return { minute: min, teamId: d.teamId, playerName: name, type: d.type };
+}
+
+function subToDraft(
+  s: Substitution,
+  playersByTeam: Map<string, Player[]>
+): SubDraft {
+  const arr = playersByTeam.get(s.teamId) ?? [];
+  const inP = arr.find((x) => x.name === s.inName);
+  const outP = arr.find((x) => x.name === s.outName);
+  return {
+    minute: String(s.minute ?? ""),
+    teamId: s.teamId,
+    inPlayerId: inP?.id ?? "",
+    inName: s.inName,
+    outPlayerId: outP?.id ?? "",
+    outName: s.outName,
+  };
+}
+
+function draftToSub(
+  d: SubDraft,
+  playerMap: Map<string, Player>
+): Substitution | null {
+  const min = Number(d.minute);
+  if (!Number.isFinite(min) || !d.teamId) return null;
+  const inName =
+    (d.inPlayerId ? playerMap.get(d.inPlayerId)?.name : undefined) ??
+    d.inName ??
+    "";
+  const outName =
+    (d.outPlayerId ? playerMap.get(d.outPlayerId)?.name : undefined) ??
+    d.outName ??
+    "";
+  if (!inName || !outName) return null;
+  return { minute: min, teamId: d.teamId, inName, outName };
+}
+
+function fromUpdate(
+  u: LiveUpdate | undefined,
+  match: Match,
+  playersByTeam: Map<string, Player[]>
+): Editable {
+  const e = freshEditable();
+  if (!u) return e;
+
+  if (u.liveLabel !== undefined) e.passthrough.liveLabel = u.liveLabel;
+  if (u.stats) e.passthrough.stats = u.stats;
+
+  e.status = u.status ?? "";
+  e.scoreHome = u.score ? String(u.score.home) : "";
+  e.scoreAway = u.score ? String(u.score.away) : "";
+  e.pkHome = u.penaltyScore ? String(u.penaltyScore.home) : "";
+  e.pkAway = u.penaltyScore ? String(u.penaltyScore.away) : "";
+  e.goals = (u.goals ?? []).map(goalToDraft);
+
+  const homePlayers = playersByTeam.get(match.homeTeamId) ?? [];
+  const awayPlayers = playersByTeam.get(match.awayTeamId) ?? [];
+  e.homeFormation = formationFromData(u.homeFormation, homePlayers);
+  e.awayFormation = formationFromData(u.awayFormation, awayPlayers);
+  e.bookings = (u.bookings ?? []).map((b) => bookingToDraft(b, playersByTeam));
+  e.substitutions = (u.substitutions ?? []).map((s) =>
+    subToDraft(s, playersByTeam)
+  );
+  return e;
 }
 
 function toUpdate(
   matchId: string,
   e: Editable,
-  playerMap: Map<string, Player>
+  playerMap: Map<string, Player>,
+  match: Match,
+  playersByTeam: Map<string, Player[]>
 ): LiveUpdate | null {
   const u: LiveUpdate = { matchId };
   if (e.status) u.status = e.status;
@@ -165,14 +382,36 @@ function toUpdate(
     .filter((g): g is Goal => g !== null)
     .sort((a, b) => a.minute - b.minute);
   if (goals.length > 0) u.goals = goals;
-  // form が触らないフィールドはそのまま LiveUpdate に書き戻す
+
+  const homeF = formationToData(
+    e.homeFormation,
+    playersByTeam.get(match.homeTeamId) ?? [],
+    playerMap
+  );
+  if (homeF) u.homeFormation = homeF;
+  const awayF = formationToData(
+    e.awayFormation,
+    playersByTeam.get(match.awayTeamId) ?? [],
+    playerMap
+  );
+  if (awayF) u.awayFormation = awayF;
+
+  const bookings = e.bookings
+    .map((d) => draftToBooking(d, playerMap))
+    .filter((b): b is Booking => b !== null)
+    .sort((a, b) => a.minute - b.minute);
+  if (bookings.length > 0) u.bookings = bookings;
+
+  const subs = e.substitutions
+    .map((d) => draftToSub(d, playerMap))
+    .filter((s): s is Substitution => s !== null)
+    .sort((a, b) => a.minute - b.minute);
+  if (subs.length > 0) u.substitutions = subs;
+
   const p = e.passthrough;
   if (p.liveLabel !== undefined) u.liveLabel = p.liveLabel;
-  if (p.bookings) u.bookings = p.bookings;
-  if (p.substitutions) u.substitutions = p.substitutions;
-  if (p.homeFormation) u.homeFormation = p.homeFormation;
-  if (p.awayFormation) u.awayFormation = p.awayFormation;
   if (p.stats) u.stats = p.stats;
+
   if (
     !u.status &&
     !u.score &&
@@ -225,9 +464,7 @@ export function EditMatchesPage() {
 
   // file (公式記録) と matchEdits (手動編集レイヤー) を「file → manual」の順で
   // 重ねて初期値とする。両方ある場合は manual のフィールドが file の同名
-  // フィールドを上書きする。bookings/subs 等は form が直接表示しないが
-  // Editable.passthrough に保持され、save 時に LiveUpdate として書き戻される
-  // ので「form save で巻き込み消去」されない。
+  // フィールドを上書きする。
   // matchOverrides (ライブ取得レイヤー) は seed に使わない — 編集 UI は
   // 「手動で確定した公式記録」のみを扱う。ライブから現状を引き込みたい場合は
   // 各行の「↓ ライブ」ボタンを使う。
@@ -244,10 +481,10 @@ export function EditMatchesPage() {
         fileR && manualR
           ? { ...fileR, ...manualR }
           : (manualR ?? fileR);
-      seed[m.id] = fromUpdate(combined);
+      seed[m.id] = fromUpdate(combined, m, playersByTeam);
     }
     setEdits(seed);
-  }, [matchesRes, fileResultsRes]);
+  }, [matchesRes, fileResultsRes, playersByTeam]);
 
   if (
     matchesRes.status === "loading" ||
@@ -273,7 +510,10 @@ export function EditMatchesPage() {
       : allMatches.filter((m) => m.stage === stageFilter);
 
   const updateEdit = (matchId: string, patch: Partial<Editable>) => {
-    setEdits((prev) => ({ ...prev, [matchId]: { ...prev[matchId], ...patch } }));
+    setEdits((prev) => ({
+      ...prev,
+      [matchId]: { ...(prev[matchId] ?? freshEditable()), ...patch },
+    }));
   };
 
   const updateGoal = (
@@ -282,7 +522,7 @@ export function EditMatchesPage() {
     patch: Partial<GoalDraft>
   ) => {
     setEdits((prev) => {
-      const cur = prev[matchId] ?? EMPTY;
+      const cur = prev[matchId] ?? freshEditable();
       const goals = [...cur.goals];
       goals[idx] = { ...goals[idx], ...patch };
       return { ...prev, [matchId]: { ...cur, goals } };
@@ -291,10 +531,10 @@ export function EditMatchesPage() {
 
   const addGoal = (match: Match) => {
     setEdits((prev) => {
-      const cur = prev[match.id] ?? EMPTY;
+      const cur = prev[match.id] ?? freshEditable();
       const goals = [...cur.goals];
-      // 既存最終分の次の minute を初期値に
-      const lastMin = goals.length > 0 ? Number(goals[goals.length - 1].minute) || 0 : 0;
+      const lastMin =
+        goals.length > 0 ? Number(goals[goals.length - 1].minute) || 0 : 0;
       goals.push({
         minute: String(lastMin > 0 ? lastMin + 1 : 1),
         teamId: match.homeTeamId,
@@ -308,17 +548,127 @@ export function EditMatchesPage() {
 
   const removeGoal = (matchId: string, idx: number) => {
     setEdits((prev) => {
-      const cur = prev[matchId] ?? EMPTY;
+      const cur = prev[matchId] ?? freshEditable();
       const goals = cur.goals.filter((_, i) => i !== idx);
       return { ...prev, [matchId]: { ...cur, goals } };
     });
   };
 
+  const updateShape = (matchId: string, side: "home" | "away", shape: string) => {
+    setEdits((prev) => {
+      const cur = prev[matchId] ?? freshEditable();
+      const key = side === "home" ? "homeFormation" : "awayFormation";
+      const f = cur[key];
+      const starters = syncStarters(f.starters, shape);
+      return { ...prev, [matchId]: { ...cur, [key]: { shape, starters } } };
+    });
+  };
+
+  const updateStarter = (
+    matchId: string,
+    side: "home" | "away",
+    idx: number,
+    patch: Partial<StarterDraft>
+  ) => {
+    setEdits((prev) => {
+      const cur = prev[matchId] ?? freshEditable();
+      const key = side === "home" ? "homeFormation" : "awayFormation";
+      const f = cur[key];
+      const starters = [...f.starters];
+      starters[idx] = { ...(starters[idx] ?? { playerId: "" }), ...patch };
+      return { ...prev, [matchId]: { ...cur, [key]: { ...f, starters } } };
+    });
+  };
+
+  const updateBooking = (
+    matchId: string,
+    idx: number,
+    patch: Partial<BookingDraft>
+  ) => {
+    setEdits((prev) => {
+      const cur = prev[matchId] ?? freshEditable();
+      const bookings = [...cur.bookings];
+      bookings[idx] = { ...bookings[idx], ...patch };
+      return { ...prev, [matchId]: { ...cur, bookings } };
+    });
+  };
+
+  const addBooking = (match: Match) => {
+    setEdits((prev) => {
+      const cur = prev[match.id] ?? freshEditable();
+      const lastMin =
+        cur.bookings.length > 0
+          ? Number(cur.bookings[cur.bookings.length - 1].minute) || 0
+          : 0;
+      const bookings = [
+        ...cur.bookings,
+        {
+          minute: String(lastMin > 0 ? lastMin + 1 : 1),
+          teamId: match.homeTeamId,
+          playerId: "",
+          type: "Y" as BookingType,
+        },
+      ];
+      return { ...prev, [match.id]: { ...cur, bookings } };
+    });
+  };
+
+  const removeBooking = (matchId: string, idx: number) => {
+    setEdits((prev) => {
+      const cur = prev[matchId] ?? freshEditable();
+      const bookings = cur.bookings.filter((_, i) => i !== idx);
+      return { ...prev, [matchId]: { ...cur, bookings } };
+    });
+  };
+
+  const updateSub = (
+    matchId: string,
+    idx: number,
+    patch: Partial<SubDraft>
+  ) => {
+    setEdits((prev) => {
+      const cur = prev[matchId] ?? freshEditable();
+      const subs = [...cur.substitutions];
+      subs[idx] = { ...subs[idx], ...patch };
+      return { ...prev, [matchId]: { ...cur, substitutions: subs } };
+    });
+  };
+
+  const addSub = (match: Match) => {
+    setEdits((prev) => {
+      const cur = prev[match.id] ?? freshEditable();
+      const lastMin =
+        cur.substitutions.length > 0
+          ? Number(cur.substitutions[cur.substitutions.length - 1].minute) || 0
+          : 0;
+      const subs = [
+        ...cur.substitutions,
+        {
+          minute: String(lastMin > 0 ? lastMin + 1 : 46),
+          teamId: match.homeTeamId,
+          inPlayerId: "",
+          outPlayerId: "",
+        },
+      ];
+      return { ...prev, [match.id]: { ...cur, substitutions: subs } };
+    });
+  };
+
+  const removeSub = (matchId: string, idx: number) => {
+    setEdits((prev) => {
+      const cur = prev[matchId] ?? freshEditable();
+      const subs = cur.substitutions.filter((_, i) => i !== idx);
+      return { ...prev, [matchId]: { ...cur, substitutions: subs } };
+    });
+  };
+
   const handleSave = () => {
     const next: Record<string, LiveUpdate> = {};
-    for (const [id, e] of Object.entries(edits)) {
-      const u = toUpdate(id, e, playerMap);
-      if (u) next[id] = u;
+    for (const m of allMatches) {
+      const e = edits[m.id];
+      if (!e) continue;
+      const u = toUpdate(m.id, e, playerMap, m, playersByTeam);
+      if (u) next[m.id] = u;
     }
     saveMatchEdits(next);
     setSavedMsg(
@@ -336,30 +686,34 @@ export function EditMatchesPage() {
       return;
     saveMatchEdits({});
     const cleared: Record<string, Editable> = {};
-    for (const m of allMatches) cleared[m.id] = { ...EMPTY, goals: [] };
+    for (const m of allMatches) cleared[m.id] = freshEditable();
     setEdits(cleared);
     setSavedMsg("手動編集をクリアしました");
     setTimeout(() => setSavedMsg(""), 3000);
   };
 
-  /** その試合の現在のライブ取得状態を編集フォームに取り込む (まだ保存はしない) */
-  const handlePullFromLive = (matchId: string) => {
-    const live = loadMatchOverrides()[matchId];
+  const handlePullFromLive = (match: Match) => {
+    const live = loadMatchOverrides()[match.id];
     if (!live) {
-      setSavedMsg(`${matchId}: ライブ取得データがありません`);
+      setSavedMsg(`${match.id}: ライブ取得データがありません`);
       setTimeout(() => setSavedMsg(""), 3000);
       return;
     }
-    setEdits((prev) => ({ ...prev, [matchId]: fromUpdate(live) }));
-    setSavedMsg(`${matchId}: ライブ取得値を取り込みました (まだ未保存)`);
+    setEdits((prev) => ({
+      ...prev,
+      [match.id]: fromUpdate(live, match, playersByTeam),
+    }));
+    setSavedMsg(`${match.id}: ライブ取得値を取り込みました (まだ未保存)`);
     setTimeout(() => setSavedMsg(""), 3000);
   };
 
   const handleExport = () => {
     const out: Record<string, LiveUpdate> = {};
-    for (const [id, e] of Object.entries(edits)) {
-      const u = toUpdate(id, e, playerMap);
-      if (u) out[id] = u;
+    for (const m of allMatches) {
+      const e = edits[m.id];
+      if (!e) continue;
+      const u = toUpdate(m.id, e, playerMap, m, playersByTeam);
+      if (u) out[m.id] = u;
     }
     setExportText(JSON.stringify(out, null, 2));
   };
@@ -373,7 +727,8 @@ export function EditMatchesPage() {
       }
       saveMatchEdits(parsed);
       const merged: Record<string, Editable> = {};
-      for (const m of allMatches) merged[m.id] = fromUpdate(parsed[m.id]);
+      for (const m of allMatches)
+        merged[m.id] = fromUpdate(parsed[m.id], m, playersByTeam);
       setEdits(merged);
       setImportMsg(`${Object.keys(parsed).length} 試合分を取り込みました`);
       setTimeout(() => setImportMsg(""), 3000);
@@ -391,15 +746,23 @@ export function EditMatchesPage() {
         </Link>
       </div>
       <p className={styles.note}>
-        各試合に status / スコア / PK / <strong>得点者</strong>を入力できます。
+        各試合に status / スコア / PK / <strong>得点者</strong> /{" "}
+        <strong>フォーメーション・スタメン</strong> / <strong>カード</strong> /{" "}
+        <strong>交代</strong>を入力できます。
+        ベンチは「<strong>そのチームの全選手 − スタメン11名</strong>」を背番号順で自動算出します。
         保存先は <strong>matchEdits</strong> レイヤー (<code>localStorage["wc2026:matchEdits"]</code>) で、
-        Sofascore ライブ取得 (matchOverrides) とは別管理。
-        <strong>localhost の見た目はライブが最優先</strong>なので、ここで保存しても localhost の他ページの表示はライブのままです (= 編集中もライブ視聴を邪魔しない)。
+        Sofascore / Football-Data ライブ取得 (matchOverrides) とは別管理。
+        <strong>localhost の見た目はライブが最優先</strong>なので、ここで保存しても localhost の他ページの表示はライブのままです。
         dev サーバー実行中なら matchEdits だけが <code>match_results.json</code> に自動同期され、
         <strong>commit / push して GitHub Pages にデプロイされた公開サイトでは編集内容が見える</strong>ようになります。
-        編集結果は本フォームの入力値で確認できます。
-        各行の「↓ ライブ」ボタンで、その試合の現在のライブ取得値を編集フォームにコピーできます (保存は別操作)。
       </p>
+
+      {/* 全 FormationEditor が共通で参照する shape サジェスト */}
+      <datalist id="shape-suggest">
+        {SHAPE_SUGGESTIONS.map((s) => (
+          <option key={s} value={s} />
+        ))}
+      </datalist>
 
       <div className={styles.filters}>
         <label className={styles.label}>ステージ:</label>
@@ -445,7 +808,7 @@ export function EditMatchesPage() {
           </thead>
           <tbody>
             {filtered.map((m) => {
-              const e = edits[m.id] ?? EMPTY;
+              const e = edits[m.id] ?? freshEditable();
               const num = matchNumber(m.id);
               const home =
                 teamsRes.map.get(m.homeTeamId)?.name ??
@@ -457,6 +820,10 @@ export function EditMatchesPage() {
                 m.awayTeamId;
               const isKo = m.stage !== "group" && m.stage !== "test";
               const expanded = expandedId === m.id;
+              const homeTeamPlayers = playersByTeam.get(m.homeTeamId) ?? [];
+              const awayTeamPlayers = playersByTeam.get(m.awayTeamId) ?? [];
+              const totalEvents =
+                e.goals.length + e.bookings.length + e.substitutions.length;
               return (
                 <Fragment key={m.id}>
                   <tr>
@@ -541,12 +908,12 @@ export function EditMatchesPage() {
                           setExpandedId(expanded ? null : m.id)
                         }
                       >
-                        {expanded ? "▲ 閉じる" : `▼ 編集 (${e.goals.length})`}
+                        {expanded ? "▲ 閉じる" : `▼ 編集 (${totalEvents})`}
                       </button>
                       <button
                         type="button"
                         className={styles.pullBtn}
-                        onClick={() => handlePullFromLive(m.id)}
+                        onClick={() => handlePullFromLive(m)}
                         title="この試合の現在のライブ取得状態を編集フォームにコピー (未保存)"
                       >
                         ↓ ライブ
@@ -556,19 +923,67 @@ export function EditMatchesPage() {
                   {expanded && (
                     <tr className={styles.expandedRow}>
                       <td colSpan={7}>
-                        <GoalEditor
-                          match={m}
-                          goals={e.goals}
-                          homeTeamName={home}
-                          awayTeamName={away}
-                          playersByTeam={playersByTeam}
-                          playerMap={playerMap}
-                          onUpdate={(idx, patch) =>
-                            updateGoal(m.id, idx, patch)
-                          }
-                          onRemove={(idx) => removeGoal(m.id, idx)}
-                          onAdd={() => addGoal(m)}
-                        />
+                        <div className={styles.editorStack}>
+                          <GoalEditor
+                            match={m}
+                            goals={e.goals}
+                            homeTeamName={home}
+                            awayTeamName={away}
+                            playersByTeam={playersByTeam}
+                            playerMap={playerMap}
+                            onUpdate={(idx, patch) =>
+                              updateGoal(m.id, idx, patch)
+                            }
+                            onRemove={(idx) => removeGoal(m.id, idx)}
+                            onAdd={() => addGoal(m)}
+                          />
+                          <FormationEditor
+                            side="home"
+                            teamName={home}
+                            draft={e.homeFormation}
+                            teamPlayers={homeTeamPlayers}
+                            playerMap={playerMap}
+                            onShape={(s) => updateShape(m.id, "home", s)}
+                            onStarter={(idx, patch) =>
+                              updateStarter(m.id, "home", idx, patch)
+                            }
+                          />
+                          <FormationEditor
+                            side="away"
+                            teamName={away}
+                            draft={e.awayFormation}
+                            teamPlayers={awayTeamPlayers}
+                            playerMap={playerMap}
+                            onShape={(s) => updateShape(m.id, "away", s)}
+                            onStarter={(idx, patch) =>
+                              updateStarter(m.id, "away", idx, patch)
+                            }
+                          />
+                          <BookingEditor
+                            match={m}
+                            bookings={e.bookings}
+                            homeTeamName={home}
+                            awayTeamName={away}
+                            playersByTeam={playersByTeam}
+                            onUpdate={(idx, patch) =>
+                              updateBooking(m.id, idx, patch)
+                            }
+                            onAdd={() => addBooking(m)}
+                            onRemove={(idx) => removeBooking(m.id, idx)}
+                          />
+                          <SubEditor
+                            match={m}
+                            subs={e.substitutions}
+                            homeTeamName={home}
+                            awayTeamName={away}
+                            playersByTeam={playersByTeam}
+                            onUpdate={(idx, patch) =>
+                              updateSub(m.id, idx, patch)
+                            }
+                            onAdd={() => addSub(m)}
+                            onRemove={(idx) => removeSub(m.id, idx)}
+                          />
+                        </div>
                       </td>
                     </tr>
                   )}
@@ -675,7 +1090,6 @@ function GoalEditor({
           </thead>
           <tbody>
             {goals.map((g, i) => {
-              // チーム別の選手リストを切替
               const players =
                 g.teamId === match.homeTeamId
                   ? homePlayers
@@ -707,7 +1121,6 @@ function GoalEditor({
                       onChange={(ev) =>
                         onUpdate(i, {
                           teamId: ev.target.value,
-                          // チーム変更時はプレーヤー選択をリセット
                           playerId: "",
                           assistPlayerId: "",
                         })
@@ -750,7 +1163,6 @@ function GoalEditor({
                           {p.name} ({p.position})
                         </option>
                       ))}
-                      {/* 既存 playerId が roster に無い場合は残せるよう、現値を選択肢に出す */}
                       {g.playerId && !selectedExists && (
                         <option value={g.playerId}>
                           {g.playerId} (不明)
@@ -794,6 +1206,528 @@ function GoalEditor({
                       className={styles.removeGoalBtn}
                       onClick={() => onRemove(i)}
                       aria-label="この得点を削除"
+                    >
+                      ✕
+                    </button>
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      )}
+    </div>
+  );
+}
+
+type FormationEditorProps = {
+  side: "home" | "away";
+  teamName: string;
+  draft: FormationDraft;
+  teamPlayers: Player[];
+  playerMap: Map<string, Player>;
+  onShape: (shape: string) => void;
+  onStarter: (idx: number, patch: Partial<StarterDraft>) => void;
+};
+
+function FormationEditor({
+  side,
+  teamName,
+  draft,
+  teamPlayers,
+  playerMap,
+  onShape,
+  onStarter,
+}: FormationEditorProps) {
+  const parts = parseShape(draft.shape);
+  const sortedPlayers = useMemo(
+    () =>
+      [...teamPlayers].sort(
+        (a, b) => (a.number ?? 999) - (b.number ?? 999)
+      ),
+    [teamPlayers]
+  );
+  const need = expectedStarterCount(draft.shape);
+  const filledCount = draft.starters.filter(
+    (s) => s.playerId || s.name
+  ).length;
+
+  const starterIds = new Set(
+    draft.starters.map((s) => s.playerId).filter(Boolean)
+  );
+  const starterNames = new Set(
+    draft.starters
+      .map((s) =>
+        s.playerId ? playerMap.get(s.playerId)?.name : s.name
+      )
+      .filter(Boolean) as string[]
+  );
+  const benchPreview = sortedPlayers.filter(
+    (p) => !starterIds.has(p.id) && !starterNames.has(p.name)
+  );
+
+  const noRoster = teamPlayers.length === 0;
+
+  return (
+    <div className={styles.formationEditor}>
+      <div className={styles.formationHead}>
+        <span className={styles.formationTitle}>
+          {side === "home" ? "🏠 ホーム" : "✈ アウェイ"} ({teamName})
+          フォーメーション
+        </span>
+        <label className={styles.shapeLabel}>
+          配置:
+          <input
+            type="text"
+            list="shape-suggest"
+            className={styles.shapeInput}
+            value={draft.shape}
+            onChange={(ev) => onShape(ev.target.value)}
+            placeholder="例: 4-3-3"
+          />
+        </label>
+        {parts.length > 0 && (
+          <span className={styles.formationCount}>
+            スタメン {filledCount}/{need}
+          </span>
+        )}
+      </div>
+
+      {noRoster && (
+        <p className={styles.rosterMissing}>
+          ※ このチームの選手データがまだありません。スタメン選択はできません。
+        </p>
+      )}
+
+      {parts.length === 0 ? (
+        <p className={styles.formationHint}>
+          shape (例: <code>4-3-3</code> / <code>4-2-3-1</code> /{" "}
+          <code>3-4-2-1</code>) を入力するとスタメン枠が出ます。
+          各レイヤーは <strong>右サイド → 左サイド</strong> の順で並べてください
+          (write-m00X-formations.mjs と同じ規約)。
+        </p>
+      ) : (
+        <>
+          <div className={styles.starterLayers}>
+            <StarterRow
+              label="GK"
+              indices={[0]}
+              starters={draft.starters}
+              players={sortedPlayers}
+              onStarter={onStarter}
+            />
+            {parts.map((count, layerIdx) => {
+              const before = parts
+                .slice(0, layerIdx)
+                .reduce((a, b) => a + b, 0);
+              const startIdx = 1 + before;
+              const indices = Array.from(
+                { length: count },
+                (_, i) => startIdx + i
+              );
+              const role =
+                layerIdx === 0
+                  ? "DF"
+                  : layerIdx === parts.length - 1
+                  ? "FW"
+                  : "MF";
+              return (
+                <StarterRow
+                  key={layerIdx}
+                  label={`${role} (右→左)`}
+                  indices={indices}
+                  starters={draft.starters}
+                  players={sortedPlayers}
+                  onStarter={onStarter}
+                />
+              );
+            })}
+          </div>
+          <p className={styles.benchPreview}>
+            <strong>ベンチ (自動 {benchPreview.length}名):</strong>{" "}
+            {benchPreview.length === 0
+              ? "—"
+              : benchPreview
+                  .map((p) =>
+                    p.number != null ? `#${p.number} ${p.name}` : p.name
+                  )
+                  .join(" / ")}
+          </p>
+        </>
+      )}
+    </div>
+  );
+}
+
+type StarterRowProps = {
+  label: string;
+  indices: number[];
+  starters: StarterDraft[];
+  players: Player[];
+  onStarter: (idx: number, patch: Partial<StarterDraft>) => void;
+};
+
+function StarterRow({
+  label,
+  indices,
+  starters,
+  players,
+  onStarter,
+}: StarterRowProps) {
+  return (
+    <div className={styles.starterRow}>
+      <span className={styles.starterRowLabel}>{label}</span>
+      <div className={styles.starterRowSlots}>
+        {indices.map((i) => {
+          const s = starters[i] ?? {
+            playerId: "",
+            name: undefined,
+            number: undefined,
+          };
+          const selectedExists =
+            s.playerId && players.some((p) => p.id === s.playerId);
+          return (
+            <select
+              key={i}
+              className={styles.starterSelect}
+              value={s.playerId}
+              onChange={(ev) => {
+                const pid = ev.target.value;
+                const p = players.find((x) => x.id === pid);
+                onStarter(i, {
+                  playerId: pid,
+                  name: p?.name ?? s.name,
+                  number: p?.number ?? s.number,
+                });
+              }}
+            >
+              <option value="">
+                {s.name
+                  ? `— 選択 — (現在: ${
+                      s.number != null ? `#${s.number} ` : ""
+                    }${s.name})`
+                  : "— 選択 —"}
+              </option>
+              {players.map((p) => (
+                <option key={p.id} value={p.id}>
+                  {p.number != null ? `#${p.number} ` : ""}
+                  {p.name} ({p.position})
+                </option>
+              ))}
+              {s.playerId && !selectedExists && (
+                <option value={s.playerId}>{s.playerId} (不明)</option>
+              )}
+            </select>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+type BookingEditorProps = {
+  match: Match;
+  bookings: BookingDraft[];
+  homeTeamName: string;
+  awayTeamName: string;
+  playersByTeam: Map<string, Player[]>;
+  onUpdate: (idx: number, patch: Partial<BookingDraft>) => void;
+  onAdd: () => void;
+  onRemove: (idx: number) => void;
+};
+
+function BookingEditor({
+  match,
+  bookings,
+  homeTeamName,
+  awayTeamName,
+  playersByTeam,
+  onUpdate,
+  onAdd,
+  onRemove,
+}: BookingEditorProps) {
+  return (
+    <div className={styles.goalEditor}>
+      <div className={styles.goalEditorHead}>
+        <span className={styles.goalEditorTitle}>カード (bookings)</span>
+        <button type="button" className={styles.addGoalBtn} onClick={onAdd}>
+          + カードを追加
+        </button>
+      </div>
+      {bookings.length === 0 ? (
+        <p className={styles.goalEmpty}>まだカードがありません。</p>
+      ) : (
+        <table className={styles.goalTable}>
+          <thead>
+            <tr>
+              <th>分</th>
+              <th>チーム</th>
+              <th>選手</th>
+              <th>種別</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            {bookings.map((b, i) => {
+              const arr =
+                b.teamId === match.homeTeamId
+                  ? (playersByTeam.get(match.homeTeamId) ?? [])
+                  : b.teamId === match.awayTeamId
+                  ? (playersByTeam.get(match.awayTeamId) ?? [])
+                  : [];
+              const sorted = [...arr].sort(
+                (a, b2) => (a.number ?? 999) - (b2.number ?? 999)
+              );
+              const selectedExists =
+                b.playerId && sorted.some((p) => p.id === b.playerId);
+              return (
+                <tr key={i}>
+                  <td>
+                    <input
+                      type="number"
+                      className={styles.minuteInput}
+                      value={b.minute}
+                      onChange={(ev) =>
+                        onUpdate(i, { minute: ev.target.value })
+                      }
+                      min={1}
+                      max={130}
+                    />
+                  </td>
+                  <td>
+                    <select
+                      className={styles.input}
+                      value={b.teamId}
+                      onChange={(ev) =>
+                        onUpdate(i, {
+                          teamId: ev.target.value,
+                          playerId: "",
+                        })
+                      }
+                    >
+                      <option value={match.homeTeamId}>{homeTeamName}</option>
+                      <option value={match.awayTeamId}>{awayTeamName}</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select
+                      className={styles.input}
+                      value={b.playerId}
+                      onChange={(ev) => {
+                        const pid = ev.target.value;
+                        const p = sorted.find((x) => x.id === pid);
+                        onUpdate(i, {
+                          playerId: pid,
+                          playerName: p?.name ?? b.playerName,
+                        });
+                      }}
+                    >
+                      <option value="">
+                        {b.playerName
+                          ? `— 選択 — (現在: ${b.playerName})`
+                          : "— 選択 —"}
+                      </option>
+                      {sorted.map((p) => (
+                        <option key={p.id} value={p.id}>
+                          {p.number != null ? `#${p.number} ` : ""}
+                          {p.name}
+                        </option>
+                      ))}
+                      {b.playerId && !selectedExists && (
+                        <option value={b.playerId}>{b.playerId} (不明)</option>
+                      )}
+                    </select>
+                  </td>
+                  <td>
+                    <select
+                      className={styles.input}
+                      value={b.type}
+                      onChange={(ev) =>
+                        onUpdate(i, { type: ev.target.value as BookingType })
+                      }
+                    >
+                      {(["Y", "Y2R", "R", "YR"] as BookingType[]).map((t) => (
+                        <option key={t} value={t}>
+                          {BOOKING_TYPE_LABEL[t]}
+                        </option>
+                      ))}
+                    </select>
+                  </td>
+                  <td>
+                    <button
+                      type="button"
+                      className={styles.removeGoalBtn}
+                      onClick={() => onRemove(i)}
+                      aria-label="このカードを削除"
+                    >
+                      ✕
+                    </button>
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      )}
+    </div>
+  );
+}
+
+type SubEditorProps = {
+  match: Match;
+  subs: SubDraft[];
+  homeTeamName: string;
+  awayTeamName: string;
+  playersByTeam: Map<string, Player[]>;
+  onUpdate: (idx: number, patch: Partial<SubDraft>) => void;
+  onAdd: () => void;
+  onRemove: (idx: number) => void;
+};
+
+function SubEditor({
+  match,
+  subs,
+  homeTeamName,
+  awayTeamName,
+  playersByTeam,
+  onUpdate,
+  onAdd,
+  onRemove,
+}: SubEditorProps) {
+  return (
+    <div className={styles.goalEditor}>
+      <div className={styles.goalEditorHead}>
+        <span className={styles.goalEditorTitle}>交代 (substitutions)</span>
+        <button type="button" className={styles.addGoalBtn} onClick={onAdd}>
+          + 交代を追加
+        </button>
+      </div>
+      {subs.length === 0 ? (
+        <p className={styles.goalEmpty}>まだ交代がありません。</p>
+      ) : (
+        <table className={styles.goalTable}>
+          <thead>
+            <tr>
+              <th>分</th>
+              <th>チーム</th>
+              <th>🔁 IN (投入)</th>
+              <th>OUT (退場)</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            {subs.map((s, i) => {
+              const arr =
+                s.teamId === match.homeTeamId
+                  ? (playersByTeam.get(match.homeTeamId) ?? [])
+                  : s.teamId === match.awayTeamId
+                  ? (playersByTeam.get(match.awayTeamId) ?? [])
+                  : [];
+              const sorted = [...arr].sort(
+                (a, b) => (a.number ?? 999) - (b.number ?? 999)
+              );
+              const inExists =
+                s.inPlayerId && sorted.some((p) => p.id === s.inPlayerId);
+              const outExists =
+                s.outPlayerId && sorted.some((p) => p.id === s.outPlayerId);
+              return (
+                <tr key={i}>
+                  <td>
+                    <input
+                      type="number"
+                      className={styles.minuteInput}
+                      value={s.minute}
+                      onChange={(ev) =>
+                        onUpdate(i, { minute: ev.target.value })
+                      }
+                      min={1}
+                      max={130}
+                    />
+                  </td>
+                  <td>
+                    <select
+                      className={styles.input}
+                      value={s.teamId}
+                      onChange={(ev) =>
+                        onUpdate(i, {
+                          teamId: ev.target.value,
+                          inPlayerId: "",
+                          outPlayerId: "",
+                        })
+                      }
+                    >
+                      <option value={match.homeTeamId}>{homeTeamName}</option>
+                      <option value={match.awayTeamId}>{awayTeamName}</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select
+                      className={styles.input}
+                      value={s.inPlayerId}
+                      onChange={(ev) => {
+                        const pid = ev.target.value;
+                        const p = sorted.find((x) => x.id === pid);
+                        onUpdate(i, {
+                          inPlayerId: pid,
+                          inName: p?.name ?? s.inName,
+                        });
+                      }}
+                    >
+                      <option value="">
+                        {s.inName
+                          ? `— 選択 — (現在: ${s.inName})`
+                          : "— 選択 —"}
+                      </option>
+                      {sorted.map((p) => (
+                        <option key={p.id} value={p.id}>
+                          {p.number != null ? `#${p.number} ` : ""}
+                          {p.name}
+                        </option>
+                      ))}
+                      {s.inPlayerId && !inExists && (
+                        <option value={s.inPlayerId}>
+                          {s.inPlayerId} (不明)
+                        </option>
+                      )}
+                    </select>
+                  </td>
+                  <td>
+                    <select
+                      className={styles.input}
+                      value={s.outPlayerId}
+                      onChange={(ev) => {
+                        const pid = ev.target.value;
+                        const p = sorted.find((x) => x.id === pid);
+                        onUpdate(i, {
+                          outPlayerId: pid,
+                          outName: p?.name ?? s.outName,
+                        });
+                      }}
+                    >
+                      <option value="">
+                        {s.outName
+                          ? `— 選択 — (現在: ${s.outName})`
+                          : "— 選択 —"}
+                      </option>
+                      {sorted.map((p) => (
+                        <option key={p.id} value={p.id}>
+                          {p.number != null ? `#${p.number} ` : ""}
+                          {p.name}
+                        </option>
+                      ))}
+                      {s.outPlayerId && !outExists && (
+                        <option value={s.outPlayerId}>
+                          {s.outPlayerId} (不明)
+                        </option>
+                      )}
+                    </select>
+                  </td>
+                  <td>
+                    <button
+                      type="button"
+                      className={styles.removeGoalBtn}
+                      onClick={() => onRemove(i)}
+                      aria-label="この交代を削除"
                     >
                       ✕
                     </button>
