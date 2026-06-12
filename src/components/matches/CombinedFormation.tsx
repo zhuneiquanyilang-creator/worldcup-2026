@@ -42,6 +42,16 @@ function surnameOf(name: string): string {
   return name;
 }
 
+/** チームに応じてフォーメーション上の表示名を決める。
+ *  韓国は「キム・スンギュ」のように姓先頭・中黒区切りで、surnameOf だと
+ *  名のみ ("スンギュ") が出てしまう。要望に応じてフルネームで表示する。 */
+function displayName(name: string, useFullName: boolean): string {
+  if (useFullName) return name;
+  return surnameOf(name);
+}
+
+const FULL_NAME_TEAMS = new Set<string>(["KOR"]);
+
 type Props = {
   homeTeam: Team | undefined;
   homeLabel?: string;
@@ -205,13 +215,29 @@ export function CombinedFormation({
           {homeProcessed?.starting.map((s, i) => {
             const [x, y] = layout.homePos(s);
             return (
-              <Spot key={`h${i}`} spot={s} x={x} y={y} variant="home" nameSize={layout.nameSize} />
+              <Spot
+                key={`h${i}`}
+                spot={s}
+                x={x}
+                y={y}
+                variant="home"
+                nameSize={layout.nameSize}
+                useFullName={homeTeam ? FULL_NAME_TEAMS.has(homeTeam.id) : false}
+              />
             );
           })}
           {awayProcessed?.starting.map((s, i) => {
             const [x, y] = layout.awayPos(s);
             return (
-              <Spot key={`a${i}`} spot={s} x={x} y={y} variant="away" nameSize={layout.nameSize} />
+              <Spot
+                key={`a${i}`}
+                spot={s}
+                x={x}
+                y={y}
+                variant="away"
+                nameSize={layout.nameSize}
+                useFullName={awayTeam ? FULL_NAME_TEAMS.has(awayTeam.id) : false}
+              />
             );
           })}
         </svg>
@@ -372,12 +398,14 @@ function Spot({
   y,
   variant,
   nameSize,
+  useFullName = false,
 }: {
   spot: SpotWithSub;
   x: number;
   y: number;
   variant: "home" | "away";
   nameSize: number;
+  useFullName?: boolean;
 }) {
   const ringColor = variant === "home" ? "#1a3a8a" : "#b91c1c";
   const textColor = variant === "home" ? "#1a3a8a" : "#b91c1c";
@@ -418,7 +446,7 @@ function Spot({
         strokeWidth={0.18}
         paintOrder="stroke"
       >
-        {surnameOf(spot.name)}
+        {displayName(spot.name, useFullName)}
       </text>
       {/* カード (左上に小さく) */}
       {(yellow || red) && (

@@ -1,11 +1,15 @@
+import type { Match } from "@/types/match";
 import type { Standing } from "@/types/standing";
 import type { Team } from "@/types/team";
+import { getTeamLiveStatus } from "@/utils/liveTeamStatus";
 import { StandingsRow } from "./StandingsRow";
 import styles from "./StandingsTable.module.css";
 
 type Props = {
   standings: Standing[];
   teamMap: Map<string, Team>;
+  /** 全試合データ。ライブ中の試合からチーム別ライブ状態を判定するのに使う。 */
+  matches?: Match[];
 };
 
 function compare(a: Standing, b: Standing) {
@@ -14,7 +18,7 @@ function compare(a: Standing, b: Standing) {
   return b.goalsFor - a.goalsFor;
 }
 
-export function StandingsTable({ standings, teamMap }: Props) {
+export function StandingsTable({ standings, teamMap, matches }: Props) {
   const sorted = [...standings].sort(compare);
   const noMatchesPlayed = sorted.every((s) => s.played === 0);
 
@@ -43,6 +47,7 @@ export function StandingsTable({ standings, teamMap }: Props) {
               standing={s}
               team={teamMap.get(s.teamId)}
               showQualifiedMarker={!noMatchesPlayed}
+              liveStatus={matches ? getTeamLiveStatus(s.teamId, matches) : undefined}
             />
           ))}
         </tbody>

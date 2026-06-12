@@ -39,7 +39,11 @@ export function StandingsPage() {
     <div>
       <h1>順位表</h1>
       <GroupTabs groupIds={groupIds} current={currentGroup} onChange={setCurrentGroup} />
-      <StandingsTable standings={groupStandings} teamMap={teamMapRes.map} />
+      <StandingsTable
+        standings={groupStandings}
+        teamMap={teamMapRes.map}
+        matches={matchesRes.data}
+      />
       <ThirdPlaceRanking standings={standings} teamMap={teamMapRes.map} />
     </div>
   );

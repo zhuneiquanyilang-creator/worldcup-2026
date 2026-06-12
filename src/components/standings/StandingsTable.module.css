@@ -72,6 +72,52 @@
   border-radius: 2px;
 }
 
+/* ライブ中インジケータ (チーム名右隣の小さなパッチ)
+ *   winning → 緑 / drawing → 灰色 / losing → 赤
+ *   進行中はパルスアニメで「ライブ感」を出す。試合終了時は
+ *   コンポーネント側で liveStatus が undefined になりこの要素自体が消える。 */
+.liveDot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-left: 0.3rem;
+  vertical-align: middle;
+  flex-shrink: 0;
+  animation: liveDotPulse 1.6s ease-in-out infinite;
+  box-shadow: 0 0 0 0 currentColor;
+}
+
+.liveDot.winning {
+  background-color: var(--color-success);
+  color: var(--color-success);
+}
+
+.liveDot.drawing {
+  background-color: var(--color-text-muted);
+  color: var(--color-text-muted);
+}
+
+.liveDot.losing {
+  background-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+@keyframes liveDotPulse {
+  0% {
+    box-shadow: 0 0 0 0 currentColor;
+    opacity: 1;
+  }
+  70% {
+    box-shadow: 0 0 0 6px transparent;
+    opacity: 0.7;
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+    opacity: 1;
+  }
+}
+
 .legend {
   display: flex;
   align-items: center;

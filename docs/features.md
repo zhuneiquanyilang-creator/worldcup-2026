@@ -20,18 +20,99 @@
 
 **プリマッチ枠 (フォーメーション・ベンチメンバー)**: `utils/matchTiming.ts` の `PREMATCH_POLL_MINUTES = 30` で定義。KO 30 分前から polling が起動するので、試合開始前にフォーメーションとベンチメンバーがサイトに反映される（Sofascore の `/event/{id}/lineups` は試合前から予想スタメンを返す）。incidents (goals/cards/subs) と statistics は試合が進行中・終了状態に入ってから取得される（Sofascore 側がプリマッチでは提供しないため）。
 
-## Sofascore 連携
+## ライブ情報源: Football-Data.org v4
 
-ライブ情報源として **Sofascore** を採用。`services/sofascoreSource.ts` の `SofascoreLiveSource` が以下を実装:
+ライブ情報源は **Football-Data.org v4** (`api.football-data.org`) を本採用。実装は `services/footballDataSource.ts` の `FootballDataLiveSource` (`main.tsx` で `setLiveSource` 経由で注入)。
+
+### 採用理由 (経緯)
+
+1. **Sofascore**: Cloudflare bot 対策で 2026 年 6 月時点 API が 403。実装は `services/sofascoreSource.ts` に保持
+2. **API-Football (api-sports.io)**: Free プランは 2022-2024 シーズンのみ。W 杯 2026 は Pro プラン (有料、約 $19/月) 必須。実装は `services/apiFootballSource.ts` に保持 (将来課金時に切替え可)
+3. **Football-Data.org**: 無料 (Tier One) で W 杯 2026 のスコア・順位・得点者が取れる ★現用
+
+### 認証とプロキシ
+
+| 設定 | 場所 |
+|---|---|
+| API キー保管 | `.env.local` の `VITE_FOOTBALL_DATA_KEY=...` (gitignore `*.local` で除外) |
+| プロキシ | `vite.config.ts` の `/football-data-api/*` → `https://api.football-data.org/v4/*` (`X-Auth-Token` ヘッダを dev サーバーが差し込む) |
+| サンプル | `.env.example` (`VITE_FOOTBALL_DATA_KEY=your-football-data-key-here`) |
+| キー取得 | https://www.football-data.org/client/register (無料、10 req/分) |
+
+### 試合 ID マッピング
+
+`public/data/footballdata_mapping.json` に m??? → Football-Data の match ID の対応を保存。生成は `scripts/build-footballdata-mapping.mjs` (dev サーバー起動状態で `node scripts/build-footballdata-mapping.mjs`)。`/competitions/WC/matches` の全試合を取得して、日付 ± 12h + チーム ID (英語名 → teams.json の nameEn or TLA) で照合する。
+
+### 無料枠 (10 req/分) を守るキャッシュ戦略
+
+`FootballDataLiveSource` はモジュールスコープに以下のキャッシュを持ち、`useLivePolling` の 1 分毎ティックが全試合を順に叩いても無駄なリクエストが発生しない。
+
+| エンドポイント | キャッシュ | TTL | 想定リクエスト数/日 |
+|---|---|---|---|
+| `/competitions/WC/matches` | `matchesCache` (W 杯全 104 試合をまとめ取得) | 60 秒 | active polling 中のみ約 60/h |
+
+W 杯全 104 試合の最新スコア・ステータスが 1 リクエストで取れるので、複数試合がライブ中でも追加コストはゼロ。1 分あたり 1 req に余裕で収まる。
+
+### 取れるデータと取れないデータ
+
+| 機能 | Football-Data.org Free | 備考 |
+|---|---|---|
+| 試合スコア (HT / FT / ET / PK) | ✅ | `score.fullTime` / `score.penalties` |
+| 試合ステータス (LIVE / FT 等) | ✅ | TIMED / SCHEDULED / LIVE / IN_PLAY / PAUSED / FINISHED にマップ |
+| ライブ経過分 (minute) | ✅ | `match.minute` |
+| 順位表 | ✅ | `/competitions/WC/standings` 取得可 (現在は `utils/computeStandings.ts` で自動計算しているので未使用) |
+| 得点者ランキング | ✅ | `/competitions/WC/scorers` (現在は `utils/computePlayerStats.ts` で自動集計、Football-Data 値は未使用) |
+| **フォーメーション** | ❌ | 無料枠不可。`/edit/matches` または手動 script で個別入力 |
+| **ゴール時系列** (誰が何分に得点) | ❌ | 同上 |
+| **カード** | ❌ | 同上 |
+| **交代** | ❌ | 同上 |
+| **スタッツ** (xG/支配率/シュート) | ❌ | 無料枠は提供なし |
+
+### ステータスコード変換
+
+Football-Data.org の `status` → 本サイトの `MatchStatus`:
+
+| Football-Data.org | 本サイト |
+|---|---|
+| TIMED / SCHEDULED / POSTPONED | scheduled |
+| LIVE / IN_PLAY / PAUSED | live |
+| FINISHED / AWARDED | finished |
+| SUSPENDED / CANCELLED | (undefined、base 値維持) |
+
+### フォーメーション・イベント補完の運用
+
+Football-Data.org では取れないデータは、以下のいずれかで補完する。
+
+1. **`/edit/matches`** で UI 上から入力 → localStorage matchEdits → auto-sync が match_results.json に書き出し
+2. **手動 script**: 例 [`scripts/write-m001-formations.mjs`](../scripts/write-m001-formations.mjs) のように、Sofascore スクショからスタメンを抽出して直接 match_results.json に書き込み
+
+## ライブ情報源の代替実装 (現在未使用、保持中)
+
+### Sofascore (`services/sofascoreSource.ts`)
+
+Sofascore は元々の本採用ソースだったが 2026 年 6 月時点で Cloudflare bot 対策により API がプロキシ越しでも 403 を返す。Cloudflare の制限が緩和された場合に再有効化できるよう、コードはそのまま保持。
 
 | エンドポイント | 用途 |
 |---|---|
 | `/event/{id}` | ステータス・スコア・isLive |
 | `/event/{id}/incidents` | ゴール・カード・交代 |
+| `/event/{id}/lineups` | フォーメーション・スタメン・ベンチ |
+| `/event/{id}/statistics` | スタッツ |
 
-**CORS 対策**: `vite.config.ts` で `/sofascore-api/*` → `https://api.sofascore.com/api/v1/*` のリバースプロキシを設定（dev server のみ有効）。本番デプロイ時は別途リバースプロキシが必要。
+**CORS 対策**: `vite.config.ts` で `/sofascore-api/*` → `https://api.sofascore.com/api/v1/*` のリバースプロキシを設定（dev server のみ有効）。**試合ID マッピング**: `public/data/sofascore_mapping.json` (トーナメントID: 16、シーズン: 58210)。
 
-**試合ID マッピング**: `public/data/sofascore_mapping.json` にローカル試合ID (`m001` 等) と Sofascore event ID (`15186710` 等) の対応を保存。トーナメントID: `16`、シーズン: `58210` (2026)。全104試合を登録済み（`scripts/build-mapping.mjs` で生成）。未登録試合があればライブ更新はスキップ (graceful)。
+### API-Football (`services/apiFootballSource.ts`)
+
+Free プラン (100 req/日) は 2022-2024 シーズン限定。W 杯 2026 を取るには Pro プラン以上 (約 $19/月) が必要。将来課金してフォーメーション・イベントを自動取得したくなった時にすぐ切替えられるよう実装は保持。
+
+| 設定 | 場所 |
+|---|---|
+| API キー保管 | `.env.local` の `VITE_API_FOOTBALL_KEY=...` |
+| プロキシ | `vite.config.ts` の `/api-football/*` → `https://v3.football.api-sports.io/*` (`x-apisports-key` ヘッダ自動付与) |
+| 試合 ID マッピング | `public/data/apifootball_mapping.json` (生成スクリプト: `scripts/build-apifootball-mapping.mjs`) |
+| キャッシュ | `batchCache` (15 分 TTL) / `lineupsCache` (永続) / `eventsCache` (15 分) / `statsCache` (永続) / `singleFixtureCache` (5 分) |
+
+実装の詳細 (選手解決、自殺点の扱い、ステータスコード変換) は `apiFootballSource.ts` の冒頭コメントとコード参照。
 
 **インシデント変換**:
 - `incidentType="goal"` → `Goal` (`incidentClass`: regular/penalty/ownGoal → normal/penalty/own)

@@ -1,4 +1,4 @@
-import { defineConfig, type Plugin } from "vite";
+import { defineConfig, loadEnv, type Plugin } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "node:path";
 import fs from "node:fs/promises";
@@ -216,34 +216,70 @@ function matchResultsWriter(): Plugin {
   };
 }
 
-export default defineConfig({
-  plugins: [react(), matchResultsWriter()],
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "./src"),
+export default defineConfig(({ mode }) => {
+  // .env / .env.local / .env.[mode] を読み込む。`VITE_` プレフィクスがあるものだけが
+  // クライアント (import.meta.env) に露出する。`.env.local` は gitignore (*.local) で除外済み。
+  const env = loadEnv(mode, process.cwd(), "");
+  return {
+    plugins: [react(), matchResultsWriter()],
+    resolve: {
+      alias: {
+        "@": path.resolve(__dirname, "./src"),
+      },
     },
-  },
-  server: {
-    port: 5173,
-    open: true,
-    // LAN (同じ Wi-Fi 内) の他デバイスからアクセスできるよう 0.0.0.0 で待受
-    host: true,
-    proxy: {
-      // Sofascore JSON API: ブラウザから直接叩くと CORS で弾かれるため
-      // dev サーバー経由でリバースプロキシする。
-      // 例: /sofascore-api/event/15186710
-      //  → https://api.sofascore.com/api/v1/event/15186710
-      "/sofascore-api": {
-        target: "https://api.sofascore.com",
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/sofascore-api/, "/api/v1"),
-        headers: {
-          // 一部のプロキシ越しでブロックされないよう、ブラウザ風 UA を付与
-          "User-Agent":
-            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36",
-          Referer: "https://www.sofascore.com/",
+    server: {
+      port: 5173,
+      open: true,
+      // LAN (同じ Wi-Fi 内) の他デバイスからアクセスできるよう 0.0.0.0 で待受
+      host: true,
+      proxy: {
+        // Sofascore JSON API: ブラウザから直接叩くと CORS で弾かれるため
+        // dev サーバー経由でリバースプロキシする。
+        // 例: /sofascore-api/event/15186710
+        //  → https://api.sofascore.com/api/v1/event/15186710
+        // 注: 2026 年 6 月時点で Cloudflare が API を 403 で弾く状況。残しているが
+        //     動作しないので、ライブ取得は基本的に api-football にフォールバックする。
+        "/sofascore-api": {
+          target: "https://api.sofascore.com",
+          changeOrigin: true,
+          rewrite: (path) => path.replace(/^\/sofascore-api/, "/api/v1"),
+          headers: {
+            // 一部のプロキシ越しでブロックされないよう、ブラウザ風 UA を付与
+            "User-Agent":
+              "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36",
+            Referer: "https://www.sofascore.com/",
+          },
+        },
+        // API-Football (api-sports.io) のプロキシ。
+        // 例: /api-football/fixtures?live=all
+        //  → https://v3.football.api-sports.io/fixtures?live=all
+        //
+        // 認証は API キーを `x-apisports-key` ヘッダで送る。
+        // dev サーバーがブラウザの代わりにヘッダを差し込む (= キーが
+        // ブラウザに渡らない/devtools に露出しない)。
+        // 無料枠は 100 req/日、10 req/分。
+        "/api-football": {
+          target: "https://v3.football.api-sports.io",
+          changeOrigin: true,
+          rewrite: (path) => path.replace(/^\/api-football/, ""),
+          headers: {
+            "x-apisports-key": env.VITE_API_FOOTBALL_KEY ?? "",
+          },
+        },
+        // Football-Data.org v4 プロキシ。
+        // 例: /football-data-api/competitions/WC/matches
+        //  → https://api.football-data.org/v4/competitions/WC/matches
+        // 無料枠 10 req/分 (Tier One プラン)。スコア・順位・得点者ランキング取得可。
+        // フォーメーション・イベント時系列は無料枠では取得できない。
+        "/football-data-api": {
+          target: "https://api.football-data.org",
+          changeOrigin: true,
+          rewrite: (path) => path.replace(/^\/football-data-api/, "/v4"),
+          headers: {
+            "X-Auth-Token": env.VITE_FOOTBALL_DATA_KEY ?? "",
+          },
         },
       },
     },
-  },
+  };
 });
