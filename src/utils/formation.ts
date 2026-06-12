@@ -42,8 +42,10 @@ export function generateFormation(
     });
   }
 
-  // 各層を 22%〜80% の範囲で等間隔に並べる
-  const X_MIN = 22;
+  // 各層を 28%〜80% の範囲で等間隔に並べる。
+  // X_MIN=22 だと GK (x=8) と最終ラインのラベルが横方向に被ることがあるので、
+  // 最終ラインを少しだけ内側 (= ホームなら右、アウェイなら左) にずらす。
+  const X_MIN = 28;
   const X_MAX = 80;
   const layerCount = parts.length;
   let cursor = 1;

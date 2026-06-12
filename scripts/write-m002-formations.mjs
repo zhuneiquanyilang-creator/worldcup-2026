@@ -27,7 +27,8 @@ function jp(teamId, number) {
 // レンダラ規約: 各レイヤー内で i=0 = チームの右サイド、i=N-1 = チームの左サイド。
 function buildFormation(shape, lineup) {
   const parts = shape.split("-").map(Number);
-  const X_MIN = 22;
+  // src/utils/formation.ts と同期: GK と最終ラインのラベルが被らないよう内寄せ
+  const X_MIN = 28;
   const X_MAX = 80;
   const starting = [];
   // GK
