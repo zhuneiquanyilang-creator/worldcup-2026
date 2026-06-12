@@ -816,7 +816,11 @@
   },
   "m007": {
     "matchId": "m007",
-    "status": "scheduled"
+    "status": "finished",
+    "score": {
+      "home": 1,
+      "away": 1
+    }
   },
   "m008": {
     "matchId": "m008",
