@@ -79,6 +79,18 @@ Football-Data.org の `status` → 本サイトの `MatchStatus`:
 | FINISHED / AWARDED | finished |
 | SUSPENDED / CANCELLED | (undefined、base 値維持) |
 
+### 起動時キャッチアップ同期 (startup-catchup)
+
+dev サーバーが落ちている間に終わった試合は polling 経由では拾えないため、`vite.config.ts` の `startupCatchup` プラグインがサーバー起動直後に 1 回だけ Football-Data.org を叩き、`match_results.json` を更新する。
+
+- **対象**: KO 時刻が現在より 30 分以上前 (= 開始済み) で、`match_results.json` の status が "finished" になっていない試合
+- **取得値**: status / score / penaltyScore のみ (フォーメーション・goals・カードは Football-Data 無料枠では取れないので別途 `/edit/matches` で手入力)
+- **API 呼び出し**: 同じ (fdTeamId, 日付) はキャッシュ。7 秒スロットルで無料枠 10 req/分を守る。429 で 60 秒待機 + 1 回リトライ
+- **書き込み後**: 既存 schedulePush() が起動して、30 秒デバウンスで `git add / commit / push` まで自動実行 → GitHub Pages に反映
+- **opt-out**: 環境変数 `STARTUP_CATCHUP_RESULTS=0` で無効化
+- **API キー**: `.env.local` の `VITE_FOOTBALL_DATA_KEY` を loadEnv 経由でプラグインに直接渡す (proxy 経由ではなく Node 側で `https://api.football-data.org/v4/...` を直接叩く)
+- **対象ゼロのとき**: `[startup-catchup] キャッチアップ対象なし` とだけログ出力して終了 (= API 呼び出しゼロ)
+
 ### フォーメーション・イベント補完の運用
 
 Football-Data.org では取れないデータは、以下のいずれかで補完する。

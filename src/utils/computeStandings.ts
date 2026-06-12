@@ -4,7 +4,8 @@ import type { Team } from "@/types/team";
 
 /**
  * グループステージの順位表を試合結果から導出する。
- * 全チームを 0-0-0 で初期化し、`status === "finished"` の `stage === "group"` 試合を反映。
+ * 全チームを 0-0-0 で初期化し、`stage === "group"` のうち **score が入った試合**
+ * (= 終了 or ライブ進行中で得点情報あり) を反映する。
  */
 export function computeStandings(teams: Team[], matches: Match[]): Standing[] {
   const map = new Map<string, Standing>();
@@ -27,8 +28,10 @@ export function computeStandings(teams: Team[], matches: Match[]): Standing[] {
 
   for (const m of matches) {
     if (m.stage !== "group") continue;
-    // ライブ中の試合も「今のスコアで終了したと仮定して」順位表に反映
-    if (m.status !== "finished" && m.status !== "live") continue;
+    // スコアが入っていれば status は問わない (= 「今のスコアで終了したと仮定」)。
+    // status を厳格にチェックすると、古い live override (localStorage) が status
+    // だけ "live"/"scheduled" で残っているケースで finished + score の file 値が
+    // 反映されなくなってしまう (MatchCard / BracketMatch と同じ理由)。
     if (!m.score) continue;
     const home = map.get(m.homeTeamId);
     const away = map.get(m.awayTeamId);

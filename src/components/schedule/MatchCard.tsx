@@ -20,7 +20,13 @@ type Props = {
 export function MatchCard({ match, teamMap }: Props) {
   const home = teamMap.get(match.homeTeamId);
   const away = teamMap.get(match.awayTeamId);
-  const isFinished = match.status === "finished" && match.score;
+  // スコアが入っていれば status に関係なく表示する。
+  // 理由: file (match_results.json) に finished + score が入っていても、
+  // 古い live override (localStorage) が status="live" だけ上書きして残っていると、
+  // status==="finished" 条件で false になり "VS" 表示に逆戻りしてしまう。
+  // 試合詳細ページ (ScoreBoard) は status を見ずに match.score だけで描画するため、
+  // ここで status を要求する必要はない。
+  const hasScore = !!match.score;
   const live = isLive(match);
   const minute = useLiveMinute(match);
   const num = matchNumber(match.id);
@@ -65,7 +71,7 @@ export function MatchCard({ match, teamMap }: Props) {
         </div>
 
         <div className={styles.score}>
-          {(isFinished || (live && match.score)) ? (
+          {hasScore ? (
             <span className={styles.scoreValue}>
               {match.score!.home} - {match.score!.away}
             </span>

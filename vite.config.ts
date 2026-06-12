@@ -216,12 +216,214 @@ function matchResultsWriter(): Plugin {
   };
 }
 
+/**
+ * dev サーバー起動時のキャッチアップ同期。
+ *
+ * サーバーが落ちている間に終了した試合は polling では拾えないので、起動直後に
+ * 1 回だけ Football-Data.org を叩いて `match_results.json` を更新する。
+ *
+ * 対象: KO 時刻が現在より 30 分以上前で、かつ `match_results.json` の status が
+ * "finished" になっていない試合。
+ *
+ * 制約:
+ * - Football-Data は無料枠 10 req/分なので 7 秒スロットルを挟む
+ * - 同じチーム/日付の試合は 1 回しか叩かない
+ * - キーが未設定なら警告だけ出してスキップ
+ * - `STARTUP_CATCHUP_RESULTS=0` で無効化
+ * - 書き込みが発生したら schedulePush() で自動 commit/push をスケジュール
+ *   (= matchResultsWriter と同じ仕組み)
+ */
+function startupCatchup(apiKey: string): Plugin {
+  return {
+    name: "startup-catchup",
+    apply: "serve",
+    configureServer(server) {
+      server.httpServer?.once("listening", () => {
+        if (process.env.STARTUP_CATCHUP_RESULTS === "0") return;
+        // サーバー起動と並走させる (await しない)
+        runStartupCatchup(apiKey).catch((e) =>
+          console.warn(`[startup-catchup] failed: ${e?.message ?? e}`)
+        );
+      });
+    },
+  };
+}
+
+function mapFdStatus(s: string): "scheduled" | "live" | "finished" | null {
+  if (s === "FINISHED" || s === "AWARDED") return "finished";
+  if (s === "IN_PLAY" || s === "LIVE" || s === "PAUSED") return "live";
+  if (s === "TIMED" || s === "SCHEDULED" || s === "POSTPONED") return "scheduled";
+  return null;
+}
+
+function ymd(d: string | Date): string {
+  return new Date(d).toISOString().slice(0, 10);
+}
+
+const FD_THROTTLE_MS = 7000;
+
+async function runStartupCatchup(apiKey: string) {
+  if (!apiKey) {
+    console.warn(
+      "[startup-catchup] VITE_FOOTBALL_DATA_KEY 未設定 — スキップ"
+    );
+    return;
+  }
+
+  const matchesPath = path.resolve(__dirname, "public/data/matches.json");
+  const mappingPath = path.resolve(
+    __dirname,
+    "public/data/footballdata_mapping.json"
+  );
+
+  let matches: Array<{ id: string; date: string }>;
+  let mapping: Record<string, number | { fdMatchId: number; fdHomeTeamId?: number; fdAwayTeamId?: number }>;
+  try {
+    matches = JSON.parse(await fs.readFile(matchesPath, "utf8"));
+    mapping = JSON.parse(await fs.readFile(mappingPath, "utf8")).mapping;
+  } catch (e) {
+    console.warn(
+      `[startup-catchup] matches.json/mapping.json 読み込み失敗: ${e instanceof Error ? e.message : String(e)}`
+    );
+    return;
+  }
+
+  let results: Record<string, Record<string, unknown>> = {};
+  try {
+    const raw = await fs.readFile(RESULTS_PATH, "utf8");
+    const parsed = JSON.parse(raw);
+    if (parsed && typeof parsed === "object" && !Array.isArray(parsed))
+      results = parsed;
+  } catch {
+    // 無ければ空
+  }
+
+  const now = Date.now();
+  // 終わってるはずなのにファイル側で finished になっていない試合を抽出。
+  // 30 分の余白は: KO 時刻を過ぎただけでまだ前半中の試合を拾わないため。
+  const candidates = matches.filter((m) => {
+    const ts = new Date(m.date).getTime();
+    if (!Number.isFinite(ts)) return false;
+    if (ts > now - 30 * 60_000) return false;
+    return results[m.id]?.status !== "finished";
+  });
+
+  if (candidates.length === 0) {
+    console.log("[startup-catchup] キャッチアップ対象なし");
+    return;
+  }
+  console.log(
+    `[startup-catchup] ${candidates.length} 試合をチェック中…`
+  );
+
+  let lastReqTs = 0;
+  async function fetchTeamMatches(fdTeamId: number, date: string) {
+    const wait = lastReqTs + FD_THROTTLE_MS - Date.now();
+    if (wait > 0) await new Promise((r) => setTimeout(r, wait));
+    lastReqTs = Date.now();
+    const d = new Date(date);
+    const before = ymd(new Date(d.getTime() - 86400_000));
+    const after = ymd(new Date(d.getTime() + 86400_000));
+    const url = `https://api.football-data.org/v4/teams/${fdTeamId}/matches?competitions=2000&dateFrom=${before}&dateTo=${after}`;
+    let r = await fetch(url, { headers: { "X-Auth-Token": apiKey } });
+    if (r.status === 429) {
+      console.warn("[startup-catchup] 429 — 60 秒待機してリトライ");
+      await new Promise((res) => setTimeout(res, 60_000));
+      lastReqTs = Date.now();
+      r = await fetch(url, { headers: { "X-Auth-Token": apiKey } });
+    }
+    if (!r.ok) {
+      console.warn(`[startup-catchup] fetch ${r.status}: ${url}`);
+      return [] as Array<Record<string, any>>;
+    }
+    const j = await r.json();
+    return (j.matches ?? []) as Array<Record<string, any>>;
+  }
+
+  const teamCache = new Map<string, Array<Record<string, any>>>();
+  let synced = 0;
+
+  for (const m of candidates) {
+    const entry = mapping[m.id];
+    if (!entry) continue;
+    const fdTeamId =
+      typeof entry === "number"
+        ? null
+        : entry.fdHomeTeamId ?? entry.fdAwayTeamId ?? null;
+    const fdMatchId = typeof entry === "number" ? entry : entry.fdMatchId;
+    if (!fdTeamId) continue;
+
+    const cacheKey = `${fdTeamId}:${ymd(m.date)}`;
+    let teamMatches = teamCache.get(cacheKey);
+    if (!teamMatches) {
+      teamMatches = await fetchTeamMatches(fdTeamId, m.date);
+      teamCache.set(cacheKey, teamMatches);
+    }
+
+    const fx =
+      teamMatches.find((x) => x.id === fdMatchId) ??
+      teamMatches.find(
+        (x) =>
+          Math.abs(
+            new Date(x.utcDate).getTime() - new Date(m.date).getTime()
+          ) <
+          12 * 3600_000
+      );
+    if (!fx) continue;
+
+    const update: Record<string, unknown> = { matchId: m.id };
+    const status = mapFdStatus(fx.status);
+    if (status) update.status = status;
+    const ft = fx.score?.fullTime;
+    if (typeof ft?.home === "number" && typeof ft?.away === "number") {
+      update.score = { home: ft.home, away: ft.away };
+    }
+    const pk = fx.score?.penalties;
+    if (typeof pk?.home === "number" && typeof pk?.away === "number") {
+      update.penaltyScore = { home: pk.home, away: pk.away };
+    }
+
+    const prev = results[m.id] ?? {};
+    const sameStatus = prev.status === update.status;
+    const sameScore =
+      JSON.stringify(prev.score) === JSON.stringify(update.score);
+    const samePk =
+      JSON.stringify(prev.penaltyScore) === JSON.stringify(update.penaltyScore);
+    if (sameStatus && sameScore && samePk) continue;
+
+    results[m.id] = { ...prev, ...update };
+    synced++;
+    console.log(
+      `[startup-catchup] ${m.id}: ${fx.homeTeam?.tla} ${ft?.home}-${ft?.away} ${fx.awayTeam?.tla} [${fx.status}]`
+    );
+  }
+
+  if (synced === 0) {
+    console.log("[startup-catchup] 差分なし (全試合最新)");
+    return;
+  }
+
+  await fs.writeFile(
+    RESULTS_PATH,
+    JSON.stringify(results, null, 2) + "\n",
+    "utf8"
+  );
+  console.log(
+    `[startup-catchup] ${synced} 試合を match_results.json に書き込み`
+  );
+  schedulePush();
+}
+
 export default defineConfig(({ mode }) => {
   // .env / .env.local / .env.[mode] を読み込む。`VITE_` プレフィクスがあるものだけが
   // クライアント (import.meta.env) に露出する。`.env.local` は gitignore (*.local) で除外済み。
   const env = loadEnv(mode, process.cwd(), "");
   return {
-    plugins: [react(), matchResultsWriter()],
+    plugins: [
+      react(),
+      matchResultsWriter(),
+      startupCatchup(env.VITE_FOOTBALL_DATA_KEY ?? ""),
+    ],
     resolve: {
       alias: {
         "@": path.resolve(__dirname, "./src"),

@@ -17,7 +17,7 @@ new_claude_app/
 │       ├── groups.json        # グループ分け
 │       ├── standings.json     # 順位表
 │       ├── matches.json       # 試合（日程＋結果）
-│       └── players.json       # 選手＋個人スタッツ
+│       └── players/           # 選手データ (per-team: JPN.json / MEX.json / ...、計 48 ファイル)
 └── src/
     ├── main.tsx               # エントリポイント
     ├── App.tsx                # アプリ全体のレイアウト

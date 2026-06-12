@@ -16,7 +16,8 @@ export function BracketMatch({ match, teamMap }: Props) {
   const home = teamMap.get(match.homeTeamId);
   const away = teamMap.get(match.awayTeamId);
   const num = matchNumber(match.id);
-  const score = match.status === "finished" && match.score ? match.score : null;
+  // スコアが入っていれば status に依らず表示する (MatchCard と同じ理由)。
+  const score = match.score ?? null;
   const navigate = useNavigate();
 
   const goToMatch = () => navigate(`/matches/${match.id}`);

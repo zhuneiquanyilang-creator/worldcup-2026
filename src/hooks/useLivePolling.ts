@@ -1,10 +1,20 @@
 import { useEffect, useRef } from "react";
 import type { Match } from "@/types/match";
 import { PREMATCH_POLL_MINUTES, shouldPoll } from "@/utils/matchTiming";
-import { setMatchOverride } from "@/utils/matchOverrides";
+import {
+  clearMatchOverride,
+  loadMatchOverrides,
+  setMatchOverride,
+} from "@/utils/matchOverrides";
 import { getLiveSource } from "@/services/liveSource";
 
 const POLL_INTERVAL_MS = 60_000; // 1分
+
+/** KO から N 時間以上経過した試合は確実に終わっているので、その live override
+ *  を localStorage から削除する。古い status="live" が file (match_results.json) の
+ *  status="finished" を上書きし続けて MatchCard が "VS" 表示に戻る、といった事故を防ぐ。
+ *  6 時間: 延長 + PK + 余裕でも十分カバーできる長さ。 */
+const OVERRIDE_TTL_MS = 6 * 3600_000;
 
 /**
  * 1分毎に「polling 対象の試合」を検出し、最新情報を外部ソースから取得して
@@ -29,6 +39,19 @@ export function useLivePolling(matches: Match[] | undefined) {
     const list = matchesRef.current;
     if (!list || list.length === 0) return;
     const now = Date.now();
+
+    // 古くなった live override (KO から OVERRIDE_TTL_MS 以上経過) を掃除。
+    // base に無い ID は触らない (将来 matches.json から消えたデータを尊重)。
+    const overrides = loadMatchOverrides();
+    for (const id of Object.keys(overrides)) {
+      const m = list.find((x) => x.id === id);
+      if (!m) continue;
+      const ts = new Date(m.date).getTime();
+      if (Number.isFinite(ts) && now - ts > OVERRIDE_TTL_MS) {
+        clearMatchOverride(id);
+      }
+    }
+
     const targets = list.filter((m) => shouldPoll(m, now));
     if (targets.length === 0) return;
     const source = getLiveSource();

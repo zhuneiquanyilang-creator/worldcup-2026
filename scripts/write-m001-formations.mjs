@@ -7,16 +7,17 @@
 
 import fs from "fs";
 import path from "path";
+import { loadTeamPlayers } from "./_lib/players.mjs";
 
 const PATH = path.resolve("public/data/match_results.json");
-const playersPath = path.resolve("public/data/players.json");
-const players = JSON.parse(fs.readFileSync(playersPath, "utf8"));
 
-// (teamId, number) → 日本語名
+// (teamId, number) → 日本語名 (per-team JSON 由来)
 const nameByNum = new Map();
-for (const p of players) {
-  if (typeof p.number === "number") {
-    nameByNum.set(`${p.teamId}:${p.number}`, p.name);
+for (const teamId of ["MEX", "ZAF"]) {
+  for (const p of loadTeamPlayers(teamId)) {
+    if (typeof p.number === "number") {
+      nameByNum.set(`${p.teamId}:${p.number}`, p.name);
+    }
   }
 }
 function jp(teamId, number) {
