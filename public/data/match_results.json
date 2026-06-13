@@ -2048,7 +2048,7 @@
   },
   "m013": {
     "matchId": "m013",
-    "status": "scheduled",
+    "status": "live",
     "homeFormation": {
       "shape": "4-2-3-1",
       "starting": [
@@ -2056,7 +2056,7 @@
           "x": 8,
           "y": 50,
           "number": 1,
-          "name": "アリソン・ベッケル",
+          "name": "アリソン・ベッカー",
           "role": "GK"
         },
         {
@@ -2336,6 +2336,31 @@
           "name": "アナス・サラー・エディン"
         }
       ]
-    }
+    },
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "goals": [
+      {
+        "minute": 21,
+        "teamId": "MAR",
+        "type": "normal",
+        "playerId": "p_mar_13",
+        "playerName": "イスマエル・サイバリ",
+        "assistPlayerId": "p_mar_20",
+        "assistPlayerName": "ブライム・ディアス"
+      },
+      {
+        "minute": 32,
+        "teamId": "BRA",
+        "type": "normal",
+        "playerId": "p_bra_18",
+        "playerName": "ヴィニシウス・ジュニオール",
+        "assistPlayerId": "p_bra_16",
+        "assistPlayerName": "ブルーノ・ギマランイス"
+      }
+    ],
+    "liveLabel": "Live"
   }
 }

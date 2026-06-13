@@ -5,7 +5,6 @@ import { formatDateJa, formatTime } from "@/utils/date";
 import { stageLabel } from "@/utils/stage";
 import { matchNumber } from "@/utils/matchNumber";
 import { isLive } from "@/utils/matchTiming";
-import { useLiveMinute } from "@/hooks/useLiveMinute";
 import { Flag } from "@/components/common/Flag";
 import { LiveBadge } from "@/components/common/LiveBadge";
 import styles from "./ScoreBoard.module.css";
@@ -20,7 +19,6 @@ export function ScoreBoard({ match, homeTeam, awayTeam }: Props) {
   const score = match.score;
   const num = matchNumber(match.id);
   const live = isLive(match);
-  const minute = useLiveMinute(match);
   return (
     <div className={styles.board}>
       <div className={styles.meta}>
@@ -34,7 +32,7 @@ export function ScoreBoard({ match, homeTeam, awayTeam }: Props) {
         >
           {stageLabel(match.stage, match.groupId)}
         </span>
-        {live && <LiveBadge label={minute || "LIVE"} />}
+        {live && <LiveBadge label="LIVE" />}
         <span>{formatDateJa(match.date)} {formatTime(match.date)} KO</span>
         <span>{match.venue}</span>
       </div>

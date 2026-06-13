@@ -34,7 +34,9 @@ import { dataUrl } from "@/utils/dataUrl";
  * (m??? → { fdMatchId, fdHomeTeamId, fdAwayTeamId })。
  */
 const API_BASE = "/football-data-api"; // Vite dev proxy 経由
-const TEAM_MATCHES_TTL_MS = 60_000; // 1 分
+// キャッシュ TTL は poll interval (30s) より少し短く取って、各 poll でほぼ毎回
+// 新しい fetch が走るようにする。試合分数の表示遅延を最小化する目的。
+const TEAM_MATCHES_TTL_MS = 25_000;
 
 type MappingEntry = {
   fdMatchId: number;
@@ -61,6 +63,10 @@ type FdMatch = {
     | "AWARDED";
   minute?: number | null;
   injuryTime?: number | null;
+  /** ISO 8601。Football-Data 側で minute/score を最後に更新した時刻。
+   *  client 側の Date.now() ではなくこれを anchor に使うと、FD のキャッシュ遅延を
+   *  吸収して試合分数の表示ずれを減らせる。 */
+  lastUpdated?: string;
   homeTeam?: { id: number; name?: string };
   awayTeam?: { id: number; name?: string };
   score?: {
@@ -166,10 +172,20 @@ function mapStatus(s: FdMatch["status"]): MatchStatus | undefined {
   }
 }
 
-function statusLabel(s: FdMatch["status"], minute?: number | null): string {
+function statusLabel(
+  s: FdMatch["status"],
+  minute?: number | null,
+  duration?: string
+): string {
   if (s === "PAUSED") return "Halftime";
   if (s === "FINISHED") return "Full time";
   if (s === "IN_PLAY" || s === "LIVE") {
+    if (duration === "EXTRA_TIME") {
+      if (typeof minute === "number" && minute > 105) return "Extra time 2nd";
+      return "Extra time 1st";
+    }
+    if (duration === "PENALTY_SHOOTOUT") return "Penalty";
+    // REGULAR (= 1st/2nd half + ロスタイム)
     if (typeof minute === "number" && minute > 0) {
       return minute > 45 ? "2nd half" : "1st half";
     }
@@ -219,24 +235,49 @@ export class FootballDataLiveSource implements LiveSource {
       update.penaltyScore = { home: pk.home, away: pk.away };
     }
 
-    update.liveLabel = statusLabel(fx.status, fx.minute ?? undefined);
+    update.liveLabel = statusLabel(
+      fx.status,
+      fx.minute ?? undefined,
+      fx.score?.duration
+    );
 
-    // Football-Data.org は currentPeriodStart に相当するタイムスタンプを返さないので、
-    // ライブ中なら minute から逆算して「KO + minute 前」を current period start にする。
+    // Football-Data.org は currentPeriodStart 相当のタイムスタンプを返さないので、
+    // minute + duration から「今の period が何分前に始まったか」を逆算する。
+    // ここでの period 判定が `liveMinuteLabel` (utils/matchTiming.ts) の "1st/2nd/ET 1st/ET 2nd"
+    // と整合していないと、ページ表示と API の分数がずれる。
+    // 特に **2nd half ロスタイム** (例: m=92) を ET 1st と誤判定しないよう、
+    // `score.duration === "EXTRA_TIME"` のときだけ ET 扱いにする。
     if (status === "live" && typeof fx.minute === "number" && fx.minute > 0) {
+      // anchor は「FD 側で minute をスナップショットした時刻」= lastUpdated。
+      // これを Date.now() ではなく anchor として使うことで、FD のキャッシュや
+      // バックエンド更新の遅延 (= 数十秒〜1 分) を補正できる。lastUpdated が
+      // 5 分以上ずれている場合は壊れたデータの可能性が高いので Date.now() に
+      // フォールバック。
       const now = Date.now();
-      const m = fx.minute;
-      let periodElapsedSec: number;
-      if (m <= 45) {
-        periodElapsedSec = m * 60;
-      } else if (m <= 90) {
-        periodElapsedSec = (m - 45) * 60;
-      } else if (m <= 105) {
-        periodElapsedSec = (m - 90) * 60;
-      } else {
-        periodElapsedSec = (m - 105) * 60;
+      let anchorMs = now;
+      if (fx.lastUpdated) {
+        const lu = new Date(fx.lastUpdated).getTime();
+        if (Number.isFinite(lu) && now - lu < 5 * 60_000 && lu <= now) {
+          anchorMs = lu;
+        }
       }
-      update.currentPeriodStart = now - periodElapsedSec * 1000;
+
+      const m = fx.minute;
+      const duration = fx.score?.duration;
+      // この period 内の「現在の分番号」(1 始まり: 1〜45 が 1st half, 1〜45+N が 2nd half)
+      let periodMinute: number;
+      if (duration === "EXTRA_TIME") {
+        periodMinute = m <= 105 ? m - 90 : m - 105;
+      } else {
+        // REGULAR: m > 45 は 2nd half (+ロスタイム) として 45 起点
+        periodMinute = m <= 45 ? m : m - 45;
+      }
+      // **off-by-one 補正**: 描画側 (`periodElapsedMinutes` in matchTiming.ts) は
+      //   `floor(elapsed_sec / 60) + 1`
+      // で「現在何分目か」を返す。FD の minute=N と一致させるには、anchor 時点で
+      // floor+1 = N となるよう、elapsed_sec を `(N - 1) * 60` で逆算する。
+      const periodElapsedSec = Math.max(0, (periodMinute - 1) * 60);
+      update.currentPeriodStart = anchorMs - periodElapsedSec * 1000;
     }
 
     return update;

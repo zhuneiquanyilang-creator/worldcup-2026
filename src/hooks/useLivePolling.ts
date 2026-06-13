@@ -8,7 +8,9 @@ import {
 } from "@/utils/matchOverrides";
 import { getLiveSource } from "@/services/liveSource";
 
-const POLL_INTERVAL_MS = 60_000; // 1分
+// ポーリング間隔。短すぎると Football-Data の無料枠 (10 req/分) を超えるが、
+// 30 秒ならライブ中 5 試合まで余裕で収まる。試合分数の表示遅延を最小化する目的で短縮。
+const POLL_INTERVAL_MS = 30_000;
 
 /** KO から N 時間以上経過した試合は確実に終わっているので、その live override
  *  を localStorage から削除する。古い status="live" が file (match_results.json) の
