@@ -1106,12 +1106,25 @@ function GoalEditor({
           </thead>
           <tbody>
             {goals.map((g, i) => {
-              const players =
-                g.teamId === match.homeTeamId
-                  ? homePlayers
-                  : g.teamId === match.awayTeamId
+              // オウンゴール: 「決めた選手」は相手チームの選手 (自陣ゴールに入れた側)。
+              //   通常: g.teamId と一致するチームの選手から選ぶ
+              //   オウン: g.teamId と一致しないチーム (= 相手) の選手から選ぶ
+              const isOwn = g.type === "own";
+              const rawPlayers = isOwn
+                ? g.teamId === match.homeTeamId
                   ? awayPlayers
-                  : [];
+                  : g.teamId === match.awayTeamId
+                  ? homePlayers
+                  : []
+                : g.teamId === match.homeTeamId
+                ? homePlayers
+                : g.teamId === match.awayTeamId
+                ? awayPlayers
+                : [];
+              // BookingEditor / SubEditor と同じく背番号順にソート
+              const players = [...rawPlayers].sort(
+                (a, b) => (a.number ?? 999) - (b.number ?? 999)
+              );
               const noPlayerRoster = players.length === 0;
               const selectedExists = g.playerId && playerMap.has(g.playerId);
               const selectedAssistExists =
@@ -1150,9 +1163,23 @@ function GoalEditor({
                     <select
                       className={styles.input}
                       value={g.type}
-                      onChange={(ev) =>
-                        onUpdate(i, { type: ev.target.value as GoalType })
-                      }
+                      onChange={(ev) => {
+                        const newType = ev.target.value as GoalType;
+                        // own と他種別を切り替えるときは選手リストの母集団が
+                        // 相手チームに切り替わるので、playerId/playerName を
+                        // 一度クリアして選び直してもらう。
+                        const togglingOwn = (g.type === "own") !== (newType === "own");
+                        onUpdate(
+                          i,
+                          togglingOwn
+                            ? {
+                                type: newType,
+                                playerId: "",
+                                playerName: undefined,
+                              }
+                            : { type: newType }
+                        );
+                      }}
                     >
                       {(["normal", "penalty", "own"] as GoalType[]).map((t) => (
                         <option key={t} value={t}>
@@ -1176,6 +1203,7 @@ function GoalEditor({
                       </option>
                       {players.map((p) => (
                         <option key={p.id} value={p.id}>
+                          {p.number != null ? `#${p.number} ` : ""}
                           {p.name} ({p.position})
                         </option>
                       ))}
@@ -1206,6 +1234,7 @@ function GoalEditor({
                       </option>
                       {players.map((p) => (
                         <option key={p.id} value={p.id}>
+                          {p.number != null ? `#${p.number} ` : ""}
                           {p.name} ({p.position})
                         </option>
                       ))}

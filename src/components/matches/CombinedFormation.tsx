@@ -55,17 +55,21 @@ const FULL_NAME_TEAMS = new Set<string>(["KOR"]);
 
 type Props = {
   homeTeam: Team | undefined;
+  homeTeamId: string;
   homeLabel?: string;
   homeFormation?: FormationData;
   homeSubs?: Substitution[];
   homeBookings?: Booking[];
-  homeGoals?: Goal[];
   awayTeam: Team | undefined;
+  awayTeamId: string;
   awayLabel?: string;
   awayFormation?: FormationData;
   awaySubs?: Substitution[];
   awayBookings?: Booking[];
-  awayGoals?: Goal[];
+  /** 試合の全ゴール (両チーム分)。applySubsToLineup が teamId で振り分ける。
+   *  オウンゴール (type === "own") は相手チームの選手として帰属させるためにも、
+   *  ここでは home/away で事前フィルタしない全体配列を渡す。 */
+  goals?: Goal[];
 };
 
 /** スマホ幅 (640px 以下) かどうかを監視する。 */
@@ -152,28 +156,43 @@ const VERTICAL_LAYOUT: PitchLayout = {
 export function CombinedFormation({
   homeTeam,
   homeLabel,
+  homeTeamId,
   homeFormation,
   homeSubs,
   homeBookings,
-  homeGoals,
   awayTeam,
+  awayTeamId,
   awayLabel,
   awayFormation,
   awaySubs,
   awayBookings,
-  awayGoals,
+  goals,
 }: Props) {
   const isNarrow = useIsNarrow();
   const layout = isNarrow ? VERTICAL_LAYOUT : HORIZONTAL_LAYOUT;
   const Pitch = isNarrow ? VerticalPitch : HorizontalPitch;
 
   const homeProcessed = useMemo(
-    () => applySubsToLineup(homeFormation, homeSubs, homeBookings, homeGoals),
-    [homeFormation, homeSubs, homeBookings, homeGoals]
+    () =>
+      applySubsToLineup(
+        homeFormation,
+        homeTeamId,
+        homeSubs,
+        homeBookings,
+        goals
+      ),
+    [homeFormation, homeTeamId, homeSubs, homeBookings, goals]
   );
   const awayProcessed = useMemo(
-    () => applySubsToLineup(awayFormation, awaySubs, awayBookings, awayGoals),
-    [awayFormation, awaySubs, awayBookings, awayGoals]
+    () =>
+      applySubsToLineup(
+        awayFormation,
+        awayTeamId,
+        awaySubs,
+        awayBookings,
+        goals
+      ),
+    [awayFormation, awayTeamId, awaySubs, awayBookings, goals]
   );
 
   const homeHead = (
@@ -372,6 +391,43 @@ function GoalBadge({ count, x, y }: { count: number; x: number; y: number }) {
   );
 }
 
+/** オウンゴール用の赤いボールバッジ。複数 OG なら ⚽×N で表示。 */
+function OwnGoalBadge({
+  count,
+  x,
+  y,
+}: {
+  count: number;
+  x: number;
+  y: number;
+}) {
+  const multi = count > 1;
+  const width = multi ? 5.5 : 3.6;
+  return (
+    <g transform={`translate(${x}, ${y})`}>
+      <rect
+        x={-width / 2}
+        y={-1.6}
+        width={width}
+        height={3.2}
+        rx={0.8}
+        fill="#dc2626"
+      />
+      <text
+        x={multi ? 0.4 : -0.2}
+        y={0.1}
+        textAnchor="middle"
+        dominantBaseline="central"
+        fontSize={2.4}
+        fontWeight={800}
+        fill="#fff"
+      >
+        {multi ? `⚽×${count}` : "⚽"}
+      </text>
+    </g>
+  );
+}
+
 /** Ⓐ バッジ (丸の中に A)。複数アシストなら A2 等。 */
 function AssistBadge({ count, x, y }: { count: number; x: number; y: number }) {
   const multi = count > 1;
@@ -414,13 +470,20 @@ function Spot({
   const { yellow, red } = summarizeCards(spot.cards);
   const goalCount = spot.goals?.length ?? 0;
   const assistCount = spot.assists?.length ?? 0;
+  const ownGoalCount = spot.ownGoals?.length ?? 0;
 
-  // 右側に縦積みで配置 (上から ↓N' → ⚽ → Ⓐ)。
-  // 退出済みのときは ↓N' を最上段に置き、goal/assist はその下にずらす。
+  // 右側に縦積みで配置 (上から ↓N' → ⚽ → 🔴⚽ (OG) → Ⓐ)。
+  // 退出済みのときは ↓N' を最上段に置き、その下のバッジ群は順に 3 ずつ下げる。
   const STACK_X = 4.2;
   const subbedOutY = -4.2;
   const goalY = isSubbedOut ? 0 : -1;
-  const assistY = goalCount > 0 ? goalY + 3 : goalY;
+  const ownGoalY = goalCount > 0 ? goalY + 3 : goalY;
+  const assistY =
+    ownGoalCount > 0
+      ? ownGoalY + 3
+      : goalCount > 0
+      ? goalY + 3
+      : goalY;
 
   return (
     <g transform={`translate(${x}, ${y})`}>
@@ -496,6 +559,9 @@ function Spot({
         </g>
       )}
       {goalCount > 0 && <GoalBadge count={goalCount} x={STACK_X} y={goalY} />}
+      {ownGoalCount > 0 && (
+        <OwnGoalBadge count={ownGoalCount} x={STACK_X} y={ownGoalY} />
+      )}
       {assistCount > 0 && (
         <AssistBadge count={assistCount} x={STACK_X} y={assistY} />
       )}
@@ -519,6 +585,7 @@ function BenchList({
           const { yellow, red } = summarizeCards(p.cards);
           const goalCount = p.goals?.length ?? 0;
           const assistCount = p.assists?.length ?? 0;
+          const ownGoalCount = p.ownGoals?.length ?? 0;
           return (
             <li
               key={i}
@@ -528,10 +595,19 @@ function BenchList({
               <span className={styles.benchName}>{p.name}</span>
               {yellow && <span className={styles.cardYellow} aria-label="イエロー" />}
               {red && <span className={styles.cardRed} aria-label="レッド" />}
-              {/* ゴール・アシストは交代時間 (↑N') の直左に並べる */}
+              {/* ゴール・OG・アシストは交代時間 (↑N') の直左に並べる */}
               {goalCount > 0 && (
                 <span className={styles.goalBadge}>
                   ⚽{goalCount > 1 ? `×${goalCount}` : ""}
+                </span>
+              )}
+              {ownGoalCount > 0 && (
+                <span
+                  className={styles.ownGoalBadge}
+                  aria-label="オウンゴール"
+                  title="オウンゴール"
+                >
+                  ⚽{ownGoalCount > 1 ? `×${ownGoalCount}` : ""}
                 </span>
               )}
               {assistCount > 0 && (

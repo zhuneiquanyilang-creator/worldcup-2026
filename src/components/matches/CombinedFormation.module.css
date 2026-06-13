@@ -223,6 +223,17 @@
   letter-spacing: 0.03em;
 }
 
+/* オウンゴール: 赤地で「⚽」を表示。.goalBadge と同形状で色だけ差し替え。 */
+.ownGoalBadge {
+  background-color: #dc2626;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  letter-spacing: 0.03em;
+}
+
 .assistBadge {
   background-color: #0ea5e9;
   color: #fff;

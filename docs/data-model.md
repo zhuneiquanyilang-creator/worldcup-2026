@@ -106,6 +106,13 @@ type FormationData = {
 
 `MatchEvents` は `Goal` / `Booking` / `Substitution` を統合してソート表示。アイコン: ⚽ / 🟨 / 🟥 / 🔁。分の表示は `addedTime` が入っていれば `90+3` 形式 (`utils/eventMinute.ts` の `formatMinute`)。ソートも `eventSortKey` (100 進数キー) で 45+1 < 45+2 < 46 / 90+1 < 90+2 < 91 を保証する。`/edit/matches` の編集 UI では分の入力欄が text 形式で「90+3」をそのまま受け付けて `parseMinuteText` でデコードする。
 
+**オウンゴールの帰属ルール (`utils/applySubs.ts`)**: `Goal.teamId` は「得点が credit された側」、`Goal.playerName` は「ボールを自陣ゴールに入れてしまった選手 (相手チームの選手)」を指す。`CombinedFormation` ではこの整合のために `applySubsToLineup(formation, teamId, ...)` に **全ゴール + そのチームの teamId** を渡し、関数側で:
+
+- 通常得点 (`normal` / `penalty`): `g.teamId === teamId` の得点を `goals` フィールドに集計
+- オウンゴール (`own`): `g.teamId !== teamId` の得点 (= 相手チームに credit) を、そのチームの選手の `ownGoals` フィールドに集計
+
+として振り分ける。ピッチ上では緑の `⚽` (通常) / 赤の `⚽` (OG) と色で区別し、ベンチでは `.goalBadge` (緑) / `.ownGoalBadge` (赤) の同形バッジで表示。`/edit/matches` の GoalEditor では goal type が `own` のときだけ player ドロップダウンが**相手チームの選手リスト**に切り替わり、type を `own` と他とで切り替えると playerId/playerName が一度クリアされる。
+
 ### Player
 ```ts
 type Player = {

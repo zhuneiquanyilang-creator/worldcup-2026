@@ -29,9 +29,10 @@ export function MatchDetail({ match, teamMap, playerMap }: Props) {
   const allBookings = match.bookings ?? [];
   const homeBookings = allBookings.filter((b) => b.teamId === match.homeTeamId);
   const awayBookings = allBookings.filter((b) => b.teamId === match.awayTeamId);
+  // ゴールはオウンゴール対応のため CombinedFormation 側で teamId 振り分けする
+  // (前は home/away credit でフィルタしていたが、OG だけ反対チームの選手に
+  // 帰属させる必要があり applySubsToLineup に全ゴール + teamId を渡す形に統一)。
   const allGoals = match.goals ?? [];
-  const homeGoals = allGoals.filter((g) => g.teamId === match.homeTeamId);
-  const awayGoals = allGoals.filter((g) => g.teamId === match.awayTeamId);
 
   return (
     <div className={styles.wrapper}>
@@ -83,17 +84,18 @@ export function MatchDetail({ match, teamMap, playerMap }: Props) {
         hasFormations ? (
           <CombinedFormation
             homeTeam={home}
+            homeTeamId={match.homeTeamId}
             homeLabel={match.homeTeamLabel}
             homeFormation={match.homeFormation}
             homeSubs={homeSubs}
             homeBookings={homeBookings}
-            homeGoals={homeGoals}
             awayTeam={away}
+            awayTeamId={match.awayTeamId}
             awayLabel={match.awayTeamLabel}
             awayFormation={match.awayFormation}
             awaySubs={awaySubs}
             awayBookings={awayBookings}
-            awayGoals={awayGoals}
+            goals={allGoals}
           />
         ) : (
           <p className={styles.empty}>フォーメーションのデータがありません。</p>

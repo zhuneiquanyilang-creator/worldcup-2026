@@ -346,10 +346,11 @@
         "type": "R"
       },
       {
-        "minute": 91,
+        "minute": 90,
         "teamId": "MEX",
         "playerName": "セサル・モンテス",
-        "type": "R"
+        "type": "R",
+        "addedTime": 1
       }
     ],
     "substitutions": [
@@ -735,10 +736,11 @@
     },
     "bookings": [
       {
-        "minute": 96,
+        "minute": 90,
         "teamId": "KOR",
         "playerName": "イ・ギヒョク",
-        "type": "Y"
+        "type": "Y",
+        "addedTime": 6
       }
     ],
     "substitutions": [
@@ -1139,10 +1141,11 @@
         "type": "Y"
       },
       {
-        "minute": 93,
+        "minute": 90,
         "teamId": "BIH",
         "playerName": "ニコラ・カティッチ",
-        "type": "Y"
+        "type": "Y",
+        "addedTime": 3
       }
     ],
     "substitutions": [
@@ -1219,7 +1222,47 @@
       {
         "minute": 7,
         "teamId": "USA",
-        "type": "own"
+        "type": "own",
+        "playerId": "p_par_17",
+        "playerName": "ダミアン・ボバディジャ"
+      },
+      {
+        "minute": 31,
+        "teamId": "USA",
+        "type": "normal",
+        "playerId": "p_usa_23",
+        "playerName": "フォラリン・バログン",
+        "assistPlayerId": "p_usa_21",
+        "assistPlayerName": "クリスチャン・プリシッチ"
+      },
+      {
+        "minute": 45,
+        "teamId": "USA",
+        "type": "normal",
+        "addedTime": 5,
+        "playerId": "p_usa_23",
+        "playerName": "フォラリン・バログン",
+        "assistPlayerId": "p_usa_16",
+        "assistPlayerName": "マリク・ティルマン"
+      },
+      {
+        "minute": 73,
+        "teamId": "PAR",
+        "type": "normal",
+        "playerId": "p_par_16",
+        "playerName": "マウリシオ・マガリャエス・プラド",
+        "assistPlayerId": "p_par_20",
+        "assistPlayerName": "フリオ・エンシソ"
+      },
+      {
+        "minute": 90,
+        "teamId": "USA",
+        "type": "normal",
+        "addedTime": 8,
+        "playerId": "p_usa_17",
+        "playerName": "ジョヴァンニ・レイナ",
+        "assistPlayerId": "p_usa_10",
+        "assistPlayerName": "アレックス・フリーマン"
       }
     ],
     "homeFormation": {
@@ -1518,10 +1561,91 @@
         "type": "Y"
       },
       {
-        "minute": 14,
+        "minute": 53,
         "teamId": "PAR",
-        "playerName": "グスタボ・ゴメス",
+        "playerName": "ミゲル・アルミロン",
         "type": "Y"
+      },
+      {
+        "minute": 59,
+        "teamId": "USA",
+        "playerName": "タイラー・アダムズ",
+        "type": "Y"
+      },
+      {
+        "minute": 79,
+        "teamId": "PAR",
+        "playerName": "ディエゴ・ゴメス",
+        "type": "Y"
+      },
+      {
+        "minute": 88,
+        "teamId": "PAR",
+        "playerName": "アレックス・アルセ",
+        "type": "Y"
+      },
+      {
+        "minute": 90,
+        "teamId": "PAR",
+        "playerName": "フニオール・アロンソ",
+        "type": "Y",
+        "addedTime": 3
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": 46,
+        "teamId": "USA",
+        "inName": "セバスチャン・バーハルター",
+        "outName": "クリスチャン・プリシッチ"
+      },
+      {
+        "minute": 46,
+        "teamId": "PAR",
+        "inName": "マウリシオ・マガリャエス・プラド",
+        "outName": "ダミアン・ボバディジャ"
+      },
+      {
+        "minute": 62,
+        "teamId": "PAR",
+        "inName": "アレックス・アルセ",
+        "outName": "アントニオ・サナブリア"
+      },
+      {
+        "minute": 72,
+        "teamId": "USA",
+        "inName": "ティモシー・ウェア",
+        "outName": "セルジーニョ・デスト"
+      },
+      {
+        "minute": 72,
+        "teamId": "USA",
+        "inName": "リカルド・ペピ",
+        "outName": "フォラリン・バログン"
+      },
+      {
+        "minute": 79,
+        "teamId": "PAR",
+        "inName": "ビクトル・グスタボ・ベラスケス",
+        "outName": "フアン・カセレス"
+      },
+      {
+        "minute": 79,
+        "teamId": "PAR",
+        "inName": "アレハンドロ・ロメロ（カク）",
+        "outName": "ディエゴ・ゴメス"
+      },
+      {
+        "minute": 79,
+        "teamId": "PAR",
+        "inName": "ラモン・ソサ",
+        "outName": "ミゲル・アルミロン"
+      },
+      {
+        "minute": 82,
+        "teamId": "USA",
+        "inName": "ジョヴァンニ・レイナ",
+        "outName": "マリク・ティルマン"
       }
     ]
   }
