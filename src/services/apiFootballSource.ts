@@ -43,7 +43,6 @@ type ApiFixture = {
     id: number;
     date: string;
     timestamp: number;
-    periods?: { first?: number | null; second?: number | null };
     status: { long?: string; short?: string; elapsed?: number };
   };
   teams: {
@@ -388,14 +387,6 @@ export class ApiFootballLiveSource implements LiveSource {
       };
     }
     update.liveLabel = fx.fixture.status.long;
-    // currentPeriodStart: 2nd half が始まっていればそちら、なければ 1st half
-    const secondTs = fx.fixture.periods?.second;
-    const firstTs = fx.fixture.periods?.first;
-    if (typeof secondTs === "number" && secondTs > 0) {
-      update.currentPeriodStart = secondTs * 1000;
-    } else if (typeof firstTs === "number" && firstTs > 0) {
-      update.currentPeriodStart = firstTs * 1000;
-    }
 
     // 2. Lineups (キャッシュ一発)
     const homeApiId = fx.teams.home.id;

@@ -63,10 +63,6 @@ type FdMatch = {
     | "AWARDED";
   minute?: number | null;
   injuryTime?: number | null;
-  /** ISO 8601。Football-Data 側で minute/score を最後に更新した時刻。
-   *  client 側の Date.now() ではなくこれを anchor に使うと、FD のキャッシュ遅延を
-   *  吸収して試合分数の表示ずれを減らせる。 */
-  lastUpdated?: string;
   homeTeam?: { id: number; name?: string };
   awayTeam?: { id: number; name?: string };
   score?: {
@@ -240,45 +236,6 @@ export class FootballDataLiveSource implements LiveSource {
       fx.minute ?? undefined,
       fx.score?.duration
     );
-
-    // Football-Data.org は currentPeriodStart 相当のタイムスタンプを返さないので、
-    // minute + duration から「今の period が何分前に始まったか」を逆算する。
-    // ここでの period 判定が `liveMinuteLabel` (utils/matchTiming.ts) の "1st/2nd/ET 1st/ET 2nd"
-    // と整合していないと、ページ表示と API の分数がずれる。
-    // 特に **2nd half ロスタイム** (例: m=92) を ET 1st と誤判定しないよう、
-    // `score.duration === "EXTRA_TIME"` のときだけ ET 扱いにする。
-    if (status === "live" && typeof fx.minute === "number" && fx.minute > 0) {
-      // anchor は「FD 側で minute をスナップショットした時刻」= lastUpdated。
-      // これを Date.now() ではなく anchor として使うことで、FD のキャッシュや
-      // バックエンド更新の遅延 (= 数十秒〜1 分) を補正できる。lastUpdated が
-      // 5 分以上ずれている場合は壊れたデータの可能性が高いので Date.now() に
-      // フォールバック。
-      const now = Date.now();
-      let anchorMs = now;
-      if (fx.lastUpdated) {
-        const lu = new Date(fx.lastUpdated).getTime();
-        if (Number.isFinite(lu) && now - lu < 5 * 60_000 && lu <= now) {
-          anchorMs = lu;
-        }
-      }
-
-      const m = fx.minute;
-      const duration = fx.score?.duration;
-      // この period 内の「現在の分番号」(1 始まり: 1〜45 が 1st half, 1〜45+N が 2nd half)
-      let periodMinute: number;
-      if (duration === "EXTRA_TIME") {
-        periodMinute = m <= 105 ? m - 90 : m - 105;
-      } else {
-        // REGULAR: m > 45 は 2nd half (+ロスタイム) として 45 起点
-        periodMinute = m <= 45 ? m : m - 45;
-      }
-      // **off-by-one 補正**: 描画側 (`periodElapsedMinutes` in matchTiming.ts) は
-      //   `floor(elapsed_sec / 60) + 1`
-      // で「現在何分目か」を返す。FD の minute=N と一致させるには、anchor 時点で
-      // floor+1 = N となるよう、elapsed_sec を `(N - 1) * 60` で逆算する。
-      const periodElapsedSec = Math.max(0, (periodMinute - 1) * 60);
-      update.currentPeriodStart = anchorMs - periodElapsedSec * 1000;
-    }
 
     return update;
   }

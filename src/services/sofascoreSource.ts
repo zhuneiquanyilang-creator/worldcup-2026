@@ -97,7 +97,6 @@ type SofaEvent = {
   isLive?: boolean;
   homeScore?: { current?: number; penalties?: number };
   awayScore?: { current?: number; penalties?: number };
-  time?: { currentPeriodStartTimestamp?: number };
   homeTeam?: { name?: string };
   awayTeam?: { name?: string };
 };
@@ -281,10 +280,6 @@ export class SofascoreLiveSource implements LiveSource {
     if (score) update.score = score;
     if (penaltyScore) update.penaltyScore = penaltyScore;
     update.liveLabel = event.status?.description;
-    // 現在 period (1st half / 2nd half / ET 等) の開始時刻 (Sofascore は秒単位なので ms に変換)
-    if (typeof event.time?.currentPeriodStartTimestamp === "number") {
-      update.currentPeriodStart = event.time.currentPeriodStartTimestamp * 1000;
-    }
 
     // ラインアップ取得 (confirmed === true なら確実、false でも予想スタメンが入ることが多い)
     // ここで取った lineup は、後段のインシデント処理で「英語名 → shirtNumber」のブリッジにも使う。

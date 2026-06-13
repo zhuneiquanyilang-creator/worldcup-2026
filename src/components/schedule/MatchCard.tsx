@@ -6,7 +6,6 @@ import { formatTime } from "@/utils/date";
 import { stageLabel } from "@/utils/stage";
 import { matchNumber } from "@/utils/matchNumber";
 import { isLive } from "@/utils/matchTiming";
-import { useLiveMinute } from "@/hooks/useLiveMinute";
 import { TeamLink } from "@/components/common/TeamLink";
 import { LiveBadge } from "@/components/common/LiveBadge";
 import { BroadcasterList } from "@/components/common/BroadcasterBadge";
@@ -28,7 +27,6 @@ export function MatchCard({ match, teamMap }: Props) {
   // ここで status を要求する必要はない。
   const hasScore = !!match.score;
   const live = isLive(match);
-  const minute = useLiveMinute(match);
   const num = matchNumber(match.id);
   const navigate = useNavigate();
 
@@ -60,7 +58,7 @@ export function MatchCard({ match, teamMap }: Props) {
           >
             {stageLabel(match.stage, match.groupId)}
           </span>
-          {live && <LiveBadge label={minute || "LIVE"} />}
+          {live && <LiveBadge label="LIVE" />}
         </span>
         <span className={styles.time}>{formatTime(match.date)} KO</span>
       </div>

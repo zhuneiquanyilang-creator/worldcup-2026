@@ -2375,6 +2375,20 @@
         "playerName": "ロジェール・イバニェス",
         "type": "Y"
       }
+    ],
+    "substitutions": [
+      {
+        "minute": 46,
+        "teamId": "BRA",
+        "inName": "ダニーロ",
+        "outName": "ロジェール・イバニェス"
+      },
+      {
+        "minute": 46,
+        "teamId": "BRA",
+        "inName": "ファビーニョ",
+        "outName": "カゼミーロ"
+      }
     ]
   }
 }
