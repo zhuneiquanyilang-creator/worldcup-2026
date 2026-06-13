@@ -2361,6 +2361,20 @@
         "assistPlayerName": "ブルーノ・ギマランイス"
       }
     ],
-    "liveLabel": "Live"
+    "liveLabel": "Live",
+    "bookings": [
+      {
+        "minute": 37,
+        "teamId": "BRA",
+        "playerName": "カゼミーロ",
+        "type": "Y"
+      },
+      {
+        "minute": 43,
+        "teamId": "BRA",
+        "playerName": "ロジェール・イバニェス",
+        "type": "Y"
+      }
+    ]
   }
 }

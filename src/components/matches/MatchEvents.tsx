@@ -2,7 +2,6 @@ import { useMemo } from "react";
 import type { Match, Goal, Booking, Substitution } from "@/types/match";
 import type { Player } from "@/types/player";
 import type { Team } from "@/types/team";
-import { useLiveMinute } from "@/hooks/useLiveMinute";
 import { eventSortKey, formatMinute } from "@/utils/eventMinute";
 import styles from "./MatchEvents.module.css";
 
@@ -51,10 +50,6 @@ function resolveName(
 }
 
 export function MatchEvents({ match, teamMap, playerMap }: Props) {
-  // ライブ中の経過分ラベル (1秒毎更新)。 useMemo の依存に含めることで
-  // 45 分を超えた瞬間 HT 表示が反映される。
-  const minuteLabel = useLiveMinute(match);
-
   const events = useMemo<EventItem[]>(() => {
     const list: EventItem[] = [];
     (match.goals ?? []).forEach((g) =>
@@ -98,25 +93,8 @@ export function MatchEvents({ match, teamMap, playerMap }: Props) {
       }
       list.push(ev);
     }
-    // 2nd half のイベントが無くても、以下の場合は末尾に HT を挿入:
-    //  - 試合終了済み
-    //  - liveLabel が Halftime
-    //  - useLiveMinute が "HT" を返している (ハーフタイム中)
-    //  - useLiveMinute が 46' 以上を返している (後半進行中だがまだイベントなし)
-    if (!htInserted) {
-      const ll = (match.liveLabel ?? "").toLowerCase();
-      const atHt = ll.includes("halftime") || ll.includes("half time") || minuteLabel === "HT";
-      const finished = match.status === "finished";
-      const minuteInt = parseInt(minuteLabel, 10);
-      const liveBeyondHt =
-        match.status === "live" &&
-        (minuteLabel === "HT" || (Number.isFinite(minuteInt) && minuteInt > 45));
-      if ((atHt || finished || liveBeyondHt) && list.length > 0) {
-        list.push({ kind: "halftime" });
-      }
-    }
     return list;
-  }, [events, match.liveLabel, match.status, minuteLabel]);
+  }, [events]);
 
   if (events.length === 0) {
     return (
