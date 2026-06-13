@@ -60,7 +60,7 @@
     "teamId": "MEX",
     "position": "MF",
     "birthDate": "2000-05-08",
-    "club": "クルス・アスル（メキシコ）",
+    "club": "クルス・アスル",
     "goals": 0,
     "assists": 0,
     "number": 6
@@ -82,7 +82,7 @@
     "teamId": "MEX",
     "position": "MF",
     "birthDate": "1997-04-09",
-    "club": "ベティス（スペイン）",
+    "club": "ベティス",
     "goals": 0,
     "assists": 0,
     "number": 8
@@ -159,7 +159,7 @@
     "teamId": "MEX",
     "position": "DF",
     "birthDate": "2000-05-23",
-    "club": "アメリカ（メキシコ）",
+    "club": "アメリカ",
     "goals": 0,
     "assists": 0,
     "number": 15
@@ -203,7 +203,7 @@
     "teamId": "MEX",
     "position": "MF",
     "birthDate": "2008-10-14",
-    "club": "ティフアナ（メキシコ）",
+    "club": "ティフアナ",
     "goals": 0,
     "assists": 0,
     "number": 19
@@ -236,7 +236,7 @@
     "teamId": "MEX",
     "position": "FW",
     "birthDate": "1995-03-15",
-    "club": "UNAMプマス（メキシコ）",
+    "club": "UNAMプマス",
     "goals": 0,
     "assists": 0,
     "number": 22
