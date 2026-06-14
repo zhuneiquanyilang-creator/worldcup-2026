@@ -3651,7 +3651,7 @@
   },
   "m031": {
     "matchId": "m031",
-    "status": "live",
+    "status": "finished",
     "homeFormation": {
       "shape": "4-3-3",
       "starting": [
@@ -3984,7 +3984,7 @@
         "assistPlayerName": "小川航基"
       }
     ],
-    "liveLabel": "Live",
+    "liveLabel": "Full time",
     "bookings": [
       {
         "minute": 61,
@@ -3997,6 +3997,13 @@
         "teamId": "NED",
         "playerName": "メンフィス・デパイ",
         "type": "Y"
+      },
+      {
+        "minute": 90,
+        "teamId": "NED",
+        "playerName": "ミッキー・ファンデフェン",
+        "type": "Y",
+        "addedTime": 1
       }
     ],
     "substitutions": [
