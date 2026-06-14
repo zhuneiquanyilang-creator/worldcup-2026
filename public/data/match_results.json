@@ -2441,7 +2441,7 @@
   },
   "m014": {
     "matchId": "m014",
-    "status": "live",
+    "status": "finished",
     "homeFormation": {
       "shape": "4-4-2",
       "starting": [
@@ -2734,6 +2734,477 @@
       "home": 0,
       "away": 1
     },
-    "liveLabel": "Live"
+    "liveLabel": "Live",
+    "goals": [
+      {
+        "minute": 29,
+        "teamId": "SCO",
+        "type": "normal",
+        "playerId": "p_sco_16",
+        "playerName": "ジョン・マッギン"
+      }
+    ],
+    "bookings": [
+      {
+        "minute": 39,
+        "teamId": "HAI",
+        "playerName": "ジャン・リクネル・ベルガルド",
+        "type": "Y"
+      },
+      {
+        "minute": 46,
+        "teamId": "SCO",
+        "playerName": "アーロン・ヒッキー",
+        "type": "Y"
+      },
+      {
+        "minute": 90,
+        "teamId": "SCO",
+        "playerName": "フィンドレー・カーティス",
+        "type": "Y",
+        "addedTime": 1
+      },
+      {
+        "minute": 90,
+        "teamId": "SCO",
+        "playerName": "ケニー・マクリーン",
+        "type": "Y",
+        "addedTime": 5
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": 61,
+        "teamId": "HAI",
+        "inName": "ジョズエ・カジミール",
+        "outName": "ドン・ディードソン・ルイシウス"
+      },
+      {
+        "minute": 75,
+        "teamId": "SCO",
+        "inName": "ネイサン・パターソン",
+        "outName": "アーロン・ヒッキー"
+      },
+      {
+        "minute": 75,
+        "teamId": "SCO",
+        "inName": "ライアン・クリスティ",
+        "outName": "ベン・ドーク"
+      },
+      {
+        "minute": 75,
+        "teamId": "SCO",
+        "inName": "リンドン・ダイクス",
+        "outName": "シェ・アダムス"
+      },
+      {
+        "minute": 75,
+        "teamId": "HAI",
+        "inName": "レニー・ジョセフ",
+        "outName": "ウィルソン・イシドール"
+      },
+      {
+        "minute": 82,
+        "teamId": "SCO",
+        "inName": "フィンドレー・カーティス",
+        "outName": "ジョン・マッギン"
+      },
+      {
+        "minute": 82,
+        "teamId": "SCO",
+        "inName": "ケニー・マクリーン",
+        "outName": "ローレンス・シャンクランド"
+      },
+      {
+        "minute": 85,
+        "teamId": "HAI",
+        "inName": "ヤシン・フォルテュネ",
+        "outName": "ルベン・プロヴィデンス"
+      }
+    ]
+  },
+  "m020": {
+    "matchId": "m020",
+    "status": "finished",
+    "score": {
+      "home": 2,
+      "away": 0
+    },
+    "homeFormation": {
+      "shape": "5-4-1",
+      "starting": [
+        {
+          "x": 8,
+          "y": 50,
+          "number": 18,
+          "name": "パトリック・ビーチ",
+          "role": "GK"
+        },
+        {
+          "x": 28,
+          "y": 10,
+          "number": 4,
+          "name": "ジェイコブ・イタリアーノ",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 30,
+          "number": 3,
+          "name": "アレッサンドロ・チルカティ",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 50,
+          "number": 19,
+          "name": "ハリー・ソウター",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 70,
+          "number": 21,
+          "name": "キャメロン・バージェス",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 90,
+          "number": 5,
+          "name": "ジョーダン・ボス",
+          "role": "DF"
+        },
+        {
+          "x": 54,
+          "y": 12.5,
+          "number": 8,
+          "name": "コナー・メットカーフ",
+          "role": "MF"
+        },
+        {
+          "x": 54,
+          "y": 37.5,
+          "number": 13,
+          "name": "エイデン・オニール",
+          "role": "MF"
+        },
+        {
+          "x": 54,
+          "y": 62.5,
+          "number": 24,
+          "name": "ポール・オコン・エングストラー",
+          "role": "MF"
+        },
+        {
+          "x": 54,
+          "y": 87.5,
+          "number": 17,
+          "name": "ネストリ・イランクンダ",
+          "role": "MF"
+        },
+        {
+          "x": 80,
+          "y": 50,
+          "number": 9,
+          "name": "モハメド・トゥーレ",
+          "role": "FW"
+        }
+      ],
+      "bench": [
+        {
+          "number": 1,
+          "name": "マシュー・ライアン"
+        },
+        {
+          "number": 2,
+          "name": "ミロシュ・デゲネク"
+        },
+        {
+          "number": 6,
+          "name": "ジェイソン・ゲリア"
+        },
+        {
+          "number": 7,
+          "name": "マシュー・レッキー"
+        },
+        {
+          "number": 10,
+          "name": "アイディン・フルスティッチ"
+        },
+        {
+          "number": 11,
+          "name": "アワー・マビル"
+        },
+        {
+          "number": 12,
+          "name": "ポール・イッツォ"
+        },
+        {
+          "number": 14,
+          "name": "キャメロン・デヴリン"
+        },
+        {
+          "number": 15,
+          "name": "カイ・トレウィン"
+        },
+        {
+          "number": 16,
+          "name": "アジズ・ベヒッチ"
+        },
+        {
+          "number": 20,
+          "name": "クリスチャン・ヴォルパート"
+        },
+        {
+          "number": 22,
+          "name": "ジャクソン・アーヴァイン"
+        },
+        {
+          "number": 23,
+          "name": "ニシャン・ヴェルピレイ"
+        },
+        {
+          "number": 25,
+          "name": "ルーカス・ヘリントン"
+        },
+        {
+          "number": 26,
+          "name": "テテ・イェンギ"
+        }
+      ]
+    },
+    "awayFormation": {
+      "shape": "4-2-3-1",
+      "starting": [
+        {
+          "x": 8,
+          "y": 50,
+          "number": 23,
+          "name": "ウグルジャン・チャクル",
+          "role": "GK"
+        },
+        {
+          "x": 28,
+          "y": 12.5,
+          "number": 2,
+          "name": "ゼキ・チェリク",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 37.5,
+          "number": 3,
+          "name": "メリフ・デミラル",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 62.5,
+          "number": 14,
+          "name": "アブドゥルケリム・バルダクチ",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 87.5,
+          "number": 20,
+          "name": "フェルディ・カディオール",
+          "role": "DF"
+        },
+        {
+          "x": 45.33333333333333,
+          "y": 25,
+          "number": 16,
+          "name": "イスマイル・ユクセク",
+          "role": "MF"
+        },
+        {
+          "x": 45.33333333333333,
+          "y": 75,
+          "number": 10,
+          "name": "ハカン・チャルハノール",
+          "role": "MF"
+        },
+        {
+          "x": 62.666666666666664,
+          "y": 16.666666666666664,
+          "number": 8,
+          "name": "アルダ・ギュレル",
+          "role": "MF"
+        },
+        {
+          "x": 62.666666666666664,
+          "y": 50,
+          "number": 6,
+          "name": "オルクン・コクチュ",
+          "role": "MF"
+        },
+        {
+          "x": 62.666666666666664,
+          "y": 83.33333333333334,
+          "number": 21,
+          "name": "バルシュ・ユルマズ",
+          "role": "MF"
+        },
+        {
+          "x": 80,
+          "y": 50,
+          "number": 7,
+          "name": "ケレム・アクトゥルコール",
+          "role": "FW"
+        }
+      ],
+      "bench": [
+        {
+          "number": 1,
+          "name": "メルト・ギュノク"
+        },
+        {
+          "number": 4,
+          "name": "チャーラル・ソユンジュ"
+        },
+        {
+          "number": 5,
+          "name": "サリフ・オズジャン"
+        },
+        {
+          "number": 9,
+          "name": "デニズ・ギュル"
+        },
+        {
+          "number": 11,
+          "name": "ケナン・ユルディズ"
+        },
+        {
+          "number": 12,
+          "name": "アルタイ・バユンドゥル"
+        },
+        {
+          "number": 13,
+          "name": "エレン・エルマル"
+        },
+        {
+          "number": 15,
+          "name": "オザン・カバク"
+        },
+        {
+          "number": 17,
+          "name": "イルファン・ジャン・カフベジ"
+        },
+        {
+          "number": 18,
+          "name": "メルト・ミュルドゥル"
+        },
+        {
+          "number": 19,
+          "name": "ユヌス・アクギュン"
+        },
+        {
+          "number": 22,
+          "name": "カーン・アイハン"
+        },
+        {
+          "number": 24,
+          "name": "オウズ・アイドゥン"
+        },
+        {
+          "number": 25,
+          "name": "サメト・アカイディン"
+        },
+        {
+          "number": 26,
+          "name": "ジャン・ウズン"
+        }
+      ]
+    },
+    "goals": [
+      {
+        "minute": 27,
+        "teamId": "AUS",
+        "type": "normal",
+        "playerId": "p_aus_20",
+        "playerName": "ネストリ・イランクンダ",
+        "assistPlayerId": "p_aus_14",
+        "assistPlayerName": "ポール・オコン・エングストラー"
+      },
+      {
+        "minute": 75,
+        "teamId": "AUS",
+        "type": "normal",
+        "playerId": "p_aus_18",
+        "playerName": "コナー・メットカーフ"
+      }
+    ],
+    "bookings": [
+      {
+        "minute": 86,
+        "teamId": "TUR",
+        "playerName": "ユヌス・アクギュン",
+        "type": "Y"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": 46,
+        "teamId": "TUR",
+        "inName": "ケナン・ユルディズ",
+        "outName": "バルシュ・ユルマズ"
+      },
+      {
+        "minute": 61,
+        "teamId": "AUS",
+        "inName": "ニシャン・ヴェルピレイ",
+        "outName": "ネストリ・イランクンダ"
+      },
+      {
+        "minute": 62,
+        "teamId": "TUR",
+        "inName": "ユヌス・アクギュン",
+        "outName": "オルクン・コクチュ"
+      },
+      {
+        "minute": 74,
+        "teamId": "AUS",
+        "inName": "ジェイソン・ゲリア",
+        "outName": "ジェイコブ・イタリアーノ"
+      },
+      {
+        "minute": 74,
+        "teamId": "AUS",
+        "inName": "テテ・イェンギ",
+        "outName": "モハメド・トゥーレ"
+      },
+      {
+        "minute": 81,
+        "teamId": "TUR",
+        "inName": "メルト・ミュルドゥル",
+        "outName": "ゼキ・チェリク"
+      },
+      {
+        "minute": 81,
+        "teamId": "TUR",
+        "inName": "サリフ・オズジャン",
+        "outName": "イスマイル・ユクセク"
+      },
+      {
+        "minute": 83,
+        "teamId": "AUS",
+        "inName": "アジズ・ベヒッチ",
+        "outName": "ジョーダン・ボス"
+      },
+      {
+        "minute": 83,
+        "teamId": "AUS",
+        "inName": "ジャクソン・アーヴァイン",
+        "outName": "ポール・オコン・エングストラー"
+      },
+      {
+        "minute": 85,
+        "teamId": "TUR",
+        "inName": "デニズ・ギュル",
+        "outName": "ケレム・アクトゥルコール"
+      }
+    ]
   }
 }
