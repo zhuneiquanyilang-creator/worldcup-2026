@@ -3943,7 +3943,7 @@
       ]
     },
     "score": {
-      "home": 1,
+      "home": 2,
       "away": 1
     },
     "goals": [
@@ -3982,6 +3982,50 @@
         "teamId": "NED",
         "playerName": "クリセンシオ・サマーフィル",
         "type": "Y"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": 66,
+        "teamId": "JPN",
+        "inName": "伊東純也",
+        "outName": "前田大然"
+      },
+      {
+        "minute": 70,
+        "teamId": "NED",
+        "inName": "メンフィス・デパイ",
+        "outName": "ドニエル・マレン"
+      },
+      {
+        "minute": 70,
+        "teamId": "NED",
+        "inName": "トゥーン・コープマイネルス",
+        "outName": "クリセンシオ・サマーフィル"
+      },
+      {
+        "minute": 70,
+        "teamId": "NED",
+        "inName": "クインテン・ティンバー",
+        "outName": "タイアニ・ラインデルス"
+      },
+      {
+        "minute": 75,
+        "teamId": "JPN",
+        "inName": "菅原由勢",
+        "outName": "堂安律"
+      },
+      {
+        "minute": 75,
+        "teamId": "JPN",
+        "inName": "冨安健洋",
+        "outName": "渡辺剛"
+      },
+      {
+        "minute": 75,
+        "teamId": "JPN",
+        "inName": "小川航基",
+        "outName": "久保建英"
       }
     ]
   }
