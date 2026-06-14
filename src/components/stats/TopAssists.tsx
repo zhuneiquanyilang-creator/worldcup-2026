@@ -6,14 +6,15 @@ import styles from "./StatsTable.module.css";
 type Props = {
   players: Player[];
   teamMap: Map<string, Team>;
+  /** 表示上限。未指定ならアシスト > 0 の選手は全員表示。 */
   limit?: number;
 };
 
-export function TopAssists({ players, teamMap, limit = 10 }: Props) {
-  const sorted = [...players]
+export function TopAssists({ players, teamMap, limit }: Props) {
+  const filtered = [...players]
     .filter((p) => p.assists > 0)
-    .sort((a, b) => b.assists - a.assists || b.goals - a.goals)
-    .slice(0, limit);
+    .sort((a, b) => b.assists - a.assists || b.goals - a.goals);
+  const sorted = limit ? filtered.slice(0, limit) : filtered;
 
   // 同アシスト数のときは同順位、次の異なる値は飛び順位 (1, 1, 3 形式)。
   let prevAssists = -1;

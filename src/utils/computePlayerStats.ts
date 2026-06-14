@@ -39,7 +39,11 @@ export function computePlayerStats(
   };
 
   for (const m of matches) {
-    if (m.status !== "finished" || !m.goals) continue;
+    // `goals` が入っていれば status は問わない (= 「今の goals 配列で確定したと仮定」)。
+    // 厳格に status==="finished" にすると、古い live override が status だけ
+    // "live"/"scheduled" で残っているケースで match_results.json の goals が
+    // 反映されなくなる (computeStandings と同じ理由)。
+    if (!m.goals || m.goals.length === 0) continue;
     for (const g of m.goals) {
       if (g.type !== "own") {
         const scorerId = resolve(g.playerId, g.playerName);
