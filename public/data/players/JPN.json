@@ -49,7 +49,7 @@
     "teamId": "JPN",
     "position": "DF",
     "birthDate": "1986-09-12",
-    "club": "FC東京（日本）",
+    "club": "FC東京",
     "goals": 0,
     "assists": 0,
     "number": 5
@@ -247,7 +247,7 @@
     "teamId": "JPN",
     "position": "GK",
     "birthDate": "1999-03-03",
-    "club": "鹿島アントラーズ（日本）",
+    "club": "鹿島アントラーズ",
     "goals": 0,
     "assists": 0,
     "number": 23

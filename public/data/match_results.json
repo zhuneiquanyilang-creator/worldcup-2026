@@ -3944,7 +3944,7 @@
     },
     "score": {
       "home": 2,
-      "away": 1
+      "away": 2
     },
     "goals": [
       {
@@ -3973,6 +3973,15 @@
         "playerName": "クリセンシオ・サマーフィル",
         "assistPlayerId": "p_ned_17",
         "assistPlayerName": "ライアン・フラーフェンベルフ"
+      },
+      {
+        "minute": 89,
+        "teamId": "JPN",
+        "type": "normal",
+        "playerId": "p_jpn_19",
+        "playerName": "鎌田大地",
+        "assistPlayerId": "p_jpn_25",
+        "assistPlayerName": "小川航基"
       }
     ],
     "liveLabel": "Live",
@@ -3981,6 +3990,12 @@
         "minute": 61,
         "teamId": "NED",
         "playerName": "クリセンシオ・サマーフィル",
+        "type": "Y"
+      },
+      {
+        "minute": 83,
+        "teamId": "NED",
+        "playerName": "メンフィス・デパイ",
         "type": "Y"
       }
     ],
@@ -4026,6 +4041,24 @@
         "teamId": "JPN",
         "inName": "小川航基",
         "outName": "久保建英"
+      },
+      {
+        "minute": 81,
+        "teamId": "NED",
+        "inName": "ナタン・アケ",
+        "outName": "ライアン・フラーフェンベルフ"
+      },
+      {
+        "minute": 84,
+        "teamId": "JPN",
+        "inName": "塩貝健斗",
+        "outName": "上田綺世"
+      },
+      {
+        "minute": 85,
+        "teamId": "NED",
+        "inName": "ブライアン・ブロビー",
+        "outName": "コーディ・ガクポ"
       }
     ]
   }
