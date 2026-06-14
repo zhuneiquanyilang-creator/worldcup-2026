@@ -19,7 +19,7 @@
     "club": "VVVフェンロ（オランダ）",
     "goals": 0,
     "assists": 0,
-    "number": 2
+    "number": 26
   },
   {
     "id": "p_cur_3",
@@ -30,7 +30,7 @@
     "club": "テルスター（オランダ）",
     "goals": 0,
     "assists": 0,
-    "number": 3
+    "number": 25
   },
   {
     "id": "p_cur_4",
@@ -41,7 +41,7 @@
     "club": "アブハー（サウジアラビア）",
     "goals": 0,
     "assists": 0,
-    "number": 4
+    "number": 3
   },
   {
     "id": "p_cur_5",
@@ -52,7 +52,7 @@
     "club": "コンヤスポル（トルコ）",
     "goals": 0,
     "assists": 0,
-    "number": 5
+    "number": 23
   },
   {
     "id": "p_cur_6",
@@ -63,7 +63,7 @@
     "club": "カイセリスポル（トルコ）",
     "goals": 0,
     "assists": 0,
-    "number": 6
+    "number": 20
   },
   {
     "id": "p_cur_7",
@@ -74,7 +74,7 @@
     "club": "RKCワールウェイク（オランダ）",
     "goals": 0,
     "assists": 0,
-    "number": 7
+    "number": 4
   },
   {
     "id": "p_cur_8",
@@ -85,7 +85,7 @@
     "club": "スパルタ・ロッテルダム（オランダ）",
     "goals": 0,
     "assists": 0,
-    "number": 8
+    "number": 2
   },
   {
     "id": "p_cur_9",
@@ -96,7 +96,7 @@
     "club": "PECズウォレ（オランダ）",
     "goals": 0,
     "assists": 0,
-    "number": 9
+    "number": 5
   },
   {
     "id": "p_cur_10",
@@ -107,7 +107,7 @@
     "club": "NECナイメヘン（オランダ）",
     "goals": 0,
     "assists": 0,
-    "number": 10
+    "number": 24
   },
   {
     "id": "p_cur_11",
@@ -118,7 +118,7 @@
     "club": "PSVアイントホーフェン（オランダ）",
     "goals": 0,
     "assists": 0,
-    "number": 11
+    "number": 18
   },
   {
     "id": "p_cur_12",
@@ -129,7 +129,7 @@
     "club": "FCチューリッヒ（スイス）",
     "goals": 0,
     "assists": 0,
-    "number": 12
+    "number": 8
   },
   {
     "id": "p_cur_13",
@@ -140,7 +140,7 @@
     "club": "ウードゥル（トルコ）",
     "goals": 0,
     "assists": 0,
-    "number": 13
+    "number": 10
   },
   {
     "id": "p_cur_14",
@@ -151,7 +151,7 @@
     "club": "フォーレンダム（オランダ）",
     "goals": 0,
     "assists": 0,
-    "number": 14
+    "number": 7
   },
   {
     "id": "p_cur_15",
@@ -162,7 +162,7 @@
     "club": "デン・ボッシュ（オランダ）",
     "goals": 0,
     "assists": 0,
-    "number": 15
+    "number": 22
   },
   {
     "id": "p_cur_16",
@@ -173,7 +173,7 @@
     "club": "テルスター（オランダ）",
     "goals": 0,
     "assists": 0,
-    "number": 16
+    "number": 13
   },
   {
     "id": "p_cur_17",
@@ -184,7 +184,7 @@
     "club": "RKCワールウェイク（オランダ）",
     "goals": 0,
     "assists": 0,
-    "number": 17
+    "number": 6
   },
   {
     "id": "p_cur_18",
@@ -195,7 +195,7 @@
     "club": "ロザラム・ユナイテッド（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 18
+    "number": 15
   },
   {
     "id": "p_cur_19",
@@ -206,7 +206,7 @@
     "club": "ミドルスブラ（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 19
+    "number": 12
   },
   {
     "id": "p_cur_20",
@@ -217,7 +217,7 @@
     "club": "シェフィールド・ユナイテッド（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 20
+    "number": 21
   },
   {
     "id": "p_cur_21",
@@ -228,7 +228,7 @@
     "club": "ベフェレン（ベルギー）",
     "goals": 0,
     "assists": 0,
-    "number": 21
+    "number": 16
   },
   {
     "id": "p_cur_22",
@@ -239,7 +239,7 @@
     "club": "フォーレンダム（オランダ）",
     "goals": 0,
     "assists": 0,
-    "number": 22
+    "number": 17
   },
   {
     "id": "p_cur_23",
@@ -250,7 +250,7 @@
     "club": "キフィシア（ギリシャ）",
     "goals": 0,
     "assists": 0,
-    "number": 23
+    "number": 11
   },
   {
     "id": "p_cur_24",
@@ -261,7 +261,7 @@
     "club": "マッカビ・ハイファ（イスラエル）",
     "goals": 0,
     "assists": 0,
-    "number": 24
+    "number": 14
   },
   {
     "id": "p_cur_25",
@@ -272,7 +272,7 @@
     "club": "マイアミFC（アメリカ）",
     "goals": 0,
     "assists": 0,
-    "number": 25
+    "number": 9
   },
   {
     "id": "p_cur_26",
@@ -283,6 +283,6 @@
     "club": "トレンガヌ（マレーシア）",
     "goals": 0,
     "assists": 0,
-    "number": 26
+    "number": 19
   }
 ]
