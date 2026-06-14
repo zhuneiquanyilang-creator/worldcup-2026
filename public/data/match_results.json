@@ -3206,5 +3206,422 @@
         "outName": "ケレム・アクトゥルコール"
       }
     ]
+  },
+  "m025": {
+    "matchId": "m025",
+    "status": "finished",
+    "score": {
+      "home": 7,
+      "away": 1
+    },
+    "homeFormation": {
+      "shape": "4-2-3-1",
+      "starting": [
+        {
+          "x": 8,
+          "y": 50,
+          "number": 1,
+          "name": "マヌエル・ノイアー",
+          "role": "GK"
+        },
+        {
+          "x": 28,
+          "y": 12.5,
+          "number": 6,
+          "name": "ヨズア・キミッヒ",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 37.5,
+          "number": 4,
+          "name": "ヨナタン・ター",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 62.5,
+          "number": 15,
+          "name": "ニコ・シュロッターベック",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 87.5,
+          "number": 18,
+          "name": "ナサニエル・ブラウン",
+          "role": "DF"
+        },
+        {
+          "x": 45.33333333333333,
+          "y": 25,
+          "number": 23,
+          "name": "フェリックス・ヌメチャ",
+          "role": "MF"
+        },
+        {
+          "x": 45.33333333333333,
+          "y": 75,
+          "number": 5,
+          "name": "アレクサンダル・パヴロビッチ",
+          "role": "MF"
+        },
+        {
+          "x": 62.666666666666664,
+          "y": 16.666666666666664,
+          "number": 19,
+          "name": "レロイ・サネ",
+          "role": "MF"
+        },
+        {
+          "x": 62.666666666666664,
+          "y": 50,
+          "number": 10,
+          "name": "ジャマル・ムシアラ",
+          "role": "MF"
+        },
+        {
+          "x": 62.666666666666664,
+          "y": 83.33333333333334,
+          "number": 17,
+          "name": "フロリアン・ヴィルツ",
+          "role": "MF"
+        },
+        {
+          "x": 80,
+          "y": 50,
+          "number": 7,
+          "name": "カイ・ハヴァーツ",
+          "role": "FW"
+        }
+      ],
+      "bench": [
+        {
+          "number": 2,
+          "name": "アントニオ・リュディガー"
+        },
+        {
+          "number": 3,
+          "name": "ヴァルデマール・アントン"
+        },
+        {
+          "number": 8,
+          "name": "レオン・ゴレツカ"
+        },
+        {
+          "number": 9,
+          "name": "ジェイミー・レヴェリング"
+        },
+        {
+          "number": 11,
+          "name": "ニック・ヴォルテマーデ"
+        },
+        {
+          "number": 12,
+          "name": "オリヴァー・バウマン"
+        },
+        {
+          "number": 13,
+          "name": "パスカル・グロス"
+        },
+        {
+          "number": 14,
+          "name": "マクシミリアン・バイアー"
+        },
+        {
+          "number": 16,
+          "name": "アンジェロ・シュティラー"
+        },
+        {
+          "number": 20,
+          "name": "ナディエム・アミリ"
+        },
+        {
+          "number": 21,
+          "name": "アレクサンダー・ニューベル"
+        },
+        {
+          "number": 22,
+          "name": "ダヴィド・ラウム"
+        },
+        {
+          "number": 24,
+          "name": "マリック・チャウ"
+        },
+        {
+          "number": 25,
+          "name": "アサン・ウエドラオゴ"
+        },
+        {
+          "number": 26,
+          "name": "デニズ・ウンダフ"
+        }
+      ]
+    },
+    "goals": [
+      {
+        "minute": 6,
+        "teamId": "GER",
+        "type": "normal",
+        "playerId": "p_ger_7",
+        "playerName": "フェリックス・ヌメチャ",
+        "assistPlayerId": "p_ger_22",
+        "assistPlayerName": "フロリアン・ヴィルツ"
+      },
+      {
+        "minute": 21,
+        "teamId": "CUR",
+        "type": "normal",
+        "playerId": "p_cur_12",
+        "playerName": "リヴァノ・コメネンシア"
+      },
+      {
+        "minute": 38,
+        "teamId": "GER",
+        "type": "normal",
+        "playerId": "p_ger_6",
+        "playerName": "ニコ・シュロッターベック",
+        "assistPlayerId": "p_ger_5",
+        "assistPlayerName": "ナサニエル・ブラウン"
+      },
+      {
+        "minute": 45,
+        "teamId": "GER",
+        "type": "penalty",
+        "addedTime": 5,
+        "playerId": "p_ger_23",
+        "playerName": "カイ・ハヴァーツ"
+      },
+      {
+        "minute": 47,
+        "teamId": "GER",
+        "type": "normal",
+        "playerId": "p_ger_20",
+        "playerName": "ジャマル・ムシアラ",
+        "assistPlayerId": "p_ger_11",
+        "assistPlayerName": "ヨズア・キミッヒ"
+      },
+      {
+        "minute": 68,
+        "teamId": "GER",
+        "type": "normal",
+        "playerId": "p_ger_5",
+        "playerName": "ナサニエル・ブラウン",
+        "assistPlayerId": "p_ger_25",
+        "assistPlayerName": "デニズ・ウンダフ"
+      },
+      {
+        "minute": 78,
+        "teamId": "GER",
+        "type": "normal",
+        "playerId": "p_ger_25",
+        "playerName": "デニズ・ウンダフ",
+        "assistPlayerId": "p_ger_11",
+        "assistPlayerName": "ヨズア・キミッヒ"
+      },
+      {
+        "minute": 88,
+        "teamId": "GER",
+        "type": "normal",
+        "playerId": "p_ger_23",
+        "playerName": "カイ・ハヴァーツ",
+        "assistPlayerId": "p_ger_25",
+        "assistPlayerName": "デニズ・ウンダフ"
+      }
+    ],
+    "awayFormation": {
+      "shape": "4-3-1-2",
+      "starting": [
+        {
+          "x": 8,
+          "y": 50,
+          "number": 1,
+          "name": "エロイ・ローム",
+          "role": "GK"
+        },
+        {
+          "x": 28,
+          "y": 12.5,
+          "number": 5,
+          "name": "リーシェドリー・バズール",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 37.5,
+          "number": 23,
+          "name": "ジェレミー・アントニッセ",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 62.5,
+          "number": 18,
+          "name": "アルジャニ・マルタ",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 87.5,
+          "number": 24,
+          "name": "ケンジ・ゴレ",
+          "role": "DF"
+        },
+        {
+          "x": 45.33333333333333,
+          "y": 16.666666666666664,
+          "number": 8,
+          "name": "シュランディ・サンボ",
+          "role": "MF"
+        },
+        {
+          "x": 45.33333333333333,
+          "y": 50,
+          "number": 10,
+          "name": "デヴェロン・フォンヴィル",
+          "role": "MF"
+        },
+        {
+          "x": 45.33333333333333,
+          "y": 83.33333333333334,
+          "number": 7,
+          "name": "ロション・ファン・エイマ",
+          "role": "MF"
+        },
+        {
+          "x": 62.666666666666664,
+          "y": 50,
+          "number": 21,
+          "name": "ヤール・マルガリータ",
+          "role": "MF"
+        },
+        {
+          "x": 80,
+          "y": 25,
+          "number": 9,
+          "name": "シェレル・フロラヌス",
+          "role": "FW"
+        },
+        {
+          "x": 80,
+          "y": 75,
+          "number": 12,
+          "name": "リヴァノ・コメネンシア",
+          "role": "FW"
+        }
+      ],
+      "bench": [
+        {
+          "number": 2,
+          "name": "トレヴァー・ドーンブッシュ"
+        },
+        {
+          "number": 3,
+          "name": "タイリック・ボダック"
+        },
+        {
+          "number": 4,
+          "name": "ユリエン・ガーリ"
+        },
+        {
+          "number": 6,
+          "name": "ジョシュア・ブレネト"
+        },
+        {
+          "number": 11,
+          "name": "アルマンド・オビスポ"
+        },
+        {
+          "number": 13,
+          "name": "レアンドロ・バクーナ"
+        },
+        {
+          "number": 14,
+          "name": "ジュニーニョ・バクーナ"
+        },
+        {
+          "number": 15,
+          "name": "ケヴィン・フェリダ"
+        },
+        {
+          "number": 16,
+          "name": "タイリース・ノスリン"
+        },
+        {
+          "number": 17,
+          "name": "ゴドフリート・ルメラトゥ"
+        },
+        {
+          "number": 19,
+          "name": "ソンチェ・ハンセン"
+        },
+        {
+          "number": 20,
+          "name": "タヒス・チョン"
+        },
+        {
+          "number": 22,
+          "name": "ブランドリー・クワス"
+        },
+        {
+          "number": 25,
+          "name": "ユルゲン・ロカディア"
+        },
+        {
+          "number": 26,
+          "name": "ヘルファネ・カスタネール"
+        }
+      ]
+    },
+    "substitutions": [
+      {
+        "minute": 46,
+        "teamId": "CUR",
+        "inName": "アルマンド・オビスポ",
+        "outName": "リヴァノ・コメネンシア"
+      },
+      {
+        "minute": 64,
+        "teamId": "GER",
+        "inName": "デニズ・ウンダフ",
+        "outName": "ジャマル・ムシアラ"
+      },
+      {
+        "minute": 65,
+        "teamId": "CUR",
+        "inName": "ソンチェ・ハンセン",
+        "outName": "シェレル・フロラヌス"
+      },
+      {
+        "minute": 72,
+        "teamId": "GER",
+        "inName": "アントニオ・リュディガー",
+        "outName": "ヨナタン・ター"
+      },
+      {
+        "minute": 72,
+        "teamId": "GER",
+        "inName": "ダヴィド・ラウム",
+        "outName": "ナサニエル・ブラウン"
+      },
+      {
+        "minute": 72,
+        "teamId": "GER",
+        "inName": "レオン・ゴレツカ",
+        "outName": "フェリックス・ヌメチャ"
+      },
+      {
+        "minute": 82,
+        "teamId": "CUR",
+        "inName": "ソンチェ・ハンセン",
+        "outName": "ヤール・マルガリータ"
+      },
+      {
+        "minute": 83,
+        "teamId": "GER",
+        "inName": "ヴァルデマール・アントン",
+        "outName": "ヨズア・キミッヒ"
+      }
+    ]
   }
 }
