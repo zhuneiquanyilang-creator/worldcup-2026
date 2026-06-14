@@ -1,25 +1,22 @@
 import { useMemo } from "react";
 import { Link } from "react-router-dom";
+import type { Match } from "@/types/match";
 import type { Standing } from "@/types/standing";
 import type { Team } from "@/types/team";
 import { Flag } from "@/components/common/Flag";
+import { compareCrossGroup, sortGroupStandings } from "@/utils/tiebreaker";
 import styles from "./ThirdPlaceRanking.module.css";
 
 type Props = {
   standings: Standing[];
   teamMap: Map<string, Team>;
+  /** H2H タイブレーカー (グループ内 3 位を決めるとき) に必要。 */
+  matches?: Match[];
 };
-
-/** 簡易タイブレーカー（開幕後は utils/tiebreaker.ts へ差し替え予定） */
-function compare(a: Standing, b: Standing) {
-  if (b.points !== a.points) return b.points - a.points;
-  if (b.goalDiff !== a.goalDiff) return b.goalDiff - a.goalDiff;
-  return b.goalsFor - a.goalsFor;
-}
 
 const QUALIFY_LIMIT = 8;
 
-export function ThirdPlaceRanking({ standings, teamMap }: Props) {
+export function ThirdPlaceRanking({ standings, teamMap, matches }: Props) {
   const thirdPlaceTeams = useMemo(() => {
     const groups = new Map<string, Standing[]>();
     for (const s of standings) {
@@ -29,11 +26,15 @@ export function ThirdPlaceRanking({ standings, teamMap }: Props) {
     }
     const thirds: Standing[] = [];
     for (const group of groups.values()) {
-      const sorted = [...group].sort(compare);
+      // グループ内 3 位は H2H 含むフル FIFA タイブレーカーで決定
+      const sorted = matches
+        ? sortGroupStandings(group, matches)
+        : [...group].sort(compareCrossGroup);
       if (sorted.length >= 3) thirds.push(sorted[2]);
     }
-    return thirds.sort(compare);
-  }, [standings]);
+    // 3 位同士はグループが違うので H2H は無く、cross-group 比較で並べる
+    return thirds.sort(compareCrossGroup);
+  }, [standings, matches]);
 
   const noMatchesPlayed = thirdPlaceTeams.every((s) => s.played === 0);
 

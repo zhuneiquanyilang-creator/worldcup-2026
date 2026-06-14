@@ -44,7 +44,11 @@ export function StandingsPage() {
         teamMap={teamMapRes.map}
         matches={matchesRes.data}
       />
-      <ThirdPlaceRanking standings={standings} teamMap={teamMapRes.map} />
+      <ThirdPlaceRanking
+        standings={standings}
+        teamMap={teamMapRes.map}
+        matches={matchesRes.data}
+      />
     </div>
   );
 }

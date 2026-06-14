@@ -2388,6 +2388,54 @@
         "teamId": "BRA",
         "inName": "ファビーニョ",
         "outName": "カゼミーロ"
+      },
+      {
+        "minute": 61,
+        "teamId": "BRA",
+        "inName": "マテウス・クーニャ",
+        "outName": "ルーカス・パケタ"
+      },
+      {
+        "minute": 62,
+        "teamId": "BRA",
+        "inName": "ルイス・エンヒキ",
+        "outName": "イゴール・チアゴ"
+      },
+      {
+        "minute": 65,
+        "teamId": "MAR",
+        "inName": "サミル・エル・ムラベ",
+        "outName": "アゼディン・ウナヒ"
+      },
+      {
+        "minute": 65,
+        "teamId": "MAR",
+        "inName": "ケムスディン・タルビ",
+        "outName": "ブライム・ディアス"
+      },
+      {
+        "minute": 80,
+        "teamId": "MAR",
+        "inName": "アナス・サラー・エディン",
+        "outName": "ヌサイル・マズラウィ"
+      },
+      {
+        "minute": 80,
+        "teamId": "MAR",
+        "inName": "アユベ・アマイムニ",
+        "outName": "ビラル・エル・ハヌス"
+      },
+      {
+        "minute": 80,
+        "teamId": "BRA",
+        "inName": "ダニーロ (ボタフォゴ)",
+        "outName": "ブルーノ・ギマランイス"
+      },
+      {
+        "minute": 89,
+        "teamId": "MAR",
+        "inName": "スフィアン・ラヒミ",
+        "outName": "イスマエル・サイバリ"
       }
     ]
   }

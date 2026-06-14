@@ -58,19 +58,21 @@ R32 進出条件: 各グループ上位2チーム（24） + 3位成績上位8チ
 
 ### 実装メモ（タイブレーカー）
 
-現在 `components/standings/StandingsTable.tsx` の `compare()` は **簡易版**:
+**実装済み** (`utils/tiebreaker.ts`):
 
-```ts
-points → goalDiff → goalsFor
-```
+- `sortGroupStandings(standings, matches)` — グループ内の正規ソート。①勝ち点 → ②③④ H2H (再帰) → ⑤⑥⑦ overall+fairplay。
+- `compareCrossGroup(a, b)` — 異グループのチーム同士 (3 位ワイルドカード等) 用。①⑤⑥⑦ のみ (H2H 無し)。
 
-これは項目 1（全試合の勝ち点） → 5 → 6 のみで、head-to-head（2〜4）、フェアプレー（7）、FIFA ランク（8〜9）に未対応。
+組み込み先:
+- `StandingsTable` (グループ内、`matches` props で H2H を渡す)
+- `ThirdPlaceRanking` (グループ内 3 位確定 → cross-group ソート)
+- `resolveMatchTeams.resolveThirdPlaceWildcards` (3 位ワイルドカード解決)
 
-**実装計画**: 大会開幕後（matches に status="finished" が現れたら）、以下を実装する:
-- `utils/tiebreaker.ts` に上記順序の compare 関数を作る
-- 引数として「対象 standings 配列」「全 matches」「全 players（カード情報含む）」「team_details（FIFA ランク）」を取る
-- head-to-head は対象チーム同士の対戦だけを抽出して再帰
-- 現状 `matches.json` の goals/lineup/cards は空なので、各試合終了時にこれらを埋める運用が必要
+フェアプレーポイントは `computeStandings` が `match.bookings` から集計し `Standing.fairPlayPoints` に持つ。Y=-1 / Y2R=-3 / R=-4 / YR=-5 (CLAUDE.md 規定通り)。Y2R / YR は「2 枚目イエロー / イエロー後の一発レッド」を**単独イベント**として記録する想定 (preceding Y を別エントリで二重計上しない)。
+
+未実装 (⑧⑨ FIFA ランキング): データソース未確保。実装するなら `public/data/fifa_ranking.json` を追加して `compareCrossGroup` / `rankCluster` のフォールバックに足す。
+
+注: `utils/groupClinch.ts` の clinch 判定だけは簡易版のまま (`points → goalDiff → goalsFor`)。clinch は「未来の試合結果を全列挙して順位ロックを判定する」処理で、bookings の列挙はコスト的に非現実なため。clinch が「未確定」と返した場合に実際は確定しているケース (= 過小確定) がありうるが、安全側 (overclinch しない) なので許容。
 
 ### 型定義への影響
 

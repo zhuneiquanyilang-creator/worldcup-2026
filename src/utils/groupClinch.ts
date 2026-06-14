@@ -33,6 +33,10 @@ function emptyStanding(teamId: string, groupId: string): Standing {
     goalsAgainst: 0,
     goalDiff: 0,
     points: 0,
+    // clinch は「未来の試合結果を全列挙して順位ロックを判定する」。bookings の
+    // 列挙はコスト的に非現実なので、フェアプレーポイント込みのタイブレーカーは
+    // 使わない (保守側に倒して未確定扱いになるだけ)。
+    fairPlayPoints: 0,
   };
 }
 

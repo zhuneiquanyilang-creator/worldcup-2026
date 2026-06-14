@@ -4,6 +4,8 @@ import type { Team } from "@/types/team";
 import type { ThirdPlaceAssignment } from "@/types/thirdPlace";
 import { matchNumber } from "@/utils/matchNumber";
 import { clinchedRanks } from "@/utils/groupClinch";
+import { computeStandings } from "@/utils/computeStandings";
+import { compareCrossGroup, sortGroupStandings } from "@/utils/tiebreaker";
 
 /**
  * matches.json のプレースホルダ team ID を、確定したチームに差し替える。
@@ -33,51 +35,6 @@ function isResolvable(id: string): boolean {
     PLACEHOLDER_L.test(id) ||
     PLACEHOLDER_3RD.test(id)
   );
-}
-
-/** StandingsTable と同じ簡易タイブレーカー（H2H / フェアプレーは未対応）。 */
-function compareSimple(a: Standing, b: Standing) {
-  if (b.points !== a.points) return b.points - a.points;
-  if (b.goalDiff !== a.goalDiff) return b.goalDiff - a.goalDiff;
-  return b.goalsFor - a.goalsFor;
-}
-
-function emptyStanding(teamId: string, groupId: string): Standing {
-  return {
-    teamId,
-    groupId,
-    played: 0,
-    won: 0,
-    drawn: 0,
-    lost: 0,
-    goalsFor: 0,
-    goalsAgainst: 0,
-    goalDiff: 0,
-    points: 0,
-  };
-}
-
-function applyResult(home: Standing, away: Standing, hs: number, as: number) {
-  home.played++;
-  away.played++;
-  home.goalsFor += hs;
-  home.goalsAgainst += as;
-  away.goalsFor += as;
-  away.goalsAgainst += hs;
-  if (hs > as) {
-    home.won++;
-    away.lost++;
-  } else if (hs < as) {
-    away.won++;
-    home.lost++;
-  } else {
-    home.drawn++;
-    away.drawn++;
-  }
-  home.goalDiff = home.goalsFor - home.goalsAgainst;
-  away.goalDiff = away.goalsFor - away.goalsAgainst;
-  home.points = home.won * 3 + home.drawn;
-  away.points = away.won * 3 + away.drawn;
 }
 
 function computeGroupRanks(
@@ -123,35 +80,27 @@ function resolveThirdPlaceWildcards(
   if (groupMatches.some((m) => m.status !== "finished" || !m.score))
     return result;
 
-  // グループごとに順位表を構築
-  const teamsByGroup = new Map<string, string[]>();
-  for (const t of teams) {
-    if (!t.groupId) continue;
-    const arr = teamsByGroup.get(t.groupId) ?? [];
-    arr.push(t.id);
-    teamsByGroup.set(t.groupId, arr);
+  // 全グループ分の順位表を一括計算 (フェアプレーポイント含む)
+  const allStandings = computeStandings(teams, matches);
+  const byGroup = new Map<string, Standing[]>();
+  for (const s of allStandings) {
+    const arr = byGroup.get(s.groupId) ?? [];
+    arr.push(s);
+    byGroup.set(s.groupId, arr);
   }
 
   const thirdByGroup = new Map<string, Standing>();
-  for (const [groupId, teamIds] of teamsByGroup) {
-    const standings = new Map<string, Standing>();
-    for (const id of teamIds) standings.set(id, emptyStanding(id, groupId));
-    for (const m of groupMatches) {
-      if (m.groupId !== groupId || !m.score) continue;
-      const h = standings.get(m.homeTeamId);
-      const a = standings.get(m.awayTeamId);
-      if (!h || !a) continue;
-      applyResult(h, a, m.score.home, m.score.away);
-    }
-    const sorted = [...standings.values()].sort(compareSimple);
+  for (const [groupId, group] of byGroup) {
+    // グループ内 3 位は H2H 含むフル FIFA タイブレーカーで確定
+    const sorted = sortGroupStandings(group, matches);
     if (sorted.length >= 3) thirdByGroup.set(groupId, sorted[2]);
   }
 
   if (thirdByGroup.size < 8) return result; // 3位がそろわなければ解決できない
 
-  // 12グループの3位を横断ソートし、上位8グループを抽出
+  // 12グループの3位を横断ソートし、上位8グループを抽出 (cross-group なので H2H 無し)
   const ranked = [...thirdByGroup.entries()].sort((a, b) =>
-    compareSimple(a[1], b[1])
+    compareCrossGroup(a[1], b[1])
   );
   const top8Groups = ranked
     .slice(0, 8)

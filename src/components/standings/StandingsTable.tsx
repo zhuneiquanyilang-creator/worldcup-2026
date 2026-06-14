@@ -2,24 +2,21 @@ import type { Match } from "@/types/match";
 import type { Standing } from "@/types/standing";
 import type { Team } from "@/types/team";
 import { getTeamLiveStatus } from "@/utils/liveTeamStatus";
+import { sortGroupStandings, compareCrossGroup } from "@/utils/tiebreaker";
 import { StandingsRow } from "./StandingsRow";
 import styles from "./StandingsTable.module.css";
 
 type Props = {
   standings: Standing[];
   teamMap: Map<string, Team>;
-  /** 全試合データ。ライブ中の試合からチーム別ライブ状態を判定するのに使う。 */
+  /** 全試合データ。H2H タイブレーカー (②〜④) とライブ状態判定に使う。 */
   matches?: Match[];
 };
 
-function compare(a: Standing, b: Standing) {
-  if (b.points !== a.points) return b.points - a.points;
-  if (b.goalDiff !== a.goalDiff) return b.goalDiff - a.goalDiff;
-  return b.goalsFor - a.goalsFor;
-}
-
 export function StandingsTable({ standings, teamMap, matches }: Props) {
-  const sorted = [...standings].sort(compare);
+  const sorted = matches
+    ? sortGroupStandings(standings, matches)
+    : [...standings].sort(compareCrossGroup);
   const noMatchesPlayed = sorted.every((s) => s.played === 0);
 
   return (

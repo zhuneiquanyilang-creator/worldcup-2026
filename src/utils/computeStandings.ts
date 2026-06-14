@@ -1,11 +1,30 @@
-import type { Match } from "@/types/match";
+import type { Booking, Match } from "@/types/match";
 import type { Standing } from "@/types/standing";
 import type { Team } from "@/types/team";
+
+/** Y=-1 / Y2R=-3 / R=-4 / YR=-5。Y2R / YR は「2 枚目イエロー退場 / イエロー後の
+ *  一発レッド退場」を**単独イベント**として記録する想定 (preceding Y を別エントリで
+ *  二重計上しない)。データ源が Y + Y2R の 2 件で記録する場合は集計ロジックを
+ *  -1 / -2 に変える必要があるが、現状の `/edit/matches` 編集 UI と Sofascore 由来の
+ *  ライブデータはいずれも単独イベントスタイル。 */
+function fairPlayPenalty(type: Booking["type"]): number {
+  switch (type) {
+    case "Y":
+      return -1;
+    case "Y2R":
+      return -3;
+    case "R":
+      return -4;
+    case "YR":
+      return -5;
+  }
+}
 
 /**
  * グループステージの順位表を試合結果から導出する。
  * 全チームを 0-0-0 で初期化し、`stage === "group"` のうち **score が入った試合**
  * (= 終了 or ライブ進行中で得点情報あり) を反映する。
+ * フェアプレーポイントも同じ試合範囲で集計する (タイブレーカー #7 用)。
  */
 export function computeStandings(teams: Team[], matches: Match[]): Standing[] {
   const map = new Map<string, Standing>();
@@ -23,6 +42,7 @@ export function computeStandings(teams: Team[], matches: Match[]): Standing[] {
       goalsAgainst: 0,
       goalDiff: 0,
       points: 0,
+      fairPlayPoints: 0,
     });
   }
 
@@ -61,6 +81,12 @@ export function computeStandings(teams: Team[], matches: Match[]): Standing[] {
     away.goalDiff = away.goalsFor - away.goalsAgainst;
     home.points = home.won * 3 + home.drawn;
     away.points = away.won * 3 + away.drawn;
+
+    for (const b of m.bookings ?? []) {
+      const s = map.get(b.teamId);
+      if (!s) continue;
+      s.fairPlayPoints += fairPlayPenalty(b.type);
+    }
   }
 
   return Array.from(map.values());
