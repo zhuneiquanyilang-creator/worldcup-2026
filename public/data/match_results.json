@@ -2441,7 +2441,7 @@
   },
   "m014": {
     "matchId": "m014",
-    "status": "scheduled",
+    "status": "live",
     "homeFormation": {
       "shape": "4-4-2",
       "starting": [
@@ -2729,6 +2729,11 @@
           "name": "スコット・マッケナ"
         }
       ]
-    }
+    },
+    "score": {
+      "home": 0,
+      "away": 1
+    },
+    "liveLabel": "Live"
   }
 }
