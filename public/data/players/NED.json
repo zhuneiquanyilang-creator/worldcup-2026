@@ -23,7 +23,7 @@
   },
   {
     "id": "p_ned_13",
-    "name": "マルテン・デ・ローン",
+    "name": "マルテン・デローン",
     "teamId": "NED",
     "position": "MF",
     "birthDate": "1991-03-29",
@@ -34,7 +34,7 @@
   },
   {
     "id": "p_ned_10",
-    "name": "フィルジル・ファン・ダイク",
+    "name": "フィルジル・ファンダイク",
     "teamId": "NED",
     "position": "DF",
     "birthDate": "1991-07-08",
@@ -56,7 +56,7 @@
   },
   {
     "id": "p_ned_6",
-    "name": "ヤン・ポール・ファン・ヘッケ",
+    "name": "ヤン・ポール・ファンヘッケ",
     "teamId": "NED",
     "position": "DF",
     "birthDate": "2000-06-08",
@@ -155,7 +155,7 @@
   },
   {
     "id": "p_ned_5",
-    "name": "ミッキー・ファン・デ・フェン",
+    "name": "ミッキー・ファンデフェン",
     "teamId": "NED",
     "position": "DF",
     "birthDate": "2001-04-19",
@@ -221,7 +221,7 @@
   },
   {
     "id": "p_ned_18",
-    "name": "フレンキー・デ・ヨング",
+    "name": "フレンキー・デヨング",
     "teamId": "NED",
     "position": "MF",
     "birthDate": "1997-05-12",
