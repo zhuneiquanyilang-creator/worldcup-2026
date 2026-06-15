@@ -5667,7 +5667,7 @@
     "status": "live",
     "score": {
       "home": 1,
-      "away": 0
+      "away": 1
     },
     "goals": [
       {
@@ -6019,6 +6019,12 @@
         "teamId": "KSA",
         "inName": "ナワフ・ブシャル",
         "outName": "モハメド・アブ・アル・シャマト"
+      },
+      {
+        "minute": 90,
+        "teamId": "URU",
+        "inName": "ロドリゴ・アギーレ",
+        "outName": "フェデリコ・ビニャス"
       }
     ],
     "liveLabel": "Live"
