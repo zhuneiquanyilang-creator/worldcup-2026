@@ -588,10 +588,8 @@ export function EditMatchesPage() {
     setEdits((prev) => {
       const cur = prev[match.id] ?? freshEditable();
       const goals = [...cur.goals];
-      const lastMin =
-        goals.length > 0 ? Number(goals[goals.length - 1].minute) || 0 : 0;
       goals.push({
-        minute: String(lastMin > 0 ? lastMin + 1 : 1),
+        minute: "",
         teamId: match.homeTeamId,
         playerId: "",
         assistPlayerId: "",
@@ -696,14 +694,10 @@ export function EditMatchesPage() {
   const addBooking = (match: Match) => {
     setEdits((prev) => {
       const cur = prev[match.id] ?? freshEditable();
-      const lastMin =
-        cur.bookings.length > 0
-          ? Number(cur.bookings[cur.bookings.length - 1].minute) || 0
-          : 0;
       const bookings = [
         ...cur.bookings,
         {
-          minute: String(lastMin > 0 ? lastMin + 1 : 1),
+          minute: "",
           teamId: match.homeTeamId,
           playerId: "",
           type: "Y" as BookingType,
@@ -737,14 +731,10 @@ export function EditMatchesPage() {
   const addSub = (match: Match) => {
     setEdits((prev) => {
       const cur = prev[match.id] ?? freshEditable();
-      const lastMin =
-        cur.substitutions.length > 0
-          ? Number(cur.substitutions[cur.substitutions.length - 1].minute) || 0
-          : 0;
       const subs = [
         ...cur.substitutions,
         {
-          minute: String(lastMin > 0 ? lastMin + 1 : 46),
+          minute: "",
           teamId: match.homeTeamId,
           inPlayerId: "",
           outPlayerId: "",
@@ -851,7 +841,7 @@ export function EditMatchesPage() {
         <strong>交代</strong>を入力できます。
         ベンチは「<strong>そのチームの全選手 − スタメン11名</strong>」を背番号順で自動算出します。
         保存先は <strong>matchEdits</strong> レイヤー (<code>localStorage["wc2026:matchEdits"]</code>) で、
-        Sofascore / Football-Data ライブ取得 (matchOverrides) とは別管理。
+        ライブ取得 (matchOverrides) とは別管理。
         <strong>localhost の見た目はライブが最優先</strong>なので、ここで保存しても localhost の他ページの表示はライブのままです。
         dev サーバー実行中なら matchEdits だけが <code>match_results.json</code> に自動同期され、
         <strong>commit / push して GitHub Pages にデプロイされた公開サイトでは編集内容が見える</strong>ようになります。

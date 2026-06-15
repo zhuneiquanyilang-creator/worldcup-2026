@@ -5676,6 +5676,13 @@
         "type": "normal",
         "playerId": "p_ksa_11",
         "playerName": "アブドゥルエラ・アル・アムリ"
+      },
+      {
+        "minute": 80,
+        "teamId": "URU",
+        "type": "normal",
+        "playerId": "p_uru_20",
+        "playerName": "マクシミリアーノ・アラウホ"
       }
     ],
     "homeFormation": {
@@ -5974,6 +5981,44 @@
         "teamId": "KSA",
         "playerName": "アブドゥルエラ・アル・アムリ",
         "type": "Y"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": 46,
+        "teamId": "URU",
+        "inName": "ファン・サナブリア",
+        "outName": "マティアス・ビニャ"
+      },
+      {
+        "minute": 46,
+        "teamId": "URU",
+        "inName": "アグスティン・カノッビオ",
+        "outName": "ダルウィン・ヌニェス"
+      },
+      {
+        "minute": 63,
+        "teamId": "KSA",
+        "inName": "ナセル・アル・ドサリ",
+        "outName": "ムサブ・アル・ジュワイル"
+      },
+      {
+        "minute": 72,
+        "teamId": "URU",
+        "inName": "ニコラス・デ・ラ・クルス",
+        "outName": "マヌエル・ウガルテ"
+      },
+      {
+        "minute": 82,
+        "teamId": "URU",
+        "inName": "ブライアン・ロドリゲス",
+        "outName": "マクシミリアーノ・アラウホ"
+      },
+      {
+        "minute": 82,
+        "teamId": "KSA",
+        "inName": "ナワフ・ブシャル",
+        "outName": "モハメド・アブ・アル・シャマト"
       }
     ],
     "liveLabel": "Live"
