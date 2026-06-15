@@ -28,11 +28,16 @@ export function isLive(match: Match, now: number = Date.now()): boolean {
 /** 試合開始の何分前から polling を始めるか (フォーメーション・ベンチメンバー取得用)。 */
 export const PREMATCH_POLL_MINUTES = 30;
 
-/** Sofascore polling を発火させるべきウィンドウかどうか。
- *  ライブ枠より早めにスタートし、KO-30分 から最終枠 (KO + liveWindow) まで true。
- *  これにより試合開始前にフォーメーション/ラインアップが取得できる。
- *  (SofascoreLiveSource.fetchUpdate は status="notstarted" でもラインアップを返す。
- *   incidents/stats は試合が進行・終了状態になってから取得される。)
+/** ライブポーリングを発火させるべき試合かどうか。
+ *  - status==="finished" → 永遠に false (確定済みは触らない)
+ *  - status==="live" → 常に true
+ *  - それ以外 (scheduled): 試合開始 30 分前以降は常に true (上限なし)。
+ *    上限を撤廃したことで、KO の窓を逃した = ライブ中に取り逃した試合も
+ *    後でサイトを開いた瞬間に拾い直せる (catchup 機能)。
+ *    取れたら status==="finished" になるので翌回からは自然に対象外になる。
+ *
+ *  (Sofascore は status="notstarted" でもラインアップを返すので KO-30 分から
+ *   開始することで予想スタメンも取れる。)
  */
 export function shouldPoll(
   match: Match,
@@ -43,8 +48,7 @@ export function shouldPoll(
   if (match.status === "live") return true;
   const ko = kickoffEpoch(match);
   const prematchStart = ko - prematchMinutes * 60_000;
-  const liveEnd = ko + liveWindowMinutes(match) * 60_000;
-  return now >= prematchStart && now <= liveEnd;
+  return now >= prematchStart;
 }
 
 /** いま試合中ではないが、まだ未開催 (KO 前) か */
