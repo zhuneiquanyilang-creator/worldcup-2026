@@ -106,22 +106,53 @@
 
 @media (max-width: 640px) {
   .board {
-    padding: 1.25rem 0.85rem;
+    padding: 1.1rem 0.75rem;
+  }
+
+  .meta {
+    gap: 0.4rem 0.7rem;
+    font-size: 0.72rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+
+  .stage,
+  .number {
+    padding: 0.1rem 0.5rem;
   }
 
   .matchup {
-    gap: 0.5rem;
+    gap: 0.4rem;
+  }
+
+  .side {
+    gap: 0.3rem;
+  }
+
+  .teamLink {
+    gap: 0.3rem;
   }
 
   .score {
-    font-size: 2rem;
+    font-size: 1.9rem;
+    line-height: 1.1;
+  }
+
+  .dash {
+    margin: 0 0.25rem;
   }
 
   .teamName {
-    font-size: 0.92rem;
+    font-size: 0.85rem;
+    line-height: 1.25;
   }
 
   .vs {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
+  }
+
+  .pk {
+    font-size: 0.78rem;
+    margin-left: 0.15rem;
   }
 }

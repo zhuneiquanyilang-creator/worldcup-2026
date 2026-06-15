@@ -289,15 +289,67 @@
 
 @media (max-width: 640px) {
   .card {
-    padding: 0.75rem 0.6rem;
+    padding: 0.65rem 0.5rem;
+  }
+
+  .teamName {
+    font-size: 0.9rem;
+  }
+
+  .shape {
+    font-size: 0.72rem;
+    padding: 0.1rem 0.45rem;
+  }
+
+  .vs {
+    font-size: 0.78rem;
+    padding: 0.2rem 0.55rem;
   }
 
   .benchGrid {
     grid-template-columns: 1fr;
     gap: 0.6rem;
+    margin-top: 0.85rem;
+  }
+
+  .benchCol {
+    font-size: 0.82rem;
+  }
+
+  .benchTitle {
+    font-size: 0.78rem;
+    padding: 0.3rem 0.5rem;
+  }
+
+  .benchList {
+    padding: 0.4rem 0.4rem 0;
+    gap: 0.2rem;
+  }
+
+  .benchList li {
+    gap: 0.4rem;
+    padding: 0.25rem 0;
+    line-height: 1.3;
+  }
+
+  .benchNum {
+    width: 1.4rem;
+    height: 1.4rem;
+    font-size: 0.72rem;
+  }
+
+  .benchName {
+    word-break: break-word;
   }
 
   .legend {
-    gap: 0.75rem;
+    gap: 0.5rem;
+    font-size: 0.7rem;
+    margin-top: 0.4rem;
+  }
+
+  .mobileHomeHead,
+  .mobileAwayHead {
+    padding: 0.35rem 0;
   }
 }

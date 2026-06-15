@@ -159,16 +159,72 @@
 
 @media (max-width: 640px) {
   .section {
-    padding: 1rem 0.75rem;
+    padding: 0.85rem 0.55rem;
+    margin-top: 1rem;
   }
 
   .headRow,
   .rowHome,
   .rowAway {
-    grid-template-columns: 1fr 3rem 1fr;
+    grid-template-columns: 1fr 2.5rem 1fr;
+  }
+
+  .headRow {
+    padding-bottom: 0.45rem;
+    margin-bottom: 0.35rem;
+    font-size: 0.82rem;
+  }
+
+  .headTime {
+    font-size: 0.7rem;
+  }
+
+  .rowHome,
+  .rowAway {
+    padding: 0.45rem 0;
   }
 
   .event {
-    font-size: 0.85rem;
+    font-size: 0.78rem;
+    gap: 0.3rem;
+    line-height: 1.35;
+  }
+
+  .icon {
+    font-size: 0.95rem;
+    line-height: 1.2;
+  }
+
+  .text {
+    gap: 0.05rem;
+  }
+
+  .name {
+    word-break: break-word;
+  }
+
+  .assist {
+    font-size: 0.7rem;
+    line-height: 1.3;
+  }
+
+  .subOut {
+    font-size: 0.7rem;
+    line-height: 1.3;
+  }
+
+  .minute {
+    font-size: 0.78rem;
+  }
+
+  .halftimeRow {
+    margin: 0.35rem 0;
+    gap: 0.5rem;
+  }
+
+  .halftimeLabel {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.7rem;
+    letter-spacing: 0.08em;
   }
 }

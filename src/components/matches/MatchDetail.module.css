@@ -48,14 +48,24 @@
 }
 
 @media (max-width: 640px) {
+  .wrapper {
+    gap: 0.75rem;
+  }
+
   .tabs {
     align-self: stretch;
     display: flex;
+    margin-top: 0.25rem;
   }
 
   .tab {
     flex: 1;
     padding: 0.45rem 0.4rem;
     font-size: 0.8rem;
+  }
+
+  .empty {
+    padding: 1.25rem 0.75rem;
+    font-size: 0.85rem;
   }
 }
