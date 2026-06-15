@@ -9,7 +9,7 @@
     "goals": 0,
     "assists": 0,
     "number": 1,
-    "shortName": "アキディ"
+    "shortName": "アル・アキディ"
   },
   {
     "id": "p_ksa_10",
@@ -21,7 +21,7 @@
     "goals": 0,
     "assists": 0,
     "number": 2,
-    "shortName": "マジュラシ"
+    "shortName": "アリ・マジュラシ"
   },
   {
     "id": "p_ksa_8",
@@ -33,7 +33,7 @@
     "goals": 0,
     "assists": 0,
     "number": 3,
-    "shortName": "ラジャミ"
+    "shortName": "アリ・ラジャミ"
   },
   {
     "id": "p_ksa_11",
@@ -45,7 +45,7 @@
     "goals": 0,
     "assists": 0,
     "number": 4,
-    "shortName": "アムリ"
+    "shortName": "アル・アムリ"
   },
   {
     "id": "p_ksa_7",
@@ -69,7 +69,7 @@
     "goals": 0,
     "assists": 0,
     "number": 6,
-    "shortName": "ドサリ"
+    "shortName": "アル・ドサリ"
   },
   {
     "id": "p_ksa_19",
@@ -81,7 +81,7 @@
     "goals": 0,
     "assists": 0,
     "number": 7,
-    "shortName": "ジュワイル"
+    "shortName": "アル・ジュワイル"
   },
   {
     "id": "p_ksa_17",
@@ -105,7 +105,7 @@
     "goals": 0,
     "assists": 0,
     "number": 9,
-    "shortName": "ブライカン"
+    "shortName": "アル・ブライカン"
   },
   {
     "id": "p_ksa_23",
@@ -117,7 +117,7 @@
     "goals": 0,
     "assists": 0,
     "number": 10,
-    "shortName": "ドサリ"
+    "shortName": "アル・ドサリ"
   },
   {
     "id": "p_ksa_25",
@@ -129,7 +129,7 @@
     "goals": 0,
     "assists": 0,
     "number": 11,
-    "shortName": "シェフリ"
+    "shortName": "アル・シェフリ"
   },
   {
     "id": "p_ksa_13",
@@ -177,7 +177,7 @@
     "goals": 0,
     "assists": 0,
     "number": 15,
-    "shortName": "ハイバリ"
+    "shortName": "アル・ハイバリ"
   },
   {
     "id": "p_ksa_15",
@@ -189,7 +189,7 @@
     "goals": 0,
     "assists": 0,
     "number": 16,
-    "shortName": "ジョハニ"
+    "shortName": "アル・ジョハニ"
   },
   {
     "id": "p_ksa_16",
@@ -201,7 +201,7 @@
     "goals": 0,
     "assists": 0,
     "number": 17,
-    "shortName": "ガンナム"
+    "shortName": "アル・ガンナム"
   },
   {
     "id": "p_ksa_14",
@@ -213,7 +213,7 @@
     "goals": 0,
     "assists": 0,
     "number": 18,
-    "shortName": "ヘジ"
+    "shortName": "アル・ヘジ"
   },
   {
     "id": "p_ksa_26",
@@ -225,7 +225,7 @@
     "goals": 0,
     "assists": 0,
     "number": 19,
-    "shortName": "ハムダン"
+    "shortName": "アル・ハムダン"
   },
   {
     "id": "p_ksa_20",
@@ -249,7 +249,7 @@
     "goals": 0,
     "assists": 0,
     "number": 21,
-    "shortName": "オワイス"
+    "shortName": "アル・オワイス"
   },
   {
     "id": "p_ksa_3",
@@ -261,7 +261,7 @@
     "goals": 0,
     "assists": 0,
     "number": 22,
-    "shortName": "カサル"
+    "shortName": "アル・カサル"
   },
   {
     "id": "p_ksa_21",
@@ -285,7 +285,7 @@
     "goals": 0,
     "assists": 0,
     "number": 24,
-    "shortName": "ハルビ"
+    "shortName": "アル・ハルビ"
   },
   {
     "id": "p_ksa_4",
@@ -309,6 +309,6 @@
     "goals": 0,
     "assists": 0,
     "number": 26,
-    "shortName": "シャマト"
+    "shortName": "アル・シャマト"
   }
 ]

@@ -4055,7 +4055,7 @@
         "teamId": "NED",
         "type": "normal",
         "playerId": "p_ned_10",
-        "playerName": "フィルジル・ファンダイク",
+        "playerName": "フィルジル・ファン・ダイク",
         "assistPlayerId": "p_ned_17",
         "assistPlayerName": "ライアン・フラーフェンベルフ"
       },
@@ -4108,17 +4108,15 @@
           "x": 28,
           "y": 37.5,
           "number": 6,
-          "name": "ヤン・ポール・ファンヘッケ",
+          "name": "ヤン・ポール・ファン・ヘッケ",
           "role": "DF"
         },
         {
           "x": 28,
           "y": 62.5,
           "number": 4,
-          "name": "フィルジル・ファンダイク",
-          "role": "DF",
-          "isCaptain": true,
-          "isMvp": true
+          "name": "フィルジル・ファン・ダイク",
+          "role": "DF"
         },
         {
           "x": 28,
@@ -4145,7 +4143,7 @@
           "x": 54,
           "y": 83.33333333333334,
           "number": 21,
-          "name": "フレンキー・デヨング",
+          "name": "フレンキー・デ・ヨング",
           "role": "MF"
         },
         {
@@ -5121,14 +5119,16 @@
           "y": 50,
           "number": 10,
           "name": "モハメド・サラー",
-          "role": "MF"
+          "role": "MF",
+          "isCaptain": true
         },
         {
           "x": 62.666666666666664,
           "y": 83.33333333333334,
           "number": 8,
           "name": "エマム・アシュール",
-          "role": "MF"
+          "role": "MF",
+          "isMvp": true
         },
         {
           "x": 80,
@@ -5666,9 +5666,18 @@
     "matchId": "m044",
     "status": "live",
     "score": {
-      "home": 0,
+      "home": 1,
       "away": 0
     },
+    "goals": [
+      {
+        "minute": 41,
+        "teamId": "KSA",
+        "type": "normal",
+        "playerId": "p_ksa_11",
+        "playerName": "アブドゥルエラ・アル・アムリ"
+      }
+    ],
     "homeFormation": {
       "shape": "4-4-2",
       "starting": [
