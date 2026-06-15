@@ -8,7 +8,8 @@
     "club": "ミルウォール（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 1
+    "number": 1,
+    "shortName": "クロコム"
   },
   {
     "id": "p_nzl_7",
@@ -19,7 +20,8 @@
     "club": "ウェリントン・フェニックス",
     "goals": 0,
     "assists": 0,
-    "number": 2
+    "number": 2,
+    "shortName": "ペイン"
   },
   {
     "id": "p_nzl_4",
@@ -30,7 +32,8 @@
     "club": "オークランドFC",
     "goals": 0,
     "assists": 0,
-    "number": 3
+    "number": 3,
+    "shortName": "ヴリーズ"
   },
   {
     "id": "p_nzl_12",
@@ -41,7 +44,8 @@
     "club": "シェフィールド・ユナイテッド（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 4
+    "number": 4,
+    "shortName": "ビンドン"
   },
   {
     "id": "p_nzl_8",
@@ -52,7 +56,8 @@
     "club": "ミネソタ・ユナイテッド（アメリカ）",
     "goals": 0,
     "assists": 0,
-    "number": 5
+    "number": 5,
+    "shortName": "ボクソール"
   },
   {
     "id": "p_nzl_15",
@@ -63,7 +68,8 @@
     "club": "ヴァイキング（ノルウェー）",
     "goals": 0,
     "assists": 0,
-    "number": 6
+    "number": 6,
+    "shortName": "ベル"
   },
   {
     "id": "p_nzl_20",
@@ -74,7 +80,8 @@
     "club": "ピーターバラ・ユナイテッド（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 7
+    "number": 7,
+    "shortName": "ガーベット"
   },
   {
     "id": "p_nzl_17",
@@ -85,7 +92,8 @@
     "club": "スウォンジー・シティ（ウェールズ）",
     "goals": 0,
     "assists": 0,
-    "number": 8
+    "number": 8,
+    "shortName": "スタメニッチ"
   },
   {
     "id": "p_nzl_18",
@@ -96,7 +104,8 @@
     "club": "ノッティンガム・フォレスト（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 9
+    "number": 9,
+    "shortName": "ウッド"
   },
   {
     "id": "p_nzl_25",
@@ -107,7 +116,8 @@
     "club": "ウェリントン・フェニックス",
     "goals": 0,
     "assists": 0,
-    "number": 10
+    "number": 10,
+    "shortName": "シン"
   },
   {
     "id": "p_nzl_22",
@@ -118,7 +128,8 @@
     "club": "マザーウェル（スコットランド）",
     "goals": 0,
     "assists": 0,
-    "number": 11
+    "number": 11,
+    "shortName": "ジャスト"
   },
   {
     "id": "p_nzl_2",
@@ -129,7 +140,8 @@
     "club": "レヒア・グダニスク（ポーランド）",
     "goals": 0,
     "assists": 0,
-    "number": 12
+    "number": 12,
+    "shortName": "ポールセン"
   },
   {
     "id": "p_nzl_10",
@@ -140,7 +152,8 @@
     "club": "レクサム（ウェールズ）",
     "goals": 0,
     "assists": 0,
-    "number": 13
+    "number": 13,
+    "shortName": "カカーチェ"
   },
   {
     "id": "p_nzl_13",
@@ -151,7 +164,8 @@
     "club": "ウェリントン・フェニックス",
     "goals": 0,
     "assists": 0,
-    "number": 14
+    "number": 14,
+    "shortName": "ルーファー"
   },
   {
     "id": "p_nzl_6",
@@ -162,7 +176,8 @@
     "club": "オークランドFC",
     "goals": 0,
     "assists": 0,
-    "number": 15
+    "number": 15,
+    "shortName": "パイナケル"
   },
   {
     "id": "p_nzl_9",
@@ -173,7 +188,8 @@
     "club": "ポートランド・ティンバーズ（アメリカ）",
     "goals": 0,
     "assists": 0,
-    "number": 16
+    "number": 16,
+    "shortName": "サーマン"
   },
   {
     "id": "p_nzl_24",
@@ -184,7 +200,8 @@
     "club": "ウェスタン・シドニー・ワンダラーズ（オーストラリア）",
     "goals": 0,
     "assists": 0,
-    "number": 17
+    "number": 17,
+    "shortName": "バルバルセス"
   },
   {
     "id": "p_nzl_19",
@@ -195,7 +212,8 @@
     "club": "ポート・ヴェイル（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 18
+    "number": 18,
+    "shortName": "ウェイン"
   },
   {
     "id": "p_nzl_21",
@@ -206,7 +224,8 @@
     "club": "サンテチエンヌ（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 19
+    "number": 19,
+    "shortName": "オールド"
   },
   {
     "id": "p_nzl_23",
@@ -217,7 +236,8 @@
     "club": "シルケボー（デンマーク）",
     "goals": 0,
     "assists": 0,
-    "number": 20
+    "number": 20,
+    "shortName": "マッコワット"
   },
   {
     "id": "p_nzl_26",
@@ -228,7 +248,8 @@
     "club": "オークランドFC",
     "goals": 0,
     "assists": 0,
-    "number": 21
+    "number": 21,
+    "shortName": "ランドール"
   },
   {
     "id": "p_nzl_3",
@@ -239,7 +260,8 @@
     "club": "オークランドFC",
     "goals": 0,
     "assists": 0,
-    "number": 22
+    "number": 22,
+    "shortName": "ウッド"
   },
   {
     "id": "p_nzl_16",
@@ -250,7 +272,8 @@
     "club": "PECズウォレ（オランダ）",
     "goals": 0,
     "assists": 0,
-    "number": 23
+    "number": 23,
+    "shortName": "トーマス"
   },
   {
     "id": "p_nzl_5",
@@ -261,7 +284,8 @@
     "club": "オークランドFC",
     "goals": 0,
     "assists": 0,
-    "number": 24
+    "number": 24,
+    "shortName": "エリオット"
   },
   {
     "id": "p_nzl_14",
@@ -272,7 +296,8 @@
     "club": "ニューカッスル・ジェッツ（オーストラリア）",
     "goals": 0,
     "assists": 0,
-    "number": 25
+    "number": 25,
+    "shortName": "ベイリス"
   },
   {
     "id": "p_nzl_11",
@@ -283,6 +308,7 @@
     "club": "ブレントリー・タウン（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 26
+    "number": 26,
+    "shortName": "スミス"
   }
 ]

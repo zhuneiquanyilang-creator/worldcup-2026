@@ -8,7 +8,8 @@
     "club": "バイエルン・ミュンヘン（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 1
+    "number": 1,
+    "shortName": "ノイアー"
   },
   {
     "id": "p_ger_15",
@@ -19,7 +20,8 @@
     "club": "レアル・マドリード（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 2
+    "number": 2,
+    "shortName": "リュディガー"
   },
   {
     "id": "p_ger_8",
@@ -30,7 +32,8 @@
     "club": "ボルシア・ドルトムント（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 3
+    "number": 3,
+    "shortName": "アントン"
   },
   {
     "id": "p_ger_10",
@@ -41,7 +44,8 @@
     "club": "バイエルン・ミュンヘン（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 4
+    "number": 4,
+    "shortName": "ター"
   },
   {
     "id": "p_ger_12",
@@ -52,7 +56,8 @@
     "club": "バイエルン・ミュンヘン（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 5
+    "number": 5,
+    "shortName": "パヴロビッチ"
   },
   {
     "id": "p_ger_11",
@@ -63,7 +68,8 @@
     "club": "バイエルン・ミュンヘン（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 6
+    "number": 6,
+    "shortName": "キミッヒ"
   },
   {
     "id": "p_ger_23",
@@ -74,7 +80,8 @@
     "club": "アーセナル（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 7
+    "number": 7,
+    "shortName": "ハヴァーツ"
   },
   {
     "id": "p_ger_19",
@@ -85,7 +92,8 @@
     "club": "バイエルン・ミュンヘン（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 8
+    "number": 8,
+    "shortName": "ゴレツカ"
   },
   {
     "id": "p_ger_17",
@@ -96,7 +104,8 @@
     "club": "シュトゥットガルト（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 9
+    "number": 9,
+    "shortName": "レヴェリング"
   },
   {
     "id": "p_ger_20",
@@ -107,7 +116,8 @@
     "club": "バイエルン・ミュンヘン（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 10
+    "number": 10,
+    "shortName": "ムシアラ"
   },
   {
     "id": "p_ger_24",
@@ -118,7 +128,8 @@
     "club": "ニューカッスル・ユナイテッド（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 11
+    "number": 11,
+    "shortName": "ヴォルテマーデ"
   },
   {
     "id": "p_ger_2",
@@ -129,7 +140,8 @@
     "club": "ホッフェンハイム（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 12
+    "number": 12,
+    "shortName": "バウマン"
   },
   {
     "id": "p_ger_14",
@@ -140,7 +152,8 @@
     "club": "ブライトン＆ホーヴ・アルビオン（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 13
+    "number": 13,
+    "shortName": "グロス"
   },
   {
     "id": "p_ger_26",
@@ -151,7 +164,8 @@
     "club": "ボルシア・ドルトムント（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 14
+    "number": 14,
+    "shortName": "バイアー"
   },
   {
     "id": "p_ger_6",
@@ -162,7 +176,8 @@
     "club": "ボルシア・ドルトムント（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 15
+    "number": 15,
+    "shortName": "シュロッターベック"
   },
   {
     "id": "p_ger_9",
@@ -173,7 +188,8 @@
     "club": "シュトゥットガルト（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 16
+    "number": 16,
+    "shortName": "シュティラー"
   },
   {
     "id": "p_ger_22",
@@ -184,7 +200,8 @@
     "club": "リバプール（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 17
+    "number": 17,
+    "shortName": "ヴィルツ"
   },
   {
     "id": "p_ger_5",
@@ -195,7 +212,8 @@
     "club": "アイントラハト・フランクフルト（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 18
+    "number": 18,
+    "shortName": "ブラウン"
   },
   {
     "id": "p_ger_21",
@@ -206,7 +224,8 @@
     "club": "ガラタサライ（トルコ）",
     "goals": 0,
     "assists": 0,
-    "number": 19
+    "number": 19,
+    "shortName": "サネ"
   },
   {
     "id": "p_ger_16",
@@ -217,7 +236,8 @@
     "club": "マインツ05（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 20
+    "number": 20,
+    "shortName": "アミリ"
   },
   {
     "id": "p_ger_3",
@@ -228,7 +248,8 @@
     "club": "シュトゥットガルト（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 21
+    "number": 21,
+    "shortName": "ニューベル"
   },
   {
     "id": "p_ger_4",
@@ -239,7 +260,8 @@
     "club": "ライプツィヒ（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 22
+    "number": 22,
+    "shortName": "ラウム"
   },
   {
     "id": "p_ger_7",
@@ -250,7 +272,8 @@
     "club": "ボルシア・ドルトムント（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 23
+    "number": 23,
+    "shortName": "ヌメチャ"
   },
   {
     "id": "p_ger_13",
@@ -261,7 +284,8 @@
     "club": "ニューカッスル・ユナイテッド（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 24
+    "number": 24,
+    "shortName": "チャウ"
   },
   {
     "id": "p_ger_18",
@@ -272,7 +296,8 @@
     "club": "ライプツィヒ（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 25
+    "number": 25,
+    "shortName": "ウエドラオゴ"
   },
   {
     "id": "p_ger_25",
@@ -283,6 +308,7 @@
     "club": "シュトゥットガルト（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 26
+    "number": 26,
+    "shortName": "ウンダフ"
   }
 ]

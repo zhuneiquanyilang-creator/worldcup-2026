@@ -96,6 +96,7 @@ export function MatchDetail({ match, teamMap, playerMap }: Props) {
             awaySubs={awaySubs}
             awayBookings={awayBookings}
             goals={allGoals}
+            playerMap={playerMap}
           />
         ) : (
           <p className={styles.empty}>フォーメーションのデータがありません。</p>

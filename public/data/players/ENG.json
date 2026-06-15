@@ -8,7 +8,8 @@
     "club": "エヴァートン（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 1
+    "number": 1,
+    "shortName": "ピックフォード"
   },
   {
     "id": "p_eng_7",
@@ -19,7 +20,8 @@
     "club": "アストン・ヴィラ（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 2
+    "number": 2,
+    "shortName": "コンサ"
   },
   {
     "id": "p_eng_11",
@@ -30,7 +32,8 @@
     "club": "マンチェスター・シティ（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 3
+    "number": 3,
+    "shortName": "オライリー"
   },
   {
     "id": "p_eng_16",
@@ -41,7 +44,8 @@
     "club": "アーセナル（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 4
+    "number": 4,
+    "shortName": "ライス"
   },
   {
     "id": "p_eng_9",
@@ -52,7 +56,8 @@
     "club": "マンチェスター・シティ（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 5
+    "number": 5,
+    "shortName": "ストーンズ"
   },
   {
     "id": "p_eng_10",
@@ -63,7 +68,8 @@
     "club": "マンチェスター・シティ（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 6
+    "number": 6,
+    "shortName": "グエイ"
   },
   {
     "id": "p_eng_23",
@@ -74,7 +80,8 @@
     "club": "アーセナル（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 7
+    "number": 7,
+    "shortName": "サカ"
   },
   {
     "id": "p_eng_14",
@@ -85,7 +92,8 @@
     "club": "ノッティンガム・フォレスト（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 8
+    "number": 8,
+    "shortName": "アンダーソン"
   },
   {
     "id": "p_eng_20",
@@ -96,7 +104,8 @@
     "club": "バイエルン・ミュンヘン（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 9
+    "number": 9,
+    "shortName": "ケイン"
   },
   {
     "id": "p_eng_19",
@@ -107,7 +116,8 @@
     "club": "レアル・マドリード（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 10
+    "number": 10,
+    "shortName": "ベリンガム"
   },
   {
     "id": "p_eng_21",
@@ -118,7 +128,8 @@
     "club": "バルセロナ（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 11
+    "number": 11,
+    "shortName": "ラッシュフォード"
   },
   {
     "id": "p_eng_5",
@@ -129,7 +140,8 @@
     "club": "ニューカッスル・ユナイテッド（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 12
+    "number": 12,
+    "shortName": "リヴラメント"
   },
   {
     "id": "p_eng_2",
@@ -140,7 +152,8 @@
     "club": "クリスタル・パレス（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 13
+    "number": 13,
+    "shortName": "ヘンダーソン"
   },
   {
     "id": "p_eng_18",
@@ -151,7 +164,8 @@
     "club": "ブレントフォード（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 14
+    "number": 14,
+    "shortName": "ヘンダーソン"
   },
   {
     "id": "p_eng_6",
@@ -162,7 +176,8 @@
     "club": "ニューカッスル・ユナイテッド（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 15
+    "number": 15,
+    "shortName": "バーン"
   },
   {
     "id": "p_eng_13",
@@ -173,7 +188,8 @@
     "club": "マンチェスター・ユナイテッド（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 16
+    "number": 16,
+    "shortName": "メイヌー"
   },
   {
     "id": "p_eng_15",
@@ -184,7 +200,8 @@
     "club": "アストン・ヴィラ（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 17
+    "number": 17,
+    "shortName": "ロジャース"
   },
   {
     "id": "p_eng_25",
@@ -195,7 +212,8 @@
     "club": "ニューカッスル・ユナイテッド（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 18
+    "number": 18,
+    "shortName": "ゴードン"
   },
   {
     "id": "p_eng_26",
@@ -206,7 +224,8 @@
     "club": "アストン・ヴィラ（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 19
+    "number": 19,
+    "shortName": "ワトキンス"
   },
   {
     "id": "p_eng_24",
@@ -217,7 +236,8 @@
     "club": "アーセナル（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 20
+    "number": 20,
+    "shortName": "マドゥエケ"
   },
   {
     "id": "p_eng_17",
@@ -228,7 +248,8 @@
     "club": "アーセナル（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 21
+    "number": 21,
+    "shortName": "エゼ"
   },
   {
     "id": "p_eng_22",
@@ -239,7 +260,8 @@
     "club": "アル・アハリ（サウジアラビア）",
     "goals": 0,
     "assists": 0,
-    "number": 22
+    "number": 22,
+    "shortName": "トニー"
   },
   {
     "id": "p_eng_3",
@@ -250,7 +272,8 @@
     "club": "マンチェスター・シティ（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 23
+    "number": 23,
+    "shortName": "トラフォード"
   },
   {
     "id": "p_eng_8",
@@ -261,7 +284,8 @@
     "club": "チェルシー（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 24
+    "number": 24,
+    "shortName": "ジェームズ"
   },
   {
     "id": "p_eng_4",
@@ -272,7 +296,8 @@
     "club": "トッテナム・ホットスパー（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 25
+    "number": 25,
+    "shortName": "スペンス"
   },
   {
     "id": "p_eng_12",
@@ -283,6 +308,7 @@
     "club": "バイヤー・レバークーゼン（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 26
+    "number": 26,
+    "shortName": "クアンサ"
   }
 ]

@@ -13,4 +13,8 @@ export type Player = {
   birthDate?: string;
   /** 所属クラブ名 */
   club?: string;
+  /** フォーメーション画面 (ピッチ上) に表示する略称。
+   *  デフォルトはカタカナ・英名なら姓のみ、KOR など姓先頭ルールは別途調整。
+   *  個別に編集すれば任意の文字列を出せる。空 / 未設定なら surnameOf(name) フォールバック。 */
+  shortName?: string;
 };

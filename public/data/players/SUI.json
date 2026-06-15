@@ -8,7 +8,8 @@
     "club": "ボルシア・ドルトムント（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 1
+    "number": 1,
+    "shortName": "コベル"
   },
   {
     "id": "p_sui_5",
@@ -19,7 +20,8 @@
     "club": "ハンブルガーSV（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 2
+    "number": 2,
+    "shortName": "ムハイム"
   },
   {
     "id": "p_sui_7",
@@ -30,7 +32,8 @@
     "club": "マインツ05（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 3
+    "number": 3,
+    "shortName": "ヴィドマー"
   },
   {
     "id": "p_sui_8",
@@ -41,7 +44,8 @@
     "club": "ボルシア・メンヒェングラートバッハ（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 4
+    "number": 4,
+    "shortName": "エルヴェディ"
   },
   {
     "id": "p_sui_11",
@@ -52,7 +56,8 @@
     "club": "インテル（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 5
+    "number": 5,
+    "shortName": "アカンジ"
   },
   {
     "id": "p_sui_13",
@@ -63,7 +68,8 @@
     "club": "ASモナコ（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 6
+    "number": 6,
+    "shortName": "ザカリア"
   },
   {
     "id": "p_sui_26",
@@ -74,7 +80,8 @@
     "club": "レンヌ（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 7
+    "number": 7,
+    "shortName": "エンボロ"
   },
   {
     "id": "p_sui_15",
@@ -85,7 +92,8 @@
     "club": "ボローニャ（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 8
+    "number": 8,
+    "shortName": "フロイラー"
   },
   {
     "id": "p_sui_19",
@@ -96,7 +104,8 @@
     "club": "フライブルク（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 9
+    "number": 9,
+    "shortName": "マンザンビ"
   },
   {
     "id": "p_sui_21",
@@ -107,7 +116,8 @@
     "club": "サンダーランド（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 10
+    "number": 10,
+    "shortName": "ジャカ"
   },
   {
     "id": "p_sui_22",
@@ -118,7 +128,8 @@
     "club": "ノッティンガム・フォレスト（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 11
+    "number": 11,
+    "shortName": "ンドイエ"
   },
   {
     "id": "p_sui_2",
@@ -129,7 +140,8 @@
     "club": "ロリアン（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 12
+    "number": 12,
+    "shortName": "ムヴォゴ"
   },
   {
     "id": "p_sui_10",
@@ -140,7 +152,8 @@
     "club": "ベティス（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 13
+    "number": 13,
+    "shortName": "ロドリゲス"
   },
   {
     "id": "p_sui_16",
@@ -151,7 +164,8 @@
     "club": "ACミラン（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 14
+    "number": 14,
+    "shortName": "ヤシャリ"
   },
   {
     "id": "p_sui_17",
@@ -162,7 +176,8 @@
     "club": "セビージャ（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 15
+    "number": 15,
+    "shortName": "ソウ"
   },
   {
     "id": "p_sui_12",
@@ -173,7 +188,8 @@
     "club": "ヤングボーイズ",
     "goals": 0,
     "assists": 0,
-    "number": 16
+    "number": 16,
+    "shortName": "ファスナハト"
   },
   {
     "id": "p_sui_18",
@@ -184,7 +200,8 @@
     "club": "セビージャ（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 17
+    "number": 17,
+    "shortName": "バルガス"
   },
   {
     "id": "p_sui_9",
@@ -195,7 +212,8 @@
     "club": "バレンシア（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 18
+    "number": 18,
+    "shortName": "チョメルト"
   },
   {
     "id": "p_sui_24",
@@ -206,7 +224,8 @@
     "club": "リーズ・ユナイテッド（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 19
+    "number": 19,
+    "shortName": "オカフォル"
   },
   {
     "id": "p_sui_14",
@@ -217,7 +236,8 @@
     "club": "ピサ（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 20
+    "number": 20,
+    "shortName": "アエビシャー"
   },
   {
     "id": "p_sui_3",
@@ -228,7 +248,8 @@
     "club": "ヤングボーイズ",
     "goals": 0,
     "assists": 0,
-    "number": 21
+    "number": 21,
+    "shortName": "ケラー"
   },
   {
     "id": "p_sui_20",
@@ -239,7 +260,8 @@
     "club": "アウクスブルク（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 22
+    "number": 22,
+    "shortName": "リーダー"
   },
   {
     "id": "p_sui_23",
@@ -250,7 +272,8 @@
     "club": "バーンリー（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 23
+    "number": 23,
+    "shortName": "アムドゥニ"
   },
   {
     "id": "p_sui_6",
@@ -261,7 +284,8 @@
     "club": "アイントラハト・フランクフルト（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 24
+    "number": 24,
+    "shortName": "アメンダ"
   },
   {
     "id": "p_sui_4",
@@ -272,7 +296,8 @@
     "club": "シュトゥットガルト（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 25
+    "number": 25,
+    "shortName": "ヤケス"
   },
   {
     "id": "p_sui_25",
@@ -283,6 +308,7 @@
     "club": "フォルトゥナ・デュッセルドルフ（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 26
+    "number": 26,
+    "shortName": "イッテン"
   }
 ]

@@ -8,7 +8,8 @@
     "club": "PSVアイントホーフェン（オランダ）",
     "goals": 0,
     "assists": 0,
-    "number": 1
+    "number": 1,
+    "shortName": "コヴァーシュ"
   },
   {
     "id": "p_cze_9",
@@ -19,7 +20,8 @@
     "club": "スラヴィア・プラハ",
     "goals": 0,
     "assists": 0,
-    "number": 2
+    "number": 2,
+    "shortName": "ジマ"
   },
   {
     "id": "p_cze_7",
@@ -30,7 +32,8 @@
     "club": "スラヴィア・プラハ",
     "goals": 0,
     "assists": 0,
-    "number": 3
+    "number": 3,
+    "shortName": "ホレシュ"
   },
   {
     "id": "p_cze_11",
@@ -41,7 +44,8 @@
     "club": "ホッフェンハイム（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 4
+    "number": 4,
+    "shortName": "フラナーチ"
   },
   {
     "id": "p_cze_10",
@@ -52,7 +56,8 @@
     "club": "ホッフェンハイム（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 5
+    "number": 5,
+    "shortName": "ツォウファル"
   },
   {
     "id": "p_cze_5",
@@ -63,7 +68,8 @@
     "club": "スラヴィア・プラハ",
     "goals": 0,
     "assists": 0,
-    "number": 6
+    "number": 6,
+    "shortName": "チャロウペク"
   },
   {
     "id": "p_cze_12",
@@ -74,7 +80,8 @@
     "club": "ウォルヴァーハンプトン・ワンダラーズ（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 7
+    "number": 7,
+    "shortName": "クレイチー"
   },
   {
     "id": "p_cze_19",
@@ -85,7 +92,8 @@
     "club": "フラデツ・クラーロヴェー",
     "goals": 0,
     "assists": 0,
-    "number": 8
+    "number": 8,
+    "shortName": "ダリダ"
   },
   {
     "id": "p_cze_23",
@@ -96,7 +104,8 @@
     "club": "ホッフェンハイム（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 9
+    "number": 9,
+    "shortName": "ハロジェク"
   },
   {
     "id": "p_cze_22",
@@ -107,7 +116,8 @@
     "club": "バイヤー・レバークーゼン（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 10
+    "number": 10,
+    "shortName": "シック"
   },
   {
     "id": "p_cze_26",
@@ -118,7 +128,8 @@
     "club": "スパルタ・プラハ",
     "goals": 0,
     "assists": 0,
-    "number": 11
+    "number": 11,
+    "shortName": "クフタ"
   },
   {
     "id": "p_cze_16",
@@ -129,7 +140,8 @@
     "club": "ヴィクトリア・プルゼニ（チェコ）",
     "goals": 0,
     "assists": 0,
-    "number": 12
+    "number": 12,
+    "shortName": "チェルフ"
   },
   {
     "id": "p_cze_25",
@@ -140,7 +152,8 @@
     "club": "スラヴィア・プラハ",
     "goals": 0,
     "assists": 0,
-    "number": 13
+    "number": 13,
+    "shortName": "ヒティル"
   },
   {
     "id": "p_cze_8",
@@ -151,7 +164,8 @@
     "club": "スラヴィア・プラハ",
     "goals": 0,
     "assists": 0,
-    "number": 14
+    "number": 14,
+    "shortName": "ユラーセク"
   },
   {
     "id": "p_cze_20",
@@ -162,7 +176,8 @@
     "club": "オリンピック・リヨン（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 15
+    "number": 15,
+    "shortName": "シュルツ"
   },
   {
     "id": "p_cze_3",
@@ -173,7 +188,8 @@
     "club": "スラヴィア・プラハ",
     "goals": 0,
     "assists": 0,
-    "number": 16
+    "number": 16,
+    "shortName": "スタニェク"
   },
   {
     "id": "p_cze_17",
@@ -184,7 +200,8 @@
     "club": "スラヴィア・プラハ",
     "goals": 0,
     "assists": 0,
-    "number": 17
+    "number": 17,
+    "shortName": "プロヴォド"
   },
   {
     "id": "p_cze_18",
@@ -195,7 +212,8 @@
     "club": "スラヴィア・プラハ",
     "goals": 0,
     "assists": 0,
-    "number": 18
+    "number": 18,
+    "shortName": "サディーレク"
   },
   {
     "id": "p_cze_24",
@@ -206,7 +224,8 @@
     "club": "スラヴィア・プラハ",
     "goals": 0,
     "assists": 0,
-    "number": 19
+    "number": 19,
+    "shortName": "ホリー"
   },
   {
     "id": "p_cze_4",
@@ -217,7 +236,8 @@
     "club": "スパルタ・プラハ",
     "goals": 0,
     "assists": 0,
-    "number": 20
+    "number": 20,
+    "shortName": "ゼレニー"
   },
   {
     "id": "p_cze_6",
@@ -228,7 +248,8 @@
     "club": "スラヴィア・プラハ",
     "goals": 0,
     "assists": 0,
-    "number": 21
+    "number": 21,
+    "shortName": "ドウデラ"
   },
   {
     "id": "p_cze_21",
@@ -239,7 +260,8 @@
     "club": "ウェストハム・ユナイテッド（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 22
+    "number": 22,
+    "shortName": "ソウチェク"
   },
   {
     "id": "p_cze_2",
@@ -250,7 +272,8 @@
     "club": "ブラガ（ポルトガル）",
     "goals": 0,
     "assists": 0,
-    "number": 23
+    "number": 23,
+    "shortName": "ホルニーチェク"
   },
   {
     "id": "p_cze_14",
@@ -261,7 +284,8 @@
     "club": "ヴィクトリア・プルゼニ（チェコ）",
     "goals": 0,
     "assists": 0,
-    "number": 24
+    "number": 24,
+    "shortName": "ソイカ"
   },
   {
     "id": "p_cze_13",
@@ -272,7 +296,8 @@
     "club": "スパルタ・プラハ",
     "goals": 0,
     "assists": 0,
-    "number": 25
+    "number": 25,
+    "shortName": "ソフフルェク"
   },
   {
     "id": "p_cze_15",
@@ -283,6 +308,7 @@
     "club": "ヴィクトリア・プルゼニ（チェコ）",
     "goals": 0,
     "assists": 0,
-    "number": 26
+    "number": 26,
+    "shortName": "ヴィシンスキー"
   }
 ]

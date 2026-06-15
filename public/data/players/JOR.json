@@ -8,7 +8,8 @@
     "club": "アル・フセイン",
     "goals": 0,
     "assists": 0,
-    "number": 1
+    "number": 1,
+    "shortName": "レイラ"
   },
   {
     "id": "p_jor_15",
@@ -19,7 +20,8 @@
     "club": "アル・カルマ（イラク）",
     "goals": 0,
     "assists": 0,
-    "number": 2
+    "number": 2,
+    "shortName": "ハシシュ"
   },
   {
     "id": "p_jor_9",
@@ -30,7 +32,8 @@
     "club": "アル・ザウラー（イラク）",
     "goals": 0,
     "assists": 0,
-    "number": 3
+    "number": 3,
+    "shortName": "ナシブ"
   },
   {
     "id": "p_jor_8",
@@ -41,7 +44,8 @@
     "club": "アル・ファイサリー",
     "goals": 0,
     "assists": 0,
-    "number": 4
+    "number": 4,
+    "shortName": "ダハブ"
   },
   {
     "id": "p_jor_11",
@@ -52,7 +56,8 @@
     "club": "FCソウル（韓国）",
     "goals": 0,
     "assists": 0,
-    "number": 5
+    "number": 5,
+    "shortName": "アラブ"
   },
   {
     "id": "p_jor_14",
@@ -63,7 +68,8 @@
     "club": "アル・ザウラー（イラク）",
     "goals": 0,
     "assists": 0,
-    "number": 6
+    "number": 6,
+    "shortName": "ジャムース"
   },
   {
     "id": "p_jor_22",
@@ -74,7 +80,8 @@
     "club": "ラジャCA（モロッコ）",
     "goals": 0,
     "assists": 0,
-    "number": 7
+    "number": 7,
+    "shortName": "ズライク"
   },
   {
     "id": "p_jor_18",
@@ -85,7 +92,8 @@
     "club": "スランゴール（マレーシア）",
     "goals": 0,
     "assists": 0,
-    "number": 8
+    "number": 8,
+    "shortName": "ラワブデ"
   },
   {
     "id": "p_jor_25",
@@ -96,7 +104,8 @@
     "club": "アル・サイリヤ（カタール）",
     "goals": 0,
     "assists": 0,
-    "number": 9
+    "number": 9,
+    "shortName": "オルワン"
   },
   {
     "id": "p_jor_20",
@@ -107,7 +116,8 @@
     "club": "レンヌ（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 10
+    "number": 10,
+    "shortName": "タアマリ"
   },
   {
     "id": "p_jor_23",
@@ -118,7 +128,8 @@
     "club": "ピラミッズ（エジプト）",
     "goals": 0,
     "assists": 0,
-    "number": 11
+    "number": 11,
+    "shortName": "ファフリ"
   },
   {
     "id": "p_jor_3",
@@ -129,7 +140,8 @@
     "club": "アル・ファイサリー",
     "goals": 0,
     "assists": 0,
-    "number": 12
+    "number": 12,
+    "shortName": "アッティアー"
   },
   {
     "id": "p_jor_26",
@@ -140,7 +152,8 @@
     "club": "アル・フセイン",
     "goals": 0,
     "assists": 0,
-    "number": 13
+    "number": 13,
+    "shortName": "マルディ"
   },
   {
     "id": "p_jor_12",
@@ -151,7 +164,8 @@
     "club": "アル・フセイン",
     "goals": 0,
     "assists": 0,
-    "number": 14
+    "number": 14,
+    "shortName": "アエッド"
   },
   {
     "id": "p_jor_16",
@@ -162,7 +176,8 @@
     "club": "アル・カルマ（イラク）",
     "goals": 0,
     "assists": 0,
-    "number": 15
+    "number": 15,
+    "shortName": "サアデ"
   },
   {
     "id": "p_jor_10",
@@ -173,7 +188,8 @@
     "club": "スランゴール（マレーシア）",
     "goals": 0,
     "assists": 0,
-    "number": 16
+    "number": 16,
+    "shortName": "ナディ"
   },
   {
     "id": "p_jor_4",
@@ -184,7 +200,8 @@
     "club": "アル・フセイン",
     "goals": 0,
     "assists": 0,
-    "number": 17
+    "number": 17,
+    "shortName": "オバイド"
   },
   {
     "id": "p_jor_21",
@@ -195,7 +212,8 @@
     "club": "アル・フセイン",
     "goals": 0,
     "assists": 0,
-    "number": 18
+    "number": 18,
+    "shortName": "ゴシュ"
   },
   {
     "id": "p_jor_5",
@@ -206,7 +224,8 @@
     "club": "アル・フセイン",
     "goals": 0,
     "assists": 0,
-    "number": 19
+    "number": 19,
+    "shortName": "ロザン"
   },
   {
     "id": "p_jor_17",
@@ -217,7 +236,8 @@
     "club": "アル・クワ・アル・ジャウィヤ（イラク）",
     "goals": 0,
     "assists": 0,
-    "number": 20
+    "number": 20,
+    "shortName": "タハ"
   },
   {
     "id": "p_jor_19",
@@ -228,7 +248,8 @@
     "club": "カタールSC（カタール）",
     "goals": 0,
     "assists": 0,
-    "number": 21
+    "number": 21,
+    "shortName": "ラシュダン"
   },
   {
     "id": "p_jor_2",
@@ -239,7 +260,8 @@
     "club": "アル・ワフダート",
     "goals": 0,
     "assists": 0,
-    "number": 22
+    "number": 22,
+    "shortName": "ファフリ"
   },
   {
     "id": "p_jor_6",
@@ -250,7 +272,8 @@
     "club": "アル・フセイン",
     "goals": 0,
     "assists": 0,
-    "number": 23
+    "number": 23,
+    "shortName": "ハダド"
   },
   {
     "id": "p_jor_24",
@@ -261,7 +284,8 @@
     "club": "アル・シャバブ（サウジアラビア）",
     "goals": 0,
     "assists": 0,
-    "number": 24
+    "number": 24,
+    "shortName": "アザイゼ"
   },
   {
     "id": "p_jor_13",
@@ -272,7 +296,8 @@
     "club": "アル・ワフダート",
     "goals": 0,
     "assists": 0,
-    "number": 25
+    "number": 25,
+    "shortName": "ダウード"
   },
   {
     "id": "p_jor_7",
@@ -283,6 +308,7 @@
     "club": "アル・ファイサリー",
     "goals": 0,
     "assists": 0,
-    "number": 26
+    "number": 26,
+    "shortName": "バダウィ"
   }
 ]

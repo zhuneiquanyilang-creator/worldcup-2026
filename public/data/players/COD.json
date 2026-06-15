@@ -8,7 +8,8 @@
     "club": "ル・アーヴル（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 1
+    "number": 1,
+    "shortName": "ムパシ"
   },
   {
     "id": "p_cod_12",
@@ -19,7 +20,8 @@
     "club": "ウェストハム・ユナイテッド（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 2
+    "number": 2,
+    "shortName": "ビサカ"
   },
   {
     "id": "p_cod_4",
@@ -30,7 +32,8 @@
     "club": "ヴィジェフ・ウッチ（ポーランド）",
     "goals": 0,
     "assists": 0,
-    "number": 3
+    "number": 3,
+    "shortName": "カプアディ"
   },
   {
     "id": "p_cod_11",
@@ -41,7 +44,8 @@
     "club": "バーンリー（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 4
+    "number": 4,
+    "shortName": "トゥアンゼベ"
   },
   {
     "id": "p_cod_6",
@@ -52,7 +56,8 @@
     "club": "AEL（ギリシャ）",
     "goals": 0,
     "assists": 0,
-    "number": 5
+    "number": 5,
+    "shortName": "バトゥビンシカ"
   },
   {
     "id": "p_cod_17",
@@ -63,7 +68,8 @@
     "club": "リール（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 6
+    "number": 6,
+    "shortName": "ムカウ"
   },
   {
     "id": "p_cod_16",
@@ -74,7 +80,8 @@
     "club": "モンペリエ（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 7
+    "number": 7,
+    "shortName": "ムブク"
   },
   {
     "id": "p_cod_14",
@@ -85,7 +92,8 @@
     "club": "アトロミトス（ギリシャ）",
     "goals": 0,
     "assists": 0,
-    "number": 8
+    "number": 8,
+    "shortName": "ムトゥサミ"
   },
   {
     "id": "p_cod_18",
@@ -96,7 +104,8 @@
     "club": "カステリョン（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 9
+    "number": 9,
+    "shortName": "チペンガ"
   },
   {
     "id": "p_cod_13",
@@ -107,7 +116,8 @@
     "club": "スパルタク・モスクワ（ロシア）",
     "goals": 0,
     "assists": 0,
-    "number": 10
+    "number": 10,
+    "shortName": "ボンゴンダ"
   },
   {
     "id": "p_cod_15",
@@ -118,7 +128,8 @@
     "club": "AEL（ギリシャ）",
     "goals": 0,
     "assists": 0,
-    "number": 11
+    "number": 11,
+    "shortName": "カクタ"
   },
   {
     "id": "p_cod_8",
@@ -129,7 +140,8 @@
     "club": "ヘンク（ベルギー）",
     "goals": 0,
     "assists": 0,
-    "number": 12
+    "number": 12,
+    "shortName": "カイェンベ"
   },
   {
     "id": "p_cod_24",
@@ -140,7 +152,8 @@
     "club": "アランヤスポル（トルコ）",
     "goals": 0,
     "assists": 0,
-    "number": 13
+    "number": 13,
+    "shortName": "エリア"
   },
   {
     "id": "p_cod_20",
@@ -151,7 +164,8 @@
     "club": "サンダーランド（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 14
+    "number": 14,
+    "shortName": "サディキ"
   },
   {
     "id": "p_cod_7",
@@ -162,7 +176,8 @@
     "club": "キルマーノック（スコットランド）",
     "goals": 0,
     "assists": 0,
-    "number": 15
+    "number": 15,
+    "shortName": "ツィボラ"
   },
   {
     "id": "p_cod_3",
@@ -173,7 +188,8 @@
     "club": "FCノア（アルメニア）",
     "goals": 0,
     "assists": 0,
-    "number": 16
+    "number": 16,
+    "shortName": "ファユル"
   },
   {
     "id": "p_cod_22",
@@ -184,7 +200,8 @@
     "club": "ベティス（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 17
+    "number": 17,
+    "shortName": "バカンブ"
   },
   {
     "id": "p_cod_19",
@@ -195,7 +212,8 @@
     "club": "エスパニョール（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 18
+    "number": 18,
+    "shortName": "ピッケル"
   },
   {
     "id": "p_cod_26",
@@ -206,7 +224,8 @@
     "club": "ピラミッズ（エジプト）",
     "goals": 0,
     "assists": 0,
-    "number": 19
+    "number": 19,
+    "shortName": "マイェレ"
   },
   {
     "id": "p_cod_23",
@@ -217,7 +236,8 @@
     "club": "ニューカッスル・ユナイテッド（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 20
+    "number": 20,
+    "shortName": "ウィサ"
   },
   {
     "id": "p_cod_2",
@@ -228,7 +248,8 @@
     "club": "スタンダール・リエージュ（ベルギー）",
     "goals": 0,
     "assists": 0,
-    "number": 21
+    "number": 21,
+    "shortName": "エポロ"
   },
   {
     "id": "p_cod_10",
@@ -239,7 +260,8 @@
     "club": "リール（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 22
+    "number": 22,
+    "shortName": "ムベンバ"
   },
   {
     "id": "p_cod_25",
@@ -250,7 +272,8 @@
     "club": "アル・ジャジーラ（UAE）",
     "goals": 0,
     "assists": 0,
-    "number": 23
+    "number": 23,
+    "shortName": "バンザ"
   },
   {
     "id": "p_cod_5",
@@ -261,7 +284,8 @@
     "club": "アリス・リマソル（キプロス）",
     "goals": 0,
     "assists": 0,
-    "number": 24
+    "number": 24,
+    "shortName": "カルル"
   },
   {
     "id": "p_cod_21",
@@ -272,7 +296,8 @@
     "club": "ワトフォード（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 25
+    "number": 25,
+    "shortName": "カイェンベ"
   },
   {
     "id": "p_cod_9",
@@ -283,6 +308,7 @@
     "club": "ランス（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 26
+    "number": 26,
+    "shortName": "マスアク"
   }
 ]

@@ -8,7 +8,8 @@
     "club": "ナシオナル（ウルグアイ）",
     "goals": 0,
     "assists": 0,
-    "number": 1
+    "number": 1,
+    "shortName": "メヒア"
   },
   {
     "id": "p_pan_10",
@@ -19,7 +20,8 @@
     "club": "スロヴァン・ブラティスラヴァ（スロバキア）",
     "goals": 0,
     "assists": 0,
-    "number": 2
+    "number": 2,
+    "shortName": "ブラックマン"
   },
   {
     "id": "p_pan_13",
@@ -30,7 +32,8 @@
     "club": "ノリッジ・シティ（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 3
+    "number": 3,
+    "shortName": "コルドバ"
   },
   {
     "id": "p_pan_6",
@@ -41,7 +44,8 @@
     "club": "サプリサ（コスタリカ）",
     "goals": 0,
     "assists": 0,
-    "number": 4
+    "number": 4,
+    "shortName": "エスコバル"
   },
   {
     "id": "p_pan_9",
@@ -52,7 +56,8 @@
     "club": "パリ・ニジニ・ノヴゴロド（ロシア）",
     "goals": 0,
     "assists": 0,
-    "number": 5
+    "number": 5,
+    "shortName": "ファリーニャ"
   },
   {
     "id": "p_pan_22",
@@ -63,7 +68,8 @@
     "club": "イロニ・キリヤット・シュモナ（イスラエル）",
     "goals": 0,
     "assists": 0,
-    "number": 6
+    "number": 6,
+    "shortName": "マルティネス"
   },
   {
     "id": "p_pan_15",
@@ -74,7 +80,8 @@
     "club": "フアレス（メキシコ）",
     "goals": 0,
     "assists": 0,
-    "number": 7
+    "number": 7,
+    "shortName": "ロドリゲス"
   },
   {
     "id": "p_pan_16",
@@ -85,7 +92,8 @@
     "club": "UNAMプマス（メキシコ）",
     "goals": 0,
     "assists": 0,
-    "number": 8
+    "number": 8,
+    "shortName": "カラスキージャ"
   },
   {
     "id": "p_pan_26",
@@ -96,7 +104,8 @@
     "club": "サプリサ（コスタリカ）",
     "goals": 0,
     "assists": 0,
-    "number": 9
+    "number": 9,
+    "shortName": "ロドリゲス"
   },
   {
     "id": "p_pan_23",
@@ -107,7 +116,8 @@
     "club": "レオン（メキシコ）",
     "goals": 0,
     "assists": 0,
-    "number": 10
+    "number": 10,
+    "shortName": "ディアス"
   },
   {
     "id": "p_pan_17",
@@ -118,7 +128,8 @@
     "club": "マサトラン（メキシコ）",
     "goals": 0,
     "assists": 0,
-    "number": 11
+    "number": 11,
+    "shortName": "バルセナス"
   },
   {
     "id": "p_pan_3",
@@ -129,7 +140,8 @@
     "club": "マラトン（ホンジュラス）",
     "goals": 0,
     "assists": 0,
-    "number": 12
+    "number": 12,
+    "shortName": "サムディオ"
   },
   {
     "id": "p_pan_8",
@@ -140,7 +152,8 @@
     "club": "プエルト・カベージョ（ベネズエラ）",
     "goals": 0,
     "assists": 0,
-    "number": 13
+    "number": 13,
+    "shortName": "ラモス"
   },
   {
     "id": "p_pan_18",
@@ -151,7 +164,8 @@
     "club": "ミネソタ・ユナイテッド（アメリカ）",
     "goals": 0,
     "assists": 0,
-    "number": 14
+    "number": 14,
+    "shortName": "ハーヴェイ"
   },
   {
     "id": "p_pan_4",
@@ -162,7 +176,8 @@
     "club": "プラサ・アマドル",
     "goals": 0,
     "assists": 0,
-    "number": 15
+    "number": 15,
+    "shortName": "ダビス"
   },
   {
     "id": "p_pan_11",
@@ -173,7 +188,8 @@
     "club": "LASK（オーストリア）",
     "goals": 0,
     "assists": 0,
-    "number": 16
+    "number": 16,
+    "shortName": "アンドラデ"
   },
   {
     "id": "p_pan_24",
@@ -184,7 +200,8 @@
     "club": "ウニベルシダ・カトリカ（エクアドル）",
     "goals": 0,
     "assists": 0,
-    "number": 17
+    "number": 17,
+    "shortName": "ファハルド"
   },
   {
     "id": "p_pan_25",
@@ -195,7 +212,8 @@
     "club": "ウニベルシダ・デ・コンセプシオン（チリ）",
     "goals": 0,
     "assists": 0,
-    "number": 18
+    "number": 18,
+    "shortName": "ワーテルマン"
   },
   {
     "id": "p_pan_14",
@@ -206,7 +224,8 @@
     "club": "プラサ・アマドル",
     "goals": 0,
     "assists": 0,
-    "number": 19
+    "number": 19,
+    "shortName": "キンテロ"
   },
   {
     "id": "p_pan_19",
@@ -217,7 +236,8 @@
     "club": "サンディエゴFC（アメリカ）",
     "goals": 0,
     "assists": 0,
-    "number": 20
+    "number": 20,
+    "shortName": "ゴドイ"
   },
   {
     "id": "p_pan_21",
@@ -228,7 +248,8 @@
     "club": "コブレサル（チリ）",
     "goals": 0,
     "assists": 0,
-    "number": 21
+    "number": 21,
+    "shortName": "ヤニス"
   },
   {
     "id": "p_pan_2",
@@ -239,7 +260,8 @@
     "club": "アル・フェイハ（サウジアラビア）",
     "goals": 0,
     "assists": 0,
-    "number": 22
+    "number": 22,
+    "shortName": "モスケラ"
   },
   {
     "id": "p_pan_12",
@@ -250,7 +272,8 @@
     "club": "ベジクタシュ（トルコ）",
     "goals": 0,
     "assists": 0,
-    "number": 23
+    "number": 23,
+    "shortName": "ムリージョ"
   },
   {
     "id": "p_pan_20",
@@ -261,7 +284,8 @@
     "club": "ウニベルシダ・カトリカ（エクアドル）",
     "goals": 0,
     "assists": 0,
-    "number": 24
+    "number": 24,
+    "shortName": "ロンドーニョ"
   },
   {
     "id": "p_pan_5",
@@ -272,7 +296,8 @@
     "club": "トゥラン・トヴス（アゼルバイジャン）",
     "goals": 0,
     "assists": 0,
-    "number": 25
+    "number": 25,
+    "shortName": "ミジェール"
   },
   {
     "id": "p_pan_7",
@@ -283,6 +308,7 @@
     "club": "デポルティボ・ラ・グアイラ（ベネズエラ）",
     "goals": 0,
     "assists": 0,
-    "number": 26
+    "number": 26,
+    "shortName": "グティエレス"
   }
 ]

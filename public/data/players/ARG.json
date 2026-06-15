@@ -8,7 +8,8 @@
     "club": "アストン・ヴィラ（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 1
+    "number": 1,
+    "shortName": "マルティネス"
   },
   {
     "id": "p_arg_7",
@@ -19,7 +20,8 @@
     "club": "オリンピック・マルセイユ（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 2
+    "number": 2,
+    "shortName": "バレルディ"
   },
   {
     "id": "p_arg_8",
@@ -30,7 +32,8 @@
     "club": "オリンピック・リヨン（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 3
+    "number": 3,
+    "shortName": "タグリアフィコ"
   },
   {
     "id": "p_arg_4",
@@ -41,7 +44,8 @@
     "club": "リーベル・プレート（アルゼンチン）",
     "goals": 0,
     "assists": 0,
-    "number": 4
+    "number": 4,
+    "shortName": "モンティエル"
   },
   {
     "id": "p_arg_12",
@@ -52,7 +56,8 @@
     "club": "ボカ・ジュニアーズ",
     "goals": 0,
     "assists": 0,
-    "number": 5
+    "number": 5,
+    "shortName": "パレデス"
   },
   {
     "id": "p_arg_10",
@@ -63,7 +68,8 @@
     "club": "マンチェスター・ユナイテッド（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 6
+    "number": 6,
+    "shortName": "マルティネス"
   },
   {
     "id": "p_arg_13",
@@ -74,7 +80,8 @@
     "club": "インテル・マイアミ（アメリカ）",
     "goals": 0,
     "assists": 0,
-    "number": 7
+    "number": 7,
+    "shortName": "パウル"
   },
   {
     "id": "p_arg_14",
@@ -85,7 +92,8 @@
     "club": "ストラスブール（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 8
+    "number": 8,
+    "shortName": "バルコ"
   },
   {
     "id": "p_arg_20",
@@ -96,7 +104,8 @@
     "club": "アトレティコ・マドリード（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 9
+    "number": 9,
+    "shortName": "アルバレス"
   },
   {
     "id": "p_arg_19",
@@ -107,7 +116,8 @@
     "club": "インテル・マイアミ（アメリカ）",
     "goals": 0,
     "assists": 0,
-    "number": 10
+    "number": 10,
+    "shortName": "メッシ"
   },
   {
     "id": "p_arg_16",
@@ -118,7 +128,8 @@
     "club": "ベティス（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 11
+    "number": 11,
+    "shortName": "チェルソ"
   },
   {
     "id": "p_arg_3",
@@ -129,7 +140,8 @@
     "club": "オリンピック・マルセイユ（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 12
+    "number": 12,
+    "shortName": "ルッリ"
   },
   {
     "id": "p_arg_9",
@@ -140,7 +152,8 @@
     "club": "トッテナム・ホットスパー（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 13
+    "number": 13,
+    "shortName": "ロメロ"
   },
   {
     "id": "p_arg_15",
@@ -151,7 +164,8 @@
     "club": "バイヤー・レバークーゼン（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 14
+    "number": 14,
+    "shortName": "パラシオス"
   },
   {
     "id": "p_arg_21",
@@ -162,7 +176,8 @@
     "club": "アトレティコ・マドリード（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 15
+    "number": 15,
+    "shortName": "ゴンサレス"
   },
   {
     "id": "p_arg_23",
@@ -173,7 +188,8 @@
     "club": "アトレティコ・マドリード（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 16
+    "number": 16,
+    "shortName": "アルマーダ"
   },
   {
     "id": "p_arg_22",
@@ -184,7 +200,8 @@
     "club": "アトレティコ・マドリード（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 17
+    "number": 17,
+    "shortName": "シメオネ"
   },
   {
     "id": "p_arg_25",
@@ -195,7 +212,8 @@
     "club": "コモ（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 18
+    "number": 18,
+    "shortName": "パス"
   },
   {
     "id": "p_arg_5",
@@ -206,7 +224,8 @@
     "club": "ベンフィカ（ポルトガル）",
     "goals": 0,
     "assists": 0,
-    "number": 19
+    "number": 19,
+    "shortName": "オタメンディ"
   },
   {
     "id": "p_arg_18",
@@ -217,7 +236,8 @@
     "club": "リバプール（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 20
+    "number": 20,
+    "shortName": "アリスター"
   },
   {
     "id": "p_arg_26",
@@ -228,7 +248,8 @@
     "club": "パルメイラス（ブラジル）",
     "goals": 0,
     "assists": 0,
-    "number": 21
+    "number": 21,
+    "shortName": "ロペス"
   },
   {
     "id": "p_arg_24",
@@ -239,7 +260,8 @@
     "club": "インテル（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 22
+    "number": 22,
+    "shortName": "マルティネス"
   },
   {
     "id": "p_arg_2",
@@ -250,7 +272,8 @@
     "club": "アトレティコ・マドリード（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 23
+    "number": 23,
+    "shortName": "ムッソ"
   },
   {
     "id": "p_arg_17",
@@ -261,7 +284,8 @@
     "club": "チェルシー（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 24
+    "number": 24,
+    "shortName": "フェルナンデス"
   },
   {
     "id": "p_arg_6",
@@ -272,7 +296,8 @@
     "club": "オリンピック・マルセイユ（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 25
+    "number": 25,
+    "shortName": "メディーナ"
   },
   {
     "id": "p_arg_11",
@@ -283,6 +308,7 @@
     "club": "アトレティコ・マドリード（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 26
+    "number": 26,
+    "shortName": "モリーナ"
   }
 ]

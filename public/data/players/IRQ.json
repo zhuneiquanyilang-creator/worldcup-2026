@@ -8,7 +8,8 @@
     "club": "アル・タラバ",
     "goals": 0,
     "assists": 0,
-    "number": 1
+    "number": 1,
+    "shortName": "タリブ"
   },
   {
     "id": "p_irq_9",
@@ -19,7 +20,8 @@
     "club": "ポート（タイ）",
     "goals": 0,
     "assists": 0,
-    "number": 2
+    "number": 2,
+    "shortName": "スラカ"
   },
   {
     "id": "p_irq_11",
@@ -30,7 +32,8 @@
     "club": "ポゴン・シュチェチン（ポーランド）",
     "goals": 0,
     "assists": 0,
-    "number": 3
+    "number": 3,
+    "shortName": "アリ"
   },
   {
     "id": "p_irq_10",
@@ -41,7 +44,8 @@
     "club": "パフタコル（ウズベキスタン）",
     "goals": 0,
     "assists": 0,
-    "number": 4
+    "number": 4,
+    "shortName": "タフセン"
   },
   {
     "id": "p_irq_4",
@@ -52,7 +56,8 @@
     "club": "アル・ザウラー（イラク）",
     "goals": 0,
     "assists": 0,
-    "number": 5
+    "number": 5,
+    "shortName": "ハシム"
   },
   {
     "id": "p_irq_6",
@@ -63,7 +68,8 @@
     "club": "アル・ショルタ",
     "goals": 0,
     "assists": 0,
-    "number": 6
+    "number": 6,
+    "shortName": "ユニス"
   },
   {
     "id": "p_irq_17",
@@ -74,7 +80,8 @@
     "club": "AEKラルナカ（キプロス）",
     "goals": 0,
     "assists": 0,
-    "number": 7
+    "number": 7,
+    "shortName": "アミン"
   },
   {
     "id": "p_irq_14",
@@ -85,7 +92,8 @@
     "club": "アル・ダフラ（アラブ首長国連邦）",
     "goals": 0,
     "assists": 0,
-    "number": 8
+    "number": 8,
+    "shortName": "バイェシュ"
   },
   {
     "id": "p_irq_25",
@@ -96,7 +104,8 @@
     "club": "ルートン・タウン（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 9
+    "number": 9,
+    "shortName": "ハマディ"
   },
   {
     "id": "p_irq_26",
@@ -107,7 +116,8 @@
     "club": "ディッバ（アラブ首長国連邦）",
     "goals": 0,
     "assists": 0,
-    "number": 10
+    "number": 10,
+    "shortName": "アリ"
   },
   {
     "id": "p_irq_16",
@@ -118,7 +128,8 @@
     "club": "ナッシュビルSC（アメリカ）",
     "goals": 0,
     "assists": 0,
-    "number": 11
+    "number": 11,
+    "shortName": "カセム"
   },
   {
     "id": "p_irq_1",
@@ -129,7 +140,8 @@
     "club": "アル・ザウラー（イラク）",
     "goals": 0,
     "assists": 0,
-    "number": 12
+    "number": 12,
+    "shortName": "ハッサン"
   },
   {
     "id": "p_irq_24",
@@ -140,7 +152,8 @@
     "club": "アル・タラバ",
     "goals": 0,
     "assists": 0,
-    "number": 13
+    "number": 13,
+    "shortName": "ユセフ"
   },
   {
     "id": "p_irq_21",
@@ -151,7 +164,8 @@
     "club": "ユトレヒト（オランダ）",
     "goals": 0,
     "assists": 0,
-    "number": 14
+    "number": 14,
+    "shortName": "イクバル"
   },
   {
     "id": "p_irq_5",
@@ -162,7 +176,8 @@
     "club": "アル・カルマ（イラク）",
     "goals": 0,
     "assists": 0,
-    "number": 15
+    "number": 15,
+    "shortName": "アクンジ"
   },
   {
     "id": "p_irq_20",
@@ -173,7 +188,8 @@
     "club": "クラコビア（ポーランド）",
     "goals": 0,
     "assists": 0,
-    "number": 16
+    "number": 16,
+    "shortName": "アンマリ"
   },
   {
     "id": "p_irq_15",
@@ -184,7 +200,8 @@
     "club": "アル・ナジマ（サウジアラビア）",
     "goals": 0,
     "assists": 0,
-    "number": 17
+    "number": 17,
+    "shortName": "ジャシム"
   },
   {
     "id": "p_irq_23",
@@ -195,7 +212,8 @@
     "club": "アル・カルマ（イラク）",
     "goals": 0,
     "assists": 0,
-    "number": 18
+    "number": 18,
+    "shortName": "フセイン"
   },
   {
     "id": "p_irq_19",
@@ -206,7 +224,8 @@
     "club": "オーフス（デンマーク）",
     "goals": 0,
     "assists": 0,
-    "number": 19
+    "number": 19,
+    "shortName": "ヤコブ"
   },
   {
     "id": "p_irq_18",
@@ -217,7 +236,8 @@
     "club": "サルプスボルグ（ノルウェー）",
     "goals": 0,
     "assists": 0,
-    "number": 20
+    "number": 20,
+    "shortName": "シェル"
   },
   {
     "id": "p_irq_22",
@@ -228,7 +248,8 @@
     "club": "ベネチア（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 21
+    "number": 21,
+    "shortName": "ファルジ"
   },
   {
     "id": "p_irq_3",
@@ -239,7 +260,8 @@
     "club": "アル・ショルタ",
     "goals": 0,
     "assists": 0,
-    "number": 22
+    "number": 22,
+    "shortName": "バシル"
   },
   {
     "id": "p_irq_12",
@@ -250,7 +272,8 @@
     "club": "ヴィクトリア・プルゼニ（チェコ）",
     "goals": 0,
     "assists": 0,
-    "number": 23
+    "number": 23,
+    "shortName": "ドスキ"
   },
   {
     "id": "p_irq_13",
@@ -261,7 +284,8 @@
     "club": "アル・タラバ",
     "goals": 0,
     "assists": 0,
-    "number": 24
+    "number": 24,
+    "shortName": "イスマイル"
   },
   {
     "id": "p_irq_7",
@@ -272,7 +296,8 @@
     "club": "アル・ショルタ",
     "goals": 0,
     "assists": 0,
-    "number": 25
+    "number": 25,
+    "shortName": "サードゥン"
   },
   {
     "id": "p_irq_8",
@@ -283,6 +308,7 @@
     "club": "ペルシブ（インドネシア）",
     "goals": 0,
     "assists": 0,
-    "number": 26
+    "number": 26,
+    "shortName": "プトロス"
   }
 ]

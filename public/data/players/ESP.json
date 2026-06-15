@@ -8,7 +8,8 @@
     "club": "アーセナル（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 1
+    "number": 1,
+    "shortName": "ラヤ"
   },
   {
     "id": "p_esp_4",
@@ -19,7 +20,8 @@
     "club": "アトレティコ・マドリード（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 2
+    "number": 2,
+    "shortName": "プビル"
   },
   {
     "id": "p_esp_9",
@@ -30,7 +32,8 @@
     "club": "バイヤー・レバークーゼン（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 3
+    "number": 3,
+    "shortName": "グリマルド"
   },
   {
     "id": "p_esp_7",
@@ -41,7 +44,8 @@
     "club": "バルセロナ（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 4
+    "number": 4,
+    "shortName": "ガルシア"
   },
   {
     "id": "p_esp_5",
@@ -52,7 +56,8 @@
     "club": "アトレティコ・マドリード（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 5
+    "number": 5,
+    "shortName": "ジョレンテ"
   },
   {
     "id": "p_esp_17",
@@ -63,7 +68,8 @@
     "club": "アーセナル（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 6
+    "number": 6,
+    "shortName": "メリーノ"
   },
   {
     "id": "p_esp_22",
@@ -74,7 +80,8 @@
     "club": "バルセロナ（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 7
+    "number": 7,
+    "shortName": "トーレス"
   },
   {
     "id": "p_esp_15",
@@ -85,7 +92,8 @@
     "club": "パリ・サンジェルマン（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 8
+    "number": 8,
+    "shortName": "ルイス"
   },
   {
     "id": "p_esp_13",
@@ -96,7 +104,8 @@
     "club": "バルセロナ（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 9
+    "number": 9,
+    "shortName": "ガビ"
   },
   {
     "id": "p_esp_21",
@@ -107,7 +116,8 @@
     "club": "バルセロナ（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 10
+    "number": 10,
+    "shortName": "オルモ"
   },
   {
     "id": "p_esp_19",
@@ -118,7 +128,8 @@
     "club": "クリスタル・パレス（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 11
+    "number": 11,
+    "shortName": "ピノ"
   },
   {
     "id": "p_esp_10",
@@ -129,7 +140,8 @@
     "club": "トッテナム・ホットスパー（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 12
+    "number": 12,
+    "shortName": "ポロ"
   },
   {
     "id": "p_esp_2",
@@ -140,7 +152,8 @@
     "club": "バルセロナ（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 13
+    "number": 13,
+    "shortName": "ガルシア"
   },
   {
     "id": "p_esp_6",
@@ -151,7 +164,8 @@
     "club": "アスレティック・ビルバオ",
     "goals": 0,
     "assists": 0,
-    "number": 14
+    "number": 14,
+    "shortName": "ラポルテ"
   },
   {
     "id": "p_esp_12",
@@ -162,7 +176,8 @@
     "club": "アトレティコ・マドリード（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 15
+    "number": 15,
+    "shortName": "バエナ"
   },
   {
     "id": "p_esp_18",
@@ -173,7 +188,8 @@
     "club": "マンチェスター・シティ（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 16
+    "number": 16,
+    "shortName": "ロドリ"
   },
   {
     "id": "p_esp_24",
@@ -184,7 +200,8 @@
     "club": "アスレティック・ビルバオ",
     "goals": 0,
     "assists": 0,
-    "number": 17
+    "number": 17,
+    "shortName": "ウィリアムス"
   },
   {
     "id": "p_esp_16",
@@ -195,7 +212,8 @@
     "club": "アーセナル（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 18
+    "number": 18,
+    "shortName": "スビメンディ"
   },
   {
     "id": "p_esp_20",
@@ -206,7 +224,8 @@
     "club": "バルセロナ（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 19
+    "number": 19,
+    "shortName": "ヤマル"
   },
   {
     "id": "p_esp_14",
@@ -217,7 +236,8 @@
     "club": "バルセロナ（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 20
+    "number": 20,
+    "shortName": "ペドリ"
   },
   {
     "id": "p_esp_23",
@@ -228,7 +248,8 @@
     "club": "レアル・ソシエダ（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 21
+    "number": 21,
+    "shortName": "オヤルサバル"
   },
   {
     "id": "p_esp_8",
@@ -239,7 +260,8 @@
     "club": "バルセロナ（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 22
+    "number": 22,
+    "shortName": "クバルシ"
   },
   {
     "id": "p_esp_1",
@@ -250,7 +272,8 @@
     "club": "アスレティック・ビルバオ",
     "goals": 0,
     "assists": 0,
-    "number": 23
+    "number": 23,
+    "shortName": "シモン"
   },
   {
     "id": "p_esp_11",
@@ -261,7 +284,8 @@
     "club": "チェルシー（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 24
+    "number": 24,
+    "shortName": "ククレジャ"
   },
   {
     "id": "p_esp_26",
@@ -272,7 +296,8 @@
     "club": "オサスナ（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 25
+    "number": 25,
+    "shortName": "ムニョス"
   },
   {
     "id": "p_esp_25",
@@ -283,6 +308,7 @@
     "club": "セルタ・ビーゴ",
     "goals": 0,
     "assists": 0,
-    "number": 26
+    "number": 26,
+    "shortName": "イグレシアス"
   }
 ]

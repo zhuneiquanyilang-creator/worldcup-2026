@@ -8,7 +8,8 @@
     "club": "ナフバホール",
     "goals": 0,
     "assists": 0,
-    "number": 1
+    "number": 1,
+    "shortName": "ユスポフ"
   },
   {
     "id": "p_uzb_13",
@@ -19,7 +20,8 @@
     "club": "マンチェスター・シティ（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 2
+    "number": 2,
+    "shortName": "クサノフ"
   },
   {
     "id": "p_uzb_10",
@@ -30,7 +32,8 @@
     "club": "パフタコル（ウズベキスタン）",
     "goals": 0,
     "assists": 0,
-    "number": 3
+    "number": 3,
+    "shortName": "アリジョノフ"
   },
   {
     "id": "p_uzb_9",
@@ -41,7 +44,8 @@
     "club": "ネフチ",
     "goals": 0,
     "assists": 0,
-    "number": 4
+    "number": 4,
+    "shortName": "サイフィエフ"
   },
   {
     "id": "p_uzb_12",
@@ -52,7 +56,8 @@
     "club": "エステグラル（イラン）",
     "goals": 0,
     "assists": 0,
-    "number": 5
+    "number": 5,
+    "shortName": "アシュルマトフ"
   },
   {
     "id": "p_uzb_16",
@@ -63,7 +68,8 @@
     "club": "パフタコル（ウズベキスタン）",
     "goals": 0,
     "assists": 0,
-    "number": 6
+    "number": 6,
+    "shortName": "モズゴボイ"
   },
   {
     "id": "p_uzb_20",
@@ -74,7 +80,8 @@
     "club": "バニヤス（アラブ首長国連邦）",
     "goals": 0,
     "assists": 0,
-    "number": 7
+    "number": 7,
+    "shortName": "シュクロフ"
   },
   {
     "id": "p_uzb_15",
@@ -85,7 +92,8 @@
     "club": "ネフチ",
     "goals": 0,
     "assists": 0,
-    "number": 8
+    "number": 8,
+    "shortName": "イスカンデロフ"
   },
   {
     "id": "p_uzb_17",
@@ -96,7 +104,8 @@
     "club": "トラクトル（イラン）",
     "goals": 0,
     "assists": 0,
-    "number": 9
+    "number": 9,
+    "shortName": "ハムロベコフ"
   },
   {
     "id": "p_uzb_18",
@@ -107,7 +116,8 @@
     "club": "エステグラル（イラン）",
     "goals": 0,
     "assists": 0,
-    "number": 10
+    "number": 10,
+    "shortName": "マシャリポフ"
   },
   {
     "id": "p_uzb_24",
@@ -118,7 +128,8 @@
     "club": "ペルセポリス（イラン）",
     "goals": 0,
     "assists": 0,
-    "number": 11
+    "number": 11,
+    "shortName": "ウルノフ"
   },
   {
     "id": "p_uzb_2",
@@ -129,7 +140,8 @@
     "club": "ナサフ",
     "goals": 0,
     "assists": 0,
-    "number": 12
+    "number": 12,
+    "shortName": "ネマトフ"
   },
   {
     "id": "p_uzb_8",
@@ -140,7 +152,8 @@
     "club": "ナサフ",
     "goals": 0,
     "assists": 0,
-    "number": 13
+    "number": 13,
+    "shortName": "ナスルラエフ"
   },
   {
     "id": "p_uzb_22",
@@ -151,7 +164,8 @@
     "club": "イスタンブール・バシャクシェヒル（トルコ）",
     "goals": 0,
     "assists": 0,
-    "number": 14
+    "number": 14,
+    "shortName": "ショムロドフ"
   },
   {
     "id": "p_uzb_7",
@@ -162,7 +176,8 @@
     "club": "ナサフ",
     "goals": 0,
     "assists": 0,
-    "number": 15
+    "number": 15,
+    "shortName": "エシュムロドフ"
   },
   {
     "id": "p_uzb_3",
@@ -173,7 +188,8 @@
     "club": "ネフチ",
     "goals": 0,
     "assists": 0,
-    "number": 16
+    "number": 16,
+    "shortName": "エルガシェフ"
   },
   {
     "id": "p_uzb_25",
@@ -184,7 +200,8 @@
     "club": "パフタコル（ウズベキスタン）",
     "goals": 0,
     "assists": 0,
-    "number": 17
+    "number": 17,
+    "shortName": "ハムダモフ"
   },
   {
     "id": "p_uzb_11",
@@ -195,7 +212,8 @@
     "club": "ディバ（アラブ首長国連邦）",
     "goals": 0,
     "assists": 0,
-    "number": 18
+    "number": 18,
+    "shortName": "アブドゥラエフ"
   },
   {
     "id": "p_uzb_19",
@@ -206,7 +224,8 @@
     "club": "アル・バタエ（アラブ首長国連邦）",
     "goals": 0,
     "assists": 0,
-    "number": 19
+    "number": 19,
+    "shortName": "ガニエフ"
   },
   {
     "id": "p_uzb_26",
@@ -217,7 +236,8 @@
     "club": "ブハラ",
     "goals": 0,
     "assists": 0,
-    "number": 20
+    "number": 20,
+    "shortName": "アモノフ"
   },
   {
     "id": "p_uzb_23",
@@ -228,7 +248,8 @@
     "club": "ペルセポリス（イラン）",
     "goals": 0,
     "assists": 0,
-    "number": 21
+    "number": 21,
+    "shortName": "セルゲーエフ"
   },
   {
     "id": "p_uzb_21",
@@ -239,7 +260,8 @@
     "club": "イスタンブール・バシャクシェヒル（トルコ）",
     "goals": 0,
     "assists": 0,
-    "number": 22
+    "number": 22,
+    "shortName": "ファイズラエフ"
   },
   {
     "id": "p_uzb_14",
@@ -250,7 +272,8 @@
     "club": "ブハラ",
     "goals": 0,
     "assists": 0,
-    "number": 23
+    "number": 23,
+    "shortName": "エサノフ"
   },
   {
     "id": "p_uzb_5",
@@ -261,7 +284,8 @@
     "club": "スルホン",
     "goals": 0,
     "assists": 0,
-    "number": 24
+    "number": 24,
+    "shortName": "カリモフ"
   },
   {
     "id": "p_uzb_4",
@@ -272,7 +296,8 @@
     "club": "AGMK",
     "goals": 0,
     "assists": 0,
-    "number": 25
+    "number": 25,
+    "shortName": "オルティクボエフ"
   },
   {
     "id": "p_uzb_6",
@@ -283,6 +308,7 @@
     "club": "ディナモ・サマルカンド",
     "goals": 0,
     "assists": 0,
-    "number": 26
+    "number": 26,
+    "shortName": "ウロゾフ"
   }
 ]

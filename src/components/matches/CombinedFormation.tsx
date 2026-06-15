@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import type { Booking, FormationData, Goal, Substitution } from "@/types/match";
+import type { Player } from "@/types/player";
 import type { Team } from "@/types/team";
 import { Flag } from "@/components/common/Flag";
 import {
@@ -43,15 +44,16 @@ function surnameOf(name: string): string {
   return name;
 }
 
-/** チームに応じてフォーメーション上の表示名を決める。
- *  韓国は「キム・スンギュ」のように姓先頭・中黒区切りで、surnameOf だと
- *  名のみ ("スンギュ") が出てしまう。要望に応じてフルネームで表示する。 */
-function displayName(name: string, useFullName: boolean): string {
-  if (useFullName) return name;
+/** 名前から、対応する選手の shortName をルックアップして返す。
+ *  該当エントリが無い (途中出場の代理選手など) 場合は surnameOf でフォールバック。 */
+function resolveDisplayName(
+  name: string,
+  shortNameMap: Map<string, string> | undefined
+): string {
+  const short = shortNameMap?.get(name);
+  if (typeof short === "string" && short.length > 0) return short;
   return surnameOf(name);
 }
-
-const FULL_NAME_TEAMS = new Set<string>(["KOR"]);
 
 type Props = {
   homeTeam: Team | undefined;
@@ -70,6 +72,8 @@ type Props = {
    *  オウンゴール (type === "own") は相手チームの選手として帰属させるためにも、
    *  ここでは home/away で事前フィルタしない全体配列を渡す。 */
   goals?: Goal[];
+  /** players.json の id→Player マップ。各選手の shortName を引いてピッチ表示名に使う。 */
+  playerMap?: Map<string, Player>;
 };
 
 /** スマホ幅 (640px 以下) かどうかを監視する。 */
@@ -167,7 +171,33 @@ export function CombinedFormation({
   awaySubs,
   awayBookings,
   goals,
+  playerMap,
 }: Props) {
+  // チーム別に name → shortName のルックアップマップを作る。
+  // Spot/Bench は player ID を持たないので、選手名 (FormationSpot.name) で引く。
+  // 同じ name が複数いるケースは想定しない (代表 26 名内では氏名は一意)。
+  const homeShortNames = useMemo(() => {
+    if (!playerMap) return undefined;
+    const m = new Map<string, string>();
+    for (const p of playerMap.values()) {
+      if (p.teamId !== homeTeamId) continue;
+      if (typeof p.shortName === "string" && p.shortName.length > 0) {
+        m.set(p.name, p.shortName);
+      }
+    }
+    return m;
+  }, [playerMap, homeTeamId]);
+  const awayShortNames = useMemo(() => {
+    if (!playerMap) return undefined;
+    const m = new Map<string, string>();
+    for (const p of playerMap.values()) {
+      if (p.teamId !== awayTeamId) continue;
+      if (typeof p.shortName === "string" && p.shortName.length > 0) {
+        m.set(p.name, p.shortName);
+      }
+    }
+    return m;
+  }, [playerMap, awayTeamId]);
   const isNarrow = useIsNarrow();
   const layout = isNarrow ? VERTICAL_LAYOUT : HORIZONTAL_LAYOUT;
   const Pitch = isNarrow ? VerticalPitch : HorizontalPitch;
@@ -242,7 +272,7 @@ export function CombinedFormation({
                 y={y}
                 variant="home"
                 nameSize={layout.nameSize}
-                useFullName={homeTeam ? FULL_NAME_TEAMS.has(homeTeam.id) : false}
+                shortNames={homeShortNames}
               />
             );
           })}
@@ -256,7 +286,7 @@ export function CombinedFormation({
                 y={y}
                 variant="away"
                 nameSize={layout.nameSize}
-                useFullName={awayTeam ? FULL_NAME_TEAMS.has(awayTeam.id) : false}
+                shortNames={awayShortNames}
               />
             );
           })}
@@ -455,14 +485,14 @@ function Spot({
   y,
   variant,
   nameSize,
-  useFullName = false,
+  shortNames,
 }: {
   spot: SpotWithSub;
   x: number;
   y: number;
   variant: "home" | "away";
   nameSize: number;
-  useFullName?: boolean;
+  shortNames?: Map<string, string>;
 }) {
   const ringColor = variant === "home" ? "#1a3a8a" : "#b91c1c";
   const textColor = variant === "home" ? "#1a3a8a" : "#b91c1c";
@@ -522,7 +552,7 @@ function Spot({
         strokeWidth={0.18}
         paintOrder="stroke"
       >
-        {displayName(spot.name, useFullName)}
+        {resolveDisplayName(spot.name, shortNames)}
         {spot.isCaptain && " (C)"}
       </text>
       {/* カード (左上に小さく) */}

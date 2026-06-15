@@ -8,7 +8,8 @@
     "club": "ノッティンガム・フォレスト（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 1
+    "number": 1,
+    "shortName": "ガン"
   },
   {
     "id": "p_sco_11",
@@ -19,7 +20,8 @@
     "club": "ブレントフォード（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 2
+    "number": 2,
+    "shortName": "ヒッキー"
   },
   {
     "id": "p_sco_13",
@@ -30,7 +32,8 @@
     "club": "リバプール（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 3
+    "number": 3,
+    "shortName": "ロバートソン"
   },
   {
     "id": "p_sco_21",
@@ -41,7 +44,8 @@
     "club": "ナポリ（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 4
+    "number": 4,
+    "shortName": "マクトミネイ"
   },
   {
     "id": "p_sco_5",
@@ -52,7 +56,8 @@
     "club": "ハイバーニアン",
     "goals": 0,
     "assists": 0,
-    "number": 5
+    "number": 5,
+    "shortName": "ハンリー"
   },
   {
     "id": "p_sco_7",
@@ -63,7 +68,8 @@
     "club": "セルティック（スコットランド）",
     "goals": 0,
     "assists": 0,
-    "number": 6
+    "number": 6,
+    "shortName": "ティアニー"
   },
   {
     "id": "p_sco_16",
@@ -74,7 +80,8 @@
     "club": "アストン・ヴィラ（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 7
+    "number": 7,
+    "shortName": "マッギン"
   },
   {
     "id": "p_sco_20",
@@ -85,7 +92,8 @@
     "club": "マンチェスター・ユナイテッド（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 8
+    "number": 8,
+    "shortName": "フレッチャー"
   },
   {
     "id": "p_sco_23",
@@ -96,7 +104,8 @@
     "club": "チャールトン・アスレティック（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 9
+    "number": 9,
+    "shortName": "ダイクス"
   },
   {
     "id": "p_sco_22",
@@ -107,7 +116,8 @@
     "club": "トリノ（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 10
+    "number": 10,
+    "shortName": "アダムス"
   },
   {
     "id": "p_sco_18",
@@ -118,7 +128,8 @@
     "club": "ボーンマス（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 11
+    "number": 11,
+    "shortName": "クリスティ"
   },
   {
     "id": "p_sco_3",
@@ -129,7 +140,8 @@
     "club": "レンジャーズ（スコットランド）",
     "goals": 0,
     "assists": 0,
-    "number": 12
+    "number": 12,
+    "shortName": "ケリー"
   },
   {
     "id": "p_sco_8",
@@ -140,7 +152,8 @@
     "club": "アル・イテファク（サウジアラビア）",
     "goals": 0,
     "assists": 0,
-    "number": 13
+    "number": 13,
+    "shortName": "ヘンドリー"
   },
   {
     "id": "p_sco_25",
@@ -151,7 +164,8 @@
     "club": "サウサンプトン（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 14
+    "number": 14,
+    "shortName": "スチュワート"
   },
   {
     "id": "p_sco_4",
@@ -162,7 +176,8 @@
     "club": "レンジャーズ（スコットランド）",
     "goals": 0,
     "assists": 0,
-    "number": 15
+    "number": 15,
+    "shortName": "サウター"
   },
   {
     "id": "p_sco_10",
@@ -173,7 +188,8 @@
     "club": "レクサム（ウェールズ）",
     "goals": 0,
     "assists": 0,
-    "number": 16
+    "number": 16,
+    "shortName": "ハイアム"
   },
   {
     "id": "p_sco_17",
@@ -184,7 +200,8 @@
     "club": "ボーンマス（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 17
+    "number": 17,
+    "shortName": "ドーク"
   },
   {
     "id": "p_sco_24",
@@ -195,7 +212,8 @@
     "club": "イプスウィッチ・タウン（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 18
+    "number": 18,
+    "shortName": "ハースト"
   },
   {
     "id": "p_sco_19",
@@ -206,7 +224,8 @@
     "club": "ボローニャ（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 19
+    "number": 19,
+    "shortName": "ファーガソン"
   },
   {
     "id": "p_sco_26",
@@ -217,7 +236,8 @@
     "club": "ハーツ（スコットランド）",
     "goals": 0,
     "assists": 0,
-    "number": 20
+    "number": 20,
+    "shortName": "シャンクランド"
   },
   {
     "id": "p_sco_2",
@@ -228,7 +248,8 @@
     "club": "ハーツ（スコットランド）",
     "goals": 0,
     "assists": 0,
-    "number": 21
+    "number": 21,
+    "shortName": "ゴードン"
   },
   {
     "id": "p_sco_12",
@@ -239,7 +260,8 @@
     "club": "エヴァートン（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 22
+    "number": 22,
+    "shortName": "パターソン"
   },
   {
     "id": "p_sco_15",
@@ -250,7 +272,8 @@
     "club": "ノリッジ・シティ（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 23
+    "number": 23,
+    "shortName": "マクリーン"
   },
   {
     "id": "p_sco_6",
@@ -261,7 +284,8 @@
     "club": "セルティック（スコットランド）",
     "goals": 0,
     "assists": 0,
-    "number": 24
+    "number": 24,
+    "shortName": "ラルストン"
   },
   {
     "id": "p_sco_14",
@@ -272,7 +296,8 @@
     "club": "キルマーノック（スコットランド）",
     "goals": 0,
     "assists": 0,
-    "number": 25
+    "number": 25,
+    "shortName": "カーティス"
   },
   {
     "id": "p_sco_9",
@@ -283,6 +308,7 @@
     "club": "ディナモ・ザグレブ（クロアチア）",
     "goals": 0,
     "assists": 0,
-    "number": 26
+    "number": 26,
+    "shortName": "マッケナ"
   }
 ]

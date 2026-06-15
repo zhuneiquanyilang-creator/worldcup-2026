@@ -8,7 +8,8 @@
     "club": "アル・ラヤン",
     "goals": 0,
     "assists": 0,
-    "number": 1
+    "number": 1,
+    "shortName": "アブナダ"
   },
   {
     "id": "p_qat_6",
@@ -19,7 +20,8 @@
     "club": "アル・サッド",
     "goals": 0,
     "assists": 0,
-    "number": 2
+    "number": 2,
+    "shortName": "ロロ"
   },
   {
     "id": "p_qat_5",
@@ -30,7 +32,8 @@
     "club": "アル・ワクラ（カタール）",
     "goals": 0,
     "assists": 0,
-    "number": 3
+    "number": 3,
+    "shortName": "メンデス"
   },
   {
     "id": "p_qat_9",
@@ -41,7 +44,8 @@
     "club": "アル・アラビ",
     "goals": 0,
     "assists": 0,
-    "number": 4
+    "number": 4,
+    "shortName": "ライェ"
   },
   {
     "id": "p_qat_16",
@@ -52,7 +56,8 @@
     "club": "アル・ラヤン",
     "goals": 0,
     "assists": 0,
-    "number": 5
+    "number": 5,
+    "shortName": "ガベル"
   },
   {
     "id": "p_qat_15",
@@ -63,7 +68,8 @@
     "club": "アル・ラヤン",
     "goals": 0,
     "assists": 0,
-    "number": 6
+    "number": 6,
+    "shortName": "ハテム"
   },
   {
     "id": "p_qat_25",
@@ -74,7 +80,8 @@
     "club": "アル・ラヤン",
     "goals": 0,
     "assists": 0,
-    "number": 7
+    "number": 7,
+    "shortName": "アラエルディン"
   },
   {
     "id": "p_qat_21",
@@ -85,7 +92,8 @@
     "club": "アル・ドハイル",
     "goals": 0,
     "assists": 0,
-    "number": 8
+    "number": 8,
+    "shortName": "エドミルソン"
   },
   {
     "id": "p_qat_23",
@@ -96,7 +104,8 @@
     "club": "アル・ガラファ",
     "goals": 0,
     "assists": 0,
-    "number": 9
+    "number": 9,
+    "shortName": "ムンタリ"
   },
   {
     "id": "p_qat_19",
@@ -107,7 +116,8 @@
     "club": "アル・サッド",
     "goals": 0,
     "assists": 0,
-    "number": 10
+    "number": 10,
+    "shortName": "ハイドス"
   },
   {
     "id": "p_qat_18",
@@ -118,7 +128,8 @@
     "club": "アル・サッド",
     "goals": 0,
     "assists": 0,
-    "number": 11
+    "number": 11,
+    "shortName": "アフィフ"
   },
   {
     "id": "p_qat_14",
@@ -129,7 +140,8 @@
     "club": "アル・ドハイル",
     "goals": 0,
     "assists": 0,
-    "number": 12
+    "number": 12,
+    "shortName": "ブディアフ"
   },
   {
     "id": "p_qat_4",
@@ -140,7 +152,8 @@
     "club": "アル・ガラファ",
     "goals": 0,
     "assists": 0,
-    "number": 13
+    "number": 13,
+    "shortName": "アラウィ"
   },
   {
     "id": "p_qat_11",
@@ -151,7 +164,8 @@
     "club": "クルトゥラル・レオネサ（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 14
+    "number": 14,
+    "shortName": "アハメド"
   },
   {
     "id": "p_qat_26",
@@ -162,7 +176,8 @@
     "club": "アル・ワクラ（カタール）",
     "goals": 0,
     "assists": 0,
-    "number": 15
+    "number": 15,
+    "shortName": "アブドゥリサグ"
   },
   {
     "id": "p_qat_7",
@@ -173,7 +188,8 @@
     "club": "アル・サッド",
     "goals": 0,
     "assists": 0,
-    "number": 16
+    "number": 16,
+    "shortName": "コーキ"
   },
   {
     "id": "p_qat_24",
@@ -184,7 +200,8 @@
     "club": "アル・ガラファ",
     "goals": 0,
     "assists": 0,
-    "number": 17
+    "number": 17,
+    "shortName": "ガネヒ"
   },
   {
     "id": "p_qat_8",
@@ -195,7 +212,8 @@
     "club": "アル・ドハイル",
     "goals": 0,
     "assists": 0,
-    "number": 18
+    "number": 18,
+    "shortName": "ブレイク"
   },
   {
     "id": "p_qat_20",
@@ -206,7 +224,8 @@
     "club": "アル・ドハイル",
     "goals": 0,
     "assists": 0,
-    "number": 19
+    "number": 19,
+    "shortName": "アリ"
   },
   {
     "id": "p_qat_13",
@@ -217,7 +236,8 @@
     "club": "アル・アラビ",
     "goals": 0,
     "assists": 0,
-    "number": 20
+    "number": 20,
+    "shortName": "ファテヒ"
   },
   {
     "id": "p_qat_2",
@@ -228,7 +248,8 @@
     "club": "アル・ドハイル",
     "goals": 0,
     "assists": 0,
-    "number": 21
+    "number": 21,
+    "shortName": "ザカリア"
   },
   {
     "id": "p_qat_1",
@@ -239,7 +260,8 @@
     "club": "アル・サッド",
     "goals": 0,
     "assists": 0,
-    "number": 22
+    "number": 22,
+    "shortName": "バルシャム"
   },
   {
     "id": "p_qat_17",
@@ -250,7 +272,8 @@
     "club": "アル・ワクラ（カタール）",
     "goals": 0,
     "assists": 0,
-    "number": 23
+    "number": 23,
+    "shortName": "マディボ"
   },
   {
     "id": "p_qat_22",
@@ -261,7 +284,8 @@
     "club": "アル・ドハイル",
     "goals": 0,
     "assists": 0,
-    "number": 24
+    "number": 24,
+    "shortName": "ジャムシード"
   },
   {
     "id": "p_qat_10",
@@ -272,7 +296,8 @@
     "club": "アル・アラビ",
     "goals": 0,
     "assists": 0,
-    "number": 25
+    "number": 25,
+    "shortName": "フセイン"
   },
   {
     "id": "p_qat_12",
@@ -283,6 +308,7 @@
     "club": "アル・シャマル",
     "goals": 0,
     "assists": 0,
-    "number": 26
+    "number": 26,
+    "shortName": "マンナイ"
   }
 ]

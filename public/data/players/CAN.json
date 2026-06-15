@@ -8,7 +8,8 @@
     "club": "オーランド・シティ（アメリカ）",
     "goals": 0,
     "assists": 0,
-    "number": 1
+    "number": 1,
+    "shortName": "クレポー"
   },
   {
     "id": "p_can_9",
@@ -19,7 +20,8 @@
     "club": "セルティック（スコットランド）",
     "goals": 0,
     "assists": 0,
-    "number": 2
+    "number": 2,
+    "shortName": "ジョンストン"
   },
   {
     "id": "p_can_7",
@@ -30,7 +32,8 @@
     "club": "デンデル（ベルギー）",
     "goals": 0,
     "assists": 0,
-    "number": 3
+    "number": 3,
+    "shortName": "フジュロル"
   },
   {
     "id": "p_can_10",
@@ -41,7 +44,8 @@
     "club": "ミドルスブラ（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 4
+    "number": 4,
+    "shortName": "ジョーンズ"
   },
   {
     "id": "p_can_5",
@@ -52,7 +56,8 @@
     "club": "シカゴ・ファイアー（アメリカ）",
     "goals": 0,
     "assists": 0,
-    "number": 5
+    "number": 5,
+    "shortName": "ウォーターマン"
   },
   {
     "id": "p_can_15",
@@ -63,7 +68,8 @@
     "club": "ロサンゼルスFC（アメリカ）",
     "goals": 0,
     "assists": 0,
-    "number": 6
+    "number": 6,
+    "shortName": "ショワニエール"
   },
   {
     "id": "p_can_16",
@@ -74,7 +80,8 @@
     "club": "ロサンゼルスFC（アメリカ）",
     "goals": 0,
     "assists": 0,
-    "number": 7
+    "number": 7,
+    "shortName": "エウスタキオ"
   },
   {
     "id": "p_can_21",
@@ -85,7 +92,8 @@
     "club": "サッスオーロ（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 8
+    "number": 8,
+    "shortName": "コネ"
   },
   {
     "id": "p_can_25",
@@ -96,7 +104,8 @@
     "club": "サウサンプトン（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 9
+    "number": 9,
+    "shortName": "ラリン"
   },
   {
     "id": "p_can_23",
@@ -107,7 +116,8 @@
     "club": "ユベントス（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 10
+    "number": 10,
+    "shortName": "デイヴィッド"
   },
   {
     "id": "p_can_20",
@@ -118,7 +128,8 @@
     "club": "ハル・シティ（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 11
+    "number": 11,
+    "shortName": "ミラー"
   },
   {
     "id": "p_can_24",
@@ -129,7 +140,8 @@
     "club": "ビジャレアル（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 12
+    "number": 12,
+    "shortName": "オルワセイ"
   },
   {
     "id": "p_can_8",
@@ -140,7 +152,8 @@
     "club": "レンジャーズ（スコットランド）",
     "goals": 0,
     "assists": 0,
-    "number": 13
+    "number": 13,
+    "shortName": "コーネリアス"
   },
   {
     "id": "p_can_14",
@@ -151,7 +164,8 @@
     "club": "ロサンゼルスFC（アメリカ）",
     "goals": 0,
     "assists": 0,
-    "number": 14
+    "number": 14,
+    "shortName": "シャッフェルバーグ"
   },
   {
     "id": "p_can_11",
@@ -162,7 +176,8 @@
     "club": "ニース（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 15
+    "number": 15,
+    "shortName": "ボンビト"
   },
   {
     "id": "p_can_2",
@@ -173,7 +188,8 @@
     "club": "インテル・マイアミ（アメリカ）",
     "goals": 0,
     "assists": 0,
-    "number": 16
+    "number": 16,
+    "shortName": "クレア"
   },
   {
     "id": "p_can_22",
@@ -184,7 +200,8 @@
     "club": "ビジャレアル（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 17
+    "number": 17,
+    "shortName": "ブキャナン"
   },
   {
     "id": "p_can_3",
@@ -195,7 +212,8 @@
     "club": "バーンズリー（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 18
+    "number": 18,
+    "shortName": "グッドマン"
   },
   {
     "id": "p_can_12",
@@ -206,7 +224,8 @@
     "club": "バイエルン・ミュンヘン（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 19
+    "number": 19,
+    "shortName": "デイヴィス"
   },
   {
     "id": "p_can_19",
@@ -217,7 +236,8 @@
     "club": "ノリッジ・シティ（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 20
+    "number": 20,
+    "shortName": "アーメド"
   },
   {
     "id": "p_can_13",
@@ -228,7 +248,8 @@
     "club": "トロントFC（カナダ）",
     "goals": 0,
     "assists": 0,
-    "number": 21
+    "number": 21,
+    "shortName": "オソリオ"
   },
   {
     "id": "p_can_4",
@@ -239,7 +260,8 @@
     "club": "トロントFC（カナダ）",
     "goals": 0,
     "assists": 0,
-    "number": 22
+    "number": 22,
+    "shortName": "ラリア"
   },
   {
     "id": "p_can_6",
@@ -250,7 +272,8 @@
     "club": "ハイドゥク・スプリト（クロアチア）",
     "goals": 0,
     "assists": 0,
-    "number": 23
+    "number": 23,
+    "shortName": "シグル"
   },
   {
     "id": "p_can_26",
@@ -261,7 +284,8 @@
     "club": "ユニオン・サン・ジロワーズ（ベルギー）",
     "goals": 0,
     "assists": 0,
-    "number": 24
+    "number": 24,
+    "shortName": "デイヴィッド"
   },
   {
     "id": "p_can_18",
@@ -272,7 +296,8 @@
     "club": "アンデルレヒト（ベルギー）",
     "goals": 0,
     "assists": 0,
-    "number": 25
+    "number": 25,
+    "shortName": "サリバ"
   },
   {
     "id": "p_can_17",
@@ -283,6 +308,7 @@
     "club": "UANLティグレス（メキシコ）",
     "goals": 0,
     "assists": 0,
-    "number": 26
+    "number": 26,
+    "shortName": "フローレス"
   }
 ]

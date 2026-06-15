@@ -8,7 +8,8 @@
     "club": "セロ・ポルテーニョ",
     "goals": 0,
     "assists": 0,
-    "number": 1
+    "number": 1,
+    "shortName": "フェルナンデス"
   },
   {
     "id": "p_par_4",
@@ -19,7 +20,8 @@
     "club": "セロ・ポルテーニョ",
     "goals": 0,
     "assists": 0,
-    "number": 2
+    "number": 2,
+    "shortName": "ベラスケス"
   },
   {
     "id": "p_par_11",
@@ -30,7 +32,8 @@
     "club": "サンダーランド（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 3
+    "number": 3,
+    "shortName": "アルデレテ"
   },
   {
     "id": "p_par_10",
@@ -41,7 +44,8 @@
     "club": "ディナモ・モスクワ（ロシア）",
     "goals": 0,
     "assists": 0,
-    "number": 4
+    "number": 4,
+    "shortName": "カセレス"
   },
   {
     "id": "p_par_9",
@@ -52,7 +56,8 @@
     "club": "グレミオ（ブラジル）",
     "goals": 0,
     "assists": 0,
-    "number": 5
+    "number": 5,
+    "shortName": "バルブエナ"
   },
   {
     "id": "p_par_8",
@@ -63,7 +68,8 @@
     "club": "アトレチコ・ミネイロ（ブラジル）",
     "goals": 0,
     "assists": 0,
-    "number": 6
+    "number": 6,
+    "shortName": "アロンソ"
   },
   {
     "id": "p_par_23",
@@ -74,7 +80,8 @@
     "club": "パルメイラス（ブラジル）",
     "goals": 0,
     "assists": 0,
-    "number": 7
+    "number": 7,
+    "shortName": "ソサ"
   },
   {
     "id": "p_par_18",
@@ -85,7 +92,8 @@
     "club": "ブライトン＆ホーヴ・アルビオン（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 8
+    "number": 8,
+    "shortName": "ゴメス"
   },
   {
     "id": "p_par_19",
@@ -96,7 +104,8 @@
     "club": "クレモネーゼ（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 9
+    "number": 9,
+    "shortName": "サナブリア"
   },
   {
     "id": "p_par_22",
@@ -107,7 +116,8 @@
     "club": "アトランタ・ユナイテッド（アメリカ）",
     "goals": 0,
     "assists": 0,
-    "number": 10
+    "number": 10,
+    "shortName": "アルミロン"
   },
   {
     "id": "p_par_16",
@@ -118,7 +128,8 @@
     "club": "パルメイラス（ブラジル）",
     "goals": 0,
     "assists": 0,
-    "number": 11
+    "number": 11,
+    "shortName": "プラド"
   },
   {
     "id": "p_par_3",
@@ -129,7 +140,8 @@
     "club": "サン・ロレンソ（アルゼンチン）",
     "goals": 0,
     "assists": 0,
-    "number": 12
+    "number": 12,
+    "shortName": "ヒル"
   },
   {
     "id": "p_par_6",
@@ -140,7 +152,8 @@
     "club": "ラヌース（アルゼンチン）",
     "goals": 0,
     "assists": 0,
-    "number": 13
+    "number": 13,
+    "shortName": "カナレ"
   },
   {
     "id": "p_par_13",
@@ -151,7 +164,8 @@
     "club": "バンクーバー・ホワイトキャップス（カナダ）",
     "goals": 0,
     "assists": 0,
-    "number": 14
+    "number": 14,
+    "shortName": "クバス"
   },
   {
     "id": "p_par_7",
@@ -162,7 +176,8 @@
     "club": "パルメイラス（ブラジル）",
     "goals": 0,
     "assists": 0,
-    "number": 15
+    "number": 15,
+    "shortName": "ゴメス"
   },
   {
     "id": "p_par_17",
@@ -173,7 +188,8 @@
     "club": "サンパウロ（ブラジル）",
     "goals": 0,
     "assists": 0,
-    "number": 16
+    "number": 16,
+    "shortName": "ボバディジャ"
   },
   {
     "id": "p_par_12",
@@ -184,7 +200,8 @@
     "club": "アル・アイン（アラブ首長国連邦）",
     "goals": 0,
     "assists": 0,
-    "number": 17
+    "number": 17,
+    "shortName": "ロメロ（カク）"
   },
   {
     "id": "p_par_26",
@@ -195,7 +212,8 @@
     "club": "インデペンディエンテ・リバダビア（アルゼンチン）",
     "goals": 0,
     "assists": 0,
-    "number": 18
+    "number": 18,
+    "shortName": "アルセ"
   },
   {
     "id": "p_par_20",
@@ -206,7 +224,8 @@
     "club": "ストラスブール（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 19
+    "number": 19,
+    "shortName": "エンシソ"
   },
   {
     "id": "p_par_14",
@@ -217,7 +236,8 @@
     "club": "オーランド・シティ（アメリカ）",
     "goals": 0,
     "assists": 0,
-    "number": 20
+    "number": 20,
+    "shortName": "オヘダ"
   },
   {
     "id": "p_par_25",
@@ -228,7 +248,8 @@
     "club": "インデペンディエンテ（アルゼンチン）",
     "goals": 0,
     "assists": 0,
-    "number": 21
+    "number": 21,
+    "shortName": "アバロス"
   },
   {
     "id": "p_par_2",
@@ -239,7 +260,8 @@
     "club": "オリンピア",
     "goals": 0,
     "assists": 0,
-    "number": 22
+    "number": 22,
+    "shortName": "オルベイラ"
   },
   {
     "id": "p_par_15",
@@ -250,7 +272,8 @@
     "club": "アトランタ・ユナイテッド（アメリカ）",
     "goals": 0,
     "assists": 0,
-    "number": 23
+    "number": 23,
+    "shortName": "ガラルサ"
   },
   {
     "id": "p_par_21",
@@ -261,7 +284,8 @@
     "club": "ポーツマス（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 24
+    "number": 24,
+    "shortName": "カバジェロ"
   },
   {
     "id": "p_par_24",
@@ -272,7 +296,8 @@
     "club": "レッドブル・ブラガンチーノ（ブラジル）",
     "goals": 0,
     "assists": 0,
-    "number": 25
+    "number": 25,
+    "shortName": "ピッタ"
   },
   {
     "id": "p_par_5",
@@ -283,6 +308,7 @@
     "club": "タジェレス（アルゼンチン）",
     "goals": 0,
     "assists": 0,
-    "number": 26
+    "number": 26,
+    "shortName": "マイダナ"
   }
 ]

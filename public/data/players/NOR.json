@@ -8,7 +8,8 @@
     "club": "セビリア（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 1
+    "number": 1,
+    "shortName": "ニュラン"
   },
   {
     "id": "p_nor_18",
@@ -19,7 +20,8 @@
     "club": "クレモネーゼ（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 2
+    "number": 2,
+    "shortName": "トルスビー"
   },
   {
     "id": "p_nor_10",
@@ -30,7 +32,8 @@
     "club": "ブレントフォード（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 3
+    "number": 3,
+    "shortName": "アイエル"
   },
   {
     "id": "p_nor_8",
@@ -41,7 +44,8 @@
     "club": "ジェノア（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 4
+    "number": 4,
+    "shortName": "エスティゴール"
   },
   {
     "id": "p_nor_11",
@@ -52,7 +56,8 @@
     "club": "ウォルヴァーハンプトン・ワンダラーズ（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 5
+    "number": 5,
+    "shortName": "ウォルフ"
   },
   {
     "id": "p_nor_13",
@@ -63,7 +68,8 @@
     "club": "ボデ/グリムト",
     "goals": 0,
     "assists": 0,
-    "number": 6
+    "number": 6,
+    "shortName": "ベルグ"
   },
   {
     "id": "p_nor_26",
@@ -74,7 +80,8 @@
     "club": "アトレティコ・マドリード（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 7
+    "number": 7,
+    "shortName": "セルロート"
   },
   {
     "id": "p_nor_21",
@@ -85,7 +92,8 @@
     "club": "フラム（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 8
+    "number": 8,
+    "shortName": "ベルゲ"
   },
   {
     "id": "p_nor_24",
@@ -96,7 +104,8 @@
     "club": "マンチェスター・シティ（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 9
+    "number": 9,
+    "shortName": "ハーランド"
   },
   {
     "id": "p_nor_23",
@@ -107,7 +116,8 @@
     "club": "アーセナル（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 10
+    "number": 10,
+    "shortName": "ウーデゴール"
   },
   {
     "id": "p_nor_25",
@@ -118,7 +128,8 @@
     "club": "クリスタル・パレス（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 11
+    "number": 11,
+    "shortName": "ラーセン"
   },
   {
     "id": "p_nor_3",
@@ -129,7 +140,8 @@
     "club": "ハンブルガーSV（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 12
+    "number": 12,
+    "shortName": "タンヴィク"
   },
   {
     "id": "p_nor_2",
@@ -140,7 +152,8 @@
     "club": "ワトフォード（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 13
+    "number": 13,
+    "shortName": "セルヴィク"
   },
   {
     "id": "p_nor_15",
@@ -151,7 +164,8 @@
     "club": "ベンフィカ（ポルトガル）",
     "goals": 0,
     "assists": 0,
-    "number": 14
+    "number": 14,
+    "shortName": "アウルスネス"
   },
   {
     "id": "p_nor_5",
@@ -162,7 +176,8 @@
     "club": "ボデ/グリムト",
     "goals": 0,
     "assists": 0,
-    "number": 15
+    "number": 15,
+    "shortName": "ビェルカン"
   },
   {
     "id": "p_nor_7",
@@ -173,7 +188,8 @@
     "club": "トリノ（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 16
+    "number": 16,
+    "shortName": "ペデルセン"
   },
   {
     "id": "p_nor_6",
@@ -184,7 +200,8 @@
     "club": "ボローニャ（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 17
+    "number": 17,
+    "shortName": "ヘッゲム"
   },
   {
     "id": "p_nor_19",
@@ -195,7 +212,8 @@
     "club": "サッスオーロ（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 18
+    "number": 18,
+    "shortName": "トルストヴェット"
   },
   {
     "id": "p_nor_17",
@@ -206,7 +224,8 @@
     "club": "レンジャーズ（スコットランド）",
     "goals": 0,
     "assists": 0,
-    "number": 19
+    "number": 19,
+    "shortName": "アースゴール"
   },
   {
     "id": "p_nor_20",
@@ -217,7 +236,8 @@
     "club": "ライプツィヒ（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 20
+    "number": 20,
+    "shortName": "ヌサ"
   },
   {
     "id": "p_nor_16",
@@ -228,7 +248,8 @@
     "club": "ベンフィカ（ポルトガル）",
     "goals": 0,
     "assists": 0,
-    "number": 21
+    "number": 21,
+    "shortName": "シェルデルップ"
   },
   {
     "id": "p_nor_22",
@@ -239,7 +260,8 @@
     "club": "フラム（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 22
+    "number": 22,
+    "shortName": "ボブ"
   },
   {
     "id": "p_nor_14",
@@ -250,7 +272,8 @@
     "club": "ボデ/グリムト",
     "goals": 0,
     "assists": 0,
-    "number": 23
+    "number": 23,
+    "shortName": "ハウゲ"
   },
   {
     "id": "p_nor_9",
@@ -261,7 +284,8 @@
     "club": "ダービー・カウンティ（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 24
+    "number": 24,
+    "shortName": "ランガス"
   },
   {
     "id": "p_nor_4",
@@ -272,7 +296,8 @@
     "club": "ヴァイキングFK",
     "goals": 0,
     "assists": 0,
-    "number": 25
+    "number": 25,
+    "shortName": "ファルヘナー"
   },
   {
     "id": "p_nor_12",
@@ -283,6 +308,7 @@
     "club": "ボルシア・ドルトムント（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 26
+    "number": 26,
+    "shortName": "リエルソン"
   }
 ]

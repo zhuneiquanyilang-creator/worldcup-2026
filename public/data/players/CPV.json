@@ -8,7 +8,8 @@
     "club": "チャヴェス（ポルトガル）",
     "goals": 0,
     "assists": 0,
-    "number": 1
+    "number": 1,
+    "shortName": "ヴォジーニャ"
   },
   {
     "id": "p_cpv_11",
@@ -19,7 +20,8 @@
     "club": "トレエンセ（ポルトガル）",
     "goals": 0,
     "assists": 0,
-    "number": 2
+    "number": 2,
+    "shortName": "ストピラ"
   },
   {
     "id": "p_cpv_4",
@@ -30,7 +32,8 @@
     "club": "アル・バタエ（UAE）",
     "goals": 0,
     "assists": 0,
-    "number": 3
+    "number": 3,
+    "shortName": "ボルジェス"
   },
   {
     "id": "p_cpv_9",
@@ -41,7 +44,8 @@
     "club": "シャムロック・ローヴァーズ（アイルランド）",
     "goals": 0,
     "assists": 0,
-    "number": 4
+    "number": 4,
+    "shortName": "ピコ"
   },
   {
     "id": "p_cpv_12",
@@ -52,7 +56,8 @@
     "club": "ビジャレアル（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 5
+    "number": 5,
+    "shortName": "コスタ"
   },
   {
     "id": "p_cpv_13",
@@ -63,7 +68,8 @@
     "club": "FCクラスノダール（ロシア）",
     "goals": 0,
     "assists": 0,
-    "number": 6
+    "number": 6,
+    "shortName": "ピナ"
   },
   {
     "id": "p_cpv_20",
@@ -74,7 +80,8 @@
     "club": "エストレラ・アマドーラ（ポルトガル）",
     "goals": 0,
     "assists": 0,
-    "number": 7
+    "number": 7,
+    "shortName": "カブラル"
   },
   {
     "id": "p_cpv_7",
@@ -85,7 +92,8 @@
     "club": "FCSB（ルーマニア）",
     "goals": 0,
     "assists": 0,
-    "number": 8
+    "number": 8,
+    "shortName": "パウロ"
   },
   {
     "id": "p_cpv_26",
@@ -96,7 +104,8 @@
     "club": "アクロン・トリヤッチ（ロシア）",
     "goals": 0,
     "assists": 0,
-    "number": 9
+    "number": 9,
+    "shortName": "ベンシモル"
   },
   {
     "id": "p_cpv_16",
@@ -107,7 +116,8 @@
     "club": "PECズウォレ（オランダ）",
     "goals": 0,
     "assists": 0,
-    "number": 10
+    "number": 10,
+    "shortName": "モンテイロ"
   },
   {
     "id": "p_cpv_23",
@@ -118,7 +128,8 @@
     "club": "アポロン・リマソル（キプロス）",
     "goals": 0,
     "assists": 0,
-    "number": 11
+    "number": 11,
+    "shortName": "ロドリゲス"
   },
   {
     "id": "p_cpv_2",
@@ -129,7 +140,8 @@
     "club": "FCモンタナ（ブルガリア）",
     "goals": 0,
     "assists": 0,
-    "number": 12
+    "number": 12,
+    "shortName": "ロサ"
   },
   {
     "id": "p_cpv_10",
@@ -140,7 +152,8 @@
     "club": "ベンフィカ（ポルトガル）",
     "goals": 0,
     "assists": 0,
-    "number": 13
+    "number": 13,
+    "shortName": "カブラル"
   },
   {
     "id": "p_cpv_14",
@@ -151,7 +164,8 @@
     "club": "ルドゴレツ・ラズグラド（ブルガリア）",
     "goals": 0,
     "assists": 0,
-    "number": 14
+    "number": 14,
+    "shortName": "ドゥアルテ"
   },
   {
     "id": "p_cpv_15",
@@ -162,7 +176,8 @@
     "club": "プスカシュ・アカデーミア（ハンガリー）",
     "goals": 0,
     "assists": 0,
-    "number": 15
+    "number": 15,
+    "shortName": "ドゥアルテ"
   },
   {
     "id": "p_cpv_17",
@@ -173,7 +188,8 @@
     "club": "ファレンセ（ポルトガル）",
     "goals": 0,
     "assists": 0,
-    "number": 16
+    "number": 16,
+    "shortName": "セメド"
   },
   {
     "id": "p_cpv_24",
@@ -184,7 +200,8 @@
     "club": "オモニア（キプロス）",
     "goals": 0,
     "assists": 0,
-    "number": 17
+    "number": 17,
+    "shortName": "セメド"
   },
   {
     "id": "p_cpv_18",
@@ -195,7 +212,8 @@
     "club": "ヴィトーリア（ポルトガル）",
     "goals": 0,
     "assists": 0,
-    "number": 18
+    "number": 18,
+    "shortName": "アルカンジョ"
   },
   {
     "id": "p_cpv_19",
@@ -206,7 +224,8 @@
     "club": "カーサ・ピア（ポルトガル）",
     "goals": 0,
     "assists": 0,
-    "number": 19
+    "number": 19,
+    "shortName": "リブラメント"
   },
   {
     "id": "p_cpv_21",
@@ -217,7 +236,8 @@
     "club": "ウードゥル（トルコ）",
     "goals": 0,
     "assists": 0,
-    "number": 20
+    "number": 20,
+    "shortName": "メンデス"
   },
   {
     "id": "p_cpv_22",
@@ -228,7 +248,8 @@
     "club": "イスタンブール・バシャクシェヒル（トルコ）",
     "goals": 0,
     "assists": 0,
-    "number": 21
+    "number": 21,
+    "shortName": "コスタ"
   },
   {
     "id": "p_cpv_5",
@@ -239,7 +260,8 @@
     "club": "コロンバス・クルー（アメリカ）",
     "goals": 0,
     "assists": 0,
-    "number": 22
+    "number": 22,
+    "shortName": "モレイラ"
   },
   {
     "id": "p_cpv_3",
@@ -250,7 +272,8 @@
     "club": "サンディエゴFC（アメリカ）",
     "goals": 0,
     "assists": 0,
-    "number": 23
+    "number": 23,
+    "shortName": "サントス"
   },
   {
     "id": "p_cpv_8",
@@ -261,7 +284,8 @@
     "club": "トラブゾンスポル（トルコ）",
     "goals": 0,
     "assists": 0,
-    "number": 24
+    "number": 24,
+    "shortName": "ピナ"
   },
   {
     "id": "p_cpv_6",
@@ -272,7 +296,8 @@
     "club": "SJK（フィンランド）",
     "goals": 0,
     "assists": 0,
-    "number": 25
+    "number": 25,
+    "shortName": "ピレス"
   },
   {
     "id": "p_cpv_25",
@@ -283,6 +308,7 @@
     "club": "マッカビ・テルアビブ（イスラエル）",
     "goals": 0,
     "assists": 0,
-    "number": 26
+    "number": 26,
+    "shortName": "バレラ"
   }
 ]

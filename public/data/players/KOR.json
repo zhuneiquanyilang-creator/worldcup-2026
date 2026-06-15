@@ -8,7 +8,8 @@
     "club": "FC東京（日本）",
     "goals": 0,
     "assists": 0,
-    "number": 1
+    "number": 1,
+    "shortName": "キム・スンギュ"
   },
   {
     "id": "p_kor_11",
@@ -19,7 +20,8 @@
     "club": "ミッティラン（デンマーク）",
     "goals": 0,
     "assists": 0,
-    "number": 2
+    "number": 2,
+    "shortName": "イ・ハンボム"
   },
   {
     "id": "p_kor_4",
@@ -30,7 +32,8 @@
     "club": "江原FC",
     "goals": 0,
     "assists": 0,
-    "number": 3
+    "number": 3,
+    "shortName": "イ・ギヒョク"
   },
   {
     "id": "p_kor_13",
@@ -41,7 +44,8 @@
     "club": "バイエルン・ミュンヘン（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 4
+    "number": 4,
+    "shortName": "キム・ミンジェ"
   },
   {
     "id": "p_kor_6",
@@ -52,7 +56,8 @@
     "club": "鹿島アントラーズ（日本）",
     "goals": 0,
     "assists": 0,
-    "number": 5
+    "number": 5,
+    "shortName": "キム・テヒョン"
   },
   {
     "id": "p_kor_16",
@@ -63,7 +68,8 @@
     "club": "フェイエノールト（オランダ）",
     "goals": 0,
     "assists": 0,
-    "number": 6
+    "number": 6,
+    "shortName": "ファン・インボム"
   },
   {
     "id": "p_kor_24",
@@ -74,7 +80,8 @@
     "club": "ロサンゼルスFC（アメリカ）",
     "goals": 0,
     "assists": 0,
-    "number": 7
+    "number": 7,
+    "shortName": "ソン・フンミン"
   },
   {
     "id": "p_kor_21",
@@ -85,7 +92,8 @@
     "club": "バーミンガム・シティ（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 8
+    "number": 8,
+    "shortName": "ペク・スンホ"
   },
   {
     "id": "p_kor_26",
@@ -96,7 +104,8 @@
     "club": "ミッティラン（デンマーク）",
     "goals": 0,
     "assists": 0,
-    "number": 9
+    "number": 9,
+    "shortName": "チョ・ギュソン"
   },
   {
     "id": "p_kor_19",
@@ -107,7 +116,8 @@
     "club": "マインツ05（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 10
+    "number": 10,
+    "shortName": "イ・ジェソン"
   },
   {
     "id": "p_kor_22",
@@ -118,7 +128,8 @@
     "club": "ウォルヴァーハンプトン・ワンダラーズ（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 11
+    "number": 11,
+    "shortName": "ファン・ヒチャン"
   },
   {
     "id": "p_kor_3",
@@ -129,7 +140,8 @@
     "club": "全北現代モータース",
     "goals": 0,
     "assists": 0,
-    "number": 12
+    "number": 12,
+    "shortName": "ソン・ボムグン"
   },
   {
     "id": "p_kor_10",
@@ -140,7 +152,8 @@
     "club": "オーストリア・ウィーン（オーストリア）",
     "goals": 0,
     "assists": 0,
-    "number": 13
+    "number": 13,
+    "shortName": "イ・テソク"
   },
   {
     "id": "p_kor_27",
@@ -151,7 +164,8 @@
     "club": "全北現代モータース",
     "goals": 0,
     "assists": 0,
-    "number": 14
+    "number": 14,
+    "shortName": "チョ・ウイジェ"
   },
   {
     "id": "p_kor_5",
@@ -162,7 +176,8 @@
     "club": "大田ハナシチズン",
     "goals": 0,
     "assists": 0,
-    "number": 15
+    "number": 15,
+    "shortName": "キム・ムンファン"
   },
   {
     "id": "p_kor_7",
@@ -173,7 +188,8 @@
     "club": "浙江FC（中国）",
     "goals": 0,
     "assists": 0,
-    "number": 16
+    "number": 16,
+    "shortName": "パク・ジンソプ"
   },
   {
     "id": "p_kor_20",
@@ -184,7 +200,8 @@
     "club": "ストーク・シティ（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 17
+    "number": 17,
+    "shortName": "ペ・ジュノ"
   },
   {
     "id": "p_kor_25",
@@ -195,7 +212,8 @@
     "club": "ベジクタシュ（トルコ）",
     "goals": 0,
     "assists": 0,
-    "number": 18
+    "number": 18,
+    "shortName": "オ・ヒョンギュ"
   },
   {
     "id": "p_kor_23",
@@ -206,7 +224,8 @@
     "club": "パリ・サンジェルマン（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 19
+    "number": 19,
+    "shortName": "イ・ガンイン"
   },
   {
     "id": "p_kor_18",
@@ -217,7 +236,8 @@
     "club": "セルティック（スコットランド）",
     "goals": 0,
     "assists": 0,
-    "number": 20
+    "number": 20,
+    "shortName": "ヤン・ヒョンジュン"
   },
   {
     "id": "p_kor_2",
@@ -228,7 +248,8 @@
     "club": "蔚山HD",
     "goals": 0,
     "assists": 0,
-    "number": 21
+    "number": 21,
+    "shortName": "チョ・ヒョンウ"
   },
   {
     "id": "p_kor_9",
@@ -239,7 +260,8 @@
     "club": "レッドスター・ベオグラード(セルビア）",
     "goals": 0,
     "assists": 0,
-    "number": 22
+    "number": 22,
+    "shortName": "ソル・ヨンウ"
   },
   {
     "id": "p_kor_12",
@@ -250,7 +272,8 @@
     "club": "ボルシア・メンヒェングラートバッハ（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 23
+    "number": 23,
+    "shortName": "イェンス・カストロプ"
   },
   {
     "id": "p_kor_15",
@@ -261,7 +284,8 @@
     "club": "全北現代モータース",
     "goals": 0,
     "assists": 0,
-    "number": 24
+    "number": 24,
+    "shortName": "キム・ジンギュ"
   },
   {
     "id": "p_kor_17",
@@ -272,7 +296,8 @@
     "club": "スウォンジー・シティ（ウェールズ）",
     "goals": 0,
     "assists": 0,
-    "number": 25
+    "number": 25,
+    "shortName": "オム・チソン"
   },
   {
     "id": "p_kor_14",
@@ -283,6 +308,7 @@
     "club": "蔚山HD",
     "goals": 0,
     "assists": 0,
-    "number": 26
+    "number": 26,
+    "shortName": "イ・ドンギョン"
   }
 ]

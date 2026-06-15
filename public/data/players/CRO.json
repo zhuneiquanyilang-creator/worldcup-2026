@@ -8,7 +8,8 @@
     "club": "ディナモ・ザグレブ（クロアチア）",
     "goals": 0,
     "assists": 0,
-    "number": 1
+    "number": 1,
+    "shortName": "リヴァコビッチ"
   },
   {
     "id": "p_cro_7",
@@ -19,7 +20,8 @@
     "club": "バイエルン・ミュンヘン（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 2
+    "number": 2,
+    "shortName": "スタニシッチ"
   },
   {
     "id": "p_cro_8",
@@ -30,7 +32,8 @@
     "club": "フィオレンティーナ（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 3
+    "number": 3,
+    "shortName": "ポングラチッチ"
   },
   {
     "id": "p_cro_10",
@@ -41,7 +44,8 @@
     "club": "マンチェスター・シティ（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 4
+    "number": 4,
+    "shortName": "グヴァルディオル"
   },
   {
     "id": "p_cro_9",
@@ -52,7 +56,8 @@
     "club": "レアル・ソシエダ（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 5
+    "number": 5,
+    "shortName": "ツァル"
   },
   {
     "id": "p_cro_5",
@@ -63,7 +68,8 @@
     "club": "アヤックス（オランダ）",
     "goals": 0,
     "assists": 0,
-    "number": 6
+    "number": 6,
+    "shortName": "シュタロ"
   },
   {
     "id": "p_cro_16",
@@ -74,7 +80,8 @@
     "club": "ボローニャ（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 7
+    "number": 7,
+    "shortName": "モロ"
   },
   {
     "id": "p_cro_14",
@@ -85,7 +92,8 @@
     "club": "マンチェスター・シティ（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 8
+    "number": 8,
+    "shortName": "コヴァチッチ"
   },
   {
     "id": "p_cro_21",
@@ -96,7 +104,8 @@
     "club": "ホッフェンハイム（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 9
+    "number": 9,
+    "shortName": "クラマリッチ"
   },
   {
     "id": "p_cro_20",
@@ -107,7 +116,8 @@
     "club": "ACミラン（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 10
+    "number": 10,
+    "shortName": "モドリッチ"
   },
   {
     "id": "p_cro_23",
@@ -118,7 +128,8 @@
     "club": "オサスナ（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 11
+    "number": 11,
+    "shortName": "ブディミル"
   },
   {
     "id": "p_cro_3",
@@ -129,7 +140,8 @@
     "club": "ハル・シティ（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 12
+    "number": 12,
+    "shortName": "パンドゥル"
   },
   {
     "id": "p_cro_18",
@@ -140,7 +152,8 @@
     "club": "トリノ（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 13
+    "number": 13,
+    "shortName": "ヴラシッチ"
   },
   {
     "id": "p_cro_24",
@@ -151,7 +164,8 @@
     "club": "PSVアイントホーフェン（オランダ）",
     "goals": 0,
     "assists": 0,
-    "number": 14
+    "number": 14,
+    "shortName": "ペリシッチ"
   },
   {
     "id": "p_cro_19",
@@ -162,7 +176,8 @@
     "club": "アタランタ（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 15
+    "number": 15,
+    "shortName": "パシャリッチ"
   },
   {
     "id": "p_cro_15",
@@ -173,7 +188,8 @@
     "club": "コモ（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 16
+    "number": 16,
+    "shortName": "バトゥリナ"
   },
   {
     "id": "p_cro_17",
@@ -184,7 +200,8 @@
     "club": "インテル（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 17
+    "number": 17,
+    "shortName": "スチッチ"
   },
   {
     "id": "p_cro_12",
@@ -195,7 +212,8 @@
     "club": "アウクスブルク（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 18
+    "number": 18,
+    "shortName": "ヤキッチ"
   },
   {
     "id": "p_cro_11",
@@ -206,7 +224,8 @@
     "club": "リエカ",
     "goals": 0,
     "assists": 0,
-    "number": 19
+    "number": 19,
+    "shortName": "フルク"
   },
   {
     "id": "p_cro_22",
@@ -217,7 +236,8 @@
     "club": "フライブルク（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 20
+    "number": 20,
+    "shortName": "マタノビッチ"
   },
   {
     "id": "p_cro_13",
@@ -228,7 +248,8 @@
     "club": "レアル・ソシエダ（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 21
+    "number": 21,
+    "shortName": "スチッチ"
   },
   {
     "id": "p_cro_6",
@@ -239,7 +260,8 @@
     "club": "ハンブルガーSV（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 22
+    "number": 22,
+    "shortName": "ヴシュコビッチ"
   },
   {
     "id": "p_cro_2",
@@ -250,7 +272,8 @@
     "club": "FCコペンハーゲン（デンマーク）",
     "goals": 0,
     "assists": 0,
-    "number": 23
+    "number": 23,
+    "shortName": "コタルスキ"
   },
   {
     "id": "p_cro_25",
@@ -261,7 +284,8 @@
     "club": "オーランド・シティ（アメリカ）",
     "goals": 0,
     "assists": 0,
-    "number": 24
+    "number": 24,
+    "shortName": "パシャリッチ"
   },
   {
     "id": "p_cro_4",
@@ -272,7 +296,8 @@
     "club": "ミッティラン（デンマーク）",
     "goals": 0,
     "assists": 0,
-    "number": 25
+    "number": 25,
+    "shortName": "エルリッチ"
   },
   {
     "id": "p_cro_26",
@@ -283,6 +308,7 @@
     "club": "FCダラス（アメリカ）",
     "goals": 0,
     "assists": 0,
-    "number": 26
+    "number": 26,
+    "shortName": "ムサ"
   }
 ]

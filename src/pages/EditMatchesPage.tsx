@@ -508,7 +508,7 @@ export function EditMatchesPage() {
 
   const [edits, setEdits] = useState<Record<string, Editable>>({});
   const [stageFilter, setStageFilter] = useState<Match["stage"] | "all">("all");
-  const [todayOnly, setTodayOnly] = useState(false);
+  const [todayOnly, setTodayOnly] = useState(true);
   const [savedMsg, setSavedMsg] = useState("");
   const [exportText, setExportText] = useState("");
   const [importText, setImportText] = useState("");

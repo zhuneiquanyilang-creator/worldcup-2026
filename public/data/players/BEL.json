@@ -8,7 +8,8 @@
     "club": "レアル・マドリード（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 1
+    "number": 1,
+    "shortName": "クルトワ"
   },
   {
     "id": "p_bel_6",
@@ -19,7 +20,8 @@
     "club": "スポルティングCP（ポルトガル）",
     "goals": 0,
     "assists": 0,
-    "number": 2
+    "number": 2,
+    "shortName": "デバスト"
   },
   {
     "id": "p_bel_10",
@@ -30,7 +32,8 @@
     "club": "アイントラハト・フランクフルト（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 3
+    "number": 3,
+    "shortName": "テアテ"
   },
   {
     "id": "p_bel_5",
@@ -41,7 +44,8 @@
     "club": "クラブ・ブルージュ（ベルギー）",
     "goals": 0,
     "assists": 0,
-    "number": 4
+    "number": 4,
+    "shortName": "メシェレ"
   },
   {
     "id": "p_bel_12",
@@ -52,7 +56,8 @@
     "club": "ブライトン&ホーヴ・アルビオン（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 5
+    "number": 5,
+    "shortName": "カイパー"
   },
   {
     "id": "p_bel_17",
@@ -63,7 +68,8 @@
     "club": "ジローナ（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 6
+    "number": 6,
+    "shortName": "ヴィツェル"
   },
   {
     "id": "p_bel_18",
@@ -74,7 +80,8 @@
     "club": "ナポリ（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 7
+    "number": 7,
+    "shortName": "ブライネ"
   },
   {
     "id": "p_bel_15",
@@ -85,7 +92,8 @@
     "club": "アストン・ビラ（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 8
+    "number": 8,
+    "shortName": "ティーレマンス"
   },
   {
     "id": "p_bel_19",
@@ -96,7 +104,8 @@
     "club": "ナポリ（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 9
+    "number": 9,
+    "shortName": "ルカク"
   },
   {
     "id": "p_bel_22",
@@ -107,7 +116,8 @@
     "club": "アーセナル（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 10
+    "number": 10,
+    "shortName": "トロサール"
   },
   {
     "id": "p_bel_23",
@@ -118,7 +128,8 @@
     "club": "マンチェスター・シティ（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 11
+    "number": 11,
+    "shortName": "ドク"
   },
   {
     "id": "p_bel_2",
@@ -129,7 +140,8 @@
     "club": "マンチェスター・ユナイテッド（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 12
+    "number": 12,
+    "shortName": "ラメンス"
   },
   {
     "id": "p_bel_3",
@@ -140,7 +152,8 @@
     "club": "ストラスブール（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 13
+    "number": 13,
+    "shortName": "ペンダース"
   },
   {
     "id": "p_bel_24",
@@ -151,7 +164,8 @@
     "club": "ベンフィカ（ポルトガル）",
     "goals": 0,
     "assists": 0,
-    "number": 14
+    "number": 14,
+    "shortName": "ルケバキオ"
   },
   {
     "id": "p_bel_8",
@@ -162,7 +176,8 @@
     "club": "リール（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 15
+    "number": 15,
+    "shortName": "ムニエ"
   },
   {
     "id": "p_bel_9",
@@ -173,7 +188,8 @@
     "club": "ACミラン（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 16
+    "number": 16,
+    "shortName": "ヴィンター"
   },
   {
     "id": "p_bel_21",
@@ -184,7 +200,8 @@
     "club": "アタランタ（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 17
+    "number": 17,
+    "shortName": "ケテラーレ"
   },
   {
     "id": "p_bel_4",
@@ -195,7 +212,8 @@
     "club": "クラブ・ブルージュ（ベルギー）",
     "goals": 0,
     "assists": 0,
-    "number": 18
+    "number": 18,
+    "shortName": "セイス"
   },
   {
     "id": "p_bel_25",
@@ -206,7 +224,8 @@
     "club": "ストラスブール（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 19
+    "number": 19,
+    "shortName": "モレイラ"
   },
   {
     "id": "p_bel_13",
@@ -217,7 +236,8 @@
     "club": "クラブ・ブルージュ（ベルギー）",
     "goals": 0,
     "assists": 0,
-    "number": 20
+    "number": 20,
+    "shortName": "ヴァナケン"
   },
   {
     "id": "p_bel_11",
@@ -228,7 +248,8 @@
     "club": "フラム（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 21
+    "number": 21,
+    "shortName": "カスターニュ"
   },
   {
     "id": "p_bel_20",
@@ -239,7 +260,8 @@
     "club": "ACミラン（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 22
+    "number": 22,
+    "shortName": "サーレマーケルス"
   },
   {
     "id": "p_bel_14",
@@ -250,7 +272,8 @@
     "club": "レンジャーズ（スコットランド）",
     "goals": 0,
     "assists": 0,
-    "number": 23
+    "number": 23,
+    "shortName": "ラスキン"
   },
   {
     "id": "p_bel_16",
@@ -261,7 +284,8 @@
     "club": "アストン・ビラ（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 24
+    "number": 24,
+    "shortName": "オナナ"
   },
   {
     "id": "p_bel_7",
@@ -272,7 +296,8 @@
     "club": "リール（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 25
+    "number": 25,
+    "shortName": "ンゴイ"
   },
   {
     "id": "p_bel_26",
@@ -283,6 +308,7 @@
     "club": "リール（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 26
+    "number": 26,
+    "shortName": "パルド"
   }
 ]

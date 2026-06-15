@@ -8,7 +8,8 @@
     "club": "フェネルバフチェ（トルコ）",
     "goals": 0,
     "assists": 0,
-    "number": 1
+    "number": 1,
+    "shortName": "ギュノク"
   },
   {
     "id": "p_tur_12",
@@ -19,7 +20,8 @@
     "club": "ASローマ（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 2
+    "number": 2,
+    "shortName": "チェリク"
   },
   {
     "id": "p_tur_9",
@@ -30,7 +32,8 @@
     "club": "アル・アハリ（サウジアラビア）",
     "goals": 0,
     "assists": 0,
-    "number": 3
+    "number": 3,
+    "shortName": "デミラル"
   },
   {
     "id": "p_tur_5",
@@ -41,7 +44,8 @@
     "club": "フェネルバフチェ（トルコ）",
     "goals": 0,
     "assists": 0,
-    "number": 4
+    "number": 4,
+    "shortName": "ソユンジュ"
   },
   {
     "id": "p_tur_16",
@@ -52,7 +56,8 @@
     "club": "ボルシア・ドルトムント（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 5
+    "number": 5,
+    "shortName": "オズジャン"
   },
   {
     "id": "p_tur_14",
@@ -63,7 +68,8 @@
     "club": "ベシクタシュ",
     "goals": 0,
     "assists": 0,
-    "number": 6
+    "number": 6,
+    "shortName": "コクチュ"
   },
   {
     "id": "p_tur_24",
@@ -74,7 +80,8 @@
     "club": "フェネルバフチェ（トルコ）",
     "goals": 0,
     "assists": 0,
-    "number": 7
+    "number": 7,
+    "shortName": "アクトゥルコール"
   },
   {
     "id": "p_tur_18",
@@ -85,7 +92,8 @@
     "club": "レアル・マドリード（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 8
+    "number": 8,
+    "shortName": "ギュレル"
   },
   {
     "id": "p_tur_21",
@@ -96,7 +104,8 @@
     "club": "FCポルト（ポルトガル）",
     "goals": 0,
     "assists": 0,
-    "number": 9
+    "number": 9,
+    "shortName": "ギュル"
   },
   {
     "id": "p_tur_17",
@@ -107,7 +116,8 @@
     "club": "インテル（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 10
+    "number": 10,
+    "shortName": "チャルハノール"
   },
   {
     "id": "p_tur_19",
@@ -118,7 +128,8 @@
     "club": "ユベントス（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 11
+    "number": 11,
+    "shortName": "ユルディズ"
   },
   {
     "id": "p_tur_1",
@@ -129,7 +140,8 @@
     "club": "マンチェスター・ユナイテッド（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 12
+    "number": 12,
+    "shortName": "バユンドゥル"
   },
   {
     "id": "p_tur_8",
@@ -140,7 +152,8 @@
     "club": "ガラタサライ（トルコ）",
     "goals": 0,
     "assists": 0,
-    "number": 13
+    "number": 13,
+    "shortName": "エルマル"
   },
   {
     "id": "p_tur_7",
@@ -151,7 +164,8 @@
     "club": "ガラタサライ（トルコ）",
     "goals": 0,
     "assists": 0,
-    "number": 14
+    "number": 14,
+    "shortName": "バルダクチ"
   },
   {
     "id": "p_tur_10",
@@ -162,7 +176,8 @@
     "club": "ホッフェンハイム（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 15
+    "number": 15,
+    "shortName": "カバク"
   },
   {
     "id": "p_tur_13",
@@ -173,7 +188,8 @@
     "club": "フェネルバフチェ（トルコ）",
     "goals": 0,
     "assists": 0,
-    "number": 16
+    "number": 16,
+    "shortName": "ユクセク"
   },
   {
     "id": "p_tur_26",
@@ -184,7 +200,8 @@
     "club": "カスムパシャ（トルコ）",
     "goals": 0,
     "assists": 0,
-    "number": 17
+    "number": 17,
+    "shortName": "カフベジ"
   },
   {
     "id": "p_tur_4",
@@ -195,7 +212,8 @@
     "club": "フェネルバフチェ（トルコ）",
     "goals": 0,
     "assists": 0,
-    "number": 18
+    "number": 18,
+    "shortName": "ミュルドゥル"
   },
   {
     "id": "p_tur_23",
@@ -206,7 +224,8 @@
     "club": "ガラタサライ（トルコ）",
     "goals": 0,
     "assists": 0,
-    "number": 19
+    "number": 19,
+    "shortName": "アクギュン"
   },
   {
     "id": "p_tur_11",
@@ -217,7 +236,8 @@
     "club": "ブライトン（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 20
+    "number": 20,
+    "shortName": "カディオール"
   },
   {
     "id": "p_tur_22",
@@ -228,7 +248,8 @@
     "club": "ガラタサライ（トルコ）",
     "goals": 0,
     "assists": 0,
-    "number": 21
+    "number": 21,
+    "shortName": "ユルマズ"
   },
   {
     "id": "p_tur_15",
@@ -239,7 +260,8 @@
     "club": "ガラタサライ（トルコ）",
     "goals": 0,
     "assists": 0,
-    "number": 22
+    "number": 22,
+    "shortName": "アイハン"
   },
   {
     "id": "p_tur_2",
@@ -250,7 +272,8 @@
     "club": "ガラタサライ（トルコ）",
     "goals": 0,
     "assists": 0,
-    "number": 23
+    "number": 23,
+    "shortName": "チャクル"
   },
   {
     "id": "p_tur_25",
@@ -261,7 +284,8 @@
     "club": "フェネルバフチェ（トルコ）",
     "goals": 0,
     "assists": 0,
-    "number": 24
+    "number": 24,
+    "shortName": "アイドゥン"
   },
   {
     "id": "p_tur_6",
@@ -272,7 +296,8 @@
     "club": "チャイクル・リゼスポル（トルコ）",
     "goals": 0,
     "assists": 0,
-    "number": 25
+    "number": 25,
+    "shortName": "アカイディン"
   },
   {
     "id": "p_tur_20",
@@ -283,6 +308,7 @@
     "club": "アイントラハト・フランクフルト（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 26
+    "number": 26,
+    "shortName": "ウズン"
   }
 ]

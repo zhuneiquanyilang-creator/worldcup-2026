@@ -8,7 +8,8 @@
     "club": "アル・アハリ（エジプト）",
     "goals": 0,
     "assists": 0,
-    "number": 1
+    "number": 1,
+    "shortName": "シェナウィ"
   },
   {
     "id": "p_egy_8",
@@ -19,7 +20,8 @@
     "club": "アル・アハリ（エジプト）",
     "goals": 0,
     "assists": 0,
-    "number": 2
+    "number": 2,
+    "shortName": "イブラヒム"
   },
   {
     "id": "p_egy_9",
@@ -30,7 +32,8 @@
     "club": "アル・アハリ（エジプト）",
     "goals": 0,
     "assists": 0,
-    "number": 3
+    "number": 3,
+    "shortName": "ハニー"
   },
   {
     "id": "p_egy_6",
@@ -41,7 +44,8 @@
     "club": "ザマレク",
     "goals": 0,
     "assists": 0,
-    "number": 4
+    "number": 4,
+    "shortName": "アブデルマギド"
   },
   {
     "id": "p_egy_10",
@@ -52,7 +56,8 @@
     "club": "アル・アイン（UAE）",
     "goals": 0,
     "assists": 0,
-    "number": 5
+    "number": 5,
+    "shortName": "ラビア"
   },
   {
     "id": "p_egy_12",
@@ -63,7 +68,8 @@
     "club": "ニース（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 6
+    "number": 6,
+    "shortName": "アブデルモネイム"
   },
   {
     "id": "p_egy_20",
@@ -74,7 +80,8 @@
     "club": "アル・アハリ（エジプト）",
     "goals": 0,
     "assists": 0,
-    "number": 7
+    "number": 7,
+    "shortName": "ハッサン（トレゼゲ）"
   },
   {
     "id": "p_egy_19",
@@ -85,7 +92,8 @@
     "club": "アル・アハリ（エジプト）",
     "goals": 0,
     "assists": 0,
-    "number": 8
+    "number": 8,
+    "shortName": "アシュール"
   },
   {
     "id": "p_egy_26",
@@ -96,7 +104,8 @@
     "club": "バルセロナB（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 9
+    "number": 9,
+    "shortName": "アブデルカリム"
   },
   {
     "id": "p_egy_24",
@@ -107,7 +116,8 @@
     "club": "リバプール（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 10
+    "number": 10,
+    "shortName": "サラー"
   },
   {
     "id": "p_egy_15",
@@ -118,7 +128,8 @@
     "club": "ピラミッズ（エジプト）",
     "goals": 0,
     "assists": 0,
-    "number": 11
+    "number": 11,
+    "shortName": "ジコ"
   },
   {
     "id": "p_egy_23",
@@ -129,7 +140,8 @@
     "club": "オビエド（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 12
+    "number": 12,
+    "shortName": "ハッサン"
   },
   {
     "id": "p_egy_7",
@@ -140,7 +152,8 @@
     "club": "ザマレク",
     "goals": 0,
     "assists": 0,
-    "number": 13
+    "number": 13,
+    "shortName": "ファトゥー"
   },
   {
     "id": "p_egy_11",
@@ -151,7 +164,8 @@
     "club": "アル・ワクラ（カタール）",
     "goals": 0,
     "assists": 0,
-    "number": 14
+    "number": 14,
+    "shortName": "ファティ"
   },
   {
     "id": "p_egy_4",
@@ -162,7 +176,8 @@
     "club": "ピラミッズ（エジプト）",
     "goals": 0,
     "assists": 0,
-    "number": 15
+    "number": 15,
+    "shortName": "ハフェズ"
   },
   {
     "id": "p_egy_3",
@@ -173,7 +188,8 @@
     "club": "ザマレク",
     "goals": 0,
     "assists": 0,
-    "number": 16
+    "number": 16,
+    "shortName": "ソリマン"
   },
   {
     "id": "p_egy_16",
@@ -184,7 +200,8 @@
     "club": "ピラミッズ（エジプト）",
     "goals": 0,
     "assists": 0,
-    "number": 17
+    "number": 17,
+    "shortName": "ラシーン"
   },
   {
     "id": "p_egy_21",
@@ -195,7 +212,8 @@
     "club": "アル・ナジマ（サウジアラビア）",
     "goals": 0,
     "assists": 0,
-    "number": 18
+    "number": 18,
+    "shortName": "エマド（ドンガ）"
   },
   {
     "id": "p_egy_18",
@@ -206,7 +224,8 @@
     "club": "アル・アハリ（エジプト）",
     "goals": 0,
     "assists": 0,
-    "number": 19
+    "number": 19,
+    "shortName": "アッティア"
   },
   {
     "id": "p_egy_22",
@@ -217,7 +236,8 @@
     "club": "ノアシェラン（デンマーク）",
     "goals": 0,
     "assists": 0,
-    "number": 20
+    "number": 20,
+    "shortName": "アデル"
   },
   {
     "id": "p_egy_14",
@@ -228,7 +248,8 @@
     "club": "ZED",
     "goals": 0,
     "assists": 0,
-    "number": 21
+    "number": 21,
+    "shortName": "サベル"
   },
   {
     "id": "p_egy_25",
@@ -239,7 +260,8 @@
     "club": "マンチェスター・シティ（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 22
+    "number": 22,
+    "shortName": "マルムシュ"
   },
   {
     "id": "p_egy_2",
@@ -250,7 +272,8 @@
     "club": "アル・アハリ（エジプト）",
     "goals": 0,
     "assists": 0,
-    "number": 23
+    "number": 23,
+    "shortName": "ショベイル"
   },
   {
     "id": "p_egy_5",
@@ -261,7 +284,8 @@
     "club": "ZED",
     "goals": 0,
     "assists": 0,
-    "number": 24
+    "number": 24,
+    "shortName": "アラー"
   },
   {
     "id": "p_egy_17",
@@ -272,7 +296,8 @@
     "club": "アル・アハリ（エジプト）",
     "goals": 0,
     "assists": 0,
-    "number": 25
+    "number": 25,
+    "shortName": "サイード（ジゾ）"
   },
   {
     "id": "p_egy_13",
@@ -283,6 +308,7 @@
     "club": "エル・グウナ",
     "goals": 0,
     "assists": 0,
-    "number": 26
+    "number": 26,
+    "shortName": "アラー"
   }
 ]

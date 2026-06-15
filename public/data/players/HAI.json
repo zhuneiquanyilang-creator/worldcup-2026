@@ -8,7 +8,8 @@
     "club": "バスティア（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 1
+    "number": 1,
+    "shortName": "プラシード"
   },
   {
     "id": "p_hai_11",
@@ -19,7 +20,8 @@
     "club": "アンジェ（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 2
+    "number": 2,
+    "shortName": "アルキュス"
   },
   {
     "id": "p_hai_6",
@@ -30,7 +32,8 @@
     "club": "ヤング・ボーイズII（スイス）",
     "goals": 0,
     "assists": 0,
-    "number": 3
+    "number": 3,
+    "shortName": "サーモンシー"
   },
   {
     "id": "p_hai_4",
@@ -41,7 +44,8 @@
     "club": "LDUキト（エクアドル）",
     "goals": 0,
     "assists": 0,
-    "number": 4
+    "number": 4,
+    "shortName": "アデ"
   },
   {
     "id": "p_hai_7",
@@ -52,7 +56,8 @@
     "club": "ルガーノ（スイス）",
     "goals": 0,
     "assists": 0,
-    "number": 5
+    "number": 5,
+    "shortName": "デルクロワ"
   },
   {
     "id": "p_hai_13",
@@ -63,7 +68,8 @@
     "club": "エルパソ・ロコモティヴ（アメリカ）",
     "goals": 0,
     "assists": 0,
-    "number": 6
+    "number": 6,
+    "shortName": "サント"
   },
   {
     "id": "p_hai_26",
@@ -74,7 +80,8 @@
     "club": "トロントFC（カナダ）",
     "goals": 0,
     "assists": 0,
-    "number": 7
+    "number": 7,
+    "shortName": "エティエンヌ Jr."
   },
   {
     "id": "p_hai_10",
@@ -85,7 +92,8 @@
     "club": "ナンシー（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 8
+    "number": 8,
+    "shortName": "エクスペリエンス"
   },
   {
     "id": "p_hai_18",
@@ -96,7 +104,8 @@
     "club": "エステグラル（イラン）",
     "goals": 0,
     "assists": 0,
-    "number": 9
+    "number": 9,
+    "shortName": "ナゾン"
   },
   {
     "id": "p_hai_17",
@@ -107,7 +116,8 @@
     "club": "ウォルヴァーハンプトン・ワンダラーズ（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 10
+    "number": 10,
+    "shortName": "ベルガルド"
   },
   {
     "id": "p_hai_25",
@@ -118,7 +128,8 @@
     "club": "FCダラス（アメリカ）",
     "goals": 0,
     "assists": 0,
-    "number": 11
+    "number": 11,
+    "shortName": "ルイシウス"
   },
   {
     "id": "p_hai_2",
@@ -129,7 +140,8 @@
     "club": "ソショー（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 12
+    "number": 12,
+    "shortName": "ピエール"
   },
   {
     "id": "p_hai_5",
@@ -140,7 +152,8 @@
     "club": "コロラド・スプリングス・スウィッチバックス（アメリカ）",
     "goals": 0,
     "assists": 0,
-    "number": 13
+    "number": 13,
+    "shortName": "ラクロワ"
   },
   {
     "id": "p_hai_16",
@@ -151,7 +164,8 @@
     "club": "ヴィゼラ（ポルトガル）",
     "goals": 0,
     "assists": 0,
-    "number": 14
+    "number": 14,
+    "shortName": "ピエール"
   },
   {
     "id": "p_hai_23",
@@ -162,7 +176,8 @@
     "club": "アルメレ・シティ（オランダ）",
     "goals": 0,
     "assists": 0,
-    "number": 15
+    "number": 15,
+    "shortName": "プロヴィデンス"
   },
   {
     "id": "p_hai_24",
@@ -173,7 +188,8 @@
     "club": "フェレンツヴァーロシュ（ハンガリー）",
     "goals": 0,
     "assists": 0,
-    "number": 16
+    "number": 16,
+    "shortName": "ジョセフ"
   },
   {
     "id": "p_hai_14",
@@ -184,7 +200,8 @@
     "club": "フィラデルフィア・ユニオン（アメリカ）",
     "goals": 0,
     "assists": 0,
-    "number": 17
+    "number": 17,
+    "shortName": "ジャック"
   },
   {
     "id": "p_hai_19",
@@ -195,7 +212,8 @@
     "club": "サンダーランド（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 18
+    "number": 18,
+    "shortName": "イシドール"
   },
   {
     "id": "p_hai_21",
@@ -206,7 +224,8 @@
     "club": "ヴィゼラ（ポルトガル）",
     "goals": 0,
     "assists": 0,
-    "number": 19
+    "number": 19,
+    "shortName": "フォルテュネ"
   },
   {
     "id": "p_hai_22",
@@ -217,7 +236,8 @@
     "club": "チャイクル・リゼスポル（トルコ）",
     "goals": 0,
     "assists": 0,
-    "number": 20
+    "number": 20,
+    "shortName": "ピエロ"
   },
   {
     "id": "p_hai_20",
@@ -228,7 +248,8 @@
     "club": "オセール（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 21
+    "number": 21,
+    "shortName": "カジミール"
   },
   {
     "id": "p_hai_9",
@@ -239,7 +260,8 @@
     "club": "ヘント（ベルギー）",
     "goals": 0,
     "assists": 0,
-    "number": 22
+    "number": 22,
+    "shortName": "デュヴェルン"
   },
   {
     "id": "p_hai_3",
@@ -250,7 +272,8 @@
     "club": "コスモス・コブレンツ（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 23
+    "number": 23,
+    "shortName": "デュヴェルジェ"
   },
   {
     "id": "p_hai_8",
@@ -261,7 +284,8 @@
     "club": "ズルテ・ワレヘム（ベルギー）",
     "goals": 0,
     "assists": 0,
-    "number": 24
+    "number": 24,
+    "shortName": "ポーガン"
   },
   {
     "id": "p_hai_15",
@@ -272,7 +296,8 @@
     "club": "タトラン・プレショフ（スロバキア）",
     "goals": 0,
     "assists": 0,
-    "number": 25
+    "number": 25,
+    "shortName": "シモン"
   },
   {
     "id": "p_hai_12",
@@ -283,6 +308,7 @@
     "club": "ヴァイオレット",
     "goals": 0,
     "assists": 0,
-    "number": 26
+    "number": 26,
+    "shortName": "ピエール"
   }
 ]

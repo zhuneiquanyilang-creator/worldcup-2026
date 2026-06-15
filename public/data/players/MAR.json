@@ -8,7 +8,8 @@
     "club": "アル・ヒラル（サウジアラビア）",
     "goals": 0,
     "assists": 0,
-    "number": 1
+    "number": 1,
+    "shortName": "ブヌ"
   },
   {
     "id": "p_mar_12",
@@ -19,7 +20,8 @@
     "club": "パリ・サンジェルマン（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 2
+    "number": 2,
+    "shortName": "ハキミ"
   },
   {
     "id": "p_mar_10",
@@ -30,7 +32,8 @@
     "club": "マンチェスター・ユナイテッド（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 3
+    "number": 3,
+    "shortName": "マズラウィ"
   },
   {
     "id": "p_mar_19",
@@ -41,7 +44,8 @@
     "club": "ベティス（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 4
+    "number": 4,
+    "shortName": "アムラバト"
   },
   {
     "id": "p_mar_11",
@@ -52,7 +56,8 @@
     "club": "アル・ファトフ",
     "goals": 0,
     "assists": 0,
-    "number": 5
+    "number": 5,
+    "shortName": "サーダン"
   },
   {
     "id": "p_mar_14",
@@ -63,7 +68,8 @@
     "club": "リール（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 6
+    "number": 6,
+    "shortName": "ブアディ"
   },
   {
     "id": "p_mar_22",
@@ -74,7 +80,8 @@
     "club": "サンダーランド（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 7
+    "number": 7,
+    "shortName": "タルビ"
   },
   {
     "id": "p_mar_18",
@@ -85,7 +92,8 @@
     "club": "ジローナ（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 8
+    "number": 8,
+    "shortName": "ウナヒ"
   },
   {
     "id": "p_mar_26",
@@ -96,7 +104,8 @@
     "club": "アル・アイン（UAE）",
     "goals": 0,
     "assists": 0,
-    "number": 9
+    "number": 9,
+    "shortName": "ラヒミ"
   },
   {
     "id": "p_mar_20",
@@ -107,7 +116,8 @@
     "club": "レアル・マドリード（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 10
+    "number": 10,
+    "shortName": "ディアス"
   },
   {
     "id": "p_mar_13",
@@ -118,7 +128,8 @@
     "club": "PSVアイントホーフェン（オランダ）",
     "goals": 0,
     "assists": 0,
-    "number": 11
+    "number": 11,
+    "shortName": "サイバリ"
   },
   {
     "id": "p_mar_2",
@@ -129,7 +140,8 @@
     "club": "ベルカンヌ",
     "goals": 0,
     "assists": 0,
-    "number": 12
+    "number": 12,
+    "shortName": "ムニル"
   },
   {
     "id": "p_mar_6",
@@ -140,7 +152,8 @@
     "club": "ヘンク（ベルギー）",
     "goals": 0,
     "assists": 0,
-    "number": 13
+    "number": 13,
+    "shortName": "ワディ"
   },
   {
     "id": "p_mar_8",
@@ -151,7 +164,8 @@
     "club": "フラム（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 14
+    "number": 14,
+    "shortName": "ディオプ"
   },
   {
     "id": "p_mar_15",
@@ -162,7 +176,8 @@
     "club": "ストラスブール（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 15
+    "number": 15,
+    "shortName": "ムラベ"
   },
   {
     "id": "p_mar_24",
@@ -173,7 +188,8 @@
     "club": "ストラスブール（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 16
+    "number": 16,
+    "shortName": "ヤシン"
   },
   {
     "id": "p_mar_21",
@@ -184,7 +200,8 @@
     "club": "アンジェ（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 17
+    "number": 17,
+    "shortName": "スバイ"
   },
   {
     "id": "p_mar_9",
@@ -195,7 +212,8 @@
     "club": "クリスタル・パレス（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 18
+    "number": 18,
+    "shortName": "リアド"
   },
   {
     "id": "p_mar_4",
@@ -206,7 +224,8 @@
     "club": "アル・アハリ（エジプト）",
     "goals": 0,
     "assists": 0,
-    "number": 19
+    "number": 19,
+    "shortName": "ベランマリ"
   },
   {
     "id": "p_mar_25",
@@ -217,7 +236,8 @@
     "club": "オリンピアコス（ギリシャ）",
     "goals": 0,
     "assists": 0,
-    "number": 20
+    "number": 20,
+    "shortName": "カービ"
   },
   {
     "id": "p_mar_23",
@@ -228,7 +248,8 @@
     "club": "アイントラハト・フランクフルト（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 21
+    "number": 21,
+    "shortName": "アマイムニ"
   },
   {
     "id": "p_mar_3",
@@ -239,7 +260,8 @@
     "club": "AS FAR",
     "goals": 0,
     "assists": 0,
-    "number": 22
+    "number": 22,
+    "shortName": "タグナウティ"
   },
   {
     "id": "p_mar_16",
@@ -250,7 +272,8 @@
     "club": "シュツットガルト（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 23
+    "number": 23,
+    "shortName": "ハヌス"
   },
   {
     "id": "p_mar_17",
@@ -261,7 +284,8 @@
     "club": "ASローマ（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 24
+    "number": 24,
+    "shortName": "アイナウィ"
   },
   {
     "id": "p_mar_5",
@@ -272,7 +296,8 @@
     "club": "メヘレン（ベルギー）",
     "goals": 0,
     "assists": 0,
-    "number": 25
+    "number": 25,
+    "shortName": "ハルハル"
   },
   {
     "id": "p_mar_7",
@@ -283,6 +308,7 @@
     "club": "PSVアイントホーフェン（オランダ）",
     "goals": 0,
     "assists": 0,
-    "number": 26
+    "number": 26,
+    "shortName": "エディン"
   }
 ]

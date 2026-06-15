@@ -8,7 +8,8 @@
     "club": "ザンクト・ガレン（スイス）",
     "goals": 0,
     "assists": 0,
-    "number": 1
+    "number": 1,
+    "shortName": "ジギ"
   },
   {
     "id": "p_gha_7",
@@ -19,7 +20,8 @@
     "club": "レンヌ（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 2
+    "number": 2,
+    "shortName": "セイドゥ"
   },
   {
     "id": "p_gha_13",
@@ -30,7 +32,8 @@
     "club": "ネアルショラン（デンマーク）",
     "goals": 0,
     "assists": 0,
-    "number": 3
+    "number": 3,
+    "shortName": "イレンキ"
   },
   {
     "id": "p_gha_12",
@@ -41,7 +44,8 @@
     "club": "ヴォルフスブルク（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 4
+    "number": 4,
+    "shortName": "アジェティ"
   },
   {
     "id": "p_gha_17",
@@ -52,7 +56,8 @@
     "club": "ビジャレアル（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 5
+    "number": 5,
+    "shortName": "パーティ"
   },
   {
     "id": "p_gha_11",
@@ -63,7 +68,8 @@
     "club": "ラージョ・バジェカーノ（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 6
+    "number": 6,
+    "shortName": "ムミン"
   },
   {
     "id": "p_gha_20",
@@ -74,7 +80,8 @@
     "club": "レスター・シティ（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 7
+    "number": 7,
+    "shortName": "イサハク"
   },
   {
     "id": "p_gha_16",
@@ -85,7 +92,8 @@
     "club": "オビエド（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 8
+    "number": 8,
+    "shortName": "シボ"
   },
   {
     "id": "p_gha_19",
@@ -96,7 +104,8 @@
     "club": "レスター・シティ（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 9
+    "number": 9,
+    "shortName": "アユー"
   },
   {
     "id": "p_gha_21",
@@ -107,7 +116,8 @@
     "club": "コベントリー・シティ（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 10
+    "number": 10,
+    "shortName": "アサンテ"
   },
   {
     "id": "p_gha_18",
@@ -118,7 +128,8 @@
     "club": "マンチェスター・シティ（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 11
+    "number": 11,
+    "shortName": "セメンヨ"
   },
   {
     "id": "p_gha_2",
@@ -129,7 +140,8 @@
     "club": "セント・パトリックス・アスレチック（アイルランド）",
     "goals": 0,
     "assists": 0,
-    "number": 12
+    "number": 12,
+    "shortName": "アナング"
   },
   {
     "id": "p_gha_26",
@@ -140,7 +152,8 @@
     "club": "アル・カディシーヤ（サウジアラビア）",
     "goals": 0,
     "assists": 0,
-    "number": 13
+    "number": 13,
+    "shortName": "バー"
   },
   {
     "id": "p_gha_10",
@@ -151,7 +164,8 @@
     "club": "オセール（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 14
+    "number": 14,
+    "shortName": "メンサー"
   },
   {
     "id": "p_gha_15",
@@ -162,7 +176,8 @@
     "club": "オセール（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 15
+    "number": 15,
+    "shortName": "オウス"
   },
   {
     "id": "p_gha_3",
@@ -173,7 +188,8 @@
     "club": "ハーツ・オブ・オーク",
     "goals": 0,
     "assists": 0,
-    "number": 16
+    "number": 16,
+    "shortName": "アサレ"
   },
   {
     "id": "p_gha_5",
@@ -184,7 +200,8 @@
     "club": "PAOK（ギリシャ）",
     "goals": 0,
     "assists": 0,
-    "number": 17
+    "number": 17,
+    "shortName": "ババ"
   },
   {
     "id": "p_gha_6",
@@ -195,7 +212,8 @@
     "club": "イスタンブール・バシャクシェヒル（トルコ）",
     "goals": 0,
     "assists": 0,
-    "number": 18
+    "number": 18,
+    "shortName": "オポク"
   },
   {
     "id": "p_gha_23",
@@ -206,7 +224,8 @@
     "club": "アスレチック・ビルバオ（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 19
+    "number": 19,
+    "shortName": "ウィリアムス"
   },
   {
     "id": "p_gha_14",
@@ -217,7 +236,8 @@
     "club": "サンテティエンヌ（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 20
+    "number": 20,
+    "shortName": "ボアクィエ"
   },
   {
     "id": "p_gha_8",
@@ -228,7 +248,8 @@
     "club": "ニース（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 21
+    "number": 21,
+    "shortName": "オポン"
   },
   {
     "id": "p_gha_22",
@@ -239,7 +260,8 @@
     "club": "アタランタ（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 22
+    "number": 22,
+    "shortName": "スレマナ"
   },
   {
     "id": "p_gha_4",
@@ -250,7 +272,8 @@
     "club": "パフォスFC（キプロス）",
     "goals": 0,
     "assists": 0,
-    "number": 23
+    "number": 23,
+    "shortName": "ルカッセン"
   },
   {
     "id": "p_gha_24",
@@ -261,7 +284,8 @@
     "club": "オリンピック・リヨン（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 24
+    "number": 24,
+    "shortName": "ヌアマー"
   },
   {
     "id": "p_gha_25",
@@ -272,7 +296,8 @@
     "club": "ヴィクトリア・プルゼニ（チェコ）",
     "goals": 0,
     "assists": 0,
-    "number": 25
+    "number": 25,
+    "shortName": "アドゥ"
   },
   {
     "id": "p_gha_9",
@@ -283,6 +308,7 @@
     "club": "オセール（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 26
+    "number": 26,
+    "shortName": "セナヤ"
   }
 ]

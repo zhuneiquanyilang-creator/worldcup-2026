@@ -8,7 +8,8 @@
     "club": "スタッド・ニヨン（スイス）",
     "goals": 0,
     "assists": 0,
-    "number": 1
+    "number": 1,
+    "shortName": "マスティル"
   },
   {
     "id": "p_alg_10",
@@ -19,7 +20,8 @@
     "club": "リール（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 2
+    "number": 2,
+    "shortName": "マンディ"
   },
   {
     "id": "p_alg_5",
@@ -30,7 +32,8 @@
     "club": "USMアルジェ",
     "goals": 0,
     "assists": 0,
-    "number": 3
+    "number": 3,
+    "shortName": "アバダ"
   },
   {
     "id": "p_alg_7",
@@ -41,7 +44,8 @@
     "club": "エスペランス（チュニジア）",
     "goals": 0,
     "assists": 0,
-    "number": 4
+    "number": 4,
+    "shortName": "トゥガイ"
   },
   {
     "id": "p_alg_6",
@@ -52,7 +56,8 @@
     "club": "JSカビリー",
     "goals": 0,
     "assists": 0,
-    "number": 5
+    "number": 5,
+    "shortName": "ベライド"
   },
   {
     "id": "p_alg_16",
@@ -63,7 +68,8 @@
     "club": "トゥウェンテ（オランダ）",
     "goals": 0,
     "assists": 0,
-    "number": 6
+    "number": 6,
+    "shortName": "ゼルキ"
   },
   {
     "id": "p_alg_21",
@@ -74,7 +80,8 @@
     "club": "アル・アハリ（サウジアラビア）",
     "goals": 0,
     "assists": 0,
-    "number": 7
+    "number": 7,
+    "shortName": "マフレズ"
   },
   {
     "id": "p_alg_14",
@@ -85,7 +92,8 @@
     "club": "アル・イテハド（サウジアラビア）",
     "goals": 0,
     "assists": 0,
-    "number": 8
+    "number": 8,
+    "shortName": "アワール"
   },
   {
     "id": "p_alg_25",
@@ -96,7 +104,8 @@
     "club": "オリンピック・マルセイユ（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 9
+    "number": 9,
+    "shortName": "グイリ"
   },
   {
     "id": "p_alg_20",
@@ -107,7 +116,8 @@
     "club": "アイントラハト・フランクフルト（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 10
+    "number": 10,
+    "shortName": "シャイビ"
   },
   {
     "id": "p_alg_26",
@@ -118,7 +128,8 @@
     "club": "フェイエノールト（オランダ）",
     "goals": 0,
     "assists": 0,
-    "number": 11
+    "number": 11,
+    "shortName": "ムサ"
   },
   {
     "id": "p_alg_27",
@@ -129,7 +140,8 @@
     "club": "ジェールETO（ハンガリー）",
     "goals": 0,
     "assists": 0,
-    "number": 12
+    "number": 12,
+    "shortName": "ベンブアリ"
   },
   {
     "id": "p_alg_8",
@@ -140,7 +152,8 @@
     "club": "ヤング・ボーイズ（スイス）",
     "goals": 0,
     "assists": 0,
-    "number": 13
+    "number": 13,
+    "shortName": "ハジャム"
   },
   {
     "id": "p_alg_17",
@@ -151,7 +164,8 @@
     "club": "ニース（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 14
+    "number": 14,
+    "shortName": "ブダウィ"
   },
   {
     "id": "p_alg_13",
@@ -162,7 +176,8 @@
     "club": "マンチェスター・シティ（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 15
+    "number": 15,
+    "shortName": "ヌーリ"
   },
   {
     "id": "p_alg_3",
@@ -173,7 +188,8 @@
     "club": "USMアルジェ",
     "goals": 0,
     "assists": 0,
-    "number": 16
+    "number": 16,
+    "shortName": "ベンボット"
   },
   {
     "id": "p_alg_11",
@@ -184,7 +200,8 @@
     "club": "エラス・ヴェローナ（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 17
+    "number": 17,
+    "shortName": "ベルガリ"
   },
   {
     "id": "p_alg_23",
@@ -195,7 +212,8 @@
     "club": "ボルフスブルク（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 18
+    "number": 18,
+    "shortName": "アムラ"
   },
   {
     "id": "p_alg_18",
@@ -206,7 +224,8 @@
     "club": "リール（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 19
+    "number": 19,
+    "shortName": "ベンタレブ"
   },
   {
     "id": "p_alg_22",
@@ -217,7 +236,8 @@
     "club": "アル・ドゥハイル（カタール）",
     "goals": 0,
     "assists": 0,
-    "number": 20
+    "number": 20,
+    "shortName": "ブルビナ"
   },
   {
     "id": "p_alg_12",
@@ -228,7 +248,8 @@
     "club": "ボルシア・ドルトムント（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 21
+    "number": 21,
+    "shortName": "ベンセバイニ"
   },
   {
     "id": "p_alg_19",
@@ -239,7 +260,8 @@
     "club": "バイヤー・レバークーゼン（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 22
+    "number": 22,
+    "shortName": "マザ"
   },
   {
     "id": "p_alg_1",
@@ -250,7 +272,8 @@
     "club": "グラナダ（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 23
+    "number": 23,
+    "shortName": "ジダン"
   },
   {
     "id": "p_alg_15",
@@ -261,7 +284,8 @@
     "club": "シャルルロワ（ベルギー）",
     "goals": 0,
     "assists": 0,
-    "number": 24
+    "number": 24,
+    "shortName": "ティトラウィ"
   },
   {
     "id": "p_alg_24",
@@ -272,7 +296,8 @@
     "club": "フロジノーネ（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 25
+    "number": 25,
+    "shortName": "ゲジェミス"
   },
   {
     "id": "p_alg_9",
@@ -283,6 +308,7 @@
     "club": "パリFC（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 26
+    "number": 26,
+    "shortName": "シェルギ"
   }
 ]

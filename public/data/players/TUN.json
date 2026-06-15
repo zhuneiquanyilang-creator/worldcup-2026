@@ -8,7 +8,8 @@
     "club": "クラブ・アフリカン",
     "goals": 0,
     "assists": 0,
-    "number": 1
+    "number": 1,
+    "shortName": "シャマフ"
   },
   {
     "id": "p_tun_11",
@@ -19,7 +20,8 @@
     "club": "ニース（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 2
+    "number": 2,
+    "shortName": "アブディ"
   },
   {
     "id": "p_tun_12",
@@ -30,7 +32,8 @@
     "club": "ロリアン（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 3
+    "number": 3,
+    "shortName": "タルビ"
   },
   {
     "id": "p_tun_7",
@@ -41,7 +44,8 @@
     "club": "NKマリボル（スロベニア）",
     "goals": 0,
     "assists": 0,
-    "number": 4
+    "number": 4,
+    "shortName": "レキク"
   },
   {
     "id": "p_tun_10",
@@ -52,7 +56,8 @@
     "club": "カスムパシャ（トルコ）",
     "goals": 0,
     "assists": 0,
-    "number": 5
+    "number": 5,
+    "shortName": "アルス"
   },
   {
     "id": "p_tun_8",
@@ -63,7 +68,8 @@
     "club": "セルヴェット（スイス）",
     "goals": 0,
     "assists": 0,
-    "number": 6
+    "number": 6,
+    "shortName": "ブロン"
   },
   {
     "id": "p_tun_23",
@@ -74,7 +80,8 @@
     "club": "FCコペンハーゲン（デンマーク）",
     "goals": 0,
     "assists": 0,
-    "number": 7
+    "number": 7,
+    "shortName": "アシュリ"
   },
   {
     "id": "p_tun_20",
@@ -85,7 +92,8 @@
     "club": "ハノーヴァー96（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 8
+    "number": 8,
+    "shortName": "サード"
   },
   {
     "id": "p_tun_24",
@@ -96,7 +104,8 @@
     "club": "ディナモ・マハチカラ（ロシア）",
     "goals": 0,
     "assists": 0,
-    "number": 9
+    "number": 9,
+    "shortName": "マストゥリ"
   },
   {
     "id": "p_tun_19",
@@ -107,7 +116,8 @@
     "club": "バーンリー（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 10
+    "number": 10,
+    "shortName": "メイブリ"
   },
   {
     "id": "p_tun_15",
@@ -118,7 +128,8 @@
     "club": "アウクスブルク（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 11
+    "number": 11,
+    "shortName": "ガルビ"
   },
   {
     "id": "p_tun_13",
@@ -129,7 +140,8 @@
     "club": "カスムパシャ（トルコ）",
     "goals": 0,
     "assists": 0,
-    "number": 12
+    "number": 12,
+    "shortName": "アネス"
   },
   {
     "id": "p_tun_17",
@@ -140,7 +152,8 @@
     "club": "ウニオン・ベルリン（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 13
+    "number": 13,
+    "shortName": "ケディラ"
   },
   {
     "id": "p_tun_21",
@@ -151,7 +164,8 @@
     "club": "パリ・サンジェルマン（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 14
+    "number": 14,
+    "shortName": "アヤリ"
   },
   {
     "id": "p_tun_14",
@@ -162,7 +176,8 @@
     "club": "FCルガーノ（スイス）",
     "goals": 0,
     "assists": 0,
-    "number": 15
+    "number": 15,
+    "shortName": "マハムード"
   },
   {
     "id": "p_tun_1",
@@ -173,7 +188,8 @@
     "club": "CSスファクシャン",
     "goals": 0,
     "assists": 0,
-    "number": 16
+    "number": 16,
+    "shortName": "ダーメン"
   },
   {
     "id": "p_tun_16",
@@ -184,7 +200,8 @@
     "club": "アイントラハト・フランクフルト（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 17
+    "number": 17,
+    "shortName": "スキリ"
   },
   {
     "id": "p_tun_25",
@@ -195,7 +212,8 @@
     "club": "バンクーバー・ホワイトキャップス（カナダ）",
     "goals": 0,
     "assists": 0,
-    "number": 18
+    "number": 18,
+    "shortName": "エルミ"
   },
   {
     "id": "p_tun_26",
@@ -206,7 +224,8 @@
     "club": "クラブ・アフリカン",
     "goals": 0,
     "assists": 0,
-    "number": 19
+    "number": 19,
+    "shortName": "シャウア"
   },
   {
     "id": "p_tun_9",
@@ -217,7 +236,8 @@
     "club": "ヤング・ボーイズ（スイス）",
     "goals": 0,
     "assists": 0,
-    "number": 20
+    "number": 20,
+    "shortName": "ヴァレリー"
   },
   {
     "id": "p_tun_5",
@@ -228,7 +248,8 @@
     "club": "エスペランス（チュニジア）",
     "goals": 0,
     "assists": 0,
-    "number": 21
+    "number": 21,
+    "shortName": "ハミダ"
   },
   {
     "id": "p_tun_2",
@@ -239,7 +260,8 @@
     "club": "エトワール・サヘル",
     "goals": 0,
     "assists": 0,
-    "number": 22
+    "number": 22,
+    "shortName": "ハッセン"
   },
   {
     "id": "p_tun_6",
@@ -250,7 +272,8 @@
     "club": "ノルシェーピン（スウェーデン）",
     "goals": 0,
     "assists": 0,
-    "number": 23
+    "number": 23,
+    "shortName": "ネファティ"
   },
   {
     "id": "p_tun_4",
@@ -261,7 +284,8 @@
     "club": "モナスティル",
     "goals": 0,
     "assists": 0,
-    "number": 24
+    "number": 24,
+    "shortName": "シハウィ"
   },
   {
     "id": "p_tun_18",
@@ -272,7 +296,8 @@
     "club": "ノリッジ・シティ（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 25
+    "number": 25,
+    "shortName": "スリマン"
   },
   {
     "id": "p_tun_22",
@@ -283,6 +308,7 @@
     "club": "セルティック（スコットランド）",
     "goals": 0,
     "assists": 0,
-    "number": 26
+    "number": 26,
+    "shortName": "トネクティ"
   }
 ]

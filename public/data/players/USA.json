@@ -8,7 +8,8 @@
     "club": "ニューイングランド・レボリューション",
     "goals": 0,
     "assists": 0,
-    "number": 1
+    "number": 1,
+    "shortName": "ターナー"
   },
   {
     "id": "p_usa_8",
@@ -19,7 +20,8 @@
     "club": "PSVアイントホーフェン（オランダ）",
     "goals": 0,
     "assists": 0,
-    "number": 2
+    "number": 2,
+    "shortName": "デスト"
   },
   {
     "id": "p_usa_13",
@@ -30,7 +32,8 @@
     "club": "クリスタル・パレス（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 3
+    "number": 3,
+    "shortName": "リチャーズ"
   },
   {
     "id": "p_usa_18",
@@ -41,7 +44,8 @@
     "club": "ボーンマス（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 4
+    "number": 4,
+    "shortName": "アダムズ"
   },
   {
     "id": "p_usa_12",
@@ -52,7 +56,8 @@
     "club": "フラム（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 5
+    "number": 5,
+    "shortName": "ロビンソン"
   },
   {
     "id": "p_usa_7",
@@ -63,7 +68,8 @@
     "club": "セルティック（スコットランド）",
     "goals": 0,
     "assists": 0,
-    "number": 6
+    "number": 6,
+    "shortName": "トラスティ"
   },
   {
     "id": "p_usa_17",
@@ -74,7 +80,8 @@
     "club": "ボルシア・メンヒェングラートバッハ（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 7
+    "number": 7,
+    "shortName": "レイナ"
   },
   {
     "id": "p_usa_20",
@@ -85,7 +92,8 @@
     "club": "ユベントス（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 8
+    "number": 8,
+    "shortName": "マッケニー"
   },
   {
     "id": "p_usa_25",
@@ -96,7 +104,8 @@
     "club": "PSVアイントホーフェン（オランダ）",
     "goals": 0,
     "assists": 0,
-    "number": 9
+    "number": 9,
+    "shortName": "ペピ"
   },
   {
     "id": "p_usa_21",
@@ -107,7 +116,8 @@
     "club": "ACミラン（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 10
+    "number": 10,
+    "shortName": "プリシッチ"
   },
   {
     "id": "p_usa_19",
@@ -118,7 +128,8 @@
     "club": "リーズ・ユナイテッド（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 11
+    "number": 11,
+    "shortName": "アーロンソン"
   },
   {
     "id": "p_usa_5",
@@ -129,7 +140,8 @@
     "club": "FCシンシナティ",
     "goals": 0,
     "assists": 0,
-    "number": 12
+    "number": 12,
+    "shortName": "ロビンソン"
   },
   {
     "id": "p_usa_6",
@@ -140,7 +152,8 @@
     "club": "シャーロットFC",
     "goals": 0,
     "assists": 0,
-    "number": 13
+    "number": 13,
+    "shortName": "リーム"
   },
   {
     "id": "p_usa_15",
@@ -151,7 +164,8 @@
     "club": "バンクーバー・ホワイトキャップス（カナダ）",
     "goals": 0,
     "assists": 0,
-    "number": 14
+    "number": 14,
+    "shortName": "バーハルター"
   },
   {
     "id": "p_usa_14",
@@ -162,7 +176,8 @@
     "club": "シアトル・サウンダーズ",
     "goals": 0,
     "assists": 0,
-    "number": 15
+    "number": 15,
+    "shortName": "ロルダン"
   },
   {
     "id": "p_usa_10",
@@ -173,7 +188,8 @@
     "club": "ビジャレアル（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 16
+    "number": 16,
+    "shortName": "フリーマン"
   },
   {
     "id": "p_usa_16",
@@ -184,7 +200,8 @@
     "club": "バイヤー・レバークーゼン（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 17
+    "number": 17,
+    "shortName": "ティルマン"
   },
   {
     "id": "p_usa_4",
@@ -195,7 +212,8 @@
     "club": "コロンバス・クルー（アメリカ）",
     "goals": 0,
     "assists": 0,
-    "number": 18
+    "number": 18,
+    "shortName": "アーフステン"
   },
   {
     "id": "p_usa_22",
@@ -206,7 +224,8 @@
     "club": "コヴェントリー・シティ（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 19
+    "number": 19,
+    "shortName": "ライト"
   },
   {
     "id": "p_usa_23",
@@ -217,7 +236,8 @@
     "club": "ASモナコ（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 20
+    "number": 20,
+    "shortName": "バログン"
   },
   {
     "id": "p_usa_24",
@@ -228,7 +248,8 @@
     "club": "オリンピック・マルセイユ（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 21
+    "number": 21,
+    "shortName": "ウェア"
   },
   {
     "id": "p_usa_9",
@@ -239,7 +260,8 @@
     "club": "トゥールーズ（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 22
+    "number": 22,
+    "shortName": "マッケンジー"
   },
   {
     "id": "p_usa_11",
@@ -250,7 +272,8 @@
     "club": "ボルシア・メンヒェングラートバッハ（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 23
+    "number": 23,
+    "shortName": "スカリー"
   },
   {
     "id": "p_usa_2",
@@ -261,7 +284,8 @@
     "club": "ニューヨーク・シティFC（アメリカ）",
     "goals": 0,
     "assists": 0,
-    "number": 24
+    "number": 24,
+    "shortName": "フリーズ"
   },
   {
     "id": "p_usa_3",
@@ -272,7 +296,8 @@
     "club": "シカゴ・ファイアー（アメリカ）",
     "goals": 0,
     "assists": 0,
-    "number": 25
+    "number": 25,
+    "shortName": "ブレイディ"
   },
   {
     "id": "p_usa_26",
@@ -283,6 +308,7 @@
     "club": "クラブ・アメリカ（メキシコ）",
     "goals": 0,
     "assists": 0,
-    "number": 26
+    "number": 26,
+    "shortName": "センデハス"
   }
 ]

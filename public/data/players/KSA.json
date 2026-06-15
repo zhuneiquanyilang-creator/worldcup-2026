@@ -8,7 +8,8 @@
     "club": "アル・ナスル（サウジアラビア）",
     "goals": 0,
     "assists": 0,
-    "number": 1
+    "number": 1,
+    "shortName": "アキディ"
   },
   {
     "id": "p_ksa_10",
@@ -19,7 +20,8 @@
     "club": "アル・アハリ（サウジアラビア）",
     "goals": 0,
     "assists": 0,
-    "number": 2
+    "number": 2,
+    "shortName": "マジュラシ"
   },
   {
     "id": "p_ksa_8",
@@ -30,7 +32,8 @@
     "club": "アル・ヒラル（サウジアラビア）",
     "goals": 0,
     "assists": 0,
-    "number": 3
+    "number": 3,
+    "shortName": "ラジャミ"
   },
   {
     "id": "p_ksa_11",
@@ -41,7 +44,8 @@
     "club": "アル・ナスル（サウジアラビア）",
     "goals": 0,
     "assists": 0,
-    "number": 4
+    "number": 4,
+    "shortName": "アムリ"
   },
   {
     "id": "p_ksa_7",
@@ -52,7 +56,8 @@
     "club": "アル・ヒラル（サウジアラビア）",
     "goals": 0,
     "assists": 0,
-    "number": 5
+    "number": 5,
+    "shortName": "タンバクティ"
   },
   {
     "id": "p_ksa_22",
@@ -63,7 +68,8 @@
     "club": "アル・ヒラル（サウジアラビア）",
     "goals": 0,
     "assists": 0,
-    "number": 6
+    "number": 6,
+    "shortName": "ドサリ"
   },
   {
     "id": "p_ksa_19",
@@ -74,7 +80,8 @@
     "club": "アル・カディシーヤ（サウジアラビア）",
     "goals": 0,
     "assists": 0,
-    "number": 7
+    "number": 7,
+    "shortName": "ジュワイル"
   },
   {
     "id": "p_ksa_17",
@@ -85,7 +92,8 @@
     "club": "アル・ナスル（サウジアラビア）",
     "goals": 0,
     "assists": 0,
-    "number": 8
+    "number": 8,
+    "shortName": "ヤヒヤ"
   },
   {
     "id": "p_ksa_24",
@@ -96,7 +104,8 @@
     "club": "アル・アハリ（サウジアラビア）",
     "goals": 0,
     "assists": 0,
-    "number": 9
+    "number": 9,
+    "shortName": "ブライカン"
   },
   {
     "id": "p_ksa_23",
@@ -107,7 +116,8 @@
     "club": "アル・ヒラル（サウジアラビア）",
     "goals": 0,
     "assists": 0,
-    "number": 10
+    "number": 10,
+    "shortName": "ドサリ"
   },
   {
     "id": "p_ksa_25",
@@ -118,7 +128,8 @@
     "club": "アル・イテハド（サウジアラビア）",
     "goals": 0,
     "assists": 0,
-    "number": 11
+    "number": 11,
+    "shortName": "シェフリ"
   },
   {
     "id": "p_ksa_13",
@@ -129,7 +140,8 @@
     "club": "RCランス（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 12
+    "number": 12,
+    "shortName": "アブドゥルハミド"
   },
   {
     "id": "p_ksa_12",
@@ -140,7 +152,8 @@
     "club": "アル・ナスル（サウジアラビア）",
     "goals": 0,
     "assists": 0,
-    "number": 13
+    "number": 13,
+    "shortName": "ブシャル"
   },
   {
     "id": "p_ksa_6",
@@ -151,7 +164,8 @@
     "club": "アル・イテハド（サウジアラビア）",
     "goals": 0,
     "assists": 0,
-    "number": 14
+    "number": 14,
+    "shortName": "カデシュ"
   },
   {
     "id": "p_ksa_18",
@@ -162,7 +176,8 @@
     "club": "アル・ナスル（サウジアラビア）",
     "goals": 0,
     "assists": 0,
-    "number": 15
+    "number": 15,
+    "shortName": "ハイバリ"
   },
   {
     "id": "p_ksa_15",
@@ -173,7 +188,8 @@
     "club": "アル・アハリ（サウジアラビア）",
     "goals": 0,
     "assists": 0,
-    "number": 16
+    "number": 16,
+    "shortName": "ジョハニ"
   },
   {
     "id": "p_ksa_16",
@@ -184,7 +200,8 @@
     "club": "アル・イティファク",
     "goals": 0,
     "assists": 0,
-    "number": 17
+    "number": 17,
+    "shortName": "ガンナム"
   },
   {
     "id": "p_ksa_14",
@@ -195,7 +212,8 @@
     "club": "ネオム",
     "goals": 0,
     "assists": 0,
-    "number": 18
+    "number": 18,
+    "shortName": "ヘジ"
   },
   {
     "id": "p_ksa_26",
@@ -206,7 +224,8 @@
     "club": "アル・ナスル（サウジアラビア）",
     "goals": 0,
     "assists": 0,
-    "number": 19
+    "number": 19,
+    "shortName": "ハムダン"
   },
   {
     "id": "p_ksa_20",
@@ -217,7 +236,8 @@
     "club": "アル・ヒラル（サウジアラビア）",
     "goals": 0,
     "assists": 0,
-    "number": 20
+    "number": 20,
+    "shortName": "マンダシュ"
   },
   {
     "id": "p_ksa_1",
@@ -228,7 +248,8 @@
     "club": "アル・ウラ",
     "goals": 0,
     "assists": 0,
-    "number": 21
+    "number": 21,
+    "shortName": "オワイス"
   },
   {
     "id": "p_ksa_3",
@@ -239,7 +260,8 @@
     "club": "アル・カディシーヤ（サウジアラビア）",
     "goals": 0,
     "assists": 0,
-    "number": 22
+    "number": 22,
+    "shortName": "カサル"
   },
   {
     "id": "p_ksa_21",
@@ -250,7 +272,8 @@
     "club": "アル・ヒラル（サウジアラビア）",
     "goals": 0,
     "assists": 0,
-    "number": 23
+    "number": 23,
+    "shortName": "カノ"
   },
   {
     "id": "p_ksa_9",
@@ -261,7 +284,8 @@
     "club": "アル・ヒラル（サウジアラビア）",
     "goals": 0,
     "assists": 0,
-    "number": 24
+    "number": 24,
+    "shortName": "ハルビ"
   },
   {
     "id": "p_ksa_4",
@@ -272,7 +296,8 @@
     "club": "アル・カディシーヤ（サウジアラビア）",
     "goals": 0,
     "assists": 0,
-    "number": 25
+    "number": 25,
+    "shortName": "タクリ"
   },
   {
     "id": "p_ksa_5",
@@ -283,6 +308,7 @@
     "club": "アル・カディシーヤ（サウジアラビア）",
     "goals": 0,
     "assists": 0,
-    "number": 26
+    "number": 26,
+    "shortName": "シャマト"
   }
 ]

@@ -8,7 +8,8 @@
     "club": "ニース（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 1
+    "number": 1,
+    "shortName": "ディウフ"
   },
   {
     "id": "p_sen_11",
@@ -19,7 +20,8 @@
     "club": "チェルシー（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 2
+    "number": 2,
+    "shortName": "サール"
   },
   {
     "id": "p_sen_4",
@@ -30,7 +32,8 @@
     "club": "アル・ヒラル（サウジアラビア）",
     "goals": 0,
     "assists": 0,
-    "number": 3
+    "number": 3,
+    "shortName": "クリバリ"
   },
   {
     "id": "p_sen_5",
@@ -41,7 +44,8 @@
     "club": "マッカビ・ハイファ（イスラエル）",
     "goals": 0,
     "assists": 0,
-    "number": 4
+    "number": 4,
+    "shortName": "セック"
   },
   {
     "id": "p_sen_18",
@@ -52,7 +56,8 @@
     "club": "エヴァートン（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 5
+    "number": 5,
+    "shortName": "ゲイェ"
   },
   {
     "id": "p_sen_14",
@@ -63,7 +68,8 @@
     "club": "ラージョ・バジェカーノ（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 6
+    "number": 6,
+    "shortName": "シス"
   },
   {
     "id": "p_sen_23",
@@ -74,7 +80,8 @@
     "club": "コモ（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 7
+    "number": 7,
+    "shortName": "ディアオ"
   },
   {
     "id": "p_sen_13",
@@ -85,7 +92,8 @@
     "club": "ASモナコ（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 8
+    "number": 8,
+    "shortName": "カマラ"
   },
   {
     "id": "p_sen_25",
@@ -96,7 +104,8 @@
     "club": "ロリアン（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 9
+    "number": 9,
+    "shortName": "ディエング"
   },
   {
     "id": "p_sen_19",
@@ -107,7 +116,8 @@
     "club": "アル・ナスル（サウジアラビア）",
     "goals": 0,
     "assists": 0,
-    "number": 10
+    "number": 10,
+    "shortName": "マネ"
   },
   {
     "id": "p_sen_22",
@@ -118,7 +128,8 @@
     "club": "バイエルン・ミュンヘン（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 11
+    "number": 11,
+    "shortName": "ジャクソン"
   },
   {
     "id": "p_sen_26",
@@ -129,7 +140,8 @@
     "club": "サムスンスポル（トルコ）",
     "goals": 0,
     "assists": 0,
-    "number": 12
+    "number": 12,
+    "shortName": "ンディアエ"
   },
   {
     "id": "p_sen_20",
@@ -140,7 +152,8 @@
     "club": "エヴァートン（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 13
+    "number": 13,
+    "shortName": "ンディアエ"
   },
   {
     "id": "p_sen_6",
@@ -151,7 +164,8 @@
     "club": "ガラタサライ（トルコ）",
     "goals": 0,
     "assists": 0,
-    "number": 14
+    "number": 14,
+    "shortName": "ヤコブス"
   },
   {
     "id": "p_sen_9",
@@ -162,7 +176,8 @@
     "club": "ASモナコ（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 15
+    "number": 15,
+    "shortName": "ディアッタ"
   },
   {
     "id": "p_sen_1",
@@ -173,7 +188,8 @@
     "club": "アル・アハリ（サウジアラビア）",
     "goals": 0,
     "assists": 0,
-    "number": 16
+    "number": 16,
+    "shortName": "メンディ"
   },
   {
     "id": "p_sen_17",
@@ -184,7 +200,8 @@
     "club": "トットナム・ホットスパー（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 17
+    "number": 17,
+    "shortName": "サール"
   },
   {
     "id": "p_sen_21",
@@ -195,7 +212,8 @@
     "club": "クリスタル・パレス（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 18
+    "number": 18,
+    "shortName": "サール"
   },
   {
     "id": "p_sen_8",
@@ -206,7 +224,8 @@
     "club": "リヨン（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 19
+    "number": 19,
+    "shortName": "ニアカテ"
   },
   {
     "id": "p_sen_24",
@@ -217,7 +236,8 @@
     "club": "パリ・サンジェルマン（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 20
+    "number": 20,
+    "shortName": "ンバイェ"
   },
   {
     "id": "p_sen_16",
@@ -228,7 +248,8 @@
     "club": "サンダーランド（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 21
+    "number": 21,
+    "shortName": "ディアラ"
   },
   {
     "id": "p_sen_12",
@@ -239,7 +260,8 @@
     "club": "バイエルン・ミュンヘン（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 22
+    "number": 22,
+    "shortName": "ンディアエ"
   },
   {
     "id": "p_sen_2",
@@ -250,7 +272,8 @@
     "club": "ル・アーヴル（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 23
+    "number": 23,
+    "shortName": "ディアウ"
   },
   {
     "id": "p_sen_7",
@@ -261,7 +284,8 @@
     "club": "ニース（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 24
+    "number": 24,
+    "shortName": "メンディ"
   },
   {
     "id": "p_sen_10",
@@ -272,7 +296,8 @@
     "club": "ウェストハム・ユナイテッド（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 25
+    "number": 25,
+    "shortName": "ディウフ"
   },
   {
     "id": "p_sen_15",
@@ -283,6 +308,7 @@
     "club": "ビジャレアル（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 26
+    "number": 26,
+    "shortName": "ゲイェ"
   }
 ]

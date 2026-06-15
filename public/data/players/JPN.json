@@ -8,7 +8,8 @@
     "club": "パルマ（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 1
+    "number": 1,
+    "shortName": "鈴木彩艶"
   },
   {
     "id": "p_jpn_11",
@@ -19,7 +20,8 @@
     "club": "ベルダー・ブレーメン（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 2
+    "number": 2,
+    "shortName": "菅原由勢"
   },
   {
     "id": "p_jpn_6",
@@ -30,7 +32,8 @@
     "club": "シント・トロイデン（ベルギー）",
     "goals": 0,
     "assists": 0,
-    "number": 3
+    "number": 3,
+    "shortName": "谷口彰悟"
   },
   {
     "id": "p_jpn_8",
@@ -41,7 +44,8 @@
     "club": "アヤックス（オランダ）",
     "goals": 0,
     "assists": 0,
-    "number": 4
+    "number": 4,
+    "shortName": "板倉滉"
   },
   {
     "id": "p_jpn_4",
@@ -52,7 +56,8 @@
     "club": "FC東京",
     "goals": 0,
     "assists": 0,
-    "number": 5
+    "number": 5,
+    "shortName": "長友佑都"
   },
   {
     "id": "p_jpn_20",
@@ -63,7 +68,8 @@
     "club": "ボルシア・メンヒェングラートバッハ（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 6
+    "number": 6,
+    "shortName": "町野修斗"
   },
   {
     "id": "p_jpn_18",
@@ -74,7 +80,8 @@
     "club": "リーズ・ユナイテッド（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 7
+    "number": 7,
+    "shortName": "田中碧"
   },
   {
     "id": "p_jpn_21",
@@ -85,7 +92,8 @@
     "club": "レアル・ソシエダ（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 8
+    "number": 8,
+    "shortName": "久保建英"
   },
   {
     "id": "p_jpn_26",
@@ -96,7 +104,8 @@
     "club": "シント・トロイデン（ベルギー）",
     "goals": 0,
     "assists": 0,
-    "number": 9
+    "number": 9,
+    "shortName": "後藤啓介"
   },
   {
     "id": "p_jpn_17",
@@ -107,7 +116,8 @@
     "club": "アイントラハト・フランクフルト（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 10
+    "number": 10,
+    "shortName": "堂安律"
   },
   {
     "id": "p_jpn_23",
@@ -118,7 +128,8 @@
     "club": "セルティック（スコットランド）",
     "goals": 0,
     "assists": 0,
-    "number": 11
+    "number": 11,
+    "shortName": "前田大然"
   },
   {
     "id": "p_jpn_2",
@@ -129,7 +140,8 @@
     "club": "サンフレッチェ広島",
     "goals": 0,
     "assists": 0,
-    "number": 12
+    "number": 12,
+    "shortName": "大迫敬介"
   },
   {
     "id": "p_jpn_14",
@@ -140,7 +152,8 @@
     "club": "スタッド・ランス（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 13
+    "number": 13,
+    "shortName": "中村敬斗"
   },
   {
     "id": "p_jpn_13",
@@ -151,7 +164,8 @@
     "club": "ヘンク（ベルギー）",
     "goals": 0,
     "assists": 0,
-    "number": 14
+    "number": 14,
+    "shortName": "伊東純也"
   },
   {
     "id": "p_jpn_19",
@@ -162,7 +176,8 @@
     "club": "クリスタル・パレス（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 15
+    "number": 15,
+    "shortName": "鎌田大地"
   },
   {
     "id": "p_jpn_7",
@@ -173,7 +188,8 @@
     "club": "フェイエノールト（オランダ）",
     "goals": 0,
     "assists": 0,
-    "number": 16
+    "number": 16,
+    "shortName": "渡辺剛"
   },
   {
     "id": "p_jpn_15",
@@ -184,7 +200,8 @@
     "club": "フライブルク（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 17
+    "number": 17,
+    "shortName": "鈴木唯人"
   },
   {
     "id": "p_jpn_24",
@@ -195,7 +212,8 @@
     "club": "フェイエノールト（オランダ）",
     "goals": 0,
     "assists": 0,
-    "number": 18
+    "number": 18,
+    "shortName": "上田綺世"
   },
   {
     "id": "p_jpn_25",
@@ -206,7 +224,8 @@
     "club": "NECナイメヘン（オランダ）",
     "goals": 0,
     "assists": 0,
-    "number": 19
+    "number": 19,
+    "shortName": "小川航基"
   },
   {
     "id": "p_jpn_10",
@@ -217,7 +236,8 @@
     "club": "ル・アーヴル（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 20
+    "number": 20,
+    "shortName": "瀬古歩夢"
   },
   {
     "id": "p_jpn_12",
@@ -228,7 +248,8 @@
     "club": "バイエルン・ミュンヘン（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 21
+    "number": 21,
+    "shortName": "伊藤洋輝"
   },
   {
     "id": "p_jpn_9",
@@ -239,7 +260,8 @@
     "club": "アヤックス（オランダ）",
     "goals": 0,
     "assists": 0,
-    "number": 22
+    "number": 22,
+    "shortName": "冨安健洋"
   },
   {
     "id": "p_jpn_3",
@@ -250,7 +272,8 @@
     "club": "鹿島アントラーズ",
     "goals": 0,
     "assists": 0,
-    "number": 23
+    "number": 23,
+    "shortName": "早川友基"
   },
   {
     "id": "p_jpn_16",
@@ -261,7 +284,8 @@
     "club": "マインツ05（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 24
+    "number": 24,
+    "shortName": "佐野海舟"
   },
   {
     "id": "p_jpn_5",
@@ -272,7 +296,8 @@
     "club": "FCコペンハーゲン（デンマーク）",
     "goals": 0,
     "assists": 0,
-    "number": 25
+    "number": 25,
+    "shortName": "鈴木淳之介"
   },
   {
     "id": "p_jpn_22",
@@ -283,6 +308,7 @@
     "club": "ボルフスブルク（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 26
+    "number": 26,
+    "shortName": "塩貝健斗"
   }
 ]

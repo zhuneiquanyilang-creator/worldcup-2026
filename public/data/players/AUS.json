@@ -8,7 +8,8 @@
     "club": "レバンテ（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 1
+    "number": 1,
+    "shortName": "ライアン"
   },
   {
     "id": "p_aus_8",
@@ -19,7 +20,8 @@
     "club": "APOELニコシア（キプロス）",
     "goals": 0,
     "assists": 0,
-    "number": 2
+    "number": 2,
+    "shortName": "デゲネク"
   },
   {
     "id": "p_aus_13",
@@ -30,7 +32,8 @@
     "club": "パルマ（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 3
+    "number": 3,
+    "shortName": "チルカティ"
   },
   {
     "id": "p_aus_9",
@@ -41,7 +44,8 @@
     "club": "グラーツァーAK（オーストリア）",
     "goals": 0,
     "assists": 0,
-    "number": 4
+    "number": 4,
+    "shortName": "イタリアーノ"
   },
   {
     "id": "p_aus_10",
@@ -52,7 +56,8 @@
     "club": "フェイエノールト（オランダ）",
     "goals": 0,
     "assists": 0,
-    "number": 5
+    "number": 5,
+    "shortName": "ボス"
   },
   {
     "id": "p_aus_5",
@@ -63,7 +68,8 @@
     "club": "アルビレックス新潟（日本）",
     "goals": 0,
     "assists": 0,
-    "number": 6
+    "number": 6,
+    "shortName": "ゲリア"
   },
   {
     "id": "p_aus_26",
@@ -74,7 +80,8 @@
     "club": "メルボルン・シティ",
     "goals": 0,
     "assists": 0,
-    "number": 7
+    "number": 7,
+    "shortName": "レッキー"
   },
   {
     "id": "p_aus_18",
@@ -85,7 +92,8 @@
     "club": "ザンクト・パウリ（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 8
+    "number": 8,
+    "shortName": "メットカーフ"
   },
   {
     "id": "p_aus_21",
@@ -96,7 +104,8 @@
     "club": "ノリッジ・シティ（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 9
+    "number": 9,
+    "shortName": "トゥーレ"
   },
   {
     "id": "p_aus_16",
@@ -107,7 +116,8 @@
     "club": "ヘラクレス・アルメロ（オランダ）",
     "goals": 0,
     "assists": 0,
-    "number": 10
+    "number": 10,
+    "shortName": "フルスティッチ"
   },
   {
     "id": "p_aus_22",
@@ -118,7 +128,8 @@
     "club": "カステリョン（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 11
+    "number": 11,
+    "shortName": "マビル"
   },
   {
     "id": "p_aus_2",
@@ -129,7 +140,8 @@
     "club": "ラナース（デンマーク）",
     "goals": 0,
     "assists": 0,
-    "number": 12
+    "number": 12,
+    "shortName": "イッツォ"
   },
   {
     "id": "p_aus_15",
@@ -140,7 +152,8 @@
     "club": "ニューヨーク・シティFC（アメリカ）",
     "goals": 0,
     "assists": 0,
-    "number": 13
+    "number": 13,
+    "shortName": "オニール"
   },
   {
     "id": "p_aus_17",
@@ -151,7 +164,8 @@
     "club": "ハーツ（スコットランド）",
     "goals": 0,
     "assists": 0,
-    "number": 14
+    "number": 14,
+    "shortName": "デヴリン"
   },
   {
     "id": "p_aus_7",
@@ -162,7 +176,8 @@
     "club": "ニューヨーク・シティFC（アメリカ）",
     "goals": 0,
     "assists": 0,
-    "number": 15
+    "number": 15,
+    "shortName": "トレウィン"
   },
   {
     "id": "p_aus_4",
@@ -173,7 +188,8 @@
     "club": "メルボルン・シティ",
     "goals": 0,
     "assists": 0,
-    "number": 16
+    "number": 16,
+    "shortName": "ベヒッチ"
   },
   {
     "id": "p_aus_20",
@@ -184,7 +200,8 @@
     "club": "ワトフォード（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 17
+    "number": 17,
+    "shortName": "イランクンダ"
   },
   {
     "id": "p_aus_3",
@@ -195,7 +212,8 @@
     "club": "メルボルン・シティ",
     "goals": 0,
     "assists": 0,
-    "number": 18
+    "number": 18,
+    "shortName": "ビーチ"
   },
   {
     "id": "p_aus_12",
@@ -206,7 +224,8 @@
     "club": "レスター・シティ（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 19
+    "number": 19,
+    "shortName": "ソウター"
   },
   {
     "id": "p_aus_23",
@@ -217,7 +236,8 @@
     "club": "サッスオーロ（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 20
+    "number": 20,
+    "shortName": "ヴォルパート"
   },
   {
     "id": "p_aus_11",
@@ -228,7 +248,8 @@
     "club": "スウォンジー・シティ（ウェールズ）",
     "goals": 0,
     "assists": 0,
-    "number": 21
+    "number": 21,
+    "shortName": "バージェス"
   },
   {
     "id": "p_aus_19",
@@ -239,7 +260,8 @@
     "club": "ザンクト・パウリ（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 22
+    "number": 22,
+    "shortName": "アーヴァイン"
   },
   {
     "id": "p_aus_25",
@@ -250,7 +272,8 @@
     "club": "メルボルン・ビクトリー",
     "goals": 0,
     "assists": 0,
-    "number": 23
+    "number": 23,
+    "shortName": "ヴェルピレイ"
   },
   {
     "id": "p_aus_14",
@@ -261,7 +284,8 @@
     "club": "シドニーFC",
     "goals": 0,
     "assists": 0,
-    "number": 24
+    "number": 24,
+    "shortName": "エングストラー"
   },
   {
     "id": "p_aus_6",
@@ -272,7 +296,8 @@
     "club": "コロラド・ラピッズ（アメリカ）",
     "goals": 0,
     "assists": 0,
-    "number": 25
+    "number": 25,
+    "shortName": "ヘリントン"
   },
   {
     "id": "p_aus_24",
@@ -283,6 +308,7 @@
     "club": "町田ゼルビア（日本）",
     "goals": 0,
     "assists": 0,
-    "number": 26
+    "number": 26,
+    "shortName": "イェンギ"
   }
 ]

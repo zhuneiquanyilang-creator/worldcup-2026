@@ -8,7 +8,8 @@
     "club": "レッドブル・ザルツブルク（オーストリア）",
     "goals": 0,
     "assists": 0,
-    "number": 1
+    "number": 1,
+    "shortName": "シュラガー"
   },
   {
     "id": "p_aut_11",
@@ -19,7 +20,8 @@
     "club": "エルチェ（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 2
+    "number": 2,
+    "shortName": "アッフェングルーバー"
   },
   {
     "id": "p_aut_10",
@@ -30,7 +32,8 @@
     "club": "トッテナム・ホットスパー（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 3
+    "number": 3,
+    "shortName": "ダンソ"
   },
   {
     "id": "p_aut_19",
@@ -41,7 +44,8 @@
     "club": "ライプツィヒ（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 4
+    "number": 4,
+    "shortName": "シュラガー"
   },
   {
     "id": "p_aut_6",
@@ -52,7 +56,8 @@
     "club": "マインツ05（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 5
+    "number": 5,
+    "shortName": "ポッシュ"
   },
   {
     "id": "p_aut_20",
@@ -63,7 +68,8 @@
     "club": "ライプツィヒ（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 6
+    "number": 6,
+    "shortName": "サイヴァルト"
   },
   {
     "id": "p_aut_24",
@@ -74,7 +80,8 @@
     "club": "レッドスター・ベオグラード（セルビア）",
     "goals": 0,
     "assists": 0,
-    "number": 7
+    "number": 7,
+    "shortName": "アルナウトビッチ"
   },
   {
     "id": "p_aut_12",
@@ -85,7 +92,8 @@
     "club": "レアル・マドリード（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 8
+    "number": 8,
+    "shortName": "アラバ"
   },
   {
     "id": "p_aut_22",
@@ -96,7 +104,8 @@
     "club": "ボルシア・ドルトムント（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 9
+    "number": 9,
+    "shortName": "ザビッツァー"
   },
   {
     "id": "p_aut_15",
@@ -107,7 +116,8 @@
     "club": "ブラガ（ポルトガル）",
     "goals": 0,
     "assists": 0,
-    "number": 10
+    "number": 10,
+    "shortName": "グリリッチュ"
   },
   {
     "id": "p_aut_25",
@@ -118,7 +128,8 @@
     "club": "アウクスブルク（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 11
+    "number": 11,
+    "shortName": "グレゴリッチュ"
   },
   {
     "id": "p_aut_2",
@@ -129,7 +140,8 @@
     "club": "ヴィクトリア・プルゼニ（チェコ）",
     "goals": 0,
     "assists": 0,
-    "number": 12
+    "number": 12,
+    "shortName": "ヴィーゲレ"
   },
   {
     "id": "p_aut_1",
@@ -140,7 +152,8 @@
     "club": "ブレンビー（デンマーク）",
     "goals": 0,
     "assists": 0,
-    "number": 13
+    "number": 13,
+    "shortName": "ペンツ"
   },
   {
     "id": "p_aut_26",
@@ -151,7 +164,8 @@
     "club": "LASKリンツ",
     "goals": 0,
     "assists": 0,
-    "number": 14
+    "number": 14,
+    "shortName": "カライジッチ"
   },
   {
     "id": "p_aut_8",
@@ -162,7 +176,8 @@
     "club": "フライブルク（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 15
+    "number": 15,
+    "shortName": "ラインハルト"
   },
   {
     "id": "p_aut_5",
@@ -173,7 +188,8 @@
     "club": "マインツ05（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 16
+    "number": 16,
+    "shortName": "ムウェネ"
   },
   {
     "id": "p_aut_21",
@@ -184,7 +200,8 @@
     "club": "ボルシア・ドルトムント（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 17
+    "number": 17,
+    "shortName": "チュクエメカ"
   },
   {
     "id": "p_aut_16",
@@ -195,7 +212,8 @@
     "club": "ベルダー・ブレーメン（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 18
+    "number": 18,
+    "shortName": "シュミット"
   },
   {
     "id": "p_aut_18",
@@ -206,7 +224,8 @@
     "club": "ライプツィヒ（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 19
+    "number": 19,
+    "shortName": "バウムガルトナー"
   },
   {
     "id": "p_aut_23",
@@ -217,7 +236,8 @@
     "club": "バイエルン・ミュンヘン（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 20
+    "number": 20,
+    "shortName": "ライマー"
   },
   {
     "id": "p_aut_17",
@@ -228,7 +248,8 @@
     "club": "ボルフスブルク（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 21
+    "number": 21,
+    "shortName": "ヴィマー"
   },
   {
     "id": "p_aut_7",
@@ -239,7 +260,8 @@
     "club": "ホッフェンハイム（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 22
+    "number": 22,
+    "shortName": "プラス"
   },
   {
     "id": "p_aut_4",
@@ -250,7 +272,8 @@
     "club": "ベルダー・ブレーメン（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 23
+    "number": 23,
+    "shortName": "フリードル"
   },
   {
     "id": "p_aut_14",
@@ -261,7 +284,8 @@
     "club": "PSVアイントホーフェン（オランダ）",
     "goals": 0,
     "assists": 0,
-    "number": 24
+    "number": 24,
+    "shortName": "ヴァナー"
   },
   {
     "id": "p_aut_9",
@@ -272,7 +296,8 @@
     "club": "ヴェネツィア（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 25
+    "number": 25,
+    "shortName": "スヴォボダ"
   },
   {
     "id": "p_aut_13",
@@ -283,6 +308,7 @@
     "club": "RZペレッツWAC",
     "goals": 0,
     "assists": 0,
-    "number": 26
+    "number": 26,
+    "shortName": "シェプフ"
   }
 ]

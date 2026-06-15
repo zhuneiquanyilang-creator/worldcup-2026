@@ -8,7 +8,8 @@
     "club": "グアダラハラ・チバス",
     "goals": 0,
     "assists": 0,
-    "number": 1
+    "number": 1,
+    "shortName": "ランヘル"
   },
   {
     "id": "p_mex_7",
@@ -19,7 +20,8 @@
     "club": "PAOK（ギリシャ）",
     "goals": 0,
     "assists": 0,
-    "number": 2
+    "number": 2,
+    "shortName": "サンチェス"
   },
   {
     "id": "p_mex_6",
@@ -30,7 +32,8 @@
     "club": "ロコモティフ・モスクワ（ロシア）",
     "goals": 0,
     "assists": 0,
-    "number": 3
+    "number": 3,
+    "shortName": "モンテス"
   },
   {
     "id": "p_mex_17",
@@ -41,7 +44,8 @@
     "club": "フェネルバフチェ（トルコ）",
     "goals": 0,
     "assists": 0,
-    "number": 4
+    "number": 4,
+    "shortName": "アルバレス"
   },
   {
     "id": "p_mex_9",
@@ -52,7 +56,8 @@
     "club": "ジェノア（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 5
+    "number": 5,
+    "shortName": "バスケス"
   },
   {
     "id": "p_mex_13",
@@ -63,7 +68,8 @@
     "club": "クルス・アスル",
     "goals": 0,
     "assists": 0,
-    "number": 6
+    "number": 6,
+    "shortName": "リラ"
   },
   {
     "id": "p_mex_11",
@@ -74,7 +80,8 @@
     "club": "グアダラハラ・チバス",
     "goals": 0,
     "assists": 0,
-    "number": 7
+    "number": 7,
+    "shortName": "ロモ"
   },
   {
     "id": "p_mex_18",
@@ -85,7 +92,8 @@
     "club": "ベティス",
     "goals": 0,
     "assists": 0,
-    "number": 8
+    "number": 8,
+    "shortName": "フィダルゴ"
   },
   {
     "id": "p_mex_20",
@@ -96,7 +104,8 @@
     "club": "フラム（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 9
+    "number": 9,
+    "shortName": "ヒメネス"
   },
   {
     "id": "p_mex_23",
@@ -107,7 +116,8 @@
     "club": "トルカ",
     "goals": 0,
     "assists": 0,
-    "number": 10
+    "number": 10,
+    "shortName": "ベガ"
   },
   {
     "id": "p_mex_21",
@@ -118,7 +128,8 @@
     "club": "ACミラン（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 11
+    "number": 11,
+    "shortName": "ヒメネス"
   },
   {
     "id": "p_mex_3",
@@ -129,7 +140,8 @@
     "club": "サントス・ラグナ",
     "goals": 0,
     "assists": 0,
-    "number": 12
+    "number": 12,
+    "shortName": "アセベド"
   },
   {
     "id": "p_mex_1",
@@ -140,7 +152,8 @@
     "club": "AELリマソル（キプロス）",
     "goals": 0,
     "assists": 0,
-    "number": 13
+    "number": 13,
+    "shortName": "オチョア"
   },
   {
     "id": "p_mex_24",
@@ -151,7 +164,8 @@
     "club": "グアダラハラ・チバス",
     "goals": 0,
     "assists": 0,
-    "number": 14
+    "number": 14,
+    "shortName": "ゴンサレス"
   },
   {
     "id": "p_mex_5",
@@ -162,7 +176,8 @@
     "club": "アメリカ",
     "goals": 0,
     "assists": 0,
-    "number": 15
+    "number": 15,
+    "shortName": "レジェス"
   },
   {
     "id": "p_mex_22",
@@ -173,7 +188,8 @@
     "club": "アル・カディシーヤ（サウジアラビア）",
     "goals": 0,
     "assists": 0,
-    "number": 16
+    "number": 16,
+    "shortName": "キニョネス"
   },
   {
     "id": "p_mex_15",
@@ -184,7 +200,8 @@
     "club": "AEKアテネ（ギリシャ）",
     "goals": 0,
     "assists": 0,
-    "number": 17
+    "number": 17,
+    "shortName": "ピネダ"
   },
   {
     "id": "p_mex_19",
@@ -195,7 +212,8 @@
     "club": "アトレティコ・マドリード（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 18
+    "number": 18,
+    "shortName": "バルガス"
   },
   {
     "id": "p_mex_12",
@@ -206,7 +224,8 @@
     "club": "ティフアナ",
     "goals": 0,
     "assists": 0,
-    "number": 19
+    "number": 19,
+    "shortName": "モラ"
   },
   {
     "id": "p_mex_8",
@@ -217,7 +236,8 @@
     "club": "AZアルクマール（オランダ）",
     "goals": 0,
     "assists": 0,
-    "number": 20
+    "number": 20,
+    "shortName": "チャベス"
   },
   {
     "id": "p_mex_16",
@@ -228,7 +248,8 @@
     "club": "アンデルレヒト（ベルギー）",
     "goals": 0,
     "assists": 0,
-    "number": 21
+    "number": 21,
+    "shortName": "ウエルタ"
   },
   {
     "id": "p_mex_25",
@@ -239,7 +260,8 @@
     "club": "UNAMプマス",
     "goals": 0,
     "assists": 0,
-    "number": 22
+    "number": 22,
+    "shortName": "マルティネス"
   },
   {
     "id": "p_mex_4",
@@ -250,7 +272,8 @@
     "club": "トルカ",
     "goals": 0,
     "assists": 0,
-    "number": 23
+    "number": 23,
+    "shortName": "ガジャルド"
   },
   {
     "id": "p_mex_14",
@@ -261,7 +284,8 @@
     "club": "ディナモ・モスクワ（ロシア）",
     "goals": 0,
     "assists": 0,
-    "number": 24
+    "number": 24,
+    "shortName": "チャベス"
   },
   {
     "id": "p_mex_26",
@@ -272,7 +296,8 @@
     "club": "グアダラハラ・チバス",
     "goals": 0,
     "assists": 0,
-    "number": 25
+    "number": 25,
+    "shortName": "アルバラード"
   },
   {
     "id": "p_mex_10",
@@ -283,6 +308,7 @@
     "club": "グアダラハラ・チバス",
     "goals": 0,
     "assists": 0,
-    "number": 26
+    "number": 26,
+    "shortName": "グティエレス"
   }
 ]

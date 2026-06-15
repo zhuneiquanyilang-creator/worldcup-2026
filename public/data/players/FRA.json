@@ -8,7 +8,8 @@
     "club": "スタッド・レンヌ",
     "goals": 0,
     "assists": 0,
-    "number": 1
+    "number": 1,
+    "shortName": "サンバ"
   },
   {
     "id": "p_fra_8",
@@ -19,7 +20,8 @@
     "club": "チェルシー（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 2
+    "number": 2,
+    "shortName": "ギュスト"
   },
   {
     "id": "p_fra_9",
@@ -30,7 +32,8 @@
     "club": "アストン・ビラ（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 3
+    "number": 3,
+    "shortName": "ディニュ"
   },
   {
     "id": "p_fra_6",
@@ -41,7 +44,8 @@
     "club": "バイエルン・ミュンヘン（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 4
+    "number": 4,
+    "shortName": "ウパメカノ"
   },
   {
     "id": "p_fra_12",
@@ -52,7 +56,8 @@
     "club": "バルセロナ（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 5
+    "number": 5,
+    "shortName": "クンデ"
   },
   {
     "id": "p_fra_16",
@@ -63,7 +68,8 @@
     "club": "ASローマ（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 6
+    "number": 6,
+    "shortName": "コネ"
   },
   {
     "id": "p_fra_23",
@@ -74,7 +80,8 @@
     "club": "パリ・サンジェルマン（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 7
+    "number": 7,
+    "shortName": "デンベレ"
   },
   {
     "id": "p_fra_17",
@@ -85,7 +92,8 @@
     "club": "レアル・マドリード（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 8
+    "number": 8,
+    "shortName": "チュアメニ"
   },
   {
     "id": "p_fra_22",
@@ -96,7 +104,8 @@
     "club": "インテル（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 9
+    "number": 9,
+    "shortName": "テュラム"
   },
   {
     "id": "p_fra_18",
@@ -107,7 +116,8 @@
     "club": "レアル・マドリード（スペイン）",
     "goals": 0,
     "assists": 0,
-    "number": 10
+    "number": 10,
+    "shortName": "エンバペ"
   },
   {
     "id": "p_fra_21",
@@ -118,7 +128,8 @@
     "club": "バイエルン・ミュンヘン（ドイツ）",
     "goals": 0,
     "assists": 0,
-    "number": 11
+    "number": 11,
+    "shortName": "オリーセ"
   },
   {
     "id": "p_fra_24",
@@ -129,7 +140,8 @@
     "club": "パリ・サンジェルマン（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 12
+    "number": 12,
+    "shortName": "バルコラ"
   },
   {
     "id": "p_fra_14",
@@ -140,7 +152,8 @@
     "club": "フェネルバフチェ（トルコ）",
     "goals": 0,
     "assists": 0,
-    "number": 13
+    "number": 13,
+    "shortName": "カンテ"
   },
   {
     "id": "p_fra_15",
@@ -151,7 +164,8 @@
     "club": "ACミラン（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 14
+    "number": 14,
+    "shortName": "ラビオ"
   },
   {
     "id": "p_fra_10",
@@ -162,7 +176,8 @@
     "club": "リバプール（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 15
+    "number": 15,
+    "shortName": "コナテ"
   },
   {
     "id": "p_fra_1",
@@ -173,7 +188,8 @@
     "club": "ACミラン（イタリア）",
     "goals": 0,
     "assists": 0,
-    "number": 16
+    "number": 16,
+    "shortName": "メニャン"
   },
   {
     "id": "p_fra_11",
@@ -184,7 +200,8 @@
     "club": "アーセナル（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 17
+    "number": 17,
+    "shortName": "サリバ"
   },
   {
     "id": "p_fra_13",
@@ -195,7 +212,8 @@
     "club": "パリ・サンジェルマン（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 18
+    "number": 18,
+    "shortName": "エメリ"
   },
   {
     "id": "p_fra_5",
@@ -206,7 +224,8 @@
     "club": "アル・ヒラル（サウジアラビア）",
     "goals": 0,
     "assists": 0,
-    "number": 19
+    "number": 19,
+    "shortName": "エルナンデス"
   },
   {
     "id": "p_fra_25",
@@ -217,7 +236,8 @@
     "club": "パリ・サンジェルマン（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 20
+    "number": 20,
+    "shortName": "ドゥエ"
   },
   {
     "id": "p_fra_4",
@@ -228,7 +248,8 @@
     "club": "パリ・サンジェルマン（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 21
+    "number": 21,
+    "shortName": "エルナンデス"
   },
   {
     "id": "p_fra_20",
@@ -239,7 +260,8 @@
     "club": "クリスタル・パレス（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 22
+    "number": 22,
+    "shortName": "マテタ"
   },
   {
     "id": "p_fra_3",
@@ -250,7 +272,8 @@
     "club": "RCランス（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 23
+    "number": 23,
+    "shortName": "リッサー"
   },
   {
     "id": "p_fra_19",
@@ -261,7 +284,8 @@
     "club": "マンチェスター・シティ（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 24
+    "number": 24,
+    "shortName": "シェルキ"
   },
   {
     "id": "p_fra_26",
@@ -272,7 +296,8 @@
     "club": "ASモナコ（フランス）",
     "goals": 0,
     "assists": 0,
-    "number": 25
+    "number": 25,
+    "shortName": "アクリウシュ"
   },
   {
     "id": "p_fra_7",
@@ -283,6 +308,7 @@
     "club": "クリスタル・パレス（イングランド）",
     "goals": 0,
     "assists": 0,
-    "number": 26
+    "number": 26,
+    "shortName": "ラクロワ"
   }
 ]
