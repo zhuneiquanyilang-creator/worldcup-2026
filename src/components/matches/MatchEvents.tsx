@@ -93,13 +93,32 @@ export function MatchEvents({ match, teamMap, playerMap }: Props) {
       }
       list.push(ev);
     }
-    // ライブ取得で「ハーフタイム中」と分かっているときは、末尾にもハーフタイム
+    // ライブ取得で「ハーフタイム済み」と分かっているときは、末尾にもハーフタイム
     // ディバイダーを置く (まだ後半イベントが入っておらずループ内で挿入されない場合)。
-    // status==="live" + liveLabel に halftime / half time が含まれることが条件。
+    // 対象:
+    //  - liveLabel が halftime / 2nd half / extra time / penalty を示す場合
+    //  - liveLabel が "Live" 等 period 不明でも、KO から 50 分以上経っていれば
+    //    前半は終わっていると推定 (= 1st half ロスタイム上限を超えている)。
+    //    ただし liveLabel が "1st half" を明示しているなら時刻フォールバックは
+    //    使わない (FD が 1 分前後の長期スタッキングを示しているケースに配慮)。
     // finished の自動付与はしない (前半のみゴールの試合で末尾に出てしまうため)。
     if (!htInserted && match.status === "live") {
       const ll = (match.liveLabel ?? "").toLowerCase();
-      if (ll.includes("halftime") || ll.includes("half time")) {
+      const pastHalftime =
+        ll.includes("halftime") ||
+        ll.includes("half time") ||
+        ll.includes("2nd half") ||
+        ll.includes("second half") ||
+        ll.includes("extra time") ||
+        ll.includes("penalty");
+      const inFirstHalfLabel =
+        ll.includes("1st half") || ll.includes("first half");
+      const koMs = new Date(match.date).getTime();
+      const pastByTime =
+        !inFirstHalfLabel &&
+        Number.isFinite(koMs) &&
+        Date.now() - koMs > 50 * 60_000;
+      if (pastHalftime || pastByTime) {
         list.push({ kind: "halftime" });
       }
     }
