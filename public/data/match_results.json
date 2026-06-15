@@ -4889,7 +4889,7 @@
   },
   "m043": {
     "matchId": "m043",
-    "status": "scheduled",
+    "status": "live",
     "homeFormation": {
       "shape": "4-3-3",
       "starting": [
@@ -5179,6 +5179,11 @@
           "name": "エリオ・バレラ"
         }
       ]
-    }
+    },
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "liveLabel": "Live"
   }
 }
