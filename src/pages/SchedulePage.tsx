@@ -1,10 +1,11 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useMatches } from "@/hooks/useMatches";
 import { useTeamMap } from "@/hooks/useTeams";
 import { ScheduleList } from "@/components/schedule/ScheduleList";
 import { StageFilter } from "@/components/schedule/StageFilter";
 import { StatusFilter } from "@/components/schedule/StatusFilter";
 import { GroupFilter } from "@/components/schedule/GroupFilter";
+import { DateFilter } from "@/components/schedule/DateFilter";
 import { BracketView } from "@/components/schedule/BracketView";
 import { Loading, ErrorMessage } from "@/components/common/AsyncState";
 import {
@@ -12,6 +13,7 @@ import {
   BROADCASTER_LEGEND,
 } from "@/components/common/BroadcasterBadge";
 import type { MatchStage, MatchStatus } from "@/types/match";
+import { dayKey } from "@/utils/date";
 import styles from "./SchedulePage.module.css";
 
 type ViewMode = "list" | "bracket";
@@ -23,6 +25,12 @@ export function SchedulePage() {
   const [stage, setStage] = useState<MatchStage | "all">("all");
   const [status, setStatus] = useState<MatchStatus | "all">("all");
   const [group, setGroup] = useState<string | "all">("all");
+  // 試合日のデフォルトは「今日」(更新するたびに当日に戻す)。
+  // 試合日リストに今日が含まれていなければ useEffect で "all" にフォールバック。
+  const [day, setDay] = useState<string | "all">(() =>
+    dayKey(new Date().toISOString())
+  );
+  const dayInitRef = useRef(false);
 
   const stages = useMemo<MatchStage[]>(() => {
     if (matchesRes.status !== "ready") return [];
@@ -40,12 +48,28 @@ export function SchedulePage() {
     ).sort();
   }, [matchesRes]);
 
+  const allDates = useMemo<string[]>(() => {
+    if (matchesRes.status !== "ready") return [];
+    return matchesRes.data.map((m) => m.date);
+  }, [matchesRes]);
+
   // ステージが group 以外になったらグループ絞り込みをリセット
   useEffect(() => {
     if (stage !== "group" && group !== "all") {
       setGroup("all");
     }
   }, [stage, group]);
+
+  // matches が初回ロードされた時点で「今日」に該当試合が無ければ "all" に落とす
+  // (大会前・大会後・rest day のとき空欄の絞り込みでユーザが何も見えない事故を防ぐ)
+  useEffect(() => {
+    if (dayInitRef.current) return;
+    if (matchesRes.status !== "ready") return;
+    dayInitRef.current = true;
+    const today = dayKey(new Date().toISOString());
+    const hasToday = matchesRes.data.some((m) => dayKey(m.date) === today);
+    if (!hasToday) setDay("all");
+  }, [matchesRes]);
 
   if (matchesRes.status === "loading" || teamsRes.status === "loading") {
     return <Loading />;
@@ -57,7 +81,8 @@ export function SchedulePage() {
     (m) =>
       (stage === "all" || m.stage === stage) &&
       (status === "all" || m.status === status) &&
-      (group === "all" || m.groupId === group)
+      (group === "all" || m.groupId === group) &&
+      (day === "all" || dayKey(m.date) === day)
   );
 
   return (
@@ -106,6 +131,10 @@ export function SchedulePage() {
             <div>
               <div className={styles.filterLabel}>ステータス</div>
               <StatusFilter current={status} onChange={setStatus} />
+            </div>
+            <div>
+              <div className={styles.filterLabel}>試合日</div>
+              <DateFilter dates={allDates} current={day} onChange={setDay} />
             </div>
             {stage === "group" && (
               <div>

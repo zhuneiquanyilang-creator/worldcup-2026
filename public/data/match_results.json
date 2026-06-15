@@ -5184,6 +5184,14 @@
       "home": 0,
       "away": 0
     },
-    "liveLabel": "Live"
+    "liveLabel": "Live",
+    "bookings": [
+      {
+        "minute": 16,
+        "teamId": "CPV",
+        "playerName": "シドニー・カブラル",
+        "type": "Y"
+      }
+    ]
   }
 }
