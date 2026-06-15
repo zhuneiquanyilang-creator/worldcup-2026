@@ -73,7 +73,7 @@
   },
   {
     "id": "p_bel_18",
-    "name": "ケビン・デ・ブライネ",
+    "name": "ケビン・デブライネ",
     "teamId": "BEL",
     "position": "MF",
     "birthDate": "1991-06-28",
@@ -81,7 +81,7 @@
     "goals": 0,
     "assists": 0,
     "number": 7,
-    "shortName": "ブライネ"
+    "shortName": "デブライネ"
   },
   {
     "id": "p_bel_15",
@@ -193,7 +193,7 @@
   },
   {
     "id": "p_bel_21",
-    "name": "シャルル・デ・ケテラーレ",
+    "name": "シャルル・デケテラーレ",
     "teamId": "BEL",
     "position": "FW",
     "birthDate": "2001-03-10",
@@ -201,7 +201,7 @@
     "goals": 0,
     "assists": 0,
     "number": 17,
-    "shortName": "ケテラーレ"
+    "shortName": "デケテラーレ"
   },
   {
     "id": "p_bel_4",
