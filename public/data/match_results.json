@@ -4833,7 +4833,7 @@
         "minute": 64,
         "teamId": "SWE",
         "inName": "ルーカス・ベリヴァル",
-        "outName": "ベンジャミン・��グレン"
+        "outName": "ベンジャミン・ニグレン"
       },
       {
         "minute": 72,
@@ -6476,15 +6476,15 @@
         {
           "x": 28,
           "y": 37.5,
-          "number": 17,
-          "name": "ウィリアン・サリバ",
+          "number": 4,
+          "name": "ダヨ・ウパメカノ",
           "role": "DF"
         },
         {
           "x": 28,
           "y": 62.5,
-          "number": 4,
-          "name": "ダヨ・ウパメカノ",
+          "number": 17,
+          "name": "ウィリアン・サリバ",
           "role": "DF"
         },
         {
@@ -6749,6 +6749,19 @@
       "home": 0,
       "away": 0
     },
-    "liveLabel": "Live"
+    "liveLabel": "Live",
+    "goals": [
+      {
+        "minute": 66,
+        "teamId": "FRA",
+        "type": "normal",
+        "playerId": "p_fra_18",
+        "playerName": "キリアン・エンバペ",
+        "assistPlayerId": "p_fra_21",
+        "assistPlayerName": "マイケル・オリーセ"
+      }
+    ]
   }
+}
+
 }
