@@ -6457,8 +6457,8 @@
     "matchId": "m049",
     "status": "live",
     "score": {
-      "home": 2,
-      "away": 0
+      "home": 3,
+      "away": 1
     },
     "goals": [
       {
@@ -6478,6 +6478,24 @@
         "playerName": "ブラッドリー・バルコラ",
         "assistPlayerId": "p_fra_15",
         "assistPlayerName": "アドリアン・ラビオ"
+      },
+      {
+        "minute": 90,
+        "teamId": "SEN",
+        "type": "normal",
+        "addedTime": 5,
+        "playerId": "p_sen_24",
+        "playerName": "イブラヒム・ンバイェ",
+        "assistPlayerId": "p_sen_20",
+        "assistPlayerName": "イリマン・ンディアエ"
+      },
+      {
+        "minute": 90,
+        "teamId": "FRA",
+        "type": "normal",
+        "addedTime": 6,
+        "playerId": "p_fra_18",
+        "playerName": "キリアン・エンバペ"
       }
     ],
     "homeFormation": {
