@@ -4833,7 +4833,7 @@
         "minute": 64,
         "teamId": "SWE",
         "inName": "ルーカス・ベリヴァル",
-        "outName": "ベンジャミン・��グレン"
+        "outName": "ベンジャミン・ニグレン"
       },
       {
         "minute": 72,
@@ -7129,7 +7129,7 @@
     },
     "score": {
       "home": 1,
-      "away": 2
+      "away": 3
     },
     "goals": [
       {
@@ -7156,6 +7156,15 @@
         "type": "normal",
         "playerId": "p_nor_24",
         "playerName": "アーリング・ブラウト・ハーランド"
+      },
+      {
+        "minute": 76,
+        "teamId": "NOR",
+        "type": "normal",
+        "playerId": "p_nor_8",
+        "playerName": "レオ・スキリ・エスティゴール",
+        "assistPlayerId": "p_nor_23",
+        "assistPlayerName": "マルティン・ウーデゴール"
       }
     ],
     "substitutions": [
@@ -7170,6 +7179,54 @@
         "teamId": "IRQ",
         "inName": "マルコ・ファルジ",
         "outName": "アリ・アル・ハマディ"
+      },
+      {
+        "minute": 73,
+        "teamId": "NOR",
+        "inName": "レオ・スキリ・エスティゴール",
+        "outName": "ダヴィド・メラー・ウォルフ"
+      },
+      {
+        "minute": 73,
+        "teamId": "NOR",
+        "inName": "クリスティアン・トルストヴェット",
+        "outName": "フレドリク・アウルスネス"
+      },
+      {
+        "minute": 73,
+        "teamId": "NOR",
+        "inName": "アンドレアス・レーデルゴール・シェルデルップ",
+        "outName": "アレクサンデル・セルロート"
+      },
+      {
+        "minute": 73,
+        "teamId": "NOR",
+        "inName": "オスカー・ボブ",
+        "outName": "アントニオ・ヌサ"
+      },
+      {
+        "minute": 74,
+        "teamId": "IRQ",
+        "inName": "ムスタファ・サードゥン",
+        "outName": "フセイン・アリ"
+      },
+      {
+        "minute": 74,
+        "teamId": "IRQ",
+        "inName": "アハメド・カセム",
+        "outName": "アリ・ジャシム"
+      },
+      {
+        "minute": 78,
+        "teamId": "IRQ",
+        "inName": "モハナド・アリ",
+        "outName": "イブラヒム・バイェシュ"
+      },
+      {
+        "minute": 81,
+        "teamId": "NOR",
+        "inName": "パトリック・ベルグ",
+        "outName": "マルティン・ウーデゴール"
       }
     ],
     "liveLabel": "Live"
