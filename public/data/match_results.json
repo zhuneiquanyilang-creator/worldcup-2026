@@ -6555,7 +6555,8 @@
           "y": 16.666666666666664,
           "number": 11,
           "name": "マイケル・オリーセ",
-          "role": "MF"
+          "role": "MF",
+          "isMvp": true
         },
         {
           "x": 62.666666666666664,
@@ -6835,7 +6836,7 @@
   },
   "m050": {
     "matchId": "m050",
-    "status": "scheduled",
+    "status": "live",
     "homeFormation": {
       "shape": "4-4-2",
       "starting": [
@@ -7125,6 +7126,52 @@
           "name": "ヘンリク・ファルヘナー"
         }
       ]
-    }
+    },
+    "score": {
+      "home": 1,
+      "away": 2
+    },
+    "goals": [
+      {
+        "minute": 29,
+        "teamId": "NOR",
+        "type": "normal",
+        "playerId": "p_nor_24",
+        "playerName": "アーリング・ブラウト・ハーランド",
+        "assistPlayerId": "p_nor_11",
+        "assistPlayerName": "ダヴィド・メラー・ウォルフ"
+      },
+      {
+        "minute": 39,
+        "teamId": "IRQ",
+        "type": "normal",
+        "playerId": "p_irq_23",
+        "playerName": "アイメン・フセイン",
+        "assistPlayerId": "p_irq_20",
+        "assistPlayerName": "アミル・アル・アンマリ"
+      },
+      {
+        "minute": 43,
+        "teamId": "NOR",
+        "type": "normal",
+        "playerId": "p_nor_24",
+        "playerName": "アーリング・ブラウト・ハーランド"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": 59,
+        "teamId": "IRQ",
+        "inName": "ジダン・イクバル",
+        "outName": "ザイド・イスマイル"
+      },
+      {
+        "minute": 59,
+        "teamId": "IRQ",
+        "inName": "マルコ・ファルジ",
+        "outName": "アリ・アル・ハマディ"
+      }
+    ],
+    "liveLabel": "Live"
   }
 }
