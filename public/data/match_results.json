@@ -4790,7 +4790,7 @@
         },
         {
           "number": 18,
-          "name": "ライアン・エルミ"
+          "name": "ラ��アン・エルミ"
         },
         {
           "number": 19,
@@ -7241,7 +7241,7 @@
   },
   "m055": {
     "matchId": "m055",
-    "status": "scheduled",
+    "status": "finished",
     "homeFormation": {
       "shape": "4-4-2",
       "starting": [
@@ -7314,7 +7314,8 @@
           "number": 10,
           "name": "リオネル・メッシ",
           "role": "FW",
-          "isCaptain": true
+          "isCaptain": true,
+          "isMvp": true
         },
         {
           "x": 80,
@@ -7531,6 +7532,100 @@
           "name": "サミル・シェルギ"
         }
       ]
-    }
+    },
+    "score": {
+      "home": 3,
+      "away": 0
+    },
+    "liveLabel": "Full time",
+    "goals": [
+      {
+        "minute": 17,
+        "teamId": "ARG",
+        "type": "normal",
+        "playerId": "p_arg_19",
+        "playerName": "リオネル・メッシ",
+        "assistPlayerId": "p_arg_13",
+        "assistPlayerName": "ロドリゴ・デ・パウル"
+      },
+      {
+        "minute": 60,
+        "teamId": "ARG",
+        "type": "normal",
+        "playerId": "p_arg_19",
+        "playerName": "リオネル・メッシ"
+      },
+      {
+        "minute": 76,
+        "teamId": "ARG",
+        "type": "normal",
+        "playerId": "p_arg_19",
+        "playerName": "リオネル・メッシ",
+        "assistPlayerId": "p_arg_21",
+        "assistPlayerName": "ニコラス・ゴンサレス"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": 46,
+        "teamId": "ARG",
+        "inName": "ナウエル・モリーナ",
+        "outName": "ゴンサロ・モンティエル"
+      },
+      {
+        "minute": 55,
+        "teamId": "ARG",
+        "inName": "ニコラス・ゴンサレス",
+        "outName": "ティアゴ・アルマーダ"
+      },
+      {
+        "minute": 55,
+        "teamId": "ARG",
+        "inName": "フリアン・アルバレス",
+        "outName": "ラウタロ・マルティネス"
+      },
+      {
+        "minute": 64,
+        "teamId": "ALG",
+        "inName": "フセム・アワール",
+        "outName": "ヒシャム・ブダウィ"
+      },
+      {
+        "minute": 64,
+        "teamId": "ALG",
+        "inName": "モハメド・アル・アミン・アムラ",
+        "outName": "アミン・グイリ"
+      },
+      {
+        "minute": 64,
+        "teamId": "ALG",
+        "inName": "リヤド・マフレズ",
+        "outName": "アニス・ハジ・ムサ"
+      },
+      {
+        "minute": 80,
+        "teamId": "ARG",
+        "inName": "ニコラス・オタメンディ",
+        "outName": "クリスティアン・ロメロ"
+      },
+      {
+        "minute": 80,
+        "teamId": "ARG",
+        "inName": "ニコ・パス",
+        "outName": "リオネル・メッシ"
+      },
+      {
+        "minute": 82,
+        "teamId": "ALG",
+        "inName": "ラミズ・ゼルキ",
+        "outName": "ナビル・ベンタレブ"
+      },
+      {
+        "minute": 82,
+        "teamId": "ALG",
+        "inName": "アディル・ブルビナ",
+        "outName": "イブラヒム・マザ"
+      }
+    ]
   }
 }
