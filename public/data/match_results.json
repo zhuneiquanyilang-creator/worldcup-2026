@@ -4790,7 +4790,7 @@
         },
         {
           "number": 18,
-          "name": "ラ��アン・エルミ"
+          "name": "ライアン・エルミ"
         },
         {
           "number": 19,
@@ -4833,7 +4833,7 @@
         "minute": 64,
         "teamId": "SWE",
         "inName": "ルーカス・ベリヴァル",
-        "outName": "ベンジャミン・ニグレン"
+        "outName": "ベンジャミン・��グレン"
       },
       {
         "minute": 72,
@@ -8542,7 +8542,7 @@
         },
         {
           "number": 12,
-          "name": "ティノ・リヴラメント"
+          "name": "トレヴォ・チャロバー"
         },
         {
           "number": 13,
@@ -8736,9 +8736,18 @@
       ]
     },
     "score": {
-      "home": 0,
+      "home": 1,
       "away": 0
     },
-    "liveLabel": "Live"
+    "liveLabel": "Live",
+    "goals": [
+      {
+        "minute": 12,
+        "teamId": "ENG",
+        "type": "penalty",
+        "playerId": "p_eng_20",
+        "playerName": "ハリー・ケイン"
+      }
+    ]
   }
 }
