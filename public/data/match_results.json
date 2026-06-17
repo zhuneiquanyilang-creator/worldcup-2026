@@ -4790,7 +4790,7 @@
         },
         {
           "number": 18,
-          "name": "ライアン・エルミ"
+          "name": "ラ��アン・エルミ"
         },
         {
           "number": 19,
@@ -4833,7 +4833,7 @@
         "minute": 64,
         "teamId": "SWE",
         "inName": "ルーカス・ベリヴァル",
-        "outName": "ベンジャミン・��グレン"
+        "outName": "ベンジャミン・ニグレン"
       },
       {
         "minute": 72,
@@ -8444,7 +8444,7 @@
   },
   "m067": {
     "matchId": "m067",
-    "status": "scheduled",
+    "status": "live",
     "homeFormation": {
       "shape": "4-2-3-1",
       "starting": [
@@ -8734,6 +8734,11 @@
           "name": "マルティン・エルリッチ"
         }
       ]
-    }
+    },
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "liveLabel": "Live"
   }
 }
