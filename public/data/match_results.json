@@ -7165,6 +7165,14 @@
         "playerName": "レオ・スキリ・エスティゴール",
         "assistPlayerId": "p_nor_23",
         "assistPlayerName": "マルティン・ウーデゴール"
+      },
+      {
+        "minute": 90,
+        "teamId": "NOR",
+        "type": "own",
+        "addedTime": 6,
+        "playerId": "p_irq_23",
+        "playerName": "アイメン・フセイン"
       }
     ],
     "substitutions": [
@@ -7630,7 +7638,7 @@
   },
   "m056": {
     "matchId": "m056",
-    "status": "scheduled",
+    "status": "finished",
     "homeFormation": {
       "shape": "4-2-3-1",
       "starting": [
@@ -7848,7 +7856,8 @@
           "y": 87.5,
           "number": 9,
           "name": "アリ・オルワン",
-          "role": "MF"
+          "role": "MF",
+          "isMvp": true
         },
         {
           "x": 80,
@@ -7920,6 +7929,106 @@
           "name": "アナス・バダウィ"
         }
       ]
-    }
+    },
+    "score": {
+      "home": 3,
+      "away": 1
+    },
+    "liveLabel": "Full time",
+    "goals": [
+      {
+        "minute": 20,
+        "teamId": "AUT",
+        "type": "normal",
+        "playerId": "p_aut_16",
+        "playerName": "ロマーノ・シュミット",
+        "assistPlayerId": "p_aut_19",
+        "assistPlayerName": "ザヴェル・シュラガー"
+      },
+      {
+        "minute": 50,
+        "teamId": "JOR",
+        "type": "normal",
+        "playerId": "p_jor_25",
+        "playerName": "アリ・オルワン"
+      },
+      {
+        "minute": 76,
+        "teamId": "AUT",
+        "type": "own",
+        "playerId": "p_jor_11",
+        "playerName": "ヤザン・アル・アラブ"
+      },
+      {
+        "minute": 90,
+        "teamId": "AUT",
+        "type": "penalty",
+        "addedTime": 12,
+        "playerId": "p_aut_24",
+        "playerName": "マルコ・アルナウトビッチ"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": 46,
+        "teamId": "AUT",
+        "inName": "マルコ・アルナウトビッチ",
+        "outName": "サーシャ・カライジッチ"
+      },
+      {
+        "minute": 59,
+        "teamId": "AUT",
+        "inName": "ケヴィン・ダンソ",
+        "outName": "ダヴィド・アラバ"
+      },
+      {
+        "minute": 59,
+        "teamId": "AUT",
+        "inName": "カーニー・チュクエメカ",
+        "outName": "フィリップ・ムウェネ"
+      },
+      {
+        "minute": 59,
+        "teamId": "AUT",
+        "inName": "パウル・ヴァナー",
+        "outName": "ザヴェル・シュラガー"
+      },
+      {
+        "minute": 72,
+        "teamId": "JOR",
+        "inName": "サリム・オバイド",
+        "outName": "モハマド・アブ・アル・ナディ"
+      },
+      {
+        "minute": 81,
+        "teamId": "JOR",
+        "inName": "サエド・アル・ロザン",
+        "outName": "アブダラー・ナシブ"
+      },
+      {
+        "minute": 81,
+        "teamId": "JOR",
+        "inName": "マフムード・アル・マルディ",
+        "outName": "イフサン・ハダド"
+      },
+      {
+        "minute": 83,
+        "teamId": "AUT",
+        "inName": "パトリック・ヴィマー",
+        "outName": "ロマーノ・シュミット"
+      },
+      {
+        "minute": 88,
+        "teamId": "JOR",
+        "inName": "モハマド・アル・ダウード",
+        "outName": "オデ・アル・ファフリ"
+      },
+      {
+        "minute": 88,
+        "teamId": "JOR",
+        "inName": "アリ・アザイゼ",
+        "outName": "ムサ・アル・タアマリ"
+      }
+    ]
   }
 }
