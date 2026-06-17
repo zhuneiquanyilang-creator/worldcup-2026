@@ -1,4 +1,5 @@
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
+import { useSearchParams } from "react-router-dom";
 import { useMatches } from "@/hooks/useMatches";
 import { useTeams, useTeamMap } from "@/hooks/useTeams";
 import { GroupTabs } from "@/components/standings/GroupTabs";
@@ -11,7 +12,15 @@ export function StandingsPage() {
   const teamsRes = useTeams();
   const teamMapRes = useTeamMap();
   const matchesRes = useMatches();
-  const [currentGroup, setCurrentGroup] = useState<string>("A");
+  // 選択中のグループを URL クエリ (?group=C) に保存。
+  // チーム詳細などへ遷移 → ブラウザ戻るで自動的に同じグループに復帰する。
+  const [params, setParams] = useSearchParams();
+  const currentGroup = params.get("group") ?? "A";
+  const setCurrentGroup = (g: string) => {
+    const next = new URLSearchParams(params);
+    next.set("group", g);
+    setParams(next, { replace: true });
+  };
 
   const standings = useMemo(() => {
     if (teamsRes.status !== "ready" || matchesRes.status !== "ready") return [];

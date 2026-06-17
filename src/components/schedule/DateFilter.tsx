@@ -34,6 +34,10 @@ export function DateFilter({ dates, current, onChange }: Props) {
     onChange(items[currentIdx + 1][0]);
   };
 
+  const todayKey = dayKey(new Date().toISOString());
+  const todayInList = items.some(([k]) => k === todayKey);
+  const todayDisabled = !todayInList || current === todayKey;
+
   return (
     <div className={styles.wrap}>
       <button
@@ -65,6 +69,15 @@ export function DateFilter({ dates, current, onChange }: Props) {
         aria-label="翌日の試合"
       >
         ▶
+      </button>
+      <button
+        type="button"
+        className={styles.todayBtn}
+        onClick={() => onChange(todayKey)}
+        disabled={todayDisabled}
+        title={todayInList ? "今日の試合に移動" : "今日は試合がありません"}
+      >
+        本日
       </button>
     </div>
   );

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useSearchParams } from "react-router-dom";
 import type { Match } from "@/types/match";
 import type { Team } from "@/types/team";
 import type { Player } from "@/types/player";
@@ -15,11 +15,22 @@ type Props = {
 };
 
 type Tab = "events" | "stats" | "formation";
+const VALID_TABS: Tab[] = ["events", "stats", "formation"];
 
 export function MatchDetail({ match, teamMap, playerMap }: Props) {
   const home = teamMap.get(match.homeTeamId);
   const away = teamMap.get(match.awayTeamId);
-  const [tab, setTab] = useState<Tab>("events");
+  // 選択中のタブを URL クエリ (?tab=formation) に保存。
+  // チーム詳細などへ遷移 → ブラウザ戻るで同じタブに復帰する。
+  const [params, setParams] = useSearchParams();
+  const raw = params.get("tab");
+  const tab: Tab = VALID_TABS.includes(raw as Tab) ? (raw as Tab) : "events";
+  const setTab = (t: Tab) => {
+    const next = new URLSearchParams(params);
+    if (t === "events") next.delete("tab");
+    else next.set("tab", t);
+    setParams(next, { replace: true });
+  };
 
   const hasFormations = Boolean(match.homeFormation || match.awayFormation);
   const hasStats = Boolean(match.stats);

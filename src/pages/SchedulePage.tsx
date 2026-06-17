@@ -1,4 +1,5 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef } from "react";
+import { useSearchParams } from "react-router-dom";
 import { useMatches } from "@/hooks/useMatches";
 import { useTeamMap } from "@/hooks/useTeams";
 import { ScheduleList } from "@/components/schedule/ScheduleList";
@@ -21,15 +22,30 @@ type ViewMode = "list" | "bracket";
 export function SchedulePage() {
   const matchesRes = useMatches();
   const teamsRes = useTeamMap();
-  const [view, setView] = useState<ViewMode>("list");
-  const [stage, setStage] = useState<MatchStage | "all">("all");
-  const [status, setStatus] = useState<MatchStatus | "all">("all");
-  const [group, setGroup] = useState<string | "all">("all");
-  // 試合日のデフォルトは「今日」(更新するたびに当日に戻す)。
-  // 試合日リストに今日が含まれていなければ useEffect で "all" にフォールバック。
-  const [day, setDay] = useState<string | "all">(() =>
-    dayKey(new Date().toISOString())
-  );
+  // 絞り込み状態を URL クエリに保存。チーム詳細・試合詳細などへ遷移 → 戻る で復帰。
+  // 「試合日」のみ初回マウント時に「今日」をクエリ未指定なら使う特別扱い。
+  const [params, setParams] = useSearchParams();
+  const view = (params.get("view") as ViewMode) ?? "list";
+  const stage = (params.get("stage") as MatchStage | "all") ?? "all";
+  const status = (params.get("status") as MatchStatus | "all") ?? "all";
+  const group = params.get("group") ?? "all";
+  const day = params.get("day") ?? dayKey(new Date().toISOString());
+
+  const updateParam = (key: string, value: string, defaultValue: string) => {
+    const next = new URLSearchParams(params);
+    if (value === defaultValue) next.delete(key);
+    else next.set(key, value);
+    setParams(next, { replace: true });
+  };
+  const setView = (v: ViewMode) => updateParam("view", v, "list");
+  const setStage = (s: MatchStage | "all") => updateParam("stage", s, "all");
+  const setStatus = (s: MatchStatus | "all") => updateParam("status", s, "all");
+  const setGroup = (g: string | "all") => updateParam("group", g, "all");
+  const setDay = (d: string | "all") => {
+    const next = new URLSearchParams(params);
+    next.set("day", d);
+    setParams(next, { replace: true });
+  };
   const dayInitRef = useRef(false);
 
   const stages = useMemo<MatchStage[]>(() => {
@@ -61,11 +77,13 @@ export function SchedulePage() {
   }, [stage, group]);
 
   // matches が初回ロードされた時点で「今日」に該当試合が無ければ "all" に落とす
-  // (大会前・大会後・rest day のとき空欄の絞り込みでユーザが何も見えない事故を防ぐ)
+  // (大会前・大会後・rest day のとき空欄の絞り込みでユーザが何も見えない事故を防ぐ)。
+  // URL クエリで day が明示されている場合はユーザの選択なので触らない。
   useEffect(() => {
     if (dayInitRef.current) return;
     if (matchesRes.status !== "ready") return;
     dayInitRef.current = true;
+    if (params.get("day")) return;
     const today = dayKey(new Date().toISOString());
     const hasToday = matchesRes.data.some((m) => dayKey(m.date) === today);
     if (!hasToday) setDay("all");

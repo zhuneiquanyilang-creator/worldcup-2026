@@ -534,7 +534,22 @@ export function EditMatchesPage() {
         fileR && manualR
           ? { ...fileR, ...manualR }
           : (manualR ?? fileR);
-      seed[m.id] = fromUpdate(combined, m, playersByTeam);
+      const editable = fromUpdate(combined, m, playersByTeam);
+      // これからの試合 (scheduled) で交代が 1 件も入っていなければ、
+      // 空の交代枠を 10 個用意して入力を楽にする。空のまま保存しても
+      // draftToSub は inName/outName が無いと null を返すので LiveUpdate
+      // には乗らない (= 公開サイトに「空の交代」が出ない)。
+      const isUpcoming =
+        (editable.status || m.status) === "scheduled";
+      if (isUpcoming && editable.substitutions.length === 0) {
+        editable.substitutions = Array.from({ length: 10 }, (_, i) => ({
+          minute: "",
+          teamId: i < 5 ? m.homeTeamId : m.awayTeamId,
+          inPlayerId: "",
+          outPlayerId: "",
+        }));
+      }
+      seed[m.id] = editable;
     }
     setEdits(seed);
   }, [matchesRes, fileResultsRes, playersByTeam]);

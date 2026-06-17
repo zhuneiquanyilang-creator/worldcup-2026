@@ -39,6 +39,35 @@
   cursor: not-allowed;
 }
 
+.todayBtn {
+  font-family: inherit;
+  font-size: 0.85rem;
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  padding: 0.35rem 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.todayBtn:hover:not(:disabled) {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.todayBtn:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(0, 87, 184, 0.15);
+}
+
+.todayBtn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
 .select {
   font-family: inherit;
   font-size: 0.9rem;

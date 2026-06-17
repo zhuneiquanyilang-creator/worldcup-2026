@@ -4790,7 +4790,7 @@
         },
         {
           "number": 18,
-          "name": "ラ��アン・エルミ"
+          "name": "ライアン・エルミ"
         },
         {
           "number": 19,
@@ -4833,7 +4833,7 @@
         "minute": 64,
         "teamId": "SWE",
         "inName": "ルーカス・ベリヴァル",
-        "outName": "ベンジャミン・ニグレン"
+        "outName": "ベンジャミン・��グレン"
       },
       {
         "minute": 72,
@@ -8041,7 +8041,7 @@
   },
   "m061": {
     "matchId": "m061",
-    "status": "live",
+    "status": "finished",
     "homeFormation": {
       "shape": "4-2-3-1",
       "starting": [
@@ -8336,7 +8336,7 @@
       "home": 1,
       "away": 1
     },
-    "liveLabel": "Live",
+    "liveLabel": "Full time",
     "goals": [
       {
         "minute": 6,
@@ -8370,6 +8370,75 @@
         "teamId": "COD",
         "playerName": "シャンセル・ムベンバ",
         "type": "Y"
+      },
+      {
+        "minute": 88,
+        "teamId": "POR",
+        "playerName": "ネルソン・セメド",
+        "type": "Y"
+      },
+      {
+        "minute": 90,
+        "teamId": "POR",
+        "playerName": "トマス・アラウージョ",
+        "type": "Y",
+        "addedTime": 2
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": 46,
+        "teamId": "POR",
+        "inName": "フランシスコ・コンセイソン",
+        "outName": "ベルナルド・シルバ"
+      },
+      {
+        "minute": 57,
+        "teamId": "COD",
+        "inName": "ノア・サディキ",
+        "outName": "ンガラエル・ムカウ"
+      },
+      {
+        "minute": 72,
+        "teamId": "POR",
+        "inName": "ラファエル・レオン",
+        "outName": "ペドロ・ネト"
+      },
+      {
+        "minute": 72,
+        "teamId": "POR",
+        "inName": "ネルソン・セメド",
+        "outName": "ヌノ・メンデス"
+      },
+      {
+        "minute": 74,
+        "teamId": "COD",
+        "inName": "ヨリス・カイェンベ",
+        "outName": "アルトゥール・マスアク"
+      },
+      {
+        "minute": 74,
+        "teamId": "COD",
+        "inName": "ティモシー・ファユル",
+        "outName": "エド・カイェンベ"
+      },
+      {
+        "minute": 83,
+        "teamId": "POR",
+        "inName": "ゴンサロ・ラモス",
+        "outName": "ヴィティーニャ"
+      },
+      {
+        "minute": 85,
+        "teamId": "COD",
+        "inName": "ゲデオン・カルル",
+        "outName": "アーロン・ワン・ビサカ"
+      },
+      {
+        "minute": 85,
+        "teamId": "COD",
+        "inName": "シモン・バンザ",
+        "outName": "セドリック・バカンブ"
       }
     ]
   }
