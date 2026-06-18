@@ -4774,7 +4774,7 @@
         },
         {
           "number": 12,
-          "name": "モルタダ・ベン・アネス"
+          "name": "モルタダ���ベン・アネス"
         },
         {
           "number": 14,
@@ -8432,7 +8432,7 @@
       {
         "minute": 85,
         "teamId": "COD",
-        "inName": "ゲデオ���・カルル",
+        "inName": "ゲデオン・カルル",
         "outName": "アーロン・ワン・ビサカ"
       },
       {
@@ -9106,7 +9106,7 @@
         },
         {
           "number": 5,
-          "name": "エドガルド・ファリーニャ"
+          "name": "エドガルド・ファリー���ャ"
         },
         {
           "number": 8,
@@ -9663,5 +9663,23 @@
         "addedTime": 3
       }
     ]
+  },
+  "m003": {
+    "matchId": "m003",
+    "status": "finished",
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "liveLabel": "Full time"
+  },
+  "m009": {
+    "matchId": "m009",
+    "status": "finished",
+    "score": {
+      "home": 4,
+      "away": 1
+    },
+    "liveLabel": "Full time"
   }
 }
