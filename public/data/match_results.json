@@ -4774,7 +4774,7 @@
         },
         {
           "number": 12,
-          "name": "モルタダ���ベン・アネス"
+          "name": "モルタダ・ベン・アネス"
         },
         {
           "number": 14,
@@ -9106,7 +9106,7 @@
         },
         {
           "number": 5,
-          "name": "エドガルド・ファリー���ャ"
+          "name": "エドガルド・ファリーニャ"
         },
         {
           "number": 8,
@@ -9681,5 +9681,15 @@
       "away": 1
     },
     "liveLabel": "Full time"
+  },
+  "m010": {
+    "matchId": "m010",
+    "status": "live",
+    "score": {
+      "home": 3,
+      "away": 0
+    },
+    "liveLabel": "Live"
   }
 }
+
