@@ -4833,7 +4833,7 @@
         "minute": 64,
         "teamId": "SWE",
         "inName": "ルーカス・ベリヴァル",
-        "outName": "ベンジャミン・��グレン"
+        "outName": "ベンジャミン・ニグレン"
       },
       {
         "minute": 72,
@@ -8432,7 +8432,7 @@
       {
         "minute": 85,
         "teamId": "COD",
-        "inName": "ゲデオン・カルル",
+        "inName": "ゲデオ���・カルル",
         "outName": "アーロン・ワン・ビサカ"
       },
       {
@@ -9251,10 +9251,10 @@
   },
   "m062": {
     "matchId": "m062",
-    "status": "live",
+    "status": "finished",
     "score": {
       "home": 1,
-      "away": 2
+      "away": 3
     },
     "homeFormation": {
       "shape": "3-4-2-1",
@@ -9546,7 +9546,7 @@
         }
       ]
     },
-    "liveLabel": "Live",
+    "liveLabel": "Full time",
     "bookings": [
       {
         "minute": 7,
