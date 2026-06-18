@@ -536,20 +536,42 @@ export function EditMatchesPage() {
           ? { ...fileR, ...manualR }
           : (manualR ?? fileR);
       const editable = fromUpdate(combined, m, playersByTeam);
-      // これからの試合 / 進行中の試合 (= finished 以外) で交代が 1 件も
-      // 入っていなければ、空の交代枠を 10 個用意して入力を楽にする。
-      // 上 5 枠ホーム / 下 5 枠アウェイ。空のまま保存しても
-      // draftToSub は inName/outName が無いと null を返すので LiveUpdate
-      // には乗らない (= 公開サイトに「空の交代」が出ない)。
+      // これからの試合 / 進行中の試合 (= finished 以外) で「ホーム < 5 枠 /
+      // アウェイ < 5 枠」のときに空枠を補充して合計 5+5 枠を常に表示する。
+      // 1 件入力して保存 → 再 seed で残り 9 枠が消える事故を防ぐ。
+      // 空のまま保存しても draftToSub は inName/outName が無いと null を返すので
+      // LiveUpdate には乗らない (= 公開サイトに「空の交代」が出ない)。
       const effectiveStatus = editable.status || m.status;
       const isPreOrLive = effectiveStatus !== "finished";
-      if (isPreOrLive && editable.substitutions.length === 0) {
-        editable.substitutions = Array.from({ length: 10 }, (_, i) => ({
-          minute: "",
-          teamId: i < 5 ? m.homeTeamId : m.awayTeamId,
-          inPlayerId: "",
-          outPlayerId: "",
-        }));
+      if (isPreOrLive) {
+        const homeCount = editable.substitutions.filter(
+          (s) => s.teamId === m.homeTeamId
+        ).length;
+        const awayCount = editable.substitutions.filter(
+          (s) => s.teamId === m.awayTeamId
+        ).length;
+        const homeToAdd = Math.max(0, 5 - homeCount);
+        const awayToAdd = Math.max(0, 5 - awayCount);
+        if (homeToAdd > 0 || awayToAdd > 0) {
+          const padded = [...editable.substitutions];
+          for (let i = 0; i < homeToAdd; i++) {
+            padded.push({
+              minute: "",
+              teamId: m.homeTeamId,
+              inPlayerId: "",
+              outPlayerId: "",
+            });
+          }
+          for (let i = 0; i < awayToAdd; i++) {
+            padded.push({
+              minute: "",
+              teamId: m.awayTeamId,
+              inPlayerId: "",
+              outPlayerId: "",
+            });
+          }
+          editable.substitutions = padded;
+        }
       }
       seed[m.id] = editable;
     }

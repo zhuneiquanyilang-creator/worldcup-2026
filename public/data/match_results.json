@@ -8525,7 +8525,8 @@
           "number": 9,
           "name": "ハリー・ケイン",
           "role": "FW",
-          "isCaptain": true
+          "isCaptain": true,
+          "isMvp": true
         }
       ],
       "bench": [
@@ -8785,14 +8786,85 @@
         "playerName": "ジュード・ベリンガム",
         "assistPlayerId": "p_eng_14",
         "assistPlayerName": "エリオット・アンダーソン"
+      },
+      {
+        "minute": 85,
+        "teamId": "ENG",
+        "type": "normal",
+        "playerId": "p_eng_21",
+        "playerName": "マーカス・ラッシュフォード",
+        "assistPlayerId": "p_eng_23",
+        "assistPlayerName": "ブカヨ・サカ"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": 58,
+        "teamId": "CRO",
+        "inName": "マテオ・コヴァチッチ",
+        "outName": "ルカ・モドリッチ"
+      },
+      {
+        "minute": 66,
+        "teamId": "CRO",
+        "inName": "マルコ・パシャリッチ",
+        "outName": "ルカ・ヴシュコビッチ"
+      },
+      {
+        "minute": 66,
+        "teamId": "CRO",
+        "inName": "イゴール・マタノビッチ",
+        "outName": "ペタル・ムサ"
+      },
+      {
+        "minute": 73,
+        "teamId": "ENG",
+        "inName": "マーカス・ラッシュフォード",
+        "outName": "アンソニー・ゴードン"
+      },
+      {
+        "minute": 73,
+        "teamId": "ENG",
+        "inName": "ブカヨ・サカ",
+        "outName": "ノニ・マドゥエケ"
+      },
+      {
+        "minute": 73,
+        "teamId": "ENG",
+        "inName": "モーガン・ロジャース",
+        "outName": "デクラン・ライス"
+      },
+      {
+        "minute": 79,
+        "teamId": "CRO",
+        "inName": "アンドレイ・クラマリッチ",
+        "outName": "マリオ・パシャリッチ"
+      },
+      {
+        "minute": 79,
+        "teamId": "CRO",
+        "inName": "ニコラ・ヴラシッチ",
+        "outName": "マルティン・バトゥリナ"
+      },
+      {
+        "minute": 80,
+        "teamId": "ENG",
+        "inName": "ジェド・スペンス",
+        "outName": "ジュード・ベリンガム"
+      },
+      {
+        "minute": 87,
+        "teamId": "ENG",
+        "inName": "マルク・グエイ",
+        "outName": "ジョン・ストーンズ"
       }
     ]
   },
   "m068": {
     "matchId": "m068",
-    "status": "live",
+    "status": "finished",
     "score": {
-      "home": 0,
+      "home": 1,
       "away": 0
     },
     "homeFormation": {
@@ -9085,13 +9157,26 @@
         }
       ]
     },
-    "liveLabel": "Halftime",
+    "liveLabel": "Full time",
     "bookings": [
       {
         "minute": 16,
         "teamId": "GHA",
         "playerName": "カレブ・イレンキ",
         "type": "Y"
+      },
+      {
+        "minute": 72,
+        "teamId": "PAN",
+        "playerName": "セサール・ブラックマン",
+        "type": "Y"
+      },
+      {
+        "minute": 90,
+        "teamId": "PAN",
+        "playerName": "カルロス・ハーヴェイ",
+        "type": "Y",
+        "addedTime": 9
       }
     ],
     "substitutions": [
@@ -9100,7 +9185,69 @@
         "teamId": "GHA",
         "inName": "ベンジャミン・アサレ",
         "outName": "ローレンス・アティ・ジギ"
+      },
+      {
+        "minute": 58,
+        "teamId": "GHA",
+        "inName": "アブドゥル・ファタウ・イサハク",
+        "outName": "エルネスト・ヌアマー"
+      },
+      {
+        "minute": 58,
+        "teamId": "GHA",
+        "inName": "ブランドン・トーマス・アサンテ",
+        "outName": "カマルディーン・スレマナ"
+      },
+      {
+        "minute": 63,
+        "teamId": "PAN",
+        "inName": "アサリアス・ロンドーニョ",
+        "outName": "セシリオ・ワーテルマン"
+      },
+      {
+        "minute": 63,
+        "teamId": "PAN",
+        "inName": "ホセ・ファハルド",
+        "outName": "クリスティアン・マルティネス"
+      },
+      {
+        "minute": 74,
+        "teamId": "PAN",
+        "inName": "イスマエル・ディアス",
+        "outName": "ホセ・ルイス・ロドリゲス"
+      },
+      {
+        "minute": 78,
+        "teamId": "GHA",
+        "inName": "クワシ・シボ",
+        "outName": "エリシャ・オウス"
+      },
+      {
+        "minute": 87,
+        "teamId": "GHA",
+        "inName": "プリンス・クワベナ・アドゥ",
+        "outName": "ジョーダン・アユー"
+      },
+      {
+        "minute": 90,
+        "teamId": "PAN",
+        "inName": "アニバル・ゴドイ",
+        "outName": "セサール・ブラックマン"
+      }
+    ],
+    "goals": [
+      {
+        "minute": 90,
+        "teamId": "GHA",
+        "type": "normal",
+        "addedTime": 5,
+        "playerId": "p_gha_13",
+        "playerName": "カレブ・イレンキ",
+        "assistPlayerId": "p_gha_21",
+        "assistPlayerName": "ブランドン・トーマス・アサンテ"
       }
     ]
   }
+}
+
 }

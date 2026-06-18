@@ -101,8 +101,11 @@ function layerRoleHint(
  *    - ST: y=50 (中央あり)
  *    → AM と ST が「両方中央あり」かつ間隔 17.33 で名前が重なる → ST を 80→83.67 に前進
  *
+ *  GK ↔ DF の衝突も同じ枠で扱う: GK は常に (x=8, y=50) のため、奇数バック
+ *  (3-X-X-X / 5-X-X) のセンターバック (y=50) と名前が被る。GK を仮想的に
+ *  最前列の「中央あり層」とみなして DF を前進させる (GK 自体は動かさない)。
+ *
  *  4-3-3 のように両層中央ありでも元の間隔が十分 (26) ある場合は何もしない。
- *  GK (role: "GK") は層調整の対象外。
  *  保存データ (`match_results.json`) は変更しない、レンダー時に毎回適用。 */
 export function spreadFormationLayers(
   formation: FormationData
@@ -110,15 +113,26 @@ export function spreadFormationLayers(
   if (!formation.starting || formation.starting.length === 0) return formation;
   const fieldSpots = formation.starting.filter((s) => s.role !== "GK");
   if (fieldSpots.length === 0) return formation;
+  const gk = formation.starting.find((s) => s.role === "GK");
+  // GK が中央 (y∈[40,60]) なら最前面 (x=GK.x) として layer 列に含める。
+  // GK は実際には動かさない (map step で除外) — DF を前進させるためのアンカー。
+  const gkAsLayer = gk && gk.y >= 40 && gk.y <= 60 ? gk : null;
 
-  const distinctX = [...new Set(fieldSpots.map((s) => s.x))].sort(
+  const fieldDistinctX = [...new Set(fieldSpots.map((s) => s.x))].sort(
     (a, b) => a - b
   );
+  const distinctX = gkAsLayer
+    ? [gkAsLayer.x, ...fieldDistinctX.filter((x) => x !== gkAsLayer.x)]
+    : fieldDistinctX;
   if (distinctX.length < 2) return formation;
 
   // 各層が中央 (y∈[40,60]) に選手を持つかを記録
   const hasCenter = new Map<number, boolean>();
   for (const x of distinctX) {
+    if (gkAsLayer && x === gkAsLayer.x) {
+      hasCenter.set(x, true);
+      continue;
+    }
     const inLayer = fieldSpots.filter((s) => s.x === x);
     hasCenter.set(x, inLayer.some((s) => s.y >= 40 && s.y <= 60));
   }
@@ -144,19 +158,28 @@ export function spreadFormationLayers(
     adjusted.set(original, x);
   }
 
-  let changed = false;
-  for (const [k, v] of adjusted) {
-    if (k !== v) {
-      changed = true;
-      break;
+  // 「全体的に左に寄せる」最終調整: GK を含む全選手の x を一律
+  // SHIFT_LEFT 単位ぶん自陣ゴール側に下げる。クロアチアのように
+  // 名前が長く中央ラインに圧迫感が出るフォーメーションを救うため。
+  // 層間距離は変わらないので overlap 自体は spread 側で別途解決する。
+  const SHIFT_LEFT = 5;
+
+  let changed = SHIFT_LEFT > 0;
+  if (!changed) {
+    for (const [k, v] of adjusted) {
+      if (k !== v) {
+        changed = true;
+        break;
+      }
     }
   }
   if (!changed) return formation;
 
   return {
     ...formation,
-    starting: formation.starting.map((s) =>
-      s.role === "GK" ? s : { ...s, x: adjusted.get(s.x) ?? s.x }
-    ),
+    starting: formation.starting.map((s) => {
+      const baseX = s.role === "GK" ? s.x : (adjusted.get(s.x) ?? s.x);
+      return { ...s, x: Math.max(0, baseX - SHIFT_LEFT) };
+    }),
   };
 }
