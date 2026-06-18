@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useTeams } from "@/hooks/useTeams";
 import { useTeamDetailMap } from "@/hooks/useTeamDetails";
 import { TeamProfile } from "@/components/teams/TeamProfile";
@@ -14,9 +14,17 @@ type Tab = "detail" | "roster" | "results";
 
 export function TeamDetailPage() {
   const { id } = useParams<{ id: string }>();
+  const navigate = useNavigate();
   const teamsRes = useTeams();
   const detailsRes = useTeamDetailMap();
   const [tab, setTab] = useState<Tab>("detail");
+  // 履歴を 1 つ戻す。前のページ (順位表のグループ C / 試合詳細のフォーメーション
+  // タブ等) の URL クエリ状態も復元される。
+  // 履歴が空の場合 (= 直接 URL で開いた等) は /standings にフォールバック。
+  const goBack = () => {
+    if (window.history.length > 1) navigate(-1);
+    else navigate("/standings");
+  };
 
   if (teamsRes.status === "loading" || detailsRes.status === "loading") {
     return <Loading />;
@@ -28,7 +36,7 @@ export function TeamDetailPage() {
   if (!team) {
     return (
       <div>
-        <Link to="/standings" className={styles.back}>← 順位表へ</Link>
+        <button type="button" onClick={goBack} className={styles.back}>← 戻る</button>
         <ErrorMessage message="該当するチームが見つかりませんでした。" />
       </div>
     );
@@ -38,7 +46,7 @@ export function TeamDetailPage() {
 
   return (
     <div className={styles.page}>
-      <Link to="/standings" className={styles.back}>← 戻る</Link>
+      <button type="button" onClick={goBack} className={styles.back}>← 戻る</button>
 
       <header className={styles.header}>
         <Flag isoCode={team.isoCode} size={72} alt={team.name} className={styles.flag} />

@@ -4,4 +4,13 @@
   font-size: 0.9rem;
   font-weight: 600;
   color: var(--color-primary);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.back:hover {
+  text-decoration: underline;
 }

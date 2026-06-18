@@ -9,6 +9,15 @@
   font-weight: 600;
   color: var(--color-primary);
   align-self: flex-start;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.back:hover {
+  text-decoration: underline;
 }
 
 .header {

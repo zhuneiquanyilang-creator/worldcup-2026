@@ -7,6 +7,8 @@ export type Coach = {
   name: string;
   /** 国籍。不明は "" */
   nationality: string;
+  /** 前任監督。大会期間中・直前に監督交代があった場合に「前任 → 現任」表示するため。 */
+  previous?: { name: string; nationality: string };
 };
 
 export type TeamDetail = {

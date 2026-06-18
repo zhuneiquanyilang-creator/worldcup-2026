@@ -19,8 +19,12 @@ export function TeamProfile({ detail }: Props) {
     );
   }
 
+  const formatCoach = (c: { name: string; nationality: string }) =>
+    `${c.name}${c.nationality ? `（${c.nationality}）` : ""}`;
   const coachValue = detail.coach
-    ? `${detail.coach.name}${detail.coach.nationality ? `（${detail.coach.nationality}）` : ""}`
+    ? detail.coach.previous
+      ? `${formatCoach(detail.coach.previous)} → ${formatCoach(detail.coach)}`
+      : formatCoach(detail.coach)
     : "—";
 
   const rows: { label: string; value: string }[] = [

@@ -1,4 +1,4 @@
-import { Link, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useMatches } from "@/hooks/useMatches";
 import { useTeamMap } from "@/hooks/useTeams";
 import { usePlayerMap } from "@/hooks/usePlayers";
@@ -8,9 +8,17 @@ import styles from "./MatchDetailPage.module.css";
 
 export function MatchDetailPage() {
   const { id } = useParams<{ id: string }>();
+  const navigate = useNavigate();
   const matchesRes = useMatches();
   const teamsRes = useTeamMap();
   const playersRes = usePlayerMap();
+  // 履歴を 1 つ戻す。試合一覧のフィルタや順位表のグループ等、
+  // 遷移元の URL クエリ状態がそのまま復元される。
+  // 直接 URL 起動などで履歴がなければ /schedule にフォールバック。
+  const goBack = () => {
+    if (window.history.length > 1) navigate(-1);
+    else navigate("/schedule");
+  };
 
   if (
     matchesRes.status === "loading" ||
@@ -27,7 +35,7 @@ export function MatchDetailPage() {
   if (!match) {
     return (
       <div>
-        <Link to="/matches" className={styles.back}>← 試合一覧へ</Link>
+        <button type="button" onClick={goBack} className={styles.back}>← 戻る</button>
         <ErrorMessage message="該当する試合が見つかりませんでした。" />
       </div>
     );
@@ -35,7 +43,7 @@ export function MatchDetailPage() {
 
   return (
     <div>
-      <Link to="/matches" className={styles.back}>← 試合一覧へ</Link>
+      <button type="button" onClick={goBack} className={styles.back}>← 戻る</button>
       <MatchDetail match={match} teamMap={teamsRes.map} playerMap={playersRes.map} />
     </div>
   );

@@ -381,6 +381,41 @@ function draftToSub(
   return out;
 }
 
+/** 交代枠を「ホーム最低 5 / アウェイ最低 5」になるよう空エントリで補充する。
+ *  finished の試合は触らない。空のまま保存しても draftToSub が null を返すので
+ *  公開サイト (試合詳細) には反映されない (= 未記入は試合詳細に出ない)。 */
+function padSubstitutions(editable: Editable, match: Match): Editable {
+  const effectiveStatus = editable.status || match.status;
+  if (effectiveStatus === "finished") return editable;
+  const homeCount = editable.substitutions.filter(
+    (s) => s.teamId === match.homeTeamId
+  ).length;
+  const awayCount = editable.substitutions.filter(
+    (s) => s.teamId === match.awayTeamId
+  ).length;
+  const homeToAdd = Math.max(0, 5 - homeCount);
+  const awayToAdd = Math.max(0, 5 - awayCount);
+  if (homeToAdd === 0 && awayToAdd === 0) return editable;
+  const padded = [...editable.substitutions];
+  for (let i = 0; i < homeToAdd; i++) {
+    padded.push({
+      minute: "",
+      teamId: match.homeTeamId,
+      inPlayerId: "",
+      outPlayerId: "",
+    });
+  }
+  for (let i = 0; i < awayToAdd; i++) {
+    padded.push({
+      minute: "",
+      teamId: match.awayTeamId,
+      inPlayerId: "",
+      outPlayerId: "",
+    });
+  }
+  return { ...editable, substitutions: padded };
+}
+
 function fromUpdate(
   u: LiveUpdate | undefined,
   match: Match,
@@ -527,55 +562,29 @@ export function EditMatchesPage() {
     const fileResults =
       fileResultsRes.status === "ready" ? fileResultsRes.data : {};
     const manual = loadMatchEdits();
-    const seed: Record<string, Editable> = {};
-    for (const m of matchesRes.data) {
-      const fileR = fileResults[m.id];
-      const manualR = manual[m.id];
-      const combined: LiveUpdate | undefined =
-        fileR && manualR
-          ? { ...fileR, ...manualR }
-          : (manualR ?? fileR);
-      const editable = fromUpdate(combined, m, playersByTeam);
-      // これからの試合 / 進行中の試合 (= finished 以外) で「ホーム < 5 枠 /
-      // アウェイ < 5 枠」のときに空枠を補充して合計 5+5 枠を常に表示する。
-      // 1 件入力して保存 → 再 seed で残り 9 枠が消える事故を防ぐ。
-      // 空のまま保存しても draftToSub は inName/outName が無いと null を返すので
-      // LiveUpdate には乗らない (= 公開サイトに「空の交代」が出ない)。
-      const effectiveStatus = editable.status || m.status;
-      const isPreOrLive = effectiveStatus !== "finished";
-      if (isPreOrLive) {
-        const homeCount = editable.substitutions.filter(
-          (s) => s.teamId === m.homeTeamId
-        ).length;
-        const awayCount = editable.substitutions.filter(
-          (s) => s.teamId === m.awayTeamId
-        ).length;
-        const homeToAdd = Math.max(0, 5 - homeCount);
-        const awayToAdd = Math.max(0, 5 - awayCount);
-        if (homeToAdd > 0 || awayToAdd > 0) {
-          const padded = [...editable.substitutions];
-          for (let i = 0; i < homeToAdd; i++) {
-            padded.push({
-              minute: "",
-              teamId: m.homeTeamId,
-              inPlayerId: "",
-              outPlayerId: "",
-            });
-          }
-          for (let i = 0; i < awayToAdd; i++) {
-            padded.push({
-              minute: "",
-              teamId: m.awayTeamId,
-              inPlayerId: "",
-              outPlayerId: "",
-            });
-          }
-          editable.substitutions = padded;
-        }
+    // 既に edits state に存在する試合は触らない。
+    // 理由: live polling や matchEdits 変更で matchesRes が再生成される
+    // たびに seed useEffect が再実行されるが、その時に setEdits(seed) で
+    // 全置換すると「typed-but-unsaved な入力」「pad 済みの空 10 枠」が
+    // ライブ取得タイミングごとに消失する。初期化されていない試合だけ
+    // 構築すれば、既存編集セッションを守れる。
+    setEdits((prev) => {
+      const next: Record<string, Editable> = { ...prev };
+      for (const m of matchesRes.data) {
+        if (next[m.id]) continue;
+        const fileR = fileResults[m.id];
+        const manualR = manual[m.id];
+        const combined: LiveUpdate | undefined =
+          fileR && manualR
+            ? { ...fileR, ...manualR }
+            : (manualR ?? fileR);
+        next[m.id] = padSubstitutions(
+          fromUpdate(combined, m, playersByTeam),
+          m
+        );
       }
-      seed[m.id] = editable;
-    }
-    setEdits(seed);
+      return next;
+    });
   }, [matchesRes, fileResultsRes, playersByTeam]);
 
   if (
@@ -815,7 +824,8 @@ export function EditMatchesPage() {
       return;
     saveMatchEdits({});
     const cleared: Record<string, Editable> = {};
-    for (const m of allMatches) cleared[m.id] = freshEditable();
+    for (const m of allMatches)
+      cleared[m.id] = padSubstitutions(freshEditable(), m);
     setEdits(cleared);
     setSavedMsg("手動編集をクリアしました");
     setTimeout(() => setSavedMsg(""), 3000);
@@ -830,7 +840,10 @@ export function EditMatchesPage() {
     }
     setEdits((prev) => ({
       ...prev,
-      [match.id]: fromUpdate(live, match, playersByTeam),
+      [match.id]: padSubstitutions(
+        fromUpdate(live, match, playersByTeam),
+        match
+      ),
     }));
     setSavedMsg(`${match.id}: ライブ取得値を取り込みました (まだ未保存)`);
     setTimeout(() => setSavedMsg(""), 3000);

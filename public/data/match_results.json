@@ -4790,7 +4790,7 @@
         },
         {
           "number": 18,
-          "name": "ラ��アン・エルミ"
+          "name": "ライアン・エルミ"
         },
         {
           "number": 19,
@@ -4833,7 +4833,7 @@
         "minute": 64,
         "teamId": "SWE",
         "inName": "ルーカス・ベリヴァル",
-        "outName": "ベンジャミン・ニグレン"
+        "outName": "ベンジャミン・��グレン"
       },
       {
         "minute": 72,
@@ -8931,7 +8931,8 @@
           "y": 87.5,
           "number": 11,
           "name": "アントワーヌ・セメンヨ",
-          "role": "MF"
+          "role": "MF",
+          "isMvp": true
         },
         {
           "x": 62.666666666666664,
@@ -9545,6 +9546,31 @@
         }
       ]
     },
-    "liveLabel": "Live"
+    "liveLabel": "Live",
+    "bookings": [
+      {
+        "minute": 7,
+        "teamId": "COL",
+        "playerName": "ホアン・モヒカ",
+        "type": "Y"
+      },
+      {
+        "minute": 34,
+        "teamId": "UZB",
+        "playerName": "アブドゥコディル・クサノフ",
+        "type": "Y"
+      }
+    ],
+    "goals": [
+      {
+        "minute": 41,
+        "teamId": "COL",
+        "type": "normal",
+        "playerId": "p_col_9",
+        "playerName": "ダニエル・ムニョス",
+        "assistPlayerId": "p_col_22",
+        "assistPlayerName": "ルイス・ディアス"
+      }
+    ]
   }
 }

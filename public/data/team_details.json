@@ -1085,8 +1085,12 @@
       }
     ],
     "coach": {
-      "name": "サブリ・ラムシ",
-      "nationality": "フランス"
+      "name": "エルヴェ・ルナール",
+      "nationality": "フランス",
+      "previous": {
+        "name": "サブリ・ラムシ",
+        "nationality": "フランス"
+      }
     },
     "worldRank": 44
   },
