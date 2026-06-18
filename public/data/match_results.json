@@ -4455,7 +4455,7 @@
       {
         "minute": 85,
         "teamId": "NED",
-        "inName": "ブライ��ン・ブロビー",
+        "inName": "ブライアン・ブロビー",
         "outName": "コーディ・ガクポ"
       }
     ],
@@ -10064,7 +10064,7 @@
     "matchId": "m010",
     "status": "live",
     "score": {
-      "home": 3,
+      "home": 4,
       "away": 0
     },
     "liveLabel": "Live"
