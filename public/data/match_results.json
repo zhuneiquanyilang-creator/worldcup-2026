@@ -3554,7 +3554,7 @@
         },
         {
           "number": 11,
-          "name": "ジェレミー・アントニッセ"
+          "name": "ジェレミー・アントニ���セ"
         },
         {
           "number": 13,
@@ -10487,7 +10487,7 @@
     "matchId": "m010",
     "status": "live",
     "score": {
-      "home": 5,
+      "home": 6,
       "away": 0
     },
     "liveLabel": "Live",
@@ -10527,6 +10527,16 @@
         "type": "own",
         "playerId": "p_qat_12",
         "playerName": "モハメド・アル・マンナイ"
+      },
+      {
+        "minute": 90,
+        "teamId": "CAN",
+        "type": "normal",
+        "addedTime": 2,
+        "playerId": "p_can_23",
+        "playerName": "ジョナサン・デイヴィッド",
+        "assistPlayerId": "p_can_18",
+        "assistPlayerName": "ネイサン・サリバ"
       }
     ],
     "homeFormation": {
@@ -10905,6 +10915,12 @@
         "teamId": "CAN",
         "inName": "ニコ・シグル",
         "outName": "タジョン・ブキャナン"
+      },
+      {
+        "minute": 87,
+        "teamId": "QAT",
+        "inName": "ルーカス・ミシェル・メンデス",
+        "outName": "アハメド・ファテヒ"
       }
     ]
   }
