@@ -356,9 +356,146 @@ function startupCatchup(apiKey: string): Plugin {
         runStartupCatchup(apiKey).catch((e) =>
           console.warn(`[startup-catchup] failed: ${e?.message ?? e}`)
         );
+        // 3) 周期的 catchup — 試合中のスコア変更を自動で match_results.json
+        //    に反映し schedulePush で GitHub に push する。公開サイトの
+        //    スコアが手動 commit なしで更新される。
+        //    エンドポイント: /competitions/WC/matches (1 req で全 104 試合)
+        //    間隔: 60 秒 (Football-Data 無料枠 10 req/min に余裕)
+        //    停止: 環境変数 `PERIODIC_CATCHUP=0`
+        if (process.env.PERIODIC_CATCHUP === "0") return;
+        if (!apiKey) return;
+        const PERIODIC_INTERVAL_MS = 60_000;
+        const startDelay = 30_000; // startup-catchup が終わるのを少し待つ
+        setTimeout(() => {
+          const tick = () => {
+            runPeriodicCatchup(apiKey).catch((e) =>
+              console.warn(
+                `[periodic-catchup] failed: ${e?.message ?? e}`
+              )
+            );
+          };
+          tick();
+          setInterval(tick, PERIODIC_INTERVAL_MS);
+        }, startDelay);
       });
     },
   };
+}
+
+/**
+ * 周期 catchup: `/competitions/WC/matches` を 1 リクエストで取得し、
+ * status / score / penaltyScore に差分があるものだけ match_results.json
+ * に書き込む。goals / formations / cards / bookings は触らないので、
+ * `/edit/matches` で入力した手作業データを潰さない。
+ *
+ * 書き込み後は schedulePush() で 30 秒デバウンスの git push が走り、
+ * GitHub Pages の公開サイトに反映される。
+ */
+async function runPeriodicCatchup(apiKey: string) {
+  const url = "https://api.football-data.org/v4/competitions/WC/matches";
+  let fdMatches: Array<Record<string, any>>;
+  try {
+    const r = await fetch(url, { headers: { "X-Auth-Token": apiKey } });
+    if (r.status === 429) {
+      console.warn("[periodic-catchup] 429 rate limit — skip");
+      return;
+    }
+    if (!r.ok) {
+      console.warn(`[periodic-catchup] fetch ${r.status}`);
+      return;
+    }
+    const j = await r.json();
+    fdMatches = (j.matches ?? []) as Array<Record<string, any>>;
+  } catch (e) {
+    console.warn(
+      `[periodic-catchup] fetch error: ${e instanceof Error ? e.message : String(e)}`
+    );
+    return;
+  }
+
+  // m??? → fdMatchId 逆引きマップ
+  const mappingPath = path.resolve(
+    __dirname,
+    "public/data/footballdata_mapping.json"
+  );
+  let mapping: Record<
+    string,
+    number | { fdMatchId: number; fdHomeTeamId?: number; fdAwayTeamId?: number }
+  >;
+  try {
+    mapping = JSON.parse(await fs.readFile(mappingPath, "utf8")).mapping;
+  } catch (e) {
+    console.warn(
+      `[periodic-catchup] mapping 読み込み失敗: ${e instanceof Error ? e.message : String(e)}`
+    );
+    return;
+  }
+  const fdToLocal = new Map<number, string>();
+  for (const [localId, entry] of Object.entries(mapping)) {
+    const fdId = typeof entry === "number" ? entry : entry.fdMatchId;
+    if (typeof fdId === "number") fdToLocal.set(fdId, localId);
+  }
+
+  // 既存 results を read (self-heal 付き、parse 不能なら abort)
+  let results: Record<string, Record<string, unknown>> = {};
+  try {
+    const raw = await fs.readFile(RESULTS_PATH, "utf8");
+    const healed = selfHealJson(raw);
+    if (!healed) {
+      console.warn(
+        "[periodic-catchup] match_results.json が parse 不能 — abort (データ保護)"
+      );
+      return;
+    }
+    results = healed.data as Record<string, Record<string, unknown>>;
+  } catch (e: unknown) {
+    const code = (e as { code?: string } | null)?.code;
+    if (code !== "ENOENT") throw e;
+  }
+
+  let updated = 0;
+  for (const fx of fdMatches) {
+    const localId = fdToLocal.get(fx.id);
+    if (!localId) continue;
+    const status = mapFdStatus(fx.status);
+    const update: Record<string, unknown> = { matchId: localId };
+    if (status) update.status = status;
+    const ft = fx.score?.fullTime;
+    if (typeof ft?.home === "number" && typeof ft?.away === "number") {
+      update.score = { home: ft.home, away: ft.away };
+    }
+    const pk = fx.score?.penalties;
+    if (typeof pk?.home === "number" && typeof pk?.away === "number") {
+      update.penaltyScore = { home: pk.home, away: pk.away };
+    }
+
+    const prev = results[localId] ?? {};
+    const sameStatus = prev.status === update.status;
+    const sameScore =
+      JSON.stringify(prev.score) === JSON.stringify(update.score);
+    const samePk =
+      JSON.stringify(prev.penaltyScore) ===
+      JSON.stringify(update.penaltyScore);
+    if (sameStatus && sameScore && samePk) continue;
+
+    results[localId] = { ...prev, ...update };
+    updated++;
+    console.log(
+      `[periodic-catchup] ${localId}: ${fx.homeTeam?.tla} ${ft?.home ?? "?"}-${ft?.away ?? "?"} ${fx.awayTeam?.tla} [${fx.status}]`
+    );
+  }
+
+  if (updated === 0) return;
+
+  await fs.writeFile(
+    RESULTS_PATH,
+    JSON.stringify(results, null, 2) + "\n",
+    "utf8"
+  );
+  console.log(
+    `[periodic-catchup] ${updated} 試合を match_results.json に書き込み`
+  );
+  schedulePush();
 }
 
 async function runStartupSelfHeal() {
