@@ -3179,7 +3179,7 @@
         "minute": 61,
         "teamId": "AUS",
         "inName": "ニシャン・ヴェルピレイ",
-        "outName": "ネストリ・��ランクンダ"
+        "outName": "ネストリ・イランクンダ"
       },
       {
         "minute": 62,
@@ -7620,7 +7620,7 @@
         "minute": 80,
         "teamId": "ARG",
         "inName": "ニコ・パス",
-        "outName": "リオネル・メッ���"
+        "outName": "リオネル・メッシ"
       },
       {
         "minute": 82,
@@ -11668,6 +11668,12 @@
         "teamId": "AUS",
         "inName": "クリスチャン・ヴォルパート",
         "outName": "マシュー・レッキー"
+      },
+      {
+        "minute": 74,
+        "teamId": "USA",
+        "inName": "セバスチャン・バーハルター",
+        "outName": "リカルド・ペピ"
       }
     ]
   },
