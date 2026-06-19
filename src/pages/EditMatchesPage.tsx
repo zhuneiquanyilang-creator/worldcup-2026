@@ -838,13 +838,35 @@ export function EditMatchesPage() {
       setTimeout(() => setSavedMsg(""), 3000);
       return;
     }
-    setEdits((prev) => ({
-      ...prev,
-      [match.id]: padSubstitutions(
-        fromUpdate(live, match, playersByTeam),
-        match
-      ),
-    }));
+    setEdits((prev) => {
+      const cur = prev[match.id] ?? freshEditable();
+      const liveEdit = fromUpdate(live, match, playersByTeam);
+      // ライブに存在するフィールドだけ上書き。Football-Data.org の無料枠は
+      // formation / goals / bookings / substitutions を返さないので、それらは
+      // ライブに無いときは既存の編集内容 (matchEdits 由来) を保持する。
+      // ＝「↓ ライブ」を押してもスタメンが一瞬消える挙動を避ける。
+      const merged: Editable = { ...cur, passthrough: liveEdit.passthrough };
+      if (live.status) merged.status = liveEdit.status;
+      if (live.score) {
+        merged.scoreHome = liveEdit.scoreHome;
+        merged.scoreAway = liveEdit.scoreAway;
+      }
+      if (live.penaltyScore) {
+        merged.pkHome = liveEdit.pkHome;
+        merged.pkAway = liveEdit.pkAway;
+      }
+      if (live.goals && live.goals.length > 0) merged.goals = liveEdit.goals;
+      if (live.homeFormation) merged.homeFormation = liveEdit.homeFormation;
+      if (live.awayFormation) merged.awayFormation = liveEdit.awayFormation;
+      if (live.bookings && live.bookings.length > 0)
+        merged.bookings = liveEdit.bookings;
+      if (live.substitutions && live.substitutions.length > 0)
+        merged.substitutions = liveEdit.substitutions;
+      return {
+        ...prev,
+        [match.id]: padSubstitutions(merged, match),
+      };
+    });
     setSavedMsg(`${match.id}: ライブ取得値を取り込みました (まだ未保存)`);
     setTimeout(() => setSavedMsg(""), 3000);
   };
