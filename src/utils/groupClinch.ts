@@ -1,5 +1,6 @@
 import type { Match } from "@/types/match";
 import type { Standing } from "@/types/standing";
+import { sortGroupStandings } from "@/utils/tiebreaker";
 
 /**
  * グループ順位の確定（clinch）判定。
@@ -9,9 +10,9 @@ import type { Standing } from "@/types/standing";
  * 順位が変わらない（mathematically locked）位置だけを返す。
  *
  * 戦略:
- *  - 残り 0 試合: 全順位確定（順位は points → 得失点差 → 得点 の簡易タイブレーカー）。
+ *  - 残り 0 試合: 全順位確定（FIFA 公式タイブレーカー = `sortGroupStandings`）。
  *  - 残り 1〜2 試合: 0–5 点ずつの全スコア組み合わせを総当たりし、各順位が
- *    全結果で同一チームになるかを判定（GD/得点での確定も拾える）。
+ *    全結果で同一チームになるかを判定（H2H/GD/得点での確定も拾える）。
  *  - 残り 3 試合以上: 勝ち点だけの保守的チェックに切替（GD/H2H は無視。
  *    早期段階で誤って確定扱いしない）。
  */
@@ -87,18 +88,22 @@ function buildBase(
   return map;
 }
 
-function snapshotOrder(map: Map<string, Standing>): string[] {
-  return [...map.values()].sort(compareSimple).map((s) => s.teamId);
-}
-
-function cloneMap(base: Map<string, Standing>): Map<string, Standing> {
-  const clone = new Map<string, Standing>();
-  for (const [k, v] of base) clone.set(k, { ...v });
-  return clone;
+/** scored matches を全て使って standings を組み、FIFA 公式タイブレーカー
+ *  (sortGroupStandings = H2H 含む) で並べた順位を返す。 */
+function orderFromMatches(
+  groupTeamIds: string[],
+  groupId: string,
+  scoredMatches: Match[]
+): string[] {
+  const map = buildBase(groupTeamIds, groupId, scoredMatches);
+  const standings = [...map.values()];
+  return sortGroupStandings(standings, scoredMatches).map((s) => s.teamId);
 }
 
 function enumerateOrderings(
-  base: Map<string, Standing>,
+  groupTeamIds: string[],
+  groupId: string,
+  finished: Match[],
   remaining: Match[]
 ): string[][] {
   const orderings: string[][] = [];
@@ -106,13 +111,15 @@ function enumerateOrderings(
 
   const recurse = (idx: number) => {
     if (idx === remaining.length) {
-      const clone = cloneMap(base);
+      // 仮想スコアを当てた match を finished に足して、FIFA タイブレーカーで並べる
+      const simulated: Match[] = [...finished];
       for (const r of stack) {
-        const h = clone.get(r.match.homeTeamId);
-        const a = clone.get(r.match.awayTeamId);
-        if (h && a) applyResult(h, a, r.hs, r.as);
+        simulated.push({
+          ...r.match,
+          score: { home: r.hs, away: r.as },
+        });
       }
-      orderings.push(snapshotOrder(clone));
+      orderings.push(orderFromMatches(groupTeamIds, groupId, simulated));
       return;
     }
     const m = remaining[idx];
@@ -175,18 +182,26 @@ export function clinchedRanks(
   finishedMatches: Match[],
   remainingMatches: Match[]
 ): Map<number, string> {
-  const base = buildBase(groupTeamIds, groupId, finishedMatches);
-
   if (remainingMatches.length === 0) {
-    const order = snapshotOrder(base);
+    const order = orderFromMatches(
+      groupTeamIds,
+      groupId,
+      finishedMatches
+    );
     return new Map(order.map((id, i) => [i + 1, id]));
   }
 
   if (remainingMatches.length > ENUM_REMAINING_LIMIT) {
+    const base = buildBase(groupTeamIds, groupId, finishedMatches);
     return pointsOnlyClinch(base, remainingMatches);
   }
 
-  const orderings = enumerateOrderings(base, remainingMatches);
+  const orderings = enumerateOrderings(
+    groupTeamIds,
+    groupId,
+    finishedMatches,
+    remainingMatches
+  );
   const locked = new Map<number, string>();
   const n = groupTeamIds.length;
   for (let k = 0; k < n; k++) {

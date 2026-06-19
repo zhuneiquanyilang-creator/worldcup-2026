@@ -53,10 +53,12 @@ function computeGroupRanks(
     const groupMatches = matches.filter(
       (m) => m.stage === "group" && m.groupId === groupId
     );
-    const finished = groupMatches.filter(
-      (m) => m.status === "finished" && m.score
-    );
-    const remaining = groupMatches.filter((m) => m.status !== "finished");
+    // 「score が入っていれば clinch 計算に使う」(= computeStandings と同じ
+    // 扱い)。これにより live 中で 1-0 とかが反映され、H2H タイブレーカーが
+    // 効くケース (例: MEX が KOR に勝利 → 同点時 MEX 1 位) で正しく clinch する。
+    // live 中にスコアが変わったら自動再計算されるので flicker は許容。
+    const finished = groupMatches.filter((m) => m.score);
+    const remaining = groupMatches.filter((m) => !m.score);
     result.set(groupId, clinchedRanks(teamIds, groupId, finished, remaining));
   }
   return result;
