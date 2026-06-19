@@ -2822,7 +2822,7 @@
         "minute": 79,
         "teamId": "PAR",
         "inName": "ビクトル・グスタボ・ベラスケス",
-        "outName": "フアン・カセレス"
+        "outName": "フアン・カ���レス"
       },
       {
         "minute": 79,
@@ -2840,7 +2840,7 @@
         "minute": 82,
         "teamId": "USA",
         "inName": "ジョヴァンニ・レイナ",
-        "outName": "マリク・ティル���ン"
+        "outName": "マリク・ティルマン"
       }
     ]
   },
@@ -12076,6 +12076,24 @@
         "teamId": "SCO",
         "inName": "リンドン・ダイクス",
         "outName": "シェ・アダムス"
+      },
+      {
+        "minute": 84,
+        "teamId": "MAR",
+        "inName": "スフィアン・ラヒミ",
+        "outName": "イスマエル・サイバリ"
+      },
+      {
+        "minute": 84,
+        "teamId": "MAR",
+        "inName": "ケムスディン・タルビ",
+        "outName": "ビラル・エル・ハヌス"
+      },
+      {
+        "minute": 84,
+        "teamId": "MAR",
+        "inName": "アユベ・アマイムニ",
+        "outName": "ブライム・ディアス"
       }
     ]
   },
