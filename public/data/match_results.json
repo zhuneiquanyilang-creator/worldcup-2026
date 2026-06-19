@@ -7234,7 +7234,7 @@
         "minute": 81,
         "teamId": "NOR",
         "inName": "パトリック・ベルグ",
-        "outName": "マルティン・ウーデゴール"
+        "outName": "マルティン・��ーデゴール"
       }
     ],
     "liveLabel": "Full time",
@@ -12050,6 +12050,14 @@
         "teamId": "MAR",
         "playerName": "イッサ・ディオプ",
         "type": "Y"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": 60,
+        "teamId": "SCO",
+        "inName": "ベン・ドーク",
+        "outName": "キーラン・ティアニー"
       }
     ]
   },
