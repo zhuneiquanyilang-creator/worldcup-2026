@@ -10204,7 +10204,7 @@
         },
         {
           "number": 14,
-          "name": "アルドン・ヤシャ���"
+          "name": "アルドン・ヤシャリ"
         },
         {
           "number": 15,
@@ -11219,7 +11219,7 @@
       ]
     },
     "score": {
-      "home": 0,
+      "home": 1,
       "away": 0
     },
     "liveLabel": "Live",
@@ -11238,6 +11238,20 @@
         "type": "normal",
         "playerId": "p_mex_11",
         "playerName": "ルイス・ロモ"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": 57,
+        "teamId": "KOR",
+        "inName": "ファン・ヒチャン",
+        "outName": "イ・ジェソン"
+      },
+      {
+        "minute": 57,
+        "teamId": "KOR",
+        "inName": "オ・ヒョンギュ",
+        "outName": "ソン・フンミン"
       }
     ]
   },
