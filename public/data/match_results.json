@@ -11312,7 +11312,7 @@
   },
   "m021": {
     "matchId": "m021",
-    "status": "live",
+    "status": "finished",
     "score": {
       "home": 2,
       "away": 0
@@ -11623,7 +11623,7 @@
         "playerName": "アレックス・フリーマン"
       }
     ],
-    "liveLabel": "Live",
+    "liveLabel": "Full time",
     "bookings": [
       {
         "minute": 17,
