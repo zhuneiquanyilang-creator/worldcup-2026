@@ -10611,7 +10611,8 @@
           "y": 25,
           "number": 10,
           "name": "ジョナサン・デイヴィッド",
-          "role": "FW"
+          "role": "FW",
+          "isMvp": true
         },
         {
           "x": 80,
@@ -10926,7 +10927,7 @@
   },
   "m004": {
     "matchId": "m004",
-    "status": "scheduled",
+    "status": "live",
     "homeFormation": {
       "shape": "4-1-4-1",
       "starting": [
@@ -11216,6 +11217,13 @@
           "name": "イ・ドンギョン"
         }
       ]
-    }
+    },
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "liveLabel": "Live"
   }
+}
+
 }

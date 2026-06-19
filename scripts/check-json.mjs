@@ -33,9 +33,50 @@ const files = staged
 
 if (files.length === 0) process.exit(0);
 
+/** 末尾のバランス外文字 ( `\n}` 等) を切り落として再 parse を試みる。
+ *  成功すれば修復された Object を返す。失敗 (本質的に壊れている) なら null。 */
+function selfHealJson(raw) {
+  try {
+    return { data: JSON.parse(raw), repaired: false };
+  } catch {
+    // fall through
+  }
+  let depth = 0,
+    lastClose = -1,
+    inStr = false,
+    esc = false;
+  for (let i = 0; i < raw.length; i++) {
+    const c = raw[i];
+    if (esc) {
+      esc = false;
+      continue;
+    }
+    if (inStr) {
+      if (c === "\\") esc = true;
+      else if (c === '"') inStr = false;
+      continue;
+    }
+    if (c === '"') {
+      inStr = true;
+      continue;
+    }
+    if (c === "{") depth++;
+    else if (c === "}") {
+      depth--;
+      if (depth === 0) lastClose = i;
+    }
+  }
+  if (lastClose < 0) return null;
+  try {
+    return { data: JSON.parse(raw.slice(0, lastClose + 1)), repaired: true };
+  } catch {
+    return null;
+  }
+}
+
 let errors = 0;
+let healed = 0;
 for (const file of files) {
-  // 削除されたファイル等は読めないのでスキップ
   if (!fs.existsSync(file)) continue;
   let raw;
   try {
@@ -45,26 +86,42 @@ for (const file of files) {
     errors++;
     continue;
   }
-  try {
-    JSON.parse(raw);
-  } catch (e) {
-    console.error(`[check-json] INVALID JSON: ${file}`);
-    console.error(`              ${e.message}`);
+  const result = selfHealJson(raw);
+  if (!result) {
+    console.error(`[check-json] INVALID JSON (修復不能): ${file}`);
     errors++;
+    continue;
+  }
+  if (result.repaired) {
+    const fixed = JSON.stringify(result.data, null, 2) + "\n";
+    fs.writeFileSync(file, fixed, "utf8");
+    try {
+      execSync(`git add -- "${file}"`, { stdio: "pipe" });
+    } catch (e) {
+      console.error(`[check-json] git add failed for ${file}: ${e.message}`);
+      errors++;
+      continue;
+    }
+    console.warn(
+      `[check-json] 末尾ゴミを自動修復してステージに戻しました: ${file}`
+    );
+    healed++;
   }
 }
 
 if (errors > 0) {
   console.error(
-    `\n[check-json] ${errors} 個の壊れた JSON ファイルがあります。commit を中断しました。`
+    `\n[check-json] ${errors} 個の修復不能な JSON ファイルがあります。commit を中断しました。`
   );
   console.error(
-    `[check-json] ヒント: dev サーバを起動すると match_results.json は runStartupSelfHeal で自動修復されます。`
-  );
-  console.error(
-    `[check-json] 緊急回避: どうしても commit したい場合は --no-verify を付けてください (推奨しません)。`
+    `[check-json] 緊急回避: --no-verify を付けると hook を skip できます (推奨しません)。`
   );
   process.exit(1);
 }
 
+if (healed > 0) {
+  console.warn(
+    `[check-json] ${healed} ファイルを自動修復しました。そのまま commit を進めます。`
+  );
+}
 process.exit(0);
