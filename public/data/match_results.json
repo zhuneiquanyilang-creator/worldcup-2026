@@ -2912,7 +2912,7 @@
           "x": 28,
           "y": 90,
           "number": 5,
-          "name": "ジョーダン・��ス",
+          "name": "ジョーダン・ボス",
           "role": "DF"
         },
         {
@@ -12049,6 +12049,12 @@
         "minute": 23,
         "teamId": "MAR",
         "playerName": "イッサ・ディオプ",
+        "type": "Y"
+      },
+      {
+        "minute": 65,
+        "teamId": "SCO",
+        "playerName": "アンドリュー・ロバートソン",
         "type": "Y"
       }
     ],
