@@ -2840,7 +2840,7 @@
         "minute": 82,
         "teamId": "USA",
         "inName": "ジョヴァンニ・レイナ",
-        "outName": "マリク・ティルマン"
+        "outName": "マリク・ティル���ン"
       }
     ]
   },
@@ -12064,6 +12064,18 @@
         "teamId": "SCO",
         "inName": "ベン・ドーク",
         "outName": "キーラン・ティアニー"
+      },
+      {
+        "minute": 71,
+        "teamId": "SCO",
+        "inName": "ケニー・マクリーン",
+        "outName": "ライアン・クリスティ"
+      },
+      {
+        "minute": 71,
+        "teamId": "SCO",
+        "inName": "リンドン・ダイクス",
+        "outName": "シェ・アダムス"
       }
     ]
   },
