@@ -11222,8 +11222,14 @@
       "home": 0,
       "away": 0
     },
-    "liveLabel": "Live"
+    "liveLabel": "Live",
+    "bookings": [
+      {
+        "minute": 4,
+        "teamId": "KOR",
+        "playerName": "イ・ガンイン",
+        "type": "Y"
+      }
+    ]
   }
-}
-
 }

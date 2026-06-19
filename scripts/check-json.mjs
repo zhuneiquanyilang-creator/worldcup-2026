@@ -77,12 +77,17 @@ function selfHealJson(raw) {
 let errors = 0;
 let healed = 0;
 for (const file of files) {
-  if (!fs.existsSync(file)) continue;
+  // 重要: ステージ済み (= 実際に commit される) 内容を読む。
+  // 過去 working tree を読んでいたため「working tree は healed / staged は corrupt」
+  // のとき hook が通過 → corrupt 版が GitHub に上がる事故が起きた。
   let raw;
   try {
-    raw = fs.readFileSync(file, "utf8");
+    raw = execSync(`git show :${file}`, {
+      encoding: "utf8",
+      maxBuffer: 64 * 1024 * 1024,
+    });
   } catch (e) {
-    console.error(`[check-json] read failed: ${file}: ${e.message}`);
+    console.error(`[check-json] git show :${file} failed: ${e.message}`);
     errors++;
     continue;
   }
