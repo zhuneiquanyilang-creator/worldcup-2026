@@ -7577,7 +7577,7 @@
       {
         "minute": 46,
         "teamId": "ARG",
-        "inName": "ナウエル・モリーナ",
+        "inName": "ナウエル���モリーナ",
         "outName": "ゴンサロ・モンティエル"
       },
       {
@@ -11660,6 +11660,13 @@
         "teamId": "AUS",
         "playerName": "ジェイコブ・イタリアーノ",
         "type": "Y"
+      },
+      {
+        "minute": 90,
+        "teamId": "USA",
+        "playerName": "クリス・リチャーズ",
+        "type": "Y",
+        "addedTime": 3
       }
     ],
     "substitutions": [
