@@ -79,6 +79,15 @@ export function DateFilter({ dates, current, onChange }: Props) {
       >
         本日
       </button>
+      <button
+        type="button"
+        className={styles.todayBtn}
+        onClick={() => onChange("all")}
+        disabled={current === "all"}
+        title="日付絞り込みを解除して全試合を表示"
+      >
+        すべて
+      </button>
     </div>
   );
 }
