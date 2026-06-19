@@ -7620,7 +7620,7 @@
         "minute": 80,
         "teamId": "ARG",
         "inName": "ニコ・パス",
-        "outName": "リオネル・メッシ"
+        "outName": "リオネル・メッ���"
       },
       {
         "minute": 82,
@@ -11636,6 +11636,12 @@
         "teamId": "AUS",
         "playerName": "アレッサンドロ・チルカティ",
         "type": "Y"
+      },
+      {
+        "minute": 56,
+        "teamId": "USA",
+        "playerName": "アントニー・ロビンソン",
+        "type": "Y"
       }
     ],
     "substitutions": [
@@ -11656,6 +11662,12 @@
         "teamId": "AUS",
         "inName": "ネストリ・イランクンダ",
         "outName": "モハメド・トゥーレ"
+      },
+      {
+        "minute": 61,
+        "teamId": "AUS",
+        "inName": "クリスチャン・ヴォルパート",
+        "outName": "マシュー・レッキー"
       }
     ]
   },
