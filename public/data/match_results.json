@@ -10927,7 +10927,7 @@
   },
   "m004": {
     "matchId": "m004",
-    "status": "live",
+    "status": "finished",
     "homeFormation": {
       "shape": "4-1-4-1",
       "starting": [
@@ -11222,12 +11222,18 @@
       "home": 1,
       "away": 0
     },
-    "liveLabel": "Live",
+    "liveLabel": "Full time",
     "bookings": [
       {
         "minute": 4,
         "teamId": "KOR",
         "playerName": "イ・ガンイン",
+        "type": "Y"
+      },
+      {
+        "minute": 58,
+        "teamId": "KOR",
+        "playerName": "ペク・スンホ",
         "type": "Y"
       }
     ],
@@ -11252,6 +11258,54 @@
         "teamId": "KOR",
         "inName": "オ・ヒョンギュ",
         "outName": "ソン・フンミン"
+      },
+      {
+        "minute": 71,
+        "teamId": "MEX",
+        "inName": "オベド・バルガス",
+        "outName": "ブライアン・グティエレス"
+      },
+      {
+        "minute": 71,
+        "teamId": "MEX",
+        "inName": "オルベリン・ピネダ",
+        "outName": "ルイス・ロモ"
+      },
+      {
+        "minute": 72,
+        "teamId": "KOR",
+        "inName": "ヤン・ヒョンジュン",
+        "outName": "キム・ムンファン"
+      },
+      {
+        "minute": 72,
+        "teamId": "KOR",
+        "inName": "オム・チソン",
+        "outName": "ソル・ヨンウ"
+      },
+      {
+        "minute": 77,
+        "teamId": "KOR",
+        "inName": "チョ・ギュソン",
+        "outName": "ペク・スンホ"
+      },
+      {
+        "minute": 80,
+        "teamId": "MEX",
+        "inName": "サンティアゴ・ヒメネス",
+        "outName": "ラウール・ヒメネス"
+      },
+      {
+        "minute": 80,
+        "teamId": "MEX",
+        "inName": "イスラエル・レジェス",
+        "outName": "ロベルト・アルバラード"
+      },
+      {
+        "minute": 84,
+        "teamId": "MEX",
+        "inName": "セサル・ウエルタ",
+        "outName": "フリアン・キニョネス"
       }
     ]
   },
