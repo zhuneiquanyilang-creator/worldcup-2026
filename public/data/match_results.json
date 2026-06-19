@@ -3554,7 +3554,7 @@
         },
         {
           "number": 11,
-          "name": "ジェレミー・アントニ���セ"
+          "name": "ジェレミー・アントニッセ"
         },
         {
           "number": 13,
@@ -9530,7 +9530,7 @@
         },
         {
           "number": 21,
-          "name": "ハミントン・カンパス"
+          "name": "ハミ���トン・カンパス"
         },
         {
           "number": 22,
@@ -10485,12 +10485,12 @@
   },
   "m010": {
     "matchId": "m010",
-    "status": "live",
+    "status": "finished",
     "score": {
       "home": 6,
       "away": 0
     },
-    "liveLabel": "Live",
+    "liveLabel": "Full time",
     "goals": [
       {
         "minute": 16,
