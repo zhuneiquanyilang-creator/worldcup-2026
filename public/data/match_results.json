@@ -3179,7 +3179,7 @@
         "minute": 61,
         "teamId": "AUS",
         "inName": "ニシャン・ヴェルピレイ",
-        "outName": "ネストリ・イランクンダ"
+        "outName": "ネストリ・��ランクンダ"
       },
       {
         "minute": 62,
@@ -7595,7 +7595,7 @@
       {
         "minute": 64,
         "teamId": "ALG",
-        "inName": "フセム・アワール",
+        "inName": "フセム・アワー��",
         "outName": "ヒシャム・ブダウィ"
       },
       {
@@ -11674,6 +11674,24 @@
         "teamId": "USA",
         "inName": "セバスチャン・バーハルター",
         "outName": "リカルド・ペピ"
+      },
+      {
+        "minute": 78,
+        "teamId": "AUS",
+        "inName": "ジャクソン・アーヴァイン",
+        "outName": "ポール・オコン・エングストラー"
+      },
+      {
+        "minute": 80,
+        "teamId": "USA",
+        "inName": "オーストン・トラスティ",
+        "outName": "アントニー・ロビンソン"
+      },
+      {
+        "minute": 80,
+        "teamId": "USA",
+        "inName": "ジョー・スカリー",
+        "outName": "セルジーニョ・デスト"
       }
     ]
   },
