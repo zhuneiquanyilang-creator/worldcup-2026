@@ -11637,6 +11637,26 @@
         "playerName": "アレッサンドロ・チルカティ",
         "type": "Y"
       }
+    ],
+    "substitutions": [
+      {
+        "minute": 46,
+        "teamId": "AUS",
+        "inName": "ジェイソン・ゲリア",
+        "outName": "キャメロン・バージェス"
+      },
+      {
+        "minute": 46,
+        "teamId": "AUS",
+        "inName": "コナー・メットカーフ",
+        "outName": "ニシャン・ヴェルピレイ"
+      },
+      {
+        "minute": 46,
+        "teamId": "AUS",
+        "inName": "ネストリ・イランクンダ",
+        "outName": "モハメド・トゥーレ"
+      }
     ]
   },
   "m015": {
