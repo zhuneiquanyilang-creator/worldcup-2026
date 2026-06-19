@@ -7595,7 +7595,7 @@
       {
         "minute": 64,
         "teamId": "ALG",
-        "inName": "フセム・アワー��",
+        "inName": "フセム・アワール",
         "outName": "ヒシャム・ブダウィ"
       },
       {
@@ -11641,6 +11641,24 @@
         "minute": 56,
         "teamId": "USA",
         "playerName": "アントニー・ロビンソン",
+        "type": "Y"
+      },
+      {
+        "minute": 89,
+        "teamId": "AUS",
+        "playerName": "ハリー・ソウター",
+        "type": "Y"
+      },
+      {
+        "minute": 89,
+        "teamId": "USA",
+        "playerName": "フォラリン・バログン",
+        "type": "Y"
+      },
+      {
+        "minute": 89,
+        "teamId": "AUS",
+        "playerName": "ジェイコブ・イタリアーノ",
         "type": "Y"
       }
     ],
