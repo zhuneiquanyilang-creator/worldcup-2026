@@ -7,6 +7,22 @@ import { spawn } from "node:child_process";
 const RESULTS_PATH = path.resolve(__dirname, "public/data/match_results.json");
 const RESULTS_REL = "public/data/match_results.json";
 
+/** match_results.json への読み取り→書き込みを直列化するミューテックス。
+ *  並行 POST や periodic-catchup と matchResultsWriter の同時書き込みで
+ *  ファイルが壊れる事故 (末尾に `\n}` 混入) を防ぐ。
+ *
+ *  使い方: `await withWriteLock(async () => { ...read+merge+write... })`
+ *  fn の中で throw しても次の caller は普通に実行される (チェーンは切れない)。 */
+let writeLock: Promise<unknown> = Promise.resolve();
+function withWriteLock<T>(fn: () => Promise<T>): Promise<T> {
+  const next = writeLock.then(
+    () => fn(),
+    () => fn()
+  );
+  writeLock = next.catch(() => {});
+  return next;
+}
+
 /**
  * `match_results.json` を読んで JSON オブジェクトを返す。普通に `JSON.parse` を
  * 試し、失敗したら末尾のバランス外 `}` 等のゴミを切り落として再パース (自己修復)。
@@ -64,17 +80,49 @@ function selfHealJson(
   }
 }
 
-// GitHub Desktop バンドル版 git のパス。PATH に git が無い環境向けフォールバック。
-const GIT_BIN_CANDIDATES = [
-  "git",
-  "C:\\Program Files\\Git\\cmd\\git.exe",
-  `${process.env.LOCALAPPDATA ?? ""}\\GitHubDesktop\\app-3.5.8\\resources\\app\\git\\cmd\\git.exe`,
-];
+/** GitHub Desktop の `app-X.Y.Z` フォルダを動的に列挙する。
+ *  バージョン番号でソートして新しい方から優先。固定パスがバージョン更新で失効する事故を防ぐ。 */
+async function listGitHubDesktopGitBins(): Promise<string[]> {
+  const root = `${process.env.LOCALAPPDATA ?? ""}\\GitHubDesktop`;
+  if (!process.env.LOCALAPPDATA) return [];
+  try {
+    const dirs = await fs.readdir(root);
+    const appDirs = dirs.filter((d) => /^app-\d/.test(d));
+    // app-3.5.11 のような形式を降順ソート (新しい方を先に試す)
+    appDirs.sort((a, b) => {
+      const pa = a.replace("app-", "").split(".").map((n) => parseInt(n, 10) || 0);
+      const pb = b.replace("app-", "").split(".").map((n) => parseInt(n, 10) || 0);
+      for (let i = 0; i < Math.max(pa.length, pb.length); i++) {
+        const diff = (pb[i] ?? 0) - (pa[i] ?? 0);
+        if (diff !== 0) return diff;
+      }
+      return 0;
+    });
+    return appDirs.map(
+      (d) => `${root}\\${d}\\resources\\app\\git\\cmd\\git.exe`
+    );
+  } catch {
+    return [];
+  }
+}
 
 let cachedGitBin: string | null = null;
+let gitBinCandidatesCache: string[] | null = null;
+async function getGitBinCandidates(): Promise<string[]> {
+  if (gitBinCandidatesCache) return gitBinCandidatesCache;
+  const githubDesktopBins = await listGitHubDesktopGitBins();
+  gitBinCandidatesCache = [
+    "git",
+    "C:\\Program Files\\Git\\cmd\\git.exe",
+    ...githubDesktopBins,
+  ];
+  return gitBinCandidatesCache;
+}
+
 async function findGit(): Promise<string | null> {
   if (cachedGitBin) return cachedGitBin;
-  for (const candidate of GIT_BIN_CANDIDATES) {
+  const candidates = await getGitBinCandidates();
+  for (const candidate of candidates) {
     if (!candidate) continue;
     try {
       // 存在チェック (絶対パスなら fs.access、それ以外は spawn でテスト)
@@ -244,70 +292,84 @@ function matchResultsWriter(): Plugin {
             res.end("body must be an object");
             return;
           }
-          let existing: Record<string, unknown> = {};
-          try {
-            const raw = await fs.readFile(RESULTS_PATH, "utf8");
-            const healed = selfHealJson(raw);
-            if (!healed) {
-              // 既存ファイルがあるのに parse 出来ない & 修復も無理 →
-              // 全データを失うのでここで書き込み拒否。
-              console.warn(
-                "[match-results-writer] 既存 match_results.json が parse 不能 & 自己修復不能 — 書き込みを拒否してデータ保護"
-              );
-              res.statusCode = 500;
-              res.end(
-                "match_results.json is corrupt and cannot be self-healed; refusing write to protect data"
-              );
-              return;
+          // 読み取り → merge → 書き込み → verify の一連を直列化。
+          // 並行 POST と periodic-catchup を同時に動かしても破損しない。
+          type WriteOutcome =
+            | { kind: "ok"; count: number }
+            | { kind: "rejected" }
+            | { kind: "verifyFailed"; message: string; count: number };
+          const outcome = await withWriteLock<WriteOutcome>(async () => {
+            let existing: Record<string, unknown> = {};
+            try {
+              const raw = await fs.readFile(RESULTS_PATH, "utf8");
+              const healed = selfHealJson(raw);
+              if (!healed) {
+                console.warn(
+                  "[match-results-writer] 既存 match_results.json が parse 不能 & 自己修復不能 — 書き込みを拒否してデータ保護"
+                );
+                return { kind: "rejected" };
+              }
+              existing = healed.data;
+              if (healed.repaired) {
+                console.warn(
+                  "[match-results-writer] 既存 match_results.json の末尾ゴミを自動修復しました"
+                );
+              }
+            } catch (e: unknown) {
+              const code = (e as { code?: string } | null)?.code;
+              if (code !== "ENOENT") throw e;
             }
-            existing = healed.data;
-            if (healed.repaired) {
-              console.warn(
-                "[match-results-writer] 既存 match_results.json の末尾ゴミを自動修復しました"
-              );
-            }
-          } catch (e: unknown) {
-            // ENOENT (ファイル未作成) なら空から始める。それ以外は再 throw。
-            const code = (e as { code?: string } | null)?.code;
-            if (code !== "ENOENT") throw e;
-          }
-          // field-level merge per match (cf. ヘッダコメント)
-          const merged: Record<string, unknown> = { ...existing };
-          for (const [id, val] of Object.entries(incoming)) {
-            if (val && typeof val === "object" && !Array.isArray(val)) {
-              const existingMatch = merged[id];
-              if (
-                existingMatch &&
-                typeof existingMatch === "object" &&
-                !Array.isArray(existingMatch)
-              ) {
-                merged[id] = {
-                  ...(existingMatch as Record<string, unknown>),
-                  ...(val as Record<string, unknown>),
-                };
+            // field-level merge per match (cf. ヘッダコメント)
+            const merged: Record<string, unknown> = { ...existing };
+            for (const [id, val] of Object.entries(incoming)) {
+              if (val && typeof val === "object" && !Array.isArray(val)) {
+                const existingMatch = merged[id];
+                if (
+                  existingMatch &&
+                  typeof existingMatch === "object" &&
+                  !Array.isArray(existingMatch)
+                ) {
+                  merged[id] = {
+                    ...(existingMatch as Record<string, unknown>),
+                    ...(val as Record<string, unknown>),
+                  };
+                } else {
+                  merged[id] = val;
+                }
               } else {
                 merged[id] = val;
               }
-            } else {
-              merged[id] = val;
             }
+            const output = JSON.stringify(merged, null, 2) + "\n";
+            await fs.writeFile(RESULTS_PATH, output, "utf8");
+            // 書き戻し検証 (ロック内なので他者の書き込みは挟まらないはず)
+            try {
+              const verify = await fs.readFile(RESULTS_PATH, "utf8");
+              JSON.parse(verify);
+            } catch (verr) {
+              return {
+                kind: "verifyFailed",
+                message: verr instanceof Error ? verr.message : String(verr),
+                count: Object.keys(merged).length,
+              };
+            }
+            return { kind: "ok", count: Object.keys(merged).length };
+          });
+          if (outcome.kind === "rejected") {
+            res.statusCode = 500;
+            res.end(
+              "match_results.json is corrupt and cannot be self-healed; refusing write to protect data"
+            );
+            return;
           }
-          const output = JSON.stringify(merged, null, 2) + "\n";
-          await fs.writeFile(RESULTS_PATH, output, "utf8");
-          // 書き戻し検証 — 万一書き込み直後に壊れたら気付けるように。
-          try {
-            const verify = await fs.readFile(RESULTS_PATH, "utf8");
-            JSON.parse(verify);
-          } catch (verr) {
+          if (outcome.kind === "verifyFailed") {
             console.warn(
-              `[match-results-writer] 書き込み後の verify に失敗: ${
-                verr instanceof Error ? verr.message : String(verr)
-              }`
+              `[match-results-writer] 書き込み後の verify に失敗: ${outcome.message}`
             );
           }
           res.setHeader("Content-Type", "application/json");
           res.statusCode = 200;
-          res.end(JSON.stringify({ ok: true, count: Object.keys(merged).length }));
+          res.end(JSON.stringify({ ok: true, count: outcome.count }));
 
           // 書き込み成功後に push をスケジュール (await しない)
           schedulePush();
@@ -436,62 +498,67 @@ async function runPeriodicCatchup(apiKey: string) {
     if (typeof fdId === "number") fdToLocal.set(fdId, localId);
   }
 
-  // 既存 results を read (self-heal 付き、parse 不能なら abort)
-  let results: Record<string, Record<string, unknown>> = {};
-  try {
-    const raw = await fs.readFile(RESULTS_PATH, "utf8");
-    const healed = selfHealJson(raw);
-    if (!healed) {
-      console.warn(
-        "[periodic-catchup] match_results.json が parse 不能 — abort (データ保護)"
+  // read → merge → write をロックで直列化
+  const updated = await withWriteLock<number>(async () => {
+    let results: Record<string, Record<string, unknown>> = {};
+    try {
+      const raw = await fs.readFile(RESULTS_PATH, "utf8");
+      const healed = selfHealJson(raw);
+      if (!healed) {
+        console.warn(
+          "[periodic-catchup] match_results.json が parse 不能 — abort (データ保護)"
+        );
+        return 0;
+      }
+      results = healed.data as Record<string, Record<string, unknown>>;
+    } catch (e: unknown) {
+      const code = (e as { code?: string } | null)?.code;
+      if (code !== "ENOENT") throw e;
+    }
+
+    let count = 0;
+    for (const fx of fdMatches) {
+      const localId = fdToLocal.get(fx.id);
+      if (!localId) continue;
+      const status = mapFdStatus(fx.status);
+      const update: Record<string, unknown> = { matchId: localId };
+      if (status) update.status = status;
+      const ft = fx.score?.fullTime;
+      if (typeof ft?.home === "number" && typeof ft?.away === "number") {
+        update.score = { home: ft.home, away: ft.away };
+      }
+      const pk = fx.score?.penalties;
+      if (typeof pk?.home === "number" && typeof pk?.away === "number") {
+        update.penaltyScore = { home: pk.home, away: pk.away };
+      }
+
+      const prev = results[localId] ?? {};
+      const sameStatus = prev.status === update.status;
+      const sameScore =
+        JSON.stringify(prev.score) === JSON.stringify(update.score);
+      const samePk =
+        JSON.stringify(prev.penaltyScore) ===
+        JSON.stringify(update.penaltyScore);
+      if (sameStatus && sameScore && samePk) continue;
+
+      results[localId] = { ...prev, ...update };
+      count++;
+      console.log(
+        `[periodic-catchup] ${localId}: ${fx.homeTeam?.tla} ${ft?.home ?? "?"}-${ft?.away ?? "?"} ${fx.awayTeam?.tla} [${fx.status}]`
       );
-      return;
-    }
-    results = healed.data as Record<string, Record<string, unknown>>;
-  } catch (e: unknown) {
-    const code = (e as { code?: string } | null)?.code;
-    if (code !== "ENOENT") throw e;
-  }
-
-  let updated = 0;
-  for (const fx of fdMatches) {
-    const localId = fdToLocal.get(fx.id);
-    if (!localId) continue;
-    const status = mapFdStatus(fx.status);
-    const update: Record<string, unknown> = { matchId: localId };
-    if (status) update.status = status;
-    const ft = fx.score?.fullTime;
-    if (typeof ft?.home === "number" && typeof ft?.away === "number") {
-      update.score = { home: ft.home, away: ft.away };
-    }
-    const pk = fx.score?.penalties;
-    if (typeof pk?.home === "number" && typeof pk?.away === "number") {
-      update.penaltyScore = { home: pk.home, away: pk.away };
     }
 
-    const prev = results[localId] ?? {};
-    const sameStatus = prev.status === update.status;
-    const sameScore =
-      JSON.stringify(prev.score) === JSON.stringify(update.score);
-    const samePk =
-      JSON.stringify(prev.penaltyScore) ===
-      JSON.stringify(update.penaltyScore);
-    if (sameStatus && sameScore && samePk) continue;
+    if (count === 0) return 0;
 
-    results[localId] = { ...prev, ...update };
-    updated++;
-    console.log(
-      `[periodic-catchup] ${localId}: ${fx.homeTeam?.tla} ${ft?.home ?? "?"}-${ft?.away ?? "?"} ${fx.awayTeam?.tla} [${fx.status}]`
+    await fs.writeFile(
+      RESULTS_PATH,
+      JSON.stringify(results, null, 2) + "\n",
+      "utf8"
     );
-  }
+    return count;
+  });
 
   if (updated === 0) return;
-
-  await fs.writeFile(
-    RESULTS_PATH,
-    JSON.stringify(results, null, 2) + "\n",
-    "utf8"
-  );
   console.log(
     `[periodic-catchup] ${updated} 試合を match_results.json に書き込み`
   );
@@ -499,30 +566,32 @@ async function runPeriodicCatchup(apiKey: string) {
 }
 
 async function runStartupSelfHeal() {
-  let raw: string;
-  try {
-    raw = await fs.readFile(RESULTS_PATH, "utf8");
-  } catch (e: unknown) {
-    const code = (e as { code?: string } | null)?.code;
-    if (code === "ENOENT") return;
-    throw e;
-  }
-  const healed = selfHealJson(raw);
-  if (!healed) {
-    console.warn(
-      "[startup-self-heal] match_results.json が parse 不能 & 自己修復不能 — 手動で修正してください"
+  await withWriteLock(async () => {
+    let raw: string;
+    try {
+      raw = await fs.readFile(RESULTS_PATH, "utf8");
+    } catch (e: unknown) {
+      const code = (e as { code?: string } | null)?.code;
+      if (code === "ENOENT") return;
+      throw e;
+    }
+    const healed = selfHealJson(raw);
+    if (!healed) {
+      console.warn(
+        "[startup-self-heal] match_results.json が parse 不能 & 自己修復不能 — 手動で修正してください"
+      );
+      return;
+    }
+    if (!healed.repaired) return;
+    await fs.writeFile(
+      RESULTS_PATH,
+      JSON.stringify(healed.data, null, 2) + "\n",
+      "utf8"
     );
-    return;
-  }
-  if (!healed.repaired) return;
-  await fs.writeFile(
-    RESULTS_PATH,
-    JSON.stringify(healed.data, null, 2) + "\n",
-    "utf8"
-  );
-  console.warn(
-    "[startup-self-heal] match_results.json の末尾ゴミを自動修復しました (commit & push 推奨)"
-  );
+    console.warn(
+      "[startup-self-heal] match_results.json の末尾ゴミを自動修復しました (commit & push 推奨)"
+    );
+  });
 }
 
 function mapFdStatus(s: string): "scheduled" | "live" | "finished" | null {
@@ -624,7 +693,9 @@ async function runStartupCatchup(apiKey: string) {
   }
 
   const teamCache = new Map<string, Array<Record<string, any>>>();
-  let synced = 0;
+  // Football-Data から候補試合分の update を accumulate する (ロック外、遅い処理)
+  const pendingUpdates: Record<string, Record<string, unknown>> = {};
+  const fdMeta: Record<string, { tlaH?: string; tlaA?: string; ft?: any; rawStatus?: string }> = {};
 
   for (const m of candidates) {
     const entry = mapping[m.id];
@@ -665,32 +736,63 @@ async function runStartupCatchup(apiKey: string) {
     if (typeof pk?.home === "number" && typeof pk?.away === "number") {
       update.penaltyScore = { home: pk.home, away: pk.away };
     }
-
-    const prev = results[m.id] ?? {};
-    const sameStatus = prev.status === update.status;
-    const sameScore =
-      JSON.stringify(prev.score) === JSON.stringify(update.score);
-    const samePk =
-      JSON.stringify(prev.penaltyScore) === JSON.stringify(update.penaltyScore);
-    if (sameStatus && sameScore && samePk) continue;
-
-    results[m.id] = { ...prev, ...update };
-    synced++;
-    console.log(
-      `[startup-catchup] ${m.id}: ${fx.homeTeam?.tla} ${ft?.home}-${ft?.away} ${fx.awayTeam?.tla} [${fx.status}]`
-    );
+    pendingUpdates[m.id] = update;
+    fdMeta[m.id] = { tlaH: fx.homeTeam?.tla, tlaA: fx.awayTeam?.tla, ft, rawStatus: fx.status };
   }
+
+  if (Object.keys(pendingUpdates).length === 0) {
+    console.log("[startup-catchup] 取得結果なし");
+    return;
+  }
+
+  // ロック内で再 read → merge → write (FD 取得中に他者が書き込んでいても破壊しない)
+  const synced = await withWriteLock<number>(async () => {
+    let freshResults: Record<string, Record<string, unknown>> = {};
+    try {
+      const raw = await fs.readFile(RESULTS_PATH, "utf8");
+      const healed = selfHealJson(raw);
+      if (!healed) {
+        console.warn(
+          "[startup-catchup] write 直前の re-read で parse 不能 — abort (データ保護)"
+        );
+        return 0;
+      }
+      freshResults = healed.data as Record<string, Record<string, unknown>>;
+    } catch (e: unknown) {
+      const code = (e as { code?: string } | null)?.code;
+      if (code !== "ENOENT") throw e;
+    }
+
+    let count = 0;
+    for (const [id, update] of Object.entries(pendingUpdates)) {
+      const prev = freshResults[id] ?? {};
+      const sameStatus = prev.status === update.status;
+      const sameScore =
+        JSON.stringify(prev.score) === JSON.stringify(update.score);
+      const samePk =
+        JSON.stringify(prev.penaltyScore) ===
+        JSON.stringify(update.penaltyScore);
+      if (sameStatus && sameScore && samePk) continue;
+      freshResults[id] = { ...prev, ...update };
+      count++;
+      const meta = fdMeta[id];
+      console.log(
+        `[startup-catchup] ${id}: ${meta.tlaH} ${meta.ft?.home}-${meta.ft?.away} ${meta.tlaA} [${meta.rawStatus}]`
+      );
+    }
+    if (count === 0) return 0;
+    await fs.writeFile(
+      RESULTS_PATH,
+      JSON.stringify(freshResults, null, 2) + "\n",
+      "utf8"
+    );
+    return count;
+  });
 
   if (synced === 0) {
     console.log("[startup-catchup] 差分なし (全試合最新)");
     return;
   }
-
-  await fs.writeFile(
-    RESULTS_PATH,
-    JSON.stringify(results, null, 2) + "\n",
-    "utf8"
-  );
   console.log(
     `[startup-catchup] ${synced} 試合を match_results.json に書き込み`
   );
