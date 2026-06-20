@@ -13682,6 +13682,16 @@
         "playerName": "デニズ・ウンダフ",
         "assistPlayerId": "p_ger_16",
         "assistPlayerName": "ナディエム・アミリ"
+      },
+      {
+        "minute": 90,
+        "teamId": "GER",
+        "type": "normal",
+        "addedTime": 4,
+        "playerId": "p_ger_25",
+        "playerName": "デニズ・ウンダフ",
+        "assistPlayerId": "p_ger_7",
+        "assistPlayerName": "フェリックス・ヌメチャ"
       }
     ],
     "substitutions": [
