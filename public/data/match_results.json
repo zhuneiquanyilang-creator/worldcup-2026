@@ -12523,7 +12523,7 @@
         "minute": 81,
         "teamId": "BRA",
         "inName": "エデルソン",
-        "outName": "ヴィニシウス・ジュニオール"
+        "outName": "ヴィニシウス・ジュ���オール"
       },
       {
         "minute": 81,
@@ -12931,7 +12931,7 @@
   },
   "m033": {
     "matchId": "m033",
-    "status": "scheduled",
+    "status": "live",
     "homeFormation": {
       "shape": "4-3-3",
       "starting": [
@@ -13221,7 +13221,12 @@
           "name": "タハ・アリ"
         }
       ]
-    }
+    },
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "liveLabel": "Live"
   },
   "m027": {
     "matchId": "m027",
