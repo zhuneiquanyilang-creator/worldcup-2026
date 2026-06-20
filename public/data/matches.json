@@ -14,7 +14,7 @@
   { "id": "m013", "stage": "group", "groupId": "C", "date": "2026-06-13T18:00:00-04:00", "venue": "ニューヨーク・ニュージャージー・スタジアム（アメリカ）", "homeTeamId": "BRA", "awayTeamId": "MAR", "status": "scheduled", "broadcasters": ["dazn"] },
   { "id": "m014", "stage": "group", "groupId": "C", "date": "2026-06-13T21:00:00-04:00", "venue": "ボストン・スタジアム（アメリカ）", "homeTeamId": "HAI", "awayTeamId": "SCO", "status": "scheduled", "broadcasters": ["nhk-g","nhk-bs4k","dazn"] },
   { "id": "m015", "stage": "group", "groupId": "C", "date": "2026-06-19T18:00:00-04:00", "venue": "ボストン・スタジアム（アメリカ）", "homeTeamId": "SCO", "awayTeamId": "MAR", "status": "scheduled", "broadcasters": ["fuji","dazn"] },
-  { "id": "m016", "stage": "group", "groupId": "C", "date": "2026-06-19T21:00:00-04:00", "venue": "フィラデルフィア・スタジアム（アメリカ）", "homeTeamId": "BRA", "awayTeamId": "HAI", "status": "scheduled", "broadcasters": ["nhk-g","nhk-bs4k","dazn"] },
+  { "id": "m016", "stage": "group", "groupId": "C", "date": "2026-06-19T20:30:00-04:00", "venue": "フィラデルフィア・スタジアム（アメリカ）", "homeTeamId": "BRA", "awayTeamId": "HAI", "status": "scheduled", "broadcasters": ["nhk-g","nhk-bs4k","dazn"] },
   { "id": "m017", "stage": "group", "groupId": "C", "date": "2026-06-24T18:00:00-04:00", "venue": "マイアミ・スタジアム（アメリカ）", "homeTeamId": "SCO", "awayTeamId": "BRA", "status": "scheduled", "broadcasters": ["dazn"] },
   { "id": "m018", "stage": "group", "groupId": "C", "date": "2026-06-24T18:00:00-04:00", "venue": "アトランタ・スタジアム（アメリカ）", "homeTeamId": "MAR", "awayTeamId": "HAI", "status": "scheduled", "broadcasters": ["dazn"] },
   { "id": "m019", "stage": "group", "groupId": "D", "date": "2026-06-12T18:00:00-07:00", "venue": "ロサンゼルス・スタジアム（アメリカ）", "homeTeamId": "USA", "awayTeamId": "PAR", "status": "scheduled", "broadcasters": ["dazn"] },

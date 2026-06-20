@@ -15,7 +15,17 @@ export function StandingsPage() {
   // 選択中のグループを URL クエリ (?group=C) に保存。
   // チーム詳細などへ遷移 → ブラウザ戻るで自動的に同じグループに復帰する。
   const [params, setParams] = useSearchParams();
-  const currentGroup = params.get("group") ?? "A";
+  // URL に ?group= が無いときのデフォルト: ライブ中のグループ戦があればその
+  // グループ (複数あれば groupId 昇順で最初)、無ければ "A"。
+  const liveGroupId = useMemo(() => {
+    if (matchesRes.status !== "ready") return undefined;
+    const live = matchesRes.data
+      .filter((m) => m.stage === "group" && m.status === "live" && m.groupId)
+      .map((m) => m.groupId as string)
+      .sort();
+    return live[0];
+  }, [matchesRes]);
+  const currentGroup = params.get("group") ?? liveGroupId ?? "A";
   const setCurrentGroup = (g: string) => {
     const next = new URLSearchParams(params);
     next.set("group", g);
