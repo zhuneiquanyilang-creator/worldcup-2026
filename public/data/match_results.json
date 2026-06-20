@@ -5585,7 +5585,7 @@
         },
         {
           "number": 15,
-          "name": "ナンド・パイナ��ル"
+          "name": "ナンド・パイナケル"
         },
         {
           "number": 17,
@@ -13681,6 +13681,24 @@
         "teamId": "GER",
         "inName": "アントニオ・リュディガー",
         "outName": "ニコ・シュロッターベック"
+      },
+      {
+        "minute": 60,
+        "teamId": "GER",
+        "inName": "ナディエム・アミリ",
+        "outName": "アレクサンダル・パヴロビッチ"
+      },
+      {
+        "minute": 60,
+        "teamId": "GER",
+        "inName": "デニズ・ウンダフ",
+        "outName": "ジャマル・ムシアラ"
+      },
+      {
+        "minute": 60,
+        "teamId": "GER",
+        "inName": "ジェイミー・レヴェリング",
+        "outName": "レロイ・サネ"
       }
     ]
   },
