@@ -5585,7 +5585,7 @@
         },
         {
           "number": 15,
-          "name": "ナンド・パイナケル"
+          "name": "ナンド・パイナ��ル"
         },
         {
           "number": 17,
@@ -5597,7 +5597,7 @@
         },
         {
           "number": 19,
-          "name": "ベン・オー��ド"
+          "name": "ベン・オールド"
         },
         {
           "number": 21,
@@ -13673,6 +13673,14 @@
         "type": "normal",
         "playerId": "p_civ_12",
         "playerName": "フランク・ケシエ"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": 46,
+        "teamId": "GER",
+        "inName": "アントニオ・リュディガー",
+        "outName": "ニコ・シュロッターベック"
       }
     ]
   },
