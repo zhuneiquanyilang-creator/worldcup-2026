@@ -12523,7 +12523,7 @@
         "minute": 81,
         "teamId": "BRA",
         "inName": "エデルソン",
-        "outName": "ヴィニシウス・ジュ���オール"
+        "outName": "ヴィニシウス・ジュニオール"
       },
       {
         "minute": 81,
@@ -13310,6 +13310,18 @@
         "teamId": "NED",
         "inName": "フース・ティル",
         "outName": "タイアニ・ラインデルス"
+      },
+      {
+        "minute": 72,
+        "teamId": "NED",
+        "inName": "メンフィス・デパイ",
+        "outName": "ブライアン・ブロビー"
+      },
+      {
+        "minute": 79,
+        "teamId": "SWE",
+        "inName": "タハ・アリ",
+        "outName": "ヤシン・アヤリ"
       }
     ],
     "bookings": [
@@ -13317,6 +13329,12 @@
         "minute": 53,
         "teamId": "SWE",
         "playerName": "ガブリエル・グズムンドソン",
+        "type": "Y"
+      },
+      {
+        "minute": 75,
+        "teamId": "SWE",
+        "playerName": "ヤシン・アヤリ",
         "type": "Y"
       }
     ]
