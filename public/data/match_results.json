@@ -13732,6 +13732,18 @@
         "teamId": "CIV",
         "inName": "ゲラ・ドゥエ",
         "outName": "ウィルフリード・シンゴ"
+      },
+      {
+        "minute": 85,
+        "teamId": "GER",
+        "inName": "レオン・ゴレツカ",
+        "outName": "カイ・ハヴァーツ"
+      },
+      {
+        "minute": 85,
+        "teamId": "CIV",
+        "inName": "ニコラ・ペペ",
+        "outName": "ヤン・ディオマンデ"
       }
     ]
   },
