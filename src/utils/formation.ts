@@ -126,18 +126,35 @@ export function spreadFormationLayers(
     : fieldDistinctX;
   if (distinctX.length < 2) return formation;
 
-  // 各層が中央 (y∈[40,60]) に選手を持つかを記録
-  const hasCenter = new Map<number, boolean>();
-  for (const x of distinctX) {
-    if (gkAsLayer && x === gkAsLayer.x) {
-      hasCenter.set(x, true);
-      continue;
-    }
-    const inLayer = fieldSpots.filter((s) => s.x === x);
-    hasCenter.set(x, inLayer.some((s) => s.y >= 40 && s.y <= 60));
-  }
+  // 各層の y 値リスト (GK 仮想層は y=50 1点とみなす)
+  const ysFor = (x: number): number[] => {
+    if (gkAsLayer && x === gkAsLayer.x) return [50];
+    return fieldSpots.filter((s) => s.x === x).map((s) => s.y);
+  };
+  const hasCenterAt = (x: number): boolean =>
+    ysFor(x).some((y) => y >= 40 && y <= 60);
+  // 「両層の中で y 値が近接 (< Y_PROX) するペアがあるか」を判定。
+  // 3-4-1-2 などで DF (y=16.67) と MF1 (y=12.5) のように縦位置がほぼ同じ場合、
+  // 名前ラベルが長いと x 間隔 17 では衝突するのでこれを検出して spread する。
+  const Y_PROX = 15;
+  const yProximity = (xa: number, xb: number): boolean => {
+    const ya = ysFor(xa);
+    const yb = ysFor(xb);
+    return ya.some((va) => yb.some((vb) => Math.abs(va - vb) < Y_PROX));
+  };
 
-  const MIN_LAYER_SPREAD = 25;
+  // 3-field-layer (4-3-3 / 4-4-2 等) は generateFormation の X_MIN=28 / X_MAX=80
+  // で自然に 26 単位間隔があり名前は被らない。4-field-layer (3-4-1-2 / 4-2-3-1
+  // 等) は 17 単位しかないので、縦位置が近い隣接層に WEAK_SPREAD を強制する。
+  const isPacked = fieldDistinctX.length >= 4;
+
+  const STRONG_SPREAD = 30; // bothCenter 用 (GK ↔ 奇数バックのセンターバック等)
+                            // 30 にしてあるのは: GK が長い名前 (例 ノードフェルト) の場合
+                            // 名前ラベルを内側にずらす (CombinedFormation の labelDX) と
+                            // DF センター (例 ヒエン) の名前と被ってしまうため、
+                            // DF 側もしっかり前に押し出して間隔を確保する。
+  const WEAK_SPREAD = 20;   // 4-packed で y 近接時の最低横間隔
+  const SAFE_GAP = 12;      // 強制 spread が無くても前層との余白を確保
   const MAX_X = 95;
   const adjusted = new Map<number, number>();
   for (let i = 0; i < distinctX.length; i++) {
@@ -148,14 +165,20 @@ export function spreadFormationLayers(
     }
     const prevOriginal = distinctX[i - 1];
     const prevAdjusted = adjusted.get(prevOriginal)!;
-    const bothCenter = hasCenter.get(prevOriginal) && hasCenter.get(original);
-    if (!bothCenter) {
-      adjusted.set(original, original);
-      continue;
+    let minSpread = 0;
+    if (hasCenterAt(prevOriginal) && hasCenterAt(original)) {
+      minSpread = STRONG_SPREAD;
+    } else if (isPacked && yProximity(prevOriginal, original)) {
+      minSpread = WEAK_SPREAD;
     }
-    const minHere = prevAdjusted + MIN_LAYER_SPREAD;
-    const x = Math.min(MAX_X, Math.max(original, minHere));
-    adjusted.set(original, x);
+    let target = original;
+    if (minSpread > 0) {
+      target = Math.max(original, prevAdjusted + minSpread);
+    } else if (prevAdjusted + SAFE_GAP > original) {
+      // 前層が押し出された結果 original に近づきすぎた → 最低限離す
+      target = prevAdjusted + SAFE_GAP;
+    }
+    adjusted.set(original, Math.min(MAX_X, target));
   }
 
   // 「全体的に左に寄せる」最終調整: GK を含む全選手の x を一律

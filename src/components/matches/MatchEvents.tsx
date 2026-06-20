@@ -93,14 +93,11 @@ export function MatchEvents({ match, teamMap, playerMap }: Props) {
       }
       list.push(ev);
     }
-    // ライブ取得で「ハーフタイム済み」と分かっているときは、末尾にもハーフタイム
+    // ライブ取得で「ハーフタイム以降」と分かっているときは、末尾にもハーフタイム
     // ディバイダーを置く (まだ後半イベントが入っておらずループ内で挿入されない場合)。
-    // 対象:
-    //  - liveLabel が halftime / 2nd half / extra time / penalty を示す場合
-    //  - liveLabel が "Live" 等 period 不明でも、KO から 50 分以上経っていれば
-    //    前半は終わっていると推定 (= 1st half ロスタイム上限を超えている)。
-    //    ただし liveLabel が "1st half" を明示しているなら時刻フォールバックは
-    //    使わない (FD が 1 分前後の長期スタッキングを示しているケースに配慮)。
+    // 判定は API の liveLabel のみで行う (Football-Data.org の PAUSED → "Halftime"
+    // が footballDataSource.ts で設定される)。以前は「KO から 50 分経過」の時間
+    // フォールバックも持っていたが、前半ロスタイム中に誤発火することがあったため廃止。
     // finished の自動付与はしない (前半のみゴールの試合で末尾に出てしまうため)。
     if (!htInserted && match.status === "live") {
       const ll = (match.liveLabel ?? "").toLowerCase();
@@ -111,14 +108,7 @@ export function MatchEvents({ match, teamMap, playerMap }: Props) {
         ll.includes("second half") ||
         ll.includes("extra time") ||
         ll.includes("penalty");
-      const inFirstHalfLabel =
-        ll.includes("1st half") || ll.includes("first half");
-      const koMs = new Date(match.date).getTime();
-      const pastByTime =
-        !inFirstHalfLabel &&
-        Number.isFinite(koMs) &&
-        Date.now() - koMs > 50 * 60_000;
-      if (pastHalftime || pastByTime) {
+      if (pastHalftime) {
         list.push({ kind: "halftime" });
       }
     }

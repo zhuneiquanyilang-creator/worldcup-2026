@@ -20,7 +20,7 @@
   { "id": "m019", "stage": "group", "groupId": "D", "date": "2026-06-12T18:00:00-07:00", "venue": "ロサンゼルス・スタジアム（アメリカ）", "homeTeamId": "USA", "awayTeamId": "PAR", "status": "scheduled", "broadcasters": ["dazn"] },
   { "id": "m020", "stage": "group", "groupId": "D", "date": "2026-06-13T21:00:00-07:00", "venue": "BCプレイス（カナダ）", "homeTeamId": "AUS", "awayTeamId": "TUR", "status": "scheduled", "broadcasters": ["ntv","dazn"] },
   { "id": "m021", "stage": "group", "groupId": "D", "date": "2026-06-19T12:00:00-07:00", "venue": "シアトル・スタジアム（アメリカ）", "homeTeamId": "USA", "awayTeamId": "AUS", "status": "scheduled", "broadcasters": ["nhk-g","nhk-bs4k","dazn"] },
-  { "id": "m022", "stage": "group", "groupId": "D", "date": "2026-06-19T21:00:00-07:00", "venue": "サンフランシスコ・ベイエリア・スタジアム（アメリカ）", "homeTeamId": "TUR", "awayTeamId": "PAR", "status": "scheduled", "broadcasters": ["dazn"] },
+  { "id": "m022", "stage": "group", "groupId": "D", "date": "2026-06-19T20:00:00-07:00", "venue": "サンフランシスコ・ベイエリア・スタジアム（アメリカ）", "homeTeamId": "TUR", "awayTeamId": "PAR", "status": "scheduled", "broadcasters": ["dazn"] },
   { "id": "m023", "stage": "group", "groupId": "D", "date": "2026-06-25T19:00:00-07:00", "venue": "ロサンゼルス・スタジアム（アメリカ）", "homeTeamId": "TUR", "awayTeamId": "USA", "status": "scheduled", "broadcasters": ["ntv","dazn"] },
   { "id": "m024", "stage": "group", "groupId": "D", "date": "2026-06-25T19:00:00-07:00", "venue": "サンフランシスコ・ベイエリア・スタジアム（アメリカ）", "homeTeamId": "PAR", "awayTeamId": "AUS", "status": "scheduled", "broadcasters": ["dazn"] },
   { "id": "m025", "stage": "group", "groupId": "E", "date": "2026-06-14T12:00:00-05:00", "venue": "ヒューストン・スタジアム（アメリカ）", "homeTeamId": "GER", "awayTeamId": "CUR", "status": "scheduled", "broadcasters": ["dazn"] },

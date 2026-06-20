@@ -11,7 +11,12 @@ type Props = {
 
 export function ScheduleList({ matches, teamMap }: Props) {
   const grouped = useMemo(() => {
-    const sorted = [...matches].sort((a, b) => a.date.localeCompare(b.date));
+    // ISO 8601 文字列はタイムゾーン違いで localeCompare が UTC 順にならない
+    // (例: "T20:00-07:00" は文字列上 "T20:30-04:00" より前だが実時刻は後)。
+    // 必ず UTC ミリ秒に変換してから比較する。
+    const sorted = [...matches].sort(
+      (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()
+    );
     const buckets = new Map<string, Match[]>();
     for (const m of sorted) {
       const k = dayKey(m.date);

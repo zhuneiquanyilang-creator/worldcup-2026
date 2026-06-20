@@ -512,6 +512,14 @@ function Spot({
   const goalCount = spot.goals?.length ?? 0;
   const assistCount = spot.assists?.length ?? 0;
   const ownGoalCount = spot.ownGoals?.length ?? 0;
+  // GK はピッチ両端 (ゴール側) に置かれるため、長い名前ラベルが SVG 枠を
+  // はみ出して見切れる (例: NED「フェルブルッヘン」左端 / SWE「ノードフェルト」右端)。
+  // home GK はラベルを右、away GK は左に少しずらして内側 (ピッチ中央) に逃がす。
+  // 横向きレイアウト前提 (縦向きでは GK が中央寄せ y=50 なので不要)。
+  // 5 (前は 6) — 大きすぎると 3-back / 5-back のセンターバック (y=50) の
+  // 名前 (例 ヒエン) と被るので、formation.ts の STRONG_SPREAD=30 と組で調整。
+  const isGK = spot.role === "GK";
+  const labelDX = isGK ? (variant === "home" ? 5 : -5) : 0;
 
   // 右側に縦積みで配置 (上から ↓N' → ⚽ → 🔴⚽ (OG) → Ⓐ)。
   // 退出済みのときは ↓N' を最上段に置き、その下のバッジ群は順に 3 ずつ下げる。
@@ -553,7 +561,7 @@ function Spot({
         {spot.number ?? ""}
       </text>
       <text
-        x={0}
+        x={labelDX}
         y={6.8}
         textAnchor="middle"
         fontSize={nameSize}
