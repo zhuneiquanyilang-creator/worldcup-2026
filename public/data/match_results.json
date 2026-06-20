@@ -6016,7 +6016,7 @@
       {
         "minute": 61,
         "teamId": "CPV",
-        "inName": "ヌーノ・ダ・コスタ",
+        "inName": "ヌ���ノ・ダ・コスタ",
         "outName": "ダイロン・リブラメント"
       },
       {
@@ -12523,7 +12523,7 @@
         "minute": 81,
         "teamId": "BRA",
         "inName": "エデルソン",
-        "outName": "ヴィニシウス・ジュニオール"
+        "outName": "ヴィニシウス・ジュ���オール"
       },
       {
         "minute": 81,
@@ -13202,7 +13202,7 @@
         },
         {
           "number": 20,
-          "name": "���リック・スミス"
+          "name": "エリック・スミス"
         },
         {
           "number": 22,
@@ -13262,6 +13262,24 @@
         "teamId": "NED",
         "inName": "クリセンシオ・サマーフィル",
         "outName": "ドニエル・マレン"
+      },
+      {
+        "minute": 56,
+        "teamId": "SWE",
+        "inName": "ベスフォルト・ゼネリ",
+        "outName": "イェスパー・カールストレーム"
+      },
+      {
+        "minute": 56,
+        "teamId": "SWE",
+        "inName": "ルーカス・ベリヴァル",
+        "outName": "ベンジャミン・ニグレン"
+      },
+      {
+        "minute": 56,
+        "teamId": "SWE",
+        "inName": "アントニー・エランガ",
+        "outName": "アレクサンデル・ベルンハルトソン"
       }
     ],
     "bookings": [
