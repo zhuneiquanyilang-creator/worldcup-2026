@@ -12523,7 +12523,7 @@
         "minute": 81,
         "teamId": "BRA",
         "inName": "エデルソン",
-        "outName": "ヴィニシウス・ジュニオール"
+        "outName": "ヴィニシウス・ジュ���オール"
       },
       {
         "minute": 81,
@@ -13243,6 +13243,15 @@
         "type": "normal",
         "playerId": "p_ned_20",
         "playerName": "ブライアン・ブロビー",
+        "assistPlayerId": "p_ned_4",
+        "assistPlayerName": "デンゼル・ダンフリース"
+      },
+      {
+        "minute": 47,
+        "teamId": "NED",
+        "type": "normal",
+        "playerId": "p_ned_19",
+        "playerName": "コーディ・ガクポ",
         "assistPlayerId": "p_ned_4",
         "assistPlayerName": "デンゼル・ダンフリース"
       }
