@@ -6859,7 +6859,7 @@
           "x": 28,
           "y": 37.5,
           "number": 4,
-          "name": "ザイド・タフセン",
+          "name": "ザイド・タ���セン",
           "role": "DF"
         },
         {
@@ -6922,7 +6922,7 @@
       "bench": [
         {
           "number": 1,
-          "name": "���ァハド・タリブ"
+          "name": "ファハド・タリブ"
         },
         {
           "number": 2,
@@ -11737,7 +11737,7 @@
   },
   "m015": {
     "matchId": "m015",
-    "status": "live",
+    "status": "finished",
     "homeFormation": {
       "shape": "5-4-1",
       "starting": [
@@ -12032,7 +12032,7 @@
       "home": 0,
       "away": 1
     },
-    "liveLabel": "Live",
+    "liveLabel": "Full time",
     "goals": [
       {
         "minute": 2,
@@ -12117,7 +12117,7 @@
   },
   "m016": {
     "matchId": "m016",
-    "status": "scheduled",
+    "status": "live",
     "homeFormation": {
       "shape": "4-2-3-1",
       "starting": [
@@ -12407,7 +12407,12 @@
           "name": "ウーデンスキ・ピエール"
         }
       ]
-    }
+    },
+    "score": {
+      "home": 2,
+      "away": 0
+    },
+    "liveLabel": "Live"
   },
   "m022": {
     "matchId": "m022",
