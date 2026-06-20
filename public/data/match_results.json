@@ -12523,7 +12523,7 @@
         "minute": 81,
         "teamId": "BRA",
         "inName": "エデルソン",
-        "outName": "ヴィニシウス・ジュニオール"
+        "outName": "ヴィニシウス・ジュ���オール"
       },
       {
         "minute": 81,
@@ -13224,7 +13224,7 @@
     },
     "score": {
       "home": 4,
-      "away": 0
+      "away": 1
     },
     "liveLabel": "Live",
     "goals": [
@@ -13263,6 +13263,15 @@
         "playerName": "コーディ・ガクポ",
         "assistPlayerId": "p_ned_22",
         "assistPlayerName": "クリセンシオ・サマーフィル"
+      },
+      {
+        "minute": 59,
+        "teamId": "SWE",
+        "type": "normal",
+        "playerId": "p_swe_23",
+        "playerName": "アントニー・エランガ",
+        "assistPlayerId": "p_swe_21",
+        "assistPlayerName": "アレクサンデル・イサク"
       }
     ],
     "substitutions": [
