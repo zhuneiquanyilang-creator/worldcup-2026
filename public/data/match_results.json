@@ -13289,6 +13289,18 @@
         "teamId": "SWE",
         "inName": "アントニー・エランガ",
         "outName": "アレクサンデル・ベルンハルトソン"
+      },
+      {
+        "minute": 60,
+        "teamId": "NED",
+        "inName": "トゥーン・コープマイネルス",
+        "outName": "フレンキー・デ・ヨング"
+      },
+      {
+        "minute": 60,
+        "teamId": "NED",
+        "inName": "フース・ティル",
+        "outName": "タイアニ・ラインデルス"
       }
     ],
     "bookings": [
