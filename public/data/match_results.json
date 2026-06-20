@@ -12463,6 +12463,18 @@
         "teamId": "BRA",
         "inName": "ラヤン",
         "outName": "ラフィーニャ"
+      },
+      {
+        "minute": 46,
+        "teamId": "HAI",
+        "inName": "ドミニク・シモン",
+        "outName": "カルラン・アルキュス"
+      },
+      {
+        "minute": 46,
+        "teamId": "HAI",
+        "inName": "ウィルソン・イシドール",
+        "outName": "フランツディ・ピエロ"
       }
     ]
   },
