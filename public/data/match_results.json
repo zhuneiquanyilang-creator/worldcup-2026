@@ -6816,7 +6816,7 @@
       {
         "minute": 83,
         "teamId": "SEN",
-        "inName": "イリマン・ンディアエ",
+        "inName": "イリマン・���ディアエ",
         "outName": "パペ・ゲイェ"
       },
       {
@@ -12118,7 +12118,7 @@
   },
   "m016": {
     "matchId": "m016",
-    "status": "live",
+    "status": "finished",
     "homeFormation": {
       "shape": "4-2-3-1",
       "starting": [
@@ -12413,7 +12413,7 @@
       "home": 3,
       "away": 0
     },
-    "liveLabel": "Live",
+    "liveLabel": "Full time",
     "goals": [
       {
         "minute": 23,
@@ -12498,7 +12498,12 @@
   },
   "m022": {
     "matchId": "m022",
-    "status": "scheduled"
+    "status": "finished",
+    "score": {
+      "home": 0,
+      "away": 1
+    },
+    "liveLabel": "Full time"
   },
   "m033": {
     "matchId": "m033",
