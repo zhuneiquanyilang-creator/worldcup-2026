@@ -12191,7 +12191,8 @@
           "y": 83.33333333333334,
           "number": 7,
           "name": "ヴィニシウス・ジュニオール",
-          "role": "MF"
+          "role": "MF",
+          "isMvp": true
         },
         {
           "x": 80,
@@ -12522,7 +12523,7 @@
         "minute": 81,
         "teamId": "BRA",
         "inName": "エデルソン",
-        "outName": "ヴィニシウス・ジュニオール"
+        "outName": "ヴィニシウス・ジュ���オール"
       },
       {
         "minute": 81,
@@ -12539,7 +12540,394 @@
       "home": 0,
       "away": 1
     },
-    "liveLabel": "Full time"
+    "liveLabel": "Full time",
+    "goals": [
+      {
+        "minute": 2,
+        "teamId": "PAR",
+        "type": "normal",
+        "playerId": "p_par_15",
+        "playerName": "マティアス・ガラルサ",
+        "assistPlayerId": "p_par_20",
+        "assistPlayerName": "フリオ・エンシソ"
+      }
+    ],
+    "homeFormation": {
+      "shape": "4-2-3-1",
+      "starting": [
+        {
+          "x": 8,
+          "y": 50,
+          "number": 23,
+          "name": "ウグルジャン・チャクル",
+          "role": "GK"
+        },
+        {
+          "x": 28,
+          "y": 12.5,
+          "number": 18,
+          "name": "メルト・ミュルドゥル",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 37.5,
+          "number": 3,
+          "name": "メリフ・デミラル",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 62.5,
+          "number": 14,
+          "name": "アブドゥルケリム・バルダクチ",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 87.5,
+          "number": 20,
+          "name": "フェルディ・カディオール",
+          "role": "DF"
+        },
+        {
+          "x": 45.33333333333333,
+          "y": 25,
+          "number": 16,
+          "name": "イスマイル・ユクセク",
+          "role": "MF"
+        },
+        {
+          "x": 45.33333333333333,
+          "y": 75,
+          "number": 10,
+          "name": "ハカン・チャルハノール",
+          "role": "MF",
+          "isCaptain": true
+        },
+        {
+          "x": 62.666666666666664,
+          "y": 16.666666666666664,
+          "number": 19,
+          "name": "ユヌス・アクギュン",
+          "role": "MF"
+        },
+        {
+          "x": 62.666666666666664,
+          "y": 50,
+          "number": 8,
+          "name": "アルダ・ギュレル",
+          "role": "MF"
+        },
+        {
+          "x": 62.666666666666664,
+          "y": 83.33333333333334,
+          "number": 11,
+          "name": "ケナン・ユルディズ",
+          "role": "MF"
+        },
+        {
+          "x": 80,
+          "y": 50,
+          "number": 7,
+          "name": "ケレム・アクトゥルコール",
+          "role": "FW"
+        }
+      ],
+      "bench": [
+        {
+          "number": 1,
+          "name": "メルト・ギュノク"
+        },
+        {
+          "number": 2,
+          "name": "ゼキ・チェリク"
+        },
+        {
+          "number": 4,
+          "name": "チャーラル・ソユンジュ"
+        },
+        {
+          "number": 5,
+          "name": "サリフ・オズジャン"
+        },
+        {
+          "number": 6,
+          "name": "オルクン・コクチュ"
+        },
+        {
+          "number": 9,
+          "name": "デニズ・ギュル"
+        },
+        {
+          "number": 12,
+          "name": "アルタイ・バユンドゥル"
+        },
+        {
+          "number": 13,
+          "name": "エレン・エルマル"
+        },
+        {
+          "number": 15,
+          "name": "オザン・カバク"
+        },
+        {
+          "number": 17,
+          "name": "イルファン・ジャン・カフベジ"
+        },
+        {
+          "number": 21,
+          "name": "バルシュ・ユルマズ"
+        },
+        {
+          "number": 22,
+          "name": "カーン・アイハン"
+        },
+        {
+          "number": 24,
+          "name": "オウズ・アイドゥン"
+        },
+        {
+          "number": 25,
+          "name": "サメト・アカイディン"
+        },
+        {
+          "number": 26,
+          "name": "ジャン・ウズン"
+        }
+      ]
+    },
+    "awayFormation": {
+      "shape": "4-4-2",
+      "starting": [
+        {
+          "x": 8,
+          "y": 50,
+          "number": 12,
+          "name": "オルラン・ヒル",
+          "role": "GK"
+        },
+        {
+          "x": 28,
+          "y": 12.5,
+          "number": 4,
+          "name": "フアン・カセレス",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 37.5,
+          "number": 15,
+          "name": "グスタボ・ゴメス",
+          "role": "DF",
+          "isCaptain": true
+        },
+        {
+          "x": 28,
+          "y": 62.5,
+          "number": 3,
+          "name": "オマール・アルデレテ",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 87.5,
+          "number": 6,
+          "name": "フニオール・アロンソ",
+          "role": "DF"
+        },
+        {
+          "x": 54,
+          "y": 12.5,
+          "number": 10,
+          "name": "ミゲル・アルミロン",
+          "role": "MF"
+        },
+        {
+          "x": 54,
+          "y": 37.5,
+          "number": 14,
+          "name": "アンドレス・クバス",
+          "role": "MF"
+        },
+        {
+          "x": 54,
+          "y": 62.5,
+          "number": 8,
+          "name": "ディエゴ・ゴメス",
+          "role": "MF"
+        },
+        {
+          "x": 54,
+          "y": 87.5,
+          "number": 23,
+          "name": "マティアス・ガラルサ",
+          "role": "MF",
+          "isMvp": true
+        },
+        {
+          "x": 80,
+          "y": 25,
+          "number": 19,
+          "name": "フリオ・エンシソ",
+          "role": "FW"
+        },
+        {
+          "x": 80,
+          "y": 75,
+          "number": 25,
+          "name": "イシドロ・ピッタ",
+          "role": "FW"
+        }
+      ],
+      "bench": [
+        {
+          "number": 1,
+          "name": "ロベルト・フニオール・フェルナンデス"
+        },
+        {
+          "number": 2,
+          "name": "ビクトル・グスタボ・ベラスケス"
+        },
+        {
+          "number": 5,
+          "name": "ファビアン・バルブエナ"
+        },
+        {
+          "number": 7,
+          "name": "ラモン・ソサ"
+        },
+        {
+          "number": 9,
+          "name": "アントニオ・サナブリア"
+        },
+        {
+          "number": 11,
+          "name": "マウリシオ・マガリャエス・プラド"
+        },
+        {
+          "number": 13,
+          "name": "ホセ・カナレ"
+        },
+        {
+          "number": 16,
+          "name": "ダミアン・ボバディジャ"
+        },
+        {
+          "number": 17,
+          "name": "アレハンドロ・ロメロ（カク）"
+        },
+        {
+          "number": 18,
+          "name": "アレックス・アルセ"
+        },
+        {
+          "number": 20,
+          "name": "ブライアン・オヘダ"
+        },
+        {
+          "number": 21,
+          "name": "ガブリエル・アバロス"
+        },
+        {
+          "number": 22,
+          "name": "ガストン・オルベイラ"
+        },
+        {
+          "number": 24,
+          "name": "グスタボ・カバジェロ"
+        },
+        {
+          "number": 26,
+          "name": "アレクサンドロ・マイダナ"
+        }
+      ]
+    },
+    "bookings": [
+      {
+        "minute": 4,
+        "teamId": "PAR",
+        "playerName": "マティアス・ガラルサ",
+        "type": "Y"
+      },
+      {
+        "minute": 45,
+        "teamId": "PAR",
+        "playerName": "ミゲル・アルミロン",
+        "type": "R",
+        "addedTime": 3
+      },
+      {
+        "minute": 71,
+        "teamId": "TUR",
+        "playerName": "エレン・エルマル",
+        "type": "Y"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": 46,
+        "teamId": "TUR",
+        "inName": "バルシュ・ユルマズ",
+        "outName": "ケレム・アクトゥルコール"
+      },
+      {
+        "minute": 46,
+        "teamId": "PAR",
+        "inName": "ダミアン・ボバディジャ",
+        "outName": "イシドロ・ピッタ"
+      },
+      {
+        "minute": 60,
+        "teamId": "TUR",
+        "inName": "ジャン・ウズン",
+        "outName": "イスマイル・ユクセク"
+      },
+      {
+        "minute": 60,
+        "teamId": "TUR",
+        "inName": "デニズ・ギュル",
+        "outName": "ユヌス・アクギュン"
+      },
+      {
+        "minute": 67,
+        "teamId": "PAR",
+        "inName": "ビクトル・グスタボ・ベラスケス",
+        "outName": "ディエゴ・ゴメス"
+      },
+      {
+        "minute": 71,
+        "teamId": "TUR",
+        "inName": "エレン・エルマル",
+        "outName": "フェルディ・カディオール"
+      },
+      {
+        "minute": 81,
+        "teamId": "PAR",
+        "inName": "アレクサンドロ・マイダナ",
+        "outName": "フアン・カセレス"
+      },
+      {
+        "minute": 86,
+        "teamId": "TUR",
+        "inName": "オルクン・コクチュ",
+        "outName": "アブドゥルケリム・バルダクチ"
+      },
+      {
+        "minute": 90,
+        "teamId": "PAR",
+        "inName": "ホセ・カナレ",
+        "outName": "マティアス・ガラルサ",
+        "addedTime": 1
+      },
+      {
+        "minute": 90,
+        "teamId": "PAR",
+        "inName": "ガブリエル・アバロス",
+        "outName": "フリオ・エンシソ",
+        "addedTime": 1
+      }
+    ]
   },
   "m033": {
     "matchId": "m033",
