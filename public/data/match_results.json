@@ -6816,7 +6816,7 @@
       {
         "minute": 83,
         "teamId": "SEN",
-        "inName": "イリマン・���ディアエ",
+        "inName": "イリマン・ンディアエ",
         "outName": "パペ・ゲイェ"
       },
       {
@@ -12455,6 +12455,18 @@
         "playerName": "フランツディ・ピエロ",
         "type": "Y",
         "addedTime": 4
+      },
+      {
+        "minute": 65,
+        "teamId": "BRA",
+        "playerName": "ドウグラス・サントス",
+        "type": "Y"
+      },
+      {
+        "minute": 72,
+        "teamId": "HAI",
+        "playerName": "ダンリー・ジャン・ジャック",
+        "type": "Y"
       }
     ],
     "substitutions": [
@@ -12493,6 +12505,30 @@
         "teamId": "BRA",
         "inName": "ガブリエウ・マルティネッリ",
         "outName": "ルーカス・パケタ"
+      },
+      {
+        "minute": 71,
+        "teamId": "HAI",
+        "inName": "レニー・ジョセフ",
+        "outName": "ルベン・プロヴィデンス"
+      },
+      {
+        "minute": 81,
+        "teamId": "BRA",
+        "inName": "ダニーロ (ボタフォゴ)",
+        "outName": "ブルーノ・ギマランイス"
+      },
+      {
+        "minute": 81,
+        "teamId": "BRA",
+        "inName": "エデルソン",
+        "outName": "ヴィニシウス・ジュニオール"
+      },
+      {
+        "minute": 81,
+        "teamId": "HAI",
+        "inName": "デリック・エティエンヌ Jr.",
+        "outName": "ジャン・リクネル・ベルガルド"
       }
     ]
   },
