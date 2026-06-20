@@ -11962,7 +11962,8 @@
           "y": 50,
           "number": 11,
           "name": "イスマエル・サイバリ",
-          "role": "FW"
+          "role": "FW",
+          "isMvp": true
         }
       ],
       "bench": [
