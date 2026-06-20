@@ -13246,6 +13246,14 @@
         "assistPlayerId": "p_ned_4",
         "assistPlayerName": "デンゼル・ダンフリース"
       }
+    ],
+    "substitutions": [
+      {
+        "minute": 46,
+        "teamId": "NED",
+        "inName": "クリセンシオ・サマーフィル",
+        "outName": "ドニエル・マレン"
+      }
     ]
   },
   "m027": {
