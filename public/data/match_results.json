@@ -5655,7 +5655,7 @@
       {
         "minute": 68,
         "teamId": "NZL",
-        "inName": "ベン・オールド",
+        "inName": "ベン・���ールド",
         "outName": "リベラト・カカーチェ"
       },
       {
@@ -12523,7 +12523,7 @@
         "minute": 81,
         "teamId": "BRA",
         "inName": "エデルソン",
-        "outName": "ヴィニシウス・ジュ���オール"
+        "outName": "ヴィニシウス・ジュニオール"
       },
       {
         "minute": 81,
@@ -12931,7 +12931,7 @@
   },
   "m033": {
     "matchId": "m033",
-    "status": "live",
+    "status": "finished",
     "homeFormation": {
       "shape": "4-3-3",
       "starting": [
@@ -13226,7 +13226,7 @@
       "home": 5,
       "away": 1
     },
-    "liveLabel": "Live",
+    "liveLabel": "Full time",
     "goals": [
       {
         "minute": 5,
