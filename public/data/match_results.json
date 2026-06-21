@@ -9110,7 +9110,7 @@
         },
         {
           "number": 8,
-          "name": "アダ���ベルト・カラスキージャ"
+          "name": "アダルベルト・カラスキージャ"
         },
         {
           "number": 9,
@@ -14478,6 +14478,15 @@
         "playerName": "伊東純也",
         "assistPlayerId": "p_jpn_24",
         "assistPlayerName": "上田綺世"
+      },
+      {
+        "minute": 83,
+        "teamId": "JPN",
+        "type": "normal",
+        "playerId": "p_jpn_24",
+        "playerName": "上田綺世",
+        "assistPlayerId": "p_jpn_16",
+        "assistPlayerName": "佐野海舟"
       }
     ],
     "substitutions": [
