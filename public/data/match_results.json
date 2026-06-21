@@ -9184,7 +9184,7 @@
       {
         "minute": 46,
         "teamId": "GHA",
-        "inName": "ベンジャミン・アサレ",
+        "inName": "ベンジャミ��・アサレ",
         "outName": "ローレンス・アティ・ジギ"
       },
       {
@@ -9221,7 +9221,7 @@
         "minute": 78,
         "teamId": "GHA",
         "inName": "クワシ・シボ",
-        "outName": "エリシャ・オウ��"
+        "outName": "エリシャ・オウス"
       },
       {
         "minute": 87,
@@ -12523,7 +12523,7 @@
         "minute": 81,
         "teamId": "BRA",
         "inName": "エデルソン",
-        "outName": "ヴィニシウス・ジュニオール"
+        "outName": "ヴィニシウス・ジュ���オール"
       },
       {
         "minute": 81,
@@ -14457,6 +14457,15 @@
         "playerName": "鎌田大地",
         "assistPlayerId": "p_jpn_16",
         "assistPlayerName": "佐野海舟"
+      },
+      {
+        "minute": 31,
+        "teamId": "JPN",
+        "type": "normal",
+        "playerId": "p_jpn_24",
+        "playerName": "上田綺世",
+        "assistPlayerId": "p_jpn_8",
+        "assistPlayerName": "板倉滉"
       }
     ]
   },
