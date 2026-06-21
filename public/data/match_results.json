@@ -9221,7 +9221,7 @@
         "minute": 78,
         "teamId": "GHA",
         "inName": "クワシ・シボ",
-        "outName": "エリシャ・オウス"
+        "outName": "エリシャ・オウ��"
       },
       {
         "minute": 87,
@@ -12523,7 +12523,7 @@
         "minute": 81,
         "teamId": "BRA",
         "inName": "エデルソン",
-        "outName": "ヴィニシウス・ジュ���オール"
+        "outName": "ヴィニシウス・ジュニオール"
       },
       {
         "minute": 81,
@@ -13760,7 +13760,7 @@
   },
   "m028": {
     "matchId": "m028",
-    "status": "finished",
+    "status": "live",
     "score": {
       "home": 0,
       "away": 0
@@ -14154,7 +14154,7 @@
   },
   "m034": {
     "matchId": "m034",
-    "status": "scheduled",
+    "status": "live",
     "homeFormation": {
       "shape": "3-4-2-1",
       "starting": [
@@ -14442,7 +14442,23 @@
           "name": "塩貝健斗"
         }
       ]
-    }
+    },
+    "score": {
+      "home": 0,
+      "away": 1
+    },
+    "liveLabel": "Live",
+    "goals": [
+      {
+        "minute": 4,
+        "teamId": "JPN",
+        "type": "normal",
+        "playerId": "p_jpn_19",
+        "playerName": "鎌田大地",
+        "assistPlayerId": "p_jpn_16",
+        "assistPlayerName": "佐野海舟"
+      }
+    ]
   },
   "m045": {
     "matchId": "m045",
