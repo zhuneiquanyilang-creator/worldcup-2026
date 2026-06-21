@@ -8420,7 +8420,7 @@
       {
         "minute": 74,
         "teamId": "COD",
-        "inName": "ティモシー���ファユル",
+        "inName": "ティモシー・ファユル",
         "outName": "エド・カイェンベ"
       },
       {
@@ -15684,9 +15684,16 @@
         "playerName": "アグスティン・カノッビオ",
         "assistPlayerId": "p_uru_20",
         "assistPlayerName": "マクシミリアーノ・アラウホ"
+      },
+      {
+        "minute": 61,
+        "teamId": "CPV",
+        "type": "normal",
+        "playerId": "p_cpv_25",
+        "playerName": "エリオ・バレラ"
       }
     ],
-    "liveLabel": "Halftime",
+    "liveLabel": "Live",
     "substitutions": [
       {
         "minute": 46,
