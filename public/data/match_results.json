@@ -9263,7 +9263,7 @@
           "x": 8,
           "y": 50,
           "number": 1,
-          "name": "ウトキル・���スポフ",
+          "name": "ウトキル・ユスポフ",
           "role": "GK"
         },
         {
@@ -15637,7 +15637,7 @@
       ]
     },
     "score": {
-      "home": 1,
+      "home": 2,
       "away": 1
     },
     "bookings": [
@@ -15668,6 +15668,16 @@
         "type": "normal",
         "playerId": "p_uru_20",
         "playerName": "マクシミリアーノ・アラウホ"
+      },
+      {
+        "minute": 45,
+        "teamId": "URU",
+        "type": "normal",
+        "addedTime": 6,
+        "playerId": "p_uru_12",
+        "playerName": "アグスティン・カノッビオ",
+        "assistPlayerId": "p_uru_20",
+        "assistPlayerName": "マクシミリアーノ・アラウホ"
       }
     ],
     "liveLabel": "Live"
