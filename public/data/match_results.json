@@ -12523,7 +12523,7 @@
         "minute": 81,
         "teamId": "BRA",
         "inName": "エデルソン",
-        "outName": "ヴィニシウス・ジュニオール"
+        "outName": "ヴィニシウス・ジュ���オール"
       },
       {
         "minute": 81,
@@ -14888,6 +14888,32 @@
         "teamId": "KSA",
         "playerName": "サレム・アル・ドサリ",
         "type": "Y"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": 46,
+        "teamId": "ESP",
+        "inName": "ジェレミー・ピノ",
+        "outName": "ラミン・ヤマル"
+      },
+      {
+        "minute": 46,
+        "teamId": "ESP",
+        "inName": "フェラン・トーレス",
+        "outName": "ミケル・オヤルサバル"
+      },
+      {
+        "minute": 46,
+        "teamId": "KSA",
+        "inName": "モハメド・カノ",
+        "outName": "アブドラ・アル・ハイバリ"
+      },
+      {
+        "minute": 46,
+        "teamId": "KSA",
+        "inName": "アブドラ・アル・ハムダン",
+        "outName": "ムサブ・アル・ジュワイル"
       }
     ]
   },
