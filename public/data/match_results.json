@@ -12523,7 +12523,7 @@
         "minute": 81,
         "teamId": "BRA",
         "inName": "エデルソン",
-        "outName": "ヴィニシウス・ジュニオール"
+        "outName": "ヴィニシウス・ジュ���オール"
       },
       {
         "minute": 81,
@@ -14077,6 +14077,12 @@
         "minute": 56,
         "teamId": "CUR",
         "playerName": "リヴァノ・コメネンシア",
+        "type": "Y"
+      },
+      {
+        "minute": 75,
+        "teamId": "CUR",
+        "playerName": "ユリエン・ガーリ",
         "type": "Y"
       }
     ],
