@@ -9126,7 +9126,7 @@
         },
         {
           "number": 15,
-          "name": "エリック・ダビス"
+          "name": "エリック・ダビ���"
         },
         {
           "number": 17,
@@ -12523,7 +12523,7 @@
         "minute": 81,
         "teamId": "BRA",
         "inName": "エデルソン",
-        "outName": "ヴィニシウス・ジュ���オール"
+        "outName": "ヴィニシウス・ジュニオール"
       },
       {
         "minute": 81,
@@ -14155,7 +14155,7 @@
   },
   "m034": {
     "matchId": "m034",
-    "status": "live",
+    "status": "finished",
     "homeFormation": {
       "shape": "3-4-2-1",
       "starting": [
@@ -14450,7 +14450,7 @@
       "home": 0,
       "away": 4
     },
-    "liveLabel": "Live",
+    "liveLabel": "Full time",
     "goals": [
       {
         "minute": 4,
