@@ -14557,11 +14557,19 @@
   },
   "m045": {
     "matchId": "m045",
-    "status": "scheduled"
+    "status": "finished",
+    "score": {
+      "home": 4,
+      "away": 0
+    }
   },
   "m039": {
     "matchId": "m039",
-    "status": "scheduled"
+    "status": "live",
+    "score": {
+      "home": 0,
+      "away": 0
+    }
   },
   "m046": {
     "matchId": "m046",
