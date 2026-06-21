@@ -14448,7 +14448,7 @@
     },
     "score": {
       "home": 0,
-      "away": 3
+      "away": 4
     },
     "liveLabel": "Live",
     "goals": [
@@ -14537,6 +14537,20 @@
         "teamId": "JPN",
         "inName": "後藤啓介",
         "outName": "上田綺世"
+      },
+      {
+        "minute": 90,
+        "teamId": "TUN",
+        "inName": "エリアス・アシュリ",
+        "outName": "アリ・アブディ",
+        "addedTime": 1
+      },
+      {
+        "minute": 90,
+        "teamId": "TUN",
+        "inName": "ラニ・ケディラ",
+        "outName": "エリス・スキリ",
+        "addedTime": 1
       }
     ]
   },
