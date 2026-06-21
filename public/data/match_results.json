@@ -13662,10 +13662,10 @@
       ]
     },
     "score": {
-      "home": 1,
+      "home": 2,
       "away": 1
     },
-    "liveLabel": "Live",
+    "liveLabel": "Full time",
     "goals": [
       {
         "minute": 30,
