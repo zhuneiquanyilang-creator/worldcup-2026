@@ -9077,7 +9077,7 @@
           "x": 80,
           "y": 16.666666666666664,
           "number": 6,
-          "name": "クリスティアン・マルティネス",
+          "name": "クリスティアン・マ���ティネス",
           "role": "FW"
         },
         {
@@ -9126,7 +9126,7 @@
         },
         {
           "number": 15,
-          "name": "エリック・ダビ���"
+          "name": "エリック・ダビス"
         },
         {
           "number": 17,
@@ -12523,7 +12523,7 @@
         "minute": 81,
         "teamId": "BRA",
         "inName": "エデルソン",
-        "outName": "ヴィニシウス・ジュニオール"
+        "outName": "ヴィニシウス・ジュ���オール"
       },
       {
         "minute": 81,
@@ -14155,7 +14155,7 @@
   },
   "m034": {
     "matchId": "m034",
-    "status": "live",
+    "status": "finished",
     "homeFormation": {
       "shape": "3-4-2-1",
       "starting": [
@@ -14380,7 +14380,8 @@
           "y": 50,
           "number": 18,
           "name": "上田綺世",
-          "role": "FW"
+          "role": "FW",
+          "isMvp": true
         }
       ],
       "bench": [
