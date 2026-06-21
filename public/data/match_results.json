@@ -9576,7 +9576,7 @@
         "teamId": "UZB",
         "type": "normal",
         "playerId": "p_uzb_21",
-        "playerName": "アボスベク・ファイズラエフ"
+        "playerName": "アボスベク・ファイズラ��フ"
       },
       {
         "minute": 65,
@@ -15652,6 +15652,15 @@
         "teamId": "URU",
         "playerName": "ロドリゴ・ベンタンクール",
         "type": "Y"
+      }
+    ],
+    "goals": [
+      {
+        "minute": 21,
+        "teamId": "CPV",
+        "type": "normal",
+        "playerId": "p_cpv_13",
+        "playerName": "ケビン・ピナ"
       }
     ]
   },
