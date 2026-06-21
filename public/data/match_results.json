@@ -15345,7 +15345,7 @@
   },
   "m046": {
     "matchId": "m046",
-    "status": "scheduled",
+    "status": "live",
     "homeFormation": {
       "shape": "4-3-3",
       "starting": [
