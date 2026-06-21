@@ -12523,7 +12523,7 @@
         "minute": 81,
         "teamId": "BRA",
         "inName": "エデルソン",
-        "outName": "ヴィニシウス・ジュニオール"
+        "outName": "ヴィニシウス・ジュ���オール"
       },
       {
         "minute": 81,
@@ -14456,8 +14456,8 @@
         "type": "normal",
         "playerId": "p_jpn_19",
         "playerName": "鎌田大地",
-        "assistPlayerId": "p_jpn_16",
-        "assistPlayerName": "佐野海舟"
+        "assistPlayerId": "p_jpn_14",
+        "assistPlayerName": "中村敬斗"
       },
       {
         "minute": 31,
