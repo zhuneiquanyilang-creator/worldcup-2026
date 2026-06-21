@@ -5153,7 +5153,7 @@
         },
         {
           "number": 6,
-          "name": "モハメド・アブデルモネイム"
+          "name": "��ハメド・アブデルモネイム"
         },
         {
           "number": 7,
@@ -11710,7 +11710,7 @@
       {
         "minute": 80,
         "teamId": "USA",
-        "inName": "オース���ン・トラスティ",
+        "inName": "オーストン・トラスティ",
         "outName": "アントニー・ロビンソン"
       },
       {
@@ -13760,7 +13760,7 @@
   },
   "m028": {
     "matchId": "m028",
-    "status": "finished",
+    "status": "live",
     "score": {
       "home": 0,
       "away": 0
