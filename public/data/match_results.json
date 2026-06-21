@@ -5185,7 +5185,7 @@
         },
         {
           "number": 21,
-          "name": "マハム���ド・サベル"
+          "name": "マハムード・サベル"
         },
         {
           "number": 24,
@@ -12523,7 +12523,7 @@
         "minute": 81,
         "teamId": "BRA",
         "inName": "エデルソン",
-        "outName": "ヴィニシウス・ジュ���オール"
+        "outName": "ヴィニシウス・ジュニオール"
       },
       {
         "minute": 81,
@@ -14086,6 +14086,12 @@
         "teamId": "ECU",
         "inName": "ケビン・ロドリゲス",
         "outName": "ホルディ・アルシバル"
+      },
+      {
+        "minute": 71,
+        "teamId": "ECU",
+        "inName": "ニルソン・アングロ",
+        "outName": "ペルビス・エストゥピニャン"
       }
     ],
     "liveLabel": "Live"
