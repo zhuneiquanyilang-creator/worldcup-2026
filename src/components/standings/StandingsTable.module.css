@@ -148,4 +148,21 @@
   .table td {
     padding: 0.45rem 0.3rem;
   }
+
+  /* チーム名列: スマホでは横スクロールを抑えるため少しコンパクトに。
+     国旗とのスペースを詰め、長名 (ボスニア・ヘルツェゴビナ等) は改行可。 */
+  .teamLink {
+    gap: 0.3rem;
+    font-size: 0.8rem;
+    line-height: 1.2;
+  }
+
+  .teamLink span {
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
+
+  .rank {
+    width: 2rem;
+  }
 }
