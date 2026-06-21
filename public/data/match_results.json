@@ -14922,6 +14922,42 @@
         "teamId": "KSA",
         "inName": "アブドラ・アル・ハムダン",
         "outName": "ムサブ・アル・ジュワイル"
+      },
+      {
+        "minute": 60,
+        "teamId": "KSA",
+        "inName": "アラ・アル・ヘジ",
+        "outName": "アブドゥルエラ・アル・アムリ"
+      },
+      {
+        "minute": 60,
+        "teamId": "KSA",
+        "inName": "モハメド・アブ・アル・シャマト",
+        "outName": "フィラス・アル・ブライカン"
+      },
+      {
+        "minute": 61,
+        "teamId": "ESP",
+        "inName": "ミケル・メリーノ",
+        "outName": "ダニ・オルモ"
+      },
+      {
+        "minute": 61,
+        "teamId": "ESP",
+        "inName": "ニコ・ウィリアムス",
+        "outName": "アレックス・バエナ"
+      },
+      {
+        "minute": 70,
+        "teamId": "ESP",
+        "inName": "ファビアン・ルイス",
+        "outName": "ペドリ"
+      },
+      {
+        "minute": 90,
+        "teamId": "KSA",
+        "inName": "ハリド・アル・ガンナム",
+        "outName": "ナセル・アル・ドサリ"
       }
     ]
   },
