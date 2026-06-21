@@ -9114,7 +9114,7 @@
         },
         {
           "number": 9,
-          "name": "トマス・ロドリゲス"
+          "name": "トマス・ロド��ゲス"
         },
         {
           "number": 10,
@@ -9126,7 +9126,7 @@
         },
         {
           "number": 15,
-          "name": "エリック・��ビス"
+          "name": "エリック・ダビス"
         },
         {
           "number": 17,
@@ -14510,6 +14510,18 @@
         "teamId": "JPN",
         "inName": "菅原由勢",
         "outName": "鎌田大地"
+      },
+      {
+        "minute": 78,
+        "teamId": "JPN",
+        "inName": "瀬古歩夢",
+        "outName": "冨安健洋"
+      },
+      {
+        "minute": 78,
+        "teamId": "JPN",
+        "inName": "鈴木唯人",
+        "outName": "中村敬斗"
       }
     ]
   },
