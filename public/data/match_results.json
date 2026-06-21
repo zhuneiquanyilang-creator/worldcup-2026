@@ -15084,7 +15084,8 @@
           "y": 50,
           "number": 1,
           "name": "アリレザ・ベイランバンド",
-          "role": "GK"
+          "role": "GK",
+          "isMvp": true
         },
         {
           "x": 28,
