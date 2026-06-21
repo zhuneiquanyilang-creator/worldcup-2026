@@ -8420,7 +8420,7 @@
       {
         "minute": 74,
         "teamId": "COD",
-        "inName": "ティモシー・ファユル",
+        "inName": "ティモシー���ファユル",
         "outName": "エド・カイェンベ"
       },
       {
@@ -15651,6 +15651,12 @@
         "minute": 20,
         "teamId": "URU",
         "playerName": "ロドリゴ・ベンタンクール",
+        "type": "Y"
+      },
+      {
+        "minute": 58,
+        "teamId": "URU",
+        "playerName": "マティアス・オリベラ",
         "type": "Y"
       }
     ],
