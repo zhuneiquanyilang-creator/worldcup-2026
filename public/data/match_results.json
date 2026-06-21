@@ -14468,6 +14468,20 @@
         "assistPlayerId": "p_jpn_8",
         "assistPlayerName": "板倉滉"
       }
+    ],
+    "substitutions": [
+      {
+        "minute": 46,
+        "teamId": "TUN",
+        "inName": "モハメド・アミン・ベン・ハミダ",
+        "outName": "ディラン・ブロン"
+      },
+      {
+        "minute": 46,
+        "teamId": "TUN",
+        "inName": "イスマエル・ガルビ",
+        "outName": "エリアス・サード"
+      }
     ]
   },
   "m045": {
