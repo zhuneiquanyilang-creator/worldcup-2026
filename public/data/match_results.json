@@ -4064,9 +4064,9 @@
         "teamId": "JPN",
         "type": "normal",
         "playerId": "p_jpn_14",
-        "playerName": "中村敬斗",
+        "playerName": "中村 敬斗",
         "assistPlayerId": "p_jpn_21",
-        "assistPlayerName": "久保建英"
+        "assistPlayerName": "久保 建英"
       },
       {
         "minute": 64,
@@ -4082,9 +4082,9 @@
         "teamId": "JPN",
         "type": "normal",
         "playerId": "p_jpn_19",
-        "playerName": "鎌田大地",
+        "playerName": "鎌田 大地",
         "assistPlayerId": "p_jpn_25",
-        "assistPlayerName": "小川航基"
+        "assistPlayerName": "小川 航基"
       }
     ],
     "homeFormation": {
@@ -4238,35 +4238,35 @@
           "x": 8,
           "y": 50,
           "number": 1,
-          "name": "鈴木彩艶",
+          "name": "鈴木 彩艶",
           "role": "GK"
         },
         {
           "x": 28,
           "y": 16.666666666666664,
           "number": 16,
-          "name": "渡辺剛",
+          "name": "渡辺 剛",
           "role": "DF"
         },
         {
           "x": 28,
           "y": 50,
           "number": 3,
-          "name": "谷口彰悟",
+          "name": "谷口 彰悟",
           "role": "DF"
         },
         {
           "x": 28,
           "y": 83.33333333333334,
           "number": 21,
-          "name": "伊藤洋輝",
+          "name": "伊藤 洋輝",
           "role": "DF"
         },
         {
           "x": 45.33333333333333,
           "y": 12.5,
           "number": 10,
-          "name": "堂安律",
+          "name": "堂安 律",
           "role": "MF",
           "isCaptain": true
         },
@@ -4274,105 +4274,105 @@
           "x": 45.33333333333333,
           "y": 37.5,
           "number": 24,
-          "name": "佐野海舟",
+          "name": "佐野 海舟",
           "role": "MF"
         },
         {
           "x": 45.33333333333333,
           "y": 62.5,
           "number": 15,
-          "name": "鎌田大地",
+          "name": "鎌田 大地",
           "role": "MF"
         },
         {
           "x": 45.33333333333333,
           "y": 87.5,
           "number": 13,
-          "name": "中村敬斗",
+          "name": "中村 敬斗",
           "role": "MF"
         },
         {
           "x": 62.666666666666664,
           "y": 25,
           "number": 8,
-          "name": "久保建英",
+          "name": "久保 建英",
           "role": "MF"
         },
         {
           "x": 62.666666666666664,
           "y": 75,
           "number": 11,
-          "name": "前田大然",
+          "name": "前田 大然",
           "role": "MF"
         },
         {
           "x": 80,
           "y": 50,
           "number": 18,
-          "name": "上田綺世",
+          "name": "上田 綺世",
           "role": "FW"
         }
       ],
       "bench": [
         {
           "number": 2,
-          "name": "菅原由勢"
+          "name": "菅原 由勢"
         },
         {
           "number": 4,
-          "name": "板倉滉"
+          "name": "板倉 滉"
         },
         {
           "number": 5,
-          "name": "長友佑都"
+          "name": "長友 佑都"
         },
         {
           "number": 6,
-          "name": "町野修斗"
+          "name": "町野 修斗"
         },
         {
           "number": 7,
-          "name": "田中碧"
+          "name": "田中 碧"
         },
         {
           "number": 9,
-          "name": "後藤啓介"
+          "name": "後藤 啓介"
         },
         {
           "number": 12,
-          "name": "大迫敬介"
+          "name": "大迫 敬介"
         },
         {
           "number": 14,
-          "name": "伊東純也"
+          "name": "伊東 純也"
         },
         {
           "number": 17,
-          "name": "鈴木唯人"
+          "name": "鈴木 唯人"
         },
         {
           "number": 19,
-          "name": "小川航基"
+          "name": "小川 航基"
         },
         {
           "number": 20,
-          "name": "瀬古歩夢"
+          "name": "瀬古 歩夢"
         },
         {
           "number": 22,
-          "name": "冨安健洋"
+          "name": "冨安 健洋"
         },
         {
           "number": 23,
-          "name": "早川友基"
+          "name": "早川 友基"
         },
         {
           "number": 25,
-          "name": "鈴木淳之介"
+          "name": "鈴木 淳之介"
         },
         {
           "number": 26,
-          "name": "塩貝健斗"
+          "name": "塩貝 健斗"
         }
       ]
     },
@@ -4401,8 +4401,8 @@
       {
         "minute": 66,
         "teamId": "JPN",
-        "inName": "伊東純也",
-        "outName": "前田大然"
+        "inName": "伊東 純也",
+        "outName": "前田 大然"
       },
       {
         "minute": 70,
@@ -4425,20 +4425,20 @@
       {
         "minute": 75,
         "teamId": "JPN",
-        "inName": "菅原由勢",
-        "outName": "堂安律"
+        "inName": "菅原 由勢",
+        "outName": "堂安 律"
       },
       {
         "minute": 75,
         "teamId": "JPN",
-        "inName": "冨安健洋",
-        "outName": "渡辺剛"
+        "inName": "冨安 健洋",
+        "outName": "渡辺 剛"
       },
       {
         "minute": 75,
         "teamId": "JPN",
-        "inName": "小川航基",
-        "outName": "久保建英"
+        "inName": "小川 航基",
+        "outName": "久保 建英"
       },
       {
         "minute": 81,
@@ -4449,8 +4449,8 @@
       {
         "minute": 84,
         "teamId": "JPN",
-        "inName": "塩貝健斗",
-        "outName": "上田綺世"
+        "inName": "塩貝 健斗",
+        "outName": "上田 綺世"
       },
       {
         "minute": 85,
@@ -9345,7 +9345,7 @@
         },
         {
           "number": 4,
-          "name": "ファルフ・サイフィエフ"
+          "name": "��ァルフ・サイフィエフ"
         },
         {
           "number": 8,
@@ -12523,7 +12523,7 @@
         "minute": 81,
         "teamId": "BRA",
         "inName": "エデルソン",
-        "outName": "ヴィニシウス・ジュニオール"
+        "outName": "ヴィニシウス・ジュ���オール"
       },
       {
         "minute": 81,
@@ -14308,21 +14308,21 @@
           "x": 8,
           "y": 50,
           "number": 1,
-          "name": "鈴木彩艶",
+          "name": "鈴木 彩艶",
           "role": "GK"
         },
         {
           "x": 28,
           "y": 16.666666666666664,
           "number": 22,
-          "name": "冨安健洋",
+          "name": "冨安 健洋",
           "role": "DF"
         },
         {
           "x": 28,
           "y": 50,
           "number": 4,
-          "name": "板倉滉",
+          "name": "板倉 滉",
           "role": "DF",
           "isCaptain": true
         },
@@ -14330,56 +14330,56 @@
           "x": 28,
           "y": 83.33333333333334,
           "number": 21,
-          "name": "伊藤洋輝",
+          "name": "伊藤 洋輝",
           "role": "DF"
         },
         {
           "x": 45.33333333333333,
           "y": 12.5,
           "number": 10,
-          "name": "堂安律",
+          "name": "堂安 律",
           "role": "MF"
         },
         {
           "x": 45.33333333333333,
           "y": 37.5,
           "number": 24,
-          "name": "佐野海舟",
+          "name": "佐野 海舟",
           "role": "MF"
         },
         {
           "x": 45.33333333333333,
           "y": 62.5,
           "number": 7,
-          "name": "田中碧",
+          "name": "田中 碧",
           "role": "MF"
         },
         {
           "x": 45.33333333333333,
           "y": 87.5,
           "number": 13,
-          "name": "中村敬斗",
+          "name": "中村 敬斗",
           "role": "MF"
         },
         {
           "x": 62.666666666666664,
           "y": 25,
           "number": 14,
-          "name": "伊東純也",
+          "name": "伊東 純也",
           "role": "MF"
         },
         {
           "x": 62.666666666666664,
           "y": 75,
           "number": 15,
-          "name": "鎌田大地",
+          "name": "鎌田 大地",
           "role": "MF"
         },
         {
           "x": 80,
           "y": 50,
           "number": 18,
-          "name": "上田綺世",
+          "name": "上田 綺世",
           "role": "FW",
           "isMvp": true
         }
@@ -14387,63 +14387,63 @@
       "bench": [
         {
           "number": 2,
-          "name": "菅原由勢"
+          "name": "菅原 由勢"
         },
         {
           "number": 3,
-          "name": "谷口彰悟"
+          "name": "谷口 彰悟"
         },
         {
           "number": 5,
-          "name": "長友佑都"
+          "name": "長友 佑都"
         },
         {
           "number": 6,
-          "name": "町野修斗"
+          "name": "町野 修斗"
         },
         {
           "number": 8,
-          "name": "久保建英"
+          "name": "久保 建英"
         },
         {
           "number": 9,
-          "name": "後藤啓介"
+          "name": "後藤 啓介"
         },
         {
           "number": 11,
-          "name": "前田大然"
+          "name": "前田 大然"
         },
         {
           "number": 12,
-          "name": "大迫敬介"
+          "name": "大迫 敬介"
         },
         {
           "number": 16,
-          "name": "渡辺剛"
+          "name": "渡辺 剛"
         },
         {
           "number": 17,
-          "name": "鈴木唯人"
+          "name": "鈴木 唯人"
         },
         {
           "number": 19,
-          "name": "小川航基"
+          "name": "小川 航基"
         },
         {
           "number": 20,
-          "name": "瀬古歩夢"
+          "name": "瀬古 歩夢"
         },
         {
           "number": 23,
-          "name": "早川友基"
+          "name": "早川 友基"
         },
         {
           "number": 25,
-          "name": "鈴木淳之介"
+          "name": "鈴木 淳之介"
         },
         {
           "number": 26,
-          "name": "塩貝健斗"
+          "name": "塩貝 健斗"
         }
       ]
     },
@@ -14458,36 +14458,36 @@
         "teamId": "JPN",
         "type": "normal",
         "playerId": "p_jpn_19",
-        "playerName": "鎌田大地",
+        "playerName": "鎌田 大地",
         "assistPlayerId": "p_jpn_14",
-        "assistPlayerName": "中村敬斗"
+        "assistPlayerName": "中村 敬斗"
       },
       {
         "minute": 31,
         "teamId": "JPN",
         "type": "normal",
         "playerId": "p_jpn_24",
-        "playerName": "上田綺世",
+        "playerName": "上田 綺世",
         "assistPlayerId": "p_jpn_8",
-        "assistPlayerName": "板倉滉"
+        "assistPlayerName": "板倉 滉"
       },
       {
         "minute": 69,
         "teamId": "JPN",
         "type": "normal",
         "playerId": "p_jpn_13",
-        "playerName": "伊東純也",
+        "playerName": "伊東 純也",
         "assistPlayerId": "p_jpn_24",
-        "assistPlayerName": "上田綺世"
+        "assistPlayerName": "上田 綺世"
       },
       {
         "minute": 83,
         "teamId": "JPN",
         "type": "normal",
         "playerId": "p_jpn_24",
-        "playerName": "上田綺世",
+        "playerName": "上田 綺世",
         "assistPlayerId": "p_jpn_16",
-        "assistPlayerName": "佐野海舟"
+        "assistPlayerName": "佐野 海舟"
       }
     ],
     "substitutions": [
@@ -14512,32 +14512,32 @@
       {
         "minute": 74,
         "teamId": "JPN",
-        "inName": "鈴木淳之介",
-        "outName": "堂安律"
+        "inName": "鈴木 淳之介",
+        "outName": "堂安 律"
       },
       {
         "minute": 74,
         "teamId": "JPN",
-        "inName": "菅原由勢",
-        "outName": "鎌田大地"
+        "inName": "菅原 由勢",
+        "outName": "鎌田 大地"
       },
       {
         "minute": 78,
         "teamId": "JPN",
-        "inName": "瀬古歩夢",
-        "outName": "冨安健洋"
+        "inName": "瀬古 歩夢",
+        "outName": "冨安 健洋"
       },
       {
         "minute": 78,
         "teamId": "JPN",
-        "inName": "鈴木唯人",
-        "outName": "中村敬斗"
+        "inName": "鈴木 唯人",
+        "outName": "中村 敬斗"
       },
       {
         "minute": 86,
         "teamId": "JPN",
-        "inName": "後藤啓介",
-        "outName": "上田綺世"
+        "inName": "後藤 啓介",
+        "outName": "上田 綺世"
       },
       {
         "minute": 90,
