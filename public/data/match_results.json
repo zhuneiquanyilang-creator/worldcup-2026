@@ -15712,6 +15712,24 @@
         "teamId": "CPV",
         "inName": "ヌーノ・ダ・コスタ",
         "outName": "ベンシモル"
+      },
+      {
+        "minute": 70,
+        "teamId": "URU",
+        "inName": "ニコラス・デ・ラ・クルス",
+        "outName": "マヌエル・ウガルテ"
+      },
+      {
+        "minute": 70,
+        "teamId": "URU",
+        "inName": "ダルウィン・ヌニェス",
+        "outName": "フェデリコ・ビニャス"
+      },
+      {
+        "minute": 70,
+        "teamId": "CPV",
+        "inName": "ラロス・ドゥアルテ",
+        "outName": "ケビン・ピナ"
       }
     ]
   },
