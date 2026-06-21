@@ -4826,7 +4826,7 @@
       {
         "minute": 64,
         "teamId": "SWE",
-        "inName": "エリオット・ストラウド",
+        "inName": "エリオッ��・ストラウド",
         "outName": "ガブリエル・グズムンドソン"
       },
       {
@@ -12523,7 +12523,7 @@
         "minute": 81,
         "teamId": "BRA",
         "inName": "エデルソン",
-        "outName": "ヴィニシウス・ジュ���オール"
+        "outName": "ヴィニシウス・ジュニオール"
       },
       {
         "minute": 81,
@@ -13370,7 +13370,7 @@
   },
   "m027": {
     "matchId": "m027",
-    "status": "live",
+    "status": "finished",
     "homeFormation": {
       "shape": "4-2-3-1",
       "starting": [
@@ -13759,7 +13759,11 @@
   },
   "m028": {
     "matchId": "m028",
-    "status": "scheduled"
+    "status": "live",
+    "score": {
+      "home": 0,
+      "away": 0
+    }
   },
   "m034": {
     "matchId": "m034",
