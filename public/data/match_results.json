@@ -9126,7 +9126,7 @@
         },
         {
           "number": 15,
-          "name": "エリック・ダビス"
+          "name": "エリック・��ビス"
         },
         {
           "number": 17,
@@ -9154,7 +9154,7 @@
         },
         {
           "number": 26,
-          "name": "���ルヘ・グティエレス"
+          "name": "ホルヘ・グティエレス"
         }
       ]
     },
@@ -14199,7 +14199,8 @@
           "y": 37.5,
           "number": 17,
           "name": "エリス・スキリ",
-          "role": "MF"
+          "role": "MF",
+          "isCaptain": true
         },
         {
           "x": 45.33333333333333,
@@ -14322,7 +14323,8 @@
           "y": 50,
           "number": 4,
           "name": "板倉滉",
-          "role": "DF"
+          "role": "DF",
+          "isCaptain": true
         },
         {
           "x": 28,
@@ -14467,6 +14469,15 @@
         "playerName": "上田綺世",
         "assistPlayerId": "p_jpn_8",
         "assistPlayerName": "板倉滉"
+      },
+      {
+        "minute": 69,
+        "teamId": "JPN",
+        "type": "normal",
+        "playerId": "p_jpn_13",
+        "playerName": "伊東純也",
+        "assistPlayerId": "p_jpn_24",
+        "assistPlayerName": "上田綺世"
       }
     ],
     "substitutions": [
@@ -14487,6 +14498,18 @@
         "teamId": "TUN",
         "inName": "フィラス・シャウア",
         "outName": "セバスティアン・トネクティ"
+      },
+      {
+        "minute": 74,
+        "teamId": "JPN",
+        "inName": "鈴木淳之介",
+        "outName": "堂安律"
+      },
+      {
+        "minute": 74,
+        "teamId": "JPN",
+        "inName": "菅原由勢",
+        "outName": "鎌田大地"
       }
     ]
   },
