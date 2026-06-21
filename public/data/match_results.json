@@ -9381,7 +9381,7 @@
         },
         {
           "number": 20,
-          "name": "ア��ズベク・アモノフ"
+          "name": "アジズベク・アモノフ"
         },
         {
           "number": 21,
@@ -14862,6 +14862,15 @@
         "playerName": "ラミン・ヤマル",
         "assistPlayerId": "p_esp_23",
         "assistPlayerName": "ミケル・オヤルサバル"
+      },
+      {
+        "minute": 21,
+        "teamId": "ESP",
+        "type": "normal",
+        "playerId": "p_esp_23",
+        "playerName": "ミケル・オヤルサバル",
+        "assistPlayerId": "p_esp_6",
+        "assistPlayerName": "エメリク・ラポルテ"
       }
     ]
   },
