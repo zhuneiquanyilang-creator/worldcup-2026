@@ -5169,7 +5169,7 @@
         },
         {
           "number": 15,
-          "name": "カリム・ハ���ェズ"
+          "name": "カリム・ハフェズ"
         },
         {
           "number": 16,
@@ -14099,6 +14099,24 @@
         "teamId": "ECU",
         "inName": "ニルソン・アングロ",
         "outName": "ペルビス・エストゥピニャン"
+      },
+      {
+        "minute": 75,
+        "teamId": "CUR",
+        "inName": "ケンジ・ゴレ",
+        "outName": "デヴェロン・フォンヴィル"
+      },
+      {
+        "minute": 75,
+        "teamId": "CUR",
+        "inName": "ロション・ファン・エイマ",
+        "outName": "タヒス・チョン"
+      },
+      {
+        "minute": 75,
+        "teamId": "CUR",
+        "inName": "ヤール・マルガリータ",
+        "outName": "ジュニーニョ・バクーナ"
       }
     ],
     "liveLabel": "Live"
