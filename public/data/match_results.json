@@ -9357,7 +9357,7 @@
         },
         {
           "number": 10,
-          "name": "���ャロリディン・マシャリポフ"
+          "name": "ジャロリディン・マシャリポフ"
         },
         {
           "number": 12,
@@ -9393,7 +9393,7 @@
         },
         {
           "number": 25,
-          "name": "ディヨル・オルティクボエフ"
+          "name": "��ィヨル・オルティクボエフ"
         },
         {
           "number": 26,
@@ -12523,7 +12523,7 @@
         "minute": 81,
         "teamId": "BRA",
         "inName": "エデルソン",
-        "outName": "ヴィニシウス・ジュ���オール"
+        "outName": "ヴィニシウス・ジュニオール"
       },
       {
         "minute": 81,
@@ -14880,6 +14880,14 @@
         "playerName": "ミケル・オヤルサバル",
         "assistPlayerId": "p_esp_21",
         "assistPlayerName": "ダニ・オルモ"
+      }
+    ],
+    "bookings": [
+      {
+        "minute": 30,
+        "teamId": "KSA",
+        "playerName": "サレム・アル・ドサリ",
+        "type": "Y"
       }
     ]
   },
