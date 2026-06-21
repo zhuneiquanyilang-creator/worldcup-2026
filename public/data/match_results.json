@@ -11710,7 +11710,7 @@
       {
         "minute": 80,
         "teamId": "USA",
-        "inName": "オーストン・トラスティ",
+        "inName": "オース���ン・トラスティ",
         "outName": "アントニー・ロビンソン"
       },
       {
@@ -14085,6 +14085,13 @@
         "teamId": "CUR",
         "playerName": "ユリエン・ガーリ",
         "type": "Y"
+      },
+      {
+        "minute": 90,
+        "teamId": "CUR",
+        "playerName": "ゴンサロ・プラタ",
+        "type": "Y",
+        "addedTime": 1
       }
     ],
     "substitutions": [
@@ -14117,6 +14124,30 @@
         "teamId": "CUR",
         "inName": "ヤール・マルガリータ",
         "outName": "ジュニーニョ・バクーナ"
+      },
+      {
+        "minute": 83,
+        "teamId": "ECU",
+        "inName": "アンヘロ・プレシアド",
+        "outName": "アラン・フランコ"
+      },
+      {
+        "minute": 84,
+        "teamId": "CUR",
+        "inName": "ゴドフリート・ルメラトゥ",
+        "outName": "リヴァノ・コメネンシア"
+      },
+      {
+        "minute": 84,
+        "teamId": "CUR",
+        "inName": "ヘルファネ・カスタネール",
+        "outName": "ユルゲン・ロカディア"
+      },
+      {
+        "minute": 89,
+        "teamId": "ECU",
+        "inName": "ホルディ・カイセド",
+        "outName": "ジョン・イェボア"
       }
     ],
     "liveLabel": "Live"
