@@ -16476,7 +16476,18 @@
       "home": 0,
       "away": 0
     },
-    "liveLabel": "Live"
+    "liveLabel": "Live",
+    "goals": [
+      {
+        "minute": 39,
+        "teamId": "ARG",
+        "type": "normal",
+        "playerId": "p_arg_19",
+        "playerName": "リオネル・メッシ",
+        "assistPlayerId": "p_arg_11",
+        "assistPlayerName": "ナウエル・モリーナ"
+      }
+    ]
   },
   "m051": {
     "matchId": "m051",
