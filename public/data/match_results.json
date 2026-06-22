@@ -16487,6 +16487,14 @@
         "assistPlayerId": "p_arg_11",
         "assistPlayerName": "ナウエル・モリーナ"
       }
+    ],
+    "bookings": [
+      {
+        "minute": 41,
+        "teamId": "AUT",
+        "playerName": "シュテファン・ポッシュ",
+        "type": "Y"
+      }
     ]
   },
   "m051": {
