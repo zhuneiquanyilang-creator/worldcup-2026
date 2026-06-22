@@ -16514,6 +16514,24 @@
         "teamId": "ARG",
         "inName": "フリアン・アルバレス",
         "outName": "ラウタロ・マルティネス"
+      },
+      {
+        "minute": 68,
+        "teamId": "AUT",
+        "inName": "マルコ・フリードル",
+        "outName": "ダヴィド・アラバ"
+      },
+      {
+        "minute": 68,
+        "teamId": "AUT",
+        "inName": "アレクサンダー・プラス",
+        "outName": "シュテファン・ポッシュ"
+      },
+      {
+        "minute": 68,
+        "teamId": "AUT",
+        "inName": "マルコ・アルナウトビッチ",
+        "outName": "パウル・ヴァナー"
       }
     ]
   },
