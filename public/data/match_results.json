@@ -16486,6 +16486,14 @@
         "playerName": "リオネル・メッシ",
         "assistPlayerId": "p_arg_6",
         "assistPlayerName": "ファクンド・メディーナ"
+      },
+      {
+        "minute": 90,
+        "teamId": "ARG",
+        "type": "normal",
+        "addedTime": 5,
+        "playerId": "p_arg_19",
+        "playerName": "リオネル・メッシ"
       }
     ],
     "bookings": [
