@@ -803,7 +803,14 @@ export default defineConfig(({ mode }) => {
   // .env / .env.local / .env.[mode] を読み込む。`VITE_` プレフィクスがあるものだけが
   // クライアント (import.meta.env) に露出する。`.env.local` は gitignore (*.local) で除外済み。
   const env = loadEnv(mode, process.cwd(), "");
+  // ビルド (= デプロイ) 単位のバージョン。data ファイル fetch の cache-buster
+  // (?v=...) として埋め込み、デプロイのたびにブラウザ / CDN を強制再取得させる。
+  // 同一デプロイ内では値が変わらないので、通常のキャッシュは効いたままにできる。
+  const buildVersion = Date.now().toString(36);
   return {
+    define: {
+      __BUILD_VERSION__: JSON.stringify(buildVersion),
+    },
     plugins: [
       react(),
       matchResultsWriter(),

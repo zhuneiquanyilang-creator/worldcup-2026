@@ -4,8 +4,14 @@ import { RouterProvider } from "react-router-dom";
 import { router } from "./router";
 import { setLiveSource } from "./services/liveSource";
 import { FootballDataLiveSource } from "./services/footballDataSource";
+import { runJpNameMigration } from "./utils/jpNameMigration";
 import "./styles/variables.css";
 import "./styles/global.css";
+
+// localStorage の JPN 選手名表記を空白入りに統一する一回限り migration。
+// (JPN.json と match_results.json は既に統一済みだが localStorage が旧表記の
+//  まま残ると useAutoSyncResults で毎回旧表記に上書きされてしまうため)
+runJpNameMigration();
 
 // ライブ更新ソースを Football-Data.org に設定。
 //

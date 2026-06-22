@@ -1,7 +1,7 @@
 [
   {
     "id": "p_jpn_1",
-    "name": "鈴木彩艶",
+    "name": "鈴木 彩艶",
     "teamId": "JPN",
     "position": "GK",
     "birthDate": "2002-08-21",
@@ -9,11 +9,11 @@
     "goals": 0,
     "assists": 0,
     "number": 1,
-    "shortName": "鈴木彩艶"
+    "shortName": "鈴木 彩艶"
   },
   {
     "id": "p_jpn_11",
-    "name": "菅原由勢",
+    "name": "菅原 由勢",
     "teamId": "JPN",
     "position": "DF",
     "birthDate": "2000-06-28",
@@ -21,11 +21,11 @@
     "goals": 0,
     "assists": 0,
     "number": 2,
-    "shortName": "菅原由勢"
+    "shortName": "菅原 由勢"
   },
   {
     "id": "p_jpn_6",
-    "name": "谷口彰悟",
+    "name": "谷口 彰悟",
     "teamId": "JPN",
     "position": "DF",
     "birthDate": "1991-07-15",
@@ -33,11 +33,11 @@
     "goals": 0,
     "assists": 0,
     "number": 3,
-    "shortName": "谷口彰悟"
+    "shortName": "谷口 彰悟"
   },
   {
     "id": "p_jpn_8",
-    "name": "板倉滉",
+    "name": "板倉 滉",
     "teamId": "JPN",
     "position": "DF",
     "birthDate": "1997-01-27",
@@ -45,11 +45,11 @@
     "goals": 0,
     "assists": 0,
     "number": 4,
-    "shortName": "板倉滉"
+    "shortName": "板倉 滉"
   },
   {
     "id": "p_jpn_4",
-    "name": "長友佑都",
+    "name": "長友 佑都",
     "teamId": "JPN",
     "position": "DF",
     "birthDate": "1986-09-12",
@@ -57,11 +57,11 @@
     "goals": 0,
     "assists": 0,
     "number": 5,
-    "shortName": "長友佑都"
+    "shortName": "長友 佑都"
   },
   {
     "id": "p_jpn_20",
-    "name": "町野修斗",
+    "name": "町野 修斗",
     "teamId": "JPN",
     "position": "FW",
     "birthDate": "1999-09-30",
@@ -69,11 +69,11 @@
     "goals": 0,
     "assists": 0,
     "number": 6,
-    "shortName": "町野修斗"
+    "shortName": "町野 修斗"
   },
   {
     "id": "p_jpn_18",
-    "name": "田中碧",
+    "name": "田中 碧",
     "teamId": "JPN",
     "position": "MF",
     "birthDate": "1998-09-10",
@@ -81,11 +81,11 @@
     "goals": 0,
     "assists": 0,
     "number": 7,
-    "shortName": "田中碧"
+    "shortName": "田中 碧"
   },
   {
     "id": "p_jpn_21",
-    "name": "久保建英",
+    "name": "久保 建英",
     "teamId": "JPN",
     "position": "MF",
     "birthDate": "2001-06-04",
@@ -93,11 +93,11 @@
     "goals": 0,
     "assists": 0,
     "number": 8,
-    "shortName": "久保建英"
+    "shortName": "久保 建英"
   },
   {
     "id": "p_jpn_26",
-    "name": "後藤啓介",
+    "name": "後藤 啓介",
     "teamId": "JPN",
     "position": "FW",
     "birthDate": "2005-06-03",
@@ -105,11 +105,11 @@
     "goals": 0,
     "assists": 0,
     "number": 9,
-    "shortName": "後藤啓介"
+    "shortName": "後藤 啓介"
   },
   {
     "id": "p_jpn_17",
-    "name": "堂安律",
+    "name": "堂安 律",
     "teamId": "JPN",
     "position": "MF",
     "birthDate": "1998-06-16",
@@ -117,11 +117,11 @@
     "goals": 0,
     "assists": 0,
     "number": 10,
-    "shortName": "堂安律"
+    "shortName": "堂安 律"
   },
   {
     "id": "p_jpn_23",
-    "name": "前田大然",
+    "name": "前田 大然",
     "teamId": "JPN",
     "position": "FW",
     "birthDate": "1997-10-20",
@@ -129,11 +129,11 @@
     "goals": 0,
     "assists": 0,
     "number": 11,
-    "shortName": "前田大然"
+    "shortName": "前田 大然"
   },
   {
     "id": "p_jpn_2",
-    "name": "大迫敬介",
+    "name": "大迫 敬介",
     "teamId": "JPN",
     "position": "GK",
     "birthDate": "1999-07-28",
@@ -141,11 +141,11 @@
     "goals": 0,
     "assists": 0,
     "number": 12,
-    "shortName": "大迫敬介"
+    "shortName": "大迫 敬介"
   },
   {
     "id": "p_jpn_14",
-    "name": "中村敬斗",
+    "name": "中村 敬斗",
     "teamId": "JPN",
     "position": "MF",
     "birthDate": "2000-07-28",
@@ -153,11 +153,11 @@
     "goals": 0,
     "assists": 0,
     "number": 13,
-    "shortName": "中村敬斗"
+    "shortName": "中村 敬斗"
   },
   {
     "id": "p_jpn_13",
-    "name": "伊東純也",
+    "name": "伊東 純也",
     "teamId": "JPN",
     "position": "MF",
     "birthDate": "1993-03-09",
@@ -165,11 +165,11 @@
     "goals": 0,
     "assists": 0,
     "number": 14,
-    "shortName": "伊東純也"
+    "shortName": "伊東 純也"
   },
   {
     "id": "p_jpn_19",
-    "name": "鎌田大地",
+    "name": "鎌田 大地",
     "teamId": "JPN",
     "position": "MF",
     "birthDate": "1996-08-05",
@@ -177,11 +177,11 @@
     "goals": 0,
     "assists": 0,
     "number": 15,
-    "shortName": "鎌田大地"
+    "shortName": "鎌田 大地"
   },
   {
     "id": "p_jpn_7",
-    "name": "渡辺剛",
+    "name": "渡辺 剛",
     "teamId": "JPN",
     "position": "DF",
     "birthDate": "1997-02-05",
@@ -189,11 +189,11 @@
     "goals": 0,
     "assists": 0,
     "number": 16,
-    "shortName": "渡辺剛"
+    "shortName": "渡辺 剛"
   },
   {
     "id": "p_jpn_15",
-    "name": "鈴木唯人",
+    "name": "鈴木 唯人",
     "teamId": "JPN",
     "position": "MF",
     "birthDate": "2001-10-25",
@@ -201,11 +201,11 @@
     "goals": 0,
     "assists": 0,
     "number": 17,
-    "shortName": "鈴木唯人"
+    "shortName": "鈴木 唯人"
   },
   {
     "id": "p_jpn_24",
-    "name": "上田綺世",
+    "name": "上田 綺世",
     "teamId": "JPN",
     "position": "FW",
     "birthDate": "1998-08-28",
@@ -213,11 +213,11 @@
     "goals": 0,
     "assists": 0,
     "number": 18,
-    "shortName": "上田綺世"
+    "shortName": "上田 綺世"
   },
   {
     "id": "p_jpn_25",
-    "name": "小川航基",
+    "name": "小川 航基",
     "teamId": "JPN",
     "position": "FW",
     "birthDate": "1997-08-08",
@@ -225,11 +225,11 @@
     "goals": 0,
     "assists": 0,
     "number": 19,
-    "shortName": "小川航基"
+    "shortName": "小川 航基"
   },
   {
     "id": "p_jpn_10",
-    "name": "瀬古歩夢",
+    "name": "瀬古 歩夢",
     "teamId": "JPN",
     "position": "DF",
     "birthDate": "2000-06-07",
@@ -237,11 +237,11 @@
     "goals": 0,
     "assists": 0,
     "number": 20,
-    "shortName": "瀬古歩夢"
+    "shortName": "瀬古 歩夢"
   },
   {
     "id": "p_jpn_12",
-    "name": "伊藤洋輝",
+    "name": "伊藤 洋輝",
     "teamId": "JPN",
     "position": "DF",
     "birthDate": "1999-05-12",
@@ -249,11 +249,11 @@
     "goals": 0,
     "assists": 0,
     "number": 21,
-    "shortName": "伊藤洋輝"
+    "shortName": "伊藤 洋輝"
   },
   {
     "id": "p_jpn_9",
-    "name": "冨安健洋",
+    "name": "冨安 健洋",
     "teamId": "JPN",
     "position": "DF",
     "birthDate": "1998-11-05",
@@ -261,11 +261,11 @@
     "goals": 0,
     "assists": 0,
     "number": 22,
-    "shortName": "冨安健洋"
+    "shortName": "冨安 健洋"
   },
   {
     "id": "p_jpn_3",
-    "name": "早川友基",
+    "name": "早川 友基",
     "teamId": "JPN",
     "position": "GK",
     "birthDate": "1999-03-03",
@@ -273,11 +273,11 @@
     "goals": 0,
     "assists": 0,
     "number": 23,
-    "shortName": "早川友基"
+    "shortName": "早川 友基"
   },
   {
     "id": "p_jpn_16",
-    "name": "佐野海舟",
+    "name": "佐野 海舟",
     "teamId": "JPN",
     "position": "MF",
     "birthDate": "2000-12-30",
@@ -285,11 +285,11 @@
     "goals": 0,
     "assists": 0,
     "number": 24,
-    "shortName": "佐野海舟"
+    "shortName": "佐野 海舟"
   },
   {
     "id": "p_jpn_5",
-    "name": "鈴木淳之介",
+    "name": "鈴木 淳之介",
     "teamId": "JPN",
     "position": "DF",
     "birthDate": "2003-07-12",
@@ -297,11 +297,11 @@
     "goals": 0,
     "assists": 0,
     "number": 25,
-    "shortName": "鈴木淳之介"
+    "shortName": "鈴木 淳之介"
   },
   {
     "id": "p_jpn_22",
-    "name": "塩貝健斗",
+    "name": "塩貝 健斗",
     "teamId": "JPN",
     "position": "FW",
     "birthDate": "2005-03-26",
@@ -309,6 +309,6 @@
     "goals": 0,
     "assists": 0,
     "number": 26,
-    "shortName": "塩貝健斗"
+    "shortName": "塩貝 健斗"
   }
 ]

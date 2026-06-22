@@ -273,11 +273,39 @@ export function CombinedFormation({
           aria-label="フォーメーション"
         >
           <Pitch />
+          {/* 1 pass 目: 円・番号・カード・バッジ (ボディ) を全選手ぶん描画 */}
           {homeProcessed?.starting.map((s, i) => {
             const [x, y] = layout.homePos(s);
             return (
-              <Spot
-                key={`h${i}`}
+              <SpotBody
+                key={`hb${i}`}
+                spot={s}
+                x={x}
+                y={y}
+                variant="home"
+              />
+            );
+          })}
+          {awayProcessed?.starting.map((s, i) => {
+            const [x, y] = layout.awayPos(s);
+            return (
+              <SpotBody
+                key={`ab${i}`}
+                spot={s}
+                x={x}
+                y={y}
+                variant="away"
+              />
+            );
+          })}
+          {/* 2 pass 目: 名前ラベルを最後に描画 (SVG は後出しが上)。
+             これで「隣の選手のバッジが自分の名前の上に被る」現象を防ぐ
+             (同じ Spot 内の order だけでは隣 Spot のバッジに勝てない)。 */}
+          {homeProcessed?.starting.map((s, i) => {
+            const [x, y] = layout.homePos(s);
+            return (
+              <SpotName
+                key={`hn${i}`}
                 spot={s}
                 x={x}
                 y={y}
@@ -290,8 +318,8 @@ export function CombinedFormation({
           {awayProcessed?.starting.map((s, i) => {
             const [x, y] = layout.awayPos(s);
             return (
-              <Spot
-                key={`a${i}`}
+              <SpotName
+                key={`an${i}`}
                 spot={s}
                 x={x}
                 y={y}
@@ -490,20 +518,19 @@ function AssistBadge({ count, x, y }: { count: number; x: number; y: number }) {
   );
 }
 
-function Spot({
+/** Spot のボディ (円・番号・カード・バッジ)。名前ラベルは別 (SpotName) で
+ *  全選手のボディの後にまとめて描画することで、隣の選手のバッジが自分の
+ *  名前に被ってしまうのを防ぐ。 */
+function SpotBody({
   spot,
   x,
   y,
   variant,
-  nameSize,
-  shortNames,
 }: {
   spot: SpotWithSub;
   x: number;
   y: number;
   variant: "home" | "away";
-  nameSize: number;
-  shortNames?: Map<string, string>;
 }) {
   const ringColor = variant === "home" ? "#1a3a8a" : "#b91c1c";
   const textColor = variant === "home" ? "#1a3a8a" : "#b91c1c";
@@ -512,32 +539,8 @@ function Spot({
   const goalCount = spot.goals?.length ?? 0;
   const assistCount = spot.assists?.length ?? 0;
   const ownGoalCount = spot.ownGoals?.length ?? 0;
-  // GK はピッチ両端 (ゴール側) に置かれるため、長い名前ラベルが SVG 枠を
-  // はみ出して見切れる (例: NED「フェルブルッヘン」左端 / SWE「ノードフェルト」右端)。
-  // 名前長から「はみ出る分だけ」内側にずらす。短い名前 (4文字程度) は ±0 のままで、
-  // ラベルが GK 円の直下に来るので不自然な配置にならない。
-  // formation.ts の STRONG_SPREAD=30 と組で、長い名前でもセンターバック (y=50) と
-  // 被らない範囲に収まる。
-  const isGK = spot.role === "GK";
-  const displayedText =
-    resolveDisplayName(spot.name, shortNames) + (spot.isCaptain ? " (C)" : "");
-  let labelDX = 0;
-  if (isGK) {
-    // カタカナ平均幅 ≈ fontSize × 1.2 (安全側に多めに見積もる)
-    const halfWidth = (displayedText.length * nameSize * 1.2) / 2;
-    // GK 円中心から SVG ピッチ端までの余裕 (px) ≈ 5.2
-    const EDGE_CLEARANCE = 5.2;
-    const needed = Math.max(0, halfWidth - EDGE_CLEARANCE);
-    if (needed > 0) {
-      labelDX = variant === "home" ? needed : -needed;
-    }
-  }
 
   // 右側に縦積みで配置 (上から ↓N' → ⚽ → 🔴⚽ (OG) → Ⓐ)。
-  // 退出済みのときは ↓N' を最上段に置き、その下のバッジ群は順に 3 ずつ下げる。
-  // STACK_X は「選手円中心 (x=0) からバッジ中心までの右オフセット」。
-  // 6 にすることで、半幅 4 程度の名前ラベル (≒ 4 文字カタカナまで) はバッジと
-  // 物理的に重ならず、長い名前で重なっても z-order で名前が前面に来る。
   const STACK_X = 6;
   const subbedOutY = -4.2;
   const goalY = isSubbedOut ? 0 : -1;
@@ -552,7 +555,6 @@ function Spot({
   return (
     <g transform={`translate(${x}, ${y})`}>
       {spot.isMvp ? (
-        // MVP: 背番号サークルを金色の星形に置き換える (番号は中央に残す)
         <polygon
           points="0,-4.2 0.926,-1.273 3.994,-1.297 1.499,0.487 2.469,3.397 0,1.575 -2.469,3.397 -1.499,0.487 -3.994,-1.297 -0.926,-1.273"
           fill="#fbbf24"
@@ -575,7 +577,6 @@ function Spot({
       >
         {spot.number ?? ""}
       </text>
-      {/* カード (左上に小さく) */}
       {(yellow || red) && (
         <g transform="translate(-5.5, -3.8)">
           {yellow && (
@@ -604,7 +605,6 @@ function Spot({
           )}
         </g>
       )}
-      {/* 右側に縦積み: ↓N' (上) → ⚽ → Ⓐ */}
       {isSubbedOut && (
         <g transform={`translate(${STACK_X}, ${subbedOutY})`}>
           <rect x={-2.75} y={-1.6} width={5.5} height={3.2} rx={0.8} fill="#e30613" />
@@ -628,8 +628,44 @@ function Spot({
       {assistCount > 0 && (
         <AssistBadge count={assistCount} x={STACK_X} y={assistY} />
       )}
-      {/* 名前ラベルは最後に描画 (SVG は後出しが上) — バッジ群と重なる場合に
-       *  名前が読めなくなるのを防ぐ。stroke で縁取って背景バッジの色を遮る。 */}
+    </g>
+  );
+}
+
+/** Spot の名前ラベルだけ。CombinedFormation の 2 pass 目で全選手ぶん
+ *  一括描画する (どの選手の名前も全 SpotBody のバッジより上に来る)。 */
+function SpotName({
+  spot,
+  x,
+  y,
+  variant,
+  nameSize,
+  shortNames,
+}: {
+  spot: SpotWithSub;
+  x: number;
+  y: number;
+  variant: "home" | "away";
+  nameSize: number;
+  shortNames?: Map<string, string>;
+}) {
+  // GK の名前ラベルは円が SVG 端に寄るため、長い名前のはみ出し分だけ内側に
+  // ずらす。短い名前 (≲4 文字) は ±0 で円直下のまま自然な配置。
+  const isGK = spot.role === "GK";
+  const displayedText =
+    resolveDisplayName(spot.name, shortNames) + (spot.isCaptain ? " (C)" : "");
+  let labelDX = 0;
+  if (isGK) {
+    const halfWidth = (displayedText.length * nameSize * 1.2) / 2;
+    const EDGE_CLEARANCE = 5.2;
+    const needed = Math.max(0, halfWidth - EDGE_CLEARANCE);
+    if (needed > 0) {
+      labelDX = variant === "home" ? needed : -needed;
+    }
+  }
+
+  return (
+    <g transform={`translate(${x}, ${y})`}>
       <text
         x={labelDX}
         y={6.8}
@@ -641,8 +677,7 @@ function Spot({
         strokeWidth={0.18}
         paintOrder="stroke"
       >
-        {resolveDisplayName(spot.name, shortNames)}
-        {spot.isCaptain && " (C)"}
+        {displayedText}
       </text>
     </g>
   );
