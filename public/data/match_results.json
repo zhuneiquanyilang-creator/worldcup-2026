@@ -7882,7 +7882,7 @@
         },
         {
           "number": 7,
-          "name": "モハマド・アブ・ズライク"
+          "name": "モ���マド・アブ・ズライク"
         },
         {
           "number": 12,
@@ -12523,7 +12523,7 @@
         "minute": 81,
         "teamId": "BRA",
         "inName": "エデルソン",
-        "outName": "ヴィニシウス・ジュニオール"
+        "outName": "ヴィニシウス・ジュ���オール"
       },
       {
         "minute": 81,
@@ -16107,6 +16107,75 @@
         "teamId": "NZL",
         "playerName": "カラム・マッコワット",
         "type": "Y"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": 41,
+        "teamId": "EGY",
+        "inName": "ラミー・ラビア",
+        "outName": "ハムディ・ファティ"
+      },
+      {
+        "minute": 66,
+        "teamId": "NZL",
+        "inName": "ベン・オールド",
+        "outName": "カラム・マッコワット"
+      },
+      {
+        "minute": 76,
+        "teamId": "NZL",
+        "inName": "ライアン・トーマス",
+        "outName": "リベラト・カカーチェ"
+      },
+      {
+        "minute": 76,
+        "teamId": "NZL",
+        "inName": "ジェシー・ランドール",
+        "outName": "サープリート・シン"
+      },
+      {
+        "minute": 76,
+        "teamId": "EGY",
+        "inName": "ハムザ・アブデルカリム",
+        "outName": "モスタファ・ジコ"
+      },
+      {
+        "minute": 76,
+        "teamId": "EGY",
+        "inName": "マハムード・ハッサン（トレゼゲ）",
+        "outName": "オマル・マルムシュ"
+      },
+      {
+        "minute": 84,
+        "teamId": "EGY",
+        "inName": "ホッサム・アブデルマギド",
+        "outName": "モハメド・サラー"
+      },
+      {
+        "minute": 84,
+        "teamId": "EGY",
+        "inName": "アーメド・サイード（ジゾ）",
+        "outName": "エマム・アシュール"
+      },
+      {
+        "minute": 85,
+        "teamId": "NZL",
+        "inName": "フランシス・デ・ヴリーズ",
+        "outName": "ティム・ペイン"
+      },
+      {
+        "minute": 85,
+        "teamId": "NZL",
+        "inName": "タイラー・ビンドン",
+        "outName": "イライジャ・ジャスト"
+      },
+      {
+        "minute": 90,
+        "teamId": "EGY",
+        "inName": "モハメド・アブデルモネイム",
+        "outName": "ホッサム・アブデルマギド",
+        "addedTime": 9
       }
     ]
   },
