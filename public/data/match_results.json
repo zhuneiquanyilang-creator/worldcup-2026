@@ -8356,7 +8356,7 @@
         "playerId": "p_cod_23",
         "playerName": "ヨアヌ・ウィサ",
         "assistPlayerId": "p_cod_9",
-        "assistPlayerName": "アルトゥール・マスアク"
+        "assistPlayerName": "アルトゥー���・マスアク"
       }
     ],
     "bookings": [
@@ -15658,6 +15658,13 @@
         "teamId": "URU",
         "playerName": "マティアス・オリベラ",
         "type": "Y"
+      },
+      {
+        "minute": 90,
+        "teamId": "CPV",
+        "playerName": "ディニー・ボルジェス",
+        "type": "Y",
+        "addedTime": 3
       }
     ],
     "goals": [
