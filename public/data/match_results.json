@@ -12523,7 +12523,7 @@
         "minute": 81,
         "teamId": "BRA",
         "inName": "エデルソン",
-        "outName": "ヴィニシウス・ジュニオール"
+        "outName": "ヴィニシウス・ジュ���オール"
       },
       {
         "minute": 81,
@@ -14379,7 +14379,7 @@
           "x": 80,
           "y": 50,
           "number": 18,
-          "name": "上田 綺��",
+          "name": "上田 綺世",
           "role": "FW",
           "isMvp": true
         }
@@ -17062,7 +17062,8 @@
           "y": 50,
           "number": 9,
           "name": "アーリング・ブラウト・ハーランド",
-          "role": "FW"
+          "role": "FW",
+          "isMvp": true
         },
         {
           "x": 80,
@@ -17690,7 +17691,8 @@
     "score": {
       "home": 1,
       "away": 2
-    }
+    },
+    "liveLabel": "Full time"
   },
   "m063": {
     "matchId": "m063",
