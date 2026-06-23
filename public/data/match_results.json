@@ -18139,6 +18139,38 @@
         "playerName": "オディルジョン・ハムロベコフ",
         "type": "Y"
       }
+    ],
+    "substitutions": [
+      {
+        "minute": 46,
+        "teamId": "POR",
+        "inName": "ネルソン・セメド",
+        "outName": "ジョアン・カンセロ"
+      },
+      {
+        "minute": 46,
+        "teamId": "POR",
+        "inName": "フランシスコ・コンセイソン",
+        "outName": "ペドロ・ネト"
+      },
+      {
+        "minute": 46,
+        "teamId": "UZB",
+        "inName": "ホジアクバル・アリジョノフ",
+        "outName": "シェルゾド・ナスルラエフ"
+      },
+      {
+        "minute": 46,
+        "teamId": "UZB",
+        "inName": "アクマル・モズゴボイ",
+        "outName": "オディルジョン・ハムロベコフ"
+      },
+      {
+        "minute": 64,
+        "teamId": "POR",
+        "inName": "トリンカン",
+        "outName": "ジョアン・フェリックス"
+      }
     ]
   },
   "m069": {
