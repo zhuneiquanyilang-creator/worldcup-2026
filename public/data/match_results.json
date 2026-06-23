@@ -7257,7 +7257,7 @@
           "x": 8,
           "y": 50,
           "number": 23,
-          "name": "エミリアーノ・���ルティネス",
+          "name": "エミリアーノ・マルティネス",
           "role": "GK"
         },
         {
@@ -11710,7 +11710,7 @@
       {
         "minute": 80,
         "teamId": "USA",
-        "inName": "オーストン・トラスティ",
+        "inName": "オース���ン・トラスティ",
         "outName": "アントニー・ロビンソン"
       },
       {
@@ -14379,7 +14379,7 @@
           "x": 80,
           "y": 50,
           "number": 18,
-          "name": "上田 綺��",
+          "name": "上田 綺世",
           "role": "FW",
           "isMvp": true
         }
@@ -16962,6 +16962,18 @@
         "teamId": "IRQ",
         "inName": "マルコ・ファルジ",
         "outName": "イブラヒム・バイェシュ"
+      },
+      {
+        "minute": 83,
+        "teamId": "FRA",
+        "inName": "マグネス・アクリウシュ",
+        "outName": "ブラッドリー・バルコラ"
+      },
+      {
+        "minute": 83,
+        "teamId": "FRA",
+        "inName": "マロ・ギュスト",
+        "outName": "ジュール・クンデ"
       }
     ],
     "liveLabel": "Live"
