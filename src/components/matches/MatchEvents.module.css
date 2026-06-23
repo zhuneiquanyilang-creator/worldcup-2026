@@ -228,25 +228,38 @@
     gap: 0.05rem;
   }
 
+  /* CJK 選手名 (例: "上田 綺世") は 2 行になる必要があるとき、
+   * 姓と名の半角スペースで改行されるよう keep-all を使う。
+   * 漢字単独で文字単位に折れる (例: "上田 綺" / "世") のを避ける。
+   * overflow-wrap: anywhere は外国人選手名 (例: "アレクサンデル・ベルンハルトソン"
+   * のように空白を含まない 1 語) が幅を超えるときの fallback として
+   * 任意の位置で折る挙動を残す。 */
   .name {
     font-size: 0.72rem;
     line-height: 1.25;
-    word-break: break-word;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
   }
 
   .subIn {
     font-size: 0.72rem;
     line-height: 1.25;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
   }
 
   .assist {
     font-size: 0.62rem;
     line-height: 1.25;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
   }
 
   .subOut {
     font-size: 0.62rem;
     line-height: 1.25;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
   }
 
   .minute {
