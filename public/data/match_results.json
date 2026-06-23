@@ -17333,6 +17333,18 @@
         "teamId": "SEN",
         "inName": "パペ・マタル・サール",
         "outName": "カリドゥ・クリバリ"
+      },
+      {
+        "minute": 84,
+        "teamId": "NOR",
+        "inName": "レオ・スキリ・エスティゴール",
+        "outName": "トールビェルン・ヘッゲム"
+      },
+      {
+        "minute": 84,
+        "teamId": "NOR",
+        "inName": "オスカー・ボブ",
+        "outName": "アレクサンデル・セルロート"
       }
     ],
     "goals": [
