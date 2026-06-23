@@ -17321,6 +17321,18 @@
         "teamId": "SEN",
         "inName": "パテ・イスマイル・シス",
         "outName": "ラミン・カマラ"
+      },
+      {
+        "minute": 71,
+        "teamId": "NOR",
+        "inName": "アンドレアス・レーデルゴール・シェルデルップ",
+        "outName": "アントニオ・ヌサ"
+      },
+      {
+        "minute": 72,
+        "teamId": "SEN",
+        "inName": "パペ・マタル・サール",
+        "outName": "カリドゥ・クリバリ"
       }
     ],
     "goals": [
