@@ -6397,7 +6397,7 @@
         "minute": 46,
         "teamId": "URU",
         "inName": "アグスティン・カノッビオ",
-        "outName": "ダルウィン・ヌニェス"
+        "outName": "ダ���ウィン・ヌニェス"
       },
       {
         "minute": 63,
@@ -8874,7 +8874,7 @@
           "x": 8,
           "y": 50,
           "number": 1,
-          "name": "ローレンス・アティ・ジギ",
+          "name": "ローレ��ス・アティ・ジギ",
           "role": "GK"
         },
         {
@@ -14379,7 +14379,7 @@
           "x": 80,
           "y": 50,
           "number": 18,
-          "name": "上田 綺��",
+          "name": "上田 綺世",
           "role": "FW",
           "isMvp": true
         }
@@ -16590,7 +16590,7 @@
     "matchId": "m051",
     "status": "live",
     "score": {
-      "home": 1,
+      "home": 2,
       "away": 0
     },
     "goals": [
@@ -16602,6 +16602,15 @@
         "playerName": "キリアン・エンバペ",
         "assistPlayerId": "p_fra_21",
         "assistPlayerName": "マイケル・オリーセ"
+      },
+      {
+        "minute": 54,
+        "teamId": "FRA",
+        "type": "normal",
+        "playerId": "p_fra_18",
+        "playerName": "キリアン・エンバペ",
+        "assistPlayerId": "p_fra_23",
+        "assistPlayerName": "ウスマン・デンベレ"
       }
     ],
     "homeFormation": {
@@ -16910,11 +16919,11 @@
         "outName": "アイメン・フセイン"
       }
     ],
-    "liveLabel": "Halftime"
+    "liveLabel": "Live"
   },
   "m052": {
     "matchId": "m052",
-    "status": "scheduled",
+    "status": "live",
     "homeFormation": {
       "shape": "4-3-3",
       "starting": [
@@ -17208,7 +17217,8 @@
     "score": {
       "home": 0,
       "away": 0
-    }
+    },
+    "liveLabel": "Live"
   },
   "m058": {
     "matchId": "m058",
