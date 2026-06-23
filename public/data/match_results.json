@@ -12523,7 +12523,7 @@
         "minute": 81,
         "teamId": "BRA",
         "inName": "エデルソン",
-        "outName": "ヴィニシウス・ジュニオール"
+        "outName": "ヴィニシウス・ジュ���オール"
       },
       {
         "minute": 81,
@@ -14379,7 +14379,7 @@
           "x": 80,
           "y": 50,
           "number": 18,
-          "name": "上田 綺��",
+          "name": "上田 綺世",
           "role": "FW",
           "isMvp": true
         }
@@ -17241,7 +17241,7 @@
         },
         {
           "number": 9,
-          "name": "バンバ・デ��エング"
+          "name": "バンバ・ディエング"
         },
         {
           "number": 12,
@@ -18097,7 +18097,18 @@
       "home": 0,
       "away": 0
     },
-    "liveLabel": "Live"
+    "liveLabel": "Live",
+    "goals": [
+      {
+        "minute": 6,
+        "teamId": "POR",
+        "type": "normal",
+        "playerId": "p_por_20",
+        "playerName": "クリスティアーノ・ロナウド",
+        "assistPlayerId": "p_por_10",
+        "assistPlayerName": "ジョアン・カンセロ"
+      }
+    ]
   },
   "m069": {
     "matchId": "m069",
