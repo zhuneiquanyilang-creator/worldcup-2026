@@ -7257,7 +7257,7 @@
           "x": 8,
           "y": 50,
           "number": 23,
-          "name": "エミリアーノ・マルティネス",
+          "name": "エミリアーノ・���ルティネス",
           "role": "GK"
         },
         {
@@ -7306,7 +7306,7 @@
           "x": 54,
           "y": 62.5,
           "number": 24,
-          "name": "エンソ・フェルナンデ���",
+          "name": "エンソ・フェルナンデス",
           "role": "MF"
         },
         {
@@ -16590,7 +16590,7 @@
     "matchId": "m051",
     "status": "live",
     "score": {
-      "home": 2,
+      "home": 3,
       "away": 0
     },
     "goals": [
@@ -16611,6 +16611,15 @@
         "playerName": "キリアン・エンバペ",
         "assistPlayerId": "p_fra_23",
         "assistPlayerName": "ウスマン・デンベレ"
+      },
+      {
+        "minute": 66,
+        "teamId": "FRA",
+        "type": "normal",
+        "playerId": "p_fra_23",
+        "playerName": "ウスマン・デンベレ",
+        "assistPlayerId": "p_fra_21",
+        "assistPlayerName": "マイケル・オリーセ"
       }
     ],
     "homeFormation": {
@@ -16929,6 +16938,30 @@
         "teamId": "IRQ",
         "inName": "ユセフ・アミン",
         "outName": "ザイド・イスマイル"
+      },
+      {
+        "minute": 68,
+        "teamId": "FRA",
+        "inName": "ラヤン・シェルキ",
+        "outName": "マイケル・オリーセ"
+      },
+      {
+        "minute": 68,
+        "teamId": "FRA",
+        "inName": "デジレ・ドゥエ",
+        "outName": "ウスマン・デンベレ"
+      },
+      {
+        "minute": 68,
+        "teamId": "IRQ",
+        "inName": "アイマル・シェル",
+        "outName": "アミル・アル・アンマリ"
+      },
+      {
+        "minute": 68,
+        "teamId": "IRQ",
+        "inName": "マルコ・ファルジ",
+        "outName": "イブラヒム・バイェシュ"
       }
     ],
     "liveLabel": "Live"
