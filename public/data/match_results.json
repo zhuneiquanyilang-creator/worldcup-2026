@@ -17396,7 +17396,7 @@
   },
   "m058": {
     "matchId": "m058",
-    "status": "scheduled",
+    "status": "finished",
     "homeFormation": {
       "shape": "3-4-2-1",
       "starting": [
@@ -17686,6 +17686,10 @@
           "name": "サミル・シェルギ"
         }
       ]
+    },
+    "score": {
+      "home": 1,
+      "away": 2
     }
   },
   "m063": {
