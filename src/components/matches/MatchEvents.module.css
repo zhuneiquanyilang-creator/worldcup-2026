@@ -150,6 +150,35 @@
   white-space: nowrap;
 }
 
+.halftimeBlock {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.halftimeNote {
+  background-color: #d93535;
+  color: #fff;
+  padding: 0.18rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+  animation: halftimeNoteBlink 1.6s ease-in-out infinite;
+}
+
+@keyframes halftimeNoteBlink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.55;
+  }
+}
+
 .empty {
   margin: 0;
   text-align: center;
@@ -226,5 +255,15 @@
     font-size: 0.7rem;
     padding: 0.2rem 0.7rem;
     letter-spacing: 0.08em;
+  }
+
+  .halftimeNote {
+    font-size: 0.65rem;
+    padding: 0.15rem 0.55rem;
+    letter-spacing: 0.06em;
+  }
+
+  .halftimeBlock {
+    gap: 0.2rem;
   }
 }

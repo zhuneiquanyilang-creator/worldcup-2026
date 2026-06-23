@@ -115,4 +115,7 @@ export type Match = {
   /** 日本国内での放送局コード。FIFA 公式 (canadamexicousa2026/scores-fixtures?country=JP) 由来。
    *  値: "nhk-g" | "nhk-bs1" | "nhk-bs4k" | "ntv" | "fuji" */
   broadcasters?: string[];
+  /** 試合の特記事項テロップ (例: "中断中")。試合経過のハーフタイム表示直下に
+   *  小さな赤バッジで描画される。値があるあいだだけ表示。 */
+  note?: string;
 };

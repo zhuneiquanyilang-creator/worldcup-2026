@@ -31,6 +31,7 @@ function applyUpdate(m: Match, u: LiveUpdate): Match {
     ...(u.homeFormation ? { homeFormation: u.homeFormation } : {}),
     ...(u.awayFormation ? { awayFormation: u.awayFormation } : {}),
     ...(u.stats ? { stats: u.stats } : {}),
+    ...(u.note !== undefined ? { note: u.note } : {}),
   };
 }
 

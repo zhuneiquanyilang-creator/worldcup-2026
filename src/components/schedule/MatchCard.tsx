@@ -58,7 +58,12 @@ export function MatchCard({ match, teamMap }: Props) {
           >
             {stageLabel(match.stage, match.groupId)}
           </span>
-          {live && <LiveBadge label="LIVE" />}
+          {live &&
+            (match.note ? (
+              <LiveBadge label={match.note} variant="suspended" />
+            ) : (
+              <LiveBadge label="LIVE" />
+            ))}
         </span>
         <span className={styles.time}>{formatTime(match.date)} KO</span>
       </div>

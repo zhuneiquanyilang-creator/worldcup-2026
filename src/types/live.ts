@@ -26,6 +26,8 @@ export type LiveUpdate = {
   homeFormation?: FormationData;
   awayFormation?: FormationData;
   stats?: MatchStats;
+  /** 試合の特記事項テロップ (例: "中断中")。 */
+  note?: string;
   /** ISO 8601 取得時刻（最終更新時刻表示用） */
   fetchedAt?: string;
 };

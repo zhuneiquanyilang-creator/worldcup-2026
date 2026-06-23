@@ -142,7 +142,12 @@ export function MatchEvents({ match, teamMap, playerMap }: Props) {
             return (
               <li key={`ht-${i}`} className={styles.halftimeRow}>
                 <span className={styles.halftimeLine} aria-hidden />
-                <span className={styles.halftimeLabel}>ハーフタイム</span>
+                <span className={styles.halftimeBlock}>
+                  <span className={styles.halftimeLabel}>ハーフタイム</span>
+                  {match.note && (
+                    <span className={styles.halftimeNote}>{match.note}</span>
+                  )}
+                </span>
                 <span className={styles.halftimeLine} aria-hidden />
               </li>
             );

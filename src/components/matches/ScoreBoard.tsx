@@ -32,7 +32,12 @@ export function ScoreBoard({ match, homeTeam, awayTeam }: Props) {
         >
           {stageLabel(match.stage, match.groupId)}
         </span>
-        {live && <LiveBadge label="LIVE" />}
+        {live &&
+          (match.note ? (
+            <LiveBadge label={match.note} variant="suspended" />
+          ) : (
+            <LiveBadge label="LIVE" />
+          ))}
         <span>{formatDateJa(match.date)} {formatTime(match.date)} KO</span>
         <span>{match.venue}</span>
       </div>

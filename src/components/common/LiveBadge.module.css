@@ -23,3 +23,11 @@
   0%, 100% { opacity: 1; }
   50% { opacity: 0.3; }
 }
+
+.badgeSuspended {
+  background-color: #e58a00;
+}
+
+.dotSuspended {
+  animation: pulse 1.6s ease-in-out infinite;
+}
