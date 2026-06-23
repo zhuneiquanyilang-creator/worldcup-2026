@@ -72,10 +72,13 @@
 }
 
 .paragraph {
-  margin: 0 0 1rem;
-  line-height: 1.85;
+  margin: 0 0 1.5rem;
+  line-height: 1.95;
   font-size: 1rem;
   color: var(--color-text);
+  /* 本文 string 内の \n を視覚的な改行として表示する (ブロック内行ブレーク)。
+   * 著者が「、」「。」の後で改行を入れて読みやすさを調節できる。 */
+  white-space: pre-line;
 }
 
 .paragraph:last-child {
@@ -124,5 +127,7 @@
 
   .paragraph {
     font-size: 0.95rem;
+    margin-bottom: 1.2rem;
+    line-height: 1.9;
   }
 }
