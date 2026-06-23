@@ -16974,6 +16974,13 @@
         "teamId": "FRA",
         "inName": "マロ・ギュスト",
         "outName": "ジュール・クンデ"
+      },
+      {
+        "minute": 90,
+        "teamId": "FRA",
+        "inName": "マルクス・テュラム",
+        "outName": "キリアン・エンバペ",
+        "addedTime": 1
       }
     ],
     "liveLabel": "Live"
@@ -17247,7 +17254,7 @@
         },
         {
           "number": 17,
-          "name": "パペ・マタル・サール"
+          "name": "パペ・マタル・���ール"
         },
         {
           "number": 20,
