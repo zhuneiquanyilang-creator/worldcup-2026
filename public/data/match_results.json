@@ -12523,7 +12523,7 @@
         "minute": 81,
         "teamId": "BRA",
         "inName": "エデルソン",
-        "outName": "ヴィニシウス・ジュ���オール"
+        "outName": "ヴィニシウス・ジュニオール"
       },
       {
         "minute": 81,
@@ -17608,7 +17608,8 @@
           "y": 50,
           "number": 22,
           "name": "イブラヒム・マザ",
-          "role": "MF"
+          "role": "MF",
+          "isMvp": true
         },
         {
           "x": 62.666666666666664,
@@ -17692,7 +17693,112 @@
       "home": 1,
       "away": 2
     },
-    "liveLabel": "Full time"
+    "liveLabel": "Full time",
+    "goals": [
+      {
+        "minute": 36,
+        "teamId": "JOR",
+        "type": "normal",
+        "playerId": "p_jor_19",
+        "playerName": "ニザール・アル・ラシュダン",
+        "assistPlayerId": "p_jor_20",
+        "assistPlayerName": "ムサ・アル・タアマリ"
+      },
+      {
+        "minute": 69,
+        "teamId": "ALG",
+        "type": "normal",
+        "playerId": "p_alg_27",
+        "playerName": "アーメド・ベンブアリ",
+        "assistPlayerId": "p_alg_21",
+        "assistPlayerName": "リヤド・マフレズ"
+      },
+      {
+        "minute": 82,
+        "teamId": "ALG",
+        "type": "normal",
+        "playerId": "p_alg_25",
+        "playerName": "アミン・グイリ"
+      }
+    ],
+    "bookings": [
+      {
+        "minute": 44,
+        "teamId": "ALG",
+        "playerName": "ラミズ・ゼルキ",
+        "type": "Y"
+      },
+      {
+        "minute": 64,
+        "teamId": "JOR",
+        "playerName": "フサム・アブ・ダハブ",
+        "type": "Y"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": 46,
+        "teamId": "ALG",
+        "inName": "ナビル・ベンタレブ",
+        "outName": "ヒシャム・ブダウィ"
+      },
+      {
+        "minute": 46,
+        "teamId": "ALG",
+        "inName": "アーメド・ベンブアリ",
+        "outName": "ラミズ・ゼルキ"
+      },
+      {
+        "minute": 76,
+        "teamId": "JOR",
+        "inName": "オデ・アル・ファフリ",
+        "outName": "マフムード・アル・マルディ"
+      },
+      {
+        "minute": 76,
+        "teamId": "ALG",
+        "inName": "アニス・ハジ・ムサ",
+        "outName": "リヤド・マフレズ"
+      },
+      {
+        "minute": 84,
+        "teamId": "JOR",
+        "inName": "モハマド・アブ・ハシシュ",
+        "outName": "モハナド・アブ・タハ"
+      },
+      {
+        "minute": 84,
+        "teamId": "JOR",
+        "inName": "アリ・アザイゼ",
+        "outName": "ムサ・アル・タアマリ"
+      },
+      {
+        "minute": 85,
+        "teamId": "ALG",
+        "inName": "ジャウエン・ハジャム",
+        "outName": "ラヤン・アイト・ヌーリ"
+      },
+      {
+        "minute": 85,
+        "teamId": "ALG",
+        "inName": "ジネディーヌ・ベライド",
+        "outName": "アミン・グイリ"
+      },
+      {
+        "minute": 90,
+        "teamId": "JOR",
+        "inName": "サリム・オバイド",
+        "outName": "フサム・アブ・ダハブ",
+        "addedTime": 1
+      },
+      {
+        "minute": 90,
+        "teamId": "JOR",
+        "inName": "モハマド・アブ・ズライク",
+        "outName": "アリ・オルワン",
+        "addedTime": 1
+      }
+    ]
   },
   "m063": {
     "matchId": "m063",
