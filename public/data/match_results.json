@@ -12523,7 +12523,7 @@
         "minute": 81,
         "teamId": "BRA",
         "inName": "エデルソン",
-        "outName": "ヴィニシウス・ジュニオール"
+        "outName": "ヴィニシウス・ジュ���オール"
       },
       {
         "minute": 81,
@@ -14379,7 +14379,7 @@
           "x": 80,
           "y": 50,
           "number": 18,
-          "name": "上田 綺��",
+          "name": "上田 綺世",
           "role": "FW",
           "isMvp": true
         }
@@ -17256,7 +17256,7 @@
         },
         {
           "number": 17,
-          "name": "パペ・マタル・サ���ル"
+          "name": "パペ・マタル・サール"
         },
         {
           "number": 20,
@@ -17282,7 +17282,7 @@
     },
     "score": {
       "home": 3,
-      "away": 1
+      "away": 2
     },
     "liveLabel": "Live",
     "substitutions": [
@@ -17381,6 +17381,16 @@
         "playerName": "アーリング・ブラウト・ハーランド",
         "assistPlayerId": "p_nor_13",
         "assistPlayerName": "パトリック・ベルグ"
+      },
+      {
+        "minute": 90,
+        "teamId": "SEN",
+        "type": "normal",
+        "addedTime": 2,
+        "playerId": "p_sen_21",
+        "playerName": "イスマイラ・サール",
+        "assistPlayerId": "p_sen_22",
+        "assistPlayerName": "ニコラス・ジャクソン"
       }
     ]
   },
