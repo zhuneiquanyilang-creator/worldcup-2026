@@ -18555,6 +18555,18 @@
         "teamId": "GHA",
         "inName": "プリンス・クワベナ・アドゥ",
         "outName": "ジョーダン・アユー"
+      },
+      {
+        "minute": 73,
+        "teamId": "ENG",
+        "inName": "モーガン・ロジャース",
+        "outName": "ジュード・ベリンガム"
+      },
+      {
+        "minute": 73,
+        "teamId": "ENG",
+        "inName": "エベレチ・エゼ",
+        "outName": "エリオット・アンダーソン"
       }
     ]
   },
