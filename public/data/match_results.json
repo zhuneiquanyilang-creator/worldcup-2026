@@ -18523,6 +18523,12 @@
         "teamId": "ENG",
         "playerName": "デクラン・ライス",
         "type": "Y"
+      },
+      {
+        "minute": 60,
+        "teamId": "GHA",
+        "playerName": "イニャキ・ウィリアムス",
+        "type": "Y"
       }
     ]
   },
