@@ -12523,7 +12523,7 @@
         "minute": 81,
         "teamId": "BRA",
         "inName": "エデルソン",
-        "outName": "ヴィニシウス・ジュニオール"
+        "outName": "ヴィニシウス・ジュ���オール"
       },
       {
         "minute": 81,
@@ -14379,7 +14379,7 @@
           "x": 80,
           "y": 50,
           "number": 18,
-          "name": "上田 綺��",
+          "name": "上田 綺世",
           "role": "FW",
           "isMvp": true
         }
@@ -17280,7 +17280,7 @@
     },
     "score": {
       "home": 2,
-      "away": 1
+      "away": 0
     },
     "liveLabel": "Live",
     "substitutions": [
@@ -17293,8 +17293,8 @@
       {
         "minute": 46,
         "teamId": "NOR",
-        "inName": "フレドリク・アウルスネス",
-        "outName": "パトリック・ベルグ"
+        "inName": "パトリック・ベルグ",
+        "outName": "フレドリク・アウルスネス"
       },
       {
         "minute": 55,
