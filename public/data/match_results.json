@@ -16989,7 +16989,7 @@
   },
   "m052": {
     "matchId": "m052",
-    "status": "live",
+    "status": "finished",
     "homeFormation": {
       "shape": "4-3-3",
       "starting": [
@@ -17284,7 +17284,7 @@
       "home": 3,
       "away": 2
     },
-    "liveLabel": "Live",
+    "liveLabel": "Full time",
     "substitutions": [
       {
         "minute": 13,
