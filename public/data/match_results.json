@@ -18579,6 +18579,13 @@
         "teamId": "GHA",
         "inName": "コジョ・ペプラ・オポン",
         "outName": "マーヴィン・セナヤ"
+      },
+      {
+        "minute": 90,
+        "teamId": "GHA",
+        "inName": "アブドゥル・ラフマン・ババ",
+        "outName": "プリンス・クワベナ・アドゥ",
+        "addedTime": 5
       }
     ]
   },
