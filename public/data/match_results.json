@@ -18123,6 +18123,13 @@
         "playerName": "クリスティアーノ・ロナウド",
         "assistPlayerId": "p_por_19",
         "assistPlayerName": "ブルーノ・フェルナンデス"
+      },
+      {
+        "minute": 60,
+        "teamId": "POR",
+        "type": "own",
+        "playerId": "p_uzb_13",
+        "playerName": "アブドゥコディル・クサノフ"
       }
     ],
     "bookings": [
