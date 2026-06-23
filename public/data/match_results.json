@@ -6397,7 +6397,7 @@
         "minute": 46,
         "teamId": "URU",
         "inName": "アグスティン・カノッビオ",
-        "outName": "ダ���ウィン・ヌニェス"
+        "outName": "ダルウィン・ヌニェス"
       },
       {
         "minute": 63,
@@ -8099,7 +8099,7 @@
           "x": 62.666666666666664,
           "y": 16.666666666666664,
           "number": 10,
-          "name": "ベルナルド・シルバ",
+          "name": "ベ���ナルド・シルバ",
           "role": "MF"
         },
         {
@@ -8874,7 +8874,7 @@
           "x": 8,
           "y": 50,
           "number": 1,
-          "name": "ローレ��ス・アティ・ジギ",
+          "name": "ローレンス・アティ・ジギ",
           "role": "GK"
         },
         {
@@ -11710,7 +11710,7 @@
       {
         "minute": 80,
         "teamId": "USA",
-        "inName": "オーストン・トラスティ",
+        "inName": "オース���ン・トラスティ",
         "outName": "アントニー・ロビンソン"
       },
       {
@@ -16590,7 +16590,7 @@
     "matchId": "m051",
     "status": "live",
     "score": {
-      "home": 2,
+      "home": 1,
       "away": 0
     },
     "goals": [
@@ -17218,7 +17218,15 @@
       "home": 0,
       "away": 0
     },
-    "liveLabel": "Live"
+    "liveLabel": "Live",
+    "substitutions": [
+      {
+        "minute": 13,
+        "teamId": "NOR",
+        "inName": "マルクス・ホルムグレン・ペデルセン",
+        "outName": "ユリアン・リエルソン"
+      }
+    ]
   },
   "m058": {
     "matchId": "m058",
