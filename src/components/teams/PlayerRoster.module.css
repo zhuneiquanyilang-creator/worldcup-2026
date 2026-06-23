@@ -65,9 +65,14 @@
 .table th,
 .table td {
   padding: 0.45rem 0.5rem;
-  text-align: left;
   border-bottom: 1px solid var(--color-border);
 }
+
+/* NOTE: `text-align: left` はここで明示しない。td のデフォルトが left なので
+ * 必要ない上、`.table td` (specificity 0,1,1) を書くと `.age` / `.statValue`
+ * / `.number` (どれも 0,1,0) の column-specific 寄せ指定を上書きしてしまう。
+ * 以前 `.table td { text-align: left }` を入れていたとき、年齢/G/A 値が全部
+ * 左寄せされてヘッダ (右寄せ) とずれていたのを修正。 */
 
 .table th {
   background-color: #f9fafb;
@@ -77,20 +82,25 @@
 }
 
 .colNumber {
-  width: 10%;
+  width: 9%;
   text-align: center !important;
 }
 
 .colName {
-  width: 32%;
+  width: 26%;
 }
 
 .colClub {
-  width: 46%;
+  width: 39%;
 }
 
 .colAge {
-  width: 12%;
+  width: 8%;
+  text-align: right !important;
+}
+
+.colStat {
+  width: 9%;
   text-align: right !important;
 }
 
@@ -112,6 +122,19 @@
 .age {
   text-align: right;
   font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.statValue {
+  text-align: right;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-primary);
+}
+
+.statZero {
+  text-align: right;
+  color: var(--color-text-muted);
   font-variant-numeric: tabular-nums;
 }
 

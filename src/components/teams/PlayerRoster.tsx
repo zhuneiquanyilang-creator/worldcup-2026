@@ -1,5 +1,7 @@
 import { useMemo } from "react";
 import { usePlayers } from "@/hooks/usePlayers";
+import { useMatches } from "@/hooks/useMatches";
+import { computePlayerStats } from "@/utils/computePlayerStats";
 import { calculateAge } from "@/utils/age";
 import { Loading, ErrorMessage } from "@/components/common/AsyncState";
 import type { Player, Position } from "@/types/player";
@@ -28,6 +30,15 @@ function groupByPosition(players: Player[]): Map<Position, Player[]> {
 
 export function PlayerRoster({ teamId }: Props) {
   const playersRes = usePlayers();
+  const matchesRes = useMatches();
+
+  /** 選手 id → 試合から集計したゴール/アシスト。試合データ未取得時は 0 扱い。 */
+  const statsMap = useMemo(() => {
+    if (playersRes.status !== "ready" || matchesRes.status !== "ready") {
+      return new Map<string, { goals: number; assists: number }>();
+    }
+    return computePlayerStats(playersRes.data, matchesRes.data);
+  }, [playersRes, matchesRes]);
 
   const grouped = useMemo(() => {
     if (playersRes.status !== "ready") return null;
@@ -87,11 +98,16 @@ export function PlayerRoster({ teamId }: Props) {
                   <th className={styles.colName}>氏名</th>
                   <th className={styles.colClub}>所属クラブ</th>
                   <th className={styles.colAge}>年齢</th>
+                  <th className={styles.colStat} title="ゴール">G</th>
+                  <th className={styles.colStat} title="アシスト">A</th>
                 </tr>
               </thead>
               <tbody>
                 {players.map((p) => {
                   const age = calculateAge(p.birthDate);
+                  const stat = statsMap.get(p.id);
+                  const goals = stat?.goals ?? 0;
+                  const assists = stat?.assists ?? 0;
                   return (
                     <tr key={p.id}>
                       <td className={styles.number}>
@@ -101,6 +117,20 @@ export function PlayerRoster({ teamId }: Props) {
                       <td className={styles.club}>{p.club ?? "—"}</td>
                       <td className={styles.age}>
                         {age !== null ? `${age}` : "—"}
+                      </td>
+                      <td
+                        className={
+                          goals > 0 ? styles.statValue : styles.statZero
+                        }
+                      >
+                        {goals > 0 ? goals : "—"}
+                      </td>
+                      <td
+                        className={
+                          assists > 0 ? styles.statValue : styles.statZero
+                        }
+                      >
+                        {assists > 0 ? assists : "—"}
                       </td>
                     </tr>
                   );
