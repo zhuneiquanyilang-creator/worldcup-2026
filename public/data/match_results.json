@@ -12523,7 +12523,7 @@
         "minute": 81,
         "teamId": "BRA",
         "inName": "エデルソン",
-        "outName": "ヴィニシウス・ジュニオール"
+        "outName": "ヴィニシウス・ジュ���オール"
       },
       {
         "minute": 81,
@@ -14379,7 +14379,7 @@
           "x": 80,
           "y": 50,
           "number": 18,
-          "name": "上田 綺��",
+          "name": "上田 綺世",
           "role": "FW",
           "isMvp": true
         }
@@ -17241,7 +17241,7 @@
         },
         {
           "number": 9,
-          "name": "バンバ・デ��エング"
+          "name": "バンバ・ディエング"
         },
         {
           "number": 12,
@@ -18807,7 +18807,7 @@
           "x": 62.666666666666664,
           "y": 50,
           "number": 16,
-          "name": "マ���ティン・バトゥリナ",
+          "name": "マルティン・バトゥリナ",
           "role": "MF"
         },
         {
@@ -18967,7 +18967,7 @@
   },
   "m064": {
     "matchId": "m064",
-    "status": "live",
+    "status": "finished",
     "homeFormation": {
       "shape": "4-3-3",
       "starting": [
@@ -19262,7 +19262,7 @@
       "home": 1,
       "away": 0
     },
-    "liveLabel": "Live",
+    "liveLabel": "Full time",
     "substitutions": [
       {
         "minute": 46,
