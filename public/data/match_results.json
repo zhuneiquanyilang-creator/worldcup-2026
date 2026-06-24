@@ -8427,7 +8427,7 @@
         "minute": 83,
         "teamId": "POR",
         "inName": "ゴンサロ・ラモス",
-        "outName": "ヴィティーニャ"
+        "outName": "ヴィティーニ���"
       },
       {
         "minute": 85,
@@ -20463,7 +20463,7 @@
       ]
     },
     "score": {
-      "home": 1,
+      "home": 2,
       "away": 2
     },
     "liveLabel": "Live",
@@ -20812,6 +20812,16 @@
         "playerName": "ヴィニシウス・ジュニオール",
         "assistPlayerId": "p_bra_23",
         "assistPlayerName": "ラヤン"
+      },
+      {
+        "minute": 45,
+        "teamId": "BRA",
+        "type": "normal",
+        "addedTime": 3,
+        "playerId": "p_bra_18",
+        "playerName": "ヴィニシウス・ジュニオール",
+        "assistPlayerId": "p_bra_16",
+        "assistPlayerName": "ブルーノ・ギマランイス"
       }
     ]
   },
