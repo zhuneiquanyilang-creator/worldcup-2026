@@ -20926,6 +20926,30 @@
         "teamId": "BRA",
         "inName": "ネイマール・ジュニオール",
         "outName": "マテウス・クーニャ"
+      },
+      {
+        "minute": 82,
+        "teamId": "SCO",
+        "inName": "アンソニー・ラルストン",
+        "outName": "ネイサン・パターソン"
+      },
+      {
+        "minute": 82,
+        "teamId": "SCO",
+        "inName": "ライアン・クリスティ",
+        "outName": "ベン・ドーク"
+      },
+      {
+        "minute": 82,
+        "teamId": "BRA",
+        "inName": "アレックス・サンドロ",
+        "outName": "ドウグラス・サントス"
+      },
+      {
+        "minute": 82,
+        "teamId": "BRA",
+        "inName": "エンドリッキ",
+        "outName": "ラヤン"
       }
     ],
     "bookings": [
