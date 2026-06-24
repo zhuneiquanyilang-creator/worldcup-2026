@@ -20572,6 +20572,14 @@
         "inName": "フランツディ・ピエロ",
         "outName": "レニー・ジョセフ"
       }
+    ],
+    "bookings": [
+      {
+        "minute": 79,
+        "teamId": "HAI",
+        "playerName": "デュカン・ナゾン",
+        "type": "Y"
+      }
     ]
   },
   "m017": {
