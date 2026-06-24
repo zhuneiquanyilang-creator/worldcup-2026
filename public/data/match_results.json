@@ -18806,7 +18806,7 @@
           "x": 62.666666666666664,
           "y": 50,
           "number": 16,
-          "name": "マルティン・バトゥリナ",
+          "name": "マルティン���バトゥリナ",
           "role": "MF"
         },
         {
@@ -19268,6 +19268,24 @@
         "teamId": "COD",
         "inName": "ノア・サディキ",
         "outName": "ンガラエル・ムカウ"
+      },
+      {
+        "minute": 57,
+        "teamId": "COD",
+        "inName": "シモン・バンザ",
+        "outName": "セドリック・バカンブ"
+      },
+      {
+        "minute": 58,
+        "teamId": "COL",
+        "inName": "フアン・キンテーロ",
+        "outName": "ハメス・ロドリゲス"
+      },
+      {
+        "minute": 58,
+        "teamId": "COL",
+        "inName": "ジョン・コルドバ",
+        "outName": "ルイス・スアレス"
       }
     ],
     "bookings": [
