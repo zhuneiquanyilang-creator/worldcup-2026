@@ -4115,7 +4115,7 @@
           "x": 28,
           "y": 62.5,
           "number": 4,
-          "name": "フィルジル・ファン・ダイク",
+          "name": "フ��ルジル・ファン・ダイク",
           "role": "DF"
         },
         {
@@ -20820,6 +20820,15 @@
         "addedTime": 3,
         "playerId": "p_bra_18",
         "playerName": "ヴィニシウス・ジュニオール",
+        "assistPlayerId": "p_bra_16",
+        "assistPlayerName": "ブルーノ・ギマランイス"
+      },
+      {
+        "minute": 60,
+        "teamId": "BRA",
+        "type": "normal",
+        "playerId": "p_bra_21",
+        "playerName": "マテウス・クーニャ",
         "assistPlayerId": "p_bra_16",
         "assistPlayerName": "ブルーノ・ギマランイス"
       }
