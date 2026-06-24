@@ -20171,7 +20171,7 @@
   },
   "m018": {
     "matchId": "m018",
-    "status": "scheduled",
+    "status": "live",
     "homeFormation": {
       "shape": "4-2-3-1",
       "starting": [
@@ -20461,11 +20461,16 @@
           "name": "ウーデンスキ・ピエール"
         }
       ]
-    }
+    },
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "liveLabel": "Live"
   },
   "m017": {
     "matchId": "m017",
-    "status": "scheduled",
+    "status": "live",
     "homeFormation": {
       "shape": "4-2-3-1",
       "starting": [
@@ -20755,7 +20760,12 @@
           "name": "イゴール・チアゴ"
         }
       ]
-    }
+    },
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "liveLabel": "Live"
   },
   "m005": {
     "matchId": "m005",
