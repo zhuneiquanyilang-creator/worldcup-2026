@@ -18221,7 +18221,7 @@
   },
   "m069": {
     "matchId": "m069",
-    "status": "finished",
+    "status": "live",
     "homeFormation": {
       "shape": "4-2-3-1",
       "starting": [
@@ -18594,7 +18594,7 @@
     "status": "live",
     "score": {
       "home": 0,
-      "away": 0
+      "away": 1
     },
     "homeFormation": {
       "shape": "5-4-1",
@@ -18886,7 +18886,7 @@
         }
       ]
     },
-    "liveLabel": "Halftime",
+    "liveLabel": "Live",
     "substitutions": [
       {
         "minute": 46,
@@ -18899,6 +18899,17 @@
         "teamId": "CRO",
         "inName": "アンテ・ブディミル",
         "outName": "ペタル・ムサ"
+      }
+    ],
+    "goals": [
+      {
+        "minute": 54,
+        "teamId": "CRO",
+        "type": "normal",
+        "playerId": "p_cro_23",
+        "playerName": "アンテ・ブディミル",
+        "assistPlayerId": "p_cro_7",
+        "assistPlayerName": "ヨシプ・スタニシッチ"
       }
     ]
   },
