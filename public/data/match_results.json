@@ -12881,7 +12881,7 @@
         "minute": 60,
         "teamId": "TUR",
         "inName": "ジャン・ウズン",
-        "outName": "イスマイル・ユクセク"
+        "outName": "���スマイル・ユクセク"
       },
       {
         "minute": 60,
@@ -19765,7 +19765,409 @@
       "home": 3,
       "away": 1
     },
-    "liveLabel": "Full time"
+    "liveLabel": "Full time",
+    "goals": [
+      {
+        "minute": 29,
+        "teamId": "BIH",
+        "type": "normal",
+        "playerId": "p_bih_16",
+        "playerName": "ケリム・アライベゴビッチ",
+        "assistPlayerId": "p_bih_12",
+        "assistPlayerName": "イヴァン・バシッチ"
+      },
+      {
+        "minute": 34,
+        "teamId": "BIH",
+        "type": "own",
+        "playerId": "p_qat_3",
+        "playerName": "マフムード・アブナダ"
+      },
+      {
+        "minute": 42,
+        "teamId": "QAT",
+        "type": "normal",
+        "playerId": "p_qat_19",
+        "playerName": "ハッサン・アル・ハイドス",
+        "assistPlayerId": "p_qat_21",
+        "assistPlayerName": "エドミルソン・ジュニオール"
+      },
+      {
+        "minute": 80,
+        "teamId": "BIH",
+        "type": "normal",
+        "playerId": "p_bih_14",
+        "playerName": "エルミン・マフミッチ",
+        "assistPlayerId": "p_bih_9",
+        "assistPlayerName": "デニス・ハジカドゥニッチ"
+      }
+    ],
+    "homeFormation": {
+      "shape": "4-4-2",
+      "starting": [
+        {
+          "x": 8,
+          "y": 50,
+          "number": 1,
+          "name": "ニコラ・ヴァシリ",
+          "role": "GK"
+        },
+        {
+          "x": 28,
+          "y": 12.5,
+          "number": 24,
+          "name": "ニダル・チェリッチ",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 37.5,
+          "number": 18,
+          "name": "ニコラ・カティッチ",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 62.5,
+          "number": 21,
+          "name": "ステパン・ラデリッチ",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 87.5,
+          "number": 5,
+          "name": "セアド・コラシナツ",
+          "role": "DF"
+        },
+        {
+          "x": 54,
+          "y": 12.5,
+          "number": 20,
+          "name": "エスミル・バイラクタレビッチ",
+          "role": "MF"
+        },
+        {
+          "x": 54,
+          "y": 37.5,
+          "number": 14,
+          "name": "イヴァン・シュニッチ",
+          "role": "MF"
+        },
+        {
+          "x": 54,
+          "y": 62.5,
+          "number": 13,
+          "name": "イヴァン・バシッチ",
+          "role": "MF"
+        },
+        {
+          "x": 54,
+          "y": 87.5,
+          "number": 19,
+          "name": "ケリム・アライベゴビッチ",
+          "role": "MF",
+          "isMvp": true
+        },
+        {
+          "x": 80,
+          "y": 25,
+          "number": 10,
+          "name": "エルメディン・デミロビッチ",
+          "role": "FW"
+        },
+        {
+          "x": 80,
+          "y": 75,
+          "number": 11,
+          "name": "エディン・ジェコ",
+          "role": "FW",
+          "isCaptain": true
+        }
+      ],
+      "bench": [
+        {
+          "number": 2,
+          "name": "ニハド・ムヤキッチ"
+        },
+        {
+          "number": 3,
+          "name": "デニス・ハジカドゥニッチ"
+        },
+        {
+          "number": 4,
+          "name": "タリク・ムハレモビッチ"
+        },
+        {
+          "number": 6,
+          "name": "ベンヤミン・タヒロビッチ"
+        },
+        {
+          "number": 7,
+          "name": "アマル・デディッチ"
+        },
+        {
+          "number": 8,
+          "name": "アルミン・ギゴビッチ"
+        },
+        {
+          "number": 9,
+          "name": "サメド・バズダル"
+        },
+        {
+          "number": 12,
+          "name": "ムラデン・ユルカス"
+        },
+        {
+          "number": 15,
+          "name": "アマル・メミッチ"
+        },
+        {
+          "number": 16,
+          "name": "アミル・ハジアフメトビッチ"
+        },
+        {
+          "number": 17,
+          "name": "ジェニス・ブルニッチ"
+        },
+        {
+          "number": 22,
+          "name": "マルティン・ズロミシリ"
+        },
+        {
+          "number": 23,
+          "name": "ハリス・タバコビッチ"
+        },
+        {
+          "number": 25,
+          "name": "ヨヴォ・ルキッチ"
+        },
+        {
+          "number": 26,
+          "name": "エルミン・マフミッチ"
+        }
+      ]
+    },
+    "awayFormation": {
+      "shape": "4-3-3",
+      "starting": [
+        {
+          "x": 8,
+          "y": 50,
+          "number": 1,
+          "name": "マフムード・アブナダ",
+          "role": "GK"
+        },
+        {
+          "x": 28,
+          "y": 12.5,
+          "number": 2,
+          "name": "ペドロ・ミゲル（ロロ）",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 37.5,
+          "number": 16,
+          "name": "ブアレム・コーキ",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 62.5,
+          "number": 4,
+          "name": "イッサ・ライェ",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 87.5,
+          "number": 18,
+          "name": "スルタン・アル・ブレイク",
+          "role": "DF"
+        },
+        {
+          "x": 54,
+          "y": 16.666666666666664,
+          "number": 5,
+          "name": "ジャッセム・ガベル",
+          "role": "MF"
+        },
+        {
+          "x": 54,
+          "y": 50,
+          "number": 20,
+          "name": "アハメド・ファテヒ",
+          "role": "MF"
+        },
+        {
+          "x": 54,
+          "y": 83.33333333333334,
+          "number": 12,
+          "name": "カリム・ブディアフ",
+          "role": "MF"
+        },
+        {
+          "x": 80,
+          "y": 16.666666666666664,
+          "number": 8,
+          "name": "エドミルソン・ジュニオール",
+          "role": "FW"
+        },
+        {
+          "x": 80,
+          "y": 50,
+          "number": 11,
+          "name": "アクラム・アフィフ",
+          "role": "FW"
+        },
+        {
+          "x": 80,
+          "y": 83.33333333333334,
+          "number": 10,
+          "name": "ハッサン・アル・ハイドス",
+          "role": "FW"
+        }
+      ],
+      "bench": [
+        {
+          "number": 3,
+          "name": "ルーカス・ミシェル・メンデス"
+        },
+        {
+          "number": 6,
+          "name": "アブドゥルアジズ・ハテム"
+        },
+        {
+          "number": 7,
+          "name": "アハメド・アラエルディン"
+        },
+        {
+          "number": 9,
+          "name": "モハメド・ムンタリ"
+        },
+        {
+          "number": 13,
+          "name": "アユーブ・アル・アラウィ"
+        },
+        {
+          "number": 14,
+          "name": "ホマム・アラミン・アハメド"
+        },
+        {
+          "number": 15,
+          "name": "ユセフ・アブドゥリサグ"
+        },
+        {
+          "number": 17,
+          "name": "アハメド・アル・ガネヒ"
+        },
+        {
+          "number": 19,
+          "name": "アルモエズ・アリ"
+        },
+        {
+          "number": 21,
+          "name": "サラー・ザカリア"
+        },
+        {
+          "number": 22,
+          "name": "メシャール・バルシャム"
+        },
+        {
+          "number": 23,
+          "name": "アシム・マディボ"
+        },
+        {
+          "number": 24,
+          "name": "タフシン・モハメド・ジャムシード"
+        },
+        {
+          "number": 25,
+          "name": "ハシェミ・アル・フセイン"
+        },
+        {
+          "number": 26,
+          "name": "モハメド・アル・マンナイ"
+        }
+      ]
+    },
+    "bookings": [
+      {
+        "minute": 78,
+        "teamId": "QAT",
+        "playerName": "アハメド・ファテヒ",
+        "type": "Y"
+      },
+      {
+        "minute": 82,
+        "teamId": "BIH",
+        "playerName": "エルミン・マフミッチ",
+        "type": "Y"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": 46,
+        "teamId": "BIH",
+        "inName": "アマル・メミッチ",
+        "outName": "ニダル・チェリッチ"
+      },
+      {
+        "minute": 46,
+        "teamId": "BIH",
+        "inName": "ベンヤミン・タヒロビッチ",
+        "outName": "イヴァン・シュニッチ"
+      },
+      {
+        "minute": 46,
+        "teamId": "QAT",
+        "inName": "アブドゥルアジズ・ハテム",
+        "outName": "ジャッセム・ガベル"
+      },
+      {
+        "minute": 55,
+        "teamId": "QAT",
+        "inName": "アハメド・アル・ガネヒ",
+        "outName": "ハッサン・アル・ハイドス"
+      },
+      {
+        "minute": 63,
+        "teamId": "BIH",
+        "inName": "デニス・ハジカドゥニッチ",
+        "outName": "ニコラ・カティッチ"
+      },
+      {
+        "minute": 63,
+        "teamId": "BIH",
+        "inName": "エルミン・マフミッチ",
+        "outName": "エディン・ジェコ"
+      },
+      {
+        "minute": 72,
+        "teamId": "QAT",
+        "inName": "アルモエズ・アリ",
+        "outName": "カリム・ブディアフ"
+      },
+      {
+        "minute": 79,
+        "teamId": "QAT",
+        "inName": "モハメド・アル・マンナイ",
+        "outName": "アハメド・ファテヒ"
+      },
+      {
+        "minute": 79,
+        "teamId": "QAT",
+        "inName": "アハメド・アラエルディン",
+        "outName": "エドミルソン・ジュニオール"
+      },
+      {
+        "minute": 82,
+        "teamId": "BIH",
+        "inName": "ジェニス・ブルニッチ",
+        "outName": "ケリム・アライベゴビッチ"
+      }
+    ]
   },
   "m018": {
     "matchId": "m018",
