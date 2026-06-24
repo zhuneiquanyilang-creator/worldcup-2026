@@ -149,6 +149,7 @@ const BOOKING_TYPE_LABEL: Record<BookingType, string> = {
 const SHAPE_SUGGESTIONS = [
   "4-3-3",
   "4-2-3-1",
+  "4-1-2-3",
   "4-4-2",
   "4-4-1-1",
   "4-1-4-1",
