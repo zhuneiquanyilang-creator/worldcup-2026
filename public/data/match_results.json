@@ -20823,6 +20823,14 @@
         "assistPlayerId": "p_bra_16",
         "assistPlayerName": "ブルーノ・ギマランイス"
       }
+    ],
+    "substitutions": [
+      {
+        "minute": 46,
+        "teamId": "SCO",
+        "inName": "キーラン・ティアニー",
+        "outName": "アンドリュー・ロバートソン"
+      }
     ]
   },
   "m005": {
