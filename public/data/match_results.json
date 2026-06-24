@@ -11710,7 +11710,7 @@
       {
         "minute": 80,
         "teamId": "USA",
-        "inName": "オーストン・トラスティ",
+        "inName": "オース���ン・トラスティ",
         "outName": "アントニー・ロビンソン"
       },
       {
@@ -14379,7 +14379,7 @@
           "x": 80,
           "y": 50,
           "number": 18,
-          "name": "上田 綺��",
+          "name": "上田 綺世",
           "role": "FW",
           "isMvp": true
         }
@@ -16437,7 +16437,7 @@
         },
         {
           "number": 15,
-          "name": "フィリップ・ラインハルト"
+          "name": "���ィリップ・ラインハルト"
         },
         {
           "number": 16,
@@ -17241,7 +17241,7 @@
         },
         {
           "number": 9,
-          "name": "バンバ・デ��エング"
+          "name": "バンバ・ディエング"
         },
         {
           "number": 12,
@@ -19349,11 +19349,19 @@
   },
   "m011": {
     "matchId": "m011",
-    "status": "scheduled"
+    "status": "finished",
+    "score": {
+      "home": 2,
+      "away": 1
+    }
   },
   "m012": {
     "matchId": "m012",
-    "status": "scheduled"
+    "status": "finished",
+    "score": {
+      "home": 3,
+      "away": 1
+    }
   },
   "m018": {
     "matchId": "m018",
