@@ -15730,7 +15730,7 @@
         "minute": 70,
         "teamId": "URU",
         "inName": "ダルウィン・ヌニェス",
-        "outName": "フェデリコ・ビニャス"
+        "outName": "フェデリ��・ビニャス"
       },
       {
         "minute": 70,
@@ -20473,9 +20473,7 @@
         "teamId": "HAI",
         "type": "own",
         "playerId": "p_mar_1",
-        "playerName": "ヤシン・ブヌ",
-        "assistPlayerId": "p_hai_9",
-        "assistPlayerName": "ジャン・ケヴィン・デュヴェルン"
+        "playerName": "ヤシン・ブヌ"
       },
       {
         "minute": 39,
