@@ -18739,7 +18739,7 @@
         },
         {
           "number": 26,
-          "name": "ホルヘ・グティエレス"
+          "name": "ホルヘ・グティ��レス"
         }
       ]
     },
@@ -19319,6 +19319,20 @@
         "teamId": "COL",
         "playerName": "ジョン・ルクミ",
         "type": "Y"
+      },
+      {
+        "minute": 90,
+        "teamId": "COD",
+        "playerName": "シャルル・ピッケル",
+        "type": "Y",
+        "addedTime": 3
+      },
+      {
+        "minute": 90,
+        "teamId": "COL",
+        "playerName": "ジェフェルソン・レルマ",
+        "type": "Y",
+        "addedTime": 4
       }
     ],
     "goals": [
