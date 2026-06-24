@@ -18221,7 +18221,7 @@
   },
   "m069": {
     "matchId": "m069",
-    "status": "live",
+    "status": "finished",
     "homeFormation": {
       "shape": "4-2-3-1",
       "starting": [
@@ -18966,7 +18966,7 @@
   },
   "m064": {
     "matchId": "m064",
-    "status": "live",
+    "status": "scheduled",
     "homeFormation": {
       "shape": "4-3-3",
       "starting": [
