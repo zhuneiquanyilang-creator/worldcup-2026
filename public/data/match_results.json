@@ -18221,7 +18221,7 @@
   },
   "m069": {
     "matchId": "m069",
-    "status": "finished",
+    "status": "live",
     "homeFormation": {
       "shape": "4-2-3-1",
       "starting": [
@@ -18591,7 +18591,7 @@
   },
   "m070": {
     "matchId": "m070",
-    "status": "live",
+    "status": "finished",
     "score": {
       "home": 0,
       "away": 1
@@ -18886,7 +18886,7 @@
         }
       ]
     },
-    "liveLabel": "Live",
+    "liveLabel": "Full time",
     "substitutions": [
       {
         "minute": 46,
