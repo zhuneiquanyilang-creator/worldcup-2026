@@ -19267,7 +19267,7 @@
       {
         "minute": 46,
         "teamId": "COD",
-        "inName": "ノア���サディキ",
+        "inName": "ノア・サディキ",
         "outName": "ンガラエル・ムカウ"
       },
       {
@@ -20786,13 +20786,6 @@
         "playerName": "ヴィニシウス・ジュニオール",
         "assistPlayerId": "p_bra_23",
         "assistPlayerName": "ラヤン"
-      },
-      {
-        "minute": 22,
-        "teamId": "BRA",
-        "type": "normal",
-        "playerId": "p_bra_18",
-        "playerName": "ヴィニシウス・ジュニオール"
       }
     ]
   },
