@@ -4115,7 +4115,7 @@
           "x": 28,
           "y": 62.5,
           "number": 4,
-          "name": "フ��ルジル・ファン・ダイク",
+          "name": "フィルジル・ファン・ダイク",
           "role": "DF"
         },
         {
@@ -15741,7 +15741,7 @@
       {
         "minute": 80,
         "teamId": "CPV",
-        "inName": "ヤニック・セメド",
+        "inName": "ヤニッ��・セメド",
         "outName": "ジャミロ・モンテイロ"
       },
       {
@@ -19202,7 +19202,7 @@
         },
         {
           "number": 7,
-          "name": "ナタナエル・ムブク"
+          "name": "ナタ��エル・ムブク"
         },
         {
           "number": 9,
@@ -20800,9 +20800,9 @@
     },
     "score": {
       "home": 0,
-      "away": 2
+      "away": 3
     },
-    "liveLabel": "Halftime",
+    "liveLabel": "Live",
     "goals": [
       {
         "minute": 7,
@@ -20839,6 +20839,14 @@
         "teamId": "SCO",
         "inName": "キーラン・ティアニー",
         "outName": "アンドリュー・ロバートソン"
+      }
+    ],
+    "bookings": [
+      {
+        "minute": 63,
+        "teamId": "BRA",
+        "playerName": "ダニーロ",
+        "type": "Y"
       }
     ]
   },
