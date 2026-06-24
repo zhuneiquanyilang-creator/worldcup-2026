@@ -20476,6 +20476,13 @@
         "playerName": "レニー・ジョセフ",
         "assistPlayerId": "p_hai_9",
         "assistPlayerName": "ジャン・ケヴィン・デュヴェルン"
+      },
+      {
+        "minute": 39,
+        "teamId": "MAR",
+        "type": "normal",
+        "playerId": "p_mar_12",
+        "playerName": "アクラフ・ハキミ"
       }
     ]
   },
