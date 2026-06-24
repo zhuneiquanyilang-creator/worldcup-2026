@@ -12523,7 +12523,7 @@
         "minute": 81,
         "teamId": "BRA",
         "inName": "エデルソン",
-        "outName": "ヴィニシウス・ジュニオール"
+        "outName": "ヴィニシウス・ジュ���オール"
       },
       {
         "minute": 81,
@@ -14379,7 +14379,7 @@
           "x": 80,
           "y": 50,
           "number": 18,
-          "name": "上田 綺��",
+          "name": "上田 綺世",
           "role": "FW",
           "isMvp": true
         }
@@ -17241,7 +17241,7 @@
         },
         {
           "number": 9,
-          "name": "バンバ・デ��エング"
+          "name": "バンバ・ディエング"
         },
         {
           "number": 12,
@@ -18516,7 +18516,7 @@
       "home": 0,
       "away": 0
     },
-    "liveLabel": "Halftime",
+    "liveLabel": "Full time",
     "bookings": [
       {
         "minute": 41,
@@ -18847,7 +18847,7 @@
         },
         {
           "number": 13,
-          "name": "ニコラ・ヴラシッチ"
+          "name": "ニコラ・ヴ���シッチ"
         },
         {
           "number": 15,
@@ -18892,7 +18892,7 @@
       {
         "minute": 46,
         "teamId": "CRO",
-        "inName": "��ンドレイ・クラマリッチ",
+        "inName": "アンドレイ・クラマリッチ",
         "outName": "ヨシュコ・グヴァルディオル"
       },
       {
@@ -19261,7 +19261,7 @@
       "home": 0,
       "away": 0
     },
-    "liveLabel": "Live"
+    "liveLabel": "Halftime"
   },
   "m011": {
     "matchId": "m011",
