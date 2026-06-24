@@ -18886,7 +18886,21 @@
         }
       ]
     },
-    "liveLabel": "Halftime"
+    "liveLabel": "Halftime",
+    "substitutions": [
+      {
+        "minute": 46,
+        "teamId": "CRO",
+        "inName": "アンドレイ・クラマリッチ",
+        "outName": "ヨシュコ・グヴァルディオル"
+      },
+      {
+        "minute": 46,
+        "teamId": "CRO",
+        "inName": "アンテ・ブディミル",
+        "outName": "ペタル・ムサ"
+      }
+    ]
   },
   "m064": {
     "matchId": "m064",
