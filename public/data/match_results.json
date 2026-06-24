@@ -6576,7 +6576,7 @@
           "x": 80,
           "y": 50,
           "number": 10,
-          "name": "キリア��・エンバペ",
+          "name": "キリアン・エンバペ",
           "role": "FW",
           "isCaptain": true
         }
@@ -20464,9 +20464,20 @@
     },
     "score": {
       "home": 0,
-      "away": 0
+      "away": 1
     },
-    "liveLabel": "Live"
+    "liveLabel": "Live",
+    "goals": [
+      {
+        "minute": 10,
+        "teamId": "HAI",
+        "type": "normal",
+        "playerId": "p_hai_24",
+        "playerName": "レニー・ジョセフ",
+        "assistPlayerId": "p_hai_9",
+        "assistPlayerName": "ジャン・ケヴィン・デュヴェルン"
+      }
+    ]
   },
   "m017": {
     "matchId": "m017",
