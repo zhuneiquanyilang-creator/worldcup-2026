@@ -20463,7 +20463,7 @@
       ]
     },
     "score": {
-      "home": 3,
+      "home": 4,
       "away": 2
     },
     "liveLabel": "Live",
@@ -20588,6 +20588,13 @@
         "teamId": "HAI",
         "playerName": "デュカン・ナゾン",
         "type": "Y"
+      },
+      {
+        "minute": 90,
+        "teamId": "HAI",
+        "playerName": "ジョズエ・カジミール",
+        "type": "Y",
+        "addedTime": 3
       }
     ]
   },
@@ -20980,6 +20987,12 @@
         "minute": 82,
         "teamId": "BRA",
         "playerName": "ファビーニョ",
+        "type": "Y"
+      },
+      {
+        "minute": 89,
+        "teamId": "SCO",
+        "playerName": "ライアン・クリスティ",
         "type": "Y"
       }
     ]
