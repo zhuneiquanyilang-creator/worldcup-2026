@@ -9576,7 +9576,7 @@
         "teamId": "UZB",
         "type": "normal",
         "playerId": "p_uzb_21",
-        "playerName": "アボスベク・ファイ���ラエフ"
+        "playerName": "アボスベク・ファイズラエフ"
       },
       {
         "minute": 65,
@@ -20471,9 +20471,9 @@
       {
         "minute": 10,
         "teamId": "HAI",
-        "type": "normal",
-        "playerId": "p_hai_24",
-        "playerName": "レニー・ジョセフ",
+        "type": "own",
+        "playerId": "p_mar_1",
+        "playerName": "ヤシン・ブヌ",
         "assistPlayerId": "p_hai_9",
         "assistPlayerName": "ジャン・ケヴィン・デュヴェルン"
       },
@@ -20483,6 +20483,15 @@
         "type": "normal",
         "playerId": "p_mar_12",
         "playerName": "アクラフ・ハキミ"
+      },
+      {
+        "minute": 43,
+        "teamId": "HAI",
+        "type": "normal",
+        "playerId": "p_hai_19",
+        "playerName": "ウィルソン・イシドール",
+        "assistPlayerId": "p_hai_9",
+        "assistPlayerName": "ジャン・ケヴィン・デュヴェルン"
       }
     ]
   },
