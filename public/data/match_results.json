@@ -15487,7 +15487,7 @@
         },
         {
           "number": 26,
-          "name": "ロドリゴ・サラサール"
+          "name": "ロド��ゴ・サラサール"
         }
       ]
     },
@@ -20974,6 +20974,20 @@
         "teamId": "BRA",
         "inName": "エンドリッキ",
         "outName": "ラヤン"
+      },
+      {
+        "minute": 90,
+        "teamId": "SCO",
+        "inName": "シェ・アダムス",
+        "outName": "ローレンス・シャンクランド",
+        "addedTime": 1
+      },
+      {
+        "minute": 90,
+        "teamId": "SCO",
+        "inName": "フィンドレー・カーティス",
+        "outName": "ジョン・マッギン",
+        "addedTime": 1
       }
     ],
     "bookings": [
