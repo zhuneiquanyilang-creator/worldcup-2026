@@ -18839,7 +18839,7 @@
         },
         {
           "number": 11,
-          "name": "アンテ・ブディミル"
+          "name": "���ンテ・ブディミル"
         },
         {
           "number": 12,
@@ -18847,7 +18847,7 @@
         },
         {
           "number": 13,
-          "name": "ニコラ・ヴ���シッチ"
+          "name": "ニコラ・ヴラシッチ"
         },
         {
           "number": 15,
@@ -19261,7 +19261,15 @@
       "home": 0,
       "away": 0
     },
-    "liveLabel": "Halftime"
+    "liveLabel": "Halftime",
+    "substitutions": [
+      {
+        "minute": 46,
+        "teamId": "COD",
+        "inName": "ノア・サディキ",
+        "outName": "ンガラエル・ムカウ"
+      }
+    ]
   },
   "m011": {
     "matchId": "m011",
