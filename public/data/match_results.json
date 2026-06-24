@@ -4195,7 +4195,7 @@
         },
         {
           "number": 12,
-          "name": "マッツ・ウ���ーファー"
+          "name": "マッツ・ウィーファー"
         },
         {
           "number": 13,
@@ -19267,7 +19267,7 @@
       {
         "minute": 46,
         "teamId": "COD",
-        "inName": "ノア・サディキ",
+        "inName": "ノア���サディキ",
         "outName": "ンガラエル・ムカウ"
       },
       {
@@ -19309,7 +19309,7 @@
       {
         "minute": 82,
         "teamId": "COD",
-        "inName": "ナタナエル・���ブク",
+        "inName": "ナタナエル・ムブク",
         "outName": "サミュエル・ムトゥサミ"
       }
     ],
@@ -20774,7 +20774,7 @@
     },
     "score": {
       "home": 0,
-      "away": 1
+      "away": 2
     },
     "liveLabel": "Live",
     "goals": [
@@ -20786,6 +20786,13 @@
         "playerName": "ヴィニシウス・ジュニオール",
         "assistPlayerId": "p_bra_23",
         "assistPlayerName": "ラヤン"
+      },
+      {
+        "minute": 22,
+        "teamId": "BRA",
+        "type": "normal",
+        "playerId": "p_bra_18",
+        "playerName": "ヴィニシウス・ジュニオール"
       }
     ]
   },
