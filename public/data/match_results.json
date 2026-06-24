@@ -18221,7 +18221,7 @@
   },
   "m069": {
     "matchId": "m069",
-    "status": "finished",
+    "status": "live",
     "homeFormation": {
       "shape": "4-2-3-1",
       "starting": [
@@ -18899,6 +18899,48 @@
         "teamId": "CRO",
         "inName": "アンテ・ブディミル",
         "outName": "ペタル・ムサ"
+      },
+      {
+        "minute": 72,
+        "teamId": "CRO",
+        "inName": "ルカ・スチッチ",
+        "outName": "マテオ・コヴァチッチ"
+      },
+      {
+        "minute": 72,
+        "teamId": "CRO",
+        "inName": "ペタル・スチッチ",
+        "outName": "マルコ・パシャリッチ"
+      },
+      {
+        "minute": 77,
+        "teamId": "PAN",
+        "inName": "セシリオ・ワーテルマン",
+        "outName": "ジオバニー・ラモス"
+      },
+      {
+        "minute": 81,
+        "teamId": "CRO",
+        "inName": "マリオ・パシャリッチ",
+        "outName": "ルカ・モドリッチ"
+      },
+      {
+        "minute": 83,
+        "teamId": "PAN",
+        "inName": "アサリアス・ロンドーニョ",
+        "outName": "ホセ・ファハルド"
+      },
+      {
+        "minute": 90,
+        "teamId": "PAN",
+        "inName": "エリック・ダビス",
+        "outName": "セサール・ブラックマン"
+      },
+      {
+        "minute": 90,
+        "teamId": "PAN",
+        "inName": "トマス・ロドリゲス",
+        "outName": "ヨエル・バルセナス"
       }
     ],
     "goals": [
