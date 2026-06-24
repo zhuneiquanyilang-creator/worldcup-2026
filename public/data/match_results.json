@@ -18778,7 +18778,7 @@
           "x": 28,
           "y": 87.5,
           "number": 4,
-          "name": "ヨシュコ・���ヴァルディオル",
+          "name": "ヨシュコ・グヴァルディオル",
           "role": "DF"
         },
         {
@@ -19354,7 +19354,409 @@
       "home": 2,
       "away": 1
     },
-    "liveLabel": "Full time"
+    "liveLabel": "Full time",
+    "goals": [
+      {
+        "minute": 46,
+        "teamId": "SUI",
+        "type": "normal",
+        "playerId": "p_sui_18",
+        "playerName": "ルベン・バルガス",
+        "assistPlayerId": "p_sui_19",
+        "assistPlayerName": "ヨハン・マンザンビ"
+      },
+      {
+        "minute": 57,
+        "teamId": "SUI",
+        "type": "normal",
+        "playerId": "p_sui_19",
+        "playerName": "ヨハン・マンザンビ",
+        "assistPlayerId": "p_sui_26",
+        "assistPlayerName": "ブレール・エンボロ"
+      },
+      {
+        "minute": 76,
+        "teamId": "CAN",
+        "type": "normal",
+        "playerId": "p_can_26",
+        "playerName": "プロミス・デイヴィッド",
+        "assistPlayerId": "p_can_18",
+        "assistPlayerName": "ネイサン・サリバ"
+      }
+    ],
+    "homeFormation": {
+      "shape": "4-2-3-1",
+      "starting": [
+        {
+          "x": 8,
+          "y": 50,
+          "number": 1,
+          "name": "グレゴール・コベル",
+          "role": "GK"
+        },
+        {
+          "x": 28,
+          "y": 12.5,
+          "number": 25,
+          "name": "ルカ・ヤケス",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 37.5,
+          "number": 4,
+          "name": "ニコ・エルヴェディ",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 62.5,
+          "number": 5,
+          "name": "マヌエル・アカンジ",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 87.5,
+          "number": 13,
+          "name": "リカルド・ロドリゲス",
+          "role": "DF"
+        },
+        {
+          "x": 45.33333333333333,
+          "y": 25,
+          "number": 10,
+          "name": "グラニト・ジャカ",
+          "role": "MF",
+          "isCaptain": true
+        },
+        {
+          "x": 45.33333333333333,
+          "y": 75,
+          "number": 8,
+          "name": "レモ・フロイラー",
+          "role": "MF"
+        },
+        {
+          "x": 62.666666666666664,
+          "y": 16.666666666666664,
+          "number": 15,
+          "name": "ジブリル・ソウ",
+          "role": "MF"
+        },
+        {
+          "x": 62.666666666666664,
+          "y": 50,
+          "number": 9,
+          "name": "ヨハン・マンザンビ",
+          "role": "MF",
+          "isMvp": true
+        },
+        {
+          "x": 62.666666666666664,
+          "y": 83.33333333333334,
+          "number": 17,
+          "name": "ルベン・バルガス",
+          "role": "MF"
+        },
+        {
+          "x": 80,
+          "y": 50,
+          "number": 7,
+          "name": "ブレール・エンボロ",
+          "role": "FW"
+        }
+      ],
+      "bench": [
+        {
+          "number": 2,
+          "name": "ミロ・ムハイム"
+        },
+        {
+          "number": 3,
+          "name": "シルヴァン・ヴィドマー"
+        },
+        {
+          "number": 6,
+          "name": "デニス・ザカリア"
+        },
+        {
+          "number": 11,
+          "name": "ダン・ンドイエ"
+        },
+        {
+          "number": 12,
+          "name": "イヴォン・ムヴォゴ"
+        },
+        {
+          "number": 14,
+          "name": "アルドン・ヤシャリ"
+        },
+        {
+          "number": 16,
+          "name": "クリスティアン・ファスナハト"
+        },
+        {
+          "number": 18,
+          "name": "エライ・チョメルト"
+        },
+        {
+          "number": 19,
+          "name": "ノア・オカフォル"
+        },
+        {
+          "number": 20,
+          "name": "ミシェル・アエビシャー"
+        },
+        {
+          "number": 21,
+          "name": "マルヴィン・ケラー"
+        },
+        {
+          "number": 22,
+          "name": "ファビアン・リーダー"
+        },
+        {
+          "number": 23,
+          "name": "ゼキ・アムドゥニ"
+        },
+        {
+          "number": 24,
+          "name": "オレル・アメンダ"
+        },
+        {
+          "number": 26,
+          "name": "セドリック・イッテン"
+        }
+      ]
+    },
+    "awayFormation": {
+      "shape": "4-4-2",
+      "starting": [
+        {
+          "x": 8,
+          "y": 50,
+          "number": 16,
+          "name": "デイン・セント・クレア",
+          "role": "GK"
+        },
+        {
+          "x": 28,
+          "y": 12.5,
+          "number": 2,
+          "name": "アリスター・ジョンストン",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 37.5,
+          "number": 4,
+          "name": "アルフィー・ジョーンズ",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 62.5,
+          "number": 13,
+          "name": "デレク・コーネリアス",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 87.5,
+          "number": 22,
+          "name": "リッチー・ラリア",
+          "role": "DF"
+        },
+        {
+          "x": 54,
+          "y": 12.5,
+          "number": 17,
+          "name": "タジョン・ブキャナン",
+          "role": "MF"
+        },
+        {
+          "x": 54,
+          "y": 37.5,
+          "number": 25,
+          "name": "ネイサン・サリバ",
+          "role": "MF"
+        },
+        {
+          "x": 54,
+          "y": 62.5,
+          "number": 5,
+          "name": "ジョエル・ウォーターマン",
+          "role": "MF"
+        },
+        {
+          "x": 54,
+          "y": 87.5,
+          "number": 20,
+          "name": "アリ・アーメド",
+          "role": "MF"
+        },
+        {
+          "x": 80,
+          "y": 25,
+          "number": 9,
+          "name": "サイル・ラリン",
+          "role": "FW"
+        },
+        {
+          "x": 80,
+          "y": 75,
+          "number": 10,
+          "name": "ジョナサン・デイヴィッド",
+          "role": "FW",
+          "isCaptain": true
+        }
+      ],
+      "bench": [
+        {
+          "number": 1,
+          "name": "マクシム・クレポー"
+        },
+        {
+          "number": 3,
+          "name": "リュック・ド・フジュロル"
+        },
+        {
+          "number": 6,
+          "name": "マシュー・ショワニエール"
+        },
+        {
+          "number": 7,
+          "name": "スティーヴン・エウスタキオ"
+        },
+        {
+          "number": 8,
+          "name": "イスマエル・コネ"
+        },
+        {
+          "number": 11,
+          "name": "リアム・ミラー"
+        },
+        {
+          "number": 12,
+          "name": "タニ・オルワセイ"
+        },
+        {
+          "number": 14,
+          "name": "ジェイコブ・シャッフェルバーグ"
+        },
+        {
+          "number": 15,
+          "name": "モイーズ・ボンビト"
+        },
+        {
+          "number": 18,
+          "name": "オーウェン・グッドマン"
+        },
+        {
+          "number": 19,
+          "name": "アルフォンソ・デイヴィス"
+        },
+        {
+          "number": 21,
+          "name": "ジョナサン・オソリオ"
+        },
+        {
+          "number": 23,
+          "name": "ニコ・シグル"
+        },
+        {
+          "number": 24,
+          "name": "プロミス・デイヴィッド"
+        },
+        {
+          "number": 26,
+          "name": "マルセロ・フローレス"
+        }
+      ]
+    },
+    "bookings": [
+      {
+        "minute": 32,
+        "teamId": "CAN",
+        "playerName": "サイル・ラリン",
+        "type": "Y"
+      },
+      {
+        "minute": 32,
+        "teamId": "SUI",
+        "playerName": "グラニト・ジャカ",
+        "type": "Y"
+      },
+      {
+        "minute": 87,
+        "teamId": "CAN",
+        "playerName": "リアム・ミラー",
+        "type": "Y"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": 58,
+        "teamId": "CAN",
+        "inName": "スティーヴン・エウスタキオ",
+        "outName": "マシュー・ショワニエール"
+      },
+      {
+        "minute": 58,
+        "teamId": "CAN",
+        "inName": "リアム・ミラー",
+        "outName": "アリ・アーメド"
+      },
+      {
+        "minute": 58,
+        "teamId": "CAN",
+        "inName": "タニ・オルワセイ",
+        "outName": "サイル・ラリン"
+      },
+      {
+        "minute": 74,
+        "teamId": "SUI",
+        "inName": "ミシェル・アエビシャー",
+        "outName": "ルカ・ヤケス"
+      },
+      {
+        "minute": 74,
+        "teamId": "SUI",
+        "inName": "シルヴァン・ヴィドマー",
+        "outName": "ジブリル・ソウ"
+      },
+      {
+        "minute": 74,
+        "teamId": "CAN",
+        "inName": "プロミス・デイヴィッド",
+        "outName": "タジョン・ブキャナン"
+      },
+      {
+        "minute": 80,
+        "teamId": "SUI",
+        "inName": "ダン・ンドイエ",
+        "outName": "ルベン・バルガス"
+      },
+      {
+        "minute": 83,
+        "teamId": "CAN",
+        "inName": "ジェイコブ・シャッフェルバーグ",
+        "outName": "リッチー・ラリア"
+      },
+      {
+        "minute": 85,
+        "teamId": "SUI",
+        "inName": "セドリック・イッテン",
+        "outName": "ヨハン・マンザンビ"
+      },
+      {
+        "minute": 85,
+        "teamId": "SUI",
+        "inName": "クリスティアン・ファスナハト",
+        "outName": "ブレール・エンボロ"
+      }
+    ]
   },
   "m012": {
     "matchId": "m012",
