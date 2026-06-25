@@ -14048,7 +14048,7 @@
         },
         {
           "number": 25,
-          "name": "��イリック・ボダック"
+          "name": "タイリック・ボダック"
         },
         {
           "number": 26,
@@ -19343,7 +19343,7 @@
         "playerId": "p_col_9",
         "playerName": "ダニエル・ムニョス",
         "assistPlayerId": "p_col_17",
-        "assistPlayerName": "フアン・キンテーロ"
+        "assistPlayerName": "フアン・キ��テーロ"
       }
     ]
   },
@@ -20466,7 +20466,7 @@
       "home": 4,
       "away": 2
     },
-    "liveLabel": "Live",
+    "liveLabel": "Full time",
     "goals": [
       {
         "minute": 10,
@@ -20895,7 +20895,7 @@
       "home": 0,
       "away": 3
     },
-    "liveLabel": "Live",
+    "liveLabel": "Full time",
     "goals": [
       {
         "minute": 7,
