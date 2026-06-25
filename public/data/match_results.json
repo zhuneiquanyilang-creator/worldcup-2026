@@ -21015,7 +21015,7 @@
   },
   "m005": {
     "matchId": "m005",
-    "status": "scheduled",
+    "status": "live",
     "homeFormation": {
       "shape": "3-4-2-1",
       "starting": [
@@ -21309,11 +21309,12 @@
     "score": {
       "home": 0,
       "away": 0
-    }
+    },
+    "liveLabel": "Halftime"
   },
   "m006": {
     "matchId": "m006",
-    "status": "scheduled",
+    "status": "live",
     "homeFormation": {
       "shape": "4-2-3-1",
       "starting": [
@@ -21606,7 +21607,8 @@
     "score": {
       "home": 0,
       "away": 0
-    }
+    },
+    "liveLabel": "Halftime"
   },
   "m030": {
     "matchId": "m030",
