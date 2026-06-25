@@ -22132,6 +22132,12 @@
         "teamId": "ECU",
         "playerName": "アラン・フランコ",
         "type": "Y"
+      },
+      {
+        "minute": 89,
+        "teamId": "ECU",
+        "playerName": "ゴンサロ・プラタ",
+        "type": "Y"
       }
     ],
     "substitutions": [
@@ -22170,6 +22176,30 @@
         "teamId": "GER",
         "inName": "マリック・チャウ",
         "outName": "ヨズア・キミッヒ"
+      },
+      {
+        "minute": 71,
+        "teamId": "ECU",
+        "inName": "ペルビス・エストゥピニャン",
+        "outName": "ピエロ・インカピエ"
+      },
+      {
+        "minute": 73,
+        "teamId": "GER",
+        "inName": "パスカル・グロス",
+        "outName": "フロリアン・ヴィルツ"
+      },
+      {
+        "minute": 85,
+        "teamId": "ECU",
+        "inName": "フェリックス・トーレス",
+        "outName": "ジョン・イェボア"
+      },
+      {
+        "minute": 85,
+        "teamId": "ECU",
+        "inName": "ホルディ・カイセド",
+        "outName": "ニルソン・アングロ"
       }
     ]
   },
@@ -22496,6 +22526,18 @@
         "teamId": "CIV",
         "playerName": "ニコラ・ペペ",
         "type": "Y"
+      },
+      {
+        "minute": 75,
+        "teamId": "CUR",
+        "playerName": "ジュニーニョ・バクーナ",
+        "type": "Y"
+      },
+      {
+        "minute": 83,
+        "teamId": "CUR",
+        "playerName": "ヘルファネ・カスタネール",
+        "type": "Y"
       }
     ],
     "substitutions": [
@@ -22528,6 +22570,24 @@
         "teamId": "CIV",
         "inName": "ウマル・ディアキテ",
         "outName": "アンジェ・ヨアン・ボニー"
+      },
+      {
+        "minute": 77,
+        "teamId": "CUR",
+        "inName": "タイリース・ノスリン",
+        "outName": "ユリエン・ガーリ"
+      },
+      {
+        "minute": 77,
+        "teamId": "CUR",
+        "inName": "ヘルファネ・カスタネール",
+        "outName": "デヴェロン・フォンヴィル"
+      },
+      {
+        "minute": 77,
+        "teamId": "CIV",
+        "inName": "ジャン・ミシェル・セリ",
+        "outName": "フランク・ケシエ"
       }
     ],
     "liveLabel": "Live"
