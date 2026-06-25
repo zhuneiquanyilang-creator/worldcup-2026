@@ -3902,7 +3902,7 @@
         },
         {
           "number": 5,
-          "name": "ホルディ・アルシバル"
+          "name": "ホ��ディ・アルシバル"
         },
         {
           "number": 7,
@@ -6297,7 +6297,7 @@
           "x": 54,
           "y": 87.5,
           "number": 20,
-          "name": "マクシミリアーノ・アラウホ",
+          "name": "マク��ミリアーノ・アラウホ",
           "role": "MF"
         },
         {
@@ -6409,7 +6409,7 @@
         "minute": 72,
         "teamId": "URU",
         "inName": "ニコラス・デ・ラ・クルス",
-        "outName": "マヌエル・ウ���ルテ"
+        "outName": "マヌエル・ウガルテ"
       },
       {
         "minute": 82,
@@ -21320,6 +21320,95 @@
         "playerName": "マテオ・チャベス",
         "assistPlayerId": "p_mex_11",
         "assistPlayerName": "ルイス・ロモ"
+      },
+      {
+        "minute": 61,
+        "teamId": "MEX",
+        "type": "normal",
+        "playerId": "p_mex_22",
+        "playerName": "フリアン・キニョネス",
+        "assistPlayerId": "p_mex_7",
+        "assistPlayerName": "ホルヘ・サンチェス"
+      },
+      {
+        "minute": 90,
+        "teamId": "MEX",
+        "type": "normal",
+        "addedTime": 4,
+        "playerId": "p_mex_18",
+        "playerName": "アルバロ・フィダルゴ",
+        "assistPlayerId": "p_mex_26",
+        "assistPlayerName": "ロベルト・アルバラード"
+      }
+    ],
+    "bookings": [
+      {
+        "minute": 63,
+        "teamId": "CZE",
+        "playerName": "ロビン・フラナーチ",
+        "type": "Y"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": 56,
+        "teamId": "CZE",
+        "inName": "ルカーシュ・プロヴォド",
+        "outName": "デニス・ヴィシンスキー"
+      },
+      {
+        "minute": 63,
+        "teamId": "MEX",
+        "inName": "オベド・バルガス",
+        "outName": "ルイス・ロモ"
+      },
+      {
+        "minute": 63,
+        "teamId": "MEX",
+        "inName": "サンティアゴ・ヒメネス",
+        "outName": "ギジェルモ・マルティネス"
+      },
+      {
+        "minute": 64,
+        "teamId": "CZE",
+        "inName": "トマーシュ・ソウチェク",
+        "outName": "トマーシュ・ホレシュ"
+      },
+      {
+        "minute": 64,
+        "teamId": "CZE",
+        "inName": "パトリク・シック",
+        "outName": "アダム・ハロジェク"
+      },
+      {
+        "minute": 72,
+        "teamId": "MEX",
+        "inName": "アルバロ・フィダルゴ",
+        "outName": "ヒルベルト・モラ"
+      },
+      {
+        "minute": 78,
+        "teamId": "MEX",
+        "inName": "ギジェルモ・オチョア",
+        "outName": "ラウール・ランヘル"
+      },
+      {
+        "minute": 78,
+        "teamId": "MEX",
+        "inName": "ヘスス・ガジャルド",
+        "outName": "マテオ・チャベス"
+      },
+      {
+        "minute": 87,
+        "teamId": "CZE",
+        "inName": "アレクサンドル・ソイカ",
+        "outName": "ルカーシュ・チェルフ"
+      },
+      {
+        "minute": 87,
+        "teamId": "CZE",
+        "inName": "トマーシュ・ホリー",
+        "outName": "トマーシュ・ソウチェク"
       }
     ]
   },
