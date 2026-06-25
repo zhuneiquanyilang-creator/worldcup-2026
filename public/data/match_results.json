@@ -16120,7 +16120,7 @@
         "minute": 66,
         "teamId": "NZL",
         "inName": "ベン・オールド",
-        "outName": "カラム・マッコワ��ト"
+        "outName": "カラム・マッコワット"
       },
       {
         "minute": 76,
@@ -17685,7 +17685,7 @@
         },
         {
           "number": 26,
-          "name": "サミル・��ェルギ"
+          "name": "サミル・シェルギ"
         }
       ]
     },
@@ -22117,6 +22117,12 @@
         "teamId": "GER",
         "playerName": "アレクサンダル・パヴロビッチ",
         "type": "Y"
+      },
+      {
+        "minute": 50,
+        "teamId": "ECU",
+        "playerName": "アラン・フランコ",
+        "type": "Y"
       }
     ],
     "substitutions": [
@@ -22125,6 +22131,36 @@
         "teamId": "GER",
         "inName": "アンジェロ・シュティラー",
         "outName": "アレクサンダル・パヴロビッチ"
+      },
+      {
+        "minute": 60,
+        "teamId": "GER",
+        "inName": "デニズ・ウンダフ",
+        "outName": "カイ・ハヴァーツ"
+      },
+      {
+        "minute": 64,
+        "teamId": "ECU",
+        "inName": "アンヘロ・プレシアド",
+        "outName": "アラン・フランコ"
+      },
+      {
+        "minute": 64,
+        "teamId": "ECU",
+        "inName": "ケビン・ロドリゲス",
+        "outName": "エネル・バレンシア"
+      },
+      {
+        "minute": 64,
+        "teamId": "GER",
+        "inName": "マクシミリアン・バイアー",
+        "outName": "フェリックス・ヌメチャ"
+      },
+      {
+        "minute": 69,
+        "teamId": "GER",
+        "inName": "マリック・チャウ",
+        "outName": "ヨズア・キミッヒ"
       }
     ]
   },
