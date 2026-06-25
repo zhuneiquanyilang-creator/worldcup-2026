@@ -1134,7 +1134,7 @@
       {
         "minute": 44,
         "teamId": "BIH",
-        "playerName": "エルメディン・デミロビッチ",
+        "playerName": "エルメディン・デミ��ビッチ",
         "type": "Y"
       },
       {
@@ -2551,7 +2551,7 @@
         },
         {
           "number": 7,
-          "name": "ジョヴァンニ・レイナ"
+          "name": "ジョヴァンニ・レイ���"
         },
         {
           "number": 9,
@@ -13690,7 +13690,7 @@
         "type": "normal",
         "addedTime": 4,
         "playerId": "p_ger_25",
-        "playerName": "デ��ズ・ウンダフ",
+        "playerName": "デニズ・ウンダフ",
         "assistPlayerId": "p_ger_7",
         "assistPlayerName": "フェリックス・ヌメチャ"
       }
@@ -21310,7 +21310,7 @@
       "home": 0,
       "away": 3
     },
-    "liveLabel": "Live",
+    "liveLabel": "Full time",
     "goals": [
       {
         "minute": 55,
@@ -21619,7 +21619,7 @@
       "home": 1,
       "away": 0
     },
-    "liveLabel": "Halftime",
+    "liveLabel": "Full time",
     "substitutions": [
       {
         "minute": 46,
