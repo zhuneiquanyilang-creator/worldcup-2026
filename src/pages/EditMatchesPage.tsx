@@ -551,6 +551,15 @@ export function EditMatchesPage() {
   const [importText, setImportText] = useState("");
   const [importMsg, setImportMsg] = useState("");
   const [expandedId, setExpandedId] = useState<string | null>(null);
+  const [showBackTop, setShowBackTop] = useState(false);
+
+  // ページ下方へスクロールしたら「↑ 上へ」ボタンを出す (400px 超で表示)。
+  useEffect(() => {
+    const onScroll = () => setShowBackTop(window.scrollY > 400);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   // file (公式記録) と matchEdits (手動編集レイヤー) を「file → manual」の順で
   // 重ねて初期値とする。両方ある場合は manual のフィールドが file の同名
@@ -1213,6 +1222,18 @@ export function EditMatchesPage() {
         </button>
         {importMsg && <p className={styles.savedMsg}>{importMsg}</p>}
       </section>
+
+      {showBackTop && (
+        <button
+          type="button"
+          className={styles.backToTop}
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          aria-label="ページの上に戻る"
+          title="ページの上に戻る"
+        >
+          ↑ 上へ
+        </button>
+      )}
     </div>
   );
 }
