@@ -14996,7 +14996,7 @@
           "x": 28,
           "y": 62.5,
           "number": 4,
-          "name": "ブランドン・メシェレ",
+          "name": "ブラン���ン・メシェレ",
           "role": "DF"
         },
         {
@@ -16203,7 +16203,7 @@
           "x": 28,
           "y": 37.5,
           "number": 13,
-          "name": "クリスティアン・ロメ���",
+          "name": "クリスティアン・ロメロ",
           "role": "DF"
         },
         {
@@ -22628,7 +22628,8 @@
           "y": 50,
           "number": 17,
           "name": "エリス・スキリ",
-          "role": "DF"
+          "role": "DF",
+          "isCaptain": true
         },
         {
           "x": 28,
@@ -22888,7 +22889,25 @@
         }
       ]
     },
-    "liveLabel": "Live"
+    "liveLabel": "Live",
+    "goals": [
+      {
+        "minute": 3,
+        "teamId": "NED",
+        "type": "own",
+        "playerId": "p_tun_16",
+        "playerName": "エリス・スキリ"
+      },
+      {
+        "minute": 7,
+        "teamId": "NED",
+        "type": "normal",
+        "playerId": "p_ned_20",
+        "playerName": "ブライアン・ブロビー",
+        "assistPlayerId": "p_ned_10",
+        "assistPlayerName": "フィルジル・ファン・ダイク"
+      }
+    ]
   },
   "m035": {
     "matchId": "m035",
