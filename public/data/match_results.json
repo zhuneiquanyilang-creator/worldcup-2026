@@ -16486,7 +16486,7 @@
         "playerId": "p_arg_19",
         "playerName": "リオネル・メッシ",
         "assistPlayerId": "p_arg_6",
-        "assistPlayerName": "ファクンド・��ディーナ"
+        "assistPlayerName": "ファクンド・メディーナ"
       },
       {
         "minute": 90,
@@ -23213,6 +23213,14 @@
         "teamId": "SWE",
         "playerName": "イサク・ヒエン",
         "type": "Y"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": 37,
+        "teamId": "SWE",
+        "inName": "ルーカス・ベリヴァル",
+        "outName": "イサク・ヒエン"
       }
     ]
   },
