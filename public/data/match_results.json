@@ -14927,7 +14927,7 @@
         "minute": 60,
         "teamId": "KSA",
         "inName": "アラ・アル・ヘジ",
-        "outName": "アブドゥルエラ・アル・アムリ"
+        "outName": "アブドゥ���エラ・アル・アムリ"
       },
       {
         "minute": 60,
@@ -20128,7 +20128,7 @@
       {
         "minute": 55,
         "teamId": "QAT",
-        "inName": "アハメド・アル・ガ��ヒ",
+        "inName": "アハメド・アル・ガネヒ",
         "outName": "ハッサン・アル・ハイドス"
       },
       {
@@ -22169,7 +22169,7 @@
     "status": "live",
     "score": {
       "home": 0,
-      "away": 1
+      "away": 2
     },
     "goals": [
       {
@@ -22180,6 +22180,15 @@
         "playerName": "ニコラ・ペペ",
         "assistPlayerId": "p_civ_22",
         "assistPlayerName": "ヤン・ディオマンデ"
+      },
+      {
+        "minute": 64,
+        "teamId": "CIV",
+        "type": "normal",
+        "playerId": "p_civ_18",
+        "playerName": "ニコラ・ペペ",
+        "assistPlayerId": "p_civ_17",
+        "assistPlayerName": "イブラヒム・サンガレ"
       }
     ],
     "homeFormation": {
@@ -22490,8 +22499,26 @@
       {
         "minute": 61,
         "teamId": "CUR",
-        "inName": "ジェレミー・アントニッセ",
+        "inName": "ジェレミー・アン���ニッセ",
         "outName": "ユルゲン・ロカディア"
+      },
+      {
+        "minute": 67,
+        "teamId": "CIV",
+        "inName": "バズマナ・トゥーレ",
+        "outName": "ニコラ・ペペ"
+      },
+      {
+        "minute": 67,
+        "teamId": "CIV",
+        "inName": "エリー・ワヒ",
+        "outName": "ヤン・ディオマンデ"
+      },
+      {
+        "minute": 67,
+        "teamId": "CIV",
+        "inName": "ウマル・ディアキテ",
+        "outName": "アンジェ・ヨアン・ボニー"
       }
     ],
     "liveLabel": "Live"
