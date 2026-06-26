@@ -20128,7 +20128,7 @@
       {
         "minute": 55,
         "teamId": "QAT",
-        "inName": "アハメド・アル・ガ��ヒ",
+        "inName": "アハメド・アル・ガネヒ",
         "outName": "ハッサン・アル・ハイドス"
       },
       {
@@ -21888,7 +21888,8 @@
           "y": 87.5,
           "number": 20,
           "name": "ニルソン・アングロ",
-          "role": "MF"
+          "role": "MF",
+          "isMvp": true
         },
         {
           "x": 80,
@@ -22113,7 +22114,7 @@
         }
       ]
     },
-    "liveLabel": "Live",
+    "liveLabel": "Full time",
     "bookings": [
       {
         "minute": 43,
@@ -22440,7 +22441,8 @@
           "y": 50,
           "number": 19,
           "name": "ニコラ・ペペ",
-          "role": "MF"
+          "role": "MF",
+          "isMvp": true
         },
         {
           "x": 62.666666666666664,
@@ -22590,7 +22592,7 @@
         "outName": "フランク・ケシエ"
       }
     ],
-    "liveLabel": "Live"
+    "liveLabel": "Full time"
   },
   "m036": {
     "matchId": "m036",
