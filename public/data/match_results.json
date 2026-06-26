@@ -24962,6 +24962,12 @@
         "teamId": "SEN",
         "playerName": "パペ・ゲイェ",
         "type": "Y"
+      },
+      {
+        "minute": 90,
+        "teamId": "IRQ",
+        "playerName": "メルチャス・ドスキ",
+        "type": "Y"
       }
     ],
     "substitutions": [
