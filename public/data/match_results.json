@@ -24829,6 +24829,22 @@
         "assistPlayerId": "p_sen_5",
         "assistPlayerName": "アブドゥライ・セック"
       }
+    ],
+    "bookings": [
+      {
+        "minute": 13,
+        "teamId": "IRQ",
+        "playerName": "レビン・スラカ",
+        "type": "R"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": 16,
+        "teamId": "IRQ",
+        "inName": "マナフ・ユニス",
+        "outName": "アハメド・カセム"
+      }
     ]
   },
   "m048": {
