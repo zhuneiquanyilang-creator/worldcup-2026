@@ -24574,6 +24574,18 @@
         "teamId": "NOR",
         "inName": "アントニオ・ヌサ",
         "outName": "オスカー・ボブ"
+      },
+      {
+        "minute": 87,
+        "teamId": "FRA",
+        "inName": "ジャン・フィリップ・マテタ",
+        "outName": "キリアン・エンバペ"
+      },
+      {
+        "minute": 87,
+        "teamId": "FRA",
+        "inName": "マロ・ギュスト",
+        "outName": "ジュール・クンデ"
       }
     ]
   },
