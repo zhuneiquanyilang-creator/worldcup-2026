@@ -7898,7 +7898,7 @@
         },
         {
           "number": 15,
-          "name": "イブラ��ム・サアデ"
+          "name": "イブラヒム・サアデ"
         },
         {
           "number": 17,
@@ -22944,6 +22944,36 @@
         "teamId": "TUN",
         "inName": "モルタダ・ベン・アネス",
         "outName": "アニス・ベン・スリマン"
+      },
+      {
+        "minute": 72,
+        "teamId": "NED",
+        "inName": "ジャスティン・クライファート",
+        "outName": "フレンキー・デ・ヨング"
+      },
+      {
+        "minute": 72,
+        "teamId": "NED",
+        "inName": "トゥーン・コープマイネルス",
+        "outName": "タイアニ・ラインデルス"
+      },
+      {
+        "minute": 72,
+        "teamId": "NED",
+        "inName": "クリセンシオ・サマーフィル",
+        "outName": "ドニエル・マレン"
+      },
+      {
+        "minute": 75,
+        "teamId": "TUN",
+        "inName": "フィラス・シャウア",
+        "outName": "イスマエル・ガルビ"
+      },
+      {
+        "minute": 77,
+        "teamId": "NED",
+        "inName": "メンフィス・デパイ",
+        "outName": "ブライアン・ブロビー"
       }
     ]
   },
