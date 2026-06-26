@@ -8930,7 +8930,7 @@
           "x": 45.33333333333333,
           "y": 87.5,
           "number": 11,
-          "name": "アントワーヌ・��メンヨ",
+          "name": "アントワーヌ・セメンヨ",
           "role": "MF",
           "isMvp": true
         },
@@ -24562,6 +24562,18 @@
         "teamId": "FRA",
         "inName": "イブラヒマ・コナテ",
         "outName": "ダヨ・ウパメカノ"
+      },
+      {
+        "minute": 83,
+        "teamId": "NOR",
+        "inName": "イェンス・ペッター・ハウゲ",
+        "outName": "アンドレアス・レーデルゴール・シェルデルップ"
+      },
+      {
+        "minute": 83,
+        "teamId": "NOR",
+        "inName": "アントニオ・ヌサ",
+        "outName": "オスカー・ボブ"
       }
     ]
   },
@@ -24907,6 +24919,12 @@
         "teamId": "IRQ",
         "playerName": "レビン・スラカ",
         "type": "R"
+      },
+      {
+        "minute": 75,
+        "teamId": "IRQ",
+        "playerName": "アミル・アル・アンマリ",
+        "type": "Y"
       }
     ],
     "substitutions": [
