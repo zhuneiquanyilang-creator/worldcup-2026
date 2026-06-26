@@ -24532,6 +24532,24 @@
         "teamId": "NOR",
         "inName": "モルテン・トルスビー",
         "outName": "クリスティアン・トルストヴェット"
+      },
+      {
+        "minute": 65,
+        "teamId": "FRA",
+        "inName": "ラヤン・シェルキ",
+        "outName": "マイケル・オリーセ"
+      },
+      {
+        "minute": 65,
+        "teamId": "FRA",
+        "inName": "ブラッドリー・バルコラ",
+        "outName": "ウスマン・デンベレ"
+      },
+      {
+        "minute": 66,
+        "teamId": "NOR",
+        "inName": "ソンドレ・ランガス",
+        "outName": "ヘンリク・ファルヘナー"
       }
     ]
   },
