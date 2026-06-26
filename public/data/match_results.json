@@ -24501,6 +24501,15 @@
         "playerName": "セロニアス・アースゴール",
         "assistPlayerId": "p_nor_16",
         "assistPlayerName": "アンドレアス・レーデルゴール・シェルデルップ"
+      },
+      {
+        "minute": 32,
+        "teamId": "FRA",
+        "type": "normal",
+        "playerId": "p_fra_23",
+        "playerName": "ウスマン・デンベレ",
+        "assistPlayerId": "p_fra_17",
+        "assistPlayerName": "オーレリアン・チュアメニ"
       }
     ],
     "bookings": [
