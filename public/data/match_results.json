@@ -8945,7 +8945,7 @@
           "x": 80,
           "y": 50,
           "number": 9,
-          "name": "ジョーダン・アユー",
+          "name": "ジョーダン・ア��ー",
           "role": "FW",
           "isCaptain": true
         }
@@ -24557,7 +24557,7 @@
     "matchId": "m054",
     "status": "live",
     "score": {
-      "home": 3,
+      "home": 4,
       "away": 0
     },
     "homeFormation": {
@@ -24878,6 +24878,15 @@
         "playerName": "パペ・ゲイェ",
         "assistPlayerId": "p_sen_21",
         "assistPlayerName": "イスマイラ・サール"
+      },
+      {
+        "minute": 71,
+        "teamId": "SEN",
+        "type": "normal",
+        "playerId": "p_sen_15",
+        "playerName": "パペ・ゲイェ",
+        "assistPlayerId": "p_sen_20",
+        "assistPlayerName": "イリマン・ンディアエ"
       }
     ],
     "bookings": [
