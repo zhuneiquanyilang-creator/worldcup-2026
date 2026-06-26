@@ -24473,7 +24473,26 @@
         }
       ]
     },
-    "liveLabel": "Live"
+    "liveLabel": "Live",
+    "goals": [
+      {
+        "minute": 7,
+        "teamId": "FRA",
+        "type": "normal",
+        "playerId": "p_fra_23",
+        "playerName": "ウスマン・デンベレ",
+        "assistPlayerId": "p_fra_18",
+        "assistPlayerName": "キリアン・エンバペ"
+      }
+    ],
+    "bookings": [
+      {
+        "minute": 10,
+        "teamId": "NOR",
+        "playerName": "パトリック・ベルグ",
+        "type": "Y"
+      }
+    ]
   },
   "m054": {
     "matchId": "m054",
@@ -24772,7 +24791,18 @@
         }
       ]
     },
-    "liveLabel": "Live"
+    "liveLabel": "Live",
+    "goals": [
+      {
+        "minute": 4,
+        "teamId": "SEN",
+        "type": "normal",
+        "playerId": "p_sen_16",
+        "playerName": "ハビブ・ディアラ",
+        "assistPlayerId": "p_sen_5",
+        "assistPlayerName": "アブドゥライ・セック"
+      }
+    ]
   },
   "m048": {
     "matchId": "m048",
