@@ -24539,7 +24539,7 @@
     "matchId": "m054",
     "status": "live",
     "score": {
-      "home": 2,
+      "home": 3,
       "away": 0
     },
     "homeFormation": {
@@ -24851,6 +24851,15 @@
         "playerName": "イスマイラ・サール",
         "assistPlayerId": "p_sen_13",
         "assistPlayerName": "ラミン・カマラ"
+      },
+      {
+        "minute": 59,
+        "teamId": "SEN",
+        "type": "normal",
+        "playerId": "p_sen_15",
+        "playerName": "パペ・ゲイェ",
+        "assistPlayerId": "p_sen_21",
+        "assistPlayerName": "イスマイラ・サール"
       }
     ],
     "bookings": [
@@ -24899,10 +24908,16 @@
         "outName": "アブドゥライ・セック"
       },
       {
-        "minute": 59,
+        "minute": 58,
         "teamId": "IRQ",
         "inName": "アフメド・アクンジ",
         "outName": "アリ・ジャシム"
+      },
+      {
+        "minute": 58,
+        "teamId": "IRQ",
+        "inName": "アリ・ユセフ",
+        "outName": "アリ・アル・ハマディ"
       }
     ]
   },
