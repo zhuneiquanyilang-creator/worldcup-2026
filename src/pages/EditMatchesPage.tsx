@@ -383,11 +383,16 @@ function draftToSub(
 }
 
 /** 交代枠を「ホーム最低 5 / アウェイ最低 5」になるよう空エントリで補充する。
- *  finished の試合は触らない。空のまま保存しても draftToSub が null を返すので
- *  公開サイト (試合詳細) には反映されない (= 未記入は試合詳細に出ない)。 */
+ *  finished の試合で **既に交代エントリが 1 つ以上入っている** ケースだけは
+ *  触らない (= 編集完了済みとみなしてこれ以上枠を増やさない)。
+ *  finished + 交代 0 件のケース (試合終了直後でまだ手入力していない) は
+ *  5+5 枠を出して即入力できるようにする。
+ *  空のまま保存しても draftToSub が null を返すので、公開サイト (試合詳細)
+ *  には反映されない (= 未記入は試合詳細に出ない)。 */
 function padSubstitutions(editable: Editable, match: Match): Editable {
   const effectiveStatus = editable.status || match.status;
-  if (effectiveStatus === "finished") return editable;
+  if (effectiveStatus === "finished" && editable.substitutions.length > 0)
+    return editable;
   const homeCount = editable.substitutions.filter(
     (s) => s.teamId === match.homeTeamId
   ).length;
