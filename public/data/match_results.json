@@ -20128,7 +20128,7 @@
       {
         "minute": 55,
         "teamId": "QAT",
-        "inName": "アハメド・アル・ガネヒ",
+        "inName": "アハメド・アル・ガ��ヒ",
         "outName": "ハッサン・アル・ハイドス"
       },
       {
@@ -23509,7 +23509,8 @@
           "y": 25,
           "number": 8,
           "name": "アルダ・ギュレル",
-          "role": "MF"
+          "role": "MF",
+          "isMvp": true
         },
         {
           "x": 62.666666666666664,
@@ -23733,7 +23734,79 @@
           "name": "アレハンドロ・センデハス"
         }
       ]
-    }
+    },
+    "bookings": [
+      {
+        "minute": 19,
+        "teamId": "USA",
+        "playerName": "セバスチャン・バーハルター",
+        "type": "Y"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": 58,
+        "teamId": "USA",
+        "inName": "クリスチャン・プリシッチ",
+        "outName": "ティモシー・ウェア"
+      },
+      {
+        "minute": 76,
+        "teamId": "USA",
+        "inName": "アレックス・フリーマン",
+        "outName": "ジョー・スカリー"
+      },
+      {
+        "minute": 76,
+        "teamId": "USA",
+        "inName": "セルジーニョ・デスト",
+        "outName": "ジョヴァンニ・レイナ"
+      },
+      {
+        "minute": 76,
+        "teamId": "USA",
+        "inName": "アレハンドロ・センデハス",
+        "outName": "ブレンデン・アーロンソン"
+      },
+      {
+        "minute": 84,
+        "teamId": "TUR",
+        "inName": "チャーラル・ソユンジュ",
+        "outName": "ゼキ・チェリク"
+      },
+      {
+        "minute": 84,
+        "teamId": "TUR",
+        "inName": "ジャン・ウズン",
+        "outName": "ケナン・ユルディズ"
+      },
+      {
+        "minute": 86,
+        "teamId": "USA",
+        "inName": "マリク・ティルマン",
+        "outName": "ウェストン・マッケニー"
+      },
+      {
+        "minute": 88,
+        "teamId": "TUR",
+        "inName": "カーン・アイハン",
+        "outName": "オルクン・コクチュ"
+      },
+      {
+        "minute": 90,
+        "teamId": "TUR",
+        "inName": "メルト・ミュルドゥル",
+        "outName": "オウズ・アイドゥン",
+        "addedTime": 1
+      },
+      {
+        "minute": 90,
+        "teamId": "TUR",
+        "inName": "イルファン・ジャン・カフベジ",
+        "outName": "バルシュ・ユルマズ",
+        "addedTime": 1
+      }
+    ]
   },
   "m024": {
     "matchId": "m024",
@@ -23997,7 +24070,7 @@
         },
         {
           "number": 10,
-          "name": "アイディン・フルスティッチ"
+          "name": "アイ���ィン・フルスティッチ"
         },
         {
           "number": 11,
