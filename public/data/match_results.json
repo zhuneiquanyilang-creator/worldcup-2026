@@ -21789,7 +21789,7 @@
   },
   "m030": {
     "matchId": "m030",
-    "status": "finished",
+    "status": "live",
     "score": {
       "home": 2,
       "away": 1
@@ -22205,7 +22205,7 @@
   },
   "m029": {
     "matchId": "m029",
-    "status": "finished",
+    "status": "live",
     "score": {
       "home": 0,
       "away": 2
@@ -22974,6 +22974,18 @@
         "teamId": "NED",
         "inName": "メンフィス・デパイ",
         "outName": "ブライアン・ブロビー"
+      },
+      {
+        "minute": 84,
+        "teamId": "NED",
+        "inName": "ノア・ラング",
+        "outName": "コーディ・ガクポ"
+      },
+      {
+        "minute": 90,
+        "teamId": "TUN",
+        "inName": "セバスティアン・トネクティ",
+        "outName": "ハゼム・マストゥリ"
       }
     ]
   },
