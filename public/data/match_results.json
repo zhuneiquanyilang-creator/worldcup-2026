@@ -3930,7 +3930,7 @@
         },
         {
           "number": 17,
-          "name": "アンヘロ・プレシアド"
+          "name": "アンヘロ・プ��シアド"
         },
         {
           "number": 18,
@@ -23394,11 +23394,21 @@
   },
   "m023": {
     "matchId": "m023",
-    "status": "scheduled"
+    "status": "finished",
+    "score": {
+      "home": 3,
+      "away": 2
+    },
+    "liveLabel": "Full time"
   },
   "m024": {
     "matchId": "m024",
-    "status": "scheduled"
+    "status": "finished",
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "liveLabel": "Full time"
   },
   "m053": {
     "matchId": "m053",
