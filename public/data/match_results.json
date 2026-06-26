@@ -8930,7 +8930,7 @@
           "x": 45.33333333333333,
           "y": 87.5,
           "number": 11,
-          "name": "アントワーヌ・セメンヨ",
+          "name": "アントワーヌ・��メンヨ",
           "role": "MF",
           "isMvp": true
         },
@@ -8945,7 +8945,7 @@
           "x": 80,
           "y": 50,
           "number": 9,
-          "name": "ジョーダン・ア��ー",
+          "name": "ジョーダン・アユー",
           "role": "FW",
           "isCaptain": true
         }
@@ -24518,6 +24518,12 @@
         "teamId": "NOR",
         "playerName": "パトリック・ベルグ",
         "type": "Y"
+      },
+      {
+        "minute": 74,
+        "teamId": "FRA",
+        "playerName": "オーレリアン・チュアメニ",
+        "type": "Y"
       }
     ],
     "substitutions": [
@@ -24550,6 +24556,12 @@
         "teamId": "NOR",
         "inName": "ソンドレ・ランガス",
         "outName": "ヘンリク・ファルヘナー"
+      },
+      {
+        "minute": 74,
+        "teamId": "FRA",
+        "inName": "イブラヒマ・コナテ",
+        "outName": "ダヨ・ウパメカノ"
       }
     ]
   },
