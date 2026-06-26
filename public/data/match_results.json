@@ -5655,7 +5655,7 @@
       {
         "minute": 68,
         "teamId": "NZL",
-        "inName": "ベン・オールド",
+        "inName": "ベン・オー��ド",
         "outName": "リベラト・カカーチェ"
       },
       {
@@ -22597,7 +22597,7 @@
     "status": "live",
     "score": {
       "home": 1,
-      "away": 2
+      "away": 3
     },
     "homeFormation": {
       "shape": "5-4-1",
@@ -23245,6 +23245,26 @@
         "teamId": "JPN",
         "inName": "谷口 彰悟",
         "outName": "板倉 滉"
+      }
+    ],
+    "goals": [
+      {
+        "minute": 56,
+        "teamId": "JPN",
+        "type": "normal",
+        "playerId": "p_jpn_23",
+        "playerName": "前田 大然",
+        "assistPlayerId": "p_jpn_17",
+        "assistPlayerName": "堂安 律"
+      },
+      {
+        "minute": 62,
+        "teamId": "SWE",
+        "type": "normal",
+        "playerId": "p_swe_23",
+        "playerName": "アントニー・エランガ",
+        "assistPlayerId": "p_swe_22",
+        "assistPlayerName": "ヴィクトル・ギョケレシュ"
       }
     ]
   },
