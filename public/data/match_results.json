@@ -17207,7 +17207,7 @@
           "x": 80,
           "y": 50,
           "number": 11,
-          "name": "ニコラス・ジャクソ��",
+          "name": "ニコラス・ジャクソン",
           "role": "FW"
         },
         {
@@ -20128,7 +20128,7 @@
       {
         "minute": 55,
         "teamId": "QAT",
-        "inName": "アハメド・アル・ガネヒ",
+        "inName": "アハメド・アル・ガ��ヒ",
         "outName": "ハッサン・アル・ハイドス"
       },
       {
@@ -24181,7 +24181,7 @@
     "status": "live",
     "score": {
       "home": 0,
-      "away": 0
+      "away": 1
     },
     "homeFormation": {
       "shape": "4-3-3",
