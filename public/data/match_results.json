@@ -24178,7 +24178,7 @@
   },
   "m053": {
     "matchId": "m053",
-    "status": "live",
+    "status": "finished",
     "score": {
       "home": 1,
       "away": 4
@@ -24601,7 +24601,7 @@
   },
   "m054": {
     "matchId": "m054",
-    "status": "live",
+    "status": "finished",
     "score": {
       "home": 5,
       "away": 0
