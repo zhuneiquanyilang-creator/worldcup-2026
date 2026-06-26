@@ -18711,7 +18711,7 @@
         },
         {
           "number": 15,
-          "name": "エリック・ダビス"
+          "name": "エリック・���ビス"
         },
         {
           "number": 18,
@@ -24012,7 +24012,8 @@
           "y": 62.5,
           "number": 13,
           "name": "エイデン・オニール",
-          "role": "MF"
+          "role": "MF",
+          "isMvp": true
         },
         {
           "x": 45.33333333333333,
@@ -24070,7 +24071,7 @@
         },
         {
           "number": 10,
-          "name": "アイ���ィン・フルスティッチ"
+          "name": "アイディン・フルスティッチ"
         },
         {
           "number": 11,
@@ -24105,7 +24106,73 @@
           "name": "テテ・イェンギ"
         }
       ]
-    }
+    },
+    "bookings": [
+      {
+        "minute": 46,
+        "teamId": "AUS",
+        "playerName": "ジャクソン・アーヴァイン",
+        "type": "Y"
+      },
+      {
+        "minute": 77,
+        "teamId": "PAR",
+        "playerName": "ディエゴ・ゴメス",
+        "type": "Y"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": 46,
+        "teamId": "PAR",
+        "inName": "マウリシオ・マガリャエス・プラド",
+        "outName": "アレクサンドロ・マイダナ"
+      },
+      {
+        "minute": 58,
+        "teamId": "AUS",
+        "inName": "アイディン・フルスティッチ",
+        "outName": "クリスチャン・ヴォルパート"
+      },
+      {
+        "minute": 67,
+        "teamId": "PAR",
+        "inName": "アレックス・アルセ",
+        "outName": "ガブリエル・アバロス"
+      },
+      {
+        "minute": 84,
+        "teamId": "PAR",
+        "inName": "ホセ・カナレ",
+        "outName": "オマール・アルデレテ"
+      },
+      {
+        "minute": 84,
+        "teamId": "AUS",
+        "inName": "ポール・オコン・エングストラー",
+        "outName": "ジャクソン・アーヴァイン"
+      },
+      {
+        "minute": 84,
+        "teamId": "AUS",
+        "inName": "テテ・イェンギ",
+        "outName": "ネストリ・イランクンダ"
+      },
+      {
+        "minute": 90,
+        "teamId": "PAR",
+        "inName": "フニオール・アロンソ",
+        "outName": "ディエゴ・ゴメス",
+        "addedTime": 2
+      },
+      {
+        "minute": 90,
+        "teamId": "PAR",
+        "inName": "ダミアン・ボバディジャ",
+        "outName": "マティアス・ガラルサ",
+        "addedTime": 2
+      }
+    ]
   },
   "m053": {
     "matchId": "m053",
