@@ -21789,7 +21789,7 @@
   },
   "m030": {
     "matchId": "m030",
-    "status": "live",
+    "status": "finished",
     "score": {
       "home": 2,
       "away": 1
@@ -22205,7 +22205,7 @@
   },
   "m029": {
     "matchId": "m029",
-    "status": "live",
+    "status": "finished",
     "score": {
       "home": 0,
       "away": 2
@@ -22597,7 +22597,7 @@
     "status": "live",
     "score": {
       "home": 1,
-      "away": 3
+      "away": 2
     },
     "homeFormation": {
       "shape": "5-4-1",
@@ -22906,6 +22906,24 @@
         "playerName": "ブライアン・ブロビー",
         "assistPlayerId": "p_ned_10",
         "assistPlayerName": "フィルジル・ファン・ダイク"
+      },
+      {
+        "minute": 54,
+        "teamId": "TUN",
+        "type": "normal",
+        "playerId": "p_tun_24",
+        "playerName": "ハゼム・マストゥリ",
+        "assistPlayerId": "p_tun_19",
+        "assistPlayerName": "アニバル・メイブリ"
+      },
+      {
+        "minute": 62,
+        "teamId": "NED",
+        "type": "normal",
+        "playerId": "p_ned_6",
+        "playerName": "ヤン・ポール・ファン・ヘッケ",
+        "assistPlayerId": "p_ned_16",
+        "assistPlayerName": "タイアニ・ラインデルス"
       }
     ]
   },
@@ -22914,7 +22932,7 @@
     "status": "live",
     "score": {
       "home": 1,
-      "away": 1
+      "away": 0
     },
     "homeFormation": {
       "shape": "3-4-2-1",
