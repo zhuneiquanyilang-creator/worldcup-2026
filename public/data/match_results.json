@@ -7608,7 +7608,7 @@
         "minute": 64,
         "teamId": "ALG",
         "inName": "リヤド・マフレズ",
-        "outName": "ア��ス・ハジ・ムサ"
+        "outName": "アニス・ハジ・ムサ"
       },
       {
         "minute": 80,
@@ -23399,7 +23399,341 @@
       "home": 3,
       "away": 2
     },
-    "liveLabel": "Full time"
+    "liveLabel": "Full time",
+    "goals": [
+      {
+        "minute": 3,
+        "teamId": "USA",
+        "type": "normal",
+        "playerId": "p_usa_7",
+        "playerName": "オーストン・トラスティ",
+        "assistPlayerId": "p_usa_15",
+        "assistPlayerName": "セバスチャン・バーハルター"
+      },
+      {
+        "minute": 10,
+        "teamId": "TUR",
+        "type": "normal",
+        "playerId": "p_tur_18",
+        "playerName": "アルダ・ギュレル",
+        "assistPlayerId": "p_tur_19",
+        "assistPlayerName": "ケナン・ユルディズ"
+      },
+      {
+        "minute": 31,
+        "teamId": "TUR",
+        "type": "normal",
+        "playerId": "p_tur_19",
+        "playerName": "ケナン・ユルディズ",
+        "assistPlayerId": "p_tur_14",
+        "assistPlayerName": "オルクン・コクチュ"
+      },
+      {
+        "minute": 49,
+        "teamId": "USA",
+        "type": "normal",
+        "playerId": "p_usa_15",
+        "playerName": "セバスチャン・バーハルター"
+      },
+      {
+        "minute": 90,
+        "teamId": "TUR",
+        "type": "normal",
+        "addedTime": 8,
+        "playerId": "p_tur_15",
+        "playerName": "カーン・アイハン"
+      }
+    ],
+    "homeFormation": {
+      "shape": "3-4-2-1",
+      "starting": [
+        {
+          "x": 8,
+          "y": 50,
+          "number": 23,
+          "name": "ウグルジャン・チャクル",
+          "role": "GK"
+        },
+        {
+          "x": 28,
+          "y": 16.666666666666664,
+          "number": 2,
+          "name": "ゼキ・チェリク",
+          "role": "DF",
+          "isCaptain": true
+        },
+        {
+          "x": 28,
+          "y": 50,
+          "number": 15,
+          "name": "オザン・カバク",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 83.33333333333334,
+          "number": 14,
+          "name": "アブドゥルケリム・バルダクチ",
+          "role": "DF"
+        },
+        {
+          "x": 45.33333333333333,
+          "y": 12.5,
+          "number": 24,
+          "name": "オウズ・アイドゥン",
+          "role": "MF"
+        },
+        {
+          "x": 45.33333333333333,
+          "y": 37.5,
+          "number": 5,
+          "name": "サリフ・オズジャン",
+          "role": "MF"
+        },
+        {
+          "x": 45.33333333333333,
+          "y": 62.5,
+          "number": 6,
+          "name": "オルクン・コクチュ",
+          "role": "MF"
+        },
+        {
+          "x": 45.33333333333333,
+          "y": 87.5,
+          "number": 13,
+          "name": "エレン・エルマル",
+          "role": "MF"
+        },
+        {
+          "x": 62.666666666666664,
+          "y": 25,
+          "number": 8,
+          "name": "アルダ・ギュレル",
+          "role": "MF"
+        },
+        {
+          "x": 62.666666666666664,
+          "y": 75,
+          "number": 11,
+          "name": "ケナン・ユルディズ",
+          "role": "MF"
+        },
+        {
+          "x": 80,
+          "y": 50,
+          "number": 21,
+          "name": "バルシュ・ユルマズ",
+          "role": "FW"
+        }
+      ],
+      "bench": [
+        {
+          "number": 1,
+          "name": "メルト・ギュノク"
+        },
+        {
+          "number": 3,
+          "name": "メリフ・デミラル"
+        },
+        {
+          "number": 4,
+          "name": "チャーラル・ソユンジュ"
+        },
+        {
+          "number": 7,
+          "name": "ケレム・アクトゥルコール"
+        },
+        {
+          "number": 9,
+          "name": "デニズ・ギュル"
+        },
+        {
+          "number": 10,
+          "name": "ハカン・チャルハノール"
+        },
+        {
+          "number": 12,
+          "name": "アルタイ・バユンドゥル"
+        },
+        {
+          "number": 16,
+          "name": "イスマイル・ユクセク"
+        },
+        {
+          "number": 17,
+          "name": "イルファン・ジャン・カフベジ"
+        },
+        {
+          "number": 18,
+          "name": "メルト・ミュルドゥル"
+        },
+        {
+          "number": 19,
+          "name": "ユヌス・アクギュン"
+        },
+        {
+          "number": 20,
+          "name": "フェルディ・カディオール"
+        },
+        {
+          "number": 22,
+          "name": "カーン・アイハン"
+        },
+        {
+          "number": 25,
+          "name": "サメト・アカイディン"
+        },
+        {
+          "number": 26,
+          "name": "ジャン・ウズン"
+        }
+      ]
+    },
+    "awayFormation": {
+      "shape": "4-3-3",
+      "starting": [
+        {
+          "x": 8,
+          "y": 50,
+          "number": 1,
+          "name": "マット・ターナー",
+          "role": "GK"
+        },
+        {
+          "x": 28,
+          "y": 12.5,
+          "number": 23,
+          "name": "ジョー・スカリー",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 37.5,
+          "number": 12,
+          "name": "マイルズ・ロビンソン",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 62.5,
+          "number": 22,
+          "name": "マーク・マッケンジー",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 87.5,
+          "number": 6,
+          "name": "オーストン・トラスティ",
+          "role": "DF"
+        },
+        {
+          "x": 54,
+          "y": 16.666666666666664,
+          "number": 8,
+          "name": "ウェストン・マッケニー",
+          "role": "MF",
+          "isCaptain": true
+        },
+        {
+          "x": 54,
+          "y": 50,
+          "number": 14,
+          "name": "セバスチャン・バーハルター",
+          "role": "MF"
+        },
+        {
+          "x": 54,
+          "y": 83.33333333333334,
+          "number": 7,
+          "name": "ジョヴァンニ・レイナ",
+          "role": "MF"
+        },
+        {
+          "x": 80,
+          "y": 16.666666666666664,
+          "number": 11,
+          "name": "ブレンデン・アーロンソン",
+          "role": "FW"
+        },
+        {
+          "x": 80,
+          "y": 50,
+          "number": 9,
+          "name": "リカルド・ペピ",
+          "role": "FW"
+        },
+        {
+          "x": 80,
+          "y": 83.33333333333334,
+          "number": 21,
+          "name": "ティモシー・ウェア",
+          "role": "FW"
+        }
+      ],
+      "bench": [
+        {
+          "number": 2,
+          "name": "セルジーニョ・デスト"
+        },
+        {
+          "number": 3,
+          "name": "クリス・リチャーズ"
+        },
+        {
+          "number": 4,
+          "name": "タイラー・アダムズ"
+        },
+        {
+          "number": 5,
+          "name": "アントニー・ロビンソン"
+        },
+        {
+          "number": 10,
+          "name": "クリスチャン・プリシッチ"
+        },
+        {
+          "number": 13,
+          "name": "ティム・リーム"
+        },
+        {
+          "number": 15,
+          "name": "クリスチャン・ロルダン"
+        },
+        {
+          "number": 16,
+          "name": "アレックス・フリーマン"
+        },
+        {
+          "number": 17,
+          "name": "マリク・ティルマン"
+        },
+        {
+          "number": 18,
+          "name": "マックス・アーフステン"
+        },
+        {
+          "number": 19,
+          "name": "ハジ・ライト"
+        },
+        {
+          "number": 20,
+          "name": "フォラリン・バログン"
+        },
+        {
+          "number": 24,
+          "name": "マット・フリーズ"
+        },
+        {
+          "number": 25,
+          "name": "クリス・ブレイディ"
+        },
+        {
+          "number": 26,
+          "name": "アレハンドロ・センデハス"
+        }
+      ]
+    }
   },
   "m024": {
     "matchId": "m024",
