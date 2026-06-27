@@ -25737,6 +25737,13 @@
         "teamId": "KSA",
         "playerName": "ナセル・アル・ドサリ",
         "type": "Y"
+      },
+      {
+        "minute": 90,
+        "teamId": "KSA",
+        "playerName": "フィラス・アル・ブライカン",
+        "type": "Y",
+        "addedTime": 3
       }
     ],
     "substitutions": [
@@ -25787,6 +25794,19 @@
         "teamId": "CPV",
         "inName": "ガリー・ロドリゲス",
         "outName": "ライアン・メンデス"
+      },
+      {
+        "minute": 82,
+        "teamId": "KSA",
+        "inName": "モテブ・アル・ハルビ",
+        "outName": "ナワフ・ブシャル"
+      },
+      {
+        "minute": 90,
+        "teamId": "CPV",
+        "inName": "スティーヴン・モレイラ",
+        "outName": "ワグナー・ピナ",
+        "addedTime": 4
       }
     ]
   },
