@@ -25418,6 +25418,20 @@
         "teamId": "URU",
         "playerName": "ギジェルモ・バレラ",
         "type": "Y"
+      },
+      {
+        "minute": 90,
+        "teamId": "URU",
+        "playerName": "ニコラス・デ・ラ・クルス",
+        "type": "Y",
+        "addedTime": 3
+      },
+      {
+        "minute": 90,
+        "teamId": "URU",
+        "playerName": "アグスティン・カノッビオ",
+        "type": "R",
+        "addedTime": 5
       }
     ]
   },
