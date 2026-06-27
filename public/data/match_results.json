@@ -15231,7 +15231,7 @@
         },
         {
           "number": 18,
-          "name": "ア��ルホセイン・ホセインザデ"
+          "name": "アミルホセイン・ホセインザデ"
         },
         {
           "number": 20,
@@ -19218,7 +19218,7 @@
         },
         {
           "number": 12,
-          "name": "ヨリス・カイェンベ"
+          "name": "ヨ��ス・カイェンベ"
         },
         {
           "number": 13,
@@ -20128,7 +20128,7 @@
       {
         "minute": 55,
         "teamId": "QAT",
-        "inName": "アハメド・アル・ガネヒ",
+        "inName": "アハメド・アル・ガ��ヒ",
         "outName": "ハッサン・アル・ハイドス"
       },
       {
@@ -25631,7 +25631,21 @@
       "home": 0,
       "away": 0
     },
-    "liveLabel": "Live"
+    "liveLabel": "Live",
+    "bookings": [
+      {
+        "minute": 4,
+        "teamId": "KSA",
+        "playerName": "サウド・アブドゥルハミド",
+        "type": "Y"
+      },
+      {
+        "minute": 8,
+        "teamId": "CPV",
+        "playerName": "ワグナー・ピナ",
+        "type": "Y"
+      }
+    ]
   },
   "m042": {
     "matchId": "m042",
