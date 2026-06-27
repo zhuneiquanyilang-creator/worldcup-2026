@@ -30,4 +30,13 @@ export type LiveUpdate = {
   note?: string;
   /** ISO 8601 取得時刻（最終更新時刻表示用） */
   fetchedAt?: string;
+  /**
+   * 手動ロックフラグ。`true` のとき periodic-catchup / GitHub Actions の
+   * `sync-results-ci.mjs` はこの試合の status / score / penaltyScore を
+   * 自動更新しない (Football-Data の値で上書きしない)。
+   * 公式発表と外部 API が食い違ったケース等で手動値を保護する。
+   * `/edit/matches` で status / score / PK のいずれかが入っているエントリを
+   * 保存すると自動的に true がセットされる。
+   */
+  manualLock?: boolean;
 };

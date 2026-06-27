@@ -86,6 +86,13 @@ async function main() {
     }
 
     const prev = existing[matchId] ?? {};
+    // manualLock: true なら手動値を保護するため自動更新スキップ。
+    // /edit/matches で確定したスコア (Football-Data と食い違っているケース等)
+    // を Actions による上書きから守る。
+    if (prev.manualLock === true) {
+      unchanged++;
+      continue;
+    }
     const sameStatus = prev.status === update.status;
     const sameScore =
       JSON.stringify(prev.score) === JSON.stringify(update.score);

@@ -25838,7 +25838,8 @@
     "score": {
       "home": 1,
       "away": 1
-    }
+    },
+    "manualLock": true
   },
   "m071": {
     "matchId": "m071",

@@ -87,6 +87,9 @@ type Editable = {
   scoreAway: string;
   pkHome: string;
   pkAway: string;
+  /** チェックすると periodic-catchup / GitHub Actions が score/status/PK を
+   *  自動更新しなくなる。Football-Data が公式と食い違うケース用の手動保護。 */
+  manualLock: boolean;
   goals: GoalDraft[];
   homeFormation: FormationDraft;
   awayFormation: FormationDraft;
@@ -102,6 +105,7 @@ function freshEditable(): Editable {
     scoreAway: "",
     pkHome: "",
     pkAway: "",
+    manualLock: false,
     goals: [],
     homeFormation: { shape: "", starters: [] },
     awayFormation: { shape: "", starters: [] },
@@ -438,6 +442,7 @@ function fromUpdate(
   e.scoreAway = u.score ? String(u.score.away) : "";
   e.pkHome = u.penaltyScore ? String(u.penaltyScore.home) : "";
   e.pkAway = u.penaltyScore ? String(u.penaltyScore.away) : "";
+  e.manualLock = u.manualLock === true;
   e.goals = (u.goals ?? []).map(goalToDraft);
 
   const homePlayers = playersByTeam.get(match.homeTeamId) ?? [];
@@ -471,6 +476,10 @@ function toUpdate(
     if (Number.isFinite(h) && Number.isFinite(a))
       u.penaltyScore = { home: h, away: a };
   }
+  // manualLock は常に出力 (true でも false でも)。field-level merge で
+  // 既存値を確実に上書きできるようにするため。"true → false" でロック解除
+  // を反映するには boolean を必ず送る必要がある。
+  u.manualLock = e.manualLock;
   const goals = e.goals
     .map((d) => draftToGoal(d, playerMap))
     .filter((g): g is Goal => g !== null)
@@ -515,7 +524,8 @@ function toUpdate(
     !u.substitutions &&
     !u.homeFormation &&
     !u.awayFormation &&
-    !u.stats
+    !u.stats &&
+    !u.manualLock
   )
     return null;
   return u;
@@ -973,6 +983,7 @@ export function EditMatchesPage() {
         <strong>フォーメーション・スタメン</strong> / <strong>カード</strong> /{" "}
         <strong>交代</strong>を入力できます。
         <strong>スコア / ステータス / PK は GitHub Actions + ライブ取得から自動同期</strong>するので、「↓ ライブ」ボタンを押さなくても常に最新値が表示されます (手動で別の値を保存していればそれが優先)。
+        <strong>🔒 列のチェックを入れて保存</strong>すると、その試合の score/status/PK が Football-Data からの自動更新で上書きされなくなります (公式発表と外部 API が食い違うケース用)。
         ベンチは「<strong>そのチームの全選手 − スタメン11名</strong>」を背番号順で自動算出します。
         保存先は <strong>matchEdits</strong> レイヤー (<code>localStorage["wc2026:matchEdits"]</code>) で、
         ライブ取得 (matchOverrides) とは別管理。
@@ -1035,6 +1046,7 @@ export function EditMatchesPage() {
               <th>状態</th>
               <th>スコア</th>
               <th>PK</th>
+              <th title="チェックすると Football-Data からの自動更新を停止し、ここで保存した score/status/PK を保護します。">🔒</th>
               <th>得点者</th>
             </tr>
           </thead>
@@ -1132,6 +1144,17 @@ export function EditMatchesPage() {
                         <span className={styles.pkNa}>—</span>
                       )}
                     </td>
+                    <td style={{ textAlign: "center" }}>
+                      <input
+                        type="checkbox"
+                        checked={e.manualLock}
+                        onChange={(ev) =>
+                          updateEdit(m.id, { manualLock: ev.target.checked })
+                        }
+                        aria-label={`${m.id} の自動更新を停止 (manualLock)`}
+                        title="チェック中: Football-Data からの自動更新を停止し、ここで保存したスコア/状態/PK を保護します。"
+                      />
+                    </td>
                     <td className={styles.actionCell}>
                       <button
                         type="button"
@@ -1154,7 +1177,7 @@ export function EditMatchesPage() {
                   </tr>
                   {expanded && (
                     <tr className={styles.expandedRow}>
-                      <td colSpan={7}>
+                      <td colSpan={8}>
                         <div className={styles.editorStack}>
                           <GoalEditor
                             match={m}

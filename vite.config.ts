@@ -612,6 +612,10 @@ async function runPeriodicCatchup(apiKey: string) {
       }
 
       const prev = results[localId] ?? {};
+      // manualLock: true なら手動値を保護するため自動更新スキップ。
+      // 公式発表と Football-Data が食い違うケース (例: 誤入力スコアが
+      // しばらく直らない) を `/edit/matches` の保存で固定するための機構。
+      if (prev.manualLock === true) continue;
       const sameStatus = prev.status === update.status;
       const sameScore =
         JSON.stringify(prev.score) === JSON.stringify(update.score);
@@ -732,11 +736,14 @@ async function runStartupCatchup(apiKey: string) {
   const now = Date.now();
   // 終わってるはずなのにファイル側で finished になっていない試合を抽出。
   // 30 分の余白は: KO 時刻を過ぎただけでまだ前半中の試合を拾わないため。
+  // manualLock: true はスキップ (手動値を保護)。
   const candidates = matches.filter((m) => {
     const ts = new Date(m.date).getTime();
     if (!Number.isFinite(ts)) return false;
     if (ts > now - 30 * 60_000) return false;
-    return results[m.id]?.status !== "finished";
+    const r = results[m.id];
+    if (r?.manualLock === true) return false;
+    return r?.status !== "finished";
   });
 
   if (candidates.length === 0) {
