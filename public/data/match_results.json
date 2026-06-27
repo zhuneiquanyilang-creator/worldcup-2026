@@ -27417,6 +27417,15 @@
         "playerName": "デリック・ルカッセン",
         "assistPlayerId": "p_gha_24",
         "assistPlayerName": "エルネスト・ヌアマー"
+      },
+      {
+        "minute": 83,
+        "teamId": "CRO",
+        "type": "normal",
+        "playerId": "p_cro_18",
+        "playerName": "ニコラ・ヴラシッチ",
+        "assistPlayerId": "p_cro_20",
+        "assistPlayerName": "ルカ・モドリッチ"
       }
     ]
   },
