@@ -19191,7 +19191,7 @@
           "x": 80,
           "y": 75,
           "number": 17,
-          "name": "セドリ��ク・バカンブ",
+          "name": "セドリック・バカンブ",
           "role": "FW"
         }
       ],
@@ -25342,6 +25342,14 @@
         "playerName": "アレックス・バエナ",
         "assistPlayerId": "p_esp_5",
         "assistPlayerName": "マルコス・ジョレンテ"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": 45,
+        "teamId": "URU",
+        "inName": "ニコラス・デ・ラ・クルス",
+        "outName": "マヌエル・ウガルテ"
       }
     ]
   },
