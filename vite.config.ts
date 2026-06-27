@@ -236,9 +236,88 @@ async function schedulePush() {
         return;
       }
       // 4) push
-      const push = await runGit(gitBin, ["push", "origin", "HEAD"], cwd);
+      let push = await runGit(gitBin, ["push", "origin", "HEAD"], cwd);
       if (push.code !== 0) {
-        console.warn(`[auto-push] git push failed: ${push.stderr.trim()}`);
+        // 4a) reject されたら recovery: fetch + merge → match_results.json のみ
+        //     conflict なら ours (= ローカルの periodic-catchup 最新値) で resolve →
+        //     再 push。GitHub Actions が先に push したケース (non-fast-forward) を
+        //     ローカルから自動回復するための仕組み。
+        //     conflict が他ファイルにも及ぶ場合は abort して諦める (安全側)。
+        const isRejected =
+          /\b(rejected|non-fast-forward|fetch first)\b/i.test(push.stderr);
+        if (!isRejected) {
+          console.warn(`[auto-push] git push failed: ${push.stderr.trim()}`);
+          return;
+        }
+        console.warn(
+          `[auto-push] git push rejected — recovery (fetch + merge + retry)`
+        );
+        const fetchRes = await runGit(
+          gitBin,
+          ["fetch", "origin", "main"],
+          cwd
+        );
+        if (fetchRes.code !== 0) {
+          console.warn(
+            `[auto-push] recovery fetch failed: ${fetchRes.stderr.trim()}`
+          );
+          return;
+        }
+        const merge = await runGit(
+          gitBin,
+          ["merge", "--no-edit", "FETCH_HEAD"],
+          cwd
+        );
+        if (merge.code !== 0) {
+          // 競合発生 — match_results.json のみなら ours で resolve
+          const conf = await runGit(
+            gitBin,
+            ["diff", "--name-only", "--diff-filter=U"],
+            cwd
+          );
+          const files = conf.stdout
+            .trim()
+            .split(/\r?\n/)
+            .filter(Boolean);
+          if (files.length === 1 && files[0] === RESULTS_REL) {
+            await runGit(
+              gitBin,
+              ["checkout", "--ours", "--", RESULTS_REL],
+              cwd
+            );
+            await runGit(gitBin, ["add", "--", RESULTS_REL], cwd);
+            const mergeCommit = await runGit(
+              gitBin,
+              ["commit", "--no-edit"],
+              cwd
+            );
+            if (mergeCommit.code !== 0) {
+              await runGit(gitBin, ["merge", "--abort"], cwd);
+              console.warn(
+                `[auto-push] recovery merge commit failed: ${mergeCommit.stderr.trim()}`
+              );
+              return;
+            }
+          } else {
+            await runGit(gitBin, ["merge", "--abort"], cwd);
+            console.warn(
+              `[auto-push] recovery aborted — conflicts in other files: ${
+                files.join(", ") || "(unknown)"
+              }`
+            );
+            return;
+          }
+        }
+        push = await runGit(gitBin, ["push", "origin", "HEAD"], cwd);
+        if (push.code !== 0) {
+          console.warn(
+            `[auto-push] re-push after merge failed: ${push.stderr.trim()}`
+          );
+          return;
+        }
+        console.log(
+          `[auto-push] match_results.json pushed after merge-recovery (${ts})`
+        );
         return;
       }
       console.log(`[auto-push] match_results.json pushed (${ts})`);
