@@ -19202,7 +19202,7 @@
         },
         {
           "number": 7,
-          "name": "ナタナエル・ムブク"
+          "name": "ナタナ���ル・ムブク"
         },
         {
           "number": 9,
@@ -25706,6 +25706,12 @@
         "minute": 8,
         "teamId": "CPV",
         "playerName": "ワグナー・ピナ",
+        "type": "Y"
+      },
+      {
+        "minute": 67,
+        "teamId": "KSA",
+        "playerName": "ナセル・アル・ドサリ",
         "type": "Y"
       }
     ],
