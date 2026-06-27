@@ -19292,7 +19292,7 @@
         "minute": 71,
         "teamId": "COD",
         "inName": "ヨリス・カイェンベ",
-        "outName": "アルトゥール・マスアク"
+        "outName": "アルトゥール・マ���アク"
       },
       {
         "minute": 71,
@@ -20146,7 +20146,7 @@
       {
         "minute": 72,
         "teamId": "QAT",
-        "inName": "ア��モエズ・アリ",
+        "inName": "アルモエズ・アリ",
         "outName": "カリム・ブディアフ"
       },
       {
@@ -24152,7 +24152,7 @@
         "minute": 84,
         "teamId": "AUS",
         "inName": "ポール・オコン・エングストラー",
-        "outName": "ジャクソン・アーヴァイン"
+        "outName": "ジャクソン・アー���ァイン"
       },
       {
         "minute": 84,
@@ -25356,6 +25356,18 @@
         "teamId": "URU",
         "inName": "フェデリコ・ビニャス",
         "outName": "フェデリコ・バルベルデ"
+      },
+      {
+        "minute": 60,
+        "teamId": "ESP",
+        "inName": "ファビアン・ルイス",
+        "outName": "ペドリ"
+      },
+      {
+        "minute": 60,
+        "teamId": "ESP",
+        "inName": "ダニ・オルモ",
+        "outName": "ミケル・メリーノ"
       }
     ],
     "bookings": [
