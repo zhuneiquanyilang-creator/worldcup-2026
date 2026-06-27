@@ -463,17 +463,27 @@ function toUpdate(
   playersByTeam: Map<string, Player[]>
 ): LiveUpdate | null {
   const u: LiveUpdate = { matchId };
-  if (e.status) u.status = e.status;
-  if (e.scoreHome !== "" && e.scoreAway !== "") {
-    const h = Number(e.scoreHome);
-    const a = Number(e.scoreAway);
-    if (Number.isFinite(h) && Number.isFinite(a)) u.score = { home: h, away: a };
-  }
-  if (e.pkHome !== "" && e.pkAway !== "") {
-    const h = Number(e.pkHome);
-    const a = Number(e.pkAway);
-    if (Number.isFinite(h) && Number.isFinite(a))
-      u.penaltyScore = { home: h, away: a };
+  // status / score / penaltyScore は manualLock=true のときだけ matchEdits に
+  // 含める。理由: これら 3 フィールドは Football-Data 経由の periodic-catchup /
+  // GitHub Actions が自動更新する責務。ロックなしで含めると、auto-sync が
+  // 自動同期された (= 古い snapshot 由来の) 値で file を上書きし、periodic-
+  // catchup が直す → auto-sync が再度上書き、というフラップ事故が起きる。
+  // (2026-06-28: m001/m002/m007/m072 等で finished/live ⇄ scheduled が
+  // 繰り返し書き戻される事故があった。原因はこの分岐がなかったこと)
+  if (e.manualLock) {
+    if (e.status) u.status = e.status;
+    if (e.scoreHome !== "" && e.scoreAway !== "") {
+      const h = Number(e.scoreHome);
+      const a = Number(e.scoreAway);
+      if (Number.isFinite(h) && Number.isFinite(a))
+        u.score = { home: h, away: a };
+    }
+    if (e.pkHome !== "" && e.pkAway !== "") {
+      const h = Number(e.pkHome);
+      const a = Number(e.pkAway);
+      if (Number.isFinite(h) && Number.isFinite(a))
+        u.penaltyScore = { home: h, away: a };
+    }
   }
   // manualLock は常に出力 (true でも false でも)。field-level merge で
   // 既存値を確実に上書きできるようにするため。"true → false" でロック解除

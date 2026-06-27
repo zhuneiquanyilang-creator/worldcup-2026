@@ -43,14 +43,26 @@ export function useAutoSyncResults() {
       const toSync: Record<string, LiveUpdate> = {};
       for (const [id, u] of Object.entries(edits)) {
         if (!u) continue;
-        const hasResult = u.status === "finished" && !!u.score;
+        // 防御: manualLock=true でない限り status/score/penaltyScore は
+        // POST しない。Football-Data 経由の periodic-catchup と /edit/matches
+        // の auto-sync が同じフィールドを書き合って flap する事故を防ぐ
+        // (2026-06-28 に m001/m002/m007/m072 等で発生)。
+        // EditMatchesPage.tsx 側でも同じガードを入れているが、過去に保存
+        // された stale matchEdits を救うためここでも防御する。
+        const cleaned: LiveUpdate = { ...u };
+        if (cleaned.manualLock !== true) {
+          delete cleaned.status;
+          delete cleaned.score;
+          delete cleaned.penaltyScore;
+        }
+        const hasResult = cleaned.status === "finished" && !!cleaned.score;
         const hasContent =
-          !!u.homeFormation ||
-          !!u.awayFormation ||
-          (u.goals?.length ?? 0) > 0 ||
-          (u.bookings?.length ?? 0) > 0 ||
-          (u.substitutions?.length ?? 0) > 0;
-        if (hasResult || hasContent) toSync[id] = u;
+          !!cleaned.homeFormation ||
+          !!cleaned.awayFormation ||
+          (cleaned.goals?.length ?? 0) > 0 ||
+          (cleaned.bookings?.length ?? 0) > 0 ||
+          (cleaned.substitutions?.length ?? 0) > 0;
+        if (hasResult || hasContent) toSync[id] = cleaned;
       }
       // matchEdits に同期対象が 1 つも無いときは POST しない。
       // server 側の field-level merge は空 incoming で existing を消さないが、
