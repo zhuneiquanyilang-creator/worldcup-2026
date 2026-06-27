@@ -26732,7 +26732,7 @@
   },
   "m071": {
     "matchId": "m071",
-    "status": "live",
+    "status": "finished",
     "manualLock": false,
     "homeFormation": {
       "shape": "5-4-1",
@@ -27078,6 +27078,30 @@
         "teamId": "ENG",
         "inName": "エベレチ・エゼ",
         "outName": "ジュード・ベリンガム"
+      },
+      {
+        "minute": 84,
+        "teamId": "ENG",
+        "inName": "ジョーダン・ヘンダーソン",
+        "outName": "エリオット・アンダーソン"
+      },
+      {
+        "minute": 84,
+        "teamId": "ENG",
+        "inName": "オリヴァー・ワトキンス",
+        "outName": "ハリー・ケイン"
+      },
+      {
+        "minute": 88,
+        "teamId": "PAN",
+        "inName": "エリック・ダビス",
+        "outName": "ホルヘ・グティエレス"
+      },
+      {
+        "minute": 88,
+        "teamId": "PAN",
+        "inName": "アルベルト・キンテロ",
+        "outName": "カルロス・ハーヴェイ"
       }
     ],
     "goals": [
