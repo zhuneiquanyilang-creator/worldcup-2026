@@ -26732,7 +26732,7 @@
   },
   "m071": {
     "matchId": "m071",
-    "status": "scheduled",
+    "status": "live",
     "manualLock": false,
     "homeFormation": {
       "shape": "5-4-1",
@@ -27023,11 +27023,15 @@
           "name": "ジェド・スペンス"
         }
       ]
+    },
+    "score": {
+      "home": 0,
+      "away": 0
     }
   },
   "m072": {
     "matchId": "m072",
-    "status": "scheduled",
+    "status": "live",
     "manualLock": false,
     "homeFormation": {
       "shape": "4-2-3-1",
@@ -27318,6 +27322,10 @@
           "name": "プリンス・クワベナ・アドゥ"
         }
       ]
+    },
+    "score": {
+      "home": 0,
+      "away": 0
     }
   },
   "m065": {
