@@ -570,8 +570,9 @@ export function EditMatchesPage() {
   // 重ねて初期値とする。両方ある場合は manual のフィールドが file の同名
   // フィールドを上書きする。
   // matchOverrides (ライブ取得レイヤー) は seed に使わない — 編集 UI は
-  // 「手動で確定した公式記録」のみを扱う。ライブから現状を引き込みたい場合は
-  // 各行の「↓ ライブ」ボタンを使う。
+  // 「手動で確定した公式記録」のみを扱う。スコア/ステータス/PK は下の
+  // auto-sync useEffect が matchesRes 経由 (live > manual > file > base) で
+  // 追従させるので、「↓ ライブ」ボタンを押さなくても自動で最新値になる。
   useEffect(() => {
     if (matchesRes.status !== "ready") return;
     const fileResults =
@@ -601,6 +602,49 @@ export function EditMatchesPage() {
       return next;
     });
   }, [matchesRes, fileResultsRes, playersByTeam]);
+
+  // status / score / penaltyScore の 3 フィールドだけ matchesRes (= live > manual >
+  // file > base の最終マージ結果) から自動同期する。これで GitHub Actions が
+  // file を更新した / ライブ polling が来た / 他デバイスから push された場合も、
+  // 「↓ ライブ」ボタンを押さずに編集フォームのスコア表示が追従する。
+  // goals / formation / bookings / substitutions / passthrough は手動編集領域なので
+  // 触らない (Football-Data の無料枠はそもそも返さない、保護フィールド)。
+  // 既に手動で matchEdits に保存していれば manual レイヤーが file に勝つので、
+  // 確定済みの値は GitHub Actions に上書きされない。
+  useEffect(() => {
+    if (matchesRes.status !== "ready") return;
+    setEdits((prev) => {
+      let changed = false;
+      const next: Record<string, Editable> = { ...prev };
+      for (const m of matchesRes.data) {
+        const cur = next[m.id];
+        if (!cur) continue;
+        const inStatus = (m.status ?? "") as MatchStatus | "";
+        const inScoreH = m.score ? String(m.score.home) : "";
+        const inScoreA = m.score ? String(m.score.away) : "";
+        const inPkH = m.penaltyScore ? String(m.penaltyScore.home) : "";
+        const inPkA = m.penaltyScore ? String(m.penaltyScore.away) : "";
+        if (
+          cur.status === inStatus &&
+          cur.scoreHome === inScoreH &&
+          cur.scoreAway === inScoreA &&
+          cur.pkHome === inPkH &&
+          cur.pkAway === inPkA
+        )
+          continue;
+        next[m.id] = {
+          ...cur,
+          status: inStatus,
+          scoreHome: inScoreH,
+          scoreAway: inScoreA,
+          pkHome: inPkH,
+          pkAway: inPkA,
+        };
+        changed = true;
+      }
+      return changed ? next : prev;
+    });
+  }, [matchesRes]);
 
   if (
     matchesRes.status === "loading" ||
@@ -928,6 +972,7 @@ export function EditMatchesPage() {
         各試合に status / スコア / PK / <strong>得点者</strong> /{" "}
         <strong>フォーメーション・スタメン</strong> / <strong>カード</strong> /{" "}
         <strong>交代</strong>を入力できます。
+        <strong>スコア / ステータス / PK は GitHub Actions + ライブ取得から自動同期</strong>するので、「↓ ライブ」ボタンを押さなくても常に最新値が表示されます (手動で別の値を保存していればそれが優先)。
         ベンチは「<strong>そのチームの全選手 − スタメン11名</strong>」を背番号順で自動算出します。
         保存先は <strong>matchEdits</strong> レイヤー (<code>localStorage["wc2026:matchEdits"]</code>) で、
         ライブ取得 (matchOverrides) とは別管理。
@@ -1101,7 +1146,7 @@ export function EditMatchesPage() {
                         type="button"
                         className={styles.pullBtn}
                         onClick={() => handlePullFromLive(m)}
-                        title="この試合の現在のライブ取得状態を編集フォームにコピー (未保存)"
+                        title="ライブ取得から得点者/カード/交代/フォーメーションも含めて編集フォームにコピー (未保存)。スコア/ステータス/PK は常時自動同期されているのでこのボタンは不要です。"
                       >
                         ↓ ライブ
                       </button>
