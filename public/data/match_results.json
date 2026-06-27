@@ -26166,7 +26166,8 @@
           "y": 83.33333333333334,
           "number": 10,
           "name": "レアンドロ・トロサール",
-          "role": "MF"
+          "role": "MF",
+          "isMvp": true
         },
         {
           "x": 80,
@@ -26321,7 +26322,7 @@
     "status": "finished",
     "score": {
       "home": 1,
-      "away": 2
+      "away": 1
     },
     "manualLock": false,
     "goals": [
@@ -26502,7 +26503,8 @@
           "y": 10,
           "number": 23,
           "name": "ラミン・レザイアン",
-          "role": "DF"
+          "role": "DF",
+          "isMvp": true
         },
         {
           "x": 28,
