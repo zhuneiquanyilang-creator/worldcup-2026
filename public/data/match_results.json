@@ -16658,7 +16658,7 @@
           "x": 28,
           "y": 87.5,
           "number": 3,
-          "name": "リュカ・ディ��ュ",
+          "name": "リュカ・ディニュ",
           "role": "DF"
         },
         {
@@ -19191,7 +19191,7 @@
           "x": 80,
           "y": 75,
           "number": 17,
-          "name": "セドリック・バカンブ",
+          "name": "セドリ��ク・バカンブ",
           "role": "FW"
         }
       ],
@@ -19206,7 +19206,7 @@
         },
         {
           "number": 9,
-          "name": "ブライアン・チペ��ガ"
+          "name": "ブライアン・チペンガ"
         },
         {
           "number": 10,
@@ -25332,7 +25332,18 @@
       "home": 0,
       "away": 0
     },
-    "liveLabel": "Live"
+    "liveLabel": "Live",
+    "goals": [
+      {
+        "minute": 42,
+        "teamId": "ESP",
+        "type": "normal",
+        "playerId": "p_esp_12",
+        "playerName": "アレックス・バエナ",
+        "assistPlayerId": "p_esp_5",
+        "assistPlayerName": "マルコス・ジョレンテ"
+      }
+    ]
   },
   "m047": {
     "matchId": "m047",
