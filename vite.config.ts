@@ -363,8 +363,16 @@ function matchResultsWriter(): Plugin {
           return;
         }
         try {
-          let body = "";
-          for await (const chunk of req) body += chunk;
+          // Buffer 配列に貯めてから一括 toString('utf8') する。
+          // `body += chunk` で逐次 string 化するとマルチバイト UTF-8 が
+          // チャンク境界をまたいだ瞬間に無効バイト列扱いされ U+FFFD に
+          // 置換される (2026-06-28 に「ルスタムジョン・アシュルマトフ」→
+          // 「ルスタムジョン・アシュルマト��」のような 1 文字破損が頻発)。
+          const chunks: Buffer[] = [];
+          for await (const chunk of req) {
+            chunks.push(Buffer.isBuffer(chunk) ? chunk : Buffer.from(chunk));
+          }
+          const body = Buffer.concat(chunks).toString("utf8");
           const incoming = JSON.parse(body);
           if (!incoming || typeof incoming !== "object" || Array.isArray(incoming)) {
             res.statusCode = 400;
