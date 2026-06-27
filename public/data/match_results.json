@@ -6616,7 +6616,7 @@
         },
         {
           "number": 9,
-          "name": "マルクス・テュラム"
+          "name": "マルクス・テ���ラム"
         },
         {
           "number": 12,
@@ -7128,7 +7128,7 @@
         },
         {
           "number": 22,
-          "name": "オスカー・ボ���"
+          "name": "オスカー・ボブ"
         },
         {
           "number": 23,
@@ -24238,7 +24238,7 @@
   },
   "m053": {
     "matchId": "m053",
-    "status": "finished",
+    "status": "scheduled",
     "score": {
       "home": 1,
       "away": 4
@@ -24663,7 +24663,7 @@
   },
   "m054": {
     "matchId": "m054",
-    "status": "finished",
+    "status": "scheduled",
     "score": {
       "home": 5,
       "away": 0
@@ -25896,6 +25896,181 @@
     "score": {
       "home": 1,
       "away": 5
+    },
+    "manualLock": false,
+    "homeFormation": {
+      "shape": "4-2-3-1",
+      "starting": [
+        {
+          "x": 8,
+          "y": 50,
+          "number": 23,
+          "name": "ライアン・トーマス",
+          "role": "GK"
+        },
+        {
+          "x": 28,
+          "y": 12.5,
+          "name": "?",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 37.5,
+          "name": "?",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 62.5,
+          "name": "?",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 87.5,
+          "name": "?",
+          "role": "DF"
+        },
+        {
+          "x": 45.33333333333333,
+          "y": 25,
+          "name": "?",
+          "role": "MF"
+        },
+        {
+          "x": 45.33333333333333,
+          "y": 75,
+          "name": "?",
+          "role": "MF"
+        },
+        {
+          "x": 62.666666666666664,
+          "y": 16.666666666666664,
+          "name": "?",
+          "role": "MF"
+        },
+        {
+          "x": 62.666666666666664,
+          "y": 50,
+          "name": "?",
+          "role": "MF"
+        },
+        {
+          "x": 62.666666666666664,
+          "y": 83.33333333333334,
+          "name": "?",
+          "role": "MF"
+        },
+        {
+          "x": 80,
+          "y": 50,
+          "name": "?",
+          "role": "FW"
+        }
+      ],
+      "bench": [
+        {
+          "number": 1,
+          "name": "マックス・クロコム"
+        },
+        {
+          "number": 2,
+          "name": "ティム・ペイン"
+        },
+        {
+          "number": 3,
+          "name": "フランシス・デ・ヴリーズ"
+        },
+        {
+          "number": 4,
+          "name": "タイラー・ビンドン"
+        },
+        {
+          "number": 5,
+          "name": "マイケル・ボクソール"
+        },
+        {
+          "number": 6,
+          "name": "ジョー・ベル"
+        },
+        {
+          "number": 7,
+          "name": "マシュー・ガーベット"
+        },
+        {
+          "number": 8,
+          "name": "マルコ・スタメニッチ"
+        },
+        {
+          "number": 9,
+          "name": "クリス・ウッド"
+        },
+        {
+          "number": 10,
+          "name": "サープリート・シン"
+        },
+        {
+          "number": 11,
+          "name": "イライジャ・ジャスト"
+        },
+        {
+          "number": 12,
+          "name": "アレックス・ポールセン"
+        },
+        {
+          "number": 13,
+          "name": "リベラト・カカーチェ"
+        },
+        {
+          "number": 14,
+          "name": "アレックス・ルーファー"
+        },
+        {
+          "number": 15,
+          "name": "ナンド・パイナケル"
+        },
+        {
+          "number": 16,
+          "name": "フィン・サーマン"
+        },
+        {
+          "number": 17,
+          "name": "コスタ・バルバルセス"
+        },
+        {
+          "number": 18,
+          "name": "ベン・ウェイン"
+        },
+        {
+          "number": 19,
+          "name": "ベン・オールド"
+        },
+        {
+          "number": 20,
+          "name": "カラム・マッコワット"
+        },
+        {
+          "number": 21,
+          "name": "ジェシー・ランドール"
+        },
+        {
+          "number": 22,
+          "name": "マイケル・ウッド"
+        },
+        {
+          "number": 24,
+          "name": "カラン・エリオット"
+        },
+        {
+          "number": 25,
+          "name": "ラチラン・ベイリス"
+        },
+        {
+          "number": 26,
+          "name": "トミー・スミス"
+        }
+      ]
     }
   },
   "m041": {
@@ -25903,9 +26078,414 @@
     "status": "finished",
     "score": {
       "home": 1,
-      "away": 1
+      "away": 2
     },
-    "manualLock": true
+    "manualLock": false,
+    "goals": [
+      {
+        "minute": 5,
+        "teamId": "EGY",
+        "type": "normal",
+        "playerId": "p_egy_14",
+        "playerName": "マハムード・サベル",
+        "assistPlayerId": "p_egy_20",
+        "assistPlayerName": "マハムード・ハッサン（トレゼゲ）"
+      },
+      {
+        "minute": 14,
+        "teamId": "IRN",
+        "type": "normal",
+        "playerId": "p_irn_6",
+        "playerName": "ラミン・レザイアン"
+      }
+    ],
+    "homeFormation": {
+      "shape": "4-2-3-1",
+      "starting": [
+        {
+          "x": 8,
+          "y": 50,
+          "number": 23,
+          "name": "モスタファ・ショベイル",
+          "role": "GK"
+        },
+        {
+          "x": 28,
+          "y": 12.5,
+          "number": 3,
+          "name": "モハメド・ハニー",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 37.5,
+          "number": 5,
+          "name": "ラミー・ラビア",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 62.5,
+          "number": 6,
+          "name": "モハメド・アブデルモネイム",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 87.5,
+          "number": 13,
+          "name": "アーメド・ファトゥー",
+          "role": "DF"
+        },
+        {
+          "x": 45.33333333333333,
+          "y": 25,
+          "number": 17,
+          "name": "モハナド・ラシーン",
+          "role": "MF"
+        },
+        {
+          "x": 45.33333333333333,
+          "y": 75,
+          "number": 21,
+          "name": "マハムード・サベル",
+          "role": "MF"
+        },
+        {
+          "x": 62.666666666666664,
+          "y": 16.666666666666664,
+          "number": 8,
+          "name": "エマム・アシュール",
+          "role": "MF"
+        },
+        {
+          "x": 62.666666666666664,
+          "y": 50,
+          "number": 10,
+          "name": "モハメド・サラー",
+          "role": "MF",
+          "isCaptain": true
+        },
+        {
+          "x": 62.666666666666664,
+          "y": 83.33333333333334,
+          "number": 7,
+          "name": "マハムード・ハッサン（トレゼゲ）",
+          "role": "MF"
+        },
+        {
+          "x": 80,
+          "y": 50,
+          "number": 11,
+          "name": "モスタファ・ジコ",
+          "role": "FW"
+        }
+      ],
+      "bench": [
+        {
+          "number": 1,
+          "name": "モハメド・エル・シェナウィ"
+        },
+        {
+          "number": 2,
+          "name": "ヤセル・イブラヒム"
+        },
+        {
+          "number": 4,
+          "name": "ホッサム・アブデルマギド"
+        },
+        {
+          "number": 9,
+          "name": "ハムザ・アブデルカリム"
+        },
+        {
+          "number": 12,
+          "name": "ハイセム・ハッサン"
+        },
+        {
+          "number": 14,
+          "name": "ハムディ・ファティ"
+        },
+        {
+          "number": 15,
+          "name": "カリム・ハフェズ"
+        },
+        {
+          "number": 16,
+          "name": "エル・マフディ・ソリマン"
+        },
+        {
+          "number": 18,
+          "name": "ナビル・エマド（ドンガ）"
+        },
+        {
+          "number": 19,
+          "name": "マルワン・アッティア"
+        },
+        {
+          "number": 20,
+          "name": "イブラヒム・アデル"
+        },
+        {
+          "number": 22,
+          "name": "オマル・マルムシュ"
+        },
+        {
+          "number": 24,
+          "name": "タレク・アラー"
+        },
+        {
+          "number": 25,
+          "name": "アーメド・サイード（ジゾ）"
+        },
+        {
+          "number": 26,
+          "name": "モハメド・アラー"
+        }
+      ]
+    },
+    "awayFormation": {
+      "shape": "5-4-1",
+      "starting": [
+        {
+          "x": 8,
+          "y": 50,
+          "number": 1,
+          "name": "アリレザ・ベイランバンド",
+          "role": "GK"
+        },
+        {
+          "x": 28,
+          "y": 10,
+          "number": 23,
+          "name": "ラミン・レザイアン",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 30,
+          "number": 13,
+          "name": "ホセイン・カナアニ",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 50,
+          "number": 4,
+          "name": "ショジャ・ハリルザデ",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 70,
+          "number": 19,
+          "name": "アリ・ネマティ",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 90,
+          "number": 5,
+          "name": "ミラド・モハマディ",
+          "role": "DF"
+        },
+        {
+          "x": 54,
+          "y": 12.5,
+          "number": 14,
+          "name": "サマン・ゴッドス",
+          "role": "MF"
+        },
+        {
+          "x": 54,
+          "y": 37.5,
+          "number": 6,
+          "name": "サイード・エザトラヒ",
+          "role": "MF"
+        },
+        {
+          "x": 54,
+          "y": 62.5,
+          "number": 21,
+          "name": "モハマド・ゴルバニ",
+          "role": "MF"
+        },
+        {
+          "x": 54,
+          "y": 87.5,
+          "number": 8,
+          "name": "モハマド・モヘビ",
+          "role": "MF"
+        },
+        {
+          "x": 80,
+          "y": 50,
+          "number": 9,
+          "name": "メフディ・タレミ",
+          "role": "FW",
+          "isCaptain": true
+        }
+      ],
+      "bench": [
+        {
+          "number": 2,
+          "name": "サレ・ハルダニ"
+        },
+        {
+          "number": 3,
+          "name": "エフサン・ハジサフィ"
+        },
+        {
+          "number": 7,
+          "name": "アリレザ・ジャハンバフシュ"
+        },
+        {
+          "number": 10,
+          "name": "メフディ・ガイェディ"
+        },
+        {
+          "number": 11,
+          "name": "アリ・アリプール"
+        },
+        {
+          "number": 12,
+          "name": "パヤム・ニアズマンド"
+        },
+        {
+          "number": 15,
+          "name": "ルーズベ・チェシミ"
+        },
+        {
+          "number": 16,
+          "name": "メフディ・トラビ"
+        },
+        {
+          "number": 17,
+          "name": "アリア・ユセフィ"
+        },
+        {
+          "number": 18,
+          "name": "アミルホセイン・ホセインザデ"
+        },
+        {
+          "number": 20,
+          "name": "シャフリヤル・モガンルー"
+        },
+        {
+          "number": 22,
+          "name": "ホセイン・ホセイニ"
+        },
+        {
+          "number": 24,
+          "name": "デニス・エッカート・ダルガヒ"
+        },
+        {
+          "number": 25,
+          "name": "ダニアル・エイリ"
+        },
+        {
+          "number": 26,
+          "name": "アミルモハマド・ラザギニア"
+        }
+      ]
+    },
+    "bookings": [
+      {
+        "minute": 18,
+        "teamId": "IRN",
+        "playerName": "ホセイン・カナアニ",
+        "type": "Y"
+      },
+      {
+        "minute": 19,
+        "teamId": "EGY",
+        "playerName": "マハムード・サベル",
+        "type": "Y"
+      },
+      {
+        "minute": 41,
+        "teamId": "EGY",
+        "playerName": "ヤセル・イブラヒム",
+        "type": "Y"
+      },
+      {
+        "minute": 43,
+        "teamId": "IRN",
+        "playerName": "アリ・ネマティ",
+        "type": "Y"
+      },
+      {
+        "minute": 79,
+        "teamId": "IRN",
+        "playerName": "サイード・エザトラヒ",
+        "type": "Y"
+      },
+      {
+        "minute": 90,
+        "teamId": "EGY",
+        "playerName": "モハナド・ラシーン",
+        "type": "Y",
+        "addedTime": 2
+      },
+      {
+        "minute": 90,
+        "teamId": "IRN",
+        "playerName": "ショジャ・ハリルザデ",
+        "type": "Y",
+        "addedTime": 4
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": 14,
+        "teamId": "EGY",
+        "inName": "ヤセル・イブラヒム",
+        "outName": "モハメド・アブデルモネイム"
+      },
+      {
+        "minute": 46,
+        "teamId": "EGY",
+        "inName": "マルワン・アッティア",
+        "outName": "マハムード・サベル"
+      },
+      {
+        "minute": 46,
+        "teamId": "EGY",
+        "inName": "オマル・マルムシュ",
+        "outName": "エマム・アシュール"
+      },
+      {
+        "minute": 46,
+        "teamId": "IRN",
+        "inName": "サレ・ハルダニ",
+        "outName": "ホセイン・カナアニ"
+      },
+      {
+        "minute": 57,
+        "teamId": "EGY",
+        "inName": "アーメド・サイード（ジゾ）",
+        "outName": "モハメド・サラー"
+      },
+      {
+        "minute": 67,
+        "teamId": "IRN",
+        "inName": "シャフリヤル・モガンルー",
+        "outName": "サマン・ゴッドス"
+      },
+      {
+        "minute": 76,
+        "teamId": "EGY",
+        "inName": "ハムザ・アブデルカリム",
+        "outName": "モスタファ・ジコ"
+      },
+      {
+        "minute": 90,
+        "teamId": "IRN",
+        "inName": "アリレザ・ジャハンバフシュ",
+        "outName": "モハマド・モヘビ",
+        "addedTime": 1
+      }
+    ]
   },
   "m071": {
     "matchId": "m071",
