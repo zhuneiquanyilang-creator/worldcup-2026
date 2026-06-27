@@ -24238,7 +24238,7 @@
   },
   "m053": {
     "matchId": "m053",
-    "status": "finished",
+    "status": "scheduled",
     "score": {
       "home": 1,
       "away": 4
@@ -24663,7 +24663,7 @@
   },
   "m054": {
     "matchId": "m054",
-    "status": "finished",
+    "status": "scheduled",
     "score": {
       "home": 5,
       "away": 0
@@ -26322,7 +26322,7 @@
     "status": "finished",
     "score": {
       "home": 1,
-      "away": 1
+      "away": 2
     },
     "manualLock": false,
     "goals": [
@@ -27534,7 +27534,7 @@
   },
   "m065": {
     "matchId": "m065",
-    "status": "scheduled",
+    "status": "live",
     "manualLock": false,
     "homeFormation": {
       "shape": "4-3-3",
@@ -27825,11 +27825,19 @@
           "name": "フランシスコ・コンセイソン"
         }
       ]
+    },
+    "score": {
+      "home": 0,
+      "away": 0
     }
   },
   "m066": {
     "matchId": "m066",
-    "status": "scheduled"
+    "status": "live",
+    "score": {
+      "home": 0,
+      "away": 0
+    }
   },
   "m060": {
     "matchId": "m060",
