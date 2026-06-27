@@ -6616,7 +6616,7 @@
         },
         {
           "number": 9,
-          "name": "マルクス・テ���ラム"
+          "name": "マルクス・テュラム"
         },
         {
           "number": 12,
@@ -20183,7 +20183,7 @@
       {
         "minute": 63,
         "teamId": "BIH",
-        "inName": "��ニス・ハジカドゥニッチ",
+        "inName": "デニス・ハジカドゥニッチ",
         "outName": "ニコラ・カティッチ"
       },
       {
@@ -20214,7 +20214,7 @@
         "minute": 82,
         "teamId": "BIH",
         "inName": "ジェニス・ブルニッチ",
-        "outName": "ケリム・アライベゴビッチ"
+        "outName": "ケリム・��ライベゴビッチ"
       }
     ],
     "manualLock": false
@@ -25473,7 +25473,7 @@
       {
         "minute": 54,
         "teamId": "URU",
-        "playerName": "ファン・サナブリア",
+        "playerName": "ファン・���ナブリア",
         "type": "Y"
       },
       {
@@ -25904,123 +25904,98 @@
         {
           "x": 8,
           "y": 50,
-          "number": 23,
-          "name": "ライアン・トーマス",
+          "number": 1,
+          "name": "マックス・クロコム",
           "role": "GK"
         },
         {
           "x": 28,
           "y": 12.5,
-          "name": "?",
+          "number": 2,
+          "name": "ティム・ペイン",
           "role": "DF"
         },
         {
           "x": 28,
           "y": 37.5,
-          "name": "?",
+          "number": 16,
+          "name": "フィン・サーマン",
           "role": "DF"
         },
         {
           "x": 28,
           "y": 62.5,
-          "name": "?",
+          "number": 4,
+          "name": "タイラー・ビンドン",
           "role": "DF"
         },
         {
           "x": 28,
           "y": 87.5,
-          "name": "?",
+          "number": 13,
+          "name": "リベラト・カカーチェ",
           "role": "DF"
         },
         {
           "x": 45.33333333333333,
           "y": 25,
-          "name": "?",
+          "number": 6,
+          "name": "ジョー・ベル",
           "role": "MF"
         },
         {
           "x": 45.33333333333333,
           "y": 75,
-          "name": "?",
+          "number": 8,
+          "name": "マルコ・スタメニッチ",
           "role": "MF"
         },
         {
           "x": 62.666666666666664,
           "y": 16.666666666666664,
-          "name": "?",
+          "number": 10,
+          "name": "サープリート・シン",
           "role": "MF"
         },
         {
           "x": 62.666666666666664,
           "y": 50,
-          "name": "?",
+          "number": 23,
+          "name": "ライアン・トーマス",
           "role": "MF"
         },
         {
           "x": 62.666666666666664,
           "y": 83.33333333333334,
-          "name": "?",
+          "number": 11,
+          "name": "イライジャ・ジャスト",
           "role": "MF"
         },
         {
           "x": 80,
           "y": 50,
-          "name": "?",
-          "role": "FW"
+          "number": 9,
+          "name": "クリス・ウッド",
+          "role": "FW",
+          "isCaptain": true
         }
       ],
       "bench": [
         {
-          "number": 1,
-          "name": "マックス・クロコム"
-        },
-        {
-          "number": 2,
-          "name": "ティム・ペイン"
-        },
-        {
           "number": 3,
           "name": "フランシス・デ・ヴリーズ"
-        },
-        {
-          "number": 4,
-          "name": "タイラー・ビンドン"
         },
         {
           "number": 5,
           "name": "マイケル・ボクソール"
         },
         {
-          "number": 6,
-          "name": "ジョー・ベル"
-        },
-        {
           "number": 7,
           "name": "マシュー・ガーベット"
         },
         {
-          "number": 8,
-          "name": "マルコ・スタメニッチ"
-        },
-        {
-          "number": 9,
-          "name": "クリス・ウッド"
-        },
-        {
-          "number": 10,
-          "name": "サープリート・シン"
-        },
-        {
-          "number": 11,
-          "name": "イライジャ・ジャスト"
-        },
-        {
           "number": 12,
           "name": "アレックス・ポールセン"
-        },
-        {
-          "number": 13,
-          "name": "リベラト・カカーチェ"
         },
         {
           "number": 14,
@@ -26029,10 +26004,6 @@
         {
           "number": 15,
           "name": "ナンド・パイナケル"
-        },
-        {
-          "number": 16,
-          "name": "フィン・サーマン"
         },
         {
           "number": 17,
@@ -26071,7 +26042,279 @@
           "name": "トミー・スミス"
         }
       ]
-    }
+    },
+    "goals": [
+      {
+        "minute": 28,
+        "teamId": "BEL",
+        "type": "normal",
+        "playerId": "p_bel_22",
+        "playerName": "レアンドロ・トロサール"
+      },
+      {
+        "minute": 50,
+        "teamId": "BEL",
+        "type": "normal",
+        "playerId": "p_bel_22",
+        "playerName": "レアンドロ・トロサール",
+        "assistPlayerId": "p_bel_13",
+        "assistPlayerName": "ハンス・ヴァナケン"
+      },
+      {
+        "minute": 66,
+        "teamId": "BEL",
+        "type": "normal",
+        "playerId": "p_bel_18",
+        "playerName": "ケビン・デブライネ"
+      },
+      {
+        "minute": 84,
+        "teamId": "NZL",
+        "type": "normal",
+        "playerId": "p_nzl_22",
+        "playerName": "イライジャ・ジャスト"
+      },
+      {
+        "minute": 86,
+        "teamId": "BEL",
+        "type": "normal",
+        "playerId": "p_bel_19",
+        "playerName": "ロメル・ルカク",
+        "assistPlayerId": "p_bel_14",
+        "assistPlayerName": "ニコラス・ラスキン"
+      },
+      {
+        "minute": 90,
+        "teamId": "BEL",
+        "type": "normal",
+        "addedTime": 4,
+        "playerId": "p_bel_20",
+        "playerName": "アレクシス・サーレマーケルス",
+        "assistPlayerId": "p_bel_19",
+        "assistPlayerName": "ロメル・ルカク"
+      }
+    ],
+    "awayFormation": {
+      "shape": "4-2-3-1",
+      "starting": [
+        {
+          "x": 8,
+          "y": 50,
+          "number": 1,
+          "name": "ティボー・クルトワ",
+          "role": "GK"
+        },
+        {
+          "x": 28,
+          "y": 12.5,
+          "number": 21,
+          "name": "ティモシー・カスターニュ",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 37.5,
+          "number": 4,
+          "name": "ブランドン・メシェレ",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 62.5,
+          "number": 3,
+          "name": "アルトゥール・テアテ",
+          "role": "DF"
+        },
+        {
+          "x": 28,
+          "y": 87.5,
+          "number": 5,
+          "name": "マキシム・デ・カイパー",
+          "role": "DF"
+        },
+        {
+          "x": 45.33333333333333,
+          "y": 25,
+          "number": 8,
+          "name": "ユーリ・ティーレマンス",
+          "role": "MF",
+          "isCaptain": true
+        },
+        {
+          "x": 45.33333333333333,
+          "y": 75,
+          "number": 20,
+          "name": "ハンス・ヴァナケン",
+          "role": "MF"
+        },
+        {
+          "x": 62.666666666666664,
+          "y": 16.666666666666664,
+          "number": 11,
+          "name": "ジェレミー・ドク",
+          "role": "MF"
+        },
+        {
+          "x": 62.666666666666664,
+          "y": 50,
+          "number": 7,
+          "name": "ケビン・デブライネ",
+          "role": "MF"
+        },
+        {
+          "x": 62.666666666666664,
+          "y": 83.33333333333334,
+          "number": 10,
+          "name": "レアンドロ・トロサール",
+          "role": "MF"
+        },
+        {
+          "x": 80,
+          "y": 50,
+          "number": 17,
+          "name": "シャルル・デケテラーレ",
+          "role": "FW"
+        }
+      ],
+      "bench": [
+        {
+          "number": 2,
+          "name": "ゼノ・デバスト"
+        },
+        {
+          "number": 6,
+          "name": "アクセル・ヴィツェル"
+        },
+        {
+          "number": 9,
+          "name": "ロメル・ルカク"
+        },
+        {
+          "number": 12,
+          "name": "センネ・ラメンス"
+        },
+        {
+          "number": 13,
+          "name": "マイク・ペンダース"
+        },
+        {
+          "number": 14,
+          "name": "ドディ・ルケバキオ"
+        },
+        {
+          "number": 15,
+          "name": "トーマス・ムニエ"
+        },
+        {
+          "number": 16,
+          "name": "コニ・デ・ヴィンター"
+        },
+        {
+          "number": 18,
+          "name": "ホアキン・セイス"
+        },
+        {
+          "number": 19,
+          "name": "ディエゴ・モレイラ"
+        },
+        {
+          "number": 22,
+          "name": "アレクシス・サーレマーケルス"
+        },
+        {
+          "number": 23,
+          "name": "ニコラス・ラスキン"
+        },
+        {
+          "number": 24,
+          "name": "アマドゥ・オナナ"
+        },
+        {
+          "number": 25,
+          "name": "ナタン・ンゴイ"
+        },
+        {
+          "number": 26,
+          "name": "マティアス・フェルナンデス・パルド"
+        }
+      ]
+    },
+    "bookings": [
+      {
+        "minute": 46,
+        "teamId": "NZL",
+        "playerName": "マルコ・スタメニッチ",
+        "type": "Y"
+      },
+      {
+        "minute": 56,
+        "teamId": "NZL",
+        "playerName": "イライジャ・ジャスト",
+        "type": "Y"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": 46,
+        "teamId": "NZL",
+        "inName": "ベン・オールド",
+        "outName": "ライアン・トーマス"
+      },
+      {
+        "minute": 46,
+        "teamId": "NZL",
+        "inName": "ジェシー・ランドール",
+        "outName": "サープリート・シン"
+      },
+      {
+        "minute": 56,
+        "teamId": "BEL",
+        "inName": "マティアス・フェルナンデス・パルド",
+        "outName": "ジェレミー・ドク"
+      },
+      {
+        "minute": 64,
+        "teamId": "NZL",
+        "inName": "マイケル・ボクソール",
+        "outName": "ティム・ペイン"
+      },
+      {
+        "minute": 64,
+        "teamId": "NZL",
+        "inName": "カラム・マッコワット",
+        "outName": "ジョー・ベル"
+      },
+      {
+        "minute": 72,
+        "teamId": "BEL",
+        "inName": "アレクシス・サーレマーケルス",
+        "outName": "ケビン・デブライネ"
+      },
+      {
+        "minute": 72,
+        "teamId": "BEL",
+        "inName": "アマドゥ・オナナ",
+        "outName": "レアンドロ・トロサール"
+      },
+      {
+        "minute": 79,
+        "teamId": "NZL",
+        "inName": "フランシス・デ・ヴリーズ",
+        "outName": "リベラト・カカーチェ"
+      },
+      {
+        "minute": 85,
+        "teamId": "BEL",
+        "inName": "ニコラス・ラスキン",
+        "outName": "ユーリ・ティーレマンス"
+      },
+      {
+        "minute": 85,
+        "teamId": "BEL",
+        "inName": "ロメル・ルカク",
+        "outName": "シャルル・デケテラーレ"
+      }
+    ]
   },
   "m041": {
     "matchId": "m041",
