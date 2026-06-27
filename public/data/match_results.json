@@ -411,7 +411,8 @@
         "inName": "アレクシス・ベガ",
         "outName": "フリアン・キニョネス"
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m002": {
     "matchId": "m002",
@@ -804,7 +805,8 @@
         "inName": "モイミール・ヒティル",
         "outName": "アレクサンドル・ソイカ"
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m007": {
     "matchId": "m007",
@@ -1218,7 +1220,8 @@
         "inName": "ジョナサン・オソリオ",
         "outName": "スティーヴン・エウスタキオ"
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m008": {
     "matchId": "m008",
@@ -1618,7 +1621,8 @@
         "inName": "ミロ・ムハイム",
         "outName": "リカルド・ロドリゲス"
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m013": {
     "matchId": "m013",
@@ -2014,7 +2018,8 @@
         "outName": "イスマエル・サイバリ"
       }
     ],
-    "liveLabel": "Live"
+    "liveLabel": "Live",
+    "manualLock": false
   },
   "m014": {
     "matchId": "m014",
@@ -2401,7 +2406,8 @@
         "outName": "ルベン・プロヴィデンス"
       }
     ],
-    "liveLabel": "Live"
+    "liveLabel": "Live",
+    "manualLock": false
   },
   "m019": {
     "matchId": "m019",
@@ -2842,7 +2848,8 @@
         "inName": "ジョヴァンニ・レイナ",
         "outName": "マリク・ティルマン"
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m020": {
     "matchId": "m020",
@@ -3229,7 +3236,8 @@
         "inName": "デニズ・ギュル",
         "outName": "ケレム・アクトゥルコール"
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m025": {
     "matchId": "m025",
@@ -3647,7 +3655,8 @@
         "inName": "ヴァルデマール・アントン",
         "outName": "ヨズア・キミッヒ"
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m026": {
     "matchId": "m026",
@@ -4040,7 +4049,8 @@
         "outName": "ゲラ・ドゥエ"
       }
     ],
-    "liveLabel": "Full time"
+    "liveLabel": "Full time",
+    "manualLock": false
   },
   "m031": {
     "matchId": "m031",
@@ -4459,7 +4469,8 @@
         "outName": "コーディ・ガクポ"
       }
     ],
-    "liveLabel": "Full time"
+    "liveLabel": "Full time",
+    "manualLock": false
   },
   "m032": {
     "matchId": "m032",
@@ -4883,7 +4894,8 @@
         "inName": "ダニエル・スヴェンソン",
         "outName": "アレクサンデル・ベルンハルトソン"
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m037": {
     "matchId": "m037",
@@ -5289,7 +5301,8 @@
         "outName": "ハムディ・ファティ"
       }
     ],
-    "liveLabel": "Full time"
+    "liveLabel": "Full time",
+    "manualLock": false
   },
   "m038": {
     "matchId": "m038",
@@ -5691,7 +5704,8 @@
         "addedTime": 2
       }
     ],
-    "liveLabel": "Full time"
+    "liveLabel": "Full time",
+    "manualLock": false
   },
   "m043": {
     "matchId": "m043",
@@ -6062,7 +6076,8 @@
         "outName": "ロドリ"
       }
     ],
-    "liveLabel": "Full time"
+    "liveLabel": "Full time",
+    "manualLock": false
   },
   "m044": {
     "matchId": "m044",
@@ -6451,7 +6466,8 @@
         "addedTime": 3
       }
     ],
-    "liveLabel": "Full time"
+    "liveLabel": "Full time",
+    "manualLock": false
   },
   "m049": {
     "matchId": "m049",
@@ -6832,7 +6848,8 @@
         "outName": "イドリッサ・ガナ・ゲイェ"
       }
     ],
-    "liveLabel": "Full time"
+    "liveLabel": "Full time",
+    "manualLock": false
   },
   "m050": {
     "matchId": "m050",
@@ -7111,7 +7128,7 @@
         },
         {
           "number": 22,
-          "name": "オスカー・ボブ"
+          "name": "オスカー・ボ���"
         },
         {
           "number": 23,
@@ -7245,7 +7262,8 @@
         "playerName": "ザイド・タフセン",
         "type": "Y"
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m055": {
     "matchId": "m055",
@@ -7634,7 +7652,8 @@
         "inName": "アディル・ブルビナ",
         "outName": "イブラヒム・マザ"
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m056": {
     "matchId": "m056",
@@ -8037,7 +8056,8 @@
         "playerName": "マルセル・ザビッツァー",
         "type": "Y"
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m061": {
     "matchId": "m061",
@@ -8441,7 +8461,8 @@
         "inName": "シモン・バンザ",
         "outName": "セドリック・バカンブ"
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m067": {
     "matchId": "m067",
@@ -8858,7 +8879,8 @@
         "inName": "マルク・グエイ",
         "outName": "ジョン・ストーンズ"
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m068": {
     "matchId": "m068",
@@ -9247,7 +9269,8 @@
         "assistPlayerId": "p_gha_21",
         "assistPlayerName": "ブランドン・トーマス・アサンテ"
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m062": {
     "matchId": "m062",
@@ -9662,7 +9685,8 @@
         "outName": "ルイス・ディアス",
         "addedTime": 3
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m003": {
     "matchId": "m003",
@@ -10049,7 +10073,8 @@
         "inName": "カモゲロ・セベレベレ",
         "outName": "タペロ・マセコ"
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m009": {
     "matchId": "m009",
@@ -10481,7 +10506,8 @@
         "outName": "ケリム・アライベゴビッチ",
         "addedTime": 1
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m010": {
     "matchId": "m010",
@@ -10923,7 +10949,8 @@
         "inName": "ルーカス・ミシェル・メンデス",
         "outName": "アハメド・ファテヒ"
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m004": {
     "matchId": "m004",
@@ -11308,7 +11335,8 @@
         "inName": "セサル・ウエルタ",
         "outName": "フリアン・キニョネス"
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m021": {
     "matchId": "m021",
@@ -11733,7 +11761,8 @@
         "outName": "フォラリン・バログン",
         "addedTime": 6
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m015": {
     "matchId": "m015",
@@ -12114,7 +12143,8 @@
         "inName": "サミル・エル・ムラベ",
         "outName": "アゼディン・ウナヒ"
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m016": {
     "matchId": "m016",
@@ -12531,7 +12561,8 @@
         "inName": "デリック・エティエンヌ Jr.",
         "outName": "ジャン・リクネル・ベルガルド"
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m022": {
     "matchId": "m022",
@@ -12927,7 +12958,8 @@
         "outName": "フリオ・エンシソ",
         "addedTime": 1
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m033": {
     "matchId": "m033",
@@ -13366,7 +13398,8 @@
         "playerName": "ルーカス・ベリヴァル",
         "type": "Y"
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m027": {
     "matchId": "m027",
@@ -13756,7 +13789,8 @@
         "inName": "ニコラ・ペペ",
         "outName": "ヤン・ディオマンデ"
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m028": {
     "matchId": "m028",
@@ -14151,7 +14185,8 @@
         "outName": "ジョン・イェボア"
       }
     ],
-    "liveLabel": "Full time"
+    "liveLabel": "Full time",
+    "manualLock": false
   },
   "m034": {
     "matchId": "m034",
@@ -14553,7 +14588,8 @@
         "outName": "エリス・スキリ",
         "addedTime": 1
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m045": {
     "matchId": "m045",
@@ -14959,7 +14995,8 @@
         "inName": "ハリド・アル・ガンナム",
         "outName": "ナセル・アル・ドサリ"
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m039": {
     "matchId": "m039",
@@ -15341,7 +15378,8 @@
         "outName": "ケビン・デブライネ"
       }
     ],
-    "liveLabel": "Full time"
+    "liveLabel": "Full time",
+    "manualLock": false
   },
   "m046": {
     "matchId": "m046",
@@ -15750,7 +15788,8 @@
         "inName": "ブライアン・ロドリゲス",
         "outName": "マクシミリアーノ・アラウホ"
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m040": {
     "matchId": "m040",
@@ -16177,7 +16216,8 @@
         "outName": "ホッサム・アブデルマギド",
         "addedTime": 9
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m057": {
     "matchId": "m057",
@@ -16585,7 +16625,8 @@
         "inName": "カーニー・チュクエメカ",
         "outName": "ミヒャエル・グレゴリッチュ"
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m051": {
     "matchId": "m051",
@@ -16985,7 +17026,8 @@
         "addedTime": 1
       }
     ],
-    "liveLabel": "Full time"
+    "liveLabel": "Full time",
+    "manualLock": false
   },
   "m052": {
     "matchId": "m052",
@@ -17393,7 +17435,8 @@
         "assistPlayerId": "p_sen_22",
         "assistPlayerName": "ニコラス・ジャクソン"
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m058": {
     "matchId": "m058",
@@ -17798,7 +17841,8 @@
         "outName": "アリ・オルワン",
         "addedTime": 1
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m063": {
     "matchId": "m063",
@@ -18217,7 +18261,8 @@
         "outName": "オタベク・シュクロフ",
         "addedTime": 2
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m069": {
     "matchId": "m069",
@@ -18588,7 +18633,8 @@
         "outName": "プリンス・クワベナ・アドゥ",
         "addedTime": 5
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m070": {
     "matchId": "m070",
@@ -18963,7 +19009,8 @@
         "playerName": "ヨエル・バルセナス",
         "type": "Y"
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m064": {
     "matchId": "m064",
@@ -19345,7 +19392,8 @@
         "assistPlayerId": "p_col_17",
         "assistPlayerName": "フアン・キンテーロ"
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m011": {
     "matchId": "m011",
@@ -19756,7 +19804,8 @@
         "inName": "クリスティアン・ファスナハト",
         "outName": "ブレール・エンボロ"
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m012": {
     "matchId": "m012",
@@ -20134,7 +20183,7 @@
       {
         "minute": 63,
         "teamId": "BIH",
-        "inName": "デニス・ハジカドゥニッチ",
+        "inName": "��ニス・ハジカドゥニッチ",
         "outName": "ニコラ・カティッチ"
       },
       {
@@ -20167,7 +20216,8 @@
         "inName": "ジェニス・ブルニッチ",
         "outName": "ケリム・アライベゴビッチ"
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m018": {
     "matchId": "m018",
@@ -20597,7 +20647,8 @@
         "type": "Y",
         "addedTime": 3
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m017": {
     "matchId": "m017",
@@ -21011,7 +21062,8 @@
         "playerName": "ライアン・クリスティ",
         "type": "Y"
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m005": {
     "matchId": "m005",
@@ -21411,7 +21463,8 @@
         "inName": "トマーシュ・ホリー",
         "outName": "トマーシュ・ソウチェク"
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m006": {
     "matchId": "m006",
@@ -21785,7 +21838,8 @@
         "playerName": "チョ・ギュソン",
         "type": "Y"
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m030": {
     "matchId": "m030",
@@ -22202,7 +22256,8 @@
         "inName": "ホルディ・カイセド",
         "outName": "ニルソン・アングロ"
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m029": {
     "matchId": "m029",
@@ -22592,7 +22647,8 @@
         "outName": "フランク・ケシエ"
       }
     ],
-    "liveLabel": "Full time"
+    "liveLabel": "Full time",
+    "manualLock": false
   },
   "m036": {
     "matchId": "m036",
@@ -22990,7 +23046,8 @@
         "inName": "セバスティアン・トネクティ",
         "outName": "ハゼム・マストゥリ"
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m035": {
     "matchId": "m035",
@@ -23392,7 +23449,8 @@
         "assistPlayerId": "p_swe_22",
         "assistPlayerName": "ヴィクトル・ギョケレシュ"
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m023": {
     "matchId": "m023",
@@ -23808,7 +23866,8 @@
         "outName": "バルシュ・ユルマズ",
         "addedTime": 1
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m024": {
     "matchId": "m024",
@@ -24152,7 +24211,7 @@
         "minute": 84,
         "teamId": "AUS",
         "inName": "ポール・オコン・エングストラー",
-        "outName": "ジャクソン・アー���ァイン"
+        "outName": "ジャクソン・アーヴァイン"
       },
       {
         "minute": 84,
@@ -24174,7 +24233,8 @@
         "outName": "マティアス・ガラルサ",
         "addedTime": 2
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m053": {
     "matchId": "m053",
@@ -24598,7 +24658,8 @@
         "inName": "マロ・ギュスト",
         "outName": "ジュール・クンデ"
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m054": {
     "matchId": "m054",
@@ -25033,7 +25094,8 @@
         "inName": "アサン・ディアオ",
         "outName": "イスマイラ・サール"
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m048": {
     "matchId": "m048",
@@ -25262,7 +25324,8 @@
           "y": 83.33333333333334,
           "number": 15,
           "name": "アレックス・バエナ",
-          "role": "FW"
+          "role": "FW",
+          "isMvp": true
         }
       ],
       "bench": [
@@ -25433,7 +25496,8 @@
         "type": "R",
         "addedTime": 5
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m047": {
     "matchId": "m047",
@@ -25496,7 +25560,8 @@
           "y": 37.5,
           "number": 14,
           "name": "デロイ・ドゥアルテ",
-          "role": "MF"
+          "role": "MF",
+          "isMvp": true
         },
         {
           "x": 62.666666666666664,
@@ -25822,7 +25887,8 @@
         "outName": "ワグナー・ピナ",
         "addedTime": 4
       }
-    ]
+    ],
+    "manualLock": false
   },
   "m042": {
     "matchId": "m042",
