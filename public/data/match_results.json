@@ -27840,7 +27840,7 @@
       "home": 0,
       "away": 1
     },
-    "manualLock": true,
+    "manualLock": false,
     "goals": [
       {
         "minute": 10,
