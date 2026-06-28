@@ -26734,7 +26734,7 @@
   },
   "m071": {
     "matchId": "m071",
-    "status": "scheduled",
+    "status": "finished",
     "manualLock": false,
     "homeFormation": {
       "shape": "5-4-1",
@@ -27136,7 +27136,7 @@
   },
   "m072": {
     "matchId": "m072",
-    "status": "scheduled",
+    "status": "finished",
     "manualLock": false,
     "homeFormation": {
       "shape": "4-2-3-1",
@@ -27536,7 +27536,7 @@
   },
   "m065": {
     "matchId": "m065",
-    "status": "scheduled",
+    "status": "live",
     "manualLock": false,
     "homeFormation": {
       "shape": "4-3-3",
@@ -27886,6 +27886,13 @@
         "teamId": "COL",
         "inName": "ダニエル・ムニョス",
         "outName": "サンティアゴ・アリアス"
+      },
+      {
+        "minute": 90,
+        "teamId": "POR",
+        "inName": "マテウス・ヌネス",
+        "outName": "ヌノ・メンデス",
+        "addedTime": 2
       }
     ],
     "bookings": [
@@ -27899,7 +27906,7 @@
   },
   "m066": {
     "matchId": "m066",
-    "status": "scheduled",
+    "status": "live",
     "score": {
       "home": 2,
       "away": 1
