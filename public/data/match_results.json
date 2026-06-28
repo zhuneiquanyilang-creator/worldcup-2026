@@ -28633,7 +28633,7 @@
     },
     "score": {
       "home": 0,
-      "away": 1
+      "away": 2
     },
     "goals": [
       {
@@ -28642,6 +28642,13 @@
         "type": "normal",
         "playerId": "p_arg_16",
         "playerName": "ジオバニ・ロ・チェルソ"
+      },
+      {
+        "minute": 31,
+        "teamId": "ARG",
+        "type": "penalty",
+        "playerId": "p_arg_24",
+        "playerName": "ラウタロ・マルティネス"
       }
     ],
     "bookings": [
@@ -28957,6 +28964,17 @@
         "teamId": "AUT",
         "playerName": "マルコ・アルナウトビッチ",
         "type": "Y"
+      }
+    ],
+    "goals": [
+      {
+        "minute": 28,
+        "teamId": "AUT",
+        "type": "normal",
+        "playerId": "p_aut_24",
+        "playerName": "マルコ・アルナウトビッチ",
+        "assistPlayerId": "p_aut_12",
+        "assistPlayerName": "ダヴィド・アラバ"
       }
     ]
   },
