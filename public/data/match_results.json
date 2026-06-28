@@ -29000,6 +29000,15 @@
         "playerName": "マルセル・ザビッツァー",
         "assistPlayerId": "p_aut_23",
         "assistPlayerName": "コンラッド・ライマー"
+      },
+      {
+        "minute": 60,
+        "teamId": "ALG",
+        "type": "normal",
+        "playerId": "p_alg_21",
+        "playerName": "リヤド・マフレズ",
+        "assistPlayerId": "p_alg_14",
+        "assistPlayerName": "フセム・アワール"
       }
     ]
   },
