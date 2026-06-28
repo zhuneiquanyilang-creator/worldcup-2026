@@ -27844,6 +27844,18 @@
         "teamId": "POR",
         "inName": "ジョアン・ネヴェス",
         "outName": "ルベン・ネヴェス"
+      },
+      {
+        "minute": 60,
+        "teamId": "COL",
+        "inName": "ルイス・スアレス",
+        "outName": "ジョン・コルドバ"
+      },
+      {
+        "minute": 60,
+        "teamId": "COL",
+        "inName": "カルロス・ゴメス",
+        "outName": "フアン・ポルティージャ"
       }
     ]
   },
