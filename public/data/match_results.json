@@ -27837,8 +27837,8 @@
     "matchId": "m066",
     "status": "live",
     "score": {
-      "home": 1,
-      "away": 0
+      "home": 0,
+      "away": 1
     },
     "manualLock": true,
     "goals": [
