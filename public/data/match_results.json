@@ -29169,7 +29169,7 @@
   },
   "m073": {
     "matchId": "m073",
-    "status": "live",
+    "status": "finished",
     "score": {
       "home": 0,
       "away": 1
@@ -29527,6 +29527,16 @@
         "teamId": "ZAF",
         "inName": "イクラーム・レイナーズ",
         "outName": "エヴィデンス・マクゴパ"
+      }
+    ],
+    "goals": [
+      {
+        "minute": 90,
+        "teamId": "CAN",
+        "type": "normal",
+        "addedTime": 2,
+        "playerId": "p_can_16",
+        "playerName": "スティーヴン・エウスタキオ"
       }
     ]
   },
