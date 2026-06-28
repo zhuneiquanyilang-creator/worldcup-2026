@@ -27691,7 +27691,8 @@
           "y": 50,
           "number": 1,
           "name": "ディオゴ・コスタ",
-          "role": "GK"
+          "role": "GK",
+          "isMvp": true
         },
         {
           "x": 28,
@@ -28021,7 +28022,8 @@
           "y": 25,
           "number": 20,
           "name": "ヨアヌ・ウィサ",
-          "role": "FW"
+          "role": "FW",
+          "isMvp": true
         },
         {
           "x": 80,
