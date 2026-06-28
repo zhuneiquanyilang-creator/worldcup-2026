@@ -27876,6 +27876,13 @@
         "playerName": "エルドル・ショムロドフ",
         "assistPlayerId": "p_uzb_21",
         "assistPlayerName": "アボスベク・ファイズラエフ"
+      },
+      {
+        "minute": 68,
+        "teamId": "COD",
+        "type": "penalty",
+        "playerId": "p_cod_23",
+        "playerName": "ヨアヌ・ウィサ"
       }
     ],
     "homeFormation": {
@@ -28180,6 +28187,38 @@
         "teamId": "UZB",
         "playerName": "アブドゥコディル・クサノフ",
         "type": "Y"
+      },
+      {
+        "minute": 47,
+        "teamId": "UZB",
+        "playerName": "シェルゾド・ナスルラエフ",
+        "type": "Y"
+      },
+      {
+        "minute": 61,
+        "teamId": "COD",
+        "playerName": "サミュエル・ムトゥサミ",
+        "type": "Y"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": 51,
+        "teamId": "COD",
+        "inName": "フィストン・マイェレ",
+        "outName": "セドリック・バカンブ"
+      },
+      {
+        "minute": 58,
+        "teamId": "UZB",
+        "inName": "アジズジョン・ガニエフ",
+        "outName": "オタベク・シュクロフ"
+      },
+      {
+        "minute": 58,
+        "teamId": "UZB",
+        "inName": "オディルジョン・ハムロベコフ",
+        "outName": "ドストンベク・ハムダモフ"
       }
     ]
   },
