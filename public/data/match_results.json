@@ -29464,7 +29464,41 @@
           "name": "マルセロ・フローレス"
         }
       ]
-    }
+    },
+    "bookings": [
+      {
+        "minute": 54,
+        "teamId": "CAN",
+        "playerName": "ネイサン・サリバ",
+        "type": "Y"
+      },
+      {
+        "minute": 67,
+        "teamId": "CAN",
+        "playerName": "ニコ・シグル",
+        "type": "Y"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": 46,
+        "teamId": "ZAF",
+        "inName": "タレンテ・ムバサ",
+        "outName": "レレボヒレ・モフォケン"
+      },
+      {
+        "minute": 59,
+        "teamId": "CAN",
+        "inName": "アルフィー・ジョーンズ",
+        "outName": "モイーズ・ボンビト"
+      },
+      {
+        "minute": 59,
+        "teamId": "CAN",
+        "inName": "ニコ・シグル",
+        "outName": "ネイサン・サリバ"
+      }
+    ]
   },
   "m076": {
     "matchId": "m076",
