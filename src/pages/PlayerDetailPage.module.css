@@ -1,0 +1,323 @@
+.page {
+  padding: 1.25rem 0.5rem;
+}
+
+.back {
+  background: none;
+  border: 1px solid var(--color-border);
+  color: var(--color-primary-dark);
+  padding: 0.3rem 0.7rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.back:hover {
+  background-color: var(--color-surface-alt);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.flag {
+  border-radius: 4px;
+  box-shadow: 0 0 0 1px var(--color-border);
+}
+
+.headerText {
+  flex: 1;
+  min-width: 0;
+}
+
+.name {
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--color-primary-dark);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.number {
+  background-color: var(--color-primary-dark);
+  color: var(--color-gold);
+  padding: 0.05rem 0.5rem;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+}
+
+.subRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0.3rem;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.posBadge {
+  background-color: var(--color-primary);
+  color: #fff;
+  padding: 0.05rem 0.55rem;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+}
+
+.teamLink {
+  color: var(--color-primary-dark);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.teamLink:hover {
+  text-decoration: underline;
+}
+
+.profileCard,
+.summaryCard,
+.tableCard {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.heading {
+  margin: 0 0 0.75rem;
+  font-size: 1.05rem;
+  color: var(--color-primary-dark);
+  border-bottom: 2px solid var(--color-accent);
+  padding-bottom: 0.35rem;
+}
+
+.profileGrid {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.6rem 1.5rem;
+}
+
+.profileGrid > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.profileGrid dt {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  font-weight: 700;
+}
+
+.profileGrid dd {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.statRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 4.5rem;
+  padding: 0.25rem 0.4rem;
+}
+
+.statValue {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--color-primary-dark);
+  line-height: 1.1;
+}
+
+.statValueGold {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--color-gold);
+  line-height: 1.1;
+}
+
+.statLabel {
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+  margin-top: 0.15rem;
+  white-space: nowrap;
+}
+
+.tableWrap {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.83rem;
+}
+
+.table th,
+.table td {
+  padding: 0.4rem 0.55rem;
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+  white-space: nowrap;
+}
+
+.table th {
+  background-color: var(--color-surface-alt, rgba(0, 0, 0, 0.03));
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  font-size: 0.78rem;
+}
+
+.numCell {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+}
+
+.stageCell {
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+}
+
+.oppCell {
+  min-width: 7rem;
+}
+
+.oppFlag {
+  border-radius: 2px;
+  vertical-align: middle;
+  margin-right: 0.3rem;
+}
+
+.matchLink {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.matchLink:hover {
+  text-decoration: underline;
+}
+
+.resultBadge {
+  display: inline-block;
+  min-width: 1.3rem;
+  text-align: center;
+  font-weight: 800;
+  padding: 0.05rem 0.35rem;
+  border-radius: 3px;
+  font-size: 0.78rem;
+}
+
+.resultWin .resultBadge {
+  background-color: #2e8b57;
+  color: #fff;
+}
+
+.resultLoss .resultBadge {
+  background-color: #b53b3b;
+  color: #fff;
+}
+
+.resultDraw .resultBadge {
+  background-color: #888;
+  color: #fff;
+}
+
+.scoreText {
+  font-variant-numeric: tabular-nums;
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+}
+
+.statG {
+  font-weight: 800;
+  color: var(--color-gold);
+  text-align: center;
+}
+
+.statZero {
+  text-align: center;
+  color: var(--color-text-muted);
+}
+
+.cardsCell {
+  display: flex;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+}
+
+.cardItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15rem;
+  font-size: 0.78rem;
+}
+
+.cardMinute {
+  font-size: 0.7rem;
+  color: var(--color-text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.empty {
+  margin: 0.5rem 0;
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+.note {
+  margin: 0.6rem 0 0;
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+  line-height: 1.4;
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding: 0.85rem 0.4rem;
+  }
+
+  .name {
+    font-size: 1.2rem;
+  }
+
+  .number {
+    font-size: 0.85rem;
+  }
+
+  .statValue,
+  .statValueGold {
+    font-size: 1.25rem;
+  }
+
+  .stat {
+    min-width: 3.7rem;
+  }
+
+  .table th,
+  .table td {
+    padding: 0.3rem 0.4rem;
+    font-size: 0.78rem;
+  }
+}

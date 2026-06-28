@@ -7,6 +7,7 @@ import { SchedulePage } from "./pages/SchedulePage";
 import { MatchDetailPage } from "./pages/MatchDetailPage";
 import { StatsPage } from "./pages/StatsPage";
 import { TeamDetailPage } from "./pages/TeamDetailPage";
+import { PlayerDetailPage } from "./pages/PlayerDetailPage";
 import { EditHistoryPage } from "./pages/EditHistoryPage";
 import { EditMatchesPage } from "./pages/EditMatchesPage";
 import { PastTournamentsPage } from "./pages/PastTournamentsPage";
@@ -27,6 +28,7 @@ export const router = createHashRouter([
       { path: "matches", element: <Navigate to="/schedule" replace /> },
       { path: "matches/:id", element: <MatchDetailPage /> },
       { path: "teams/:id", element: <TeamDetailPage /> },
+      { path: "players/:id", element: <PlayerDetailPage /> },
       { path: "stats", element: <StatsPage /> },
       { path: "past", element: <PastTournamentsPage /> },
       { path: "past/:year", element: <PastTournamentDetailPage /> },

@@ -1,4 +1,5 @@
 import { useMemo } from "react";
+import { Link } from "react-router-dom";
 import { usePlayers } from "@/hooks/usePlayers";
 import { useMatches } from "@/hooks/useMatches";
 import { computePlayerStats } from "@/utils/computePlayerStats";
@@ -113,7 +114,11 @@ export function PlayerRoster({ teamId }: Props) {
                       <td className={styles.number}>
                         {p.number != null ? p.number : "—"}
                       </td>
-                      <td className={styles.name}>{p.name}</td>
+                      <td className={styles.name}>
+                        <Link to={`/players/${p.id}`} className={styles.nameLink}>
+                          {p.name}
+                        </Link>
+                      </td>
                       <td className={styles.club}>{p.club ?? "—"}</td>
                       <td className={styles.age}>
                         {age !== null ? `${age}` : "—"}

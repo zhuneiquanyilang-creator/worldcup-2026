@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import type { Booking, FormationData, Goal, Substitution } from "@/types/match";
 import type { Player } from "@/types/player";
 import type { Team } from "@/types/team";
@@ -54,6 +55,28 @@ function resolveDisplayName(
   const short = shortNameMap?.get(name);
   if (typeof short === "string" && short.length > 0) return short;
   return surnameOf(name);
+}
+
+/** (teamId, 名前, 背番号) から playerMap を引いて選手 ID を返す。
+ *  名前完全一致を優先、見つからなければ背番号一致でフォールバック。 */
+function findPlayerId(
+  name: string,
+  number: number | undefined,
+  teamId: string,
+  playerMap: Map<string, Player> | undefined
+): string | undefined {
+  if (!playerMap) return undefined;
+  for (const p of playerMap.values()) {
+    if (p.teamId !== teamId) continue;
+    if (p.name === name) return p.id;
+  }
+  if (typeof number === "number") {
+    for (const p of playerMap.values()) {
+      if (p.teamId !== teamId) continue;
+      if (p.number === number) return p.id;
+    }
+  }
+  return undefined;
 }
 
 type Props = {
@@ -202,6 +225,15 @@ export function CombinedFormation({
   const isNarrow = useIsNarrow();
   const layout = isNarrow ? VERTICAL_LAYOUT : HORIZONTAL_LAYOUT;
   const Pitch = isNarrow ? VerticalPitch : HorizontalPitch;
+  const navigate = useNavigate();
+  const goPlayer = (
+    teamId: string,
+    name: string,
+    number: number | undefined
+  ) => {
+    const id = findPlayerId(name, number, teamId, playerMap);
+    if (id) navigate(`/players/${id}`);
+  };
 
   // 層 x 間隔の調整 (= ピッチ上の名前ラベル重なり防止)。
   // 4-2-3-1 等の AM/ST が y=50 で揃うケースで前方を押し出す。
@@ -283,6 +315,7 @@ export function CombinedFormation({
                 x={x}
                 y={y}
                 variant="home"
+                onClick={() => goPlayer(homeTeamId, s.name, s.number)}
               />
             );
           })}
@@ -295,6 +328,7 @@ export function CombinedFormation({
                 x={x}
                 y={y}
                 variant="away"
+                onClick={() => goPlayer(awayTeamId, s.name, s.number)}
               />
             );
           })}
@@ -367,10 +401,12 @@ export function CombinedFormation({
         <BenchList
           title={`${homeTeam?.name ?? homeLabel ?? "ホーム"}ベンチ`}
           items={homeProcessed?.bench}
+          onPlayerClick={(name, number) => goPlayer(homeTeamId, name, number)}
         />
         <BenchList
           title={`${awayTeam?.name ?? awayLabel ?? "アウェイ"}ベンチ`}
           items={awayProcessed?.bench}
+          onPlayerClick={(name, number) => goPlayer(awayTeamId, name, number)}
         />
       </div>
     </section>
@@ -526,11 +562,13 @@ function SpotBody({
   x,
   y,
   variant,
+  onClick,
 }: {
   spot: SpotWithSub;
   x: number;
   y: number;
   variant: "home" | "away";
+  onClick?: () => void;
 }) {
   const ringColor = variant === "home" ? "#1a3a8a" : "#b91c1c";
   const textColor = variant === "home" ? "#1a3a8a" : "#b91c1c";
@@ -556,7 +594,20 @@ function SpotBody({
       : goalY;
 
   return (
-    <g transform={`translate(${x}, ${y})`}>
+    <g
+      transform={`translate(${x}, ${y})`}
+      onClick={onClick}
+      onKeyDown={(e) => {
+        if (onClick && (e.key === "Enter" || e.key === " ")) {
+          e.preventDefault();
+          onClick();
+        }
+      }}
+      role={onClick ? "link" : undefined}
+      tabIndex={onClick ? 0 : undefined}
+      style={onClick ? { cursor: "pointer" } : undefined}
+      aria-label={onClick ? `${spot.name}の選手詳細を開く` : undefined}
+    >
       {spot.isMvp ? (
         <polygon
           points="0,-4.2 0.926,-1.273 3.994,-1.297 1.499,0.487 2.469,3.397 0,1.575 -2.469,3.397 -1.499,0.487 -3.994,-1.297 -0.926,-1.273"
@@ -689,9 +740,11 @@ function SpotName({
 function BenchList({
   title,
   items,
+  onPlayerClick,
 }: {
   title: string;
   items: BenchWithSub[] | undefined;
+  onPlayerClick?: (name: string, number: number | undefined) => void;
 }) {
   if (!items || items.length === 0) return <div className={styles.benchCol} />;
   return (
@@ -703,10 +756,24 @@ function BenchList({
           const goalCount = p.goals?.length ?? 0;
           const assistCount = p.assists?.length ?? 0;
           const ownGoalCount = p.ownGoals?.length ?? 0;
+          const handleClick = onPlayerClick
+            ? () => onPlayerClick(p.name, p.number)
+            : undefined;
           return (
             <li
               key={i}
-              className={p.subbedInAt !== undefined ? styles.benchIn : undefined}
+              className={`${
+                p.subbedInAt !== undefined ? styles.benchIn : ""
+              } ${handleClick ? styles.benchClickable : ""}`}
+              onClick={handleClick}
+              onKeyDown={(e) => {
+                if (handleClick && (e.key === "Enter" || e.key === " ")) {
+                  e.preventDefault();
+                  handleClick();
+                }
+              }}
+              role={handleClick ? "link" : undefined}
+              tabIndex={handleClick ? 0 : undefined}
             >
               {p.number !== undefined && (
                 <span

@@ -154,6 +154,19 @@
   border-bottom: 1px dashed var(--color-border);
 }
 
+/* ベンチ行のクリック可能化 (選手詳細リンク)。 */
+.benchClickable {
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.12s;
+}
+
+.benchClickable:hover,
+.benchClickable:focus-visible {
+  background-color: rgba(0, 0, 0, 0.04);
+  outline: none;
+}
+
 .benchNum {
   background-color: var(--color-primary);
   color: #fff;
