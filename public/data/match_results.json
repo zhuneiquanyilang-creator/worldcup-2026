@@ -26734,7 +26734,7 @@
   },
   "m071": {
     "matchId": "m071",
-    "status": "finished",
+    "status": "scheduled",
     "manualLock": false,
     "homeFormation": {
       "shape": "5-4-1",
@@ -27136,7 +27136,7 @@
   },
   "m072": {
     "matchId": "m072",
-    "status": "finished",
+    "status": "scheduled",
     "manualLock": false,
     "homeFormation": {
       "shape": "4-2-3-1",
@@ -27906,7 +27906,7 @@
   },
   "m066": {
     "matchId": "m066",
-    "status": "live",
+    "status": "finished",
     "score": {
       "home": 3,
       "away": 1
@@ -28253,6 +28253,13 @@
         "type": "Y"
       },
       {
+        "minute": 45,
+        "teamId": "COD",
+        "playerName": "ナタナエル・ムブク",
+        "type": "Y",
+        "addedTime": 4
+      },
+      {
         "minute": 47,
         "teamId": "UZB",
         "playerName": "シェルゾド・ナスルラエフ",
@@ -28283,6 +28290,48 @@
         "teamId": "UZB",
         "inName": "オディルジョン・ハムロベコフ",
         "outName": "ドストンベク・ハムダモフ"
+      },
+      {
+        "minute": 72,
+        "teamId": "COD",
+        "inName": "ンガラエル・ムカウ",
+        "outName": "サミュエル・ムトゥサミ"
+      },
+      {
+        "minute": 72,
+        "teamId": "COD",
+        "inName": "メシャック・エリア",
+        "outName": "ナタナエル・ムブク"
+      },
+      {
+        "minute": 72,
+        "teamId": "COD",
+        "inName": "テオ・ボンゴンダ",
+        "outName": "ブライアン・チペンガ"
+      },
+      {
+        "minute": 73,
+        "teamId": "UZB",
+        "inName": "オストン・ウルノフ",
+        "outName": "アボスベク・ファイズラエフ"
+      },
+      {
+        "minute": 82,
+        "teamId": "UZB",
+        "inName": "イゴール・セルゲーエフ",
+        "outName": "ジャホンギル・ウロゾフ"
+      },
+      {
+        "minute": 82,
+        "teamId": "UZB",
+        "inName": "ジャムシド・イスカンデロフ",
+        "outName": "アクマル・モズゴボイ"
+      },
+      {
+        "minute": 83,
+        "teamId": "COD",
+        "inName": "ヨリス・カイェンベ",
+        "outName": "アルトゥール・マスアク"
       }
     ]
   },
