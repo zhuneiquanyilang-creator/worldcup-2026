@@ -28649,6 +28649,15 @@
         "type": "penalty",
         "playerId": "p_arg_24",
         "playerName": "ラウタロ・マルティネス"
+      },
+      {
+        "minute": 55,
+        "teamId": "JOR",
+        "type": "normal",
+        "playerId": "p_jor_20",
+        "playerName": "ムサ・アル・タアマリ",
+        "assistPlayerId": "p_jor_6",
+        "assistPlayerName": "イフサン・ハダド"
       }
     ],
     "bookings": [
