@@ -27837,10 +27837,10 @@
     "matchId": "m066",
     "status": "live",
     "score": {
-      "home": 0,
+      "home": 1,
       "away": 1
     },
-    "manualLock": true,
+    "manualLock": false,
     "goals": [
       {
         "minute": 10,
