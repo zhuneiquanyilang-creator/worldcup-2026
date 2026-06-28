@@ -28633,8 +28633,25 @@
     },
     "score": {
       "home": 0,
-      "away": 0
-    }
+      "away": 1
+    },
+    "goals": [
+      {
+        "minute": 19,
+        "teamId": "ARG",
+        "type": "normal",
+        "playerId": "p_arg_16",
+        "playerName": "ジオバニ・ロ・チェルソ"
+      }
+    ],
+    "bookings": [
+      {
+        "minute": 17,
+        "teamId": "JOR",
+        "playerName": "モハナド・アブ・タハ",
+        "type": "Y"
+      }
+    ]
   },
   "m059": {
     "matchId": "m059",
@@ -28933,7 +28950,15 @@
     "score": {
       "home": 0,
       "away": 0
-    }
+    },
+    "bookings": [
+      {
+        "minute": 11,
+        "teamId": "AUT",
+        "playerName": "マルコ・アルナウトビッチ",
+        "type": "Y"
+      }
+    ]
   },
   "m073": {
     "matchId": "m073",
