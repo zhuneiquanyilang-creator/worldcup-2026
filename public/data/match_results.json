@@ -27880,6 +27880,20 @@
         "teamId": "COL",
         "inName": "フアン・キンテーロ",
         "outName": "ハメス・ロドリゲス"
+      },
+      {
+        "minute": 87,
+        "teamId": "COL",
+        "inName": "ダニエル・ムニョス",
+        "outName": "サンティアゴ・アリアス"
+      }
+    ],
+    "bookings": [
+      {
+        "minute": 86,
+        "teamId": "COL",
+        "playerName": "グスタボ・プエルタ",
+        "type": "Y"
       }
     ]
   },
