@@ -1126,8 +1126,7 @@
     "date": "2026-07-02T12:00:00-07:00",
     "venue": "ロサンゼルス・スタジアム（アメリカ）",
     "homeTeamId": "ESP",
-    "awayTeamId": "GJ2",
-    "awayTeamLabel": "J組2位",
+    "awayTeamId": "AUT",
     "status": "scheduled",
     "broadcasters": [
       "dazn"
@@ -1139,8 +1138,7 @@
     "date": "2026-07-02T20:00:00-07:00",
     "venue": "BCプレイス（カナダ）",
     "homeTeamId": "SUI",
-    "awayTeamId": "G3_EFGIJ",
-    "awayTeamLabel": "G/J組3位",
+    "awayTeamId": "ALG",
     "status": "scheduled",
     "broadcasters": [
       "dazn"
