@@ -28975,6 +28975,13 @@
         "playerName": "マルコ・アルナウトビッチ",
         "assistPlayerId": "p_aut_12",
         "assistPlayerName": "ダヴィド・アラバ"
+      },
+      {
+        "minute": 45,
+        "teamId": "ALG",
+        "type": "normal",
+        "playerId": "p_alg_11",
+        "playerName": "ラフィク・ベルガリ"
       }
     ]
   },
