@@ -28729,12 +28729,24 @@
         "teamId": "ARG",
         "inName": "ホセ・マヌエル・ロペス",
         "outName": "フリアン・アルバレス"
+      },
+      {
+        "minute": 90,
+        "teamId": "JOR",
+        "inName": "サリム・オバイド",
+        "outName": "フサム・アブ・ダハブ"
+      },
+      {
+        "minute": 90,
+        "teamId": "JOR",
+        "inName": "モハマド・アブ・ズライク",
+        "outName": "アリ・オルワン"
       }
     ]
   },
   "m059": {
     "matchId": "m059",
-    "status": "live",
+    "status": "finished",
     "manualLock": false,
     "homeFormation": {
       "shape": "4-2-3-1",
