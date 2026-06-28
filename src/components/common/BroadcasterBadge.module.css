@@ -45,6 +45,14 @@
   color: #fff;
 }
 
+/* NHK Eテレ: 緑背景に白の "E" (NHK 公式の Eテレ ロゴと同系統の緑) */
+.nhkE {
+  background-color: #00a040;
+  color: #fff;
+  min-width: 1.15rem;
+  padding: 0 0.35rem;
+}
+
 /* 日テレ: 白背景に赤テキスト (枠線で識別) */
 .ntv {
   background-color: #fff;

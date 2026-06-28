@@ -12,6 +12,7 @@ export type BroadcasterCode =
   | "nhk-g"
   | "nhk-bs1"
   | "nhk-bs4k"
+  | "nhk-e"
   | "ntv"
   | "fuji"
   | "dazn";
@@ -24,6 +25,7 @@ const META: Record<BroadcasterCode, Meta> = {
   "nhk-g": { label: "G", full: "NHK 総合", className: styles.nhkG },
   "nhk-bs1": { label: "BS1", full: "NHK BS1", className: styles.nhkBs1 },
   "nhk-bs4k": { label: "BS4K", full: "NHK BS4K", className: styles.nhkBs4k },
+  "nhk-e": { label: "E", full: "NHK Eテレ", className: styles.nhkE },
   ntv: { label: "日テレ", full: "日本テレビ", className: styles.ntv },
   fuji: { label: "フジ", full: "フジテレビ", className: styles.fuji },
   dazn: { label: "DAZN", full: "DAZN (配信)", className: styles.dazn },
@@ -47,8 +49,9 @@ export const BROADCASTER_LEGEND: { code: BroadcasterCode; name: string; note: st
   { code: "nhk-g", name: "NHK 総合", note: "地上波・主要試合の生中継" },
   { code: "nhk-bs1", name: "NHK BS1", note: "BS の生中継・録画放送" },
   { code: "nhk-bs4k", name: "NHK BS4K", note: "4K 画質での生中継" },
+  { code: "nhk-e", name: "NHK Eテレ", note: "教育テレビでの中継 (深夜枠等)" },
   { code: "ntv", name: "日本テレビ", note: "日本戦を含む地上波生中継" },
-  { code: "fuji", name: "フジテレビ", note: "日本戦を含む地上波生中継" },
+  { code: "fuji", name: "フジテレビ", note: "地上波生中継" },
   { code: "dazn", name: "DAZN", note: "全 104 試合の独占ストリーミング配信" },
 ];
 

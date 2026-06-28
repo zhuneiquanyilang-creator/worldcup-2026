@@ -462,8 +462,8 @@
     "awayTeamId": "JPN",
     "status": "scheduled",
     "broadcasters": [
-      "ntv",
       "nhk-bs1",
+      "ntv",
       "dazn"
     ]
   },
@@ -995,6 +995,8 @@
     "awayTeamId": "CAN",
     "status": "scheduled",
     "broadcasters": [
+      "nhk-g",
+      "nhk-bs4k",
       "dazn"
     ]
   },
@@ -1019,6 +1021,8 @@
     "awayTeamId": "MAR",
     "status": "scheduled",
     "broadcasters": [
+      "nhk-g",
+      "nhk-bs4k",
       "dazn"
     ]
   },
@@ -1031,6 +1035,8 @@
     "awayTeamId": "JPN",
     "status": "scheduled",
     "broadcasters": [
+      "nhk-bs1",
+      "fuji",
       "dazn"
     ]
   },
@@ -1043,6 +1049,7 @@
     "awayTeamId": "SWE",
     "status": "scheduled",
     "broadcasters": [
+      "fuji",
       "dazn"
     ]
   },
@@ -1068,6 +1075,8 @@
     "awayTeamId": "ECU",
     "status": "scheduled",
     "broadcasters": [
+      "nhk-g",
+      "nhk-bs4k",
       "dazn"
     ]
   },
@@ -1080,6 +1089,7 @@
     "awayTeamId": "COD",
     "status": "scheduled",
     "broadcasters": [
+      "fuji",
       "dazn"
     ]
   },
@@ -1092,6 +1102,8 @@
     "awayTeamId": "BIH",
     "status": "scheduled",
     "broadcasters": [
+      "nhk-g",
+      "nhk-bs4k",
       "dazn"
     ]
   },
@@ -1104,6 +1116,8 @@
     "awayTeamId": "SEN",
     "status": "scheduled",
     "broadcasters": [
+      "nhk-g",
+      "nhk-bs4k",
       "dazn"
     ]
   },
@@ -1129,6 +1143,8 @@
     "awayTeamId": "AUT",
     "status": "scheduled",
     "broadcasters": [
+      "nhk-g",
+      "nhk-bs4k",
       "dazn"
     ]
   },
@@ -1141,6 +1157,9 @@
     "awayTeamId": "ALG",
     "status": "scheduled",
     "broadcasters": [
+      "nhk-g",
+      "nhk-bs4k",
+      "nhk-e",
       "dazn"
     ]
   },
@@ -1166,6 +1185,8 @@
     "awayTeamId": "EGY",
     "status": "scheduled",
     "broadcasters": [
+      "nhk-g",
+      "nhk-bs4k",
       "dazn"
     ]
   },
@@ -1192,6 +1213,8 @@
     "awayTeamLabel": "75試合勝者",
     "status": "scheduled",
     "broadcasters": [
+      "nhk-g",
+      "nhk-bs4k",
       "dazn"
     ]
   },
@@ -1206,6 +1229,7 @@
     "awayTeamLabel": "77試合勝者",
     "status": "scheduled",
     "broadcasters": [
+      "ntv",
       "dazn"
     ]
   },
@@ -1220,6 +1244,8 @@
     "awayTeamLabel": "78試合勝者",
     "status": "scheduled",
     "broadcasters": [
+      "nhk-g",
+      "nhk-bs4k",
       "dazn"
     ]
   },
@@ -1248,6 +1274,7 @@
     "awayTeamLabel": "84試合勝者",
     "status": "scheduled",
     "broadcasters": [
+      "ntv",
       "dazn"
     ]
   },
@@ -1262,6 +1289,7 @@
     "awayTeamLabel": "82試合勝者",
     "status": "scheduled",
     "broadcasters": [
+      "fuji",
       "dazn"
     ]
   },
@@ -1290,6 +1318,8 @@
     "awayTeamLabel": "87試合勝者",
     "status": "scheduled",
     "broadcasters": [
+      "nhk-g",
+      "nhk-bs4k",
       "dazn"
     ]
   },
@@ -1318,6 +1348,8 @@
     "awayTeamLabel": "92試合勝者",
     "status": "scheduled",
     "broadcasters": [
+      "nhk-g",
+      "nhk-bs4k",
       "dazn"
     ]
   },
@@ -1332,6 +1364,7 @@
     "awayTeamLabel": "94試合勝者",
     "status": "scheduled",
     "broadcasters": [
+      "fuji",
       "dazn"
     ]
   },
@@ -1360,6 +1393,7 @@
     "awayTeamLabel": "98試合勝者",
     "status": "scheduled",
     "broadcasters": [
+      "ntv",
       "dazn"
     ]
   },
@@ -1374,6 +1408,8 @@
     "awayTeamLabel": "100試合勝者",
     "status": "scheduled",
     "broadcasters": [
+      "nhk-g",
+      "nhk-bs4k",
       "dazn"
     ]
   },
@@ -1388,6 +1424,8 @@
     "awayTeamLabel": "102試合敗者",
     "status": "scheduled",
     "broadcasters": [
+      "nhk-g",
+      "nhk-bs4k",
       "dazn"
     ]
   },
@@ -1402,6 +1440,8 @@
     "awayTeamLabel": "102試合勝者",
     "status": "scheduled",
     "broadcasters": [
+      "nhk-g",
+      "nhk-bs1",
       "dazn"
     ]
   }
