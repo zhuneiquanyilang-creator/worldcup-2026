@@ -27831,7 +27831,21 @@
     "score": {
       "home": 0,
       "away": 0
-    }
+    },
+    "substitutions": [
+      {
+        "minute": 46,
+        "teamId": "POR",
+        "inName": "ディオゴ・ダロト",
+        "outName": "ジョアン・カンセロ"
+      },
+      {
+        "minute": 46,
+        "teamId": "POR",
+        "inName": "ジョアン・ネヴェス",
+        "outName": "ルベン・ネヴェス"
+      }
+    ]
   },
   "m066": {
     "matchId": "m066",
