@@ -29048,6 +29048,32 @@
         "assistPlayerId": "p_alg_14",
         "assistPlayerName": "フセム・アワール"
       }
+    ],
+    "substitutions": [
+      {
+        "minute": 46,
+        "teamId": "AUT",
+        "inName": "フロリアン・グリリッチュ",
+        "outName": "ザヴェル・シュラガー"
+      },
+      {
+        "minute": 46,
+        "teamId": "AUT",
+        "inName": "パウル・ヴァナー",
+        "outName": "ロマーノ・シュミット"
+      },
+      {
+        "minute": 46,
+        "teamId": "AUT",
+        "inName": "ミヒャエル・グレゴリッチュ",
+        "outName": "マルコ・アルナウトビッチ"
+      },
+      {
+        "minute": 62,
+        "teamId": "AUT",
+        "inName": "ケヴィン・ダンソ",
+        "outName": "ダヴィド・アラバ"
+      }
     ]
   },
   "m073": {
