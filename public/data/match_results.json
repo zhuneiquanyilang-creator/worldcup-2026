@@ -26734,7 +26734,7 @@
   },
   "m071": {
     "matchId": "m071",
-    "status": "finished",
+    "status": "scheduled",
     "manualLock": false,
     "homeFormation": {
       "shape": "5-4-1",
@@ -27136,7 +27136,7 @@
   },
   "m072": {
     "matchId": "m072",
-    "status": "finished",
+    "status": "scheduled",
     "manualLock": false,
     "homeFormation": {
       "shape": "4-2-3-1",
@@ -29027,7 +29027,7 @@
       ]
     },
     "score": {
-      "home": 2,
+      "home": 3,
       "away": 2
     },
     "bookings": [
