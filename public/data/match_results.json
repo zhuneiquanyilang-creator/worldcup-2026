@@ -29515,6 +29515,18 @@
         "teamId": "CAN",
         "inName": "アルフォンソ・デイヴィス",
         "outName": "タジョン・ブキャナン"
+      },
+      {
+        "minute": 86,
+        "teamId": "ZAF",
+        "inName": "ツェパン・モレミ",
+        "outName": "タペロ・マセコ"
+      },
+      {
+        "minute": 86,
+        "teamId": "ZAF",
+        "inName": "イクラーム・レイナーズ",
+        "outName": "エヴィデンス・マクゴパ"
       }
     ]
   },
