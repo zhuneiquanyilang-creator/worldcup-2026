@@ -28632,7 +28632,7 @@
       ]
     },
     "score": {
-      "home": 0,
+      "home": 1,
       "away": 2
     },
     "goals": [
@@ -28965,7 +28965,7 @@
     },
     "score": {
       "home": 1,
-      "away": 1
+      "away": 2
     },
     "bookings": [
       {
