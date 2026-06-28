@@ -3,7 +3,7 @@
 2026年 FIFA ワールドカップ（アメリカ・カナダ・メキシコ共催）の情報サイト。
 出場48カ国・全104試合の日程／順位表／スタッツ／過去大会を閲覧できる Web アプリです。
 
-🌐 **公開サイト**: https://zhuneiquanyilang-creator.github.io/worldcup-2026/
+🌐 **公開サイト**: [https://zhuneiquanyilang-creator.github.io/worldcup-2026/](https://zhuneiquanyilang-creator.github.io/WORLDCUP-2026/#/)
 
 ## 主な機能
 
