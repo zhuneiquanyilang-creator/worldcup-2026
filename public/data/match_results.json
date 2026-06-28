@@ -28337,7 +28337,7 @@
   },
   "m060": {
     "matchId": "m060",
-    "status": "scheduled",
+    "status": "live",
     "manualLock": false,
     "homeFormation": {
       "shape": "3-4-2-1",
@@ -28628,11 +28628,15 @@
           "name": "ナウエル・モリーナ"
         }
       ]
+    },
+    "score": {
+      "home": 0,
+      "away": 0
     }
   },
   "m059": {
     "matchId": "m059",
-    "status": "scheduled",
+    "status": "live",
     "manualLock": false,
     "homeFormation": {
       "shape": "4-2-3-1",
@@ -28923,6 +28927,10 @@
           "name": "アレッサンドロ・シェプフ"
         }
       ]
+    },
+    "score": {
+      "home": 0,
+      "away": 0
     }
   },
   "m073": {
