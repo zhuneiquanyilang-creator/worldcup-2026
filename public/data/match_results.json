@@ -28666,6 +28666,44 @@
         "teamId": "JOR",
         "playerName": "モハナド・アブ・タハ",
         "type": "Y"
+      },
+      {
+        "minute": 64,
+        "teamId": "JOR",
+        "playerName": "ヤザン・アル・アラブ",
+        "type": "Y"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": 46,
+        "teamId": "JOR",
+        "inName": "マフムード・アル・マルディ",
+        "outName": "アリ・アザイゼ"
+      },
+      {
+        "minute": 46,
+        "teamId": "JOR",
+        "inName": "ムサ・アル・タアマリ",
+        "outName": "オデ・アル・ファフリ"
+      },
+      {
+        "minute": 60,
+        "teamId": "ARG",
+        "inName": "アレクシス・マク・アリスター",
+        "outName": "ニコ・パス"
+      },
+      {
+        "minute": 60,
+        "teamId": "ARG",
+        "inName": "ティアゴ・アルマーダ",
+        "outName": "ジオバニ・ロ・チェルソ"
+      },
+      {
+        "minute": 60,
+        "teamId": "ARG",
+        "inName": "リオネル・メッシ",
+        "outName": "ラウタロ・マルティネス"
       }
     ]
   },
