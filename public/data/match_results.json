@@ -27868,6 +27868,18 @@
         "teamId": "POR",
         "inName": "サムエル・コスタ",
         "outName": "ヴィティーニャ"
+      },
+      {
+        "minute": 76,
+        "teamId": "COL",
+        "inName": "ケビン・カスターニョ",
+        "outName": "ジョン・アリアス"
+      },
+      {
+        "minute": 76,
+        "teamId": "COL",
+        "inName": "フアン・キンテーロ",
+        "outName": "ハメス・ロドリゲス"
       }
     ]
   },
