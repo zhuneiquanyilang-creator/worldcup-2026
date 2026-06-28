@@ -29497,6 +29497,18 @@
         "teamId": "CAN",
         "inName": "ニコ・シグル",
         "outName": "ネイサン・サリバ"
+      },
+      {
+        "minute": 71,
+        "teamId": "CAN",
+        "inName": "ジェイコブ・シャッフェルバーグ",
+        "outName": "リアム・ミラー"
+      },
+      {
+        "minute": 71,
+        "teamId": "CAN",
+        "inName": "プロミス・デイヴィッド",
+        "outName": "タニ・オルワセイ"
       }
     ]
   },
