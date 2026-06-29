@@ -29851,6 +29851,15 @@
         "playerName": "カゼミーロ",
         "type": "Y"
       }
+    ],
+    "goals": [
+      {
+        "minute": 29,
+        "teamId": "JPN",
+        "type": "normal",
+        "playerId": "p_jpn_16",
+        "playerName": "佐野 海舟"
+      }
     ]
   },
   "m074": {
