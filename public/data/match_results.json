@@ -30320,6 +30320,18 @@
         "teamId": "PAR",
         "inName": "ビクトル・グスタボ・ベラスケス",
         "outName": "ミゲル・アルミロン"
+      },
+      {
+        "minute": 99,
+        "teamId": "PAR",
+        "inName": "アントニオ・サナブリア",
+        "outName": "ダミアン・ボバディジャ"
+      },
+      {
+        "minute": 99,
+        "teamId": "PAR",
+        "inName": "ブライアン・オヘダ",
+        "outName": "フアン・カセレス"
       }
     ],
     "bookings": [
