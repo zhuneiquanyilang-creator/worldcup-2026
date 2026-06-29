@@ -29963,7 +29963,7 @@
   "m074": {
     "matchId": "m074",
     "status": "live",
-    "manualLock": true,
+    "manualLock": false,
     "homeFormation": {
       "shape": "4-2-3-1",
       "starting": [
@@ -30363,7 +30363,81 @@
     "penaltyScore": {
       "home": 2,
       "away": 2
-    }
+    },
+    "penaltyShootout": [
+      {
+        "teamId": "GER",
+        "result": "missed",
+        "playerId": "p_ger_23",
+        "playerName": "カイ・ハヴァーツ"
+      },
+      {
+        "teamId": "PAR",
+        "result": "scored",
+        "playerId": "p_par_16",
+        "playerName": "マウリシオ・マガリャエス・プラド"
+      },
+      {
+        "teamId": "GER",
+        "result": "scored",
+        "playerId": "p_ger_11",
+        "playerName": "ヨズア・キミッヒ"
+      },
+      {
+        "teamId": "PAR",
+        "result": "scored",
+        "playerId": "p_par_7",
+        "playerName": "グスタボ・ゴメス"
+      },
+      {
+        "teamId": "GER",
+        "result": "scored",
+        "playerId": "p_ger_20",
+        "playerName": "ジャマル・ムシアラ"
+      },
+      {
+        "teamId": "PAR",
+        "result": "scored",
+        "playerId": "p_par_15",
+        "playerName": "マティアス・ガラルサ"
+      },
+      {
+        "teamId": "GER",
+        "result": "missed",
+        "playerId": "p_ger_24",
+        "playerName": "ニック・ヴォルテマーデ"
+      },
+      {
+        "teamId": "PAR",
+        "result": "missed",
+        "playerId": "p_par_19",
+        "playerName": "アントニオ・サナブリア"
+      },
+      {
+        "teamId": "GER",
+        "result": "scored",
+        "playerId": "p_ger_16",
+        "playerName": "ナディエム・アミリ"
+      },
+      {
+        "teamId": "PAR",
+        "result": "missed",
+        "playerId": "p_par_9",
+        "playerName": "ファビアン・バルブエナ"
+      },
+      {
+        "teamId": "GER",
+        "result": "missed",
+        "playerId": "p_ger_10",
+        "playerName": "ヨナタン・ター"
+      },
+      {
+        "teamId": "PAR",
+        "result": "scored",
+        "playerId": "p_par_6",
+        "playerName": "ホセ・カナレ"
+      }
+    ]
   },
   "m075": {
     "matchId": "m075",
