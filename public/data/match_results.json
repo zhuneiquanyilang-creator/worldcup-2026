@@ -29888,6 +29888,24 @@
         "teamId": "BRA",
         "inName": "エンドリッキ",
         "outName": "ルーカス・パケタ"
+      },
+      {
+        "minute": 66,
+        "teamId": "BRA",
+        "inName": "ガブリエウ・マルティネッリ",
+        "outName": "マテウス・クーニャ"
+      },
+      {
+        "minute": 66,
+        "teamId": "JPN",
+        "inName": "菅原 由勢",
+        "outName": "堂安 律"
+      },
+      {
+        "minute": 66,
+        "teamId": "JPN",
+        "inName": "中村 敬斗",
+        "outName": "鈴木 淳之介"
       }
     ]
   },
