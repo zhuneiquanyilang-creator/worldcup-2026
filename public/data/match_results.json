@@ -29543,7 +29543,7 @@
   },
   "m076": {
     "matchId": "m076",
-    "status": "scheduled",
+    "status": "live",
     "manualLock": false,
     "homeFormation": {
       "shape": "4-3-3",
@@ -29833,6 +29833,10 @@
           "name": "塩貝 健斗"
         }
       ]
+    },
+    "score": {
+      "home": 0,
+      "away": 0
     }
   },
   "m074": {
