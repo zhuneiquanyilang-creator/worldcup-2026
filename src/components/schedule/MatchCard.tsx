@@ -8,6 +8,7 @@ import { matchNumber } from "@/utils/matchNumber";
 import { isLive } from "@/utils/matchTiming";
 import { TeamLink } from "@/components/common/TeamLink";
 import { LiveBadge } from "@/components/common/LiveBadge";
+import { liveBadgeLabel } from "@/utils/liveLabel";
 import { BroadcasterList } from "@/components/common/BroadcasterBadge";
 import styles from "./MatchCard.module.css";
 
@@ -62,7 +63,7 @@ export function MatchCard({ match, teamMap }: Props) {
             (match.note ? (
               <LiveBadge label={match.note} variant="suspended" />
             ) : (
-              <LiveBadge label="LIVE" />
+              <LiveBadge label={liveBadgeLabel(match.liveLabel)} />
             ))}
         </span>
         <span className={styles.time}>{formatTime(match.date)} KO</span>

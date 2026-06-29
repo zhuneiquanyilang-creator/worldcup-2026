@@ -7,6 +7,7 @@ import { matchNumber } from "@/utils/matchNumber";
 import { isLive } from "@/utils/matchTiming";
 import { Flag } from "@/components/common/Flag";
 import { LiveBadge } from "@/components/common/LiveBadge";
+import { liveBadgeLabel } from "@/utils/liveLabel";
 import styles from "./ScoreBoard.module.css";
 
 type Props = {
@@ -36,7 +37,7 @@ export function ScoreBoard({ match, homeTeam, awayTeam }: Props) {
           (match.note ? (
             <LiveBadge label={match.note} variant="suspended" />
           ) : (
-            <LiveBadge label="LIVE" />
+            <LiveBadge label={liveBadgeLabel(match.liveLabel)} />
           ))}
         <span>{formatDateJa(match.date)} {formatTime(match.date)} KO</span>
         <span>{match.venue}</span>

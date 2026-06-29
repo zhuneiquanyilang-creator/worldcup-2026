@@ -7,6 +7,7 @@ import { formatDateJa } from "@/utils/date";
 import { isLive } from "@/utils/matchTiming";
 import { TeamLink } from "@/components/common/TeamLink";
 import { LiveBadge } from "@/components/common/LiveBadge";
+import { liveBadgeLabel } from "@/utils/liveLabel";
 import styles from "./BracketMatch.module.css";
 
 type Props = {
@@ -49,7 +50,7 @@ export function BracketMatch({ match, teamMap }: Props) {
               className={styles.liveBadge}
             />
           ) : (
-            <LiveBadge label="LIVE" className={styles.liveBadge} />
+            <LiveBadge label={liveBadgeLabel(match.liveLabel)} className={styles.liveBadge} />
           ))}
         <span className={styles.date}>{formatDateJa(match.date)}</span>
       </div>
