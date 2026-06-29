@@ -30361,8 +30361,8 @@
       }
     ],
     "penaltyScore": {
-      "home": 1,
-      "away": 1
+      "home": 3,
+      "away": 4
     },
     "penaltyShootout": [
       {
