@@ -29837,7 +29837,21 @@
     "score": {
       "home": 0,
       "away": 0
-    }
+    },
+    "bookings": [
+      {
+        "minute": 12,
+        "teamId": "JPN",
+        "playerName": "佐野 海舟",
+        "type": "Y"
+      },
+      {
+        "minute": 14,
+        "teamId": "BRA",
+        "playerName": "カゼミーロ",
+        "type": "Y"
+      }
+    ]
   },
   "m074": {
     "matchId": "m074",
