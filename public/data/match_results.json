@@ -30302,6 +30302,20 @@
         "teamId": "GER",
         "inName": "ジャマル・ムシアラ",
         "outName": "デニズ・ウンダフ"
+      },
+      {
+        "minute": 79,
+        "teamId": "GER",
+        "inName": "ヴァルデマール・アントン",
+        "outName": "アレクサンダル・パヴロビッチ"
+      }
+    ],
+    "bookings": [
+      {
+        "minute": 65,
+        "teamId": "PAR",
+        "playerName": "アンドレス・クバス",
+        "type": "Y"
       }
     ]
   },
