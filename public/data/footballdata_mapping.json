@@ -1,6 +1,6 @@
 {
   "competition": "WC",
-  "generatedAt": "2026-06-12T03:04:33.427Z",
+  "generatedAt": "2026-06-29T18:03:04.299Z",
   "mapping": {
     "m001": {
       "fdMatchId": 537327,
@@ -364,87 +364,87 @@
     },
     "m073": {
       "fdMatchId": 537417,
-      "fdHomeTeamId": null,
-      "fdAwayTeamId": null
+      "fdHomeTeamId": 774,
+      "fdAwayTeamId": 828
     },
     "m076": {
       "fdMatchId": 537423,
-      "fdHomeTeamId": null,
-      "fdAwayTeamId": null
+      "fdHomeTeamId": 764,
+      "fdAwayTeamId": 766
     },
     "m074": {
       "fdMatchId": 537415,
-      "fdHomeTeamId": null,
-      "fdAwayTeamId": null
+      "fdHomeTeamId": 759,
+      "fdAwayTeamId": 761
     },
     "m075": {
       "fdMatchId": 537418,
-      "fdHomeTeamId": null,
-      "fdAwayTeamId": null
+      "fdHomeTeamId": 8601,
+      "fdAwayTeamId": 815
     },
     "m078": {
       "fdMatchId": 537424,
-      "fdHomeTeamId": null,
-      "fdAwayTeamId": null
+      "fdHomeTeamId": 1935,
+      "fdAwayTeamId": 8872
     },
     "m077": {
       "fdMatchId": 537416,
-      "fdHomeTeamId": null,
-      "fdAwayTeamId": null
+      "fdHomeTeamId": 773,
+      "fdAwayTeamId": 792
     },
     "m079": {
       "fdMatchId": 537425,
-      "fdHomeTeamId": null,
-      "fdAwayTeamId": null
+      "fdHomeTeamId": 769,
+      "fdAwayTeamId": 791
     },
     "m080": {
       "fdMatchId": 537426,
-      "fdHomeTeamId": null,
-      "fdAwayTeamId": null
+      "fdHomeTeamId": 770,
+      "fdAwayTeamId": 1934
     },
     "m082": {
       "fdMatchId": 537422,
-      "fdHomeTeamId": null,
-      "fdAwayTeamId": null
+      "fdHomeTeamId": 805,
+      "fdAwayTeamId": 804
     },
     "m081": {
       "fdMatchId": 537421,
-      "fdHomeTeamId": null,
-      "fdAwayTeamId": null
+      "fdHomeTeamId": 771,
+      "fdAwayTeamId": 1060
     },
     "m084": {
       "fdMatchId": 537420,
-      "fdHomeTeamId": null,
-      "fdAwayTeamId": null
+      "fdHomeTeamId": 760,
+      "fdAwayTeamId": 816
     },
     "m083": {
       "fdMatchId": 537419,
-      "fdHomeTeamId": null,
-      "fdAwayTeamId": null
+      "fdHomeTeamId": 765,
+      "fdAwayTeamId": 799
     },
     "m085": {
       "fdMatchId": 537429,
-      "fdHomeTeamId": null,
-      "fdAwayTeamId": null
+      "fdHomeTeamId": 788,
+      "fdAwayTeamId": 778
     },
     "m088": {
       "fdMatchId": 537428,
-      "fdHomeTeamId": null,
-      "fdAwayTeamId": null
+      "fdHomeTeamId": 779,
+      "fdAwayTeamId": 825
     },
     "m086": {
       "fdMatchId": 537427,
-      "fdHomeTeamId": null,
-      "fdAwayTeamId": null
+      "fdHomeTeamId": 762,
+      "fdAwayTeamId": 1930
     },
     "m087": {
       "fdMatchId": 537430,
-      "fdHomeTeamId": null,
-      "fdAwayTeamId": null
+      "fdHomeTeamId": 818,
+      "fdAwayTeamId": 763
     },
     "m089": {
       "fdMatchId": 537376,
-      "fdHomeTeamId": null,
+      "fdHomeTeamId": 828,
       "fdAwayTeamId": null
     },
     "m090": {

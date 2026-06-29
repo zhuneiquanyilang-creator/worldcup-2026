@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams, useSearchParams } from "react-router-dom";
 import { useTeams } from "@/hooks/useTeams";
 import { useTeamDetailMap } from "@/hooks/useTeamDetails";
 import { TeamProfile } from "@/components/teams/TeamProfile";
@@ -12,12 +11,29 @@ import styles from "./TeamDetailPage.module.css";
 
 type Tab = "detail" | "roster" | "results";
 
+const TAB_VALUES: Tab[] = ["detail", "roster", "results"];
+
 export function TeamDetailPage() {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const teamsRes = useTeams();
   const detailsRes = useTeamDetailMap();
-  const [tab, setTab] = useState<Tab>("detail");
+  // タブ選択を URL クエリ (?tab=roster) で保持。
+  // 選手詳細などへ遷移したあと「← 戻る」で履歴を一つ戻ると、ブラウザが
+  // クエリ付き URL を復元するため、開いていたタブに自動復帰する。
+  // 直接 URL を開いたとき / クエリ無しのときは "detail" を既定。
+  const [params, setParams] = useSearchParams();
+  const rawTab = params.get("tab");
+  const tab: Tab = TAB_VALUES.includes(rawTab as Tab)
+    ? (rawTab as Tab)
+    : "detail";
+  const setTab = (next: Tab) => {
+    const p = new URLSearchParams(params);
+    if (next === "detail") p.delete("tab");
+    else p.set("tab", next);
+    // replace: true で履歴を増やさない (タブ切替は 1 ページ内の遷移として扱う)
+    setParams(p, { replace: true });
+  };
   // 履歴を 1 つ戻す。前のページ (順位表のグループ C / 試合詳細のフォーメーション
   // タブ等) の URL クエリ状態も復元される。
   // 履歴が空の場合 (= 直接 URL で開いた等) は /standings にフォールバック。
