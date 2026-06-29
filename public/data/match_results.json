@@ -29871,6 +29871,15 @@
         "type": "normal",
         "playerId": "p_jpn_16",
         "playerName": "佐野 海舟"
+      },
+      {
+        "minute": 56,
+        "teamId": "BRA",
+        "type": "normal",
+        "playerId": "p_bra_17",
+        "playerName": "カゼミーロ",
+        "assistPlayerId": "p_bra_12",
+        "assistPlayerName": "ガブリエウ・マガリャンイス"
       }
     ],
     "substitutions": [
