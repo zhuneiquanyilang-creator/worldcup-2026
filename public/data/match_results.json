@@ -30256,7 +30256,7 @@
     },
     "score": {
       "home": 2,
-      "away": 2
+      "away": 3
     },
     "goals": [
       {
@@ -30361,8 +30361,8 @@
       }
     ],
     "penaltyScore": {
-      "home": 1,
-      "away": 1
+      "home": 2,
+      "away": 2
     }
   },
   "m075": {
