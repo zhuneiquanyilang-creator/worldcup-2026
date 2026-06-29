@@ -29378,7 +29378,8 @@
           "number": 7,
           "name": "スティーヴン・エウスタキオ",
           "role": "MF",
-          "isCaptain": true
+          "isCaptain": true,
+          "isMvp": true
         },
         {
           "x": 54,
