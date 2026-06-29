@@ -30282,6 +30282,12 @@
         "teamId": "GER",
         "inName": "レオン・ゴレツカ",
         "outName": "フェリックス・ヌメチャ"
+      },
+      {
+        "minute": 56,
+        "teamId": "PAR",
+        "inName": "グスタボ・カバジェロ",
+        "outName": "ガブリエル・アバロス"
       }
     ]
   },
