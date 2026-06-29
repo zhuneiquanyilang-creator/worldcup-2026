@@ -29962,8 +29962,8 @@
   },
   "m074": {
     "matchId": "m074",
-    "status": "live",
-    "manualLock": false,
+    "status": "scheduled",
+    "manualLock": true,
     "homeFormation": {
       "shape": "4-2-3-1",
       "starting": [
@@ -30255,8 +30255,8 @@
       ]
     },
     "score": {
-      "home": 4,
-      "away": 5
+      "home": 5,
+      "away": 6
     },
     "goals": [
       {
@@ -30361,7 +30361,7 @@
       }
     ],
     "penaltyScore": {
-      "home": 4,
+      "home": 3,
       "away": 4
     },
     "penaltyShootout": [
