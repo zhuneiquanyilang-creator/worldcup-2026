@@ -29850,6 +29850,12 @@
         "teamId": "BRA",
         "playerName": "カゼミーロ",
         "type": "Y"
+      },
+      {
+        "minute": 45,
+        "teamId": "JPN",
+        "playerName": "鎌田 大地",
+        "type": "Y"
       }
     ],
     "goals": [
