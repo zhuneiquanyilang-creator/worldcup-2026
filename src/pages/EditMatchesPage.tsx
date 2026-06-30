@@ -578,7 +578,19 @@ function toUpdate(
   const pks = e.penaltyShootout
     .map((d) => draftToPk(d, playerMap))
     .filter((a): a is PkAttempt => a !== null);
-  if (pks.length > 0) u.penaltyShootout = pks;
+  if (pks.length > 0) {
+    u.penaltyShootout = pks;
+    // PK スコアは attempts (蹴ったキッカー × scored/missed) から自動算出し、
+    // 行内の手動 PK 入力欄 (pkHome/pkAway) より優先する。manualLock 不要 —
+    // shootout 詳細を入力していれば集計は自動なので、その値を必ず保存する。
+    const homeScored = pks.filter(
+      (p) => p.teamId === match.homeTeamId && p.result === "scored"
+    ).length;
+    const awayScored = pks.filter(
+      (p) => p.teamId === match.awayTeamId && p.result === "scored"
+    ).length;
+    u.penaltyScore = { home: homeScored, away: awayScored };
+  }
 
   const p = e.passthrough;
   if (p.liveLabel !== undefined) u.liveLabel = p.liveLabel;
@@ -691,6 +703,12 @@ export function EditMatchesPage() {
   // 触らない (Football-Data の無料枠はそもそも返さない、保護フィールド)。
   // 既に手動で matchEdits に保存していれば manual レイヤーが file に勝つので、
   // 確定済みの値は GitHub Actions に上書きされない。
+  //
+  // 例外: manualLock=true の試合は auto-sync をスキップして手動編集値を保護する。
+  // 理由: 古い matchEdits.status (例 "scheduled") が manual レイヤーとして残ったまま
+  // file.status="finished" を上書きすると、ユーザーがドロップダウンで "finished" に
+  // 変更してリロードしても矛盾値で逆戻り表示される問題があった。manualLock=true は
+  // 「手動値を最優先する」明示シグナルなので、auto-sync はそれを尊重する。
   useEffect(() => {
     if (matchesRes.status !== "ready") return;
     setEdits((prev) => {
@@ -699,6 +717,7 @@ export function EditMatchesPage() {
       for (const m of matchesRes.data) {
         const cur = next[m.id];
         if (!cur) continue;
+        if (cur.manualLock) continue; // manualLock=true は手動値を保護
         const inStatus = (m.status ?? "") as MatchStatus | "";
         const inScoreH = m.score ? String(m.score.home) : "";
         const inScoreA = m.score ? String(m.score.away) : "";
@@ -1163,29 +1182,65 @@ export function EditMatchesPage() {
                     </td>
                     <td className={styles.scoreCell}>
                       {isKo ? (
-                        <>
-                          <input
-                            type="number"
-                            className={styles.numInput}
-                            value={e.pkHome}
-                            onChange={(ev) =>
-                              updateEdit(m.id, { pkHome: ev.target.value })
-                            }
-                            min={0}
-                            aria-label="PK home"
-                          />
-                          <span className={styles.dash}>-</span>
-                          <input
-                            type="number"
-                            className={styles.numInput}
-                            value={e.pkAway}
-                            onChange={(ev) =>
-                              updateEdit(m.id, { pkAway: ev.target.value })
-                            }
-                            min={0}
-                            aria-label="PK away"
-                          />
-                        </>
+                        (() => {
+                          // PK shootout に蹴順入力があれば、その scored 集計で
+                          // PK スコアを自動表示し、手動入力欄は無効化。
+                          // shootout が空のときだけ手動入力が編集可能。
+                          const hasShootout = e.penaltyShootout.length > 0;
+                          const derivedHome = e.penaltyShootout.filter(
+                            (p) =>
+                              p.teamId === m.homeTeamId && p.result === "scored"
+                          ).length;
+                          const derivedAway = e.penaltyShootout.filter(
+                            (p) =>
+                              p.teamId === m.awayTeamId && p.result === "scored"
+                          ).length;
+                          return (
+                            <>
+                              <input
+                                type="number"
+                                className={styles.numInput}
+                                value={
+                                  hasShootout ? String(derivedHome) : e.pkHome
+                                }
+                                onChange={(ev) =>
+                                  updateEdit(m.id, {
+                                    pkHome: ev.target.value,
+                                  })
+                                }
+                                min={0}
+                                disabled={hasShootout}
+                                title={
+                                  hasShootout
+                                    ? "PK 蹴順入力から自動算出 (下の編集フォームから変更)"
+                                    : undefined
+                                }
+                                aria-label="PK home"
+                              />
+                              <span className={styles.dash}>-</span>
+                              <input
+                                type="number"
+                                className={styles.numInput}
+                                value={
+                                  hasShootout ? String(derivedAway) : e.pkAway
+                                }
+                                onChange={(ev) =>
+                                  updateEdit(m.id, {
+                                    pkAway: ev.target.value,
+                                  })
+                                }
+                                min={0}
+                                disabled={hasShootout}
+                                title={
+                                  hasShootout
+                                    ? "PK 蹴順入力から自動算出 (下の編集フォームから変更)"
+                                    : undefined
+                                }
+                                aria-label="PK away"
+                              />
+                            </>
+                          );
+                        })()
                       ) : (
                         <span className={styles.pkNa}>—</span>
                       )}
