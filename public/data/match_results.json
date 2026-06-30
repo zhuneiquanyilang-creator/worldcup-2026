@@ -31237,6 +31237,18 @@
         "teamId": "CIV",
         "inName": "エリー・ワイ",
         "outName": "アンジェ・ヨアン・ボニー"
+      },
+      {
+        "minute": 71,
+        "teamId": "NOR",
+        "inName": "アンドレアス・レーデルゴール・シェルデルップ",
+        "outName": "アレクサンデル・セルロート"
+      },
+      {
+        "minute": 71,
+        "teamId": "NOR",
+        "inName": "オスカー・ボブ",
+        "outName": "アントニオ・ヌサ"
       }
     ]
   },
