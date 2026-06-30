@@ -31214,6 +31214,15 @@
         "playerName": "アントニオ・ヌサ",
         "assistPlayerId": "p_nor_23",
         "assistPlayerName": "マルティン・ウーデゴール"
+      },
+      {
+        "minute": 74,
+        "teamId": "CIV",
+        "type": "normal",
+        "playerId": "p_civ_19",
+        "playerName": "アマド・ディアロ",
+        "assistPlayerId": "p_civ_18",
+        "assistPlayerName": "ニコラ・ペペ"
       }
     ],
     "bookings": [
