@@ -31638,6 +31638,18 @@
         "teamId": "SWE",
         "inName": "タハ・アリ",
         "outName": "エリオット・ストラウド"
+      },
+      {
+        "minute": 76,
+        "teamId": "FRA",
+        "inName": "デジレ・ドゥエ",
+        "outName": "ウスマン・デンベレ"
+      },
+      {
+        "minute": 76,
+        "teamId": "FRA",
+        "inName": "マロ・ギュスト",
+        "outName": "ジュール・クンデ"
       }
     ]
   },
