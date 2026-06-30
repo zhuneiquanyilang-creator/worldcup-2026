@@ -86,11 +86,74 @@ type PkDraft = {
 };
 
 /** 編集 UI が直接扱わないフィールド。save 時にそのまま LiveUpdate に書き戻して
- *  巻き込み消去を防ぐ。現状は liveLabel / stats のみ。 */
-type Passthrough = Pick<LiveUpdate, "liveLabel" | "stats">;
+ *  巻き込み消去を防ぐ。現状は stats のみ (liveLabel は Phase に統合済み)。 */
+type Passthrough = Pick<LiveUpdate, "stats">;
+
+/** 状態ドロップダウンで選べるフェーズ。
+ *  "" = 未設定 (status / liveLabel どちらも書き込まない)
+ *  "scheduled" / "finished" = status のみ書き込み
+ *  "first-half" / "halftime" / "second-half" / "extra-time" = status="live" + 対応する
+ *    liveLabel を書き込む。liveLabel は MatchEvents の ハーフタイム / 後半終了 divider
+ *    のトリガーに使われる。 */
+type Phase =
+  | ""
+  | "scheduled"
+  | "first-half"
+  | "halftime"
+  | "second-half"
+  | "extra-time"
+  | "finished";
+
+/** Phase → (status, liveLabel) を返す。"" のときは両方 undefined。 */
+function phaseToStatusLabel(phase: Phase): {
+  status?: MatchStatus;
+  liveLabel?: string;
+} {
+  switch (phase) {
+    case "scheduled":
+      return { status: "scheduled" };
+    case "first-half":
+      return { status: "live", liveLabel: "1st half" };
+    case "halftime":
+      return { status: "live", liveLabel: "Halftime" };
+    case "second-half":
+      return { status: "live", liveLabel: "2nd half" };
+    case "extra-time":
+      return { status: "live", liveLabel: "Extra time 1st" };
+    case "finished":
+      return { status: "finished", liveLabel: "Full time" };
+    case "":
+    default:
+      return {};
+  }
+}
+
+/** (status, liveLabel) → Phase に推定。
+ *  status="live" の場合 liveLabel の中身で前半/HT/後半/延長戦に振り分け。
+ *  どれにも合致しない場合は "first-half" を既定として扱う。 */
+function inferPhase(
+  status: MatchStatus | undefined,
+  liveLabel: string | undefined
+): Phase {
+  if (status === "scheduled") return "scheduled";
+  if (status === "finished") return "finished";
+  if (status === "live") {
+    const ll = (liveLabel ?? "").toLowerCase();
+    if (ll.includes("halftime") || ll.includes("half time")) return "halftime";
+    if (ll.includes("extra time") || ll.includes("penalty"))
+      return "extra-time";
+    if (ll.includes("2nd half") || ll.includes("second half"))
+      return "second-half";
+    if (ll.includes("1st half") || ll.includes("first half"))
+      return "first-half";
+    return "first-half";
+  }
+  return "";
+}
 
 type Editable = {
-  status: MatchStatus | "";
+  /** 状態ドロップダウンが選んだ Phase。save 時に status + liveLabel に展開される。 */
+  status: Phase;
   scoreHome: string;
   scoreAway: string;
   pkHome: string;
@@ -484,10 +547,10 @@ function fromUpdate(
   const e = freshEditable();
   if (!u) return e;
 
-  if (u.liveLabel !== undefined) e.passthrough.liveLabel = u.liveLabel;
   if (u.stats) e.passthrough.stats = u.stats;
 
-  e.status = u.status ?? "";
+  // (status, liveLabel) → Phase に逆算してドロップダウンの選択値とする
+  e.status = inferPhase(u.status, u.liveLabel);
   e.scoreHome = u.score ? String(u.score.home) : "";
   e.scoreAway = u.score ? String(u.score.away) : "";
   e.pkHome = u.penaltyScore ? String(u.penaltyScore.home) : "";
@@ -525,7 +588,10 @@ function toUpdate(
   // (2026-06-28: m001/m002/m007/m072 等で finished/live ⇄ scheduled が
   // 繰り返し書き戻される事故があった。原因はこの分岐がなかったこと)
   if (e.manualLock) {
-    if (e.status) u.status = e.status;
+    // Phase → (status, liveLabel) に展開。phase="" のときは両方とも未指定。
+    const { status, liveLabel } = phaseToStatusLabel(e.status);
+    if (status) u.status = status;
+    if (liveLabel !== undefined) u.liveLabel = liveLabel;
     if (e.scoreHome !== "" && e.scoreAway !== "") {
       const h = Number(e.scoreHome);
       const a = Number(e.scoreAway);
@@ -593,7 +659,6 @@ function toUpdate(
   }
 
   const p = e.passthrough;
-  if (p.liveLabel !== undefined) u.liveLabel = p.liveLabel;
   if (p.stats) u.stats = p.stats;
 
   if (
@@ -718,13 +783,14 @@ export function EditMatchesPage() {
         const cur = next[m.id];
         if (!cur) continue;
         if (cur.manualLock) continue; // manualLock=true は手動値を保護
-        const inStatus = (m.status ?? "") as MatchStatus | "";
+        // (status, liveLabel) から Phase を逆算して比較・反映する
+        const inPhase = inferPhase(m.status, m.liveLabel);
         const inScoreH = m.score ? String(m.score.home) : "";
         const inScoreA = m.score ? String(m.score.away) : "";
         const inPkH = m.penaltyScore ? String(m.penaltyScore.home) : "";
         const inPkA = m.penaltyScore ? String(m.penaltyScore.away) : "";
         if (
-          cur.status === inStatus &&
+          cur.status === inPhase &&
           cur.scoreHome === inScoreH &&
           cur.scoreAway === inScoreA &&
           cur.pkHome === inPkH &&
@@ -733,7 +799,7 @@ export function EditMatchesPage() {
           continue;
         next[m.id] = {
           ...cur,
-          status: inStatus,
+          status: inPhase,
           scoreHome: inScoreH,
           scoreAway: inScoreA,
           pkHome: inPkH,
@@ -1277,11 +1343,14 @@ export function EditMatchesPage() {
                             status: ev.target.value as Editable["status"],
                           })
                         }
-                        aria-label={`${m.id} の試合ステータス`}
+                        aria-label={`${m.id} の試合フェーズ`}
                       >
                         <option value="">(未設定)</option>
                         <option value="scheduled">scheduled</option>
-                        <option value="live">live</option>
+                        <option value="first-half">前半</option>
+                        <option value="halftime">ハーフタイム</option>
+                        <option value="second-half">後半</option>
+                        <option value="extra-time">延長戦</option>
                         <option value="finished">finished</option>
                       </select>
                     </td>

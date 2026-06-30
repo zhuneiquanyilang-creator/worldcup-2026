@@ -287,10 +287,22 @@ export function PlayerDetailPage() {
                         {a.minutes > 0 ? a.minutes : "—"}
                       </td>
                       <td className={a.goals > 0 ? styles.statG : styles.statZero}>
-                        {a.goals > 0 ? a.goals : "—"}
+                        {a.goals > 0
+                          ? Array.from({ length: a.goals }, (_, i) => (
+                              <span key={i} className={styles.goalIcon}>
+                                ⚽
+                              </span>
+                            ))
+                          : "—"}
                       </td>
                       <td className={a.assists > 0 ? styles.statG : styles.statZero}>
-                        {a.assists > 0 ? a.assists : "—"}
+                        {a.assists > 0
+                          ? Array.from({ length: a.assists }, (_, i) => (
+                              <span key={i} className={styles.assistIcon}>
+                                Ⓐ
+                              </span>
+                            ))
+                          : "—"}
                       </td>
                       <td className={styles.cardsCell}>
                         {a.bookings.length === 0

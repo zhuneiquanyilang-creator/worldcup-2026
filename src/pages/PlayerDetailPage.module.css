@@ -260,6 +260,24 @@
   color: var(--color-text-muted);
 }
 
+/* ゴール (⚽) を 1 ゴール = 1 アイコンで並べる。複数ゴール時は横並び */
+.goalIcon {
+  display: inline-block;
+  font-size: 1rem;
+  line-height: 1;
+  margin: 0 1px;
+}
+
+/* アシスト (Ⓐ) を 1 アシスト = 1 アイコンで並べる */
+.assistIcon {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--color-primary);
+  margin: 0 1px;
+}
+
 .cardsCell {
   display: flex;
   gap: 0.3rem;
