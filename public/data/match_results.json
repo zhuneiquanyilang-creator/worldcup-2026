@@ -31200,7 +31200,18 @@
     "score": {
       "home": 0,
       "away": 0
-    }
+    },
+    "goals": [
+      {
+        "minute": 39,
+        "teamId": "NOR",
+        "type": "normal",
+        "playerId": "p_nor_20",
+        "playerName": "アントニオ・ヌサ",
+        "assistPlayerId": "p_nor_23",
+        "assistPlayerName": "マルティン・ウーデゴール"
+      }
+    ]
   },
   "m077": {
     "matchId": "m077",
