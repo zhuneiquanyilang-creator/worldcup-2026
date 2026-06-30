@@ -30442,7 +30442,8 @@
         "playerId": "p_par_6",
         "playerName": "ホセ・カナレ"
       }
-    ]
+    ],
+    "liveLabel": "Full time"
   },
   "m075": {
     "matchId": "m075",
@@ -30905,7 +30906,8 @@
         "assistPlayerId": "p_mar_22",
         "assistPlayerName": "ケムスディン・タルビ"
       }
-    ]
+    ],
+    "liveLabel": "Full time"
   },
   "m078": {
     "matchId": "m078",
@@ -31300,7 +31302,7 @@
   "m077": {
     "matchId": "m077",
     "status": "live",
-    "manualLock": true,
+    "manualLock": false,
     "homeFormation": {
       "shape": "4-2-3-1",
       "starting": [
