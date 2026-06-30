@@ -30880,6 +30880,27 @@
         "playerId": "p_mar_13",
         "playerName": "イスマエル・サイバリ"
       }
+    ],
+    "goals": [
+      {
+        "minute": 72,
+        "teamId": "NED",
+        "type": "normal",
+        "playerId": "p_ned_19",
+        "playerName": "コーディ・ガクポ",
+        "assistPlayerId": "p_ned_22",
+        "assistPlayerName": "クリセンシオ・サマーフィル"
+      },
+      {
+        "minute": 90,
+        "teamId": "MAR",
+        "type": "normal",
+        "addedTime": 1,
+        "playerId": "p_mar_8",
+        "playerName": "イッサ・ディオプ",
+        "assistPlayerId": "p_mar_22",
+        "assistPlayerName": "ケムスディン・タルビ"
+      }
     ]
   },
   "m078": {
