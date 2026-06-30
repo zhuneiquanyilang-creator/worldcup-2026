@@ -31668,6 +31668,18 @@
         "teamId": "SWE",
         "inName": "ベンジャミン・ニグレン",
         "outName": "ヤシン・アヤリ"
+      },
+      {
+        "minute": 85,
+        "teamId": "FRA",
+        "inName": "ラヤン・シェルキ",
+        "outName": "キリアン・エンバペ"
+      },
+      {
+        "minute": 85,
+        "teamId": "FRA",
+        "inName": "ジャン・フィリップ・マテタ",
+        "outName": "マイケル・オリーセ"
       }
     ]
   },
