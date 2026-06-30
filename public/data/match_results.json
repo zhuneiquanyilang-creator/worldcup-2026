@@ -31594,7 +31594,18 @@
     "score": {
       "home": 1,
       "away": 0
-    }
+    },
+    "goals": [
+      {
+        "minute": 45,
+        "teamId": "FRA",
+        "type": "normal",
+        "playerId": "p_fra_18",
+        "playerName": "キリアン・エンバペ",
+        "assistPlayerId": "p_fra_23",
+        "assistPlayerName": "ウスマン・デンベレ"
+      }
+    ]
   },
   "m079": {
     "matchId": "m079",
