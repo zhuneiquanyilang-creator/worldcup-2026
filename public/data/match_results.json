@@ -30612,7 +30612,8 @@
           "y": 37.5,
           "number": 14,
           "name": "イッサ・ディオプ",
-          "role": "DF"
+          "role": "DF",
+          "isMvp": true
         },
         {
           "x": 28,
@@ -30741,7 +30742,145 @@
     "penaltyScore": {
       "home": 2,
       "away": 3
-    }
+    },
+    "bookings": [
+      {
+        "minute": 47,
+        "teamId": "MAR",
+        "playerName": "イッサ・ディオプ",
+        "type": "Y"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": 71,
+        "teamId": "NED",
+        "inName": "トゥーン・コープマイネルス",
+        "outName": "ナタン・アケ"
+      },
+      {
+        "minute": 71,
+        "teamId": "NED",
+        "inName": "ワウト・ヴェフホルスト",
+        "outName": "ブライアン・ブロビー"
+      },
+      {
+        "minute": 75,
+        "teamId": "MAR",
+        "inName": "アナス・サラー・エディン",
+        "outName": "シャディ・リアド"
+      },
+      {
+        "minute": 79,
+        "teamId": "MAR",
+        "inName": "サミル・エル・ムラベ",
+        "outName": "アイユーブ・ブアディ"
+      },
+      {
+        "minute": 79,
+        "teamId": "MAR",
+        "inName": "ジェシム・ヤシン",
+        "outName": "ブライム・ディアス"
+      },
+      {
+        "minute": 86,
+        "teamId": "NED",
+        "inName": "ヨレル・ハト",
+        "outName": "ライアン・フラーフェンベルフ"
+      },
+      {
+        "minute": 86,
+        "teamId": "NED",
+        "inName": "クインテン・ティンバー",
+        "outName": "ミッキー・ファンデフェン"
+      },
+      {
+        "minute": 86,
+        "teamId": "MAR",
+        "inName": "ケムスディン・タルビ",
+        "outName": "アゼディン・ウナヒ"
+      },
+      {
+        "minute": 86,
+        "teamId": "MAR",
+        "inName": "スフィアン・ラヒミ",
+        "outName": "ビラル・エル・ハヌス"
+      },
+      {
+        "minute": 110,
+        "teamId": "NED",
+        "inName": "マルテン・デローン",
+        "outName": "フレンキー・デ・ヨング"
+      },
+      {
+        "minute": 113,
+        "teamId": "NED",
+        "inName": "ジャスティン・クライファート",
+        "outName": "コーディ・ガクポ"
+      }
+    ],
+    "penaltyShootout": [
+      {
+        "teamId": "NED",
+        "result": "scored",
+        "playerId": "p_ned_14",
+        "playerName": "トゥーン・コープマイネルス"
+      },
+      {
+        "teamId": "MAR",
+        "result": "missed",
+        "playerId": "p_mar_17",
+        "playerName": "ニール・エル・アイナウィ"
+      },
+      {
+        "teamId": "NED",
+        "result": "missed",
+        "playerId": "p_ned_21",
+        "playerName": "ジャスティン・クライファート"
+      },
+      {
+        "teamId": "MAR",
+        "result": "scored",
+        "playerId": "p_mar_26",
+        "playerName": "スフィアン・ラヒミ"
+      },
+      {
+        "teamId": "NED",
+        "result": "scored",
+        "playerId": "p_ned_26",
+        "playerName": "ワウト・ヴェフホルスト"
+      },
+      {
+        "teamId": "MAR",
+        "result": "scored",
+        "playerId": "p_mar_22",
+        "playerName": "ケムスディン・タルビ"
+      },
+      {
+        "teamId": "NED",
+        "result": "missed",
+        "playerId": "p_ned_12",
+        "playerName": "クインテン・ティンバー"
+      },
+      {
+        "teamId": "MAR",
+        "result": "missed",
+        "playerId": "p_mar_12",
+        "playerName": "アクラフ・ハキミ"
+      },
+      {
+        "teamId": "NED",
+        "result": "missed",
+        "playerId": "p_ned_22",
+        "playerName": "クリセンシオ・サマーフィル"
+      },
+      {
+        "teamId": "MAR",
+        "result": "scored",
+        "playerId": "p_mar_13",
+        "playerName": "イスマエル・サイバリ"
+      }
+    ]
   },
   "m078": {
     "matchId": "m078",
