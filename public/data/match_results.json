@@ -30911,7 +30911,7 @@
   },
   "m078": {
     "matchId": "m078",
-    "status": "finished",
+    "status": "scheduled",
     "manualLock": false,
     "homeFormation": {
       "shape": "4-3-3",
@@ -31606,6 +31606,15 @@
         "playerName": "キリアン・エンバペ",
         "assistPlayerId": "p_fra_23",
         "assistPlayerName": "ウスマン・デンベレ"
+      },
+      {
+        "minute": 53,
+        "teamId": "FRA",
+        "type": "normal",
+        "playerId": "p_fra_24",
+        "playerName": "ブラッドリー・バルコラ",
+        "assistPlayerId": "p_fra_21",
+        "assistPlayerName": "マイケル・オリーセ"
       }
     ]
   },
