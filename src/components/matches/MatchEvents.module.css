@@ -227,6 +227,21 @@
   letter-spacing: 0.04em;
 }
 
+/* PK 蹴った結果のマーク: 成功 = 緑の○、失敗 = 赤の× */
+.pkScored {
+  color: #1c8a3a;
+  font-weight: 900;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.pkMissed {
+  color: #d93535;
+  font-weight: 900;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
 @media (max-width: 640px) {
   .section {
     padding: 0.85rem 0.55rem;

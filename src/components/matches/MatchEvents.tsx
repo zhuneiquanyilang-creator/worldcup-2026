@@ -324,7 +324,13 @@ function PkShootoutSection({
               <div className={styles.side}>
                 {r.isHome && (
                   <div className={`${styles.event} ${styles.alignRight}`}>
-                    <span className={styles.icon}>{ok ? "⚽" : "✕"}</span>
+                    <span
+                      className={`${styles.icon} ${
+                        ok ? styles.pkScored : styles.pkMissed
+                      }`}
+                    >
+                      {ok ? "○" : "×"}
+                    </span>
                     <span className={styles.text}>
                       <span className={styles.name}>{r.shooter}</span>
                     </span>
@@ -340,7 +346,13 @@ function PkShootoutSection({
               <div className={styles.side}>
                 {!r.isHome && (
                   <div className={`${styles.event} ${styles.alignLeft}`}>
-                    <span className={styles.icon}>{ok ? "⚽" : "✕"}</span>
+                    <span
+                      className={`${styles.icon} ${
+                        ok ? styles.pkScored : styles.pkMissed
+                      }`}
+                    >
+                      {ok ? "○" : "×"}
+                    </span>
                     <span className={styles.text}>
                       <span className={styles.name}>{r.shooter}</span>
                     </span>
