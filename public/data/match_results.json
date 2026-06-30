@@ -31220,6 +31220,20 @@
         "type": "Y",
         "addedTime": 1
       }
+    ],
+    "substitutions": [
+      {
+        "minute": 60,
+        "teamId": "CIV",
+        "inName": "アマド・ディアロ",
+        "outName": "クリスト・イナオ・ウライ"
+      },
+      {
+        "minute": 60,
+        "teamId": "CIV",
+        "inName": "エリー・ワヒ",
+        "outName": "アンジェ・ヨアン・ボニー"
+      }
     ]
   },
   "m077": {
