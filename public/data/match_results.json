@@ -30117,7 +30117,8 @@
           "y": 50,
           "number": 12,
           "name": "オルラン・ヒル",
-          "role": "GK"
+          "role": "GK",
+          "isMvp": true
         },
         {
           "x": 28,
