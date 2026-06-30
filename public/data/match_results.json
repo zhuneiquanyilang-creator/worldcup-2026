@@ -30909,7 +30909,7 @@
   },
   "m078": {
     "matchId": "m078",
-    "status": "finished",
+    "status": "scheduled",
     "manualLock": false,
     "homeFormation": {
       "shape": "4-3-3",
