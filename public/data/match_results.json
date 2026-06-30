@@ -31279,6 +31279,20 @@
         "teamId": "CIV",
         "inName": "ウマル・ディアキテ",
         "outName": "ニコラ・ペペ"
+      },
+      {
+        "minute": 90,
+        "teamId": "CIV",
+        "inName": "エヴァン・ゲサン",
+        "outName": "ヤン・ディオマンデ",
+        "addedTime": 3
+      },
+      {
+        "minute": 90,
+        "teamId": "CIV",
+        "inName": "バズマナ・トゥーレ",
+        "outName": "ジスラン・コナン",
+        "addedTime": 3
       }
     ]
   },
