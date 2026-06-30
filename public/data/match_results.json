@@ -30443,7 +30443,7 @@
   "m075": {
     "matchId": "m075",
     "status": "finished",
-    "manualLock": false,
+    "manualLock": true,
     "homeFormation": {
       "shape": "3-4-2-1",
       "starting": [
