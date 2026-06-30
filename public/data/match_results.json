@@ -31211,6 +31211,15 @@
         "assistPlayerId": "p_nor_23",
         "assistPlayerName": "マルティン・ウーデゴール"
       }
+    ],
+    "bookings": [
+      {
+        "minute": 45,
+        "teamId": "NOR",
+        "playerName": "アントニオ・ヌサ",
+        "type": "Y",
+        "addedTime": 1
+      }
     ]
   },
   "m077": {
