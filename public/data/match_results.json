@@ -7409,6 +7409,10 @@
           "name": "ニコラス・オタメンディ"
         },
         {
+          "number": 20,
+          "name": "アレクシス・マクアリスター"
+        },
+        {
           "number": 21,
           "name": "ホセ・マヌエル・ロペス"
         },
@@ -16365,6 +16369,10 @@
         {
           "number": 19,
           "name": "ニコラス・オタメンディ"
+        },
+        {
+          "number": 20,
+          "name": "アレクシス・マクアリスター"
         },
         {
           "number": 21,
@@ -28616,7 +28624,7 @@
         },
         {
           "number": 20,
-          "name": "アレクシス・マク・アリスター"
+          "name": "アレクシス・マクアリスター"
         },
         {
           "number": 21,
@@ -32111,7 +32119,8 @@
   "m080": {
     "matchId": "m080",
     "status": "live",
-    "manualLock": false,
+    "manualLock": true,
+    "liveLabel": "2nd half",
     "homeFormation": {
       "shape": "4-2-3-1",
       "starting": [
@@ -32431,8 +32440,7 @@
         "playerName": "ノア・サディキ",
         "type": "Y"
       }
-    ],
-    "liveLabel": ""
+    ]
   },
   "m082": {
     "matchId": "m082",
