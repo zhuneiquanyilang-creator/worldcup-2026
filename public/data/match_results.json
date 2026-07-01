@@ -32520,14 +32520,14 @@
   },
   "m082": {
     "matchId": "m082",
-    "status": "live",
+    "status": "finished",
     "score": {
       "home": 3,
       "away": 2
     },
     "note": "",
-    "liveLabel": "Halftime",
-    "manualLock": false,
+    "liveLabel": "Full time",
+    "manualLock": true,
     "homeFormation": {
       "shape": "4-2-3-1",
       "starting": [
