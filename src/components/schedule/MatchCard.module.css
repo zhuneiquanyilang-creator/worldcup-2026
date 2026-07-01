@@ -95,6 +95,22 @@
   text-align: left;
 }
 
+/* レッドカード枚数を絵文字で列挙。ホームは名前の左 (score 側)、
+   アウェイは名前の右 (score 側) に描画されるので、両サイドとも
+   score に向かって並ぶ。 */
+.redCards {
+  display: inline-flex;
+  align-items: center;
+  gap: 1px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.redCard {
+  font-size: 0.85rem;
+  line-height: 1;
+}
+
 .score {
   min-width: 70px;
   text-align: center;
@@ -177,5 +193,8 @@
   }
   .pk {
     font-size: 0.9rem;
+  }
+  .redCard {
+    font-size: 0.75rem;
   }
 }

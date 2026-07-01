@@ -45,6 +45,23 @@ function formatBirthDate(iso: string | undefined): string {
   return `${m[1]}年${parseInt(m[2], 10)}月${parseInt(m[3], 10)}日`;
 }
 
+// 「アル・カディシーヤ（サウジアラビア）」のようにクラブ名と国名の 2 パーツで
+// 構成される所属クラブ文字列を、国名部分だけ折り返せるように分割して描画する。
+// パーツ内 (クラブ名 / 国名) は改行禁止、間の <wbr> で改行許可。
+function renderClub(club: string | undefined) {
+  if (!club) return "—";
+  const m = /^(.+?)\s*[（(](.+?)[）)]\s*$/.exec(club);
+  if (!m) return club;
+  const [, name, country] = m;
+  return (
+    <>
+      <span className={styles.clubName}>{name}</span>
+      <wbr />
+      <span className={styles.clubCountry}>（{country}）</span>
+    </>
+  );
+}
+
 export function PlayerDetailPage() {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
@@ -129,7 +146,7 @@ export function PlayerDetailPage() {
         <dl className={styles.profileGrid}>
           <div>
             <dt>所属クラブ</dt>
-            <dd>{player.club ?? "—"}</dd>
+            <dd>{renderClub(player.club)}</dd>
           </div>
           <div>
             <dt>生年月日</dt>

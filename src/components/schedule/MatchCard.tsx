@@ -17,9 +17,32 @@ type Props = {
   teamMap: Map<string, Team>;
 };
 
+function countRedCards(match: Match, teamId: string): number {
+  return (match.bookings ?? []).filter(
+    (b) =>
+      b.teamId === teamId &&
+      (b.type === "R" || b.type === "Y2R" || b.type === "YR")
+  ).length;
+}
+
+function RedCards({ count }: { count: number }) {
+  if (count <= 0) return null;
+  return (
+    <span className={styles.redCards} aria-label={`${count} red card(s)`}>
+      {Array.from({ length: count }, (_, i) => (
+        <span key={i} className={styles.redCard}>
+          🟥
+        </span>
+      ))}
+    </span>
+  );
+}
+
 export function MatchCard({ match, teamMap }: Props) {
   const home = teamMap.get(match.homeTeamId);
   const away = teamMap.get(match.awayTeamId);
+  const homeReds = countRedCards(match, match.homeTeamId);
+  const awayReds = countRedCards(match, match.awayTeamId);
   // スコアが入っていれば status に関係なく表示する。
   // 理由: file (match_results.json) に finished + score が入っていても、
   // 古い live override (localStorage) が status="live" だけ上書きして残っていると、
@@ -71,6 +94,7 @@ export function MatchCard({ match, teamMap }: Props) {
 
       <div className={styles.body}>
         <div className={`${styles.team} ${styles.home}`}>
+          <RedCards count={homeReds} />
           <TeamLink team={home} label={match.homeTeamLabel} fallbackId={match.homeTeamId} />
         </div>
 
@@ -93,6 +117,7 @@ export function MatchCard({ match, teamMap }: Props) {
 
         <div className={`${styles.team} ${styles.away}`}>
           <TeamLink team={away} label={match.awayTeamLabel} fallbackId={match.awayTeamId} />
+          <RedCards count={awayReds} />
         </div>
       </div>
 

@@ -130,6 +130,19 @@
   line-height: 1.35;
 }
 
+/* 「クラブ名（国名）」の 2 パーツをパーツ内は改行禁止・境界のみ改行可にする。
+   短ければ 1 行、狭いカラムでは国名だけ 2 行目に落ちる挙動。 */
+.clubName,
+.clubCountry {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.clubCountry {
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
 .statRow {
   display: flex;
   flex-wrap: wrap;
