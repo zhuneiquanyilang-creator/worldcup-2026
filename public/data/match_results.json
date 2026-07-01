@@ -32047,6 +32047,18 @@
         "teamId": "ECU",
         "inName": "ケビン・ロドリゲス",
         "outName": "エネル・バレンシア"
+      },
+      {
+        "minute": 74,
+        "teamId": "MEX",
+        "inName": "オベド・バルガス",
+        "outName": "ルイス・ロモ"
+      },
+      {
+        "minute": 74,
+        "teamId": "MEX",
+        "inName": "サンティアゴ・ヒメネス",
+        "outName": "ラウール・ヒメネス"
       }
     ]
   },
