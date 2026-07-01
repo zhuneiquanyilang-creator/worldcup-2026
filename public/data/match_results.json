@@ -32028,6 +32028,13 @@
         "playerName": "ピエロ・インカピエ",
         "type": "R",
         "addedTime": 5
+      },
+      {
+        "minute": 90,
+        "teamId": "ECU",
+        "playerName": "モイセス・カイセド",
+        "type": "Y",
+        "addedTime": 9
       }
     ],
     "substitutions": [
