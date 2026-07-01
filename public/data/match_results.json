@@ -32119,7 +32119,7 @@
   "m080": {
     "matchId": "m080",
     "status": "live",
-    "manualLock": true,
+    "manualLock": false,
     "liveLabel": "2nd half",
     "homeFormation": {
       "shape": "4-2-3-1",
