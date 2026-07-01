@@ -32526,7 +32526,7 @@
       "away": 2
     },
     "note": "",
-    "liveLabel": "Halftime",
+    "liveLabel": "Extra time",
     "manualLock": false,
     "homeFormation": {
       "shape": "4-2-3-1",
@@ -32878,6 +32878,12 @@
         "teamId": "SEN",
         "inName": "エル・アジ・マリック・ディウフ",
         "outName": "サディオ・マネ"
+      },
+      {
+        "minute": 95,
+        "teamId": "SEN",
+        "inName": "バラ・サポコ・ンディアエ",
+        "outName": "イドリッサ・ガナ・ゲイェ"
       }
     ],
     "goals": [
