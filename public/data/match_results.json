@@ -32021,6 +32021,13 @@
         "playerName": "アラン・フランコ",
         "type": "Y",
         "addedTime": 2
+      },
+      {
+        "minute": 90,
+        "teamId": "ECU",
+        "playerName": "ピエロ・インカピエ",
+        "type": "R",
+        "addedTime": 5
       }
     ],
     "substitutions": [
