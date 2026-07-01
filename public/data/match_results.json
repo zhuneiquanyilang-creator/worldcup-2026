@@ -32836,6 +32836,12 @@
         "teamId": "BEL",
         "inName": "ドディ・ルケバキオ",
         "outName": "ジェレミー・ドク"
+      },
+      {
+        "minute": 63,
+        "teamId": "BEL",
+        "inName": "ディエゴ・モレイラ",
+        "outName": "ハンス・ヴァナケン"
       }
     ],
     "goals": [
@@ -32854,6 +32860,14 @@
         "playerName": "イスマイラ・サール",
         "assistPlayerId": "p_sen_8",
         "assistPlayerName": "ムサ・ニアカテ"
+      }
+    ],
+    "bookings": [
+      {
+        "minute": 64,
+        "teamId": "BEL",
+        "playerName": "ブランドン・メシェレ",
+        "type": "Y"
       }
     ]
   },
