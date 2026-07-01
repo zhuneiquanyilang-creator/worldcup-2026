@@ -164,7 +164,11 @@ function runGit(gitBin: string, args: string[], cwd: string): Promise<{ code: nu
   });
 }
 
-const AUTO_PUSH_DEBOUNCE_MS = 30_000;
+// 90 秒デバウンス。Pages deploy が約 25 秒かかるので、それより短いと
+// 「deploy 中に次の push が来る → concurrency: cancel-in-progress で古い deploy が
+//  キャンセルされる → GitHub Actions を無駄に消費」というパターンが頻発する。
+// ライブ中のスコア更新は 1〜2 分遅れる可能性があるが、cancel 頻発を抑える方が優先。
+const AUTO_PUSH_DEBOUNCE_MS = 90_000;
 let pushTimer: NodeJS.Timeout | null = null;
 let isPushing = false;
 async function schedulePush() {
