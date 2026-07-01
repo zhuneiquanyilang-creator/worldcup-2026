@@ -32878,6 +32878,15 @@
         "playerName": "イスマイラ・サール",
         "assistPlayerId": "p_sen_8",
         "assistPlayerName": "ムサ・ニアカテ"
+      },
+      {
+        "minute": 86,
+        "teamId": "BEL",
+        "type": "normal",
+        "playerId": "p_bel_19",
+        "playerName": "ロメル・ルカク",
+        "assistPlayerId": "p_bel_8",
+        "assistPlayerName": "トーマス・ムニエ"
       }
     ],
     "bookings": [
