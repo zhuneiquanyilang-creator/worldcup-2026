@@ -32526,7 +32526,7 @@
       "away": 2
     },
     "note": "",
-    "liveLabel": "Extra time",
+    "liveLabel": "Halftime",
     "manualLock": false,
     "homeFormation": {
       "shape": "4-2-3-1",
@@ -32884,6 +32884,12 @@
         "teamId": "SEN",
         "inName": "バラ・サポコ・ンディアエ",
         "outName": "イドリッサ・ガナ・ゲイェ"
+      },
+      {
+        "minute": 109,
+        "teamId": "BEL",
+        "inName": "アマドゥ・オナナ",
+        "outName": "レアンドロ・トロサール"
       }
     ],
     "goals": [
