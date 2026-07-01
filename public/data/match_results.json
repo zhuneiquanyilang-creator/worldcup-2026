@@ -31301,8 +31301,8 @@
   },
   "m077": {
     "matchId": "m077",
-    "status": "finished",
-    "manualLock": false,
+    "status": "scheduled",
+    "manualLock": true,
     "homeFormation": {
       "shape": "4-2-3-1",
       "starting": [
@@ -31687,7 +31687,8 @@
         "inName": "グスタフ・ニルソン",
         "outName": "アレクサンデル・イサク"
       }
-    ]
+    ],
+    "note": "遅延"
   },
   "m079": {
     "matchId": "m079",
