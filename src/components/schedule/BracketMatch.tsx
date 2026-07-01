@@ -24,6 +24,19 @@ export function BracketMatch({ match, teamMap }: Props) {
   const live = isLive(match);
   const navigate = useNavigate();
 
+  // 敗者側を薄く表示するための判定。試合が finished かつ勝敗が決まっている時のみ。
+  // 90 分同点で PK 決着した場合は penaltyScore の勝者を敗者判定に使う。
+  let homeLost = false;
+  let awayLost = false;
+  if (match.status === "finished" && score) {
+    if (score.home > score.away) awayLost = true;
+    else if (score.away > score.home) homeLost = true;
+    else if (match.penaltyScore) {
+      if (match.penaltyScore.home > match.penaltyScore.away) awayLost = true;
+      else if (match.penaltyScore.away > match.penaltyScore.home) homeLost = true;
+    }
+  }
+
   const goToMatch = () => navigate(`/matches/${match.id}`);
   const onKey = (e: KeyboardEvent<HTMLDivElement>) => {
     if (e.key === "Enter" || e.key === " ") {
@@ -54,7 +67,7 @@ export function BracketMatch({ match, teamMap }: Props) {
           ))}
         <span className={styles.date}>{formatDateJa(match.date)}</span>
       </div>
-      <div className={styles.row}>
+      <div className={`${styles.row} ${homeLost ? styles.loser : ""}`}>
         <TeamLink
           team={home}
           label={match.homeTeamLabel}
@@ -68,7 +81,7 @@ export function BracketMatch({ match, teamMap }: Props) {
           )}
         </span>
       </div>
-      <div className={styles.row}>
+      <div className={`${styles.row} ${awayLost ? styles.loser : ""}`}>
         <TeamLink
           team={away}
           label={match.awayTeamLabel}

@@ -92,3 +92,18 @@ a.team:hover {
   color: var(--color-gold, #b8860b);
   margin-left: 0.05rem;
 }
+
+/* 敗者行: 国名・スコアの「テキスト色」を薄くする。
+   opacity は親に付けると子要素 (国旗 img) も薄くなり、子側で opacity:1 に
+   戻すことも仕様上できないため、color 側で対処する。国旗 <img> は color の
+   影響を受けないので濃さそのまま。 */
+.loser .team {
+  color: rgba(0, 0, 0, 0.42);
+  font-weight: 500;
+}
+
+.loser .score,
+.loser .pk {
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 500;
+}
