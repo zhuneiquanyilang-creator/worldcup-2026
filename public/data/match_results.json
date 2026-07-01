@@ -32417,6 +32417,14 @@
         "assistPlayerId": "p_cod_10",
         "assistPlayerName": "シャンセル・ムベンバ"
       }
+    ],
+    "bookings": [
+      {
+        "minute": 19,
+        "teamId": "ENG",
+        "playerName": "デクラン・ライス",
+        "type": "Y"
+      }
     ]
   },
   "m082": {
