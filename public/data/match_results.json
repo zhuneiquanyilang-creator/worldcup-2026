@@ -31699,7 +31699,7 @@
     "status": "live",
     "note": "",
     "score": {
-      "home": 1,
+      "home": 2,
       "away": 0
     },
     "manualLock": true,
@@ -32003,6 +32003,15 @@
         "playerName": "フリアン・キニョネス",
         "assistPlayerId": "p_mex_26",
         "assistPlayerName": "ロベルト・アルバラード"
+      },
+      {
+        "minute": 31,
+        "teamId": "MEX",
+        "type": "normal",
+        "playerId": "p_mex_20",
+        "playerName": "ラウール・ヒメネス",
+        "assistPlayerId": "p_mex_22",
+        "assistPlayerName": "フリアン・キニョネス"
       }
     ]
   },
