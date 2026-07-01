@@ -116,6 +116,22 @@ async function main() {
       update.note = "";
     }
 
+    // liveLabel: FD の状態から一意に判別できるものだけ書き込む。
+    // 公開サイト訪問者にも HT/延長/PK の表示を出せるようにする。
+    // - PAUSED → "Halftime"、IN_PLAY + EXTRA_TIME → "Extra time"
+    // - IN_PLAY + PENALTY_SHOOTOUT → "Penalty"、IN_PLAY + REGULAR → ""
+    // - FINISHED → "" (試合終了で HT ラベルをクリア)
+    // SCHEDULED/TIMED/POSTPONED/SUSPENDED は現状値を保持。
+    if (fx.status === "PAUSED") {
+      update.liveLabel = "Halftime";
+    } else if (fx.status === "IN_PLAY" || fx.status === "LIVE") {
+      if (fx.score?.duration === "EXTRA_TIME") update.liveLabel = "Extra time";
+      else if (fx.score?.duration === "PENALTY_SHOOTOUT") update.liveLabel = "Penalty";
+      else update.liveLabel = "";
+    } else if (fx.status === "FINISHED" || fx.status === "AWARDED") {
+      update.liveLabel = "";
+    }
+
     const prev = existing[matchId] ?? {};
     // manualLock: true なら手動値を保護するため自動更新スキップ。
     // /edit/matches で確定したスコア (Football-Data と食い違っているケース等)
@@ -130,7 +146,10 @@ async function main() {
     const samePk =
       JSON.stringify(prev.penaltyScore) === JSON.stringify(update.penaltyScore);
     const sameNote = (prev.note ?? "") === (update.note ?? "");
-    if (sameStatus && sameScore && samePk && sameNote) {
+    const sameLabel =
+      !("liveLabel" in update) ||
+      (prev.liveLabel ?? "") === (update.liveLabel ?? "");
+    if (sameStatus && sameScore && samePk && sameNote && sameLabel) {
       unchanged++;
       continue;
     }

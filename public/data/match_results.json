@@ -2018,7 +2018,7 @@
         "outName": "イスマエル・サイバリ"
       }
     ],
-    "liveLabel": "Live",
+    "liveLabel": "",
     "manualLock": false
   },
   "m014": {
@@ -2406,7 +2406,7 @@
         "outName": "ルベン・プロヴィデンス"
       }
     ],
-    "liveLabel": "Live",
+    "liveLabel": "",
     "manualLock": false
   },
   "m019": {
@@ -4053,7 +4053,7 @@
         "outName": "ゲラ・ドゥエ"
       }
     ],
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "manualLock": false
   },
   "m031": {
@@ -4473,7 +4473,7 @@
         "outName": "コーディ・ガクポ"
       }
     ],
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "manualLock": false
   },
   "m032": {
@@ -5305,7 +5305,7 @@
         "outName": "ハムディ・ファティ"
       }
     ],
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "manualLock": false
   },
   "m038": {
@@ -5708,7 +5708,7 @@
         "addedTime": 2
       }
     ],
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "manualLock": false
   },
   "m043": {
@@ -6080,7 +6080,7 @@
         "outName": "ロドリ"
       }
     ],
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "manualLock": false
   },
   "m044": {
@@ -6470,7 +6470,7 @@
         "addedTime": 3
       }
     ],
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "manualLock": false
   },
   "m049": {
@@ -6852,7 +6852,7 @@
         "outName": "イドリッサ・ガナ・ゲイェ"
       }
     ],
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "manualLock": false
   },
   "m050": {
@@ -7258,7 +7258,7 @@
         "outName": "マルティン・ウーデゴール"
       }
     ],
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "bookings": [
       {
         "minute": 86,
@@ -7567,7 +7567,7 @@
       "home": 3,
       "away": 0
     },
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "goals": [
       {
         "minute": 17,
@@ -7957,7 +7957,7 @@
       "home": 3,
       "away": 1
     },
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "goals": [
       {
         "minute": 20,
@@ -8361,7 +8361,7 @@
       "home": 1,
       "away": 1
     },
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "goals": [
       {
         "minute": 6,
@@ -8766,7 +8766,7 @@
       "home": 4,
       "away": 2
     },
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "goals": [
       {
         "minute": 12,
@@ -9184,7 +9184,7 @@
         }
       ]
     },
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "bookings": [
       {
         "minute": 16,
@@ -9573,7 +9573,7 @@
         }
       ]
     },
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "bookings": [
       {
         "minute": 7,
@@ -9699,7 +9699,7 @@
       "home": 1,
       "away": 1
     },
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "goals": [
       {
         "minute": 6,
@@ -10087,7 +10087,7 @@
       "home": 4,
       "away": 1
     },
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "goals": [
       {
         "minute": 74,
@@ -10520,7 +10520,7 @@
       "home": 6,
       "away": 0
     },
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "goals": [
       {
         "minute": 16,
@@ -11254,7 +11254,7 @@
       "home": 1,
       "away": 0
     },
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "bookings": [
       {
         "minute": 4,
@@ -11656,7 +11656,7 @@
         "playerName": "アレックス・フリーマン"
       }
     ],
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "bookings": [
       {
         "minute": 17,
@@ -12066,7 +12066,7 @@
       "home": 0,
       "away": 1
     },
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "goals": [
       {
         "minute": 2,
@@ -12448,7 +12448,7 @@
       "home": 3,
       "away": 0
     },
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "goals": [
       {
         "minute": 23,
@@ -12575,7 +12575,7 @@
       "home": 0,
       "away": 1
     },
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "goals": [
       {
         "minute": 2,
@@ -13263,7 +13263,7 @@
       "home": 5,
       "away": 1
     },
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "goals": [
       {
         "minute": 5,
@@ -13703,7 +13703,7 @@
       "home": 2,
       "away": 1
     },
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "goals": [
       {
         "minute": 30,
@@ -14189,7 +14189,7 @@
         "outName": "ジョン・イェボア"
       }
     ],
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "manualLock": false
   },
   "m034": {
@@ -14490,7 +14490,7 @@
       "home": 0,
       "away": 4
     },
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "goals": [
       {
         "minute": 4,
@@ -14602,7 +14602,7 @@
       "home": 4,
       "away": 0
     },
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "homeFormation": {
       "shape": "4-3-3",
       "starting": [
@@ -15382,7 +15382,7 @@
         "outName": "ケビン・デブライネ"
       }
     ],
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "manualLock": false
   },
   "m046": {
@@ -15742,7 +15742,7 @@
         "playerName": "エリオ・バレラ"
       }
     ],
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "substitutions": [
       {
         "minute": 46,
@@ -16093,7 +16093,7 @@
       "home": 1,
       "away": 3
     },
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "goals": [
       {
         "minute": 15,
@@ -16521,7 +16521,7 @@
       "home": 2,
       "away": 0
     },
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "goals": [
       {
         "minute": 39,
@@ -17030,7 +17030,7 @@
         "addedTime": 1
       }
     ],
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "manualLock": false
   },
   "m052": {
@@ -17331,7 +17331,7 @@
       "home": 3,
       "away": 2
     },
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "substitutions": [
       {
         "minute": 13,
@@ -17740,7 +17740,7 @@
       "home": 1,
       "away": 2
     },
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "goals": [
       {
         "minute": 36,
@@ -18146,7 +18146,7 @@
       "home": 5,
       "away": 0
     },
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "goals": [
       {
         "minute": 6,
@@ -18566,7 +18566,7 @@
       "home": 0,
       "away": 0
     },
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "bookings": [
       {
         "minute": 41,
@@ -18938,7 +18938,7 @@
         }
       ]
     },
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "substitutions": [
       {
         "minute": 46,
@@ -19313,7 +19313,7 @@
       "home": 1,
       "away": 0
     },
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "substitutions": [
       {
         "minute": 46,
@@ -19406,7 +19406,7 @@
       "home": 2,
       "away": 1
     },
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "goals": [
       {
         "minute": 46,
@@ -19818,7 +19818,7 @@
       "home": 3,
       "away": 1
     },
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "goals": [
       {
         "minute": 29,
@@ -20521,7 +20521,7 @@
       "home": 4,
       "away": 2
     },
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "goals": [
       {
         "minute": 10,
@@ -20952,7 +20952,7 @@
       "home": 0,
       "away": 3
     },
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "goals": [
       {
         "minute": 7,
@@ -21367,7 +21367,7 @@
       "home": 0,
       "away": 3
     },
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "goals": [
       {
         "minute": 55,
@@ -21767,7 +21767,7 @@
       "home": 1,
       "away": 0
     },
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "substitutions": [
       {
         "minute": 46,
@@ -22172,7 +22172,7 @@
         }
       ]
     },
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "bookings": [
       {
         "minute": 43,
@@ -22651,7 +22651,7 @@
         "outName": "フランク・ケシエ"
       }
     ],
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "manualLock": false
   },
   "m036": {
@@ -22952,7 +22952,7 @@
         }
       ]
     },
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "goals": [
       {
         "minute": 3,
@@ -23351,7 +23351,7 @@
         }
       ]
     },
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "bookings": [
       {
         "minute": 32,
@@ -23463,7 +23463,7 @@
       "home": 3,
       "away": 2
     },
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "goals": [
       {
         "minute": 3,
@@ -23880,7 +23880,7 @@
       "home": 0,
       "away": 0
     },
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "homeFormation": {
       "shape": "5-3-2",
       "starting": [
@@ -24538,7 +24538,7 @@
         }
       ]
     },
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "goals": [
       {
         "minute": 7,
@@ -24963,7 +24963,7 @@
         }
       ]
     },
-    "liveLabel": "Full time",
+    "liveLabel": "",
     "goals": [
       {
         "minute": 4,
@@ -25399,7 +25399,7 @@
       "home": 0,
       "away": 1
     },
-    "liveLabel": "Live",
+    "liveLabel": "",
     "goals": [
       {
         "minute": 42,
@@ -25801,7 +25801,7 @@
       "home": 0,
       "away": 0
     },
-    "liveLabel": "Live",
+    "liveLabel": "",
     "bookings": [
       {
         "minute": 4,
@@ -31692,7 +31692,7 @@
       }
     ],
     "note": "",
-    "liveLabel": "Full time"
+    "liveLabel": ""
   },
   "m079": {
     "matchId": "m079",
@@ -31703,7 +31703,7 @@
       "away": 0
     },
     "manualLock": false,
-    "liveLabel": "1st half",
+    "liveLabel": "",
     "homeFormation": {
       "shape": "4-3-3",
       "starting": [
@@ -32431,7 +32431,8 @@
         "playerName": "ノア・サディキ",
         "type": "Y"
       }
-    ]
+    ],
+    "liveLabel": "Halftime"
   },
   "m082": {
     "matchId": "m082",
