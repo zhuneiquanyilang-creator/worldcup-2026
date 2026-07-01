@@ -32412,7 +32412,7 @@
       ]
     },
     "score": {
-      "home": 1,
+      "home": 2,
       "away": 1
     },
     "note": "",
@@ -32507,6 +32507,13 @@
         "teamId": "COD",
         "inName": "フィストン・マイェレ",
         "outName": "ヨアヌ・ウィサ"
+      },
+      {
+        "minute": 90,
+        "teamId": "ENG",
+        "inName": "ジョン・ストーンズ",
+        "outName": "デクラン・ライス",
+        "addedTime": 2
       }
     ]
   },
