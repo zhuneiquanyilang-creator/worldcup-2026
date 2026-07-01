@@ -32848,6 +32848,18 @@
         "teamId": "SEN",
         "inName": "ラミン・カマラ",
         "outName": "パペ・ゲイェ"
+      },
+      {
+        "minute": 73,
+        "teamId": "SEN",
+        "inName": "パペ・マタル・サール",
+        "outName": "イリマン・ンディアエ"
+      },
+      {
+        "minute": 73,
+        "teamId": "SEN",
+        "inName": "イブラヒム・ンバイェ",
+        "outName": "ハビブ・ディアラ"
       }
     ],
     "goals": [
