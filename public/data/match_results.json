@@ -32110,7 +32110,7 @@
   },
   "m080": {
     "matchId": "m080",
-    "status": "scheduled",
+    "status": "live",
     "manualLock": false,
     "homeFormation": {
       "shape": "4-2-3-1",
@@ -32125,8 +32125,8 @@
         {
           "x": 28,
           "y": 12.5,
-          "number": 23,
-          "name": "ジェームズ・トラフォード",
+          "number": 25,
+          "name": "ジェド・スペンス",
           "role": "DF"
         },
         {
@@ -32244,12 +32244,12 @@
           "name": "イヴァン・トニー"
         },
         {
-          "number": 24,
-          "name": "リース・ジェームズ"
+          "number": 23,
+          "name": "ジェームズ・トラフォード"
         },
         {
-          "number": 25,
-          "name": "ジェド・スペンス"
+          "number": 24,
+          "name": "リース・ジェームズ"
         },
         {
           "number": 26,
@@ -32401,7 +32401,12 @@
           "name": "エド・カイェンベ"
         }
       ]
-    }
+    },
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "note": ""
   },
   "m082": {
     "matchId": "m082",
