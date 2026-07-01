@@ -31702,7 +31702,8 @@
       "home": 0,
       "away": 0
     },
-    "manualLock": false,
+    "manualLock": true,
+    "liveLabel": "1st half",
     "homeFormation": {
       "shape": "4-3-3",
       "starting": [
@@ -31992,8 +31993,7 @@
           "name": "ヤイマル・メディナ"
         }
       ]
-    },
-    "liveLabel": "1st half"
+    }
   },
   "m080": {
     "matchId": "m080",
