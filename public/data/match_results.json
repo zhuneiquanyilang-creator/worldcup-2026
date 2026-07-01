@@ -32013,6 +32013,15 @@
         "assistPlayerId": "p_mex_22",
         "assistPlayerName": "フリアン・キニョネス"
       }
+    ],
+    "bookings": [
+      {
+        "minute": 45,
+        "teamId": "ECU",
+        "playerName": "アラン・フランコ",
+        "type": "Y",
+        "addedTime": 2
+      }
     ]
   },
   "m080": {
