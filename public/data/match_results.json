@@ -32523,7 +32523,7 @@
     "status": "live",
     "score": {
       "home": 0,
-      "away": 1
+      "away": 2
     },
     "note": "",
     "liveLabel": "2nd half",
@@ -32824,6 +32824,36 @@
         "teamId": "BEL",
         "inName": "ロメル・ルカク",
         "outName": "シャルル・デケテラーレ"
+      },
+      {
+        "minute": 56,
+        "teamId": "BEL",
+        "inName": "ニコラス・ラスキン",
+        "outName": "ケビン・デブライネ"
+      },
+      {
+        "minute": 56,
+        "teamId": "BEL",
+        "inName": "ドディ・ルケバキオ",
+        "outName": "ジェレミー・ドク"
+      }
+    ],
+    "goals": [
+      {
+        "minute": 24,
+        "teamId": "SEN",
+        "type": "normal",
+        "playerId": "p_sen_16",
+        "playerName": "ハビブ・ディアラ"
+      },
+      {
+        "minute": 51,
+        "teamId": "SEN",
+        "type": "normal",
+        "playerId": "p_sen_21",
+        "playerName": "イスマイラ・サール",
+        "assistPlayerId": "p_sen_8",
+        "assistPlayerName": "ムサ・ニアカテ"
       }
     ]
   },
