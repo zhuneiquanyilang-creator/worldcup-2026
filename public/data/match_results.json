@@ -32519,7 +32519,13 @@
   },
   "m082": {
     "matchId": "m082",
-    "status": "scheduled"
+    "status": "live",
+    "score": {
+      "home": 0,
+      "away": 1
+    },
+    "note": "",
+    "liveLabel": "Halftime"
   },
   "m081": {
     "matchId": "m081",
