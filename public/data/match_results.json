@@ -32406,7 +32406,18 @@
       "home": 0,
       "away": 0
     },
-    "note": ""
+    "note": "",
+    "goals": [
+      {
+        "minute": 8,
+        "teamId": "COD",
+        "type": "normal",
+        "playerId": "p_cod_18",
+        "playerName": "ブライアン・チペンガ",
+        "assistPlayerId": "p_cod_10",
+        "assistPlayerName": "シャンセル・ムベンバ"
+      }
+    ]
   },
   "m082": {
     "matchId": "m082",
