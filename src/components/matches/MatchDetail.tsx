@@ -5,7 +5,6 @@ import type { Player } from "@/types/player";
 import { ScoreBoard } from "./ScoreBoard";
 import { MatchEvents } from "./MatchEvents";
 import { CombinedFormation } from "./CombinedFormation";
-import { MatchStats } from "./MatchStats";
 import styles from "./MatchDetail.module.css";
 
 type Props = {
@@ -14,8 +13,8 @@ type Props = {
   playerMap: Map<string, Player>;
 };
 
-type Tab = "events" | "stats" | "formation";
-const VALID_TABS: Tab[] = ["events", "stats", "formation"];
+type Tab = "events" | "formation";
+const VALID_TABS: Tab[] = ["events", "formation"];
 
 export function MatchDetail({ match, teamMap, playerMap }: Props) {
   const home = teamMap.get(match.homeTeamId);
@@ -33,7 +32,6 @@ export function MatchDetail({ match, teamMap, playerMap }: Props) {
   };
 
   const hasFormations = Boolean(match.homeFormation || match.awayFormation);
-  const hasStats = Boolean(match.stats);
   const allSubs = match.substitutions ?? [];
   const homeSubs = allSubs.filter((s) => s.teamId === match.homeTeamId);
   const awaySubs = allSubs.filter((s) => s.teamId === match.awayTeamId);
@@ -59,15 +57,6 @@ export function MatchDetail({ match, teamMap, playerMap }: Props) {
         </button>
         <button
           type="button"
-          onClick={() => setTab("stats")}
-          className={tab === "stats" ? `${styles.tab} ${styles.tabActive}` : styles.tab}
-          disabled={!hasStats}
-          title={hasStats ? "" : "スタッツのデータがありません"}
-        >
-          スタッツ
-        </button>
-        <button
-          type="button"
           onClick={() => setTab("formation")}
           className={tab === "formation" ? `${styles.tab} ${styles.tabActive}` : styles.tab}
           disabled={!hasFormations}
@@ -79,16 +68,6 @@ export function MatchDetail({ match, teamMap, playerMap }: Props) {
 
       {tab === "events" && (
         <MatchEvents match={match} teamMap={teamMap} playerMap={playerMap} />
-      )}
-
-      {tab === "stats" && (
-        <MatchStats
-          stats={match.stats}
-          homeTeam={home}
-          homeLabel={match.homeTeamLabel}
-          awayTeam={away}
-          awayLabel={match.awayTeamLabel}
-        />
       )}
 
       {tab === "formation" && (
