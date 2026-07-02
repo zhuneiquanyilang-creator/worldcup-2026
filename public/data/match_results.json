@@ -33299,6 +33299,12 @@
         "teamId": "USA",
         "playerName": "フォラリン・バログン",
         "type": "R"
+      },
+      {
+        "minute": 81,
+        "teamId": "BIH",
+        "playerName": "ステパン・ラデリッチ",
+        "type": "Y"
       }
     ]
   },
