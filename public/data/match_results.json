@@ -3332,7 +3332,8 @@
           "y": 12.5,
           "number": 6,
           "name": "ヨズア・キミッヒ",
-          "role": "DF"
+          "role": "DF",
+          "isCaptain": true
         },
         {
           "x": 28,
@@ -3512,7 +3513,8 @@
           "y": 50,
           "number": 10,
           "name": "レアンドロ・バクーナ",
-          "role": "MF"
+          "role": "MF",
+          "isCaptain": true
         },
         {
           "x": 45.33333333333333,
@@ -6688,7 +6690,8 @@
           "y": 37.5,
           "number": 3,
           "name": "カリドゥ・クリバリ",
-          "role": "DF"
+          "role": "DF",
+          "isCaptain": true
         },
         {
           "x": 28,
@@ -20094,7 +20097,8 @@
           "y": 83.33333333333334,
           "number": 10,
           "name": "ハッサン・アル・ハイドス",
-          "role": "FW"
+          "role": "FW",
+          "isCaptain": true
         }
       ],
       "bench": [
@@ -21656,7 +21660,8 @@
           "y": 50,
           "number": 4,
           "name": "キム・ミンジェ",
-          "role": "DF"
+          "role": "DF",
+          "isCaptain": true
         },
         {
           "x": 28,
@@ -33254,7 +33259,7 @@
       ]
     },
     "score": {
-      "home": 1,
+      "home": 2,
       "away": 0
     },
     "note": "",
@@ -33266,6 +33271,13 @@
         "type": "normal",
         "playerId": "p_usa_23",
         "playerName": "フォラリン・バログン"
+      },
+      {
+        "minute": 82,
+        "teamId": "USA",
+        "type": "normal",
+        "playerId": "p_usa_16",
+        "playerName": "マリク・ティルマン"
       }
     ],
     "substitutions": [
@@ -33298,6 +33310,18 @@
         "teamId": "BIH",
         "inName": "アマル・メミッチ",
         "outName": "ニコラ・カティッチ"
+      },
+      {
+        "minute": 88,
+        "teamId": "USA",
+        "inName": "リカルド・ペピ",
+        "outName": "クリスチャン・プリシッチ"
+      },
+      {
+        "minute": 88,
+        "teamId": "USA",
+        "inName": "セバスチャン・バーハルター",
+        "outName": "セルジーニョ・デスト"
       }
     ],
     "bookings": [
