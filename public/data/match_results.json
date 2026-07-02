@@ -33280,6 +33280,14 @@
         "inName": "エスミル・バイラクタレビッチ",
         "outName": "エディン・ジェコ"
       }
+    ],
+    "bookings": [
+      {
+        "minute": 64,
+        "teamId": "USA",
+        "playerName": "フォラリン・バログン",
+        "type": "R"
+      }
     ]
   },
   "m084": {
