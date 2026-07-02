@@ -4130,7 +4130,9 @@
           "y": 62.5,
           "number": 4,
           "name": "フィルジル・ファン・ダイク",
-          "role": "DF"
+          "role": "DF",
+          "isCaptain": true,
+          "isMvp": true
         },
         {
           "x": 28,
@@ -7075,7 +7077,8 @@
           "y": 50,
           "number": 9,
           "name": "アーリング・ブラウト・ハーランド",
-          "role": "FW"
+          "role": "FW",
+          "isMvp": true
         },
         {
           "x": 80,
@@ -9504,7 +9507,8 @@
           "y": 83.33333333333334,
           "number": 7,
           "name": "ルイス・ディアス",
-          "role": "MF"
+          "role": "MF",
+          "isMvp": true
         },
         {
           "x": 80,
@@ -15580,7 +15584,8 @@
           "y": 50,
           "number": 6,
           "name": "ケビン・ピナ",
-          "role": "MF"
+          "role": "MF",
+          "isMvp": true
         },
         {
           "x": 62.666666666666664,
@@ -19042,7 +19047,8 @@
           "y": 12.5,
           "number": 2,
           "name": "ダニエル・ムニョス",
-          "role": "DF"
+          "role": "DF",
+          "isMvp": true
         },
         {
           "x": 28,
