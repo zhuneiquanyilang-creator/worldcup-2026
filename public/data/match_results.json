@@ -33322,6 +33322,13 @@
         "teamId": "USA",
         "inName": "セバスチャン・バーハルター",
         "outName": "セルジーニョ・デスト"
+      },
+      {
+        "minute": 90,
+        "teamId": "USA",
+        "inName": "ジョヴァンニ・レイナ",
+        "outName": "ウェストン・マッケニー",
+        "addedTime": 5
       }
     ],
     "bookings": [
