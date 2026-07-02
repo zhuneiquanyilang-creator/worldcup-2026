@@ -9880,7 +9880,8 @@
           "y": 50,
           "number": 1,
           "name": "ロンウェン・ウィリアムズ",
-          "role": "GK"
+          "role": "GK",
+          "isCaptain": true
         },
         {
           "x": 28,
